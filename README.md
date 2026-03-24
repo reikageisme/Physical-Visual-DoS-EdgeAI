@@ -33,7 +33,7 @@ By integrating a **Deterministic Saliency-Guided Mechanism** with a **Black-box 
 
 The attack pipeline executes the following mathematical and algorithmic steps:
 
-1. **Saliency-Guided Localization**: The system computes a Gradient-based Saliency Map $S(x)$ and applies Gaussian Blur to find the most sensitive region $(u^*, v^*)$ on the frame to place the patch, drastically reducing the GA search space.
+1. **Saliency-Guided Localization**: The system computes a Gradient-based Saliency Map $S(x)$ and applies Gaussian Blur to find the most sensitive region $(u^\ast, v^\ast)$ on the frame to place the patch, drastically reducing the GA search space.
 2. **Black-box Evolution**: The Genetic Algorithm evolves the patch to maximize the number of generated raw boxes ($N_{active}$) with high confidence ($C_i > \tau$).
 3. **EOT Integration**: Expectation Over Transformation (EOT) is applied (rotation, scaling, noise) to ensure the patch remains lethal in the physical world.
 4. **NMS Overloading**: The explosion of raw boxes forces the CPU to calculate Intersection over Union (IoU) for every pair. The required operations scale quadratically:
