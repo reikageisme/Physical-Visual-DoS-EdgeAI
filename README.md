@@ -24,7 +24,7 @@ By integrating a **Deterministic Saliency-Guided Mechanism** with a **Black-box 
 | **Attack Goal** | Deceive the classifier (Integrity) | **Crash the hardware (Availability)** |
 | **Optimization** | White-box Gradient Descent | **Black-box Genetic Algorithm (GA)** |
 | **Space Search** | Random or Center-fixed | **Dynamic Saliency-Guided Targeting** |
-| **Target Vulnerability** | Loss Function (Cross-Entropy) | **NMS Complexity Bottleneck** `O(N²)` |
+| **Target Vulnerability** | Loss Function (Cross-Entropy) | **NMS Complexity Bottleneck** $\mathcal{O}(N^2)$ |
 | **Deployment** | Virtualized / Abstract | **Direct Bare-Metal Execution (Native OS)** |
 
 ---
@@ -33,16 +33,14 @@ By integrating a **Deterministic Saliency-Guided Mechanism** with a **Black-box 
 
 The attack pipeline executes the following mathematical and algorithmic steps:
 
-1. **Saliency-Guided Localization**: The system computes a Gradient-based Saliency Map `S(x)` and applies Gaussian Blur to find the most sensitive region <code>(u<sup>*</sup>, v<sup>*</sup>)</code> on the frame to place the patch, drastically reducing the GA search space.
-2. **Black-box Evolution**: The Genetic Algorithm evolves the patch to maximize the number of generated raw boxes (`N_active`) with high confidence (`C_i > τ`).
+1. **Saliency-Guided Localization**: The system computes a Gradient-based Saliency Map $S(x)$ and applies Gaussian Blur to find the most sensitive region $(u^*, v^*)$ on the frame to place the patch, drastically reducing the GA search space.
+2. **Black-box Evolution**: The Genetic Algorithm evolves the patch to maximize the number of generated raw boxes ($N_{active}$) with high confidence ($C_i > \tau$).
 3. **EOT Integration**: Expectation Over Transformation (EOT) is applied (rotation, scaling, noise) to ensure the patch remains lethal in the physical world.
 4. **NMS Overloading**: The explosion of raw boxes forces the CPU to calculate Intersection over Union (IoU) for every pair. The required operations scale quadratically:
-   
-   <p align="center">
-   <img src="https://render.githubusercontent.com/render/math?math=\color{white}Operations=\frac{N_{active}\times(N_{active}-1)}{2}">
-   </p>
 
-   *This massive mathematical overhead instantly throttles the ARM CPU of the Edge device.*
+$$ \text{Operations} = \frac{N_{active} \times (N_{active} - 1)}{2} $$
+
+*This massive mathematical overhead instantly throttles the ARM CPU of the Edge device.*
 
 ---
 
@@ -121,7 +119,7 @@ python utils/plot_results.py
 ## 📊 Performance Metrics (Raspberry Pi 4B - 8GB)
 Empirical evidence of the physical attack's impact on Edge-AI hardware:
 
-| System State | Raw Boxes (`N_active`) | IoU Operations/Frame | CPU Load | FPS Impact |
+| System State | Raw Boxes ($N_{active}$) | IoU Operations/Frame | CPU Load | FPS Impact |
 |---|---|---|---|---|
 | Clean Stream | ~ 15 - 25 | ~ 300 | 20% - 25% | 30 FPS (Smooth) |
 | Under Attack | 300 (Max) | ~ 44,850 | 100% (Overload) | < 2 FPS (Frozen) |
