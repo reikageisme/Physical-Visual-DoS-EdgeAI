@@ -2,7 +2,6 @@
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-MobileNet%2FYOLO-EE4C2C?logo=pytorch&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-Raspberry%20Pi%204-C51A4A?logo=raspberrypi&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
@@ -25,8 +24,8 @@ By integrating a **Deterministic Saliency-Guided Mechanism** with a **Black-box 
 | **Attack Goal** | Deceive the classifier (Integrity) | **Crash the hardware (Availability)** |
 | **Optimization** | White-box Gradient Descent | **Black-box Genetic Algorithm (GA)** |
 | **Space Search** | Random or Center-fixed | **Dynamic Saliency-Guided Targeting** |
-| **Target Vulnerability** | Loss Function (Cross-Entropy) | **NMS Complexity Bottleneck** $\mathcal{O}(N^2)$ |
-| **Deployment** | Static Python Scripts | **Dockerized Microservice & Web Dashboard** |
+| **Target Vulnerability** | Loss Function (Cross-Entropy) | **NMS Complexity Bottleneck** `O(N²)` |
+| **Deployment** | Virtualized / Abstract | **Direct Bare-Metal Execution (Native OS)** |
 
 ---
 
@@ -34,34 +33,34 @@ By integrating a **Deterministic Saliency-Guided Mechanism** with a **Black-box 
 
 The attack pipeline executes the following mathematical and algorithmic steps:
 
-1. **Saliency-Guided Localization**: The system computes a Gradient-based Saliency Map $S(x)$ and applies Gaussian Blur to find the most sensitive region $(u^*, v^*)$ on the frame to place the patch, drastically reducing the GA search space.
-2. **Black-box Evolution**: The Genetic Algorithm evolves the patch to maximize the number of generated raw boxes ($N_{active}$) with high confidence ($C_i > \tau$).
+1. **Saliency-Guided Localization**: The system computes a Gradient-based Saliency Map `S(x)` and applies Gaussian Blur to find the most sensitive region <code>(u<sup>*</sup>, v<sup>*</sup>)</code> on the frame to place the patch, drastically reducing the GA search space.
+2. **Black-box Evolution**: The Genetic Algorithm evolves the patch to maximize the number of generated raw boxes (`N_active`) with high confidence (`C_i > τ`).
 3. **EOT Integration**: Expectation Over Transformation (EOT) is applied (rotation, scaling, noise) to ensure the patch remains lethal in the physical world.
 4. **NMS Overloading**: The explosion of raw boxes forces the CPU to calculate Intersection over Union (IoU) for every pair. The required operations scale quadratically:
-   $$Operations = \frac{N_{active} \times (N_{active} - 1)}{2}$$
+   
+   <p align="center">
+   <img src="https://render.githubusercontent.com/render/math?math=\color{white}Operations=\frac{N_{active}\times(N_{active}-1)}{2}">
+   </p>
+
    *This massive mathematical overhead instantly throttles the ARM CPU of the Edge device.*
 
 ---
 
 ## 🏗 Project Structure
 
-Refactored for modularity, MVC architecture, and Docker support:
+Refactored for optimal physical hardware profiling (no virtualization overhead):
 
 ```text
 Physical-Visual-DoS-EdgeAI/
-├── Dockerfile              # Container configuration (ARM64 optimized)
-├── docker-compose.yml      # Service orchestration
 ├── requirements.txt        # Python dependencies
 ├── attack/                 # [CORE] Genetic Algorithm implementation
 ├── core/                   # [CORE] EOT transforms, Fitness functions, Victim Model
-├── web/                    # [WEB] Flask Server & Interface
-│   ├── app.py              # Flask entry point
-│   └── templates/          # HTML Dashboard
-├── utils/                  # [TOOLS] Camera diagnostic and monitoring scripts
+├── logs/                   # [DATA] Profiling metrics (CPU/FPS logs in CSV)
+├── utils/                  # [TOOLS] Profiling chart generators & camera utils
 ├── docs/                   # Documentation & Flowcharts
 ├── outputs/                # Generated adversarial patches (.png)
 ├── main_train.py           # Entry point: Train the physical patch via GA
-└── test_physical_dos.py    # Entry point: Local camera/dashboard testing
+└── test_physical_dos.py    # Entry point: Local camera testing & Live HUD
 ```
 
 ---
@@ -70,65 +69,71 @@ Physical-Visual-DoS-EdgeAI/
 
 ### Prerequisites
 * **Hardware:** Raspberry Pi 4 (8GB RAM recommended) or any Linux/Windows PC.
-* **Camera:** IP Camera (MJPEG Stream) or USB Webcam (V4L2).
-* **Software:** Docker Engine & Docker Compose.
+* **Camera:** IP Camera (MJPEG Stream), USB Webcam, or DroidCam.
+* **Note on Profiling:** This project runs strictly on **bare-metal python** without Docker. Virtualization alters CPU load measurements and thermal constraints, making DoS research metrics unrealistic.
 
-### Method 1: Docker Microservice (Recommended for Raspberry Pi)
-This method automatically handles all dependencies and sets up the Web Dashboard.
-
+### Installation
 ```bash
 # 1. Clone the repository
 git clone https://github.com/reikageisme/Physical-Visual-DoS-EdgeAI.git
 cd Physical-Visual-DoS-EdgeAI
 
-# 2. Build and Run the container
-docker-compose up --build -d
-
-# 3. View logs (Observe CPU throttling in real-time)
-docker-compose logs -f
-```
-
-### Method 2: Manual Installation (For PC/Laptop Simulation)
-Suitable for offline patch training and local testing.
-
-```bash
-# 1. Create a virtual environment
+# 2. Create a virtual environment (Optional but Recommended)
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 
-# 2. Install dependencies
+# 3. Install dependencies
 pip install -r requirements.txt
-
-# 3. Test Physical Attack (View HUD locally)
-python test_physical_dos.py
 ```
 
 ---
 
-## 🎮 Web Dashboard Interface
-When deployed via Docker, access the control center at:
-👉 `http://localhost:5000` (or `http://<RASPBERRY_PI_IP>:5000`)
+## 💻 Usage
 
-**Dashboard Features:**
-* **Live Surveillance Feed:** Displays the real-time stream from the Edge Camera.
-* **Telemetry Panel:** Live tracking of FPS, CPU Load, and RAM Usage.
-* **Attack Status:** Visual indicator turning RED when the NMS Bottleneck is triggered and $N_{active}$ exceeds the safe threshold.
+### 1. Generate the Sponge Patch
+Run the training script to evolve the patch offline using the Genetic Algorithm. You can customize the population, generations, and patch size:
+```bash
+python main_train.py --pop 50 --gen 100 --size 64
+```
+*The optimally generated patch will be saved in `outputs/`.*
+
+### 2. Test Physical Attack (Live HUD)
+To observe the NMS bottleneck effect on a local machine via Webcam or DroidCam:
+
+**A. Baseline Check (No Attack)**
+```bash
+python test_physical_dos.py --cam 0
+```
+
+**B. Digital Overlay Attack (Apply patch implicitly in the video stream)**
+```bash
+python test_physical_dos.py --cam 0 --patch outputs/sponge_patch_g100_p50.png
+```
+
+### 3. Generate Evaluation Charts
+After running the DoS test, the system auto-logs hardware state via `utils/monitor.py`. Generate the final NCKH chart:
+```bash
+python utils/plot_results.py
+```
 
 ---
 
 ## 📊 Performance Metrics (Raspberry Pi 4B - 8GB)
 Empirical evidence of the physical attack's impact on Edge-AI hardware:
 
-| System State | Raw Boxes ($N_{active}$) | IoU Operations/Frame | CPU Load | FPS Impact |
+| System State | Raw Boxes (`N_active`) | IoU Operations/Frame | CPU Load | FPS Impact |
 |---|---|---|---|---|
 | Clean Stream | ~ 15 - 25 | ~ 300 | 20% - 25% | 30 FPS (Smooth) |
-| Under Attack (Visual DoS) | 300 (Max) | ~ 44,850 | 100% (Overload) | < 2 FPS (Frozen) |
+| Under Attack | 300 (Max) | ~ 44,850 | 100% (Overload) | < 2 FPS (Frozen) |
+
+*The attack forces the system into an unstable state, effectively blinding the surveillance system.*
 
 ---
 
-## 👨‍💻 Author
-**ReiKage (Phạm Tuấn Anh)**
-*Information Security Researcher | Proud member of CTF Team: 6h4T 9pT pR0*
+## 👨‍💻 Authors & Acknowledgments
+*   **Reikage**: Core Algorithm (Saliency Logic), Genetic Optimization.
+*   **BaoZ**: IoT Architecture, Dockerization, Web Interface.
+
 
 *Project conducted under the Scientific Research Program (NCKH) 2025-2026.*
 
