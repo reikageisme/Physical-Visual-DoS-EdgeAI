@@ -1,44 +1,87 @@
-# Sponge Edge-AI Attack (NCKH Project)
+# 🧽 Physical Visual DoS on Edge-AI 
 
-Dự án Nghiên cứu Khoa học (NCKH): Đánh giá lỗ hổng bảo mật của mô hình Edge-AI (SSDLite MobileNetV3) đối với hình thức tấn công năng lượng bằng mảng dữ liệu đặc biệt (Sponge Data).
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-ee4c2c?logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8?logo=opencv&logoColor=white)](https://opencv.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Tổng quan (Overview)
-Các thiết bị Edge-AI (như Raspberry Pi, Jetson Nano, hoặc Camera AI) thường bị giới hạn về xử lý (CPU/RAM/Tản nhiệt). Thuật toán này sử dụng **Giải thuật Di truyền (Genetic Algorithm)** để sinh ra các miếng dán vật lý (Sponge Patches). Khi Camera ghi nhận miếng dán này, mô hình phát hiện vật thể (SSD) thay vì lọc bỏ các Hộp giới hạn (Bounding Boxes) sẽ bị ép phải sinh ra hàng ngàn Hộp. Sự quá tải phép tính này dẫn đến:
-1. **CPU đạt 100%** và nghẽn cổ chai.
-2. **Nhiệt độ chip tăng**, dẫn đến Thermal Throttling.
-3. **Tụt khung hình (FPS Drop)**, làm sập hệ thống xử lý thời gian thực.
+> **A physical Visual Denial-of-Service (DoS) attack framework targeting Edge-AI object detectors via NMS overloading using Black-box Genetic Algorithms.**
 
-## Cài đặt mô trường
+![System Architecture](docs/Sponge_GA_Flowchart.png)
+
+## 📖 Overview
+While most physical adversarial attacks focus on **Misclassification** (tricking the AI into seeing the wrong object), this research explores a critical resource-depletion vulnerability: **Visual Denial-of-Service (Visual DoS)**.
+
+By generating a highly optimized "Sponge Patch", we force the target Object Detection model (e.g., MobileNet-SSD, YOLO) to generate thousands of raw bounding boxes simultaneously. This sudden explosion of data creates a severe computational bottleneck at the **Non-Maximum Suppression (NMS)** filtering stage (which has $\mathcal{O}(N^2)$ complexity), ultimately maxing out the CPU and freezing the real-time camera stream on resource-constrained Edge devices (like Raspberry Pi).
+
+## ✨ Key Features
+* **Strict Black-box Attack:** Does not require access to the model's architecture, weights, or gradients.
+* **Saliency-Guided Evolution:** Uses Saliency Maps to locate the most vulnerable coordinates in the frame, drastically reducing the search space for the Genetic Algorithm.
+* **Physical Deployment (EOT):** Incorporates Expectation Over Transformation (EOT) to ensure the patch remains lethal even when printed on paper and captured through real-world IP cameras (handling angle, lighting, and compression noise).
+* **Hardware-Crashing Impact:** Proven to push ARM-based CPUs to 100% load, causing severe FPS drops ($\approx 1$ FPS) on Edge-AI systems.
+
+## 📂 Repository Structure
+```text
+Physical-Visual-DoS-EdgeAI/
+├── attack/                 # Core Genetic Algorithm implementation
+├── core/                   # EOT transforms, Fitness functions, Victim Model
+├── docs/                   # System architecture flowcharts and diagrams
+├── logs/                   # Profiling metrics (CPU/FPS logs)
+├── outputs/                # Generated adversarial patches (.png)
+├── utils/                  # Camera diagnostic and monitoring scripts
+├── main_train.py           # Entry point: Train the physical patch via GA
+├── test_physical_dos.py    # Entry point: Test attack on PC/Laptop
+├── test_headless_pi.py     # Entry point: Deploy attack on Raspberry Pi
+└── requirements.txt        # Python dependencies
+```
+
+## 🚀 Installation
+Clone this repository:
+```bash
+git clone https://github.com/reikageisme/Physical-Visual-DoS-EdgeAI.git
+cd Physical-Visual-DoS-EdgeAI
+```
+Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-## Các Bước Chạy Thực Nghiệm
-
-### 1. Khởi chạy GA tạo Sponge Patch
-Bạn có thể cấu hình số thế hệ (Generations) và quần thể (Population) qua các `arguments` trên Terminal:
+## 💻 Usage
+### 1. Generate the Sponge Patch
+Run the training script to evolve the patch offline using the Saliency-guided Genetic Algorithm.
 ```bash
-python main_train.py --pop 50 --gen 100 --size 64
+python main_train.py
 ```
-*Kết quả sẽ được xuất ra thư mục `outputs/` dưới dạng ảnh `sponge_patch_g100_p50.png`*
+*The optimized patch will be saved in `outputs/sponge_patch_final.png`.*
 
-### 2. Thực nghiệm Physical DoS Test
-Xài webcam cá nhân hoặc laptop camera để giả lập chạy xử lý AI thời gian thực (được giới hạn khung hình nhân tạo ~10 FPS để phản ánh Edge Device).
-
-#### A. Chế độ Bình thường (Chạy kiểm tra gốc)
+### 2. Test Physical Attack (PC/Laptop Simulator)
+To observe the NMS bottleneck effect on a local machine via Webcam or DroidCam:
 ```bash
-python test_physical_dos.py --cam 0
+python test_physical_dos.py
 ```
+*Note: Point your camera at a blank wall to measure the Baseline, then point it at the printed/displayed patch to observe the explosion of Raw Boxes.*
 
-#### B. Chế độ Áp Patch số (Digital Overlay Attack)
-Không cần in ra giấy, bạn áp thẳng Patch vừa Train lên góc camera để xem hệ thống gục ngã ra sao:
+### 3. Edge-AI Hardware Profiling (Raspberry Pi)
+Deploy the headless script on a Raspberry Pi to monitor real-time CPU throttling and FPS drops:
 ```bash
-python test_physical_dos.py --cam 0 --patch outputs/sponge_patch_g100_p50.png
+python test_headless_pi.py
 ```
 
-### 3. Trực quan hóa báo cáo NCKH (Đồ thị)
-Trong quá trình test DoS, thư mục `logs/` sẽ tự ghi nhận file CSV theo thời gian thực (FPS, CPU load, RAM, Temp). Bạn chạy tệp sau để vẽ thành biểu đồ đưa vào Bài báo cáo NCKH:
-```bash
-python utils/plot_results.py
-```
-*Script sẽ tự tìm file CSV mới nhất trong thư mục log và kết xuất file ảnh `.png` gồm: Biểu đồ tụt FPS và Biểu đồ nghẽn CPU.*
+## 📊 Experimental Results
+When tested on a Raspberry Pi 4B (8GB) processing a live IP Camera stream, the physical Sponge Patch successfully triggered the NMS vulnerability:
+
+| State | Raw Boxes ($N_{active}$) | IoU Operations/Frame | CPU Load | FPS |
+|---|---|---|---|---|
+| Clean Stream | ~ 15 | ~ 105 | 20% - 25% | 30 FPS |
+| Under Attack | 300 (Max) | ~ 44,850 | 100% (Overload) | < 2 FPS |
+
+*The attack forces the system into an unstable state, effectively blinding the surveillance system.*
+
+## 🤝 Author
+**ReiKage (Phạm Tuấn Anh)** 
+* *Information Security Researcher* | *Proud member of CTF Team: 6h4T 9pT pR0*
+
+## 📜 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+**Disclaimer:** This project is strictly for educational and academic research purposes. Do not use this framework against production surveillance systems without explicit authorization.
