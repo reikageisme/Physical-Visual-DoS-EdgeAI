@@ -6,3 +6,5 @@ psutil>=5.9.0
 pandas>=2.0.0
 matplotlib>=3.7.0
 Flask>=3.0.0
+kornia>=0.7.0
+

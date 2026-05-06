@@ -9,10 +9,10 @@ from attack.genetic_algo import SpongeGA
 
 def main():
     parser = argparse.ArgumentParser(description="Khởi chạy Thuật toán GA tạo Sponge Patch")
-    # THEO YÊU CẦU: Ép xung siêu tốc - giảm số lượng khảo sát thừa thãi
-    parser.add_argument('--pop', type=int, default=64, help="Kích thước lô nhỏ, siêu tốc")
-    parser.add_argument('--gen', type=int, default=30, help="Số thế hệ tiến hóa siêu nhanh (mặc định 30)")
-    parser.add_argument('--size', type=int, default=500, help="Kích thước pixel của miếng dán (mặc định 500)")
+    # THEO YÊU CẦU: Tối ưu cho Laptop (Giảm nhẹ tài nguyên)
+    parser.add_argument('--pop', type=int, default=16, help="Kích thước quần thể nhỏ, phù hợp cho Laptop (mặc định 16)")
+    parser.add_argument('--gen', type=int, default=10, help="Số thế hệ tiến hóa nhỏ để kiểm thử nhanh trên Laptop (mặc định 10)")
+    parser.add_argument('--size', type=int, default=150, help="Kích thước pixel của miếng dán giảm xuống cho RAM hạn chế (mặc định 150)")
     args = parser.parse_args()
 
     print(f"=== HỆ THỐNG TẠO MIẾNG DÁN SPONGE PATCH (VISUAL DoS) ===")
