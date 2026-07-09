@@ -1,162 +1,179 @@
-# Sponge Patch — Physical Visual DoS on Edge-AI Systems
+# Sponge Patch — Physical Visual Denial-of-Service on Edge-AI Systems
 
 <p align="center">
-  <a href="https://github.com/reikageisme/Physical-Visual-DoS-EdgeAI/blob/main/README.md">🇻🇳 Tiếng Việt</a> | 
-  <a href="https://github.com/reikageisme/Physical-Visual-DoS-EdgeAI/blob/main/README.en.md">🇺🇸 English</a>
+  <a href="https://github.com/reikageisme/Physical-Visual-DoS-EdgeAI/blob/main/README.md">🇺🇸 English</a> | 
+  <a href="https://github.com/reikageisme/Physical-Visual-DoS-EdgeAI/blob/main/README.vi.md">🇻🇳 Tiếng Việt</a>
 </p>
 
 ---
 
-### Tổng quan (Overview)
-> **Mô hình Mối đe dọa (Threat Model):** Gray-box (truy cập điểm số trước NMS - pre-NMS score access)  
-> **Phương pháp Tấn công (Attack):** Thuật toán Di truyền (Genetic Algorithm) + Tối ưu hóa Patch dựa trên độ nổi bật (Saliency-guided)  
-> **Mục tiêu (Target):** YOLOv8n trên Edge Server (mô phỏng / thực tế)
+## 📖 Project Overview
 
-### 🚀 Bắt đầu nhanh (Quick Start)
+**Sponge Patch** is a research framework designed to evaluate and demonstrate **Physical Visual Denial-of-Service (DoS)** attacks against Edge-AI object detection systems, specifically targeting YOLOv8n. Unlike conventional adversarial attacks that aim to reduce model accuracy (e.g., hiding objects or misclassifying them), a Visual DoS attack aims to exhaust the computational resources of the victim model. 
 
-#### 1. Cài đặt thư viện phụ thuộc
+By utilizing a **Saliency-Guided Genetic Algorithm (GA)**, we generate physical adversarial patches that induce a massive number of false positive bounding boxes. When the victim model processes these inputs, the post-processing step—specifically Non-Maximum Suppression (NMS)—is overwhelmed, causing significant latency spikes. On resource-constrained edge devices, this leads to frame drops, system unresponsiveness, and a complete Denial of Service.
+
+### Key Capabilities and Features
+- **Saliency-Guided Optimization**: Focuses the Genetic Algorithm on highly salient regions to maximize patch efficiency and visual stealth.
+- **Physical-World Robustness**: Employs Expectation Over Transformation (EOT) to ensure the patch remains effective when printed and captured by real-world cameras under varying angles, lighting, and noise.
+- **Comprehensive Edge Simulation**: Profiles the attack's impact on various hardware constraints, simulating environments like Raspberry Pi, Intel NUC, and Jetson Nano.
+- **Robust Evaluation Suite**: Includes statistical multi-seed experiments, ablation studies, and baseline comparisons (Random, Checkerboard).
+
+---
+
+## 🎯 Threat Model & Attack Scenarios
+
+Understanding the attacker's capabilities is crucial. This project operates primarily under a **Gray-box** threat model for patch generation, while simulating real-world deployment where the attacker only has physical access to the camera's field of view.
+
+| Threat Model Level | Attacker Access | Component / Usage in this Framework |
+| :--- | :--- | :--- |
+| **Gray-box (Primary)** | Pre-NMS raw confidence scores and bounding box coordinates from a local proxy model. No access to internal gradients. | Used by `main_train.py` and the Genetic Algorithm to optimize the patch without backpropagation. |
+| **Observable Black-box** | Post-NMS detections and overall inference latency measurements. | Used by `ObservableFitness` in `sponge_fitness.py` for profiling the actual impact on the edge device. |
+| **White-box (Baseline)** | Full access to model architecture and gradients. | Used by `fast_train.py` (PGD) to establish a theoretical upper bound for the attack. |
+
+---
+
+## 🚀 Quick Start & Installation
+
+### 1. Prerequisites
+Ensure you have Python 3.9+ installed. Clone the repository and install the required dependencies:
+
 ```bash
+git clone https://github.com/reikageisme/Physical-Visual-DoS-EdgeAI.git
+cd Physical-Visual-DoS-EdgeAI
 pip install -r requirements.txt
 ```
 
-#### 2. Chạy mô phỏng toàn bộ (Không cần camera)
+### 2. Run the Full Pipeline Simulation
+You can simulate the entire attack pipeline (from training the patch to evaluating its impact on NMS latency) without needing a physical camera.
+
 ```bash
-# Demo nhanh (~2 phút)
+# Run a quick demonstration (~2 minutes)
 python simulate_edge_server.py --quick
 
-# Thử nghiệm đầy đủ: Huấn luyện GA patch + test cả 2 kịch bản (sạch và bị tấn công)
+# Run a full experiment: trains a GA patch and tests both clean and attack scenarios
 python simulate_edge_server.py --frames 200 --train --pop 20 --gen 30
 
-# Mô phỏng giới hạn phần cứng của Raspberry Pi
+# Simulate specific hardware constraints (e.g., Raspberry Pi)
 python simulate_edge_server.py --frames 200 --train --edge-profile raspberry_pi
 
-# Sử dụng patch đã huấn luyện từ trước
+# Evaluate using a pre-trained patch
 python simulate_edge_server.py --frames 200 --patch outputs/sponge_patch.png
 ```
 
-#### 3. Chạy các thử nghiệm độc lập
+---
+
+## 🔬 Detailed Experimentation Suite
+
+The framework provides independent modules to rigorously evaluate the attack's effectiveness, robustness, and potential defenses.
+
+### Statistical Rigor & Convergence
+To ensure the attack is consistent, we provide a multi-seed evaluation script that calculates the mean and standard deviation across multiple optimization runs.
 ```bash
-# Đánh giá thống kê đa hạt giống (10 seeds, trung bình ± độ lệch chuẩn)
 python experiments/multi_seed_experiment.py --n-seeds 10 --pop 20 --gen 30
+```
 
-# Ablation study: Kích thước patch từ 1% đến 16%
+### Ablation Studies
+Analyze how the physical size of the adversarial patch correlates with the resulting NMS latency spike.
+```bash
 python experiments/ablation_patch_size.py
+```
 
-# So sánh với các baseline (random / checkerboard / sponge)
+### Baseline Comparisons
+Compare the optimized Sponge Patch against standard control patches (Random noise and Checkerboard patterns) to validate the effectiveness of the Genetic Algorithm.
+```bash
 python experiments/baseline_comparison.py --patch outputs/sponge_patch.png
+```
 
-# Đánh giá phòng thủ (Ngưỡng confidence / Giới hạn max_det)
+### Defense Evaluations
+Test the patch against standard mitigation techniques, such as raising the confidence threshold or capping the maximum allowed detections (`max_det`).
+```bash
 python experiments/defense_evaluation.py --patch outputs/sponge_patch.png
 ```
 
-#### 4. Chỉ huấn luyện Patch (Lưu patch để sử dụng sau)
+---
+
+## 🎛️ Training & Real-world Testing
+
+### Standalone Patch Training
+If you only want to generate a patch for later use (e.g., to print it out), you can run the standalone training script.
+
 ```bash
-# Huấn luyện GA patch (64×64px, ~4% diện tích khung hình 320×320)
+# Train a 64x64px patch (~4% of a 320x320 frame)
 python main_train.py --size 64 --pop 30 --gen 50 --seed 42
 
-# Huấn luyện theo tỷ lệ phần trăm diện tích
+# Train using an area percentage relative to the frame
 python main_train.py --area-pct 4.0 --resolution 320 --seed 42
-
-# Huấn luyện với thuật toán lai ghép khác
-python main_train.py --size 64 --pop 30 --gen 50 --crossover uniform
 ```
 
-#### 5. Thử nghiệm với Camera thực tế
+### Testing with a Physical Camera
+Test the generated patch in a real-world scenario using your webcam.
+
 ```bash
-# Baseline sạch (không bị tấn công)
+# Run the clean baseline (no attack)
 python test_physical_dos.py --scenario clean
 
-# Tấn công bằng cách chèn patch kỹ thuật số
+# Run the digital overlay attack (projects the patch onto the camera feed)
 python test_physical_dos.py --patch outputs/sponge_patch.png --scenario digital_attack
 
-# Mô phỏng không giao diện (headless, không cần camera)
+# Run a headless simulation (bypasses the camera, uses synthetic frames)
 python test_physical_dos.py --simulate --frames 200 --scenario digital_attack
 ```
 
-#### 6. Vẽ biểu đồ kết quả
+---
+
+## 📊 Hardware Profiling & Results Visualization
+
+### Edge Hardware Profiles
+The framework can artificially throttle resources to simulate deploying YOLOv8n on constrained hardware.
+
+| Profile Name | CPU Threads | GPU Enabled | Target Simulation |
+| :--- | :--- | :--- | :--- |
+| `raspberry_pi` | 1 | ❌ | Raspberry Pi 4 |
+| `intel_nuc` | 2 | ❌ | Intel NUC Edge Server |
+| `jetson_nano` | 2 | ✅ | NVIDIA Jetson Nano |
+| `full_server` | All Available | ✅ | Unrestricted Desktop / Server |
+
+### Visualizing Results
+After running simulations, telemetry data is saved in the `logs/` directory. Use the plotting utility to visualize performance degradation.
+
 ```bash
-# Vẽ biểu đồ từ log mới nhất
+# Plot the most recent simulation log
 python utils/plot_results.py
 
-# Vẽ biểu đồ với phân tích chi tiết độ trễ (latency breakdown)
+# Plot detailed latency breakdowns (Pre-processing vs. Forward Pass vs. NMS)
 python utils/plot_results.py --file logs/resource_log_xxx.csv --breakdown
-
-# Vẽ biểu đồ hội tụ đa hạt giống
-python utils/plot_results.py --multi-seed outputs/multi_seed/
 ```
 
-### 💻 Cấu hình Phần cứng Edge (Edge Hardware Profiles)
+---
 
-| Profile | Threads (Luồng) | GPU | Thiết bị mô phỏng |
-|---|---|---|---|
-| `raspberry_pi` | 1 | ❌ | Raspberry Pi 4 |
-| `intel_nuc` | 2 | ❌ | Intel NUC |
-| `jetson_nano` | 2 | ✅ | Jetson Nano |
-| `full_server` | all | ✅ | Full Edge Server |
+## 📁 Project Architecture
 
-```bash
-# Ví dụ chạy với profile raspberry_pi
-python simulate_edge_server.py --edge-profile raspberry_pi --frames 200 --train
-```
-
-### 📁 Cấu trúc Thư mục (Project Structure)
+A brief overview of the codebase to help you navigate:
 
 ```text
 Physical-Visual-DoS-EdgeAI/
-├── simulate_edge_server.py       # ← MAIN: Mô phỏng toàn bộ pipeline
-├── main_train.py                 # Huấn luyện Patch (chỉ dùng GA)
-├── fast_train.py                 # Huấn luyện Patch (dùng PGD gradient)
-├── test_physical_dos.py          # Test camera / mô phỏng headless
+├── simulate_edge_server.py       # Main entry point for end-to-end simulation
+├── main_train.py                 # Standalone script for GA patch optimization
+├── test_physical_dos.py          # Real-world camera and headless testing
 │
 ├── core/
-│   ├── victim_model.py           # Wrapper YOLOv8 (gray-box + NMS profiling)
-│   ├── sponge_fitness.py         # Hàm Fitness: GrayBox + ObservableFitness
-│   └── eot_transforms.py         # Kỹ thuật Data Augmentation EOT (Kornia)
+│   ├── victim_model.py           # YOLOv8 wrapper with NMS profiling hooks
+│   ├── sponge_fitness.py         # Fitness functions evaluating GrayBox/BlackBox latency
+│   └── eot_transforms.py         # Kornia-based EOT augmentations for physical robustness
 │
 ├── attack/
-│   └── genetic_algo.py           # Saliency-Guided GA (seed + hội tụ)
+│   └── genetic_algo.py           # The Saliency-Guided Genetic Algorithm implementation
 │
-├── experiments/
-│   ├── multi_seed_experiment.py  # Đánh giá tính thống kê (Major Issue 5)
-│   ├── ablation_patch_size.py    # Thử nghiệm kích thước patch (Major Issue 4)
-│   ├── baseline_comparison.py    # So sánh baseline (Major Issue 9)
-│   └── defense_evaluation.py     # Đánh giá phòng thủ (Major Issue 10)
+├── experiments/                  # Scripts for statistical validation and ablation
+│   ├── multi_seed_experiment.py  
+│   ├── ablation_patch_size.py    
+│   ├── baseline_comparison.py    
+│   └── defense_evaluation.py     
 │
 ├── utils/
-│   ├── monitor.py                # Theo dõi tài nguyên + phân tích độ trễ
-│   └── plot_results.py           # Vẽ biểu đồ hiệu năng / độ trễ / multi-seed
+│   ├── monitor.py                # Hardware resource monitoring and latency tracking
+│   └── plot_results.py           # Data visualization for CSV logs
 │
-├── docs/
-│   ├── REVIEWED.md               # Chi tiết phản biện peer review
-│   └── BaoCaoKhoaHocAdversarialAttacks2.docx
-│
-└── outputs/                      # Thư mục lưu patches + kết quả chạy
-```
-
-### 🛡️ Làm rõ Mô hình Mối đe dọa (Threat Model Clarification)
-
-| Chế độ (Mode) | Quyền truy cập (Access) | Dùng bởi (Used by) |
-|---|---|---|
-| **Gray-box** | Lấy điểm confidence score gốc trước NMS (cần bản copy local của model) | `main_train.py`, Thuật toán Di truyền (GA) |
-| **Observable Black-box** | Chỉ nhận bounding box sau NMS + độ trễ | `ObservableFitness` trong `sponge_fitness.py` |
-| **White-box** | Truy cập toàn bộ gradient của model | `fast_train.py` (PGD) |
-
-### 📂 Kết quả Đầu ra (Outputs)
-
-Sau khi chạy mô phỏng, các file sau sẽ được tạo ra:
-
-```text
-outputs/
-├── sponge_patch_*.png            # Patch đã tối ưu (bản nhỏ + bản in A4)
-├── sponge_patch_A4_*.png         # Bản in A4 độ phân giải 300DPI
-├── ga_summary_*.json             # Thống kê GA sau mỗi lần chạy
-├── plot_clean.png                # Đồ thị hiệu suất lúc bình thường (clean)
-├── plot_attack.png               # Đồ thị hiệu suất lúc bị tấn công
-├── latency_clean.png             # Phân tách thời gian NMS/Forward/Preproc (clean)
-├── latency_attack.png            # Phân tách thời gian NMS/Forward/Preproc (attack)
-└── scenario_comparison.png       # Đồ thị so sánh 2 kịch bản
-
-logs/
-├── resource_log_clean_*.csv      # Log từng frame: FPS/CPU/RAM/NMS_ms
-└── resource_log_digital_attack_*.csv
+└── outputs/                      # Generated patches (including A4 printable versions) and plots
 ```
