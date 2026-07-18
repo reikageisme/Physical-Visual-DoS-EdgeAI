@@ -1,9 +1,32 @@
 import torch
+import torch.nn.functional as F
 import cv2
 import numpy as np
 import os
 from core.victim_model import VictimModel
 from core.eot_transforms import apply_eot
+
+"""
+===============================================================================
+WHITE-BOX VARIANT — Projected Gradient Descent (PGD) Patch Generation
+===============================================================================
+This script implements a WHITE-BOX attack that uses gradient backpropagation
+through the YOLO model to craft adversarial sponge patches. This is a
+fundamentally different threat model from the GRAY-BOX Genetic Algorithm (GA)
+approach in main_train.py, which is the primary contribution of the paper.
+
+Key differences:
+  - White-box:  Requires full model access (weights + architecture) to compute
+                gradients via backpropagation.
+  - Gray-box (main_train.py): Only requires query access to the model's
+                output (bounding boxes, confidence scores). This is the
+                paper's primary contribution using a Genetic Algorithm.
+
+The 500×500 patch size used here is for experimental comparison purposes only
+and does not represent the primary attack method. Refer to main_train.py and
+the paper's GA-based gray-box approach for the main methodology.
+===============================================================================
+"""
 
 class FastPGD:
     def __init__(self, patch_size=500, iterations=100, learning_rate=0.05):
@@ -44,7 +67,6 @@ class FastPGD:
             eot_images = apply_eot(adv_images)
             
             # YOLO yêu cầu kích thước chia hết cho 32 (720 -> 736) - Pad trực tiếp siêu tốc
-            import torch.nn.functional as F
             _, _, cur_H, cur_W = eot_images.shape
             new_H = ((cur_H + 31) // 32) * 32  
             new_W = ((cur_W + 31) // 32) * 32
@@ -85,12 +107,11 @@ class FastPGD:
         return patch.detach()
 
 if __name__ == "__main__":
-    print(f"[*] Đánh thức RTX 5090 PGD-Mode...")
+    print(f"[*] Đánh thức GPU PGD-Mode...")
     victim = VictimModel()
     
     # 💥 MỞ KHÓA GRADIENT CHO VICTIM MODEL 💥
     # Ta phải ghi đè bỏ hàm torch.no_grad() cũ trong Victim Model
-    orig_get_raw = victim.get_raw_predictions
     
     pgd = FastPGD(patch_size=500, iterations=50, learning_rate=0.03)
     best_patch = pgd.generate_patch(victim)

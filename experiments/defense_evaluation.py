@@ -27,7 +27,6 @@ import argparse
 import numpy as np
 import torch
 import cv2
-import torchvision.ops as ops
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt

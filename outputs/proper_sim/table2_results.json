@@ -1,0 +1,53 @@
+{
+  "clean": {
+    "scenario": "clean",
+    "n_frames": 120,
+    "fps_mean": 23.64,
+    "fps_std": 3.01,
+    "fps_min": 7.62,
+    "fps_max": 30.34,
+    "nms_ms_mean": 0.991,
+    "nms_ms_std": 0.558,
+    "nms_ms_max": 4.55,
+    "raw_boxes_mean": 47.3,
+    "raw_boxes_std": 17.8,
+    "raw_boxes_max": 95,
+    "forward_ms_mean": 42.0
+  },
+  "digital": {
+    "scenario": "digital",
+    "n_frames": 120,
+    "fps_mean": 19.17,
+    "fps_std": 6.8,
+    "fps_min": 3.95,
+    "fps_max": 28.81,
+    "nms_ms_mean": 1.919,
+    "nms_ms_std": 2.259,
+    "nms_ms_max": 12.459,
+    "raw_boxes_mean": 55.7,
+    "raw_boxes_std": 18.7,
+    "raw_boxes_max": 118,
+    "forward_ms_mean": 65.48
+  },
+  "physical": {
+    "scenario": "physical",
+    "n_frames": 120,
+    "fps_mean": 6.36,
+    "fps_std": 1.26,
+    "fps_min": 3.77,
+    "fps_max": 8.93,
+    "nms_ms_mean": 5.273,
+    "nms_ms_std": 2.104,
+    "nms_ms_max": 13.54,
+    "raw_boxes_mean": 53.4,
+    "raw_boxes_std": 17.6,
+    "raw_boxes_max": 105,
+    "forward_ms_mean": 157.71
+  },
+  "o2_analysis": {
+    "box_ratio": 1.178,
+    "nms_time_ratio": 1.936,
+    "o2_predicted": 1.387,
+    "pct_error": 39.6
+  }
+}

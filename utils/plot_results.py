@@ -142,18 +142,30 @@ def plot_latency_breakdown(csv_file: str, output_path: str = None):
 def plot_multi_seed(results_dir: str, output_path: str = None):
     """
     Plot mean ± std of fitness history across multiple seeds.
-    Expects CSV files named seed_*.csv in results_dir.
+    Reads seed_*.json (preferred) or seed_*.csv files from results_dir.
     """
-    files = sorted(glob.glob(os.path.join(results_dir, 'seed_*.csv')))
+    import json as _json
+
+    # Try JSON first (multi_seed_experiment.py outputs JSON)
+    json_files = sorted(glob.glob(os.path.join(results_dir, 'seed_*.json')))
+    csv_files_list = sorted(glob.glob(os.path.join(results_dir, 'seed_*.csv')))
+    files = json_files or csv_files_list
+
     if not files:
-        print(f"[-] No seed_*.csv files found in {results_dir}")
+        print(f"[-] No seed_*.json or seed_*.csv files found in {results_dir}")
         return
 
     all_fitness = []
     for f in files:
-        df = pd.read_csv(f)
-        if 'best_fitness' in df.columns:
-            all_fitness.append(df['best_fitness'].values)
+        if f.endswith('.json'):
+            with open(f) as fp:
+                data = _json.load(fp)
+            if 'fitness_history' in data:
+                all_fitness.append(np.array(data['fitness_history']))
+        else:
+            df = pd.read_csv(f)
+            if 'best_fitness' in df.columns:
+                all_fitness.append(df['best_fitness'].values)
 
     if not all_fitness:
         print("[-] No 'best_fitness' column found in seed files.")
@@ -254,7 +266,7 @@ def _save(fig, csv_path: str, output_path: str, suffix: str = ''):
     plt.close(fig)
 
 
-def get_latest_log(log_dir: str = 'logs') -> str | None:
+def get_latest_log(log_dir: str = 'logs'):
     files = glob.glob(os.path.join(log_dir, '*.csv'))
     return max(files, key=os.path.getctime) if files else None
 

@@ -111,7 +111,7 @@ class ObservableFitness:
         adv_image: torch.Tensor,
         conf_thresh: float = 0.25,
         n_queries: int = 3,
-    ) -> float:
+    ) -> tuple[float, dict]:
         """
         Compute observable fitness for a single adversarial image.
 

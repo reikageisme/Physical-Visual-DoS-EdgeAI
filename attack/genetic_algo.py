@@ -159,7 +159,7 @@ class SpongeGA:
 
         elif self.crossover_mode == 'two_point':
             p1 = torch.randint(0, self.patch_size, (1,)).item()
-            p2 = torch.randint(p1, self.patch_size, (1,)).item()
+            p2 = torch.randint(p1 + 1, self.patch_size + 1, (1,)).item()
             children = parents1.clone()
             children[:, :, p1:p2, :] = parents2[:, :, p1:p2, :]
 
@@ -280,7 +280,7 @@ class SpongeGA:
             # ── Mutation ───────────────────────────────────────────────────────
             mut_mask = (torch.rand(num_children, device=self.device) < self.mutation_rate
                        ).view(-1, 1, 1, 1)
-            noise    = torch.rand_like(children) * self.mutation_strength
+            noise    = (torch.rand_like(children) - 0.5) * 2 * self.mutation_strength
             mutated  = torch.clamp(children + noise, 0, 1)
             children = torch.where(mut_mask, mutated, children)
 

@@ -36,13 +36,13 @@ venv.bak/
 .idea/
 
 # Project specific
-logs/
-outputs/
 *.png
 !sponge_patch_final.png
-# Keep outputs dir but ignore content
+
+# Project outputs (keep directory structure)
 outputs/*
 !outputs/.gitkeep
-# Keep logs dir but ignore content
+!outputs/README.md
 logs/*
 !logs/.gitkeep
+!logs/README.md
