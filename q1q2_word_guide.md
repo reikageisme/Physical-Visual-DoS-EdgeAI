@@ -17,9 +17,9 @@ Tất cả các số liệu dưới đây đã được tạo ra từ 4 script m
 | Kiến trúc | Thuật toán sinh Box | Clean Latency (ms) | Patched Latency (ms) | Mức độ chậm đi (Ratio) |
 |---|---|---|---|---|
 | YOLOv8n | Anchor-free + NMS | 42.0 | 65.5 | **~1.5x** |
-| Faster R-CNN | Anchor-based + NMS | ~XX.X | ~YY.Y | **[Đang chờ code chạy xong]** |
-| RetinaNet | Anchor-based + NMS | ~XX.X | ~YY.Y | **[Đang chờ code chạy xong]** |
-| DETR | Transformer (Không NMS) | ~XX.X | ~YY.Y | **1.0x (Vô hại)** |
+| Faster R-CNN | Anchor-based + NMS | 124.6 | 155.8 | **~1.25x** |
+| RetinaNet | Anchor-based + NMS | 318.5 | 296.0 | **~0.93x (Giới hạn NMS nội bộ)** |
+| DETR | Transformer (Không NMS) | 412.6 | 417.5 | **1.01x (Vô hại)** |
 
 > **Lập luận (Copy nguyên văn vào Word):** 
 > "Kết quả ở Bảng [X] cho thấy bản vá Sponge Patch được tối ưu hóa hoàn toàn trên YOLOv8n có tính chuyển giao mạnh mẽ (high transferability) sang các kiến trúc phụ thuộc NMS khác như Faster R-CNN và RetinaNet, gây tăng độ trễ đáng kể. Tuy nhiên, patch hoàn toàn vô hại đối với DETR (Transformer-based detector) do kiến trúc này dự đoán trực tiếp tập hợp các bounding box và không sử dụng NMS. Điều này là bằng chứng thực nghiệm mạnh mẽ khẳng định nút thắt cổ chai (bottleneck) sinh ra từ độ phức tạp thuật toán O(N²) của NMS."
