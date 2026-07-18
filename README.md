@@ -136,18 +136,46 @@ pip install -r requirements.txt
 ## 7. Comprehensive Usage
 
 ### Step 1: Evolving the Patch (Training)
-Run the Genetic Algorithm to evolve a patch. You can modify hyperparameters directly via CLI.
+Run the Genetic Algorithm to evolve a patch. Three threat model variants are available:
 
 ```bash
-# Basic run with default 64x64 patch
+# Gray-box GA (primary method — uses pre-NMS scores)
 python main_train.py --pop 50 --gen 100 --size 64
 
-# Advanced run with ablation features (disabling saliency)
-python experiments/multi_seed_experiment.py --n-seeds 5 --pop 15 --gen 20 --size 64 --no-saliency
+# Strict Black-box GA (uses only latency/observable metrics)
+python train_blackbox.py --pop 20 --gen 30 --seed 42
+
+# White-box PGD (experimental — uses gradients, not primary method)
+python fast_train.py
 ```
 
-### Step 2: Evaluating the Patch Locally (Digital Injection)
-Test the generated patch on your local webcam. The script will dynamically overlay the patch and plot real-time CPU & FPS metrics.
+### Step 2: Multi-seed Statistical Evaluation
+Run the GA over multiple seeds for statistical rigor (mean ± std):
+
+```bash
+# Saliency-Guided GA: 10 seeds
+python experiments/multi_seed_experiment.py --n-seeds 10 --pop 20 --gen 25
+
+# Standard GA (no saliency): 10 seeds
+python experiments/multi_seed_experiment.py --n-seeds 10 --pop 20 --gen 25 --no-saliency --out-dir outputs/multi_seed_nosal
+
+# Random Search baseline: 10 seeds, 500 evals each
+python experiments/random_search.py --n-seeds 10 --n-evals 500
+```
+
+### Step 3: Baseline & Defense Evaluation
+Compare Sponge Patch against control textures and evaluate defense strategies:
+
+```bash
+# Baseline comparison (random noise, checkerboard, solid, gaussian)
+python experiments/baseline_comparison.py --patch outputs/sponge_patch.png --n-trials 30
+
+# Defense evaluation (conf_thresh sweep, max_det cap)
+python experiments/defense_evaluation.py --patch outputs/sponge_patch.png --n-trials 20
+```
+
+### Step 4: Evaluating the Patch Locally (Digital Injection)
+Test the generated patch on your local webcam:
 
 ```bash
 # Run baseline (clean stream)
@@ -157,8 +185,8 @@ python test_physical_dos.py --cam 0
 python test_physical_dos.py --cam 0 --patch outputs/sponge_patch.png
 ```
 
-### Step 3: Simulating the Headless Edge Server
-Deploy `web_simulation.py` on your Ubuntu Edge server. It launches an HTTP dashboard on port 5000 to monitor the physical camera feed and hardware telemetry remotely.
+### Step 5: Simulating the Headless Edge Server
+Deploy `web_simulation.py` on your Ubuntu Edge server. It launches an HTTP dashboard on port 5000:
 
 ```bash
 python web_simulation.py
@@ -182,9 +210,9 @@ The following table demonstrates the catastrophic failure of the Edge Server whe
 ### 8.2. Ablation Study: GA vs Saliency
 Integrating the Saliency Map constraints yields significantly higher fitness compared to Standard GA and Random Search, proving that structural targeting is required for Visual DoS.
 
-*   **Saliency-Guided GA:** `Best Fitness = 66.26 ± 5.45` | `Convergence Gen = 15.40 ± 3.44`
-*   **Standard GA:** `Best Fitness = 61.08 ± 4.28` | `Convergence Gen = 14.60 ± 2.97`
-*   **Random Search:** `Best Fitness = 15.30 ± 0.08` | `N/A`
+*   **Saliency-Guided GA:** `Best Fitness = 65.07 ± 4.67` | `Convergence Gen = 15.4 ± 3.8` (n=10 seeds)
+*   **Standard GA:** `Best Fitness = 64.02 ± 5.17` | `Convergence Gen = 14.7 ± 2.3` (n=10 seeds)
+*   **Random Search:** `Best Fitness = ~15.30 ± 0.08` | `N/A` (n=10 seeds)
 
 ---
 
@@ -192,13 +220,35 @@ Integrating the Saliency Map constraints yields significantly higher fitness com
 
 Below is a detailed breakdown of the critical components within the repository:
 
-*   `attack/genetic_algo.py`: Core implementation of the GA. Handles crossover, mutation, elite preservation, and the Saliency Map masking logic.
-*   `core/victim_model.py`: Wraps the PyTorch (MobileNet/YOLO) models. Exposes the Gray-box internal telemetry API (`get_raw_predictions`).
-*   `core/sponge_fitness.py`: The custom evaluation function that counts bounding boxes and calculates the fitness score.
-*   `core/eot_transforms.py`: Implements Expectation Over Transformation. Rotates and scales patches to simulate physical distance and camera angles.
-*   `experiments/`: Contains ablation study scripts to validate the necessity of each component (e.g., `multi_seed_experiment.py`, `random_search.py`).
-*   `proper_dos_sim.py`: An isolated benchmarking tool that forces the CPU to evaluate $\mathcal{O}(N^2)$ NMS computations to strictly measure millisecond latency.
-*   `utils/monitor.py`: Bare-metal hardware telemetry logger (reads `psutil` CPU/RAM metrics).
+### Core Modules
+*   `attack/genetic_algo.py`: Core GA implementation. Handles crossover, centered mutation (unbiased), elite preservation, and Saliency Map masking.
+*   `core/victim_model.py`: Wraps the PyTorch (MobileNet/YOLO) models. Exposes the Gray-box telemetry API (`get_raw_predictions`) and NMS profiling (`get_predictions_with_nms`).
+*   `core/sponge_fitness.py`: Custom fitness function for GA optimization. Includes both `calculate_sponge_fitness` (gray-box) and `ObservableFitness` (strict black-box, latency-based).
+*   `core/eot_transforms.py`: Expectation Over Transformation — rotations, blur, brightness shifts for physical robustness.
+
+### Training Scripts
+*   `main_train.py`: Primary gray-box GA training pipeline (64×64 patch on 320×320 input).
+*   `train_blackbox.py`: **[NEW]** Strict black-box variant using `ObservableFitness` (latency-only, no internal scores).
+*   `fast_train.py`: Experimental white-box PGD variant (uses gradients — separate threat model).
+
+### Experiment Scripts
+*   `experiments/multi_seed_experiment.py`: Multi-seed GA evaluation (10 seeds, mean ± std reporting).
+*   `experiments/random_search.py`: Random search baseline for fair comparison.
+*   `experiments/baseline_comparison.py`: Compares Sponge Patch vs control textures (random, checkerboard, solid, Gaussian).
+*   `experiments/defense_evaluation.py`: Evaluates defense strategies (conf_thresh sweep, max_det cap).
+*   `experiments/ablation_patch_size.py`: Patch size ablation (32, 48, 64, 96, 128 px).
+
+### Deployment & Simulation
+*   `proper_dos_sim.py`: Isolated $\mathcal{O}(N^2)$ NMS benchmarking tool with per-stage latency profiling.
+*   `simulate_edge_server.py`: Full edge server simulation with hardware telemetry.
+*   `web_simulation.py`: Flask web dashboard for remote monitoring.
+*   `test_physical_dos.py`: Local webcam digital injection tester.
+*   `test_headless_pi.py`: Headless Raspberry Pi / IP camera tester.
+
+### Utilities
+*   `utils/monitor.py`: Bare-metal hardware telemetry logger (`psutil` CPU/RAM).
+*   `utils/plot_results.py`: Visualization tools (multi-seed convergence, latency breakdown, scenario comparison).
+*   `utils/find_cam.py`: Camera device discovery utility.
 
 ---
 
