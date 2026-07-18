@@ -128,7 +128,7 @@ từ 47 lên 56 (tăng 18%)."
 |---|---|---|---|
 | Saliency-Guided GA | 65.07 ± 4.67 | 15.4 ± 3.8 | 10 |
 | Standard GA (no saliency) | 64.02 ± 5.17 | 14.7 ± 2.3 | 10 |
-| Random Search | (đang chạy 10 seeds) | N/A | 10 |
+| Random Search | 15.18 ± 0.51 | N/A | 10 |
 
 **Cải thiện của Saliency:** (65.07 − 64.02) / 64.02 × 100% = **1.6%**
 
