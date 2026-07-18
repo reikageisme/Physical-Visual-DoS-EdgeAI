@@ -1,0 +1,26 @@
+{
+  "0.01": {
+    "avg_final_detections": 3.0,
+    "avg_raw_candidates": 27.0
+  },
+  "0.05": {
+    "avg_final_detections": 3.0,
+    "avg_raw_candidates": 18.0
+  },
+  "0.1": {
+    "avg_final_detections": 2.0,
+    "avg_raw_candidates": 9.0
+  },
+  "0.25": {
+    "avg_final_detections": 0.0,
+    "avg_raw_candidates": 0.0
+  },
+  "0.5": {
+    "avg_final_detections": 0.0,
+    "avg_raw_candidates": 0.0
+  },
+  "0.75": {
+    "avg_final_detections": 0.0,
+    "avg_raw_candidates": 0.0
+  }
+}

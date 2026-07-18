@@ -1,0 +1,26 @@
+{
+  "yolov8n.pt": {
+    "has_nms": true,
+    "clean_latency_ms": 97.22379999948316,
+    "patched_latency_ms": 114.08584000018891,
+    "latency_ratio": 1.1734351904208997
+  },
+  "fasterrcnn_mobilenet_v3_large_fpn": {
+    "has_nms": true,
+    "clean_latency_ms": 387.4353799998062,
+    "patched_latency_ms": 388.0542200000491,
+    "latency_ratio": 1.0015972469635344
+  },
+  "retinanet_resnet50_fpn": {
+    "has_nms": true,
+    "clean_latency_ms": 3188.578039999993,
+    "patched_latency_ms": 2960.756080000283,
+    "latency_ratio": 0.9285506058101006
+  },
+  "detr_resnet50": {
+    "has_nms": false,
+    "clean_latency_ms": 412.69453999993857,
+    "patched_latency_ms": 417.5639400004002,
+    "latency_ratio": 1.0117990169738427
+  }
+}
