@@ -1,0 +1,13 @@
+{
+  "plotter_sha256": "66e6a3957d2f3355362aeb2585da94086aa1d93c0fcb6718e2932d92f467cf7e",
+  "source_aggregate_sha256": "c6f824bda0e9fbeae318c7013fecd17e4599d678ed12fb97bb6ce23eaa326249",
+  "source_manifest_sha256": "a8cd655557811c2bd1820223dc2e60df834490bf3a3c71fe099b5ed2649e8546",
+  "label_correction": "primary raw checkerboard key is (row+column)//4 modulo 2, i.e. diagonal stripes",
+  "data_changed": false,
+  "figure_sha256": {
+    "candidates_latency_bus.png": "76913f07bbda2c6d5e68d7ca8721d623aae0fb8e302d62901bf07c579c7eb9b6",
+    "candidates_latency_zidane.png": "49b47c926d85e6158bda19546f78c07ee1a376f473e4de447d44344549e1bcb7",
+    "convergence_local.png": "2f72fa759c8c00a3e1f06eb7f60914007e0a7ad7a96992c3b61b6b75920a3a8b",
+    "nms_local.png": "c925f9a04b4d3ecdfd69106f77422c182998e48b6228305012f5f3b503642fc8"
+  }
+}

@@ -1,0 +1,59 @@
+HƯỚNG DẪN TÁI LẬP KIỂM CHỨNG CỤC BỘ NGÀY 02/10/2026
+
+1. Phạm vi
+Bản Word và BaoCaoKhoaHocAdversarialAttacks_Q1_VI.tex có cùng nội dung khoa học.
+TeX dùng mẫu Elsevier CAS hai cột hiện có. Tệp cas-dc.cls, cas-common.sty và
+thumbnails đi kèm lấy nguyên bản từ https://ctan.org/pkg/els-cas-templates.
+README và manifest upstream được giữ tại latex/elsevier-cas.
+Trình biên dịch LaTeX trong ứng dụng hiện báo lỗi nền tảng
+"Unable to find standard directories for platform"; PDF TeX chưa được xác minh.
+
+2. Môi trường và dữ liệu
+Thực nghiệm được chạy trên máy Windows 11 Pro, Intel Core i5-1335U của tác giả,
+CPU hai luồng tính toán, một luồng liên tác vụ, float32. Phiên bản mô-đun đang
+nạp, thời điểm UTC và mã SHA-256 nằm trong manifest.json của từng lượt.
+Trọng số yolov8n.pt là tệp đã được theo dõi trong kho Git tại commit 6930b7c;
+không huấn luyện lại trong phép kiểm chứng. Gói Drive không kèm trọng số.
+Kho: https://github.com/reikageisme/Physical-Visual-DoS-EdgeAI
+Ảnh bus.jpg và zidane.jpg dùng từ thư mục assets của gói Ultralytics cài đặt.
+COCO128 lấy từ:
+https://github.com/ultralytics/assets/releases/download/v0.0.0/coco128.zip
+Giải nén để có outputs/datasets/coco128/images/train2017 và labels/train2017;
+giữ tệp ZIP tại outputs/datasets/coco128.zip để kiểm tra ngoại lệ nhãn nguồn.
+Gói công bố không kèm bộ ảnh/ZIP dữ liệu. Không tự bổ sung hai nhãn thiếu.
+
+3. Lệnh tái lập từ thư mục gốc của kho, PowerShell
+Các lệnh dưới dùng Python đã có thư viện trong môi trường thực nghiệm.
+Không chạy đo độ trễ đồng thời với các công việc nặng khác.
+
+python experiments/local_q1_validation.py --out-dir outputs/local_q1_20261002_v2 --seeds 10 --generations 20
+python experiments/local_coco128_validation.py --patch-run outputs/local_q1_20261002_v2 --out-dir outputs/local_coco128_20261002
+python experiments/local_q1_statistics.py --patch-run outputs/local_q1_20261002_v2 --dataset-run outputs/local_coco128_20261002
+python experiments/local_validation_figures.py
+python -m unittest discover -s experiments -p test_local_validation.py
+
+Hai chương trình đo có cơ chế tiếp tục từ các bản ghi đã lưu. Để đo lại toàn bộ,
+hãy di chuyển bản kết quả đã công bố sang thư mục lưu trữ riêng trước khi chạy;
+không ghi đè hoặc xóa kết quả gốc. Dùng thư mục mới cho hai lệnh đo nếu thay đổi
+mã hoặc cấu hình; điều chỉnh đường dẫn nguồn của chương trình vẽ khi cần.
+
+4. Kết quả đã lưu
+outputs/local_q1_20261002_v2: 30 lượt tối ưu, 420 khối đánh giá và 70 khối NMS.
+outputs/local_coco128_20261002: 128 ảnh, 8 điều kiện, 3 cấu hình, 3.072 bản ghi.
+evaluation_seed_*.json và image_*.json lưu số đo lặp ở mức quan sát tương ứng.
+patch_*.npy lưu tensor chính xác; PNG là bản hiển thị lượng tử hóa để minh họa.
+paired_bootstrap.json dùng 10.000 lần lấy mẫu lại ghép cặp, phân tích thăm dò.
+figures_corrected là hình dùng trong bản thảo. Trường checkerboard của phép
+thử hai ảnh thực chất là sọc chéo: chỉ sửa tên trong hình, không sửa dữ liệu thô.
+Phép COCO128 có cả sọc chéo lẫn ô bàn cờ đúng nghĩa.
+
+5. Giới hạn
+COCO128 là tập con train2017, có thể trùng dữ liệu tiền huấn luyện của mô hình.
+AP là chỉ số chẩn đoán nội suy 101 mức, không phải đánh giá COCO chính thức.
+SG-GA không khuếch đại nhất quán ứng viên hoặc chi phí NMS trong phép thử này.
+Không coi giảm độ chính xác là bằng chứng DoS. Chưa có miếng dán đã in, camera
+vật lý được kiểm soát hoặc bằng chứng chuyển giao kiến trúc được xác nhận.
+Thời gian trên máy khác không được kỳ vọng trùng chính xác số đã công bố.
+
+Gói chỉ chứa bản thảo, mã cần tái lập, số liệu và hình khoa học; không chứa
+prompt, nhật ký tác nhân, ghi chú AI, mã dựng Word nội bộ hay ảnh kiểm tra bố cục.

@@ -1,0 +1,91 @@
+{
+  "started_utc": "2026-10-02T10:00:52.328111+00:00",
+  "protocol": {
+    "seeds": 10,
+    "generations": 20,
+    "population": 20,
+    "batch_size": 4,
+    "queries_per_method_seed": 400,
+    "threads": 2,
+    "device": "cpu",
+    "input_hw": [
+      320,
+      320
+    ],
+    "patch_hw": [
+      64,
+      64
+    ],
+    "training_image": "bus",
+    "held_out_image": "zidane",
+    "fitness_threshold": 0.01,
+    "fitness_lambda": 1.5,
+    "eot_draws_per_image_query": 1,
+    "evaluation_repeats": 5,
+    "warmup_repeats": 3,
+    "iou_threshold": 0.45,
+    "max_det_after_nms": 300,
+    "pipeline_nms": "class_agnostic_custom_PyTorch",
+    "resize": "PIL bilinear direct 320x320 RGB; no letterbox",
+    "nms_benchmark": "torchvision.ops.nms; 10 independent box seeds, 20 repeats each"
+  },
+  "python": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Program Files\\Python314\\python.exe",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "processor": {
+    "Name": "13th Gen Intel(R) Core(TM) i5-1335U",
+    "NumberOfCores": 10,
+    "NumberOfLogicalProcessors": 12
+  },
+  "ram_bytes": 16791998464,
+  "versions": {
+    "torch": "2.13.0+cpu",
+    "torchvision": "0.28.0+cpu",
+    "ultralytics": "8.4.90",
+    "opencv": "5.0.0",
+    "numpy": "2.5.0",
+    "psutil": "7.2.2",
+    "kornia": "0.8.3",
+    "matplotlib": "3.11.0"
+  },
+  "distribution_metadata": {
+    "torch": "2.13.0",
+    "torchvision": "0.1.6",
+    "ultralytics": "8.4.90",
+    "opencv-python": "5.0.0.93"
+  },
+  "weights_sha256": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36",
+  "script_sha256": "ebef11864e10df9cc8592be277016f62fcadd946a72a72a8dbdceffc8fc5126d",
+  "sources_sha256": {
+    "core/victim_model.py": "a0353420706b275ce4ab46a9002c7d6defa12d2fd95854d4b00cd9171f17bb14",
+    "core/sponge_fitness.py": "b123a98422a815c69cbdf57287f74f0c73bbde5b2d6869276db44b3b9f4fa9f8",
+    "core/eot_transforms.py": "50f12c1aa28d8af97c9dc8bfd3cd41bd719c94eec41f04d7bfc477d7b5e63945",
+    "attack/genetic_algo.py": "9eba0124fd3042b4ec2c470bf82df4ef6deb99cdd747c7d3a0cdd7107057da6b"
+  },
+  "images": {
+    "bus": {
+      "source": "C:\\Users\\Tanh\\AppData\\Roaming\\Python\\Python314\\site-packages\\ultralytics\\assets\\bus.jpg",
+      "sha256": "c02019c4979c191eb739ddd944445ef408dad5679acab6fd520ef9d434bfbc63",
+      "role": "optimization and in-sample"
+    },
+    "zidane": {
+      "source": "C:\\Users\\Tanh\\AppData\\Roaming\\Python\\Python314\\site-packages\\ultralytics\\assets\\zidane.jpg",
+      "sha256": "16d73869e3267a7d4ed00de8e860833bd1657c1b252e94c0c348277adc7b6edb",
+      "role": "held-out single example"
+    }
+  },
+  "git_commit": "6930b7c86a2ffef27a135b333bb155b8b302046c",
+  "limitations": [
+    "two example photographs, not a benchmark dataset",
+    "no detection ground truth or mAP",
+    "no physical printed patch",
+    "CPU controlled to two software threads, not a Raspberry Pi emulator",
+    "EOT best score is a stochastic selection statistic, not independently validated expected fitness"
+  ],
+  "finished_utc": "2026-10-02T11:02:51.453525+00:00",
+  "completion": {
+    "optimizer_runs": 30,
+    "evaluation_blocks": 420,
+    "nms_seed_size_blocks": 70
+  }
+}

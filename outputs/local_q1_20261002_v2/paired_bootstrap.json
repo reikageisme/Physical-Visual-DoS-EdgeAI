@@ -1,0 +1,564 @@
+{
+  "script_sha256": "924dcb859533840d21ead8a1a87b3082c7ed40d1ff6bc116a3d45a59b473e4cf",
+  "bootstrap_seed": 20261002,
+  "draws": 10000,
+  "method": "paired percentile bootstrap of mean differences, 2.5 and 97.5 percentiles",
+  "manifest_sha256": {
+    "outputs\\local_q1_20261002_v2": "a8cd655557811c2bd1820223dc2e60df834490bf3a3c71fe099b5ed2649e8546",
+    "outputs\\local_coco128_20261002": "37cb02b40cd117007d003b9dbd7de00456b3c233e389b6822ee251358c88bd5f"
+  },
+  "limitations": [
+    "exploratory post-hoc intervals; no confirmatory p-values",
+    "no multiplicity correction across contrasts",
+    "seed intervals conditional on a single optimization photo",
+    "COCO128 image intervals conditional on a fixed seed-0 patch and train subset",
+    "not confidence intervals for AP; AP is computed across all records"
+  ],
+  "contrasts": [
+    {
+      "group": "optimizer",
+      "unit": "seed",
+      "contrast": "sg_ga minus ga_center",
+      "metric": "best_eot_fitness",
+      "n_pairs": 10,
+      "mean_difference": -54.78287048339844,
+      "sample_std_difference": 21.11126428519836,
+      "percentile_ci95": [
+        -66.80526443481445,
+        -42.45498222351074
+      ]
+    },
+    {
+      "group": "optimizer",
+      "unit": "seed",
+      "contrast": "sg_ga minus random_search",
+      "metric": "best_eot_fitness",
+      "n_pairs": 10,
+      "mean_difference": 2.6438079833984376,
+      "sample_std_difference": 8.140654083684895,
+      "percentile_ci95": [
+        -1.9227278900146483,
+        7.636251678466797
+      ]
+    },
+    {
+      "group": "two_images",
+      "unit": "seed",
+      "image": "bus",
+      "threshold": 0.01,
+      "cap": null,
+      "contrast": "sg_ga minus clean",
+      "metric": "active_candidates",
+      "n_pairs": 10,
+      "mean_difference": -2.6,
+      "sample_std_difference": 4.788875998951459,
+      "percentile_ci95": [
+        -5.1,
+        0.5
+      ]
+    },
+    {
+      "group": "two_images",
+      "unit": "seed",
+      "image": "bus",
+      "threshold": 0.01,
+      "cap": null,
+      "contrast": "sg_ga minus clean",
+      "metric": "nms_ms",
+      "n_pairs": 10,
+      "mean_difference": 5.47952,
+      "sample_std_difference": 14.496297845833299,
+      "percentile_ci95": [
+        -1.7820919999999998,
+        14.880505250000002
+      ]
+    },
+    {
+      "group": "two_images",
+      "unit": "seed",
+      "image": "bus",
+      "threshold": 0.01,
+      "cap": null,
+      "contrast": "sg_ga minus clean",
+      "metric": "total_ms",
+      "n_pairs": 10,
+      "mean_difference": 48.69900000000001,
+      "sample_std_difference": 163.75690465566464,
+      "percentile_ci95": [
+        -34.42523425,
+        154.15957249999997
+      ]
+    },
+    {
+      "group": "two_images",
+      "unit": "seed",
+      "image": "bus",
+      "threshold": 0.01,
+      "cap": null,
+      "contrast": "sg_ga minus clean",
+      "metric": "throughput_fps",
+      "n_pairs": 10,
+      "mean_difference": -0.5629677173656468,
+      "sample_std_difference": 2.062581143515082,
+      "percentile_ci95": [
+        -1.8890949330055087,
+        0.5141736933763067
+      ]
+    },
+    {
+      "group": "two_images",
+      "unit": "seed",
+      "image": "bus",
+      "threshold": 0.25,
+      "cap": null,
+      "contrast": "sg_ga minus clean",
+      "metric": "active_candidates",
+      "n_pairs": 10,
+      "mean_difference": 1.3,
+      "sample_std_difference": 0.9486832980505139,
+      "percentile_ci95": [
+        0.7,
+        1.9
+      ]
+    },
+    {
+      "group": "two_images",
+      "unit": "seed",
+      "image": "bus",
+      "threshold": 0.25,
+      "cap": null,
+      "contrast": "sg_ga minus clean",
+      "metric": "nms_ms",
+      "n_pairs": 10,
+      "mean_difference": 0.39132,
+      "sample_std_difference": 1.9265519826305695,
+      "percentile_ci95": [
+        -0.6110557500000001,
+        1.68251875
+      ]
+    },
+    {
+      "group": "two_images",
+      "unit": "seed",
+      "image": "bus",
+      "threshold": 0.25,
+      "cap": null,
+      "contrast": "sg_ga minus clean",
+      "metric": "total_ms",
+      "n_pairs": 10,
+      "mean_difference": 38.739419999999996,
+      "sample_std_difference": 88.98150718856388,
+      "percentile_ci95": [
+        -2.7178105000000055,
+        96.55483024999994
+      ]
+    },
+    {
+      "group": "two_images",
+      "unit": "seed",
+      "image": "bus",
+      "threshold": 0.25,
+      "cap": null,
+      "contrast": "sg_ga minus clean",
+      "metric": "throughput_fps",
+      "n_pairs": 10,
+      "mean_difference": -0.5834064502559606,
+      "sample_std_difference": 1.9644285388754197,
+      "percentile_ci95": [
+        -1.8974165719206624,
+        0.27505125193921426
+      ]
+    },
+    {
+      "group": "two_images",
+      "unit": "seed",
+      "image": "bus",
+      "threshold": 0.01,
+      "cap": 100,
+      "contrast": "sg_ga minus clean",
+      "metric": "active_candidates",
+      "n_pairs": 10,
+      "mean_difference": -2.6,
+      "sample_std_difference": 4.788875998951459,
+      "percentile_ci95": [
+        -5.1,
+        0.5
+      ]
+    },
+    {
+      "group": "two_images",
+      "unit": "seed",
+      "image": "bus",
+      "threshold": 0.01,
+      "cap": 100,
+      "contrast": "sg_ga minus clean",
+      "metric": "nms_ms",
+      "n_pairs": 10,
+      "mean_difference": -5.55698,
+      "sample_std_difference": 13.725942632499475,
+      "percentile_ci95": [
+        -14.822779749999999,
+        0.7504184999999978
+      ]
+    },
+    {
+      "group": "two_images",
+      "unit": "seed",
+      "image": "bus",
+      "threshold": 0.01,
+      "cap": 100,
+      "contrast": "sg_ga minus clean",
+      "metric": "total_ms",
+      "n_pairs": 10,
+      "mean_difference": -90.01931000000002,
+      "sample_std_difference": 267.6182704632911,
+      "percentile_ci95": [
+        -264.9618865,
+        31.28589799999998
+      ]
+    },
+    {
+      "group": "two_images",
+      "unit": "seed",
+      "image": "bus",
+      "threshold": 0.01,
+      "cap": 100,
+      "contrast": "sg_ga minus clean",
+      "metric": "throughput_fps",
+      "n_pairs": 10,
+      "mean_difference": 1.0762018422889428,
+      "sample_std_difference": 2.339041848720806,
+      "percentile_ci95": [
+        -0.14949366579106485,
+        2.5658786814560393
+      ]
+    },
+    {
+      "group": "two_images",
+      "unit": "seed",
+      "image": "zidane",
+      "threshold": 0.01,
+      "cap": null,
+      "contrast": "sg_ga minus clean",
+      "metric": "active_candidates",
+      "n_pairs": 10,
+      "mean_difference": -2.9,
+      "sample_std_difference": 3.5418137224371984,
+      "percentile_ci95": [
+        -5.1,
+        -0.9
+      ]
+    },
+    {
+      "group": "two_images",
+      "unit": "seed",
+      "image": "zidane",
+      "threshold": 0.01,
+      "cap": null,
+      "contrast": "sg_ga minus clean",
+      "metric": "nms_ms",
+      "n_pairs": 10,
+      "mean_difference": -3.8596199999999996,
+      "sample_std_difference": 4.473890576270775,
+      "percentile_ci95": [
+        -6.56180675,
+        -1.3952812500000018
+      ]
+    },
+    {
+      "group": "two_images",
+      "unit": "seed",
+      "image": "zidane",
+      "threshold": 0.01,
+      "cap": null,
+      "contrast": "sg_ga minus clean",
+      "metric": "total_ms",
+      "n_pairs": 10,
+      "mean_difference": -9.518019999999996,
+      "sample_std_difference": 73.90922886867227,
+      "percentile_ci95": [
+        -56.346945250000005,
+        30.88872599999999
+      ]
+    },
+    {
+      "group": "two_images",
+      "unit": "seed",
+      "image": "zidane",
+      "threshold": 0.01,
+      "cap": null,
+      "contrast": "sg_ga minus clean",
+      "metric": "throughput_fps",
+      "n_pairs": 10,
+      "mean_difference": 0.24922421773129658,
+      "sample_std_difference": 1.0072603144395347,
+      "percentile_ci95": [
+        -0.2920797044983611,
+        0.8816565653523818
+      ]
+    },
+    {
+      "group": "two_images",
+      "unit": "seed",
+      "image": "zidane",
+      "threshold": 0.25,
+      "cap": null,
+      "contrast": "sg_ga minus clean",
+      "metric": "active_candidates",
+      "n_pairs": 10,
+      "mean_difference": 0.0,
+      "sample_std_difference": 0.0,
+      "percentile_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "group": "two_images",
+      "unit": "seed",
+      "image": "zidane",
+      "threshold": 0.25,
+      "cap": null,
+      "contrast": "sg_ga minus clean",
+      "metric": "nms_ms",
+      "n_pairs": 10,
+      "mean_difference": 0.21233000000000005,
+      "sample_std_difference": 0.8138294935399892,
+      "percentile_ci95": [
+        -0.25405574999999986,
+        0.70339025
+      ]
+    },
+    {
+      "group": "two_images",
+      "unit": "seed",
+      "image": "zidane",
+      "threshold": 0.25,
+      "cap": null,
+      "contrast": "sg_ga minus clean",
+      "metric": "total_ms",
+      "n_pairs": 10,
+      "mean_difference": 76.88579,
+      "sample_std_difference": 142.56940855090315,
+      "percentile_ci95": [
+        0.7070840000000067,
+        167.9638695
+      ]
+    },
+    {
+      "group": "two_images",
+      "unit": "seed",
+      "image": "zidane",
+      "threshold": 0.25,
+      "cap": null,
+      "contrast": "sg_ga minus clean",
+      "metric": "throughput_fps",
+      "n_pairs": 10,
+      "mean_difference": -0.2473323548687615,
+      "sample_std_difference": 1.0258416751446704,
+      "percentile_ci95": [
+        -0.8169812411137596,
+        0.37170246185877615
+      ]
+    },
+    {
+      "group": "two_images",
+      "unit": "seed",
+      "image": "zidane",
+      "threshold": 0.01,
+      "cap": 100,
+      "contrast": "sg_ga minus clean",
+      "metric": "active_candidates",
+      "n_pairs": 10,
+      "mean_difference": -2.9,
+      "sample_std_difference": 3.5418137224371984,
+      "percentile_ci95": [
+        -5.2,
+        -1.0
+      ]
+    },
+    {
+      "group": "two_images",
+      "unit": "seed",
+      "image": "zidane",
+      "threshold": 0.01,
+      "cap": 100,
+      "contrast": "sg_ga minus clean",
+      "metric": "nms_ms",
+      "n_pairs": 10,
+      "mean_difference": -0.15841999999999992,
+      "sample_std_difference": 3.4900724394901728,
+      "percentile_ci95": [
+        -2.094455,
+        2.0097159999999996
+      ]
+    },
+    {
+      "group": "two_images",
+      "unit": "seed",
+      "image": "zidane",
+      "threshold": 0.01,
+      "cap": 100,
+      "contrast": "sg_ga minus clean",
+      "metric": "total_ms",
+      "n_pairs": 10,
+      "mean_difference": -45.001940000000005,
+      "sample_std_difference": 124.06460647155846,
+      "percentile_ci95": [
+        -118.24031949999997,
+        27.315323500000005
+      ]
+    },
+    {
+      "group": "two_images",
+      "unit": "seed",
+      "image": "zidane",
+      "threshold": 0.01,
+      "cap": 100,
+      "contrast": "sg_ga minus clean",
+      "metric": "throughput_fps",
+      "n_pairs": 10,
+      "mean_difference": 0.18760298092646152,
+      "sample_std_difference": 1.6314034156536543,
+      "percentile_ci95": [
+        -0.8404203443616701,
+        1.0972470309703264
+      ]
+    },
+    {
+      "group": "coco128",
+      "unit": "image",
+      "threshold": 0.01,
+      "cap": null,
+      "contrast": "sg_ga minus clean",
+      "metric": "active_candidates",
+      "n_pairs": 128,
+      "mean_difference": -1.28125,
+      "sample_std_difference": 21.219118366510152,
+      "percentile_ci95": [
+        -5.2109375,
+        2.15625
+      ]
+    },
+    {
+      "group": "coco128",
+      "unit": "image",
+      "threshold": 0.01,
+      "cap": null,
+      "contrast": "sg_ga minus clean",
+      "metric": "nms_ms",
+      "n_pairs": 128,
+      "mean_difference": -0.45172499999999993,
+      "sample_std_difference": 2.543389515500733,
+      "percentile_ci95": [
+        -0.9196099218750001,
+        -0.031251464843750396
+      ]
+    },
+    {
+      "group": "coco128",
+      "unit": "image",
+      "threshold": 0.01,
+      "cap": null,
+      "contrast": "sg_ga minus clean",
+      "metric": "postprocessing_ms",
+      "n_pairs": 128,
+      "mean_difference": -0.4319117187500001,
+      "sample_std_difference": 2.6283686105365276,
+      "percentile_ci95": [
+        -0.9035046093750001,
+        0.0023780664062498075
+      ]
+    },
+    {
+      "group": "coco128",
+      "unit": "image",
+      "threshold": 0.25,
+      "cap": null,
+      "contrast": "sg_ga minus clean",
+      "metric": "active_candidates",
+      "n_pairs": 128,
+      "mean_difference": -1.5234375,
+      "sample_std_difference": 3.877991288928828,
+      "percentile_ci95": [
+        -2.234375,
+        -0.875
+      ]
+    },
+    {
+      "group": "coco128",
+      "unit": "image",
+      "threshold": 0.25,
+      "cap": null,
+      "contrast": "sg_ga minus clean",
+      "metric": "nms_ms",
+      "n_pairs": 128,
+      "mean_difference": -0.15553828125000002,
+      "sample_std_difference": 0.9000619831780349,
+      "percentile_ci95": [
+        -0.319954921875,
+        -0.008181308593750086
+      ]
+    },
+    {
+      "group": "coco128",
+      "unit": "image",
+      "threshold": 0.25,
+      "cap": null,
+      "contrast": "sg_ga minus clean",
+      "metric": "postprocessing_ms",
+      "n_pairs": 128,
+      "mean_difference": -0.18133828124999998,
+      "sample_std_difference": 1.1402472399475678,
+      "percentile_ci95": [
+        -0.3847136914062499,
+        0.004709824218749837
+      ]
+    },
+    {
+      "group": "coco128",
+      "unit": "image",
+      "threshold": 0.01,
+      "cap": 100,
+      "contrast": "sg_ga minus clean",
+      "metric": "active_candidates",
+      "n_pairs": 128,
+      "mean_difference": -1.28125,
+      "sample_std_difference": 21.219118366510152,
+      "percentile_ci95": [
+        -5.28125,
+        2.109375
+      ]
+    },
+    {
+      "group": "coco128",
+      "unit": "image",
+      "threshold": 0.01,
+      "cap": 100,
+      "contrast": "sg_ga minus clean",
+      "metric": "nms_ms",
+      "n_pairs": 128,
+      "mean_difference": -0.05655625000000005,
+      "sample_std_difference": 1.5916820160189378,
+      "percentile_ci95": [
+        -0.33710279296875006,
+        0.20789529296874995
+      ]
+    },
+    {
+      "group": "coco128",
+      "unit": "image",
+      "threshold": 0.01,
+      "cap": 100,
+      "contrast": "sg_ga minus clean",
+      "metric": "postprocessing_ms",
+      "n_pairs": 128,
+      "mean_difference": -0.09143046875000002,
+      "sample_std_difference": 1.7470704600026732,
+      "percentile_ci95": [
+        -0.3955992382812501,
+        0.20929376953124984
+      ]
+    }
+  ]
+}
