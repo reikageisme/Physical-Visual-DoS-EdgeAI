@@ -1,7 +1,11 @@
 HƯỚNG DẪN TÁI LẬP KIỂM CHỨNG CỤC BỘ NGÀY 02/10/2026
 
 1. Phạm vi
-Bản Word và BaoCaoKhoaHocAdversarialAttacks_Q1_VI.tex có cùng nội dung khoa học.
+Bản Word hợp nhất BaoCaoKhoaHocAdversarialAttacks_HopNhat_VI.docx và
+BaoCaoKhoaHocAdversarialAttacks_Q1_VI.tex có cùng nội dung khoa học.
+Bản hợp nhất giữ nội dung phù hợp của Word gốc, bổ sung câu hỏi nghiên cứu,
+sơ đồ hệ thống, lưu đồ GA và giao thức camera; kết quả mới được báo tách biệt.
+Word dùng khổ A4; các tệp gốc và bản Word đang mở trước khi hợp nhất được giữ.
 TeX dùng mẫu Elsevier CAS hai cột hiện có. Tệp cas-dc.cls, cas-common.sty và
 thumbnails đi kèm lấy nguyên bản từ https://ctan.org/pkg/els-cas-templates.
 README và manifest upstream được giữ tại latex/elsevier-cas.
@@ -46,13 +50,16 @@ paired_bootstrap.json dùng 10.000 lần lấy mẫu lại ghép cặp, phân t�
 figures_corrected là hình dùng trong bản thảo. Trường checkerboard của phép
 thử hai ảnh thực chất là sọc chéo: chỉ sửa tên trong hình, không sửa dữ liệu thô.
 Phép COCO128 có cả sọc chéo lẫn ô bàn cờ đúng nghĩa.
+figures chứa nguồn SVG chỉnh sửa được và PNG của hai sơ đồ mới; ảnh giao diện
+camera được trích từ Word gốc chỉ là minh họa, không phải số liệu kiểm chứng.
+NGUON_HINH_VI.txt ghi nguồn và giới hạn sử dụng các hình bổ sung.
 
 5. Giới hạn
 COCO128 là tập con train2017, có thể trùng dữ liệu tiền huấn luyện của mô hình.
 AP là chỉ số chẩn đoán nội suy 101 mức, không phải đánh giá COCO chính thức.
 SG-GA không khuếch đại nhất quán ứng viên hoặc chi phí NMS trong phép thử này.
-Không coi giảm độ chính xác là bằng chứng DoS. Chưa có miếng dán đã in, camera
-vật lý được kiểm soát hoặc bằng chứng chuyển giao kiến trúc được xác nhận.
+Không coi giảm độ chính xác là bằng chứng DoS. Chưa có bộ dữ liệu miếng dán
+đã in/camera vật lý được kiểm soát hoặc chuyển giao kiến trúc đủ để xác nhận.
 Thời gian trên máy khác không được kỳ vọng trùng chính xác số đã công bố.
 
 Gói chỉ chứa bản thảo, mã cần tái lập, số liệu và hình khoa học; không chứa

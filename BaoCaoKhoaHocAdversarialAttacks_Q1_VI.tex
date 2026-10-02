@@ -122,6 +122,16 @@ Các đóng góp ở trạng thái bằng chứng hiện tại được giới h
     \item Báo cáo trung thực các kết quả âm và các điều kiện chưa được xác minh, từ đó xác định quy trình cần thiết cho một đánh giá Q1 có thể tái lập.
 \end{enumerate}
 
+\subsection{Câu hỏi nghiên cứu}
+
+Ba câu hỏi nghiên cứu nối động cơ triển khai camera biên với các đại lượng có thể kiểm chứng. Chúng được trả lời theo phạm vi dữ liệu hiện có, không giả định trước rằng miếng dán sẽ gây DoS.
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{RQ1 --- Cơ chế tải:} số ứng viên sau ngưỡng có phản ánh chi phí NMS thực đo hay không, và miếng dán có làm tăng chi phí toàn vòng xử lý so với ảnh sạch dưới cùng cấu hình?
+    \item \textbf{RQ2 --- Vai trò của vị trí và tìm kiếm:} với cùng ngân sách truy vấn, GA hướng dẫn bởi phương sai Laplacian có cải thiện fitness và số ứng viên đo lại độc lập so với GA trung tâm và tìm kiếm ngẫu nhiên hay không?
+    \item \textbf{RQ3 --- Tính thực tế:} bằng chứng số hiện tại cho phép kết luận đến đâu về đường ống camera và chuyển đổi sang miếng dán vật lý; những thông số và phép đo nào còn thiếu để đánh giá tính sẵn sàng?
+\end{enumerate}
+
 \section{Nghiên cứu liên quan}
 
 \subsection{Tấn công cạn kiệt tài nguyên trên mạng nơ-ron}
@@ -161,6 +171,17 @@ Thông số nội bộ trước NMS có thể tồn tại trong hệ thống ngh
 Trong kiểm chứng cục bộ, mô hình được nạp để mô phỏng giao diện trả điểm trước NMS. Thuật toán tối ưu chỉ nhận vector điểm và không dùng trọng số hay gradient, nhưng chương trình nghiên cứu không thực thi một ranh giới kiểm soát truy cập giữa kẻ tấn công và mô hình. Các bộ đếm thời gian và phép gọi NMS trực tiếp là công cụ đo của người nghiên cứu, không phải quyền điều khiển của kẻ tấn công. Tính khả dụng của kênh thông số nội bộ trên một camera thương mại chưa được kiểm chứng.
 
 \section{Phương pháp đề xuất}
+
+\subsection{Tổng quan hệ thống và ranh giới đo}
+
+Hình~\ref{fig:pipeline} tách hai nhánh thường bị gộp trong mô tả hệ thống. Nhánh tối ưu dùng phản hồi điểm trước NMS và EOT để tìm nội dung miếng dán; nhánh đánh giá giữ cố định miếng dán, tắt EOT và đo riêng ứng viên, chi phí hậu xử lý cùng chất lượng phát hiện. Một điểm fitness cao ở nhánh thứ nhất không xác lập tăng độ trễ ở nhánh thứ hai. Không có mũi tên trực tiếp từ miếng dán tới kết luận cạn kiệt CPU hoặc DoS.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.98\textwidth]{figures/quy_trinh_kiem_chung_vi.png}
+\caption{Kiến trúc kiểm chứng: tối ưu hộp xám và đánh giá độc lập trên ảnh số. Nhánh A có EOT và ngân sách truy vấn; nhánh B không EOT, áp dụng ngưỡng và giới hạn trước NMS rồi đo công đoạn. Khối nét đứt là mở rộng camera vật lý chưa được xác nhận, không phải nguồn của số liệu mới.}
+\label{fig:pipeline}
+\end{figure*}
 
 \subsection{Ký hiệu}
 
@@ -244,6 +265,15 @@ Trong các lượt chạy nhiều seed được lưu trước đây, cấu hình
 \end{algorithmic}
 \end{algorithm}
 
+Hình~\ref{fig:ga_flow} cụ thể hóa Thuật toán~\ref{alg:ga} với cấu hình của lượt kiểm chứng mới: 20 cá thể, 20 thế hệ và 400 truy vấn. Lưu đồ chỉ mô tả hai nhánh GA; tìm kiếm ngẫu nhiên sinh 20 mẫu mới mỗi vòng tại vị trí Laplacian, không giữ nhóm ưu tú, lai ghép hoặc đột biến. Việc sinh quần thể sau lượt đánh giá cuối trong mã GA không tạo thêm truy vấn và không thay miếng dán tốt nhất trả về.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.82\textwidth]{figures/luu_do_ga_vi.png}
+\caption{Lưu đồ GA khớp cấu hình thực thi trên máy cục bộ. Vị trí được cố định trước tìm kiếm; xác suất đột biến áp dụng cho từng cá thể con, không phải từng pixel. Cực đại fitness quan sát được lưu riêng với quần thể cuối, sau đó miếng dán được đo lại không EOT.}
+\label{fig:ga_flow}
+\end{figure*}
+
 \subsection{EOT trong mã triển khai}
 
 Mỗi truy vấn lấy một mẫu biến đổi độc lập cho ảnh đã chèn: xoay trong biên $\pm15$ độ với xác suất 0,8; dao động độ sáng và độ tương phản 0,2 với xác suất 0,8; làm mờ Gaussian bằng bộ lọc $3\times3$, $\sigma$ trong khoảng 0,1--1,0 với xác suất 0,5; và nhiễu Gaussian cộng có độ lệch chuẩn 0,02. Mã hiện chưa có biến đổi phối cảnh hoặc thay đổi tỷ lệ. Các biến đổi này được áp dụng trong tối ưu, còn phép đánh giá số trên ảnh gốc dùng miếng dán đã chọn và không lấy mẫu EOT mới.
@@ -296,6 +326,14 @@ Không có tệp dữ liệu và mã đủ để xác nhận mẫu camera, codec
 
 \todoauthor{cung cấp mẫu camera, cấu hình thu hình và siêu dữ liệu của mọi lượt chạy vật lý trước đây.}
 
+\subsection{Đường ống camera và giao thức đo đề xuất}
+
+Trong đường ống camera, chuỗi xử lý gồm thu khung hình, giải mã, chuyển BGR sang RGB/co kích thước, suy luận, lọc ứng viên, NMS và hiển thị hoặc ghi kết quả. Chèn số được thực hiện trên tensor sau giải mã, còn miếng dán vật lý đi qua quang học và cảm biến trước khi thành ảnh. Hai điều kiện có ranh giới can thiệp khác nhau; chèn tensor không chứng minh đã thực hiện tấn công trung gian trên đường truyền mạng.
+
+Chương trình \texttt{test\_headless\_pi.py} minh họa việc đọc luồng IP bằng OpenCV và yêu cầu bộ đệm hai khung hình. Mã không kiểm tra hiệu lực của thiết lập đó hoặc đo tuổi khung hình, nên không thể suy ra luôn xử lý khung mới nhất hay không có tích lũy hàng đợi. FPS của chương trình được lấy từ thời gian gọi hàm dự đoán, không bao gồm thu hình, tiền xử lý và truyền mạng; CPU/RAM được đọc toàn hệ thống. Cột nhiệt độ dùng lệnh dành cho Raspberry Pi và trả 0 khi đọc thất bại; giá trị này không phải bằng chứng nhiệt độ CPU Windows. Chương trình cũ chỉ là tài liệu thiết kế, không được dùng làm phép đo mới.
+
+Một kiểm chứng camera có thể tái lập cần ghi mốc thời gian thu nhận, hoàn tất giải mã, bắt đầu/kết thúc suy luận, lọc, NMS và hiển thị; đồng thời ghi số khung nhận, xử lý, bỏ, tuổi khung và kích thước hàng đợi. Nếu chưa có đồng hồ đồng bộ với camera, phải báo độ trễ phía máy nhận thay vì gọi là độ trễ cảm biến đến đầu ra. Chính sách đọc đồng bộ, ưu tiên khung mới hoặc bỏ khung phải cố định giữa các điều kiện. Ngưỡng thời hạn và tỷ lệ trễ hạn cho tiêu chí DoS cần được quy định trước; mức sử dụng CPU không thay thế các đại lượng đó.
+
 \subsection{Đơn vị thống kê}
 
 Seed của thuật toán tối ưu, khung hình liên tiếp và truy vấn độ trễ lặp lại là ba đơn vị khác nhau. Các kết quả cũ có 10 seed nhưng mỗi seed tối ưu trên một tensor ngẫu nhiên; khung hình liên tiếp không được xem là lượt thực nghiệm độc lập. Phép kiểm chứng cục bộ mới dùng seed 0--9 trên cùng ảnh tối ưu. Mỗi điều kiện đo có ba lượt khởi động và năm lượt đo liên tiếp; trung vị của năm lượt là một quan sát ở mức seed. Trung bình và độ lệch chuẩn mẫu được tính trên 10 quan sát seed; các lần đo lặp không làm tăng số seed.
@@ -339,7 +377,7 @@ Mỗi điều kiện trên từng ảnh có một lượt suy luận khởi đ�
 
 \subsection{Kiểm chứng chiều fitness}
 
-Mã nguồn dùng \texttt{max}, \texttt{argmax} và \texttt{topk}, do đó fitness càng lớn càng tốt. Điều này phù hợp với phương trình ở Mục 4.4. Bất kỳ bảng nào coi số fitness nhỏ hơn là tốt hơn đều sai và đã bị loại.
+Mã nguồn dùng \texttt{max}, \texttt{argmax} và \texttt{topk}, do đó fitness càng lớn càng tốt. Điều này phù hợp với phương trình trong mục Hàm fitness và chiều tối ưu. Bất kỳ bảng nào coi số fitness nhỏ hơn là tốt hơn đều sai và đã bị loại.
 
 \subsection{Đo riêng thành phần NMS}
 
@@ -552,7 +590,7 @@ Fitness không tăng đơn điệu theo diện tích. Một lượt chạy ở m
 
 \subsection{Độ nhạy theo ngưỡng tin cậy}
 
-Đầu ra đánh giá phòng thủ hiện dùng ảnh nền ngẫu nhiên. Ở $\tau=0,01$ ghi nhận 10 ứng viên; từ $\tau=0,05$ trở lên là 0. Kết quả cho thấy độ nhạy cao với ngưỡng nhưng không thể dùng để đánh giá đánh đổi giữa phòng thủ và độ chính xác vì không có ảnh và nhãn phát hiện chuẩn. Cần đo mAP/precision/recall trên dữ liệu có nhãn.
+Phép quét ngưỡng lưu trước đây dùng ảnh nền ngẫu nhiên. Ở $\tau=0,01$ ghi nhận 10 ứng viên; từ $\tau=0,05$ trở lên là 0. Kết quả này không đánh giá được đánh đổi độ chính xác vì thiếu nhãn. Đánh đổi trên dữ liệu có nhãn được kiểm tra riêng trong Bảng~\ref{tab:coco_latency} và Bảng~\ref{tab:coco_accuracy}; không gộp hai quy trình thành cùng một phép thử.
 
 \section{Đánh giá tính chuyển giao}
 
@@ -566,11 +604,26 @@ Kết luận đúng ở trạng thái hiện tại là: \emph{tính chuyển gia
 
 Không có tệp dữ liệu và mã đủ để tái tạo thực nghiệm với miếng dán đã in. EOT và hàm \texttt{degrade\_patch\_physical} chỉ là mô phỏng. Vì vậy nghiên cứu hiện chỉ hỗ trợ \emph{giả thuyết sơ bộ về chuyển đổi từ môi trường số sang vật lý}, không hỗ trợ kết luận DoS vật lý.
 
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.78\textwidth]{figures/giao_dien_camera_ban_goc.png}
+\caption{Minh họa giao diện theo dõi camera được giữ từ bản Word gốc, không phải kết quả của các lượt kiểm chứng mới. Các giá trị CPU/FPS và số hộp hiển thị trong ảnh thiếu định nghĩa công đoạn, đối chứng ghép cặp và bản kê cấu hình; không dùng chúng để tính hiệu ứng hoặc xác nhận DoS vật lý.}
+\label{fig:camera_original}
+\end{figure*}
+
+Hình~\ref{fig:camera_original} lưu dấu bố trí minh họa của bản thảo gốc nhưng không thay cho nhật ký thời gian. Bản gốc mô tả in laser trên giấy nhám mờ và độ sáng 500 lux; chưa có siêu dữ liệu hoặc phép đo kèm theo để xác nhận các thông số này. Vì vậy chúng không được nhập vào cấu hình thực nghiệm đã hoàn tất.
+
+Khoảng cách miền số--vật lý có thể đến từ ánh sáng, biến dạng phối cảnh, độ phân giải vùng miếng dán, đáp ứng màu của máy in/camera, làm mờ và nén ảnh. Những cơ chế này là giả thuyết cần kiểm tra theo biến kiểm soát, không phải nguyên nhân đã được chứng minh cho bất kỳ mức CPU/FPS nào trong ảnh minh họa. Trễ thu hình và chờ đầu vào cũng phải được tách khỏi chi phí suy luận để tránh quy mọi khác biệt cho họa tiết.
+
 Quy trình vật lý cần ghi vật liệu, máy in hoặc thiết bị hiển thị, kích thước cm, diện tích trong khung hình, mẫu camera, độ phân giải/FPS, bộ mã hóa, khoảng cách, ba góc quay, độ sáng và số phép thử. Thứ tự điều kiện phải được xáo trộn. Các đại lượng đo gồm $N_{\mathrm{active}}$, độ trễ NMS, độ trễ toàn trình, FPS, số lần trễ hạn và CPU/RSS của tiến trình. Mức tải CPU đơn lẻ không xác định thành công của tấn công.
 
 \newexperiment{thử ít nhất $3\times3\times3\times2$ cấu hình khoảng cách, góc, mức sáng và camera/bộ mã hóa; $\geq10$ khối thử nghiệm mỗi điều kiện; dùng ảnh sạch, nhiễu ngẫu nhiên, ô bàn cờ và miếng dán tối ưu làm đối chứng.}
 
 \section{Thảo luận}
+
+\subsection{Trả lời các câu hỏi nghiên cứu}
+
+\textbf{RQ1:} phép đo hộp tổng hợp cho thấy chi phí NMS thay đổi theo tải đầu vào trong triển khai được kiểm tra, nhưng miếng dán SG-GA không làm tăng số ứng viên hay độ trễ toàn vòng xử lý một cách nhất quán. Chưa xác lập chuỗi nhân quả từ miếng dán tới suy giảm dịch vụ. \textbf{RQ2:} với cùng 400 truy vấn, SG-GA có fitness thấp hơn GA trung tâm và chưa có ưu thế rõ so với tìm kiếm ngẫu nhiên; đo lại không EOT và COCO128 không hỗ trợ khẳng định vị trí Laplacian khuếch đại tải tốt hơn. \textbf{RQ3:} kết quả mới giới hạn ở ảnh số trên một máy và một kiến trúc; ảnh giao diện camera cũ chỉ có giá trị minh họa. Kết luận vật lý và QoS camera còn cần giao thức thu hình, đối chứng, siêu dữ liệu và tiêu chí trễ hạn đã nêu.
 
 \subsection{Ý nghĩa của kết quả hiện tại}
 

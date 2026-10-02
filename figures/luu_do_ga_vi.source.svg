@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="970" viewBox="0 0 1080 970" role="img" aria-labelledby="title desc">
+<title id="title">Lưu đồ GA của phép kiểm chứng cục bộ</title>
+<desc id="desc">Quần thể 20, 20 thế hệ, 400 truy vấn. Chọn vị trí một lần; đánh giá EOT, lưu cực đại, giữ 5 cá thể ưu tú và sinh 15 con. Sau 20 vòng trả miếng dán tốt nhất đã quan sát.</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9" fill="#355269"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;fill:#172b3b;font-size:24px;text-anchor:middle}.small{font-size:21px}.box{fill:#edf5fa;stroke:#53718a;stroke-width:2;rx:14}.edge{fill:none;stroke:#355269;stroke-width:2.5;marker-end:url(#arrow)}</style>
+<rect width="1080" height="970" fill="white"/>
+<text x="540" y="42" font-weight="bold" font-size="27">GA: TỐI ĐA HÓA FITNESS CÙNG NGÂN SÁCH TRUY VẤN</text>
+<rect class="box" x="275" y="70" width="530" height="83"/><text x="540" y="104">Chọn vị trí một lần và cố định</text><text class="small" x="540" y="135">SG-GA: phương sai Laplacian; GA đối chứng: tâm ảnh</text>
+<path class="edge" d="M540 153 V185"/>
+<rect class="box" x="275" y="185" width="530" height="83"/><text x="540" y="218">Khởi tạo 20 miếng dán RGB 64 × 64</text><text class="small" x="540" y="248">Phân phối đều [0; 1]; bộ sinh ngẫu nhiên theo seed</text>
+<path class="edge" d="M540 268 V300"/>
+<rect class="box" x="275" y="300" width="530" height="104"/><text x="540" y="333">Đánh giá 20 cá thể theo lô 4 ảnh</text><text class="small" x="540" y="363">Chèn miếng dán → EOT toàn ảnh → điểm trước NMS</text><text class="small" x="540" y="391">Một mẫu EOT mỗi truy vấn; tính fitness</text>
+<path class="edge" d="M540 404 V436"/>
+<rect class="box" x="275" y="436" width="530" height="83"/><text x="540" y="469">Cập nhật miếng dán tốt nhất đã quan sát</text><text class="small" x="540" y="499">Lưu cực đại tích lũy; không đánh giá lại kỳ vọng EOT</text>
+<path class="edge" d="M540 519 V551"/>
+<rect class="box" x="275" y="551" width="530" height="104"/><text x="540" y="584">Giữ 5 cá thể ưu tú, sinh 15 cá thể con</text><text class="small" x="540" y="614">Chọn bố mẹ trong nhóm ưu tú; lai ghép cắt ngang</text><text class="small" x="540" y="642">Đột biến xác suất 0,1; nhiễu đều ±0,2; cắt về [0; 1]</text>
+<path class="edge" d="M540 655 V690"/>
+<path d="M540 690 L700 758 L540 826 L380 758 Z" fill="#fff8eb" stroke="#b68836" stroke-width="2"/><text x="540" y="752">Đã đánh giá</text><text x="540" y="785">20 thế hệ?</text>
+<path class="edge" d="M380 758 H150 V352 H275"/><text x="204" y="739">Chưa</text><text class="small" x="155" y="555" transform="rotate(-90 155 555)">Quần thể kế tiếp; không dừng sớm</text>
+<path class="edge" d="M540 826 V865"/><text class="small" x="578" y="852">Rồi</text>
+<rect x="275" y="865" width="530" height="70" rx="14" fill="#eff7f2" stroke="#4c7c63" stroke-width="2"/><text x="540" y="895">Trả miếng dán tốt nhất — 400 truy vấn</text><text class="small" x="540" y="922">Đánh giá không EOT trên ảnh gốc và ảnh khác</text>
+</svg>

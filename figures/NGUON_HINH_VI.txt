@@ -1,0 +1,17 @@
+NGUỒN VÀ PHẠM VI HÌNH BỔ SUNG KHI HỢP NHẤT BẢN THẢO
+
+quy_trinh_kiem_chung_vi.source.svg và luu_do_ga_vi.source.svg là nguồn vector
+chỉnh sửa được của hai sơ đồ phương pháp. PNG tương ứng là bản hiển thị trong
+Word và LaTeX. Nội dung sơ đồ đối chiếu với attack/genetic_algo.py,
+experiments/local_q1_validation.py và experiments/local_coco128_validation.py.
+Sơ đồ không phải dữ liệu đo, không minh họa một DoS đã được xác lập.
+
+giao_dien_camera_ban_goc.png được trích nguyên byte từ word/media/image11.png
+trong BaoCaoKhoaHocAdversarialAttacks.docx gốc của tác giả. SHA-256 của tệp
+Word gốc: 3b7c54dbf26f56373272605938645ae06705c852ed94e99e6a977c56938614c2.
+Bản Word gốc không bị chỉnh sửa. Ảnh này chỉ minh họa giao diện của bản cũ;
+không dùng giá trị CPU/FPS/số hộp trên ảnh để suy ra hiệu ứng thực nghiệm.
+Chú thích và mục Đánh giá thế giới vật lý công bố rõ giới hạn này.
+
+Các biểu đồ số liệu mới nằm trong figures_corrected của từng thư mục kết quả,
+có bản kê nguồn riêng. Không trộn số liệu cũ chưa kiểm chứng với dữ liệu mới.
