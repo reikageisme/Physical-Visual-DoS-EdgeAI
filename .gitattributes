@@ -1,0 +1,17 @@
+# Preserve exact experiment bytes for the SHA-256 provenance manifests.
+experiments/local_q1_validation.py -text
+experiments/local_coco128_validation.py -text
+experiments/local_q1_statistics.py -text
+experiments/local_validation_figures.py -text
+experiments/test_local_validation.py -text
+core/eot_transforms.py -text
+core/victim_model.py -text
+core/sponge_fitness.py -text
+attack/genetic_algo.py -text
+outputs/local_q1_20261002_v2/** -text
+outputs/local_coco128_20261002/** -text
+experiments/extended_validation.py -text
+experiments/extended_evaluation.py -text
+experiments/prepare_extended_validation.py -text
+experiments/test_extended_validation.py -text
+experiments/test_extended_evaluation.py -text

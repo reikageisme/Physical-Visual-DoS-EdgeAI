@@ -16,10 +16,14 @@ AUG_LIST = K.AugmentationSequential(
 
 def apply_eot(batched_adv_images):
     """
-    Áp dụng Expectation over Transformation (EoT) 100% bằng thư viện lõi Kornia trên GPU.
+    Áp dụng một mẫu EOT cho mỗi ảnh trên thiết bị của tensor đầu vào.
+
+    Kornia GaussianBlur dùng view nội bộ; ảnh RGB được permute từ HWC
+    có thể có stride không liên tục. Chuẩn hóa bố trí bộ nhớ trước chuỗi
+    biến đổi, giữ nguyên giá trị ảnh và đường truyền gradient.
     """
     # Chuyển ảnh qua Kornia (siêu nhanh vì Class AUG_LIST đã nằm sẵn trên RAM)
-    transformed = AUG_LIST(batched_adv_images)
+    transformed = AUG_LIST(batched_adv_images.contiguous())
     
     # Nhiễu cảm biến Kornia bằng hàm torch
     noise = torch.randn_like(transformed) * 0.02
