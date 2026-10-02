@@ -10,3 +10,8 @@ core/sponge_fitness.py -text
 attack/genetic_algo.py -text
 outputs/local_q1_20261002_v2/** -text
 outputs/local_coco128_20261002/** -text
+experiments/extended_validation.py -text
+experiments/extended_evaluation.py -text
+experiments/prepare_extended_validation.py -text
+experiments/test_extended_validation.py -text
+experiments/test_extended_evaluation.py -text

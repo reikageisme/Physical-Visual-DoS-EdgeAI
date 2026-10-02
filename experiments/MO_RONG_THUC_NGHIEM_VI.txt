@@ -1,0 +1,119 @@
+GIAO THỨC MỞ RỘNG KIỂM CHỨNG TRÊN MÁY CỤC BỘ — 02/10/2026
+
+1. Trạng thái và ranh giới
+Bản Word hợp nhất dùng bố cục của BaoCaoKhoaHocAdversarialAttacks.docx;
+bản LaTeX tiếng Việt dùng lớp và bố cục của BaoCaoKhoaHocAdversarialAttacks.tex.
+Tên đề tài gốc được giữ lại. Tên nghiên cứu không phải xác nhận đã gây DoS.
+Hai mẫu gốc không bị sửa. Các số liệu hoàn tất trước đây vẫn ở thư mục
+local_q1_20261002_v2 và local_coco128_20261002; không ghi đè dữ liệu thô cũ.
+Kết quả mở rộng CHỈ được đưa vào bài sau khi chương trình tương ứng hoàn tất,
+kiểm tra bản kê nguồn và phân tích. Có mã chạy không đồng nghĩa có kết quả.
+
+2. Môi trường và tái lập
+Dùng Python nghiên cứu thực tế trên máy, không dùng Python dựng tài liệu.
+Môi trường đã ghi ở manifest.json: CPU, hai luồng tính toán, một luồng liên tác
+vụ, kiểu float32, đường dẫn trình thông dịch, phiên bản mô-đun, SHA-256 của
+mã nguồn, trọng số, ảnh và cấu hình. Không thay đổi lõi mã đã có dữ liệu cũ.
+COCOeval cần pycocotools; gói hỗ trợ cục bộ đặt ở outputs/runtime/coco_eval.
+Không gửi môi trường Python, tệp tải tạm hay trọng số tải thêm lên Git/Drive.
+
+3. Tách tập ảnh
+Tối ưu trên bốn ảnh đầu COCO128, chọn trước khi xem kết quả mở rộng.
+Kiểm tra trên 128 ảnh đầu theo ID của COCO val2017, chọn trước khi tối ưu.
+Giữ nhãn chính thức, ID lớp, thông tin đám đông/bỏ qua và kích thước gốc.
+Chương trình chuẩn bị kiểm tra không trùng ID ảnh với COCO128 train2017.
+Không biết quy trình chọn checkpoint của nhà phát hành mô hình có sử dụng
+val2017 hay không: KHÔNG gọi tập này hoàn toàn chưa được mô hình nhìn thấy.
+Đây là tập con 128 ảnh, KHÔNG báo cáo như toàn bộ 5.000 ảnh COCO val2017.
+
+Lệnh chuẩn bị:
+python experiments/prepare_extended_validation.py --images 128
+
+4. Ngân sách và đối chứng tối ưu
+python experiments/extended_validation.py --seeds 10 --out-dir outputs/extended_q1_20261002
+
+Một truy vấn = một ảnh qua mô hình; số thế hệ không thay thế số truy vấn.
+Mỗi cá thể được đánh giá trên bốn ảnh tối ưu; một mẫu EOT mỗi ảnh nếu bật.
+Nhóm chính: GA vị trí Laplacian, GA tâm, GA vị trí ngẫu nhiên cố định và
+tìm kiếm ngẫu nhiên. Cùng miếng dán 64×64, cùng fitness và các mốc
+400/1.000/2.500 truy vấn ảnh; không dừng sớm. Mười seed cho từng cấu hình.
+Quần thể 20, giữ năm cá thể ưu tú, lai ghép ngang, xác suất đột biến 0,1,
+biên độ nhiễu đều 0,2. Miếng dán được chọn chỉ bằng điểm trên tập tối ưu.
+Điểm cực đại ngẫu nhiên quan sát không phải ước lượng kỳ vọng EOT độc lập.
+
+Nhóm loại bỏ thành phần: kích thước 32/45/90/128, tương ứng diện tích thực
+1,00/1,98/7,91/16,00%; mức 4% dùng checkpoint 400 truy vấn của nhóm chính.
+Tắt toàn bộ EOT hoặc riêng xoay/màu/mờ/nhiễu; thêm bốn mẫu EOT mỗi ảnh.
+Tất cả nhóm này dùng 400 truy vấn, kể cả EOT bốn mẫu: số cá thể được đánh
+giá sẽ ít hơn, không cấp thêm truy vấn miễn phí cho cấu hình EOT mạnh hơn.
+
+Nhóm thích nghi giới hạn: fitness chỉ đọc top-100 điểm để tối ưu riêng cho
+cấu hình đã biết giới hạn ứng viên. Đây là surrogate, không phải tối ưu trực
+tiếp thời gian NMS hoặc chất lượng dịch vụ của luồng camera.
+
+Đối chứng gradient tanh: 400 truy vấn ảnh, bước 1/255, miếng dán ghi đè
+cục bộ, cùng bốn ảnh và EOT. Lấy iterate đã đánh giá ở checkpoint.
+Trường best_training_fitness của bản kê là điểm checkpoint ở nhánh gradient,
+KHÔNG phải cực đại lịch sử. Số lượt lan truyền ngược được tính riêng.
+Đối chứng này lấy cảm hứng từ Overload nhưng điều chỉnh cho điểm lớp
+YOLOv8 và miếng dán cục bộ; KHÔNG phải tái lập nguyên bản Overload.
+Mô hình giả định cho gradient có quyền truy cập lớn hơn nhóm hộp xám.
+Không coi đối chứng điều chỉnh này thay thế một tái lập tấn công đã công bố.
+
+5. Đo sau tối ưu
+python experiments/extended_evaluation.py --run-dir outputs/extended_q1_20261002
+Chương trình chỉ chạy sau khi toàn bộ tối ưu hoàn tất để không cạnh tranh
+CPU giữa hai thí nghiệm. Mỗi ảnh có một lượt khởi động và ba lượt suy luận;
+hậu xử lý được đo riêng trên cùng dự đoán đã lưu. Thứ tự cấu hình xáo trộn.
+Độ trễ không gồm đọc ảnh, camera hoặc đặt miếng dán. Không cộng các trung vị
+để tạo độ trễ toàn trình. Giữ dữ liệu từng lượt và dự đoán cho tái phân tích.
+
+Nhóm chính tại 1.000 truy vấn chỉ đo 32 ảnh đầu; mốc 400 và 2.500 đo 128.
+Đường cong theo ngân sách phải lấy chung 32 ID ảnh; không gộp cỡ mẫu khác
+nhau thành một so sánh ghép cặp. Nhóm loại bỏ thành phần đo trên 128 ảnh.
+
+COCOeval bbox dùng maxDets 1/10/100, ánh xạ 80 lớp YOLO sang ID gốc,
+đưa tọa độ từ ảnh co vuông 320 về kích thước gốc và cắt theo biên ảnh.
+NMS chính không phân biệt lớp, IoU 0,45; đầu ra tối đa 300 phát hiện.
+COCOeval vẫn chỉ dùng 100 phát hiện theo quy ước của bộ đánh giá, không
+nhầm giới hạn đánh giá này với top-k cắt ứng viên TRƯỚC NMS.
+
+Quét ngưỡng 0,01/0,05/0,10/0,25/0,50 và giới hạn trước NMS
+không giới hạn/50/100/300 trên ảnh sạch, SG-GA và đối chứng thích nghi.
+Nhóm khác dùng ba cấu hình 0,01; 0,25; 0,01 + giới hạn 100.
+Đo kỳ vọng EOT độc lập: tám ảnh kiểm tra đầu, 16 mẫu mới cho mỗi ảnh,
+ghép cặp tham số biến đổi giữa ảnh sạch và ảnh có miếng dán.
+Không dùng phép đo này để chọn lại miếng dán.
+
+6. Đơn vị thống kê và giả thuyết
+So sánh chính ghi trong bản kê TRƯỚC khi đánh giá: chênh lệch SG-GA và
+GA tâm về tỷ số số ứng viên so với sạch tại 2.500 truy vấn trên tập kiểm tra.
+Ngưỡng hiệu ứng thực tiễn là 0,10. Đơn vị suy luận chính là cặp seed;
+lặp thời gian hay 128 ảnh không làm số seed lớn hơn mười.
+Dùng khoảng tin cậy ghép cặp và kiểm định đảo dấu hữu hạn; báo kích thước
+hiệu ứng cùng khoảng tin cậy, không chỉ giá trị p. Các so sánh còn lại là
+thăm dò và cần ghi xử lý đa so sánh. Mười seed là giới hạn tài nguyên,
+không phải khẳng định đã có công suất thống kê đủ. AP phải tính gộp ảnh;
+không lấy trung bình AP từng ảnh để gọi là AP của tập dữ liệu.
+Đây là giao thức lưu cục bộ trước đánh giá, không phải đăng ký công khai.
+
+7. Những phần chưa thể thay thế bằng phần mềm
+Chuyển giao phải đo thực tế nhiều kiến trúc cùng ảnh, cùng miếng dán và
+cùng ranh giới thời gian; mô hình không NMS không có số ứng viên NMS.
+Thay số luồng CPU không tạo thành một thiết bị phần cứng thứ hai.
+Mô hình hàng đợi từ thời gian xử lý không phải số đo tuổi khung camera.
+Miếng dán đã in cần người đặt trước camera thuộc quyền kiểm soát, ghi vật
+liệu, kích thước thật, khoảng cách, góc, ánh sáng đo được, camera/codec và
+nhiều khối đối chứng xáo trộn. Không bịa giá trị lux/nhiệt độ/kết quả vật lý.
+Tệp ảnh camera riêng tư không được tự động đưa lên nơi công khai.
+
+8. Kiểm tra chương trình
+python -m unittest discover -s experiments -p "test_extended*.py" -v
+Chế độ --pilot của bộ đánh giá ghi riêng evaluation_pilot, chỉ dùng để
+kiểm tra luồng chương trình, không được trộn với số đo chính.
+
+9. Công bố tệp
+Chỉ đưa mã thí nghiệm, giao thức, dữ liệu/biểu đồ đã hoàn tất và bản thảo
+khoa học vào gói công bố. Không đưa lời nhắc, ghi chú kiểm toán AI, mã dựng
+Word nội bộ, ảnh QA, môi trường hỗ trợ, tệp .part hoặc checkpoint resume.pt.
+Mỗi tệp công bố có SHA-256 trong danh sách. Không chạy git add toàn bộ.

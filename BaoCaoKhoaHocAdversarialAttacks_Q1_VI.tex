@@ -27,7 +27,6 @@
 \algrenewcommand\algorithmicif{Nếu}
 \algrenewcommand\algorithmicthen{thì}
 
-\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
 \newcommand{\todoauthor}[1]{\textcolor{red}{[TÁC GIẢ CẦN XÁC NHẬN: #1]}}
 \newcommand{\newexperiment}[1]{\textcolor{magenta}{[CẦN THÍ NGHIỆM MỚI: #1]}}
 \newcommand{\verifyref}{\textcolor{orange}{[TÀI LIỆU THAM KHẢO CẦN XÁC MINH]}}
@@ -52,32 +51,19 @@
   \rule{.25\textwidth}{.2pt}\par\footnotesize
   \noindent \textit{#1}: \par
 }{\egroup}
-\cs_set:Npn \__first_footerline:
-{
-  \group_begin:\small\sffamily
-  \ifnum\theblind>0\relax\else\__short_authors:\quad\fi
-  {\rmfamily\itshape Bản~thảo~nghiên~cứu}
-  \group_end:
-}
-\cs_set:Npn \__first_foot:
-{
-  \parbox[t]{\textwidth}{\rule{\textwidth}{.2pt}\\
-  \__first_footerline:\hfill Trang~\thepage{}~/~\lastpage}
-}
-\cs_set:Npn \__cas_foot:
-{
-  \parbox[t]{\textwidth}{\rule{\textwidth}{.2pt}\\
-  \sffamily\small\__first_footerline:\hfill Trang~\thepage{}~/~\lastpage}
-}
 \ExplSyntaxOff
 
 \begin{document}
 \let\WriteBookmarks\relax
-\shorttitle{Khuếch đại ứng viên và tải NMS tại biên}
+\def\floatpagepagefraction{1}
+\def\textpagefraction{.001}
+\shorttitle{Tấn công đối kháng Sponge Patch trên máy chủ biên}
 \shortauthors{Phạm Tuấn Anh và cộng sự}
-\title[mode=title]{Khuếch đại ứng viên hộp xám để kiểm thử sức chịu tải NMS trong các hệ thống phát hiện vật thể biên}
+\title[mode=title]{Tấn công đối kháng Sponge Patch: Khai thác lỗ hổng cạn kiệt tài nguyên trên hệ thống Edge Server bằng thuật toán tối ưu không gian}
 \author[1]{Phạm Tuấn Anh}
+\ead{anh25807700004@hutech.edu.vn}
 \author[1]{Mai Quốc Bảo}
+\ead{bao2580770008@hutech.edu.vn}
 \author[1]{Đinh Phương Nam}
 \cormark[1]
 \ead{dp.nam@hutech.edu.vn}
