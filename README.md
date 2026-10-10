@@ -288,7 +288,7 @@ This research and corresponding framework were developed by the following author
 ### 👤 Co-Author: Mai Quoc Bao (BaoZ)
 *   **Role:** Systems Architecture & Edge Deployment Lead
 *   **Contributions:** Engineered the bare-metal hardware profiling mechanisms, designed the real-time webcam testing pipeline, developed the Headless Ubuntu web simulation, and verified empirical metrics.
-*   **Contact:** bao2580770008@hutech.edu.vn
+*   **Contact:** bao2580770008@hutech.edu.vn | [GitHub: @reikageisme](https://github.com/sudo-baoz)
 
 ### How to Cite this work
 If you use this framework in your academic research, please consider citing our work:
