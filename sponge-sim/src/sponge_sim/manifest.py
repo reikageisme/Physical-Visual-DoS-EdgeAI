@@ -35,13 +35,13 @@ def config_hash(config: dict) -> str:
 
 
 def build(config: dict, extra_files: list[Path] = ()) -> dict:
-    code = sorted((SIM / 'src').rglob('*.py')) + sorted((SIM / 'experiments').rglob('*.py')) + list(extra_files)
+    code = sorted((SIM / 'src').rglob('*.py')) + sorted((SIM / 'studies').rglob('*.py')) + list(extra_files)
     cores = hw.cpu_topology()
     return dict(
         created_utc=time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),
         git=dict(head=_git('rev-parse', 'HEAD'), branch=_git('branch', '--show-current'),
                  tags_at_head=_git('tag', '--points-at', 'HEAD').split(),
-                 sponge_sim_dirty=bool(_git('status', '--porcelain', '--', 'sponge-sim/src', 'sponge-sim/experiments'))),
+                 sponge_sim_dirty=bool(_git('status', '--porcelain', '--', 'sponge-sim/src', 'sponge-sim/studies'))),
         code_sha256={str(Path(p).relative_to(REPO)).replace('\\', '/'): sha256(p) for p in code},
         weights=dict(path='yolov8n.pt', sha256=sha256(WEIGHTS)),
         config=config, config_sha256=config_hash(config),
