@@ -17,13 +17,27 @@ Môi trường: Python 3.14 hệ thống (không .venv), torch 2.13.0+cpu, torch
   - Phát hiện: pipeline resize 320×320 → head YOLOv8n có 2100 anchor (không phải 8400). Thang N E1 sẽ theo A=2100 (+ A=8400 nhãn "đầu vào 640").
   - Ultralytics 8.4.90 NMS: dùng torchvision.ops.nms khi torchvision đã import; time limit 2,0+0,05·bs s; max_nms 30000; max_det 300.
 
+- GĐ3 (E5): PREREG_E5 + run/analyze, commit 8afd3d5, tag `prereg-e5-20261021`. Smoke (scratchpad, không báo cáo) chạy được 3 profile,
+  ghim verify pass; ước lượng full ≈ 25 phút. Đổi tên thư mục `experiments/` → `studies/` (permission chặn tên `experiments`).
+- E2a (thăm dò, lịch sử, chỉ đọc): PREREG commit 9f2e355, tag `prereg-e2a-20261021`. Kết quả `results/e2a/20261021T145544/summary.json`:
+  - between_image_clean.rho = 0,9379 [0,9215; 0,9499]; pooled_spearman.rho = 0,6542 [0,628; 0,6767];
+  - within_image.*.rho_dN_dt = 0,11–0,13 (sg_ga 0,1214 [0,103; 0,1396]); không đảo dấu (simpson_check: sign_reversal False ×4);
+  - historical_noise_clean: median CV trong ảnh 1,1903 nhưng median |ln lệch| 0,0633 → đuôi dày (cú vọt);
+    noise_vs_effect.clean_clean_abs_diff_ms median 0,27225, p90 13,57325.
+  - POST-HOC (DEVIATIONS.md) `posthoc_aa.json`: A/A share mean 0,0445 [−0,0151; 0,137]; tấn công 0,0533–0,1277 chồng lấn A/A.
+  - Diễn giải được phép: N xếp hạng tốt độ trễ NMS GIỮA ảnh (backend custom); trong ảnh, ΔN do patch nhỏ và chìm trong nhiễu
+    đo lịch sử → dữ liệu lịch sử không tách được độ trễ do tấn công khỏi nhiễu. KHÔNG nói "N không dự đoán độ trễ".
+
 ## Đang dở
-- GĐ3: PREREG_E5 → tag → smoke → DỪNG chờ duyệt.
+- E5 full run: CHỜ DUYỆT + bạn làm checklist điện (xem `python -X utf8 -m sponge_sim.hw` hoặc PREREG_E5).
 
 ## Lệnh chạy tiếp
 ```
 cd D:/Sponge-patch-study/sponge-sim
 PYTHONPATH=src python -X utf8 -m sponge_sim.hw      # in topology + checklist
+# E5 đầy đủ (~25 phút, chạy nền, KHÔNG dùng máy khi đo):
+python -X utf8 studies/e5_protocol/run.py --run-dir results/e5/<YYYYMMDDTHHMMSS> > results/e5/<id>.log 2>&1
+python -X utf8 studies/e5_protocol/analyze.py results/e5/<id>
 ```
 
 ## Quyết định đang chờ tôi
