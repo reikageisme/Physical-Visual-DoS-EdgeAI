@@ -1,0 +1,57 @@
+{
+  "status": "accuracy_complete_latency_invalid",
+  "model_key": "yolov13s",
+  "n": 1,
+  "checkpoint": "weights/yolov13s.pt",
+  "head_classes": 80,
+  "prediction_classes": [
+    0
+  ],
+  "interpretation": "zero-finetuning diagnostic, original80classhead; not an independentseedgroup or proposedarchitecture",
+  "test": {
+    "precision": 0.859110396305127,
+    "recall": 0.6806599450045829,
+    "map50": 0.7875771870036046,
+    "map50_95": 0.5862725857656607,
+    "validator_speed_ms_batch8": {
+      "preprocess": 0.09736954737052644,
+      "inference": 3.032181903326826,
+      "loss": 0.000576464106424821,
+      "postprocess": 0.9574339830046363
+    },
+    "validator_latency_ms_per_frame_batch8": 4.086985433701988,
+    "parameters_m": 9.055527,
+    "flops_g": 8.94558912,
+    "evaluation_protocol": {
+      "imgsz": 416,
+      "batch": 8,
+      "half": false,
+      "workers": 0,
+      "split": "test",
+      "data_yaml": "dataset/data.yaml"
+    }
+  },
+  "latency": {
+    "latency_median_ms_per_frame": 89.47979731667311,
+    "fps_from_median_latency": 11.175707030950841,
+    "stage_median_ms_per_frame": {
+      "preprocess": 0.8328180564077277,
+      "inference": 87.53441106107898,
+      "postprocess": 1.1125681991863967
+    },
+    "latency_p95_ms_per_frame": 89.47979731667311,
+    "warmup_frames": 32,
+    "measured_frames": 500,
+    "imgsz": 416,
+    "batch": 1,
+    "timing_precision": "fp32",
+    "timing_scope": "Ultralytics preprocessing + inference + postprocessing; excludes decode/I/O",
+    "sample_seed": 2026,
+    "measured_at_utc": "2026-10-17T07:13:32+00:00"
+  },
+  "winner_lock_at_utc": "2026-10-17T06:15:11+00:00",
+  "measured_at_utc": "2026-10-17T07:13:32+00:00",
+  "accuracy_valid": true,
+  "latency_valid": false,
+  "latency_exclusion_reason": "Python list source activates LoadPilAndNumpy actualbatch532 despite batch1 argument; all result.speed values share one largebatch average. Not per-frame batch1 latency."
+}

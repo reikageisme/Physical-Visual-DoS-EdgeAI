@@ -1,0 +1,83 @@
+data_yaml: dataset/adv_tshirt_patch_detection.yaml
+imgsz: 416
+batch: 4
+workers: 0
+conf: 0.001
+iou: 0.7
+plots: true
+models:
+- name: YOLOv8n
+  family: YOLOv8
+  scale: n
+  checkpoint: runs/train/advpatch-yolov8n/weights/best.pt
+  source: locally fine-tuned, shared protocol
+- name: YOLOv10n
+  family: YOLOv10
+  scale: n
+  checkpoint: runs/train/advpatch-yolov10n/weights/best.pt
+  source: locally fine-tuned, shared protocol
+- name: YOLO11n
+  family: YOLO11
+  scale: n
+  checkpoint: runs/train/advpatch-yolo11n/weights/best.pt
+  source: locally fine-tuned, shared protocol
+- name: YOLOv12n
+  family: YOLOv12
+  scale: n
+  checkpoint: runs/train/advpatch-yolo12n/weights/best.pt
+  source: locally fine-tuned, shared protocol
+- name: YOLOv13n
+  family: YOLOv13
+  scale: n
+  checkpoint: runs/train/advpatch-yolov13n/weights/best.pt
+  source: locally fine-tuned, shared protocol
+- name: YOLOv8s
+  family: YOLOv8
+  scale: s
+  checkpoint: runs/train/advpatch-yolov8s/weights/best.pt
+  source: locally fine-tuned, shared protocol
+- name: YOLOv10s
+  family: YOLOv10
+  scale: s
+  checkpoint: runs/train/advpatch-yolov10s/weights/best.pt
+  source: locally fine-tuned, shared protocol
+- name: YOLO11s
+  family: YOLO11
+  scale: s
+  checkpoint: runs/train/advpatch-yolo11s/weights/best.pt
+  source: locally fine-tuned, shared protocol
+- name: YOLOv12s
+  family: YOLOv12
+  scale: s
+  checkpoint: runs/train/advpatch-yolo12s/weights/best.pt
+  source: locally fine-tuned, shared protocol
+- name: YOLOv13s
+  family: YOLOv13
+  scale: s
+  checkpoint: runs/train/advpatch-yolov13s/weights/best.pt
+  source: locally fine-tuned, shared protocol
+- name: YOLOv8l
+  family: YOLOv8
+  scale: l
+  checkpoint: runs/train/advpatch-yolov8l/weights/best.pt
+  source: locally fine-tuned, shared protocol
+- name: YOLOv10l
+  family: YOLOv10
+  scale: l
+  checkpoint: runs/train/advpatch-yolov10l/weights/best.pt
+  source: locally fine-tuned, shared protocol
+- name: YOLO11l
+  family: YOLO11
+  scale: l
+  checkpoint: runs/train/advpatch-yolo11l/weights/best.pt
+  source: locally fine-tuned, shared protocol
+- name: YOLOv12l
+  family: YOLOv12
+  scale: l
+  checkpoint: runs/train/advpatch-yolo12l/weights/best.pt
+  source: locally fine-tuned, shared protocol
+- name: YOLOv13l
+  family: YOLOv13
+  scale: l
+  checkpoint: runs/train/advpatch-yolov13l/weights/best.pt
+  source: locally fine-tuned, shared protocol

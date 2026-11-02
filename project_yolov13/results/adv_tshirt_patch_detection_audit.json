@@ -1,0 +1,53 @@
+{
+  "audit_time_utc": "2026-10-04T10:38:06+00:00",
+  "dataset_yaml": "dataset\\adv_tshirt_patch_detection.yaml",
+  "dataset_root": "dataset\\adv_tshirt_patch_detection",
+  "nc": 1,
+  "names": {
+    "0": "patch"
+  },
+  "names_valid": true,
+  "splits": {
+    "train": {
+      "image_dir": "dataset\\adv_tshirt_patch_detection\\images\\train",
+      "label_dir": "dataset\\adv_tshirt_patch_detection\\labels\\train",
+      "images": 785,
+      "label_files": 785,
+      "missing_label_stems": [],
+      "orphan_label_stems": [],
+      "invalid_label_rows": 0,
+      "invalid_examples": [],
+      "instances_by_class": {
+        "0": 1106
+      }
+    },
+    "val": {
+      "image_dir": "dataset\\adv_tshirt_patch_detection\\images\\val",
+      "label_dir": "dataset\\adv_tshirt_patch_detection\\labels\\val",
+      "images": 169,
+      "label_files": 169,
+      "missing_label_stems": [],
+      "orphan_label_stems": [],
+      "invalid_label_rows": 0,
+      "invalid_examples": [],
+      "instances_by_class": {
+        "0": 220
+      }
+    },
+    "test": {
+      "image_dir": "dataset\\adv_tshirt_patch_detection\\images\\test",
+      "label_dir": "dataset\\adv_tshirt_patch_detection\\labels\\test",
+      "images": 169,
+      "label_files": 169,
+      "missing_label_stems": [],
+      "orphan_label_stems": [],
+      "invalid_label_rows": 0,
+      "invalid_examples": [],
+      "instances_by_class": {
+        "0": 222
+      }
+    }
+  },
+  "status": "ready",
+  "failures": []
+}

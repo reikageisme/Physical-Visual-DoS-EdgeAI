@@ -1,0 +1,14 @@
+{
+  "retrieved_at_utc": "2026-10-04T09:24:49+00:00",
+  "source_repository": "https://github.com/sunsmarterjie/yolov12",
+  "source_revision": "b1035f8",
+  "revision_note": "YOLOv12-v1.0 release commit; AAttn uses qkv, matching the released v1.0 detector weights.",
+  "archive_url": "https://codeload.github.com/sunsmarterjie/yolov12/zip/b1035f8",
+  "archive_sha256": "227d0087764670aae021f0e30a89560fb60129c1ec972e4b1a140e472ee2960b",
+  "implementation_path": "yolov12_v1_src/",
+  "local_compatibility_patch": {
+    "file": "yolov12_v1_src/ultralytics/nn/modules/block.py",
+    "sha256": "b4f084f711e925897f983f8d461105146dfa84b71dd4b5a6aae214ad069ae078",
+    "description": "Optional FlashAttention import; PyTorch SDPA fallback for identical scaled-dot-product attention when FlashAttention is unavailable."
+  }
+}

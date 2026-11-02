@@ -1,0 +1,12 @@
+{
+  "pilot_id": "20261010",
+  "cap_minutes": 10,
+  "epochs_max": 50,
+  "patience": 10,
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "torch": "2.11.0+cu128",
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 5060",
+  "dataset_yaml": "dataset\\adv_tshirt_patch_detection.yaml",
+  "seed": 42
+}

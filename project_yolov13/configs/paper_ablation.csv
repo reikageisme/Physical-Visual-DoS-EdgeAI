@@ -1,0 +1,14 @@
+experiment,variant,dataset,scale,map50_95,map50,params_m,flops_g,source,notes
+FullPAD-HyperACE,No distribution (paper treats as HyperACE removed),MS COCO val,s,47.1,64.1,,,https://arxiv.org/abs/2506.17733,Table III
+FullPAD-HyperACE,Backbone-to-neck only,MS COCO val,s,47.8,65.0,,,https://arxiv.org/abs/2506.17733,Table III
+FullPAD-HyperACE,In-neck only,MS COCO val,s,47.6,64.8,,,https://arxiv.org/abs/2506.17733,Table III
+FullPAD-HyperACE,Neck-to-head only,MS COCO val,s,47.7,64.9,,,https://arxiv.org/abs/2506.17733,Table III
+FullPAD-HyperACE,All three FullPAD paths,MS COCO val,s,48.0,65.2,,,https://arxiv.org/abs/2506.17733,Table III
+DS-blocks,YOLOv13-N with DS blocks,MS COCO val,n,41.6,57.8,2.5,6.4,https://arxiv.org/abs/2506.17733,Table V
+DS-blocks,YOLOv13-N with vanilla blocks,MS COCO val,n,41.6,57.9,3.1,7.9,https://arxiv.org/abs/2506.17733,Table V
+DS-blocks,YOLOv13-S with DS blocks,MS COCO val,s,48.0,65.2,9.0,20.8,https://arxiv.org/abs/2506.17733,Table V
+DS-blocks,YOLOv13-S with vanilla blocks,MS COCO val,s,48.0,65.3,11.7,27.1,https://arxiv.org/abs/2506.17733,Table V
+Hyperedge-count,M=2,MS COCO val,s,47.8,64.7,8.6,20.4,https://arxiv.org/abs/2506.17733,Table IV
+Hyperedge-count,M=4,MS COCO val,s,47.9,65.0,8.8,20.5,https://arxiv.org/abs/2506.17733,Table IV
+Hyperedge-count,M=8,MS COCO val,s,48.0,65.2,9.0,20.8,https://arxiv.org/abs/2506.17733,Table IV
+Hyperedge-count,M=16,MS COCO val,s,48.1,65.2,9.6,21.5,https://arxiv.org/abs/2506.17733,Table IV

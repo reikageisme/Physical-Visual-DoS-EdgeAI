@@ -1,0 +1,29 @@
+{
+  "checked_at_utc": "2026-10-12T19:03:41.526007+00:00",
+  "status": "complete",
+  "verified_complete_records": 20,
+  "verified_milestones": 119,
+  "unavailable_milestones": [
+    {
+      "model": "yolov13s",
+      "seed": 2026,
+      "budget_minutes": 5,
+      "reason": "no_completed_epoch_at_or_before_budget"
+    }
+  ],
+  "pending_records": [],
+  "checks": [
+    "record identity and six budgets",
+    "completed epoch count and total training time matching CSV",
+    "configured training seed",
+    "maximal eligible validation checkpoint",
+    "all four selected validation metrics matching CSV",
+    "last eligible endpoint",
+    "exact elapsed times from CSV within budget",
+    "checkpoint exists",
+    "finite detection metrics within [0,1]",
+    "six finite endpoint losses matching CSV",
+    "positive parameters/FLOPs",
+    "repeated checkpoint test consistency"
+  ]
+}

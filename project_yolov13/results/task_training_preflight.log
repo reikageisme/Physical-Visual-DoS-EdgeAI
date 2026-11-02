@@ -1,0 +1,11 @@
+FlashAttention is not available on this device. Using scaled_dot_product_attention instead.
+Traceback (most recent call last):
+  File "E:\HUTECH\NCKH-new\Physical-Visual-DoS-EdgeAI-main\project_yolov13\train_yolov13.py", line 219, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "E:\HUTECH\NCKH-new\Physical-Visual-DoS-EdgeAI-main\project_yolov13\train_yolov13.py", line 103, in main
+    validate_dataset_yaml(data_path, require_test=True)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\HUTECH\NCKH-new\Physical-Visual-DoS-EdgeAI-main\project_yolov13\pipeline_utils.py", line 102, in validate_dataset_yaml
+    raise ValueError(f"No images found in the configured {split} split: {split_dir}")
+ValueError: No images found in the configured train split: E:\HUTECH\NCKH-new\Physical-Visual-DoS-EdgeAI-main\project_yolov13\data\images\train

@@ -1,0 +1,518 @@
+{
+  "study_id": "fullscale-20261011",
+  "sweet_spots": {
+    "yolo11n": {
+      "label": "YOLO11n",
+      "mean_validation_map50_95_by_budget": {
+        "5": 0.367372,
+        "10": 0.367372,
+        "20": 0.367372,
+        "30": 0.367372,
+        "60": 0.36851,
+        "120": 0.408488
+      },
+      "peak_validation_map50_95": 0.408488,
+      "sweet_spot_minutes": 120
+    },
+    "yolov12n": {
+      "label": "YOLOv12n",
+      "mean_validation_map50_95_by_budget": {
+        "5": 0.237272,
+        "10": 0.243246,
+        "20": 0.252424,
+        "30": 0.285548,
+        "60": 0.33866,
+        "120": 0.38696800000000003
+      },
+      "peak_validation_map50_95": 0.38696800000000003,
+      "sweet_spot_minutes": 120
+    },
+    "yolov13n": {
+      "label": "YOLOv13n",
+      "mean_validation_map50_95_by_budget": {
+        "5": 0.3903,
+        "10": 0.3903,
+        "20": 0.3903,
+        "30": 0.3903,
+        "60": 0.3903,
+        "120": 0.393978
+      },
+      "peak_validation_map50_95": 0.393978,
+      "sweet_spot_minutes": 5
+    },
+    "yolov13s": {
+      "label": "YOLOv13s",
+      "mean_validation_map50_95_by_budget": {
+        "10": 0.46273800000000004,
+        "20": 0.46273800000000004,
+        "30": 0.46273800000000004,
+        "60": 0.46273800000000004,
+        "120": 0.46273800000000004
+      },
+      "peak_validation_map50_95": 0.46273800000000004,
+      "sweet_spot_minutes": 10
+    }
+  },
+  "records": [
+    {
+      "model_key": "yolo11n",
+      "model_name": "YOLO11n",
+      "seed": 42,
+      "sweet_spot_minutes": 120,
+      "checkpoint": "runs/train/fullscale-yolo11n-seed42-120m/weights/epoch43.pt",
+      "imgsz": 416,
+      "batch": 1,
+      "timing_precision": "fp32",
+      "device": "NVIDIA GeForce RTX 5060",
+      "warmup_frames": 32,
+      "measured_frames": 500,
+      "stage_median_ms_per_frame": {
+        "preprocess": 0.7119833078599513,
+        "inference": 1.874810322783047,
+        "postprocess": 0.7417175106536177
+      },
+      "latency_median_ms_per_frame": 3.328511141296616,
+      "fps_from_median_latency": 300.43462603837094,
+      "timing_scope": "Ultralytics preprocessing + inference + postprocessing; excludes image loading/decoding and application I/O",
+      "ultralytics_version": "8.3.63",
+      "measured_at_utc": "2026-10-12T18:52:10.787118+00:00"
+    },
+    {
+      "model_key": "yolo11n",
+      "model_name": "YOLO11n",
+      "seed": 100,
+      "sweet_spot_minutes": 120,
+      "checkpoint": "runs/train/fullscale-yolo11n-seed100-120m/weights/epoch45.pt",
+      "imgsz": 416,
+      "batch": 1,
+      "timing_precision": "fp32",
+      "device": "NVIDIA GeForce RTX 5060",
+      "warmup_frames": 32,
+      "measured_frames": 500,
+      "stage_median_ms_per_frame": {
+        "preprocess": 0.7361630748089095,
+        "inference": 0.9359533625437801,
+        "postprocess": 0.6769456361469469
+      },
+      "latency_median_ms_per_frame": 2.3490620734996366,
+      "fps_from_median_latency": 425.70182000776094,
+      "timing_scope": "Ultralytics preprocessing + inference + postprocessing; excludes image loading/decoding and application I/O",
+      "ultralytics_version": "8.3.63",
+      "measured_at_utc": "2026-10-12T18:52:17.955746+00:00"
+    },
+    {
+      "model_key": "yolo11n",
+      "model_name": "YOLO11n",
+      "seed": 2026,
+      "sweet_spot_minutes": 120,
+      "checkpoint": "runs/train/fullscale-yolo11n-seed2026-120m/weights/epoch45.pt",
+      "imgsz": 416,
+      "batch": 1,
+      "timing_precision": "fp32",
+      "device": "NVIDIA GeForce RTX 5060",
+      "warmup_frames": 32,
+      "measured_frames": 500,
+      "stage_median_ms_per_frame": {
+        "preprocess": 0.7391603369461862,
+        "inference": 0.9365942245139215,
+        "postprocess": 0.7179944138777884
+      },
+      "latency_median_ms_per_frame": 2.393748975337896,
+      "fps_from_median_latency": 417.7547480135599,
+      "timing_scope": "Ultralytics preprocessing + inference + postprocessing; excludes image loading/decoding and application I/O",
+      "ultralytics_version": "8.3.63",
+      "measured_at_utc": "2026-10-12T18:52:25.573939+00:00"
+    },
+    {
+      "model_key": "yolo11n",
+      "model_name": "YOLO11n",
+      "seed": 777,
+      "sweet_spot_minutes": 120,
+      "checkpoint": "runs/train/fullscale-yolo11n-seed777-120m/weights/epoch47.pt",
+      "imgsz": 416,
+      "batch": 1,
+      "timing_precision": "fp32",
+      "device": "NVIDIA GeForce RTX 5060",
+      "warmup_frames": 32,
+      "measured_frames": 500,
+      "stage_median_ms_per_frame": {
+        "preprocess": 0.7446009413640302,
+        "inference": 0.9389967846691161,
+        "postprocess": 0.664180830905312
+      },
+      "latency_median_ms_per_frame": 2.3477785569384584,
+      "fps_from_median_latency": 425.93454865863345,
+      "timing_scope": "Ultralytics preprocessing + inference + postprocessing; excludes image loading/decoding and application I/O",
+      "ultralytics_version": "8.3.63",
+      "measured_at_utc": "2026-10-12T18:52:40.417139+00:00"
+    },
+    {
+      "model_key": "yolo11n",
+      "model_name": "YOLO11n",
+      "seed": 999,
+      "sweet_spot_minutes": 120,
+      "checkpoint": "runs/train/fullscale-yolo11n-seed999-120m/weights/epoch46.pt",
+      "imgsz": 416,
+      "batch": 1,
+      "timing_precision": "fp32",
+      "device": "NVIDIA GeForce RTX 5060",
+      "warmup_frames": 32,
+      "measured_frames": 500,
+      "stage_median_ms_per_frame": {
+        "preprocess": 0.8234560937809765,
+        "inference": 0.943522256119807,
+        "postprocess": 0.7365731368387552
+      },
+      "latency_median_ms_per_frame": 2.5035514867395388,
+      "fps_from_median_latency": 399.4325682122617,
+      "timing_scope": "Ultralytics preprocessing + inference + postprocessing; excludes image loading/decoding and application I/O",
+      "ultralytics_version": "8.3.63",
+      "measured_at_utc": "2026-10-12T18:52:47.859404+00:00"
+    },
+    {
+      "model_key": "yolov12n",
+      "model_name": "YOLOv12n",
+      "seed": 42,
+      "sweet_spot_minutes": 120,
+      "checkpoint": "runs/train/fullscale-yolov12n-seed42-120m/weights/epoch36.pt",
+      "imgsz": 416,
+      "batch": 1,
+      "timing_precision": "fp32",
+      "device": "NVIDIA GeForce RTX 5060",
+      "warmup_frames": 32,
+      "measured_frames": 500,
+      "stage_median_ms_per_frame": {
+        "preprocess": 0.8115060347363465,
+        "inference": 1.380030373881634,
+        "postprocess": 0.7071669836689655
+      },
+      "latency_median_ms_per_frame": 2.898703392286946,
+      "fps_from_median_latency": 344.98182969008263,
+      "timing_scope": "Ultralytics preprocessing + inference + postprocessing; excludes image loading/decoding and application I/O",
+      "ultralytics_version": "8.3.63",
+      "measured_at_utc": "2026-10-12T18:52:56.318393+00:00"
+    },
+    {
+      "model_key": "yolov12n",
+      "model_name": "YOLOv12n",
+      "seed": 100,
+      "sweet_spot_minutes": 120,
+      "checkpoint": "runs/train/fullscale-yolov12n-seed100-120m/weights/epoch37.pt",
+      "imgsz": 416,
+      "batch": 1,
+      "timing_precision": "fp32",
+      "device": "NVIDIA GeForce RTX 5060",
+      "warmup_frames": 32,
+      "measured_frames": 500,
+      "stage_median_ms_per_frame": {
+        "preprocess": 0.7870811268799287,
+        "inference": 1.2795396317216687,
+        "postprocess": 0.6649785472038097
+      },
+      "latency_median_ms_per_frame": 2.731599305805407,
+      "fps_from_median_latency": 366.0859035491488,
+      "timing_scope": "Ultralytics preprocessing + inference + postprocessing; excludes image loading/decoding and application I/O",
+      "ultralytics_version": "8.3.63",
+      "measured_at_utc": "2026-10-12T18:53:03.744332+00:00"
+    },
+    {
+      "model_key": "yolov12n",
+      "model_name": "YOLOv12n",
+      "seed": 2026,
+      "sweet_spot_minutes": 120,
+      "checkpoint": "runs/train/fullscale-yolov12n-seed2026-120m/weights/epoch37.pt",
+      "imgsz": 416,
+      "batch": 1,
+      "timing_precision": "fp32",
+      "device": "NVIDIA GeForce RTX 5060",
+      "warmup_frames": 32,
+      "measured_frames": 500,
+      "stage_median_ms_per_frame": {
+        "preprocess": 0.7759126505457369,
+        "inference": 1.2636023356502217,
+        "postprocess": 0.6739546481828044
+      },
+      "latency_median_ms_per_frame": 2.7134696343787628,
+      "fps_from_median_latency": 368.5318557946368,
+      "timing_scope": "Ultralytics preprocessing + inference + postprocessing; excludes image loading/decoding and application I/O",
+      "ultralytics_version": "8.3.63",
+      "measured_at_utc": "2026-10-12T18:53:11.170832+00:00"
+    },
+    {
+      "model_key": "yolov12n",
+      "model_name": "YOLOv12n",
+      "seed": 777,
+      "sweet_spot_minutes": 120,
+      "checkpoint": "runs/train/fullscale-yolov12n-seed777-120m/weights/epoch35.pt",
+      "imgsz": 416,
+      "batch": 1,
+      "timing_precision": "fp32",
+      "device": "NVIDIA GeForce RTX 5060",
+      "warmup_frames": 32,
+      "measured_frames": 500,
+      "stage_median_ms_per_frame": {
+        "preprocess": 0.7668747041458474,
+        "inference": 1.2592834637577373,
+        "postprocess": 0.7439744203610528
+      },
+      "latency_median_ms_per_frame": 2.7701325882646373,
+      "fps_from_median_latency": 360.9935510799701,
+      "timing_scope": "Ultralytics preprocessing + inference + postprocessing; excludes image loading/decoding and application I/O",
+      "ultralytics_version": "8.3.63",
+      "measured_at_utc": "2026-10-12T18:53:18.653555+00:00"
+    },
+    {
+      "model_key": "yolov12n",
+      "model_name": "YOLOv12n",
+      "seed": 999,
+      "sweet_spot_minutes": 120,
+      "checkpoint": "runs/train/fullscale-yolov12n-seed999-120m/weights/epoch37.pt",
+      "imgsz": 416,
+      "batch": 1,
+      "timing_precision": "fp32",
+      "device": "NVIDIA GeForce RTX 5060",
+      "warmup_frames": 32,
+      "measured_frames": 500,
+      "stage_median_ms_per_frame": {
+        "preprocess": 0.7388690360506674,
+        "inference": 1.2614319199009945,
+        "postprocess": 0.7466525959789305
+      },
+      "latency_median_ms_per_frame": 2.7469535519305923,
+      "fps_from_median_latency": 364.0396465011896,
+      "timing_scope": "Ultralytics preprocessing + inference + postprocessing; excludes image loading/decoding and application I/O",
+      "ultralytics_version": "8.3.63",
+      "measured_at_utc": "2026-10-12T18:53:26.098996+00:00"
+    },
+    {
+      "model_key": "yolov13n",
+      "model_name": "YOLOv13n",
+      "seed": 42,
+      "sweet_spot_minutes": 5,
+      "checkpoint": "runs/train/fullscale-yolov13n-seed42-120m/weights/epoch0.pt",
+      "imgsz": 416,
+      "batch": 1,
+      "timing_precision": "fp32",
+      "device": "NVIDIA GeForce RTX 5060",
+      "warmup_frames": 32,
+      "measured_frames": 500,
+      "stage_median_ms_per_frame": {
+        "preprocess": 0.7332370693522289,
+        "inference": 2.9967857482738065,
+        "postprocess": 0.7834636179128087
+      },
+      "latency_median_ms_per_frame": 4.513486435538844,
+      "fps_from_median_latency": 221.5582154243507,
+      "timing_scope": "Ultralytics preprocessing + inference + postprocessing; excludes image loading/decoding and application I/O",
+      "ultralytics_version": "8.3.63",
+      "measured_at_utc": "2026-10-12T18:53:34.500817+00:00"
+    },
+    {
+      "model_key": "yolov13n",
+      "model_name": "YOLOv13n",
+      "seed": 100,
+      "sweet_spot_minutes": 5,
+      "checkpoint": "runs/train/fullscale-yolov13n-seed100-120m/weights/epoch0.pt",
+      "imgsz": 416,
+      "batch": 1,
+      "timing_precision": "fp32",
+      "device": "NVIDIA GeForce RTX 5060",
+      "warmup_frames": 32,
+      "measured_frames": 500,
+      "stage_median_ms_per_frame": {
+        "preprocess": 0.6957793594302988,
+        "inference": 2.5579436381060376,
+        "postprocess": 0.8009430161096099
+      },
+      "latency_median_ms_per_frame": 4.054666013645947,
+      "fps_from_median_latency": 246.62943794495226,
+      "timing_scope": "Ultralytics preprocessing + inference + postprocessing; excludes image loading/decoding and application I/O",
+      "ultralytics_version": "8.3.63",
+      "measured_at_utc": "2026-10-12T18:53:42.725441+00:00"
+    },
+    {
+      "model_key": "yolov13n",
+      "model_name": "YOLOv13n",
+      "seed": 2026,
+      "sweet_spot_minutes": 5,
+      "checkpoint": "runs/train/fullscale-yolov13n-seed2026-120m/weights/epoch0.pt",
+      "imgsz": 416,
+      "batch": 1,
+      "timing_precision": "fp32",
+      "device": "NVIDIA GeForce RTX 5060",
+      "warmup_frames": 32,
+      "measured_frames": 500,
+      "stage_median_ms_per_frame": {
+        "preprocess": 0.7412375364088475,
+        "inference": 2.5746929914431465,
+        "postprocess": 0.6798348928752699
+      },
+      "latency_median_ms_per_frame": 3.9957654207272637,
+      "fps_from_median_latency": 250.26494168368657,
+      "timing_scope": "Ultralytics preprocessing + inference + postprocessing; excludes image loading/decoding and application I/O",
+      "ultralytics_version": "8.3.63",
+      "measured_at_utc": "2026-10-12T18:53:50.838900+00:00"
+    },
+    {
+      "model_key": "yolov13n",
+      "model_name": "YOLOv13n",
+      "seed": 777,
+      "sweet_spot_minutes": 5,
+      "checkpoint": "runs/train/fullscale-yolov13n-seed777-120m/weights/epoch0.pt",
+      "imgsz": 416,
+      "batch": 1,
+      "timing_precision": "fp32",
+      "device": "NVIDIA GeForce RTX 5060",
+      "warmup_frames": 32,
+      "measured_frames": 500,
+      "stage_median_ms_per_frame": {
+        "preprocess": 0.7488239080386054,
+        "inference": 2.5561801473000894,
+        "postprocess": 0.8762797018639127
+      },
+      "latency_median_ms_per_frame": 4.181283757202608,
+      "fps_from_median_latency": 239.16099888638678,
+      "timing_scope": "Ultralytics preprocessing + inference + postprocessing; excludes image loading/decoding and application I/O",
+      "ultralytics_version": "8.3.63",
+      "measured_at_utc": "2026-10-12T18:53:59.097719+00:00"
+    },
+    {
+      "model_key": "yolov13n",
+      "model_name": "YOLOv13n",
+      "seed": 999,
+      "sweet_spot_minutes": 5,
+      "checkpoint": "runs/train/fullscale-yolov13n-seed999-120m/weights/epoch0.pt",
+      "imgsz": 416,
+      "batch": 1,
+      "timing_precision": "fp32",
+      "device": "NVIDIA GeForce RTX 5060",
+      "warmup_frames": 32,
+      "measured_frames": 500,
+      "stage_median_ms_per_frame": {
+        "preprocess": 0.7389680783551439,
+        "inference": 2.554581129461303,
+        "postprocess": 0.7751472014233582
+      },
+      "latency_median_ms_per_frame": 4.068696409239805,
+      "fps_from_median_latency": 245.77896687721656,
+      "timing_scope": "Ultralytics preprocessing + inference + postprocessing; excludes image loading/decoding and application I/O",
+      "ultralytics_version": "8.3.63",
+      "measured_at_utc": "2026-10-12T18:54:07.144123+00:00"
+    },
+    {
+      "model_key": "yolov13s",
+      "model_name": "YOLOv13s",
+      "seed": 42,
+      "sweet_spot_minutes": 10,
+      "checkpoint": "runs/train/fullscale-yolov13s-seed42-120m/weights/epoch0.pt",
+      "imgsz": 416,
+      "batch": 1,
+      "timing_precision": "fp32",
+      "device": "NVIDIA GeForce RTX 5060",
+      "warmup_frames": 32,
+      "measured_frames": 500,
+      "stage_median_ms_per_frame": {
+        "preprocess": 0.7363602631074145,
+        "inference": 53.90554532072598,
+        "postprocess": 0.7290123100567582
+      },
+      "latency_median_ms_per_frame": 55.37091789389015,
+      "fps_from_median_latency": 18.060022084451376,
+      "timing_scope": "Ultralytics preprocessing + inference + postprocessing; excludes image loading/decoding and application I/O",
+      "ultralytics_version": "8.3.63",
+      "measured_at_utc": "2026-10-12T18:54:42.518721+00:00"
+    },
+    {
+      "model_key": "yolov13s",
+      "model_name": "YOLOv13s",
+      "seed": 100,
+      "sweet_spot_minutes": 10,
+      "checkpoint": "runs/train/fullscale-yolov13s-seed100-120m/weights/epoch0.pt",
+      "imgsz": 416,
+      "batch": 1,
+      "timing_precision": "fp32",
+      "device": "NVIDIA GeForce RTX 5060",
+      "warmup_frames": 32,
+      "measured_frames": 500,
+      "stage_median_ms_per_frame": {
+        "preprocess": 0.7524768212684115,
+        "inference": 50.281436371624025,
+        "postprocess": 0.6836473493647754
+      },
+      "latency_median_ms_per_frame": 51.71756054225721,
+      "fps_from_median_latency": 19.33579212776139,
+      "timing_scope": "Ultralytics preprocessing + inference + postprocessing; excludes image loading/decoding and application I/O",
+      "ultralytics_version": "8.3.63",
+      "measured_at_utc": "2026-10-12T18:55:17.120212+00:00"
+    },
+    {
+      "model_key": "yolov13s",
+      "model_name": "YOLOv13s",
+      "seed": 2026,
+      "sweet_spot_minutes": 10,
+      "checkpoint": "runs/train/fullscale-yolov13s-seed2026-120m/weights/epoch0.pt",
+      "imgsz": 416,
+      "batch": 1,
+      "timing_precision": "fp32",
+      "device": "NVIDIA GeForce RTX 5060",
+      "warmup_frames": 32,
+      "measured_frames": 500,
+      "stage_median_ms_per_frame": {
+        "preprocess": 0.7277453752388632,
+        "inference": 49.45216008595058,
+        "postprocess": 0.9281155758334282
+      },
+      "latency_median_ms_per_frame": 51.10802103702287,
+      "fps_from_median_latency": 19.56640033617415,
+      "timing_scope": "Ultralytics preprocessing + inference + postprocessing; excludes image loading/decoding and application I/O",
+      "ultralytics_version": "8.3.63",
+      "measured_at_utc": "2026-10-12T18:55:51.035988+00:00"
+    },
+    {
+      "model_key": "yolov13s",
+      "model_name": "YOLOv13s",
+      "seed": 777,
+      "sweet_spot_minutes": 10,
+      "checkpoint": "runs/train/fullscale-yolov13s-seed777-120m/weights/epoch0.pt",
+      "imgsz": 416,
+      "batch": 1,
+      "timing_precision": "fp32",
+      "device": "NVIDIA GeForce RTX 5060",
+      "warmup_frames": 32,
+      "measured_frames": 500,
+      "stage_median_ms_per_frame": {
+        "preprocess": 0.7276678443851328,
+        "inference": 48.78076933380356,
+        "postprocess": 0.8851321120011179
+      },
+      "latency_median_ms_per_frame": 50.39356929018981,
+      "fps_from_median_latency": 19.84380178037263,
+      "timing_scope": "Ultralytics preprocessing + inference + postprocessing; excludes image loading/decoding and application I/O",
+      "ultralytics_version": "8.3.63",
+      "measured_at_utc": "2026-10-12T18:56:24.138135+00:00"
+    },
+    {
+      "model_key": "yolov13s",
+      "model_name": "YOLOv13s",
+      "seed": 999,
+      "sweet_spot_minutes": 10,
+      "checkpoint": "runs/train/fullscale-yolov13s-seed999-120m/weights/epoch0.pt",
+      "imgsz": 416,
+      "batch": 1,
+      "timing_precision": "fp32",
+      "device": "NVIDIA GeForce RTX 5060",
+      "warmup_frames": 32,
+      "measured_frames": 500,
+      "stage_median_ms_per_frame": {
+        "preprocess": 0.7272295485761829,
+        "inference": 48.75494976689045,
+        "postprocess": 0.8581312079178659
+      },
+      "latency_median_ms_per_frame": 50.340310523384495,
+      "fps_from_median_latency": 19.864796017407794,
+      "timing_scope": "Ultralytics preprocessing + inference + postprocessing; excludes image loading/decoding and application I/O",
+      "ultralytics_version": "8.3.63",
+      "measured_at_utc": "2026-10-12T18:56:57.248534+00:00"
+    }
+  ]
+}

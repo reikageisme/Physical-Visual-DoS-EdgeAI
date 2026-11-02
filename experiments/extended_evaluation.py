@@ -98,7 +98,7 @@ def evaluate_case(victim, case, infos, coco, data_folder, destination):
     categories = sorted(coco.getCatIds())
     patch = None if case['patch'] is None else torch.from_numpy(np.load(case['patch']))
     configs = [(.01, None), (.25, None), (.01, 100)]
-    if case['name'] in ['clean', 'sg_ga', 'adaptive_cap100'] and (case['budget'] == 2500 or case['name'] != 'sg_ga'):
+    if case['name'] in ['clean', 'sg_ga', 'adaptive_cap100'] and (case['budget'] in [400,2500] or case['name'] != 'sg_ga'):
         configs = [(tau, cap) for tau in [.01, .05, .10, .25, .50] for cap in [None, 50, 100, 300]]
     predictions = {str(config):[] for config in configs}
     records = []
@@ -210,7 +210,8 @@ def main():
     output.mkdir(exist_ok=True)
     config = dict(script_sha256=sha256(__file__), dataset_sha256=sha256(data_folder/'manifest.json'),
                   optimizer_manifest_sha256=sha256(run/'manifest.json'), pilot=args.pilot,
-                  case_order_seed=981561, test_images=len(infos), eot_test_images=8, independent_eot_draws=16,
+                  case_order_seed=981561, test_images=min(2,len(infos)) if args.pilot else len(infos),
+                  eot_test_images=min(2,len(infos)) if args.pilot else 8, independent_eot_draws=16,
                   timing_repeats=3, timing_warmup=1, cpu_threads=2,
                   budget_1000_images=32, other_budgets_images=len(infos),
                   latency_excludes_dataset_loading_and_patch_placement=True,
@@ -229,7 +230,7 @@ def main():
         selection = infos if case['budget'] in [0, 400] or case['budget'] == max(case['spec']['budgets']) else infos[:32]
         name = f'{case["name"]}_seed{case["seed"]}_q{case["budget"]}'
         evaluate_case(victim, case, selection, coco, data_folder, output/f'{name}.json')
-        if case['budget'] and case['budget'] == max(case['spec']['budgets']):
+        if case['budget'] and (case['budget'] == max(case['spec']['budgets']) or (case['name']=='sg_ga' and case['budget']==400)):
             independent_eot(victim, case, infos, data_folder, output/f'eot_{name}.json')
         print(f'EVALUATED {index+1}/{len(all_cases)}: {name}', flush=True)
     final = json.loads(check.read_text(encoding='utf-8'))

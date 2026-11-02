@@ -1,0 +1,109 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-17T09:42:57.443679+00:00",
+  "final_summary_sha256": "22bc907ba2849233188d0c302da699a39bdc315007821c5a3f7af276a8dc94d6",
+  "screening_records": 6,
+  "confirmation_records": 6,
+  "winner": "transfer_tiny_lr",
+  "confirmation_seeds": [
+    100,
+    2026,
+    777
+  ],
+  "verified_records": [
+    {
+      "configuration": "original_sgd",
+      "seed": 42,
+      "selected_epoch": 1
+    },
+    {
+      "configuration": "adamw_transfer_restored",
+      "seed": 42,
+      "selected_epoch": 6
+    },
+    {
+      "configuration": "transfer_tiny_lr",
+      "seed": 42,
+      "selected_epoch": 6
+    },
+    {
+      "configuration": "low_sgd_cosine",
+      "seed": 42,
+      "selected_epoch": 6
+    },
+    {
+      "configuration": "adamw_cosine",
+      "seed": 42,
+      "selected_epoch": 6
+    },
+    {
+      "configuration": "adamw_domain_loss_aug",
+      "seed": 42,
+      "selected_epoch": 6
+    },
+    {
+      "configuration": "original_sgd",
+      "seed": 100,
+      "selected_epoch": 1
+    },
+    {
+      "configuration": "transfer_tiny_lr",
+      "seed": 100,
+      "selected_epoch": 6
+    },
+    {
+      "configuration": "original_sgd",
+      "seed": 2026,
+      "selected_epoch": 1
+    },
+    {
+      "configuration": "transfer_tiny_lr",
+      "seed": 2026,
+      "selected_epoch": 4
+    },
+    {
+      "configuration": "original_sgd",
+      "seed": 777,
+      "selected_epoch": 1
+    },
+    {
+      "configuration": "transfer_tiny_lr",
+      "seed": 777,
+      "selected_epoch": 6
+    }
+  ],
+  "historical_latency_records_checked": 20,
+  "cross_cohort_runtime_check": {
+    "status": "material_cross_cohort_variation_observed",
+    "model_key": "yolov13s",
+    "configuration": "original_sgd",
+    "seed": 100,
+    "checkpoint_sha256": "5e252bed4cba802ff58dc5c856ee38a070bc380d04bafa62d0481e9f7e7c7cc4",
+    "benchmark_source_sha256": "7654d473dc076ba3b438d479d5a8265949a900b34ab9944eeff576b57b334b51",
+    "sample_source_sha256": "a7b37d908a4128271e72f2e64b47777921eeb8d591481115e57b3e2f7dfb0003",
+    "matched_cohort_latency_ms": 18.973350524902344,
+    "standalone_retime_latency_ms": 32.141923904418945,
+    "absolute_difference_ms": 13.168573379516602,
+    "relative_difference_percent_of_matched": 69.40562955516461,
+    "interpretation": "Identical checkpoint and benchmark inputs varied across timing cohorts; prior historical retimings are excluded from direct local latency/FPS comparisons. This does not affect recorded accuracy."
+  },
+  "selection_ranking_field": "validation_fp32",
+  "checks": [
+    "input and checkpoint hashes",
+    "six eligible epochs and maximal native validation checkpoint",
+    "all selected validation metrics matching CSV",
+    "validation-only winner selection",
+    "disjoint screening and confirmation seeds",
+    "locked test timing",
+    "matched latency protocol",
+    "mean sample SD and Student t 95 percent CI",
+    "domain-specific sample counts and statistics",
+    "native person-only checkpoint diagnostic after lock",
+    "validation-only deployment choice and single-checkpoint evidence",
+    "paired seedwise test change",
+    "historical checkpoint selection and corrected latency retiming",
+    "same-checkpoint cross-cohort runtime variability check",
+    "interrupted-run archival and deterministic prefix replay"
+  ],
+  "limitation": "This audit checks recorded evidence and arithmetic; it does not establish causal isolation or fresh test independence."
+}

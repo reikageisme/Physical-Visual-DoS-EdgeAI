@@ -1,0 +1,1334 @@
+[
+  {
+    "study_id": "20261010",
+    "model_key": "yolo11n",
+    "model_name": "YOLO11n (Baseline)",
+    "status": "complete",
+    "run_name": "milestones-20261010-yolo11n-fixed50",
+    "started_at_utc": "2026-10-10T11:57:29.604834+00:00",
+    "finished_at_utc": "2026-10-10T12:28:30.996306+00:00",
+    "nominal_budget_minutes": 5,
+    "time_budget_hours_initial_grid_replaced": true,
+    "training_wall_seconds": 1861.391,
+    "training_actual_seconds": 1824.19,
+    "training_epochs_completed": 47,
+    "training_stop_reason": "patience early stopping",
+    "epoch_endpoint": 6,
+    "endpoint_elapsed_seconds": 270.446,
+    "endpoint_train_loss": {
+      "box": 0.94808,
+      "cls": 0.69871,
+      "dfl": 1.05586,
+      "total": 2.70265
+    },
+    "endpoint_val_loss": {
+      "box": 0.80273,
+      "cls": 0.5318,
+      "dfl": 0.95419,
+      "total": 2.28872
+    },
+    "selected_epoch": 6,
+    "selected_elapsed_seconds": 270.446,
+    "selected_val": {
+      "precision": 0.96707,
+      "recall": 0.99091,
+      "map50": 0.99333,
+      "map50_95": 0.77863
+    },
+    "test": {
+      "precision": 0.9661724967295294,
+      "recall": 0.990990990990991,
+      "map50": 0.9901229333884073,
+      "map50_95": 0.7795408564185696,
+      "speed_ms": {
+        "preprocess": 0.41253467988685744,
+        "inference": 13.346085181603065,
+        "postprocess": 1.516332287760176
+      },
+      "latency_ms_per_frame": 15.2749521492501,
+      "fps": 65.46665352723174,
+      "validator_speed_batch4_ms": {
+        "preprocess": 0.1875126855613212,
+        "inference": 3.6033610620442227,
+        "loss": 0.0014008854973245654,
+        "postprocess": 1.037596245489177
+      }
+    },
+    "parameters_m": 2.590035,
+    "flops_g": 2.720180736,
+    "checkpoint": "runs\\train\\milestones-20261010-yolo11n-fixed50\\weights\\epoch5.pt",
+    "log": "results\\time_budget\\logs\\milestones-20261010-yolo11n-fixed50.log",
+    "history_csv": "runs\\train\\milestones-20261010-yolo11n-fixed50\\results.csv",
+    "dataset_yaml": "dataset\\adv_tshirt_patch_detection.yaml",
+    "latency_benchmark": {
+      "model_key": "yolo11n",
+      "model_name": "YOLO11n (Baseline)",
+      "checkpoint": "runs\\train\\milestones-20261010-yolo11n-fixed50\\weights\\epoch36.pt",
+      "checkpoint_epoch": 37,
+      "nominal_milestone_minutes": 30,
+      "batch_size": 1,
+      "repetitions": 3,
+      "median_speed_ms": {
+        "preprocess": 0.41253467988685744,
+        "inference": 13.346085181603065,
+        "postprocess": 1.516332287760176
+      },
+      "latency_ms_per_frame": 15.2749521492501,
+      "fps": 65.46665352723174,
+      "raw_repetitions": [
+        {
+          "repetition": 1,
+          "speed_ms": {
+            "preprocess": 0.37969781096870375,
+            "inference": 14.563884960829153,
+            "loss": 0.00874530634231116,
+            "postprocess": 2.047463987000595
+          },
+          "total_latency_ms": 16.99104675879845
+        },
+        {
+          "repetition": 2,
+          "speed_ms": {
+            "preprocess": 0.41253467988685744,
+            "inference": 13.094484453370585,
+            "loss": 0.008591533412594768,
+            "postprocess": 1.5139876032722068
+          },
+          "total_latency_ms": 15.02100673652965
+        },
+        {
+          "repetition": 3,
+          "speed_ms": {
+            "preprocess": 0.4140978028788369,
+            "inference": 13.346085181603065,
+            "loss": 0.009140319372775287,
+            "postprocess": 1.516332287760176
+          },
+          "total_latency_ms": 15.276515272242078
+        }
+      ],
+      "measured_at_utc": "2026-10-10T12:45:46.332572+00:00"
+    }
+  },
+  {
+    "study_id": "20261010",
+    "model_key": "yolo11n",
+    "model_name": "YOLO11n (Baseline)",
+    "status": "complete",
+    "run_name": "milestones-20261010-yolo11n-fixed50",
+    "started_at_utc": "2026-10-10T11:57:29.604834+00:00",
+    "finished_at_utc": "2026-10-10T12:28:34.432795+00:00",
+    "nominal_budget_minutes": 10,
+    "time_budget_hours_initial_grid_replaced": true,
+    "training_wall_seconds": 1864.828,
+    "training_actual_seconds": 1824.19,
+    "training_epochs_completed": 47,
+    "training_stop_reason": "patience early stopping",
+    "epoch_endpoint": 14,
+    "endpoint_elapsed_seconds": 592.972,
+    "endpoint_train_loss": {
+      "box": 0.88194,
+      "cls": 0.5375,
+      "dfl": 1.0234,
+      "total": 2.44284
+    },
+    "endpoint_val_loss": {
+      "box": 0.76589,
+      "cls": 0.42417,
+      "dfl": 0.93269,
+      "total": 2.12275
+    },
+    "selected_epoch": 12,
+    "selected_elapsed_seconds": 511.915,
+    "selected_val": {
+      "precision": 0.98415,
+      "recall": 0.98636,
+      "map50": 0.99437,
+      "map50_95": 0.78938
+    },
+    "test": {
+      "precision": 0.9883310174027262,
+      "recall": 0.9819819819819819,
+      "map50": 0.9937742981253955,
+      "map50_95": 0.7903825141256483,
+      "speed_ms": {
+        "preprocess": 0.41253467988685744,
+        "inference": 13.346085181603065,
+        "postprocess": 1.516332287760176
+      },
+      "latency_ms_per_frame": 15.2749521492501,
+      "fps": 65.46665352723174,
+      "validator_speed_batch4_ms": {
+        "preprocess": 0.19000408917489137,
+        "inference": 2.960027322261291,
+        "loss": 0.0016985560309957471,
+        "postprocess": 1.1319930736835186
+      }
+    },
+    "parameters_m": 2.590035,
+    "flops_g": 2.720180736,
+    "checkpoint": "runs\\train\\milestones-20261010-yolo11n-fixed50\\weights\\epoch11.pt",
+    "log": "results\\time_budget\\logs\\milestones-20261010-yolo11n-fixed50.log",
+    "history_csv": "runs\\train\\milestones-20261010-yolo11n-fixed50\\results.csv",
+    "dataset_yaml": "dataset\\adv_tshirt_patch_detection.yaml",
+    "latency_benchmark": {
+      "model_key": "yolo11n",
+      "model_name": "YOLO11n (Baseline)",
+      "checkpoint": "runs\\train\\milestones-20261010-yolo11n-fixed50\\weights\\epoch36.pt",
+      "checkpoint_epoch": 37,
+      "nominal_milestone_minutes": 30,
+      "batch_size": 1,
+      "repetitions": 3,
+      "median_speed_ms": {
+        "preprocess": 0.41253467988685744,
+        "inference": 13.346085181603065,
+        "postprocess": 1.516332287760176
+      },
+      "latency_ms_per_frame": 15.2749521492501,
+      "fps": 65.46665352723174,
+      "raw_repetitions": [
+        {
+          "repetition": 1,
+          "speed_ms": {
+            "preprocess": 0.37969781096870375,
+            "inference": 14.563884960829153,
+            "loss": 0.00874530634231116,
+            "postprocess": 2.047463987000595
+          },
+          "total_latency_ms": 16.99104675879845
+        },
+        {
+          "repetition": 2,
+          "speed_ms": {
+            "preprocess": 0.41253467988685744,
+            "inference": 13.094484453370585,
+            "loss": 0.008591533412594768,
+            "postprocess": 1.5139876032722068
+          },
+          "total_latency_ms": 15.02100673652965
+        },
+        {
+          "repetition": 3,
+          "speed_ms": {
+            "preprocess": 0.4140978028788369,
+            "inference": 13.346085181603065,
+            "loss": 0.009140319372775287,
+            "postprocess": 1.516332287760176
+          },
+          "total_latency_ms": 15.276515272242078
+        }
+      ],
+      "measured_at_utc": "2026-10-10T12:45:46.332572+00:00"
+    }
+  },
+  {
+    "study_id": "20261010",
+    "model_key": "yolo11n",
+    "model_name": "YOLO11n (Baseline)",
+    "status": "complete",
+    "run_name": "milestones-20261010-yolo11n-fixed50",
+    "started_at_utc": "2026-10-10T11:57:29.604834+00:00",
+    "finished_at_utc": "2026-10-10T12:28:37.868709+00:00",
+    "nominal_budget_minutes": 15,
+    "time_budget_hours_initial_grid_replaced": true,
+    "training_wall_seconds": 1868.264,
+    "training_actual_seconds": 1824.19,
+    "training_epochs_completed": 47,
+    "training_stop_reason": "patience early stopping",
+    "epoch_endpoint": 21,
+    "endpoint_elapsed_seconds": 877.05,
+    "endpoint_train_loss": {
+      "box": 0.85822,
+      "cls": 0.48041,
+      "dfl": 1.00247,
+      "total": 2.3411
+    },
+    "endpoint_val_loss": {
+      "box": 0.72186,
+      "cls": 0.37788,
+      "dfl": 0.91984,
+      "total": 2.01958
+    },
+    "selected_epoch": 19,
+    "selected_elapsed_seconds": 796.02,
+    "selected_val": {
+      "precision": 0.97756,
+      "recall": 0.98991,
+      "map50": 0.99432,
+      "map50_95": 0.80625
+    },
+    "test": {
+      "precision": 0.9812128568671344,
+      "recall": 0.9864864864864865,
+      "map50": 0.9943275441506847,
+      "map50_95": 0.8125404104275169,
+      "speed_ms": {
+        "preprocess": 0.41253467988685744,
+        "inference": 13.346085181603065,
+        "postprocess": 1.516332287760176
+      },
+      "latency_ms_per_frame": 15.2749521492501,
+      "fps": 65.46665352723174,
+      "validator_speed_batch4_ms": {
+        "preprocess": 0.18202059367704673,
+        "inference": 3.0891754218107144,
+        "loss": 0.0018438643957736224,
+        "postprocess": 1.1917980464957874
+      }
+    },
+    "parameters_m": 2.590035,
+    "flops_g": 2.720180736,
+    "checkpoint": "runs\\train\\milestones-20261010-yolo11n-fixed50\\weights\\epoch18.pt",
+    "log": "results\\time_budget\\logs\\milestones-20261010-yolo11n-fixed50.log",
+    "history_csv": "runs\\train\\milestones-20261010-yolo11n-fixed50\\results.csv",
+    "dataset_yaml": "dataset\\adv_tshirt_patch_detection.yaml",
+    "latency_benchmark": {
+      "model_key": "yolo11n",
+      "model_name": "YOLO11n (Baseline)",
+      "checkpoint": "runs\\train\\milestones-20261010-yolo11n-fixed50\\weights\\epoch36.pt",
+      "checkpoint_epoch": 37,
+      "nominal_milestone_minutes": 30,
+      "batch_size": 1,
+      "repetitions": 3,
+      "median_speed_ms": {
+        "preprocess": 0.41253467988685744,
+        "inference": 13.346085181603065,
+        "postprocess": 1.516332287760176
+      },
+      "latency_ms_per_frame": 15.2749521492501,
+      "fps": 65.46665352723174,
+      "raw_repetitions": [
+        {
+          "repetition": 1,
+          "speed_ms": {
+            "preprocess": 0.37969781096870375,
+            "inference": 14.563884960829153,
+            "loss": 0.00874530634231116,
+            "postprocess": 2.047463987000595
+          },
+          "total_latency_ms": 16.99104675879845
+        },
+        {
+          "repetition": 2,
+          "speed_ms": {
+            "preprocess": 0.41253467988685744,
+            "inference": 13.094484453370585,
+            "loss": 0.008591533412594768,
+            "postprocess": 1.5139876032722068
+          },
+          "total_latency_ms": 15.02100673652965
+        },
+        {
+          "repetition": 3,
+          "speed_ms": {
+            "preprocess": 0.4140978028788369,
+            "inference": 13.346085181603065,
+            "loss": 0.009140319372775287,
+            "postprocess": 1.516332287760176
+          },
+          "total_latency_ms": 15.276515272242078
+        }
+      ],
+      "measured_at_utc": "2026-10-10T12:45:46.332572+00:00"
+    }
+  },
+  {
+    "study_id": "20261010",
+    "model_key": "yolo11n",
+    "model_name": "YOLO11n (Baseline)",
+    "status": "complete",
+    "run_name": "milestones-20261010-yolo11n-fixed50",
+    "started_at_utc": "2026-10-10T11:57:29.604834+00:00",
+    "finished_at_utc": "2026-10-10T12:28:40.967187+00:00",
+    "nominal_budget_minutes": 20,
+    "time_budget_hours_initial_grid_replaced": true,
+    "training_wall_seconds": 1871.362,
+    "training_actual_seconds": 1824.19,
+    "training_epochs_completed": 47,
+    "training_stop_reason": "patience early stopping",
+    "epoch_endpoint": 28,
+    "endpoint_elapsed_seconds": 1159.1,
+    "endpoint_train_loss": {
+      "box": 0.81715,
+      "cls": 0.45301,
+      "dfl": 0.98778,
+      "total": 2.25794
+    },
+    "endpoint_val_loss": {
+      "box": 0.75546,
+      "cls": 0.36686,
+      "dfl": 0.91967,
+      "total": 2.04199
+    },
+    "selected_epoch": 28,
+    "selected_elapsed_seconds": 1159.1,
+    "selected_val": {
+      "precision": 0.97277,
+      "recall": 0.97273,
+      "map50": 0.99388,
+      "map50_95": 0.81611
+    },
+    "test": {
+      "precision": 0.9726426849776537,
+      "recall": 0.9864864864864865,
+      "map50": 0.994105231930846,
+      "map50_95": 0.8153997368479384,
+      "speed_ms": {
+        "preprocess": 0.41253467988685744,
+        "inference": 13.346085181603065,
+        "postprocess": 1.516332287760176
+      },
+      "latency_ms_per_frame": 15.2749521492501,
+      "fps": 65.46665352723174,
+      "validator_speed_batch4_ms": {
+        "preprocess": 0.17924562713803624,
+        "inference": 2.7153407328227566,
+        "loss": 0.0015349077755177514,
+        "postprocess": 1.0132620320517636
+      }
+    },
+    "parameters_m": 2.590035,
+    "flops_g": 2.720180736,
+    "checkpoint": "runs\\train\\milestones-20261010-yolo11n-fixed50\\weights\\epoch27.pt",
+    "log": "results\\time_budget\\logs\\milestones-20261010-yolo11n-fixed50.log",
+    "history_csv": "runs\\train\\milestones-20261010-yolo11n-fixed50\\results.csv",
+    "dataset_yaml": "dataset\\adv_tshirt_patch_detection.yaml",
+    "latency_benchmark": {
+      "model_key": "yolo11n",
+      "model_name": "YOLO11n (Baseline)",
+      "checkpoint": "runs\\train\\milestones-20261010-yolo11n-fixed50\\weights\\epoch36.pt",
+      "checkpoint_epoch": 37,
+      "nominal_milestone_minutes": 30,
+      "batch_size": 1,
+      "repetitions": 3,
+      "median_speed_ms": {
+        "preprocess": 0.41253467988685744,
+        "inference": 13.346085181603065,
+        "postprocess": 1.516332287760176
+      },
+      "latency_ms_per_frame": 15.2749521492501,
+      "fps": 65.46665352723174,
+      "raw_repetitions": [
+        {
+          "repetition": 1,
+          "speed_ms": {
+            "preprocess": 0.37969781096870375,
+            "inference": 14.563884960829153,
+            "loss": 0.00874530634231116,
+            "postprocess": 2.047463987000595
+          },
+          "total_latency_ms": 16.99104675879845
+        },
+        {
+          "repetition": 2,
+          "speed_ms": {
+            "preprocess": 0.41253467988685744,
+            "inference": 13.094484453370585,
+            "loss": 0.008591533412594768,
+            "postprocess": 1.5139876032722068
+          },
+          "total_latency_ms": 15.02100673652965
+        },
+        {
+          "repetition": 3,
+          "speed_ms": {
+            "preprocess": 0.4140978028788369,
+            "inference": 13.346085181603065,
+            "loss": 0.009140319372775287,
+            "postprocess": 1.516332287760176
+          },
+          "total_latency_ms": 15.276515272242078
+        }
+      ],
+      "measured_at_utc": "2026-10-10T12:45:46.332572+00:00"
+    }
+  },
+  {
+    "study_id": "20261010",
+    "model_key": "yolo11n",
+    "model_name": "YOLO11n (Baseline)",
+    "status": "complete",
+    "run_name": "milestones-20261010-yolo11n-fixed50",
+    "started_at_utc": "2026-10-10T11:57:29.604834+00:00",
+    "finished_at_utc": "2026-10-10T12:28:44.031823+00:00",
+    "nominal_budget_minutes": 25,
+    "time_budget_hours_initial_grid_replaced": true,
+    "training_wall_seconds": 1874.427,
+    "training_actual_seconds": 1824.19,
+    "training_epochs_completed": 47,
+    "training_stop_reason": "patience early stopping",
+    "epoch_endpoint": 36,
+    "endpoint_elapsed_seconds": 1484.48,
+    "endpoint_train_loss": {
+      "box": 0.78411,
+      "cls": 0.419,
+      "dfl": 0.96603,
+      "total": 2.16914
+    },
+    "endpoint_val_loss": {
+      "box": 0.71165,
+      "cls": 0.32541,
+      "dfl": 0.90044,
+      "total": 1.9375
+    },
+    "selected_epoch": 36,
+    "selected_elapsed_seconds": 1484.48,
+    "selected_val": {
+      "precision": 0.96061,
+      "recall": 0.99777,
+      "map50": 0.9933,
+      "map50_95": 0.82794
+    },
+    "test": {
+      "precision": 0.9732155630972492,
+      "recall": 0.982030315391412,
+      "map50": 0.9943745874479789,
+      "map50_95": 0.824783315930549,
+      "speed_ms": {
+        "preprocess": 0.41253467988685744,
+        "inference": 13.346085181603065,
+        "postprocess": 1.516332287760176
+      },
+      "latency_ms_per_frame": 15.2749521492501,
+      "fps": 65.46665352723174,
+      "validator_speed_batch4_ms": {
+        "preprocess": 0.18389267328928208,
+        "inference": 2.630568114963509,
+        "loss": 0.0015701767960949057,
+        "postprocess": 1.023174037594767
+      }
+    },
+    "parameters_m": 2.590035,
+    "flops_g": 2.720180736,
+    "checkpoint": "runs\\train\\milestones-20261010-yolo11n-fixed50\\weights\\epoch35.pt",
+    "log": "results\\time_budget\\logs\\milestones-20261010-yolo11n-fixed50.log",
+    "history_csv": "runs\\train\\milestones-20261010-yolo11n-fixed50\\results.csv",
+    "dataset_yaml": "dataset\\adv_tshirt_patch_detection.yaml",
+    "latency_benchmark": {
+      "model_key": "yolo11n",
+      "model_name": "YOLO11n (Baseline)",
+      "checkpoint": "runs\\train\\milestones-20261010-yolo11n-fixed50\\weights\\epoch36.pt",
+      "checkpoint_epoch": 37,
+      "nominal_milestone_minutes": 30,
+      "batch_size": 1,
+      "repetitions": 3,
+      "median_speed_ms": {
+        "preprocess": 0.41253467988685744,
+        "inference": 13.346085181603065,
+        "postprocess": 1.516332287760176
+      },
+      "latency_ms_per_frame": 15.2749521492501,
+      "fps": 65.46665352723174,
+      "raw_repetitions": [
+        {
+          "repetition": 1,
+          "speed_ms": {
+            "preprocess": 0.37969781096870375,
+            "inference": 14.563884960829153,
+            "loss": 0.00874530634231116,
+            "postprocess": 2.047463987000595
+          },
+          "total_latency_ms": 16.99104675879845
+        },
+        {
+          "repetition": 2,
+          "speed_ms": {
+            "preprocess": 0.41253467988685744,
+            "inference": 13.094484453370585,
+            "loss": 0.008591533412594768,
+            "postprocess": 1.5139876032722068
+          },
+          "total_latency_ms": 15.02100673652965
+        },
+        {
+          "repetition": 3,
+          "speed_ms": {
+            "preprocess": 0.4140978028788369,
+            "inference": 13.346085181603065,
+            "loss": 0.009140319372775287,
+            "postprocess": 1.516332287760176
+          },
+          "total_latency_ms": 15.276515272242078
+        }
+      ],
+      "measured_at_utc": "2026-10-10T12:45:46.332572+00:00"
+    }
+  },
+  {
+    "study_id": "20261010",
+    "model_key": "yolo11n",
+    "model_name": "YOLO11n (Baseline)",
+    "status": "complete",
+    "run_name": "milestones-20261010-yolo11n-fixed50",
+    "started_at_utc": "2026-10-10T11:57:29.604834+00:00",
+    "finished_at_utc": "2026-10-10T12:44:33.459133+00:00",
+    "nominal_budget_minutes": 30,
+    "time_budget_hours_initial_grid_replaced": true,
+    "training_wall_seconds": 1861.391,
+    "training_actual_seconds": 1824.19,
+    "training_epochs_completed": 47,
+    "training_stop_reason": "patience early stopping",
+    "epoch_endpoint": 46,
+    "endpoint_elapsed_seconds": 1794.23,
+    "endpoint_train_loss": {
+      "box": 0.6993,
+      "cls": 0.32659,
+      "dfl": 0.90853,
+      "total": 1.93442
+    },
+    "endpoint_val_loss": {
+      "box": 0.70835,
+      "cls": 0.30361,
+      "dfl": 0.89753,
+      "total": 1.9094900000000001
+    },
+    "selected_epoch": 37,
+    "selected_elapsed_seconds": 1522.75,
+    "selected_val": {
+      "precision": 0.9763,
+      "recall": 0.97727,
+      "map50": 0.99128,
+      "map50_95": 0.83717
+    },
+    "test": {
+      "precision": 0.9795409290089732,
+      "recall": 0.990990990990991,
+      "map50": 0.9936511699867865,
+      "map50_95": 0.8364928813811577,
+      "speed_ms": {
+        "preprocess": 0.41253467988685744,
+        "inference": 13.346085181603065,
+        "postprocess": 1.516332287760176
+      },
+      "latency_ms_per_frame": 15.2749521492501,
+      "fps": 65.46665352723174,
+      "validator_speed_batch4_ms": {
+        "preprocess": 0.1481905491394404,
+        "inference": 4.865604039479995,
+        "loss": 0.0022812002509303344,
+        "postprocess": 1.7575004397059333
+      }
+    },
+    "parameters_m": 2.590035,
+    "flops_g": 2.720180736,
+    "checkpoint": "runs\\train\\milestones-20261010-yolo11n-fixed50\\weights\\epoch36.pt",
+    "log": "results\\time_budget\\logs\\milestones-20261010-yolo11n-fixed50.log",
+    "history_csv": "runs\\train\\milestones-20261010-yolo11n-fixed50\\results.csv",
+    "dataset_yaml": "dataset\\adv_tshirt_patch_detection.yaml",
+    "latency_benchmark": {
+      "model_key": "yolo11n",
+      "model_name": "YOLO11n (Baseline)",
+      "checkpoint": "runs\\train\\milestones-20261010-yolo11n-fixed50\\weights\\epoch36.pt",
+      "checkpoint_epoch": 37,
+      "nominal_milestone_minutes": 30,
+      "batch_size": 1,
+      "repetitions": 3,
+      "median_speed_ms": {
+        "preprocess": 0.41253467988685744,
+        "inference": 13.346085181603065,
+        "postprocess": 1.516332287760176
+      },
+      "latency_ms_per_frame": 15.2749521492501,
+      "fps": 65.46665352723174,
+      "raw_repetitions": [
+        {
+          "repetition": 1,
+          "speed_ms": {
+            "preprocess": 0.37969781096870375,
+            "inference": 14.563884960829153,
+            "loss": 0.00874530634231116,
+            "postprocess": 2.047463987000595
+          },
+          "total_latency_ms": 16.99104675879845
+        },
+        {
+          "repetition": 2,
+          "speed_ms": {
+            "preprocess": 0.41253467988685744,
+            "inference": 13.094484453370585,
+            "loss": 0.008591533412594768,
+            "postprocess": 1.5139876032722068
+          },
+          "total_latency_ms": 15.02100673652965
+        },
+        {
+          "repetition": 3,
+          "speed_ms": {
+            "preprocess": 0.4140978028788369,
+            "inference": 13.346085181603065,
+            "loss": 0.009140319372775287,
+            "postprocess": 1.516332287760176
+          },
+          "total_latency_ms": 15.276515272242078
+        }
+      ],
+      "measured_at_utc": "2026-10-10T12:45:46.332572+00:00"
+    }
+  },
+  {
+    "study_id": "20261010",
+    "model_key": "yolov13n",
+    "model_name": "YOLOv13n",
+    "status": "complete",
+    "run_name": "milestones-20261010-yolov13n-fixed50",
+    "started_at_utc": "2026-10-10T12:28:44.033227+00:00",
+    "finished_at_utc": "2026-10-10T12:44:14.289973+00:00",
+    "nominal_budget_minutes": 5,
+    "time_budget_hours_initial_grid_replaced": true,
+    "training_wall_seconds": 930.257,
+    "training_actual_seconds": 914.999,
+    "training_epochs_completed": 21,
+    "training_stop_reason": "patience early stopping",
+    "epoch_endpoint": 6,
+    "endpoint_elapsed_seconds": 284.307,
+    "endpoint_train_loss": {
+      "box": 0.92476,
+      "cls": 0.65757,
+      "dfl": 1.08135,
+      "total": 2.6636800000000003
+    },
+    "endpoint_val_loss": {
+      "box": 0.78619,
+      "cls": 0.48404,
+      "dfl": 0.97587,
+      "total": 2.2461
+    },
+    "selected_epoch": 6,
+    "selected_elapsed_seconds": 284.307,
+    "selected_val": {
+      "precision": 0.99575,
+      "recall": 0.97727,
+      "map50": 0.99438,
+      "map50_95": 0.7907
+    },
+    "test": {
+      "precision": 0.9864380077880347,
+      "recall": 0.9829152223672054,
+      "map50": 0.9944702062490213,
+      "map50_95": 0.7897678455101051,
+      "speed_ms": {
+        "preprocess": 0.4028568606404863,
+        "inference": 27.919856754280406,
+        "postprocess": 1.5273841880482328
+      },
+      "latency_ms_per_frame": 29.850097802969124,
+      "fps": 33.50072775642739,
+      "validator_speed_batch4_ms": {
+        "preprocess": 0.18968102494640465,
+        "inference": 8.54672764885355,
+        "loss": 0.002267092642699473,
+        "postprocess": 1.3929175201957746
+      }
+    },
+    "parameters_m": 2.460106,
+    "flops_g": 2.6924701440000005,
+    "checkpoint": "runs\\train\\milestones-20261010-yolov13n-fixed50\\weights\\epoch5.pt",
+    "log": "results\\time_budget\\logs\\milestones-20261010-yolov13n-fixed50.log",
+    "history_csv": "runs\\train\\milestones-20261010-yolov13n-fixed50\\results.csv",
+    "dataset_yaml": "dataset\\adv_tshirt_patch_detection.yaml",
+    "latency_benchmark": {
+      "model_key": "yolov13n",
+      "model_name": "YOLOv13n",
+      "checkpoint": "runs\\train\\milestones-20261010-yolov13n-fixed50\\weights\\epoch10.pt",
+      "checkpoint_epoch": 11,
+      "nominal_milestone_minutes": 10,
+      "batch_size": 1,
+      "repetitions": 3,
+      "median_speed_ms": {
+        "preprocess": 0.4028568606404863,
+        "inference": 27.919856754280406,
+        "postprocess": 1.5273841880482328
+      },
+      "latency_ms_per_frame": 29.850097802969124,
+      "fps": 33.50072775642739,
+      "raw_repetitions": [
+        {
+          "repetition": 1,
+          "speed_ms": {
+            "preprocess": 0.3981787777511326,
+            "inference": 27.742958633151982,
+            "loss": 0.008774932319595969,
+            "postprocess": 1.4625032977945
+          },
+          "total_latency_ms": 29.603640708697615
+        },
+        {
+          "repetition": 2,
+          "speed_ms": {
+            "preprocess": 0.41901007206482294,
+            "inference": 28.235137815306175,
+            "loss": 0.008762235472188193,
+            "postprocess": 1.5273841880482328
+          },
+          "total_latency_ms": 30.18153207541923
+        },
+        {
+          "repetition": 3,
+          "speed_ms": {
+            "preprocess": 0.4028568606404863,
+            "inference": 27.919856754280406,
+            "loss": 0.00852099537144046,
+            "postprocess": 1.541449473454402
+          },
+          "total_latency_ms": 29.864163088375296
+        }
+      ],
+      "measured_at_utc": "2026-10-10T12:46:11.035711+00:00"
+    }
+  },
+  {
+    "study_id": "20261010",
+    "model_key": "yolov13n",
+    "model_name": "YOLOv13n",
+    "status": "complete",
+    "run_name": "milestones-20261010-yolov13n-fixed50",
+    "started_at_utc": "2026-10-10T12:28:44.033227+00:00",
+    "finished_at_utc": "2026-10-10T12:44:19.475237+00:00",
+    "nominal_budget_minutes": 10,
+    "time_budget_hours_initial_grid_replaced": true,
+    "training_wall_seconds": 935.442,
+    "training_actual_seconds": 914.999,
+    "training_epochs_completed": 21,
+    "training_stop_reason": "patience early stopping",
+    "epoch_endpoint": 13,
+    "endpoint_elapsed_seconds": 599.604,
+    "endpoint_train_loss": {
+      "box": 0.88208,
+      "cls": 0.51303,
+      "dfl": 1.07183,
+      "total": 2.46694
+    },
+    "endpoint_val_loss": {
+      "box": 0.77437,
+      "cls": 0.43174,
+      "dfl": 0.98548,
+      "total": 2.19159
+    },
+    "selected_epoch": 11,
+    "selected_elapsed_seconds": 515.691,
+    "selected_val": {
+      "precision": 0.98468,
+      "recall": 0.97273,
+      "map50": 0.99293,
+      "map50_95": 0.81133
+    },
+    "test": {
+      "precision": 0.9951648410666697,
+      "recall": 0.9864864864864865,
+      "map50": 0.9949099099099098,
+      "map50_95": 0.7949318668119538,
+      "speed_ms": {
+        "preprocess": 0.4028568606404863,
+        "inference": 27.919856754280406,
+        "postprocess": 1.5273841880482328
+      },
+      "latency_ms_per_frame": 29.850097802969124,
+      "fps": 33.50072775642739,
+      "validator_speed_batch4_ms": {
+        "preprocess": 0.18614565832375068,
+        "inference": 8.145505860007022,
+        "loss": 0.002243109708707008,
+        "postprocess": 1.3769364215918545
+      }
+    },
+    "parameters_m": 2.460106,
+    "flops_g": 2.6924701440000005,
+    "checkpoint": "runs\\train\\milestones-20261010-yolov13n-fixed50\\weights\\epoch10.pt",
+    "log": "results\\time_budget\\logs\\milestones-20261010-yolov13n-fixed50.log",
+    "history_csv": "runs\\train\\milestones-20261010-yolov13n-fixed50\\results.csv",
+    "dataset_yaml": "dataset\\adv_tshirt_patch_detection.yaml",
+    "latency_benchmark": {
+      "model_key": "yolov13n",
+      "model_name": "YOLOv13n",
+      "checkpoint": "runs\\train\\milestones-20261010-yolov13n-fixed50\\weights\\epoch10.pt",
+      "checkpoint_epoch": 11,
+      "nominal_milestone_minutes": 10,
+      "batch_size": 1,
+      "repetitions": 3,
+      "median_speed_ms": {
+        "preprocess": 0.4028568606404863,
+        "inference": 27.919856754280406,
+        "postprocess": 1.5273841880482328
+      },
+      "latency_ms_per_frame": 29.850097802969124,
+      "fps": 33.50072775642739,
+      "raw_repetitions": [
+        {
+          "repetition": 1,
+          "speed_ms": {
+            "preprocess": 0.3981787777511326,
+            "inference": 27.742958633151982,
+            "loss": 0.008774932319595969,
+            "postprocess": 1.4625032977945
+          },
+          "total_latency_ms": 29.603640708697615
+        },
+        {
+          "repetition": 2,
+          "speed_ms": {
+            "preprocess": 0.41901007206482294,
+            "inference": 28.235137815306175,
+            "loss": 0.008762235472188193,
+            "postprocess": 1.5273841880482328
+          },
+          "total_latency_ms": 30.18153207541923
+        },
+        {
+          "repetition": 3,
+          "speed_ms": {
+            "preprocess": 0.4028568606404863,
+            "inference": 27.919856754280406,
+            "loss": 0.00852099537144046,
+            "postprocess": 1.541449473454402
+          },
+          "total_latency_ms": 29.864163088375296
+        }
+      ],
+      "measured_at_utc": "2026-10-10T12:46:11.035711+00:00"
+    }
+  },
+  {
+    "study_id": "20261010",
+    "model_key": "yolov13n",
+    "model_name": "YOLOv13n",
+    "status": "complete",
+    "run_name": "milestones-20261010-yolov13n-fixed50",
+    "started_at_utc": "2026-10-10T12:28:44.033227+00:00",
+    "finished_at_utc": "2026-10-10T12:44:19.476735+00:00",
+    "nominal_budget_minutes": 15,
+    "time_budget_hours_initial_grid_replaced": true,
+    "training_wall_seconds": 935.443,
+    "training_actual_seconds": 914.999,
+    "training_epochs_completed": 21,
+    "training_stop_reason": "patience early stopping",
+    "epoch_endpoint": 20,
+    "endpoint_elapsed_seconds": 876.149,
+    "endpoint_train_loss": {
+      "box": 0.85825,
+      "cls": 0.4707,
+      "dfl": 1.07629,
+      "total": 2.40524
+    },
+    "endpoint_val_loss": {
+      "box": 0.75057,
+      "cls": 0.39534,
+      "dfl": 1.00297,
+      "total": 2.14888
+    },
+    "selected_epoch": 11,
+    "selected_elapsed_seconds": 515.691,
+    "selected_val": {
+      "precision": 0.98468,
+      "recall": 0.97273,
+      "map50": 0.99293,
+      "map50_95": 0.81133
+    },
+    "test": {
+      "precision": 0.9951648410666697,
+      "recall": 0.9864864864864865,
+      "map50": 0.9949099099099098,
+      "map50_95": 0.7949318668119538,
+      "speed_ms": {
+        "preprocess": 0.4028568606404863,
+        "inference": 27.919856754280406,
+        "postprocess": 1.5273841880482328
+      },
+      "latency_ms_per_frame": 29.850097802969124,
+      "fps": 33.50072775642739,
+      "validator_speed_batch4_ms": {
+        "preprocess": 0.18614565832375068,
+        "inference": 8.145505860007022,
+        "loss": 0.002243109708707008,
+        "postprocess": 1.3769364215918545
+      }
+    },
+    "parameters_m": 2.460106,
+    "flops_g": 2.6924701440000005,
+    "checkpoint": "runs\\train\\milestones-20261010-yolov13n-fixed50\\weights\\epoch10.pt",
+    "log": "results\\time_budget\\logs\\milestones-20261010-yolov13n-fixed50.log",
+    "history_csv": "runs\\train\\milestones-20261010-yolov13n-fixed50\\results.csv",
+    "dataset_yaml": "dataset\\adv_tshirt_patch_detection.yaml",
+    "latency_benchmark": {
+      "model_key": "yolov13n",
+      "model_name": "YOLOv13n",
+      "checkpoint": "runs\\train\\milestones-20261010-yolov13n-fixed50\\weights\\epoch10.pt",
+      "checkpoint_epoch": 11,
+      "nominal_milestone_minutes": 10,
+      "batch_size": 1,
+      "repetitions": 3,
+      "median_speed_ms": {
+        "preprocess": 0.4028568606404863,
+        "inference": 27.919856754280406,
+        "postprocess": 1.5273841880482328
+      },
+      "latency_ms_per_frame": 29.850097802969124,
+      "fps": 33.50072775642739,
+      "raw_repetitions": [
+        {
+          "repetition": 1,
+          "speed_ms": {
+            "preprocess": 0.3981787777511326,
+            "inference": 27.742958633151982,
+            "loss": 0.008774932319595969,
+            "postprocess": 1.4625032977945
+          },
+          "total_latency_ms": 29.603640708697615
+        },
+        {
+          "repetition": 2,
+          "speed_ms": {
+            "preprocess": 0.41901007206482294,
+            "inference": 28.235137815306175,
+            "loss": 0.008762235472188193,
+            "postprocess": 1.5273841880482328
+          },
+          "total_latency_ms": 30.18153207541923
+        },
+        {
+          "repetition": 3,
+          "speed_ms": {
+            "preprocess": 0.4028568606404863,
+            "inference": 27.919856754280406,
+            "loss": 0.00852099537144046,
+            "postprocess": 1.541449473454402
+          },
+          "total_latency_ms": 29.864163088375296
+        }
+      ],
+      "measured_at_utc": "2026-10-10T12:46:11.035711+00:00"
+    }
+  },
+  {
+    "study_id": "20261010",
+    "model_key": "yolov13n",
+    "model_name": "YOLOv13n",
+    "status": "complete",
+    "run_name": "milestones-20261010-yolov13n-fixed50",
+    "started_at_utc": "2026-10-10T12:28:44.033227+00:00",
+    "finished_at_utc": "2026-10-10T12:44:19.478244+00:00",
+    "nominal_budget_minutes": 20,
+    "time_budget_hours_initial_grid_replaced": true,
+    "training_wall_seconds": 935.445,
+    "training_actual_seconds": 914.999,
+    "training_epochs_completed": 21,
+    "training_stop_reason": "patience early stopping",
+    "epoch_endpoint": 21,
+    "endpoint_elapsed_seconds": 914.999,
+    "endpoint_train_loss": {
+      "box": 0.85386,
+      "cls": 0.46747,
+      "dfl": 1.05956,
+      "total": 2.38089
+    },
+    "endpoint_val_loss": {
+      "box": 0.76582,
+      "cls": 0.40363,
+      "dfl": 0.97983,
+      "total": 2.14928
+    },
+    "selected_epoch": 11,
+    "selected_elapsed_seconds": 515.691,
+    "selected_val": {
+      "precision": 0.98468,
+      "recall": 0.97273,
+      "map50": 0.99293,
+      "map50_95": 0.81133
+    },
+    "test": {
+      "precision": 0.9951648410666697,
+      "recall": 0.9864864864864865,
+      "map50": 0.9949099099099098,
+      "map50_95": 0.7949318668119538,
+      "speed_ms": {
+        "preprocess": 0.4028568606404863,
+        "inference": 27.919856754280406,
+        "postprocess": 1.5273841880482328
+      },
+      "latency_ms_per_frame": 29.850097802969124,
+      "fps": 33.50072775642739,
+      "validator_speed_batch4_ms": {
+        "preprocess": 0.18614565832375068,
+        "inference": 8.145505860007022,
+        "loss": 0.002243109708707008,
+        "postprocess": 1.3769364215918545
+      }
+    },
+    "parameters_m": 2.460106,
+    "flops_g": 2.6924701440000005,
+    "checkpoint": "runs\\train\\milestones-20261010-yolov13n-fixed50\\weights\\epoch10.pt",
+    "log": "results\\time_budget\\logs\\milestones-20261010-yolov13n-fixed50.log",
+    "history_csv": "runs\\train\\milestones-20261010-yolov13n-fixed50\\results.csv",
+    "dataset_yaml": "dataset\\adv_tshirt_patch_detection.yaml",
+    "latency_benchmark": {
+      "model_key": "yolov13n",
+      "model_name": "YOLOv13n",
+      "checkpoint": "runs\\train\\milestones-20261010-yolov13n-fixed50\\weights\\epoch10.pt",
+      "checkpoint_epoch": 11,
+      "nominal_milestone_minutes": 10,
+      "batch_size": 1,
+      "repetitions": 3,
+      "median_speed_ms": {
+        "preprocess": 0.4028568606404863,
+        "inference": 27.919856754280406,
+        "postprocess": 1.5273841880482328
+      },
+      "latency_ms_per_frame": 29.850097802969124,
+      "fps": 33.50072775642739,
+      "raw_repetitions": [
+        {
+          "repetition": 1,
+          "speed_ms": {
+            "preprocess": 0.3981787777511326,
+            "inference": 27.742958633151982,
+            "loss": 0.008774932319595969,
+            "postprocess": 1.4625032977945
+          },
+          "total_latency_ms": 29.603640708697615
+        },
+        {
+          "repetition": 2,
+          "speed_ms": {
+            "preprocess": 0.41901007206482294,
+            "inference": 28.235137815306175,
+            "loss": 0.008762235472188193,
+            "postprocess": 1.5273841880482328
+          },
+          "total_latency_ms": 30.18153207541923
+        },
+        {
+          "repetition": 3,
+          "speed_ms": {
+            "preprocess": 0.4028568606404863,
+            "inference": 27.919856754280406,
+            "loss": 0.00852099537144046,
+            "postprocess": 1.541449473454402
+          },
+          "total_latency_ms": 29.864163088375296
+        }
+      ],
+      "measured_at_utc": "2026-10-10T12:46:11.035711+00:00"
+    }
+  },
+  {
+    "study_id": "20261010",
+    "model_key": "yolov13n",
+    "model_name": "YOLOv13n",
+    "status": "complete",
+    "run_name": "milestones-20261010-yolov13n-fixed50",
+    "started_at_utc": "2026-10-10T12:28:44.033227+00:00",
+    "finished_at_utc": "2026-10-10T12:44:19.479717+00:00",
+    "nominal_budget_minutes": 25,
+    "time_budget_hours_initial_grid_replaced": true,
+    "training_wall_seconds": 935.446,
+    "training_actual_seconds": 914.999,
+    "training_epochs_completed": 21,
+    "training_stop_reason": "patience early stopping",
+    "epoch_endpoint": 21,
+    "endpoint_elapsed_seconds": 914.999,
+    "endpoint_train_loss": {
+      "box": 0.85386,
+      "cls": 0.46747,
+      "dfl": 1.05956,
+      "total": 2.38089
+    },
+    "endpoint_val_loss": {
+      "box": 0.76582,
+      "cls": 0.40363,
+      "dfl": 0.97983,
+      "total": 2.14928
+    },
+    "selected_epoch": 11,
+    "selected_elapsed_seconds": 515.691,
+    "selected_val": {
+      "precision": 0.98468,
+      "recall": 0.97273,
+      "map50": 0.99293,
+      "map50_95": 0.81133
+    },
+    "test": {
+      "precision": 0.9951648410666697,
+      "recall": 0.9864864864864865,
+      "map50": 0.9949099099099098,
+      "map50_95": 0.7949318668119538,
+      "speed_ms": {
+        "preprocess": 0.4028568606404863,
+        "inference": 27.919856754280406,
+        "postprocess": 1.5273841880482328
+      },
+      "latency_ms_per_frame": 29.850097802969124,
+      "fps": 33.50072775642739,
+      "validator_speed_batch4_ms": {
+        "preprocess": 0.18614565832375068,
+        "inference": 8.145505860007022,
+        "loss": 0.002243109708707008,
+        "postprocess": 1.3769364215918545
+      }
+    },
+    "parameters_m": 2.460106,
+    "flops_g": 2.6924701440000005,
+    "checkpoint": "runs\\train\\milestones-20261010-yolov13n-fixed50\\weights\\epoch10.pt",
+    "log": "results\\time_budget\\logs\\milestones-20261010-yolov13n-fixed50.log",
+    "history_csv": "runs\\train\\milestones-20261010-yolov13n-fixed50\\results.csv",
+    "dataset_yaml": "dataset\\adv_tshirt_patch_detection.yaml",
+    "latency_benchmark": {
+      "model_key": "yolov13n",
+      "model_name": "YOLOv13n",
+      "checkpoint": "runs\\train\\milestones-20261010-yolov13n-fixed50\\weights\\epoch10.pt",
+      "checkpoint_epoch": 11,
+      "nominal_milestone_minutes": 10,
+      "batch_size": 1,
+      "repetitions": 3,
+      "median_speed_ms": {
+        "preprocess": 0.4028568606404863,
+        "inference": 27.919856754280406,
+        "postprocess": 1.5273841880482328
+      },
+      "latency_ms_per_frame": 29.850097802969124,
+      "fps": 33.50072775642739,
+      "raw_repetitions": [
+        {
+          "repetition": 1,
+          "speed_ms": {
+            "preprocess": 0.3981787777511326,
+            "inference": 27.742958633151982,
+            "loss": 0.008774932319595969,
+            "postprocess": 1.4625032977945
+          },
+          "total_latency_ms": 29.603640708697615
+        },
+        {
+          "repetition": 2,
+          "speed_ms": {
+            "preprocess": 0.41901007206482294,
+            "inference": 28.235137815306175,
+            "loss": 0.008762235472188193,
+            "postprocess": 1.5273841880482328
+          },
+          "total_latency_ms": 30.18153207541923
+        },
+        {
+          "repetition": 3,
+          "speed_ms": {
+            "preprocess": 0.4028568606404863,
+            "inference": 27.919856754280406,
+            "loss": 0.00852099537144046,
+            "postprocess": 1.541449473454402
+          },
+          "total_latency_ms": 29.864163088375296
+        }
+      ],
+      "measured_at_utc": "2026-10-10T12:46:11.035711+00:00"
+    }
+  },
+  {
+    "study_id": "20261010",
+    "model_key": "yolov13n",
+    "model_name": "YOLOv13n",
+    "status": "complete",
+    "run_name": "milestones-20261010-yolov13n-fixed50",
+    "started_at_utc": "2026-10-10T12:28:44.033227+00:00",
+    "finished_at_utc": "2026-10-10T12:44:33.460386+00:00",
+    "nominal_budget_minutes": 30,
+    "time_budget_hours_initial_grid_replaced": true,
+    "training_wall_seconds": 930.257,
+    "training_actual_seconds": 914.999,
+    "training_epochs_completed": 21,
+    "training_stop_reason": "patience early stopping",
+    "epoch_endpoint": 21,
+    "endpoint_elapsed_seconds": 914.999,
+    "endpoint_train_loss": {
+      "box": 0.85386,
+      "cls": 0.46747,
+      "dfl": 1.05956,
+      "total": 2.38089
+    },
+    "endpoint_val_loss": {
+      "box": 0.76582,
+      "cls": 0.40363,
+      "dfl": 0.97983,
+      "total": 2.14928
+    },
+    "selected_epoch": 11,
+    "selected_elapsed_seconds": 515.691,
+    "selected_val": {
+      "precision": 0.98468,
+      "recall": 0.97273,
+      "map50": 0.99293,
+      "map50_95": 0.81133
+    },
+    "test": {
+      "precision": 0.9951648410666697,
+      "recall": 0.9864864864864865,
+      "map50": 0.9949099099099098,
+      "map50_95": 0.7949318668119538,
+      "speed_ms": {
+        "preprocess": 0.4028568606404863,
+        "inference": 27.919856754280406,
+        "postprocess": 1.5273841880482328
+      },
+      "latency_ms_per_frame": 29.850097802969124,
+      "fps": 33.50072775642739,
+      "validator_speed_batch4_ms": {
+        "preprocess": 0.18614565832375068,
+        "inference": 8.145505860007022,
+        "loss": 0.002243109708707008,
+        "postprocess": 1.3769364215918545
+      }
+    },
+    "parameters_m": 2.460106,
+    "flops_g": 2.6924701440000005,
+    "checkpoint": "runs\\train\\milestones-20261010-yolov13n-fixed50\\weights\\epoch10.pt",
+    "log": "results\\time_budget\\logs\\milestones-20261010-yolov13n-fixed50.log",
+    "history_csv": "runs\\train\\milestones-20261010-yolov13n-fixed50\\results.csv",
+    "dataset_yaml": "dataset\\adv_tshirt_patch_detection.yaml",
+    "latency_benchmark": {
+      "model_key": "yolov13n",
+      "model_name": "YOLOv13n",
+      "checkpoint": "runs\\train\\milestones-20261010-yolov13n-fixed50\\weights\\epoch10.pt",
+      "checkpoint_epoch": 11,
+      "nominal_milestone_minutes": 10,
+      "batch_size": 1,
+      "repetitions": 3,
+      "median_speed_ms": {
+        "preprocess": 0.4028568606404863,
+        "inference": 27.919856754280406,
+        "postprocess": 1.5273841880482328
+      },
+      "latency_ms_per_frame": 29.850097802969124,
+      "fps": 33.50072775642739,
+      "raw_repetitions": [
+        {
+          "repetition": 1,
+          "speed_ms": {
+            "preprocess": 0.3981787777511326,
+            "inference": 27.742958633151982,
+            "loss": 0.008774932319595969,
+            "postprocess": 1.4625032977945
+          },
+          "total_latency_ms": 29.603640708697615
+        },
+        {
+          "repetition": 2,
+          "speed_ms": {
+            "preprocess": 0.41901007206482294,
+            "inference": 28.235137815306175,
+            "loss": 0.008762235472188193,
+            "postprocess": 1.5273841880482328
+          },
+          "total_latency_ms": 30.18153207541923
+        },
+        {
+          "repetition": 3,
+          "speed_ms": {
+            "preprocess": 0.4028568606404863,
+            "inference": 27.919856754280406,
+            "loss": 0.00852099537144046,
+            "postprocess": 1.541449473454402
+          },
+          "total_latency_ms": 29.864163088375296
+        }
+      ],
+      "measured_at_utc": "2026-10-10T12:46:11.035711+00:00"
+    }
+  }
+]

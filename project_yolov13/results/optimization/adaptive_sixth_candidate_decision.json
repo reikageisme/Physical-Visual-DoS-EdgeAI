@@ -1,0 +1,14 @@
+{
+  "decided_at_utc": "2026-10-13T12:55:52+00:00",
+  "diagnostic": "results/optimization/bn_controlled_diagnostic.json",
+  "diagnostic_sha256": "1a06848e296b2dbba24b6296f36600c9fd0119fd7fd965c9ec7b006b8f2e4af7",
+  "zero_fp32_map95": 0.5720682859890442,
+  "trained_fp32_map95": 0.5000042320613483,
+  "activation_gap": 0.07206405392769599,
+  "activated": true,
+  "bn_buffer_reset_fp32_gain": -0.4995557259663893,
+  "freeze_bn_for_extra_candidate": false,
+  "test_seen": false,
+  "candidate_added": "transfer_tiny_lr",
+  "bundled_intervention": "faithful8edge personrow transfer + AdamW1e-5 + frozen9layerbackbone + mildaugmentation + conditionallyfrozen BNstatistics; not isolated causal ablation"
+}

@@ -1,0 +1,30 @@
+{
+  "status": "final_visual_qa_passed",
+  "created_at_utc": "2026-10-17T09:50:15.606481+00:00",
+  "author": "Mai Quốc Bảo",
+  "winner_configuration": "transfer_tiny_lr",
+  "artifacts": [
+    {
+      "path": "results\\BaoCao_NCKH_YOLOv13_Updated.md",
+      "sha256": "4d134c9f6bf58674061a5cf8a4b0f885b21551c943996bd06268ec7989e6b82b",
+      "bytes": 46389
+    },
+    {
+      "path": "results\\BaoCao_NCKH_YOLOv13_Updated.docx",
+      "sha256": "e7b86cf256c9cb81933084816223aeabc6ad11fff817bfb6cbbc3d1d79521fc7",
+      "bytes": 685682
+    }
+  ],
+  "source_sha256": {
+    "results/optimization/final_summary.json": "22bc907ba2849233188d0c302da699a39bdc315007821c5a3f7af276a8dc94d6",
+    "results/literature_updated/benchmark_matrix.json": "3669ae33a1ab1a6e8e54e26e041b39a30df0b547e918ec5b014c194b38abde88",
+    "results/figures/figures_manifest.json": "f15ad1cee7f688531f45ce27ab65c1c185ea8445fd3a551a1d0d375beaaf8f7c",
+    "results/fullscale_experiments/latency_records.json": "5e6641e7be25ad84e28fc0512c14d9194185eb81392b2f91f3f9652e20b91b7c"
+  },
+  "visual_qa": {
+    "status": "passed",
+    "pages": 18,
+    "audit": "results/updated_research/editor_qa_audit.json",
+    "docx_sha256": "e7b86cf256c9cb81933084816223aeabc6ad11fff817bfb6cbbc3d1d79521fc7"
+  }
+}

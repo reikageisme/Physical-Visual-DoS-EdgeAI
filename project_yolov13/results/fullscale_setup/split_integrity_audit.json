@@ -1,0 +1,41 @@
+{
+  "audited_at_utc": "2026-10-12T13:34:08.430080+00:00",
+  "images_hashed": 11123,
+  "source_split_counts": {
+    "train": {
+      "COCO 2017:train2017": 6725,
+      "COCO 2017:val2017": 275,
+      "AdvT-shirt-1K:1_person": 158,
+      "AdvT-shirt-1K:2_persons": 141,
+      "AdvT-shirt-1K:3_5_persons": 303,
+      "AdvT-shirt-1K:6_9_persons": 148,
+      "AdvT-shirt-1K:10_plus_persons": 36
+    },
+    "val": {
+      "COCO 2017:train2017": 1435,
+      "COCO 2017:val2017": 65,
+      "AdvT-shirt-1K:1_person": 34,
+      "AdvT-shirt-1K:2_persons": 30,
+      "AdvT-shirt-1K:3_5_persons": 65,
+      "AdvT-shirt-1K:6_9_persons": 32,
+      "AdvT-shirt-1K:10_plus_persons": 8
+    },
+    "test": {
+      "COCO 2017:val2017": 71,
+      "COCO 2017:train2017": 1429,
+      "AdvT-shirt-1K:1_person": 34,
+      "AdvT-shirt-1K:2_persons": 30,
+      "AdvT-shirt-1K:3_5_persons": 65,
+      "AdvT-shirt-1K:6_9_persons": 31,
+      "AdvT-shirt-1K:10_plus_persons": 8
+    }
+  },
+  "exact_duplicate_groups": [],
+  "cross_split_exact_duplicate_groups": [],
+  "cross_split_coco_identity_groups": [],
+  "limitations": [
+    "SHA-256 detects exact byte duplicates, not similar frames or correlated people/scenes.",
+    "COCO source splits were pooled and re-split; pretrained exposure is not excluded.",
+    "Image-level random splitting does not establish subject/sequence disjointness for AdvT-shirt."
+  ]
+}

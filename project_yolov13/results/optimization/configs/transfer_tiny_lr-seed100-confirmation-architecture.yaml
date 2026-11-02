@@ -1,0 +1,218 @@
+backbone:
+- - -1
+  - 1
+  - Conv
+  - - 64
+    - 3
+    - 2
+- - -1
+  - 1
+  - Conv
+  - - 128
+    - 3
+    - 2
+    - 1
+    - 2
+- - -1
+  - 2
+  - DSC3k2
+  - - 256
+    - false
+    - 0.25
+- - -1
+  - 1
+  - Conv
+  - - 256
+    - 3
+    - 2
+    - 1
+    - 4
+- - -1
+  - 2
+  - DSC3k2
+  - - 512
+    - false
+    - 0.25
+- - -1
+  - 1
+  - DSConv
+  - - 512
+    - 3
+    - 2
+- - -1
+  - 4
+  - A2C2f
+  - - 512
+    - true
+    - 4
+- - -1
+  - 1
+  - DSConv
+  - - 1024
+    - 3
+    - 2
+- - -1
+  - 4
+  - A2C2f
+  - - 1024
+    - true
+    - 1
+ch: 3
+head:
+- - - 4
+    - 6
+    - 8
+  - 1
+  - HyperACE
+  - - 512
+    - 8
+    - true
+    - true
+    - 0.5
+    - 1
+    - both
+- - -1
+  - 1
+  - nn.Upsample
+  - - None
+    - 2
+    - nearest
+- - 9
+  - 1
+  - DownsampleConv
+  - []
+- - - 6
+    - 9
+  - 1
+  - FullPAD_Tunnel
+  - []
+- - - 4
+    - 10
+  - 1
+  - FullPAD_Tunnel
+  - []
+- - - 8
+    - 11
+  - 1
+  - FullPAD_Tunnel
+  - []
+- - -1
+  - 1
+  - nn.Upsample
+  - - None
+    - 2
+    - nearest
+- - - -1
+    - 12
+  - 1
+  - Concat
+  - - 1
+- - -1
+  - 2
+  - DSC3k2
+  - - 512
+    - true
+- - - -1
+    - 9
+  - 1
+  - FullPAD_Tunnel
+  - []
+- - 17
+  - 1
+  - nn.Upsample
+  - - None
+    - 2
+    - nearest
+- - - -1
+    - 13
+  - 1
+  - Concat
+  - - 1
+- - -1
+  - 2
+  - DSC3k2
+  - - 256
+    - true
+- - 10
+  - 1
+  - Conv
+  - - 256
+    - 1
+    - 1
+- - - 21
+    - 22
+  - 1
+  - FullPAD_Tunnel
+  - []
+- - -1
+  - 1
+  - Conv
+  - - 256
+    - 3
+    - 2
+- - - -1
+    - 18
+  - 1
+  - Concat
+  - - 1
+- - -1
+  - 2
+  - DSC3k2
+  - - 512
+    - true
+- - - -1
+    - 9
+  - 1
+  - FullPAD_Tunnel
+  - []
+- - 26
+  - 1
+  - Conv
+  - - 512
+    - 3
+    - 2
+- - - -1
+    - 14
+  - 1
+  - Concat
+  - - 1
+- - -1
+  - 2
+  - DSC3k2
+  - - 1024
+    - true
+- - - -1
+    - 11
+  - 1
+  - FullPAD_Tunnel
+  - []
+- - - 23
+    - 27
+    - 31
+  - 1
+  - Detect
+  - - nc
+nc: 1
+scale: s
+scales:
+  l:
+  - 1.0
+  - 1.0
+  - 512
+  m:
+  - 0.5
+  - 1.0
+  - 512
+  n:
+  - 0.5
+  - 0.25
+  - 1024
+  s:
+  - 0.5
+  - 0.5
+  - 1024
+  x:
+  - 1.0
+  - 1.5
+  - 512
+yaml_file: /root/autodl-tmp/yolov13/ultralytics/cfg/models/v13/yolov13s.yaml

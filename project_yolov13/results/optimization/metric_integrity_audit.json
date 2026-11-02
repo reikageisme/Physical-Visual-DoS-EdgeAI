@@ -1,0 +1,120 @@
+{
+  "status": "complete",
+  "audited_at_utc": "2026-10-17T09:40:38+00:00",
+  "records_checked": 12,
+  "independent_confirmation_records": 6,
+  "new_candidate_test_evaluations_after_lock": true,
+  "fresh_training_runs": 9,
+  "reused_historical_control_prefixes": 3,
+  "records": [
+    {
+      "configuration": "original_sgd",
+      "seed": 42,
+      "stage": "screening",
+      "selected_epoch": 1,
+      "checkpoint_sha256_verified": true,
+      "history_sha256_verified": true,
+      "training_origin": "fresh"
+    },
+    {
+      "configuration": "adamw_transfer_restored",
+      "seed": 42,
+      "stage": "screening",
+      "selected_epoch": 6,
+      "checkpoint_sha256_verified": true,
+      "history_sha256_verified": true,
+      "training_origin": "fresh"
+    },
+    {
+      "configuration": "transfer_tiny_lr",
+      "seed": 42,
+      "stage": "screening",
+      "selected_epoch": 6,
+      "checkpoint_sha256_verified": true,
+      "history_sha256_verified": true,
+      "training_origin": "fresh"
+    },
+    {
+      "configuration": "low_sgd_cosine",
+      "seed": 42,
+      "stage": "screening",
+      "selected_epoch": 6,
+      "checkpoint_sha256_verified": true,
+      "history_sha256_verified": true,
+      "training_origin": "fresh"
+    },
+    {
+      "configuration": "adamw_cosine",
+      "seed": 42,
+      "stage": "screening",
+      "selected_epoch": 6,
+      "checkpoint_sha256_verified": true,
+      "history_sha256_verified": true,
+      "training_origin": "fresh"
+    },
+    {
+      "configuration": "adamw_domain_loss_aug",
+      "seed": 42,
+      "stage": "screening",
+      "selected_epoch": 6,
+      "checkpoint_sha256_verified": true,
+      "history_sha256_verified": true,
+      "training_origin": "fresh"
+    },
+    {
+      "configuration": "original_sgd",
+      "seed": 100,
+      "stage": "confirmation",
+      "selected_epoch": 1,
+      "checkpoint_sha256_verified": true,
+      "history_sha256_verified": true,
+      "training_origin": "historical_deterministic_prefix"
+    },
+    {
+      "configuration": "transfer_tiny_lr",
+      "seed": 100,
+      "stage": "confirmation",
+      "selected_epoch": 6,
+      "checkpoint_sha256_verified": true,
+      "history_sha256_verified": true,
+      "training_origin": "fresh"
+    },
+    {
+      "configuration": "original_sgd",
+      "seed": 2026,
+      "stage": "confirmation",
+      "selected_epoch": 1,
+      "checkpoint_sha256_verified": true,
+      "history_sha256_verified": true,
+      "training_origin": "historical_deterministic_prefix"
+    },
+    {
+      "configuration": "transfer_tiny_lr",
+      "seed": 2026,
+      "stage": "confirmation",
+      "selected_epoch": 4,
+      "checkpoint_sha256_verified": true,
+      "history_sha256_verified": true,
+      "training_origin": "fresh"
+    },
+    {
+      "configuration": "original_sgd",
+      "seed": 777,
+      "stage": "confirmation",
+      "selected_epoch": 1,
+      "checkpoint_sha256_verified": true,
+      "history_sha256_verified": true,
+      "training_origin": "historical_deterministic_prefix"
+    },
+    {
+      "configuration": "transfer_tiny_lr",
+      "seed": 777,
+      "stage": "confirmation",
+      "selected_epoch": 6,
+      "checkpoint_sha256_verified": true,
+      "history_sha256_verified": true,
+      "training_origin": "fresh"
+    }
+  ],
+  "final_summary_sha256": "22bc907ba2849233188d0c302da699a39bdc315007821c5a3f7af276a8dc94d6"
+}

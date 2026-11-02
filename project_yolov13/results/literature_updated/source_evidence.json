@@ -1,0 +1,276 @@
+{
+  "retrieved_date": "2026-10-13",
+  "method": "Primary papers, official software documentation and original authors' repositories; tables/sections cross-checked manually",
+  "direct_quotes": [],
+  "references": [
+    {
+      "id": "lei2025yolov13",
+      "title": "YOLOv13: Real-Time Object Detection with Hypergraph-Enhanced Adaptive Visual Perception",
+      "authors": [
+        "Mengqi Lei",
+        "Siqi Li",
+        "Yihong Wu",
+        "Han Hu",
+        "You Zhou",
+        "Xinhu Zheng",
+        "Guiguang Ding",
+        "Shaoyi Du",
+        "Zongze Wu",
+        "Yue Gao"
+      ],
+      "year": 2025,
+      "arxiv": "2506.17733v1",
+      "doi": "10.48550/arXiv.2506.17733",
+      "url": "https://arxiv.org/html/2506.17733v1",
+      "publication_type": "arXiv preprint",
+      "anchors": [
+        "Sec. III-B; Eqs. (3)-(5)",
+        "Sec. III-C; Eq. (13)",
+        "Sec. III-D; Fig. 4",
+        "Sec. IV-A; Table I",
+        "Table V"
+      ],
+      "verification": "Full text and official iMoonLab/yolov13 repository agree on own N/S benchmark rows."
+    },
+    {
+      "id": "tian2025yolov12",
+      "title": "YOLOv12: Attention-Centric Real-Time Object Detectors",
+      "authors": [
+        "Yunjie Tian",
+        "Qixiang Ye",
+        "David Doermann"
+      ],
+      "year": 2025,
+      "arxiv": "2502.12524v1",
+      "doi": "10.48550/arXiv.2502.12524",
+      "url": "https://arxiv.org/html/2502.12524v1",
+      "publication_type": "arXiv v1; subsequent NeurIPS 2025 conference version differs",
+      "anchors": [
+        "Sec. 4.1",
+        "Table 1",
+        "Table 6",
+        "Table 7"
+      ],
+      "verification": "Pin v1 metrics; do not mix with current Turbo or conference tables."
+    },
+    {
+      "id": "jocher2024yolo11",
+      "title": "Ultralytics YOLO11",
+      "authors": [
+        "Glenn Jocher",
+        "Jing Qiu"
+      ],
+      "year": 2024,
+      "arxiv": null,
+      "doi": null,
+      "url": "https://docs.ultralytics.com/models/yolo11/",
+      "publication_type": "official software documentation; no formal official research paper",
+      "anchors": [
+        "Performance Metrics: Detection (COCO)",
+        "Citations and Acknowledgments"
+      ],
+      "verification": "Official page explicitly states no formal research paper for YOLO11; citation is software, not a peer-reviewed architecture article."
+    },
+    {
+      "id": "wang2024yolov10",
+      "title": "YOLOv10: Real-Time End-to-End Object Detection",
+      "authors": [
+        "Ao Wang",
+        "Hui Chen",
+        "Lihao Liu",
+        "Kai Chen",
+        "Zijia Lin",
+        "Jungong Han",
+        "Guiguang Ding"
+      ],
+      "year": 2024,
+      "arxiv": "2405.14458v1",
+      "doi": "10.48550/arXiv.2405.14458",
+      "url": "https://arxiv.org/html/2405.14458v1",
+      "publication_type": "NeurIPS 2024; metrics pinned to arXiv v1 and official repository",
+      "anchors": [
+        "Sec. 4.1",
+        "Table 1",
+        "Appendix A.4 Table 15"
+      ],
+      "verification": "Main latency column is end-to-end; separate Latency-f column is forward-only. Use main column."
+    },
+    {
+      "id": "zhao2024rtdetr",
+      "title": "DETRs Beat YOLOs on Real-time Object Detection",
+      "authors": [
+        "Yian Zhao",
+        "Wenyu Lv",
+        "Shangliang Xu",
+        "Jinman Wei",
+        "Guanzhong Wang",
+        "Qingqing Dang",
+        "Yi Liu",
+        "Jie Chen"
+      ],
+      "year": 2024,
+      "preprint_year": 2023,
+      "arxiv": "2304.08069",
+      "doi": "10.48550/arXiv.2304.08069",
+      "url": "https://arxiv.org/abs/2304.08069",
+      "publication_type": "CVPR 2024; official repository metrics",
+      "anchors": [
+        "Official repository model table: COCO rows only",
+        "arXiv abstract"
+      ],
+      "verification": "Do not substitute COCO+Objects365 rows for COCO-only variants."
+    },
+    {
+      "id": "lv2024rtdetrv2",
+      "title": "RT-DETRv2: Improved Baseline with Bag-of-Freebies for Real-Time Detection Transformer",
+      "authors": [
+        "Wenyu Lv",
+        "Yian Zhao",
+        "Qinyao Chang",
+        "Kui Huang",
+        "Guanzhong Wang",
+        "Yi Liu"
+      ],
+      "year": 2024,
+      "arxiv": "2407.17140v1",
+      "doi": "10.48550/arXiv.2407.17140",
+      "url": "https://arxiv.org/html/2407.17140v1",
+      "publication_type": "arXiv technical report",
+      "anchors": [
+        "Sec. 3.2",
+        "Table 2: FPS-bs=1"
+      ],
+      "verification": "v1 S has 47.9 AP; current official repository improved S has 48.1, stored separately in version notes."
+    },
+    {
+      "id": "wang2025badpatch",
+      "title": "BadPatch: Diffusion-Based Generation of Physical Adversarial Patches",
+      "authors": [
+        "Zhixiang Wang",
+        "Xingjun Ma",
+        "Yu-Gang Jiang"
+      ],
+      "year": 2025,
+      "preprint_year": 2024,
+      "arxiv": "2412.01440v5",
+      "doi": "10.48550/arXiv.2412.01440",
+      "url": "https://arxiv.org/html/2412.01440v5",
+      "publication_type": "arXiv v5; ICCV 2025 Findings workshop listing",
+      "anchors": [
+        "Sec. 4.1",
+        "Sec. 4.5; Fig. 8"
+      ],
+      "verification": "Latest arXiv title/three authors supersede old DiffPatch/seven-author citation in dataset README. CVF workshop listing was found, but direct full-text opening failed; use verified arXiv full text."
+    },
+    {
+      "id": "xu2020adversarialtshirt",
+      "title": "Adversarial T-shirt! Evading Person Detectors in A Physical World",
+      "authors": [
+        "Kaidi Xu",
+        "Gaoyuan Zhang",
+        "Sijia Liu",
+        "Quanfu Fan",
+        "Mengshu Sun",
+        "Hongge Chen",
+        "Pin-Yu Chen",
+        "Yanzhi Wang",
+        "Xue Lin"
+      ],
+      "year": 2020,
+      "preprint_year": 2019,
+      "arxiv": "1910.11099",
+      "doi": "10.48550/arXiv.1910.11099",
+      "url": "https://arxiv.org/abs/1910.11099",
+      "publication_type": "ECCV 2020",
+      "anchors": [
+        "Abstract",
+        "Official ECCV paper: https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123500647.pdf"
+      ],
+      "verification": "Physical/digital attack success is a distinct endpoint from detector COCO AP."
+    }
+  ],
+  "version_discrepancies": [
+    {
+      "model": "YOLOv12",
+      "source_url": "https://github.com/sunsmarterjie/yolov12",
+      "anchor": "Main Results",
+      "retrieved_date": "2026-10-13",
+      "note": "Current Turbo N: AP40.4, params2.5M, FLOPs6.0G, latency1.60ms. Original v1 N40.6/2.6M/6.5G/1.64ms. Do not silently substitute updated release for locally used weights."
+    },
+    {
+      "model": "YOLO11/YOLOv12",
+      "source_url": "https://arxiv.org/html/2506.17733v1",
+      "anchor": "Sec.IV-A; Table I",
+      "retrieved_date": "2026-10-13",
+      "note": "Authors reran official YOLO11 and YOLOv12 v1 on same training hardware; N AP38.6/40.1, S45.8/47.1. Hence reported YOLO13 gains refer to these reruns, not official docs or original paper figures."
+    },
+    {
+      "model": "RT-DETRv2-S",
+      "source_url": "https://github.com/lyuwenyu/RT-DETR",
+      "anchor": "News 2024.08.22; model table",
+      "retrieved_date": "2026-10-13",
+      "note": "Current repo S AP48.1/AP50 65.1 vs arXivv1 47.9/64.9."
+    }
+  ],
+  "published_architecture_ablations": {
+    "source_url": "https://arxiv.org/html/2506.17733v1",
+    "retrieved_date": "2026-10-13",
+    "dataset": "COCO2017 val2017",
+    "num_classes": 80,
+    "input_size": 640,
+    "ownership": "Original authors' published ablations; not local experiments",
+    "fullpad_hyperace": {
+      "anchor": "Sec.IV-C1; Table III",
+      "model": "YOLOv13-S",
+      "no_tunnel_ap95": 47.1,
+      "no_tunnel_ap50": 64.1,
+      "full_tunnels_ap95": 48.0,
+      "full_tunnels_ap50": 65.2,
+      "delta_ap95_pp": 0.9,
+      "note": "No tunnels equals removing effective HyperACE according to authors; not independent isolated HyperACE/FullPAD factorial ablation"
+    },
+    "ds_blocks": {
+      "anchor": "Table V",
+      "rows": [
+        {
+          "model": "YOLOv13-N",
+          "ds": true,
+          "ap95": 41.6,
+          "params_m": 2.5,
+          "flops_g": 6.4
+        },
+        {
+          "model": "YOLOv13-N",
+          "ds": false,
+          "ap95": 41.6,
+          "params_m": 3.1,
+          "flops_g": 7.9
+        },
+        {
+          "model": "YOLOv13-S",
+          "ds": true,
+          "ap95": 48.0,
+          "params_m": 9.0,
+          "flops_g": 20.8
+        },
+        {
+          "model": "YOLOv13-S",
+          "ds": false,
+          "ap95": 48.0,
+          "params_m": 11.7,
+          "flops_g": 27.1
+        }
+      ],
+      "note": "Parameter/FLOPs benefit at equal rounded AP in this published ablation; does not guarantee faster local PyTorch latency"
+    }
+  },
+  "local_evidence_files": [
+    "results/fullscale_setup/dataset_build_summary.json",
+    "results/fullscale_setup/split_integrity_audit.json",
+    "results/fullscale_experiments/latency_records.json"
+  ],
+  "unreported_values_policy": "Use null; do not guess missing batch, timing boundary, dtype or repetitions.",
+  "retrieval_failures": [
+    "Direct opening of CVF BadPatch workshop PDF/HTML returned Internal Error; verified arXiv v5 full text used instead."
+  ]
+}

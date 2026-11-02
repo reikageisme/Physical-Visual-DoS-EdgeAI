@@ -11,7 +11,9 @@ trong BaoCaoKhoaHocAdversarialAttacks.docx gốc của tác giả. SHA-256 của
 Word gốc: 3b7c54dbf26f56373272605938645ae06705c852ed94e99e6a977c56938614c2.
 Bản Word gốc không bị chỉnh sửa. Ảnh này chỉ minh họa giao diện của bản cũ;
 không dùng giá trị CPU/FPS/số hộp trên ảnh để suy ra hiệu ứng thực nghiệm.
-Chú thích và mục Đánh giá thế giới vật lý công bố rõ giới hạn này.
+Chú thích và mục Quan sát camera trong bản gốc công bố rõ giới hạn này.
+Webcam ngoài 720p là thông tin tác giả cung cấp, không phải cấu hình đã
+được xác nhận cho hình lưu trước đây. Không suy ra mẫu webcam hoặc FPS.
 
 Các biểu đồ số liệu mới nằm trong figures_corrected của từng thư mục kết quả,
 có bản kê nguồn riêng. Không trộn số liệu cũ chưa kiểm chứng với dữ liệu mới.

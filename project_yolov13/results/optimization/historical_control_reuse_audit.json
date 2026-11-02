@@ -1,0 +1,64 @@
+{
+  "status": "complete",
+  "audited_at_utc": "2026-10-13T12:30:52+00:00",
+  "historical_reuse_eligible": true,
+  "csv_non_time_fields_first6_exact": true,
+  "csv_mismatches": [],
+  "configuration_excluded_nonfunctional_arguments": [
+    "name",
+    "project",
+    "save_dir"
+  ],
+  "configuration_mismatches": {},
+  "model_source_sha_mismatches": [],
+  "model_source_python_files_checked": 162,
+  "dataset_manifest_sha256_matches_historical": true,
+  "pretrained_weights_sha256_matches_historical": true,
+  "saved_ema_tensor_checks": [
+    {
+      "epoch": 1,
+      "tensor_count": 898,
+      "nonidentical_keys": [],
+      "extra_keys": [],
+      "exact_match": true
+    },
+    {
+      "epoch": 2,
+      "tensor_count": 898,
+      "nonidentical_keys": [],
+      "extra_keys": [],
+      "exact_match": true
+    },
+    {
+      "epoch": 3,
+      "tensor_count": 898,
+      "nonidentical_keys": [],
+      "extra_keys": [],
+      "exact_match": true
+    },
+    {
+      "epoch": 4,
+      "tensor_count": 898,
+      "nonidentical_keys": [],
+      "extra_keys": [],
+      "exact_match": true
+    },
+    {
+      "epoch": 5,
+      "tensor_count": 898,
+      "nonidentical_keys": [],
+      "extra_keys": [],
+      "exact_match": true
+    },
+    {
+      "epoch": 6,
+      "tensor_count": 898,
+      "nonidentical_keys": [],
+      "extra_keys": [],
+      "exact_match": true
+    }
+  ],
+  "source_provenance_sha256": "a2f253473e19168bdcd19a9af1323fac2a7d7031d86752fc25183558129df5d9",
+  "interpretation": "Same seeds, initialization, architecture, source, datasetmanifest, all functional arguments and exactly matching savedEMA tensors through6epochs support reusing prefix checkpoints forcontrols. Historicalwalltimes and dates differ; test andlatency must be freshly reevaluated after winnerlock.",
+  "limitation": "Manifesthash verifies splitidentity, not independently all historical image/label bytes; seed42 exact tensors/metrics provide strong end-to-end consistency evidence."
+}

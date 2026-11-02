@@ -1,0 +1,12 @@
+{
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "torch": "2.11.0+cu128",
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 5060",
+  "gpu_memory_gib": 7.96,
+  "study_id": "20261010",
+  "dataset_yaml": "dataset\\adv_tshirt_patch_detection.yaml",
+  "image_size": 416,
+  "batch_size": 4,
+  "seed": 42
+}

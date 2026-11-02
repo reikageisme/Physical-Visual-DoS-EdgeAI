@@ -1,0 +1,548 @@
+{
+  "date": "2026-10-13",
+  "scope": "Self-audit of curated literature ledger structure, numeric units and claim scope; not a formal bibliographic certificate, independent replication or exhaustive systematic review",
+  "status": "pass",
+  "failures": [],
+  "row_count": 11,
+  "reference_count": 8,
+  "numeric_checks": [
+    {
+      "model": "YOLO11n",
+      "field": "map50_95_pct",
+      "passed": true,
+      "null_allowed": false
+    },
+    {
+      "model": "YOLO11n",
+      "field": "map50_pct",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLO11n",
+      "field": "parameters_m",
+      "passed": true,
+      "null_allowed": false
+    },
+    {
+      "model": "YOLO11n",
+      "field": "flops_g",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLO11n",
+      "field": "published_latency_ms",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLO11n",
+      "field": "published_fps",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLO11s",
+      "field": "map50_95_pct",
+      "passed": true,
+      "null_allowed": false
+    },
+    {
+      "model": "YOLO11s",
+      "field": "map50_pct",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLO11s",
+      "field": "parameters_m",
+      "passed": true,
+      "null_allowed": false
+    },
+    {
+      "model": "YOLO11s",
+      "field": "flops_g",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLO11s",
+      "field": "published_latency_ms",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLO11s",
+      "field": "published_fps",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLOv12-N",
+      "field": "map50_95_pct",
+      "passed": true,
+      "null_allowed": false
+    },
+    {
+      "model": "YOLOv12-N",
+      "field": "map50_pct",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLOv12-N",
+      "field": "parameters_m",
+      "passed": true,
+      "null_allowed": false
+    },
+    {
+      "model": "YOLOv12-N",
+      "field": "flops_g",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLOv12-N",
+      "field": "published_latency_ms",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLOv12-N",
+      "field": "published_fps",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLOv12-S",
+      "field": "map50_95_pct",
+      "passed": true,
+      "null_allowed": false
+    },
+    {
+      "model": "YOLOv12-S",
+      "field": "map50_pct",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLOv12-S",
+      "field": "parameters_m",
+      "passed": true,
+      "null_allowed": false
+    },
+    {
+      "model": "YOLOv12-S",
+      "field": "flops_g",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLOv12-S",
+      "field": "published_latency_ms",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLOv12-S",
+      "field": "published_fps",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLOv13-N",
+      "field": "map50_95_pct",
+      "passed": true,
+      "null_allowed": false
+    },
+    {
+      "model": "YOLOv13-N",
+      "field": "map50_pct",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLOv13-N",
+      "field": "parameters_m",
+      "passed": true,
+      "null_allowed": false
+    },
+    {
+      "model": "YOLOv13-N",
+      "field": "flops_g",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLOv13-N",
+      "field": "published_latency_ms",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLOv13-N",
+      "field": "published_fps",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLOv13-S",
+      "field": "map50_95_pct",
+      "passed": true,
+      "null_allowed": false
+    },
+    {
+      "model": "YOLOv13-S",
+      "field": "map50_pct",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLOv13-S",
+      "field": "parameters_m",
+      "passed": true,
+      "null_allowed": false
+    },
+    {
+      "model": "YOLOv13-S",
+      "field": "flops_g",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLOv13-S",
+      "field": "published_latency_ms",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLOv13-S",
+      "field": "published_fps",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLOv10-N",
+      "field": "map50_95_pct",
+      "passed": true,
+      "null_allowed": false
+    },
+    {
+      "model": "YOLOv10-N",
+      "field": "map50_pct",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLOv10-N",
+      "field": "parameters_m",
+      "passed": true,
+      "null_allowed": false
+    },
+    {
+      "model": "YOLOv10-N",
+      "field": "flops_g",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLOv10-N",
+      "field": "published_latency_ms",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLOv10-N",
+      "field": "published_fps",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLOv10-S",
+      "field": "map50_95_pct",
+      "passed": true,
+      "null_allowed": false
+    },
+    {
+      "model": "YOLOv10-S",
+      "field": "map50_pct",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLOv10-S",
+      "field": "parameters_m",
+      "passed": true,
+      "null_allowed": false
+    },
+    {
+      "model": "YOLOv10-S",
+      "field": "flops_g",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLOv10-S",
+      "field": "published_latency_ms",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "YOLOv10-S",
+      "field": "published_fps",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "RT-DETR-R18",
+      "field": "map50_95_pct",
+      "passed": true,
+      "null_allowed": false
+    },
+    {
+      "model": "RT-DETR-R18",
+      "field": "map50_pct",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "RT-DETR-R18",
+      "field": "parameters_m",
+      "passed": true,
+      "null_allowed": false
+    },
+    {
+      "model": "RT-DETR-R18",
+      "field": "flops_g",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "RT-DETR-R18",
+      "field": "published_latency_ms",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "RT-DETR-R18",
+      "field": "published_fps",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "RT-DETR-R50",
+      "field": "map50_95_pct",
+      "passed": true,
+      "null_allowed": false
+    },
+    {
+      "model": "RT-DETR-R50",
+      "field": "map50_pct",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "RT-DETR-R50",
+      "field": "parameters_m",
+      "passed": true,
+      "null_allowed": false
+    },
+    {
+      "model": "RT-DETR-R50",
+      "field": "flops_g",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "RT-DETR-R50",
+      "field": "published_latency_ms",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "RT-DETR-R50",
+      "field": "published_fps",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "RT-DETRv2-S",
+      "field": "map50_95_pct",
+      "passed": true,
+      "null_allowed": false
+    },
+    {
+      "model": "RT-DETRv2-S",
+      "field": "map50_pct",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "RT-DETRv2-S",
+      "field": "parameters_m",
+      "passed": true,
+      "null_allowed": false
+    },
+    {
+      "model": "RT-DETRv2-S",
+      "field": "flops_g",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "RT-DETRv2-S",
+      "field": "published_latency_ms",
+      "passed": true,
+      "null_allowed": true
+    },
+    {
+      "model": "RT-DETRv2-S",
+      "field": "published_fps",
+      "passed": true,
+      "null_allowed": true
+    }
+  ],
+  "missing_timing_protocol_by_model": {
+    "YOLO11n": [
+      "batch",
+      "precision",
+      "pipeline",
+      "warmup",
+      "repetitions",
+      "statistic"
+    ],
+    "YOLO11s": [
+      "batch",
+      "precision",
+      "pipeline",
+      "warmup",
+      "repetitions",
+      "statistic"
+    ],
+    "YOLOv12-N": [
+      "batch",
+      "pipeline",
+      "warmup",
+      "repetitions",
+      "statistic"
+    ],
+    "YOLOv12-S": [
+      "batch",
+      "pipeline",
+      "warmup",
+      "repetitions",
+      "statistic"
+    ],
+    "YOLOv13-N": [
+      "batch",
+      "pipeline",
+      "warmup",
+      "repetitions",
+      "statistic"
+    ],
+    "YOLOv13-S": [
+      "batch",
+      "pipeline",
+      "warmup",
+      "repetitions",
+      "statistic"
+    ],
+    "YOLOv10-N": [
+      "batch",
+      "warmup",
+      "repetitions",
+      "statistic"
+    ],
+    "YOLOv10-S": [
+      "batch",
+      "warmup",
+      "repetitions",
+      "statistic"
+    ],
+    "RT-DETR-R18": [
+      "warmup",
+      "repetitions",
+      "statistic"
+    ],
+    "RT-DETR-R50": [
+      "warmup",
+      "repetitions",
+      "statistic"
+    ],
+    "RT-DETRv2-S": [
+      "warmup",
+      "repetitions",
+      "statistic"
+    ]
+  },
+  "claim_scope_checks": [
+    {
+      "claim": "YOLO11 published latency dtype",
+      "status": "explicitly unreported",
+      "evidence": "Official Detection COCO table labels T4 TensorRT10 but does not label dtype; two rows retain precision null and dynamic noncomparability text"
+    },
+    {
+      "claim": "HyperACE/FullPAD S ablation 47.1 to 48.0 AP95",
+      "status": "source matched",
+      "source_url": "https://arxiv.org/html/2506.17733v1",
+      "anchor": "Sec.IV-C1 / Table III",
+      "scope": "Same published S architecture with tunnel placement changed; no-tunnel disables effective HyperACE according to authors. Supports combined module/tunnel benefit, not separate causal effect or local defense benefit."
+    },
+    {
+      "claim": "DS blocks S 11.7 to 9.0M and27.1 to20.8G at48.0AP95",
+      "status": "source matched",
+      "source_url": "https://arxiv.org/html/2506.17733v1",
+      "anchor": "Table V",
+      "scope": "Published same S family, DS presence varied. Rounded AP is equal. Structural Params/FLOPs at640px; no latency listed in TableV, so no hardware speedup claimed."
+    },
+    {
+      "claim": "Architecture ablation hardware and training setting",
+      "status": "context recorded, raw replication unavailable",
+      "source_url": "https://arxiv.org/html/2506.17733v1",
+      "anchor": "Sec.IV-A2",
+      "scope": "Paper general setting600epochs, batch256, SGD0.01,640px; S training8RTX4090, general latency T4TensorRTFP16. TableIII/V do not independently restate every control or provide run-level variance. Source-level match is not independent verification of their raw experiment."
+    },
+    {
+      "claim": "Ownership and local transfer",
+      "status": "bounded",
+      "scope": "Architectural invention credited to Lei etal; applicability to adversarial person data remains an empirical hypothesis. Local contribution is applied optimization/protocol, not invented HyperACE/DS-C3k2."
+    },
+    {
+      "claim": "Cross-paper and local ranking",
+      "status": "disallowed",
+      "scope": "All eleven published rows comparable=false to local one-class test. Version notes retain contrary figures; published FPS inverses marked derived separately."
+    },
+    {
+      "claim": "Dataset and threat endpoints",
+      "status": "bounded",
+      "scope": "Official AdvT-shirt1131 vs available mirror1123 preserved; clean pooled AP does not establish ASR resistance, unseen-patch defense or computational DoS."
+    }
+  ],
+  "coverage": {
+    "detector_architectures": [
+      "YOLO11 software",
+      "YOLOv12v1",
+      "YOLOv13v1",
+      "YOLOv10",
+      "RT-DETR",
+      "RT-DETRv2v1"
+    ],
+    "threat_context": [
+      "BadPatch arXivv5",
+      "Adversarial T-shirt ECCV2020"
+    ],
+    "excluded_scope": [
+      "Exhaustive2026SOTA search",
+      "Formal citation authentication certificate",
+      "Independent replication of published figures"
+    ]
+  },
+  "artifacts_sha256": {
+    "benchmark_matrix.json": "3669ae33a1ab1a6e8e54e26e041b39a30df0b547e918ec5b014c194b38abde88",
+    "source_evidence.json": "e674cc8de12c2b3da25aafae8f1219aad484fce7bfc95a72c480ff8228815299",
+    "synthesis.md": "9baa6b0d630cafc77c26b90f9a7b9c1a7b54297aa5c5bbfaebf9a74474d47ea9",
+    "pros_cons.md": "fdb97afd6c4ec833269d59d6a4dbd14ebed756e0885b90bc793f086e37c16b51",
+    "references.bib": "78c41b682f38182039b7e1763d21ae558d1226ec46dd053bc000d9678dc5a4c2"
+  }
+}

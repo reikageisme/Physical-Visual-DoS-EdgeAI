@@ -1,0 +1,41 @@
+{
+  "build_id": "coco2017-10k-plus-advtshirt-person-v1",
+  "created_at_utc": "2026-10-11T01:52:17.850934+00:00",
+  "dataset_yaml": "dataset/data.yaml",
+  "split_counts": {
+    "train": {
+      "images": 7786,
+      "person_instances": 25791,
+      "coco": 7000,
+      "advtshirt": 786
+    },
+    "val": {
+      "images": 1669,
+      "person_instances": 5543,
+      "coco": 1500,
+      "advtshirt": 169
+    },
+    "test": {
+      "images": 1668,
+      "person_instances": 5455,
+      "coco": 1500,
+      "advtshirt": 168
+    }
+  },
+  "total_images": 11123,
+  "download_report": {
+    "requested": 10000,
+    "downloaded_now": 4576,
+    "already_present": 5424,
+    "bytes": 1644234153,
+    "failures": []
+  },
+  "annotation_archive_sha256": "113a836d90195ee1f884e704da6304dfaaecff1f023f49b6ca93c4aaae470268",
+  "advtshirt_box_sanitization": {
+    "files_rewritten": 1123,
+    "rows_reencoded_or_edge_adjusted": 584,
+    "source_out_of_bounds_rows": 223,
+    "maximum_source_overrun_normalized": 5.00000000069889e-07,
+    "method": "xyxy clip to [0, 1] with 1e-5 edge headroom, then re-encode normalized xywh"
+  }
+}

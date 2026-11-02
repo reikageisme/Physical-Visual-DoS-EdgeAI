@@ -1,0 +1,215 @@
+{
+  "audit_time_utc": "2026-10-04T10:03:23+00:00",
+  "project_root": "E:\\HUTECH\\NCKH-new\\Physical-Visual-DoS-EdgeAI-main\\project_yolov13",
+  "dataset_yaml": "dataset/data.yaml",
+  "splits": {
+    "train": {
+      "image_count": 0,
+      "label_txt_count": 0
+    },
+    "val": {
+      "image_count": 0,
+      "label_txt_count": 0
+    },
+    "test": {
+      "image_count": 0,
+      "label_txt_count": 0
+    }
+  },
+  "training_runs": 0,
+  "dataset_specific_checkpoints": 0,
+  "train_preflight": {
+    "command": ".venv/Scripts/python.exe train_ablation.py --scale s --variant full",
+    "exit_code": 1,
+    "result": "Stopped before checkpoint download or run creation: no images found in data/images/train"
+  },
+  "ablation_forward_checks": {
+    "variants": [
+      "full",
+      "no-hyperace",
+      "no-fullpad",
+      "no-dsc3k2"
+    ],
+    "scale": "n",
+    "imgsz": 320,
+    "device": "cuda:0",
+    "all_outputs_finite": true,
+    "dsconv_to_dense_max_abs_error": 1.7881393432617188e-07
+  },
+  "project_wide_asset_scan": {
+    "image_matches": 56,
+    "archive_matches": 2,
+    "image_categories": {
+      "data_splits": 0,
+      "upstream_source_assets": 6,
+      "generated_result_plots": 2,
+      "venv_package_samples": 35,
+      "other": 0,
+      "unassigned_dataset_folder": 13
+    },
+    "archive_paths": [
+      ".venv/Lib/site-packages/dateutil/zoneinfo/dateutil-zoneinfo.tar.gz",
+      ".venv/Lib/site-packages/pkg_resources/tests/data/my-test-package-zip/my-test-package.zip"
+    ],
+    "dataset_archive_candidates": 0
+  },
+  "public_project_data_candidate": {
+    "repository": "https://github.com/reikageisme/Physical-Visual-DoS-EdgeAI",
+    "experiment": "experiments/local_coco128_validation.py",
+    "dataset_source": "https://github.com/ultralytics/assets/releases/download/v0.0.0/coco128.zip",
+    "archive_sha256": "61e5e3028863d8ffc3b81d6a514603954889f0edd5e4b44c4ce60b2da99aeb8e",
+    "image_count": 128,
+    "labelled_images": 126,
+    "missing_labels": 2,
+    "split_used": "COCO train2017 subset only",
+    "train_val_test_splits_available": false,
+    "script_scope": "labeled local diagnostic; not official COCO evaluation",
+    "decision": "not substituted for the task dataset because no matching fixed train/validation/test split is supplied and the labels are incomplete",
+    "potential_pretraining_overlap": true,
+    "pretraining_note": "The original diagnostic script warns that COCO128 is a subset of COCO train2017 and may overlap pretrained YOLO training data."
+  },
+  "candidate_assets": {
+    "folder": "dataset/",
+    "raster_image_count": 13,
+    "svg_count": 1,
+    "annotation_file_count": 0,
+    "split_assignment": "none",
+    "eligible_for_detection_training": false,
+    "reason": "No train/val/test assignment or YOLO label files are present in this folder."
+  },
+  "external_dataset_sources": {
+    "search_performed": true,
+    "sources": [
+      {
+        "name": "APRICOT/APRICOT-Mask",
+        "source": "https://aiem.jhu.edu/datasets/apricot-mask/",
+        "license": "Apache-2.0 stated by JHU for APRICOT-Mask",
+        "reported_splits": {
+          "dev_images": 138,
+          "test_images": 873
+        },
+        "status": "preferred proxy identified; not downloaded"
+      },
+      {
+        "name": "GAP / NAPGuard",
+        "source": "https://github.com/wsynuiag/NAPGaurd",
+        "license": "not stated on inspected repository page",
+        "reported_splits": {
+          "train_images": 5617,
+          "test_images": 3649
+        },
+        "status": "not downloaded; terms need verification"
+      },
+      {
+        "name": "AdvT-shirt-1K",
+        "source": "https://huggingface.co/datasets/xingjunm/Adv-T-shirt",
+        "license": "Apache-2.0 as displayed on the Hugging Face dataset card",
+        "reported_image_count": 1131,
+        "downloaded_image_count": 1123,
+        "status": "downloaded and label-audited for zero-shot external transfer evaluation"
+      }
+    ],
+    "retrieval_attempts": [
+      {
+        "url": "ftp://ftp.cis.jhu.edu/pub/apricot-mask/",
+        "environment": "project .venv",
+        "result": "connection timed out"
+      },
+      {
+        "url": "https://ftp.cis.jhu.edu/pub/apricot-mask/",
+        "environment": "project .venv",
+        "result": "connection timed out"
+      }
+    ],
+    "files_downloaded": 3377,
+    "training_started": false,
+    "note": "External datasets are adjacent patch robustness/localization proxies, not interchangeable with the task-specific SpongePatch/physical-visual DoS benchmark.",
+    "local_data_manifest": "results/external_transfer_dataset_manifest.json"
+  },
+  "external_transfer_benchmark": {
+    "measured_at_utc": "2026-10-04T09:50:19+00:00",
+    "successful_models": 15,
+    "metric_scope": "zero-shot person detection on full AdvT-shirt-1K mirror; no task-dataset training or fine-tuning",
+    "yolov13_map50_95_percent": {
+      "n": 75.6083,
+      "s": 83.3408,
+      "l": 87.5672
+    },
+    "yolov13_minus_yolov12_map50_95_points": {
+      "n": -0.5936,
+      "s": -0.7823,
+      "l": -0.4036
+    },
+    "csv": "results/benchmark_adv_tshirt_transfer.csv",
+    "table_markdown": "results/external_transfer_comparison.md",
+    "table_latex": "results/external_transfer_comparison.tex"
+  },
+  "latest_task_data_audit": {
+    "audit_time_utc": "2026-10-04T10:03:23+00:00",
+    "project_root": "E:\\HUTECH\\NCKH-new\\Physical-Visual-DoS-EdgeAI-main\\project_yolov13",
+    "dataset_yaml": "dataset\\data.yaml",
+    "yaml_path_setting": "./dataset",
+    "classes": {
+      "nc": 1,
+      "names": {
+        "0": "object"
+      },
+      "names_nc_consistent": true,
+      "placeholder_names": [
+        "object"
+      ]
+    },
+    "splits": {
+      "train": {
+        "image_dir": "dataset\\images\\train",
+        "label_dir": "dataset\\labels\\train",
+        "images": 0,
+        "label_files": 0,
+        "missing_label_stems": [],
+        "orphan_label_stems": [],
+        "invalid_bbox_rows": 0,
+        "invalid_bbox_examples": [],
+        "instances_by_class_id": {}
+      },
+      "val": {
+        "image_dir": "dataset\\images\\val",
+        "label_dir": "dataset\\labels\\val",
+        "images": 0,
+        "label_files": 0,
+        "missing_label_stems": [],
+        "orphan_label_stems": [],
+        "invalid_bbox_rows": 0,
+        "invalid_bbox_examples": [],
+        "instances_by_class_id": {}
+      },
+      "test": {
+        "image_dir": "dataset\\images\\test",
+        "label_dir": "dataset\\labels\\test",
+        "images": 0,
+        "label_files": 0,
+        "missing_label_stems": [],
+        "orphan_label_stems": [],
+        "invalid_bbox_rows": 0,
+        "invalid_bbox_examples": [],
+        "instances_by_class_id": {}
+      }
+    },
+    "totals": {
+      "images": 0,
+      "label_files": 0,
+      "missing_labels": 0,
+      "invalid_bbox_rows": 0
+    },
+    "unassigned_candidate_folder": {
+      "directory": "dataset/",
+      "raster_images": 13,
+      "annotation_txt_files": 0,
+      "other_files": 3,
+      "eligible_as_task_split": false,
+      "reason": "No train/val/test assignment or YOLO label files are present in this folder."
+    },
+    "preflight_status": "not_ready",
+    "training_started": false,
+    "decision": "Training must not start unless the task dataset is present in the configured splits with valid labels and a verified class map."
+  }
+}

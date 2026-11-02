@@ -1,0 +1,56 @@
+{
+  "locked_at_utc": "2026-10-17T06:15:11+00:00",
+  "choice": "trained_winner",
+  "trained_configuration": "transfer_tiny_lr",
+  "criterion": {
+    "frozen_at_utc": "2026-10-13T12:51:55+00:00",
+    "criterion": "Highest seed42 full-validation FP32batch8 mAP95 between trained winner's native-selected checkpoint and restorednc1 zero-finetuning checkpoint",
+    "tie_rule": "Prefer zero-finetuning on exact equality to avoid extra training cost",
+    "test_access": false,
+    "confirmation": "Still3 fresh independent-seed trainedwinner confirmations; zero deterministic checkpoint n1, no seed SD/CI",
+    "evaluation": "After validation decision lock, chosen zero checkpoint test and sameFP32batch1 timing if zero wins; original80head person diagnostic also retained"
+  },
+  "zero_validation_fp32": {
+    "precision": 0.8414595806531174,
+    "recall": 0.6760099406534417,
+    "map50": 0.7840652786521174,
+    "map50_95": 0.5720682859890442,
+    "validator_speed_ms_batch8": {
+      "preprocess": 0.09692565204855781,
+      "inference": 3.0352497900796553,
+      "loss": 0.0007691106230574071,
+      "postprocess": 0.9232881613446253
+    },
+    "validator_latency_ms_per_frame_batch8": 4.055463603472838,
+    "parameters_m": 9.024954,
+    "flops_g": 8.873814143999999
+  },
+  "trained_validation_fp32": {
+    "precision": 0.8476222536259007,
+    "recall": 0.6894339549204254,
+    "map50": 0.7946050018397791,
+    "map50_95": 0.5770003918851788,
+    "validator_speed_ms_batch8": {
+      "preprocess": 0.0796529473909866,
+      "inference": 2.4514646855852003,
+      "loss": 0.0004848368229303194,
+      "postprocess": 0.6124339037987199
+    },
+    "validator_latency_ms_per_frame_batch8": 3.1435515367749067,
+    "parameters_m": 9.024954,
+    "flops_g": 8.873814143999999,
+    "evaluation_protocol": {
+      "imgsz": 416,
+      "batch": 8,
+      "half": false,
+      "workers": 0,
+      "split": "val",
+      "data_yaml": "dataset/data.yaml"
+    }
+  },
+  "checkpoint": "runs/optimization/screening-yolov13s-transfer_tiny_lr-seed42-6epochs-recovery20261017/weights/epoch5.pt",
+  "checkpoint_sha256": "e05ed951710bdf55361c62c69bff04fa7041cd6289493e8c35724c12a1bf1b8d",
+  "n": 1,
+  "seed42_selection_only": true,
+  "test_seen_before_decision": false
+}

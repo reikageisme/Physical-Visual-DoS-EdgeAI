@@ -1,0 +1,5 @@
+variant,precision,recall,map50,map50_95,params_m,flops_g,latency_ms,device,split,seed,notes
+YOLOv13-s-full,,,,,,,,,val,42,Reference model with HyperACE FullPAD and DS-C3k2; run train_ablation.py --scale s --variant full
+YOLOv13-s-no-hyperace,,,,,,,,,val,42,Bypass adaptive hypergraph operators only; keep all other settings fixed
+YOLOv13-s-no-fullpad,,,,,,,,,val,42,Disable FullPAD distribution tunnels only; keep all other settings fixed
+YOLOv13-s-no-dsc3k2,,,,,,,,,val,42,Replace depthwise-separable convolutions within DSC3k2 only; keep all other settings fixed

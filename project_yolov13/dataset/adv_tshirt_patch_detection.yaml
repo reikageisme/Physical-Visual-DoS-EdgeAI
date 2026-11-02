@@ -1,0 +1,8 @@
+# Derived fixed split from AdvT-shirt-1K; see results/adv_tshirt_patch_dataset_manifest.json.
+path: ./dataset/adv_tshirt_patch_detection
+train: images/train
+val: images/val
+test: images/test
+nc: 1
+names:
+  0: patch

@@ -1,0 +1,183 @@
+{
+  "study_id": "fullscale-20261011",
+  "status": "complete",
+  "models": [
+    "yolo11n",
+    "yolov12n",
+    "yolov13n",
+    "yolov13s"
+  ],
+  "seeds": [
+    42,
+    100,
+    2026,
+    777,
+    999
+  ],
+  "cap_minutes": 120,
+  "jobs": [
+    {
+      "model": "yolo11n",
+      "seed": 42,
+      "status": "complete",
+      "started_at_utc": "2026-10-11T01:54:11.936496+00:00",
+      "return_code": 0,
+      "finished_at_utc": "2026-10-11T03:56:20.862269+00:00"
+    },
+    {
+      "model": "yolo11n",
+      "seed": 100,
+      "status": "complete",
+      "started_at_utc": "2026-10-11T03:56:20.866468+00:00",
+      "return_code": 0,
+      "finished_at_utc": "2026-10-11T06:00:13.870875+00:00"
+    },
+    {
+      "model": "yolo11n",
+      "seed": 2026,
+      "status": "complete",
+      "started_at_utc": "2026-10-11T06:00:13.872259+00:00",
+      "return_code": 0,
+      "finished_at_utc": "2026-10-11T08:03:09.971120+00:00"
+    },
+    {
+      "model": "yolo11n",
+      "seed": 777,
+      "status": "complete",
+      "started_at_utc": "2026-10-11T08:03:09.972844+00:00",
+      "return_code": 0,
+      "finished_at_utc": "2026-10-11T10:06:29.847630+00:00"
+    },
+    {
+      "model": "yolo11n",
+      "seed": 999,
+      "status": "complete",
+      "started_at_utc": "2026-10-11T10:06:29.848806+00:00",
+      "return_code": 0,
+      "finished_at_utc": "2026-10-11T12:09:06.921625+00:00"
+    },
+    {
+      "model": "yolov12n",
+      "seed": 42,
+      "status": "complete",
+      "started_at_utc": "2026-10-11T12:09:06.922450+00:00",
+      "return_code": 0,
+      "finished_at_utc": "2026-10-11T14:10:53.432704+00:00"
+    },
+    {
+      "model": "yolov12n",
+      "seed": 100,
+      "status": "complete",
+      "started_at_utc": "2026-10-11T14:10:53.433705+00:00",
+      "return_code": 0,
+      "finished_at_utc": "2026-10-11T16:13:31.295390+00:00"
+    },
+    {
+      "model": "yolov12n",
+      "seed": 2026,
+      "status": "complete",
+      "started_at_utc": "2026-10-11T16:13:31.295821+00:00",
+      "return_code": 0,
+      "finished_at_utc": "2026-10-11T18:17:15.769174+00:00"
+    },
+    {
+      "model": "yolov12n",
+      "seed": 777,
+      "status": "complete",
+      "started_at_utc": "2026-10-11T18:17:15.769637+00:00",
+      "return_code": 0,
+      "finished_at_utc": "2026-10-11T20:20:51.486788+00:00"
+    },
+    {
+      "model": "yolov12n",
+      "seed": 999,
+      "status": "complete",
+      "started_at_utc": "2026-10-11T20:20:51.487271+00:00",
+      "return_code": 0,
+      "finished_at_utc": "2026-10-11T22:23:15.086835+00:00"
+    },
+    {
+      "model": "yolov13n",
+      "seed": 42,
+      "status": "complete",
+      "started_at_utc": "2026-10-11T22:23:15.087167+00:00",
+      "return_code": 0,
+      "finished_at_utc": "2026-10-12T00:26:03.838139+00:00"
+    },
+    {
+      "model": "yolov13n",
+      "seed": 100,
+      "status": "complete",
+      "started_at_utc": "2026-10-12T00:26:03.838586+00:00",
+      "return_code": 0,
+      "finished_at_utc": "2026-10-12T02:28:41.887869+00:00"
+    },
+    {
+      "model": "yolov13n",
+      "seed": 2026,
+      "status": "complete",
+      "started_at_utc": "2026-10-12T02:28:41.888377+00:00",
+      "return_code": 0,
+      "finished_at_utc": "2026-10-12T04:31:17.829887+00:00"
+    },
+    {
+      "model": "yolov13n",
+      "seed": 777,
+      "status": "complete",
+      "started_at_utc": "2026-10-12T04:31:17.830304+00:00",
+      "return_code": 0,
+      "finished_at_utc": "2026-10-12T06:34:58.388366+00:00"
+    },
+    {
+      "model": "yolov13n",
+      "seed": 999,
+      "status": "complete",
+      "started_at_utc": "2026-10-12T06:34:58.388834+00:00",
+      "return_code": 0,
+      "finished_at_utc": "2026-10-12T08:37:51.482517+00:00"
+    },
+    {
+      "model": "yolov13s",
+      "seed": 42,
+      "status": "complete",
+      "started_at_utc": "2026-10-12T08:37:51.483207+00:00",
+      "return_code": 0,
+      "finished_at_utc": "2026-10-12T10:41:55.470101+00:00"
+    },
+    {
+      "model": "yolov13s",
+      "seed": 100,
+      "status": "complete",
+      "started_at_utc": "2026-10-12T10:41:55.470504+00:00",
+      "return_code": 0,
+      "finished_at_utc": "2026-10-12T12:43:09.180582+00:00"
+    },
+    {
+      "model": "yolov13s",
+      "seed": 2026,
+      "status": "complete",
+      "started_at_utc": "2026-10-12T12:43:09.181221+00:00",
+      "return_code": 0,
+      "finished_at_utc": "2026-10-12T14:46:29.826200+00:00"
+    },
+    {
+      "model": "yolov13s",
+      "seed": 777,
+      "status": "complete",
+      "started_at_utc": "2026-10-12T14:46:29.827676+00:00",
+      "return_code": 0,
+      "finished_at_utc": "2026-10-12T16:47:35.641107+00:00"
+    },
+    {
+      "model": "yolov13s",
+      "seed": 999,
+      "status": "complete",
+      "started_at_utc": "2026-10-12T16:47:35.641547+00:00",
+      "return_code": 0,
+      "finished_at_utc": "2026-10-12T18:51:18.391016+00:00"
+    }
+  ],
+  "started_at_utc": "2026-10-11T01:54:11.936151+00:00",
+  "updated_at_utc": "2026-10-12T18:51:18.391538+00:00",
+  "finished_at_utc": "2026-10-12T18:51:18.391485+00:00"
+}

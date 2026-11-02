@@ -1,0 +1,10 @@
+{
+  "settings_file": ".config\\settings.json",
+  "YOLO_CONFIG_DIR": "E:\\HUTECH\\NCKH-new\\Physical-Visual-DoS-EdgeAI-main\\project_yolov13\\.config",
+  "settings": {
+    "datasets_dir": "E:\\HUTECH\\NCKH-new\\Physical-Visual-DoS-EdgeAI-main\\project_yolov13\\dataset",
+    "runs_dir": "E:\\HUTECH\\NCKH-new\\Physical-Visual-DoS-EdgeAI-main\\project_yolov13\\runs",
+    "weights_dir": "E:\\HUTECH\\NCKH-new\\Physical-Visual-DoS-EdgeAI-main\\project_yolov13\\weights"
+  },
+  "all_paths_inside_project": true
+}

@@ -1,0 +1,25 @@
+{
+  "study_id": "20261010",
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "torch": "2.11.0+cu128",
+  "ultralytics": "8.3.63",
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 5060",
+  "gpu_memory_gib": 7.96,
+  "dataset_yaml": "dataset\\adv_tshirt_patch_detection.yaml",
+  "seed": 42,
+  "image_size": 416,
+  "batch_size": 4,
+  "epochs_max": 50,
+  "patience": 10,
+  "time_milestones_minutes": [
+    5,
+    10,
+    15,
+    20,
+    25,
+    30
+  ],
+  "protocol": "one fixed-schedule run per model; save every epoch; select the best validation checkpoint available by each elapsed-time milestone",
+  "milestone_extension_reason": "YOLO11n fixed-schedule pilot curve continued improving at 24.7 minutes; extended upper bound after observing the main run."
+}

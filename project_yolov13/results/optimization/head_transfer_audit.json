@@ -1,0 +1,231 @@
+{
+  "status": "complete",
+  "audited_at_utc": "2026-10-13T12:13:16+00:00",
+  "device": "CPU only",
+  "pretrained_nc": 80,
+  "finetuned_nc": 1,
+  "checkpoint_yaml_hyperedges": [
+    16
+  ],
+  "actual_pretrained_hyperedges": 8,
+  "native_rebuilt_hyperedges": 16,
+  "compatible_state_tensor_count": 886,
+  "incompatible_state_tensors": [
+    {
+      "key": "model.9.branch1.m.hgnn.edge_generator.prototype_base",
+      "pretrained_shape": [
+        8,
+        128
+      ],
+      "one_class_shape": [
+        16,
+        128
+      ]
+    },
+    {
+      "key": "model.9.branch1.m.hgnn.edge_generator.context_net.weight",
+      "pretrained_shape": [
+        1024,
+        256
+      ],
+      "one_class_shape": [
+        2048,
+        256
+      ]
+    },
+    {
+      "key": "model.9.branch1.m.hgnn.edge_generator.context_net.bias",
+      "pretrained_shape": [
+        1024
+      ],
+      "one_class_shape": [
+        2048
+      ]
+    },
+    {
+      "key": "model.9.branch2.m.hgnn.edge_generator.prototype_base",
+      "pretrained_shape": [
+        8,
+        128
+      ],
+      "one_class_shape": [
+        16,
+        128
+      ]
+    },
+    {
+      "key": "model.9.branch2.m.hgnn.edge_generator.context_net.weight",
+      "pretrained_shape": [
+        1024,
+        256
+      ],
+      "one_class_shape": [
+        2048,
+        256
+      ]
+    },
+    {
+      "key": "model.9.branch2.m.hgnn.edge_generator.context_net.bias",
+      "pretrained_shape": [
+        1024
+      ],
+      "one_class_shape": [
+        2048
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.2.weight",
+      "pretrained_shape": [
+        80,
+        128,
+        1,
+        1
+      ],
+      "one_class_shape": [
+        1,
+        128,
+        1,
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.2.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.2.weight",
+      "pretrained_shape": [
+        80,
+        128,
+        1,
+        1
+      ],
+      "one_class_shape": [
+        1,
+        128,
+        1,
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.2.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.2.weight",
+      "pretrained_shape": [
+        80,
+        128,
+        1,
+        1
+      ],
+      "one_class_shape": [
+        1,
+        128,
+        1,
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.2.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        1
+      ]
+    }
+  ],
+  "native_transfer": "DetectionModel.load copies only keys with identical shapes; incompatible classifier and HyperACE tensors retain newly initialized values",
+  "restored_architecture_incompatible_tensors": [
+    {
+      "key": "model.32.cv3.0.2.weight",
+      "pretrained_shape": [
+        80,
+        128,
+        1,
+        1
+      ],
+      "one_class_shape": [
+        1,
+        128,
+        1,
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.2.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.2.weight",
+      "pretrained_shape": [
+        80,
+        128,
+        1,
+        1
+      ],
+      "one_class_shape": [
+        1,
+        128,
+        1,
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.2.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.2.weight",
+      "pretrained_shape": [
+        80,
+        128,
+        1,
+        1
+      ],
+      "one_class_shape": [
+        1,
+        128,
+        1,
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.2.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        1
+      ]
+    }
+  ],
+  "person_row_transplant_after_restoring_hyperedges_feasible": true,
+  "pretrained_parameters_m": 9.055527,
+  "native_oneclass_parameters_m": 9.553338,
+  "restored_oneclass_parameters_m": 9.024954,
+  "audit_scope": "Tensor shapes and source implementation; no new GPU evaluation or training",
+  "matched_parameters_numel": 8550658,
+  "unmatched_new_tensors_numel": 1057155
+}

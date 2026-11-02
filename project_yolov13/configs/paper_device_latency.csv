@@ -1,0 +1,13 @@
+model,device,runtime,latency_ms,dataset,source
+YOLOv13-N,Tesla T4 GPU,TensorRT FP16,1.97,MS COCO,https://arxiv.org/abs/2506.17733
+YOLOv13-S,Tesla T4 GPU,TensorRT FP16,2.98,MS COCO,https://arxiv.org/abs/2506.17733
+YOLOv13-L,Tesla T4 GPU,TensorRT FP16,8.63,MS COCO,https://arxiv.org/abs/2506.17733
+YOLOv13-X,Tesla T4 GPU,TensorRT FP16,14.67,MS COCO,https://arxiv.org/abs/2506.17733
+YOLOv13-N,RTX 4090 GPU,TensorRT FP16,1.25,MS COCO,https://arxiv.org/abs/2506.17733
+YOLOv13-S,RTX 4090 GPU,TensorRT FP16,1.27,MS COCO,https://arxiv.org/abs/2506.17733
+YOLOv13-L,RTX 4090 GPU,TensorRT FP16,2.36,MS COCO,https://arxiv.org/abs/2506.17733
+YOLOv13-X,RTX 4090 GPU,TensorRT FP16,3.10,MS COCO,https://arxiv.org/abs/2506.17733
+YOLOv13-N,Intel Xeon Platinum 8352V CPU,ONNX,39.97,MS COCO,https://arxiv.org/abs/2506.17733
+YOLOv13-S,Intel Xeon Platinum 8352V CPU,ONNX,61.12,MS COCO,https://arxiv.org/abs/2506.17733
+YOLOv13-L,Intel Xeon Platinum 8352V CPU,ONNX,185.36,MS COCO,https://arxiv.org/abs/2506.17733
+YOLOv13-X,Intel Xeon Platinum 8352V CPU,ONNX,330.12,MS COCO,https://arxiv.org/abs/2506.17733

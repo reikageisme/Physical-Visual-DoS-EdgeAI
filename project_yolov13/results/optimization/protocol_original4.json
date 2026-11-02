@@ -1,0 +1,70 @@
+{
+  "study_id": "yolov13s-bounded-optimization-20261013",
+  "frozen_at_utc": "2026-10-13T12:04:03+00:00",
+  "model_key": "yolov13s",
+  "candidate_configurations": {
+    "original_sgd": {
+      "epochs": 300,
+      "lr0": 0.01,
+      "lrf": 0.01,
+      "cos_lr": false,
+      "warmup_epochs": 3.0
+    },
+    "low_sgd_cosine": {
+      "epochs": 6,
+      "lr0": 0.001,
+      "lrf": 0.1,
+      "cos_lr": true,
+      "warmup_epochs": 1.0,
+      "warmup_bias_lr": 0.001,
+      "close_mosaic": 2
+    },
+    "adamw_cosine": {
+      "epochs": 6,
+      "optimizer": "AdamW",
+      "lr0": 0.0003,
+      "lrf": 0.1,
+      "cos_lr": true,
+      "warmup_epochs": 1.0,
+      "warmup_bias_lr": 0.0003,
+      "close_mosaic": 2
+    },
+    "adamw_domain_loss_aug": {
+      "epochs": 6,
+      "optimizer": "AdamW",
+      "lr0": 0.0003,
+      "lrf": 0.1,
+      "cos_lr": true,
+      "warmup_epochs": 1.0,
+      "warmup_bias_lr": 0.0003,
+      "close_mosaic": 2,
+      "box": 9.0,
+      "cls": 0.7,
+      "dfl": 1.8,
+      "mosaic": 0.5,
+      "mixup": 0.05,
+      "hsv_s": 0.5,
+      "hsv_v": 0.3,
+      "scale": 0.3,
+      "degrees": 5.0,
+      "translate": 0.1
+    }
+  },
+  "screening_seed": 42,
+  "confirmation_seeds": [
+    100,
+    2026,
+    777
+  ],
+  "epochs_per_run": 6,
+  "maximum_training_runs": 10,
+  "selection_criterion": "maximum validation mAP50:95 of any completed epoch; highest seed42 candidate wins; original_sgd excluded from optimized candidate pool",
+  "ties": "configuration order as frozen in candidate_configurations",
+  "test_access": "Only after winner configuration is locked, on independent confirmation seeds, no test-driven retuning",
+  "dataset_manifest_sha256": "b4ac66028571475623f22b872f3648eaed5f3a6b9a324ca76217807a32ed5c8c",
+  "pretrained_weights_sha256": "cf0fe62e2ef520a63c1e3d380f5771b7ac701b97d07f11a28c314e68618ba072",
+  "untuned_control": "original SGD0.01 linear scheduler horizon300, stopped after6epochs; optimized scheduler horizon6 is an intervention",
+  "compute_match": "same six full epochs,7786primaryimage draws per epoch,416px,batch8; report actual times because budgets are not exactly equal wall time",
+  "sampling_note": "Bundled advanced candidate uses replacement WeightedRandomSampler25%expectedAdv; secondarymosaic indices remainuniform; not component-isolating ablation",
+  "planned_analysis": "paired seedwise test mAP95 delta, sample SD and Studentt95%CI; exploratory, n3 per group"
+}

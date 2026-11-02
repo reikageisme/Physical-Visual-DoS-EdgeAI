@@ -38,7 +38,9 @@ Nhóm chính: GA vị trí Laplacian, GA tâm, GA vị trí ngẫu nhiên cố �
 tìm kiếm ngẫu nhiên. Cùng miếng dán 64×64, cùng fitness và các mốc
 400/1.000/2.500 truy vấn ảnh; không dừng sớm. Mười seed cho từng cấu hình.
 Quần thể 20, giữ năm cá thể ưu tú, lai ghép ngang, xác suất đột biến 0,1,
-biên độ nhiễu đều 0,2. Miếng dán được chọn chỉ bằng điểm trên tập tối ưu.
+nhiễu đột biến Gaussian có độ lệch chuẩn 0,2 rồi cắt về [0;1]. Cấu hình
+này khác nhiễu đều của lõi GA cũ; không gộp hai giao thức thành một kết quả.
+Miếng dán được chọn chỉ bằng điểm trên tập tối ưu.
 Điểm cực đại ngẫu nhiên quan sát không phải ước lượng kỳ vọng EOT độc lập.
 
 Nhóm loại bỏ thành phần: kích thước 32/45/90/128, tương ứng diện tích thực
@@ -79,7 +81,9 @@ COCOeval vẫn chỉ dùng 100 phát hiện theo quy ước của bộ đánh gi
 nhầm giới hạn đánh giá này với top-k cắt ứng viên TRƯỚC NMS.
 
 Quét ngưỡng 0,01/0,05/0,10/0,25/0,50 và giới hạn trước NMS
-không giới hạn/50/100/300 trên ảnh sạch, SG-GA và đối chứng thích nghi.
+không giới hạn/50/100/300 trên ảnh sạch, SG-GA tại 400 và 2.500 truy vấn,
+và đối chứng thích nghi tại 400. So sánh thích nghi phải ghép cùng 400
+truy vấn với SG-GA, không dùng SG-GA tại 2.500 như đối chứng cùng ngân sách.
 Nhóm khác dùng ba cấu hình 0,01; 0,25; 0,01 + giới hạn 100.
 Đo kỳ vọng EOT độc lập: tám ảnh kiểm tra đầu, 16 mẫu mới cho mỗi ảnh,
 ghép cặp tham số biến đổi giữa ảnh sạch và ảnh có miếng dán.
@@ -89,6 +93,8 @@ Không dùng phép đo này để chọn lại miếng dán.
 So sánh chính ghi trong bản kê TRƯỚC khi đánh giá: chênh lệch SG-GA và
 GA tâm về tỷ số số ứng viên so với sạch tại 2.500 truy vấn trên tập kiểm tra.
 Ngưỡng hiệu ứng thực tiễn là 0,10. Đơn vị suy luận chính là cặp seed;
+Tỷ số là trung bình theo ảnh của số ứng viên có miếng dán chia cho
+max(số ứng viên sạch, 1); báo riêng số ảnh có mẫu số sạch bằng không.
 lặp thời gian hay 128 ảnh không làm số seed lớn hơn mười.
 Dùng khoảng tin cậy ghép cặp và kiểm định đảo dấu hữu hạn; báo kích thước
 hiệu ứng cùng khoảng tin cậy, không chỉ giá trị p. Các so sánh còn lại là
@@ -97,14 +103,16 @@ không phải khẳng định đã có công suất thống kê đủ. AP phải
 không lấy trung bình AP từng ảnh để gọi là AP của tập dữ liệu.
 Đây là giao thức lưu cục bộ trước đánh giá, không phải đăng ký công khai.
 
-7. Những phần chưa thể thay thế bằng phần mềm
+7. Phạm vi laptop và webcam
 Chuyển giao phải đo thực tế nhiều kiến trúc cùng ảnh, cùng miếng dán và
 cùng ranh giới thời gian; mô hình không NMS không có số ứng viên NMS.
 Thay số luồng CPU không tạo thành một thiết bị phần cứng thứ hai.
 Mô hình hàng đợi từ thời gian xử lý không phải số đo tuổi khung camera.
-Miếng dán đã in cần người đặt trước camera thuộc quyền kiểm soát, ghi vật
-liệu, kích thước thật, khoảng cách, góc, ánh sáng đo được, camera/codec và
-nhiều khối đối chứng xáo trộn. Không bịa giá trị lux/nhiệt độ/kết quả vật lý.
+Thiết bị thu hình do tác giả xác nhận là webcam ngoài, độ phân giải 720p.
+Thông tin này không xác nhận FPS thực, codec, khoảng cách, góc hay ánh sáng.
+Phạm vi phép đo tự động hiện tại là xử lý ảnh trên laptop; không tự thu hình
+riêng tư và không suy tạo thí nghiệm quang học bằng phép chèn tensor.
+Không yêu cầu một thiết bị biên thứ hai để hoàn tất phạm vi laptop.
 Tệp ảnh camera riêng tư không được tự động đưa lên nơi công khai.
 
 8. Kiểm tra chương trình
@@ -112,8 +120,122 @@ python -m unittest discover -s experiments -p "test_extended*.py" -v
 Chế độ --pilot của bộ đánh giá ghi riêng evaluation_pilot, chỉ dùng để
 kiểm tra luồng chương trình, không được trộn với số đo chính.
 
-9. Công bố tệp
+9. Lưu kết quả cục bộ
 Chỉ đưa mã thí nghiệm, giao thức, dữ liệu/biểu đồ đã hoàn tất và bản thảo
 khoa học vào gói công bố. Không đưa lời nhắc, ghi chú kiểm toán AI, mã dựng
 Word nội bộ, ảnh QA, môi trường hỗ trợ, tệp .part hoặc checkpoint resume.pt.
-Mỗi tệp công bố có SHA-256 trong danh sách. Không chạy git add toàn bộ.
+Theo yêu cầu cập nhật của tác giả, không commit, push hoặc tải lên Drive.
+Tác giả xem lại bản thảo và tự quyết định công bố sau. Không chạy git add.
+
+10. Hàng đợi xử lý tuần tự
+python experiments/extended_pipeline.py --run-dir outputs/extended_q1_20261002
+Hàng đợi chờ tối ưu kết thúc rồi mới đo để tránh hai phép thử tranh CPU.
+Các bước: đánh giá COCO chính thức, đối chứng Gaussian/QR-like/tính toàn
+vẹn, đo NMS và thời hạn xử lý, chuyển giao sáu mô hình, hai biến thể tham
+chiếu từ mã công bố, phân tích và vẽ biểu đồ. Mã không tự sửa bản thảo.
+QR-like chỉ là họa tiết tương tự QR, không phải mã QR hợp lệ. Các biến thể
+tham chiếu Phantom Sponges/Overload dùng nhiễu cộng toàn ảnh, quyền hộp
+trắng và YOLOv5s: không được gọi là so sánh cùng diện tích/quyền truy cập
+với miếng dán hộp xám cục bộ. Phân tích phải báo riêng khác biệt này.
+Mô hình hàng đợi FIFO/bỏ khi bận là mô phỏng từ thời gian đo thật; không
+gọi nó là phòng thủ tải ngược thích nghi đã thử trực tiếp qua webcam.
+
+11. Bổ sung phép thử tải ngược bằng luồng phần mềm chạy thật
+python experiments/extended_stream_qos.py --run-dir outputs/extended_q1_20261002
+Chỉ chạy sau khi hàng đợi ở mục 10 hoàn tất; có thể chờ đúng PID của hàng
+đợi đang chạy bằng --wait-for-pipeline-pid. Không sửa nguồn đã được đóng
+băng của các thí nghiệm trước. Giao thức và mã băm được lưu trước khi chờ.
+
+Luồng đầu vào gồm 32 ID đầu của tập kiểm tra đã cố định, mỗi ảnh đúng một
+lần trong một khối; chu kỳ phát 100 hoặc 300 ms. Mười seed, bốn điều kiện:
+sạch, SG-GA 400, SG-GA 2.500 và gradient tanh 400 truy vấn. Chỉ đối chiếu
+SG-GA 400 với gradient 400 như cùng ngân sách; quyền truy cập vẫn khác.
+Mỗi điều kiện dùng FIFO, bỏ nếu bận và điều tiết nhịp nhận thích nghi.
+Tổng cộng 240 khối luồng; thứ tự khối được xáo trộn bằng seed cố định.
+
+Đây là chương trình phát ảnh và bộ xử lý suy luận thực chạy đồng thời,
+không lấy thời gian lưu trước để giả lập hàng đợi. Bộ điều tiết chỉ dùng
+EWMA thời gian xử lý đã hoàn tất: alpha 0,25, hệ số an toàn 1,2, khoảng
+nhận tối đa 600 ms; bỏ đầu vào khi bộ xử lý còn bận. Nhịp đầu vào được
+giữ cố định giữa các chính sách, không giảm số ảnh được đề nghị xử lý.
+Thời hạn 300 ms tính từ lịch phát dự kiến đến kết quả, bao gồm độ trễ
+lập lịch; lưu riêng độ trễ tính từ thời điểm đến thực và sai lệch bộ phát.
+Không tính đọc ảnh/đặt miếng dán vào thời gian xử lý; không đo camera.
+
+Đánh giá COCO bbox trên toàn bộ 32 ảnh được đề nghị, ảnh bị bỏ tương ứng
+dự đoán rỗng. Báo thêm độ chính xác của kết quả đến đúng hạn: đầu ra đến
+muộn cũng được tính như dự đoán rỗng. Không chỉ đánh giá phần ảnh thuận
+lợi được xử lý. Phân biệt rõ tập con 32 ảnh này với đánh giá 128 ảnh.
+Ngưỡng suy giảm dịch vụ đã định trước cho phép thử phần mềm: thông lượng
+đúng hạn dưới 80% nhịp đề nghị hoặc tỷ lệ bỏ/trễ trên 10%. Phục hồi còn
+phải giữ AP giao đúng hạn không kém quá 0,02 so với sạch FIFO cùng seed
+và chu kỳ. Không gọi việc bỏ phần lớn đầu vào là phòng thủ thành công.
+Các kiểm định giữa chính sách là thăm dò, không thay đổi giả thuyết chính
+của mục 6. Không suy rộng thành DoS hoặc phòng thủ đã xác nhận qua webcam.
+
+12. Đối chứng Phantom Sponges điều chỉnh cho miếng dán cục bộ
+python experiments/extended_phantom_local.py --run-dir outputs/extended_q1_20261002
+Chỉ chạy sau luồng phần mềm thật ở mục 11; tùy chọn --wait-for-stream-pid
+chờ đúng tiến trình đang sống, không khởi chạy suy luận song song. Giao
+thức đóng băng trước khi chạy; nguồn của các hàng đợi trước không thay đổi.
+
+Nguồn đối chiếu là kho chính thức AvishagS422/PhantomSponges tại commit
+65d4fafe9aa7456d0e58f9e10dcab05ef81fe9c0, attack/uap_phantom_sponge.py.
+Tự triển khai công thức, không chép/phân phối mã bên thứ ba không có giấy
+phép. Giữ mục tiêu lớp car (chỉ số 2), ngưỡng 0,25, trọng số tăng ứng viên
+0,75 và giữ phát hiện sạch bằng IoU 0,25; hệ số diện tích bằng 0, bước giảm
+gradient dấu 0,0005. NMS trong hàm giữ phát hiện là theo lớp, IoU 0,45;
+ngưỡng sạch 0,25 và miếng dán 0,001. Không cắt ảnh quá tải theo đồng hồ.
+
+Các thay đổi so với mã/tập thí nghiệm công bố được ghi riêng: YOLOv8n thay
+YOLOv5; dùng trực tiếp độ tin cậy lớp vì không có đầu objectness riêng;
+miếng dán ghi đè 64x64 (4%) thay nhiễu cộng toàn ảnh có giới hạn L2; cùng
+bốn ảnh tối ưu và EOT như SG-GA; 400 lượt suy luận ảnh thực thay số epoch
+và chọn trên tập xác thực. Không gọi đây là tái lập nguyên bản bài báo.
+
+Mỗi seed có 50 bước: bốn ảnh sạch cộng bốn ảnh có miếng dán mỗi bước,
+tổng 200+200=400 lượt; lưu riêng 50 backward, không đổi chúng thành truy
+vấn miễn phí. Ghép cùng tham số EOT và mẫu nhiễu cho cặp sạch/miếng dán.
+Khởi tạo ngẫu nhiên, không dùng tập kiểm tra để chọn hay dừng sớm; lưu
+đúng miếng dán đã đo ở bước cuối, không lưu bước cập nhật chưa đánh giá.
+
+Mười seed, cùng 128 ảnh kiểm tra và cùng bộ đánh giá COCO/postprocess của
+SG-GA 400. So sánh cùng phần cứng, mô hình, diện tích, tập tối ưu và ngân
+sách; quyền hộp trắng vẫn mạnh hơn hộp xám, phải nêu rõ. Mức tăng ứng viên
+và AP được đánh giá riêng; không lấy tỷ lệ ứng viên làm bằng chứng DoS.
+Độ trễ đo ở hai giai đoạn không xen kẽ có thể bị trôi theo thời gian. Mọi
+kiểm định mới là thăm dò sau đánh giá chính, không thay giả thuyết chính
+hoặc sửa các kết quả đã có. Không tự sửa bản thảo, Git hoặc tải lên Drive.
+
+13. Kiểm tra độc lập tệp kết quả lưu
+python experiments/audit_extended_artifacts.py --run-dir outputs/extended_q1_20261002 --require-complete
+Kiểm tra đủ 160 lượt tối ưu, 240 checkpoint, lịch đếm truy vấn, tính nhất
+quán miếng dán, mã băm nguồn/trọng số và nguồn ảnh/nhãn kiểm tra.
+
+python experiments/audit_extended_evaluation.py --run-dir outputs/extended_q1_20261002
+Kiểm tra đủ 250 ca đánh giá và 170 ca EOT mới; đối chiếu mã băm miếng dán,
+ID ảnh và cấu hình; tính lại trung vị, trung bình/độ lệch chuẩn/tứ phân vị
+từ số đo lưu; kiểm tra giới hạn ứng viên, tọa độ và lớp của dự đoán COCO,
+chênh lệch fitness của 16 mẫu EOT ghép cặp. Tên cấu hình eot_no_blur v.v.
+được phân loại theo danh sách dự kiến, không nhầm với tệp EOT độc lập.
+Đây là kiểm tra chỉ đọc, không tự suy luận lại mô hình hoặc tính lại AP.
+Thành công của kiểm tra tệp không phải thành công tấn công hay xác nhận
+thí nghiệm vật lý. Chương trình chạy ưu tiên thấp khi có tiến trình đo.
+
+python experiments/audit_extended_controls.py --run-dir outputs/extended_q1_20261002 --require-complete
+Kiểm tra 60 ca đối chứng, mã băm và tensor miếng dán; đối chiếu ngân sách
+400 lượt ảnh, 100 backward của đối chứng giảm độ tin cậy và checkpoint
+đúng miếng dán đã đo cuối cùng. Kiểm tra tệp đánh giá bằng cùng bộ kiểm
+tra chỉ đọc ở trên. Ô bàn cờ và màu xám là hai họa tiết xác định: mười seed
+đo không phải mười miếng dán được tối ưu độc lập. Lượt chưa hoàn tất được
+báo thiếu rõ ràng, không lấy kết quả từng phần để xếp hạng toàn bộ nhóm.
+
+python experiments/audit_extended_backend.py --run-dir outputs/extended_q1_20261002
+Kiểm tra đủ 30 khối đo trên cùng laptop, 7.200 số đo xử lý tensor đã chuẩn
+bị và 1.920 cấu hình NMS dùng 320 đầu vào giải mã đã lưu. Đối chiếu đồng
+hồ, ngân sách xử lý 300 ms, mã băm, số ứng viên và trung vị năm lần đo NMS.
+Kiểm tra riêng số học của 900 cấu hình hàng đợi ngoại tuyến, không gọi
+chúng là luồng camera hoặc thí nghiệm điều tiết tải chạy thật. Cờ trễ của
+hàng đợi này dùng chu kỳ phát tương ứng; nó không đồng nghĩa với cờ vượt
+ngân sách xử lý 300 ms. Kiểm tra tệp không tự suy luận lại mô hình, không
+đo thêm tải song song và không xác lập hiệu quả tấn công.

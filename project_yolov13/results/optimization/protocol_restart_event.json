@@ -1,0 +1,12 @@
+{
+  "status": "planned_restart",
+  "timestamp_utc": "2026-10-13T12:31:27+00:00",
+  "reason": "Append frozen architecture-transfer candidate and historicalcontrolreuse after successfuldeterministicprefixaudit",
+  "previous_orchestrator_exit": 1,
+  "intentional_pause_child_exit": 75,
+  "gpu_training_killed": false,
+  "completed_screening_preserved": [
+    "original_sgd-seed42"
+  ],
+  "next": "resume amended5candidate protocol; skip completedrecords"
+}

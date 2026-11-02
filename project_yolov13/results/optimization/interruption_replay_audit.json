@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "audited_at_utc": "2026-10-17T04:44:29+00:00",
+  "original_partial_csv": "runs/optimization/screening-yolov13s-transfer_tiny_lr-seed42-6epochs/results.csv",
+  "original_partial_csv_sha256": "65044db2514efbfaea70840a16b35639563f4196e3ffa00238bfce5afc323143",
+  "replacement_csv": "runs/optimization/screening-yolov13s-transfer_tiny_lr-seed42-6epochs-recovery20261017/results.csv",
+  "compared_completed_epochs": 2,
+  "compared_fields": "All CSV fields except elapsed time",
+  "mismatches": [],
+  "replacement_first_two_elapsed_seconds": 767.134,
+  "original_first_two_elapsed_seconds": 450.532,
+  "interpretation": "Identical non-time metrics and losses support deterministic fresh replay of the interrupted prefix. Selection remains restricted to the eventual complete replacement six-epoch run."
+}

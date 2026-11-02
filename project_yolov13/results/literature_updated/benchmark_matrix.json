@@ -1,0 +1,1082 @@
+{
+  "schema_version": "1.0",
+  "retrieved_date": "2026-10-13",
+  "study_scope": "Targeted narrative primary-source benchmark review, not exhaustive systematic SOTA ranking",
+  "metric_units": "AP in percent; Params millions; FLOPs billions; latency milliseconds; FPS frames/sec",
+  "rows": [
+    {
+      "model": "YOLO11n",
+      "label": "YOLO11n",
+      "reference_id": "jocher2024yolo11",
+      "title": "Ultralytics YOLO11",
+      "authors": [
+        "Glenn Jocher",
+        "Jing Qiu"
+      ],
+      "year": 2024,
+      "source_url": "https://docs.ultralytics.com/models/yolo11/",
+      "doi": null,
+      "arxiv": null,
+      "source_anchor": "Performance Metrics / Detection (COCO)",
+      "retrieved_date": "2026-10-13",
+      "model_version": "official documentation as retrieved 2026-10-13; table does not label precision",
+      "dataset": "MS COCO 2017",
+      "dataset_version": "2017",
+      "train_split": "train2017",
+      "evaluation_split": "val2017",
+      "num_classes": 80,
+      "evaluation_protocol": "COCO bounding-box AP averaged across 80 classes; IoU 0.50:0.05:0.95",
+      "map50_95_pct": 39.5,
+      "map50_pct": null,
+      "parameters_m": 2.6,
+      "flops_g": 6.5,
+      "flops_input_resolution": [
+        640,
+        640
+      ],
+      "published_latency_ms": 1.5,
+      "published_fps": null,
+      "fps_derived_from_latency": 666.6666666666666,
+      "latency_protocol": {
+        "device": "NVIDIA Tesla T4",
+        "input_size": [
+          640,
+          640
+        ],
+        "batch": null,
+        "precision": null,
+        "backend": "TensorRT10",
+        "pipeline": null,
+        "warmup": null,
+        "repetitions": null,
+        "statistic": null,
+        "missing_fields": [
+          "batch",
+          "precision",
+          "pipeline",
+          "warmup",
+          "repetitions",
+          "statistic"
+        ],
+        "latency_unit": "ms/image",
+        "fps_unit": null,
+        "full_local_pipeline_equivalence_verified": false
+      },
+      "directly_comparable_to_local": false,
+      "comparable": false,
+      "noncomparability_reasons": [
+        "80-class COCO val2017 vs one-class re-split COCO subset + AdvT-shirt local test",
+        "640px/T4 TensorRT10, precision unreported in inspected table vs 416px/RTX5060 PyTorch FP32 local pipeline",
+        "Published point estimates vs local five-seed aggregates"
+      ],
+      "missing_protocol_fields_policy": "null means not reported in inspected primary evidence; never inferred"
+    },
+    {
+      "model": "YOLO11s",
+      "label": "YOLO11s",
+      "reference_id": "jocher2024yolo11",
+      "title": "Ultralytics YOLO11",
+      "authors": [
+        "Glenn Jocher",
+        "Jing Qiu"
+      ],
+      "year": 2024,
+      "source_url": "https://docs.ultralytics.com/models/yolo11/",
+      "doi": null,
+      "arxiv": null,
+      "source_anchor": "Performance Metrics / Detection (COCO)",
+      "retrieved_date": "2026-10-13",
+      "model_version": "official documentation as retrieved 2026-10-13; table does not label precision",
+      "dataset": "MS COCO 2017",
+      "dataset_version": "2017",
+      "train_split": "train2017",
+      "evaluation_split": "val2017",
+      "num_classes": 80,
+      "evaluation_protocol": "COCO bounding-box AP averaged across 80 classes; IoU 0.50:0.05:0.95",
+      "map50_95_pct": 47.0,
+      "map50_pct": null,
+      "parameters_m": 9.4,
+      "flops_g": 21.6,
+      "flops_input_resolution": [
+        640,
+        640
+      ],
+      "published_latency_ms": 2.5,
+      "published_fps": null,
+      "fps_derived_from_latency": 400.0,
+      "latency_protocol": {
+        "device": "NVIDIA Tesla T4",
+        "input_size": [
+          640,
+          640
+        ],
+        "batch": null,
+        "precision": null,
+        "backend": "TensorRT10",
+        "pipeline": null,
+        "warmup": null,
+        "repetitions": null,
+        "statistic": null,
+        "missing_fields": [
+          "batch",
+          "precision",
+          "pipeline",
+          "warmup",
+          "repetitions",
+          "statistic"
+        ],
+        "latency_unit": "ms/image",
+        "fps_unit": null,
+        "full_local_pipeline_equivalence_verified": false
+      },
+      "directly_comparable_to_local": false,
+      "comparable": false,
+      "noncomparability_reasons": [
+        "80-class COCO val2017 vs one-class re-split COCO subset + AdvT-shirt local test",
+        "640px/T4 TensorRT10, precision unreported in inspected table vs 416px/RTX5060 PyTorch FP32 local pipeline",
+        "Published point estimates vs local five-seed aggregates"
+      ],
+      "missing_protocol_fields_policy": "null means not reported in inspected primary evidence; never inferred"
+    },
+    {
+      "model": "YOLOv12-N",
+      "label": "YOLOv12-N",
+      "reference_id": "tian2025yolov12",
+      "title": "YOLOv12: Attention-Centric Real-Time Object Detectors",
+      "authors": [
+        "Yunjie Tian",
+        "Qixiang Ye",
+        "David Doermann"
+      ],
+      "year": 2025,
+      "source_url": "https://arxiv.org/html/2502.12524v1",
+      "doi": "10.48550/arXiv.2502.12524",
+      "arxiv": "2502.12524v1",
+      "source_anchor": "Tables 1 and 6; Sec.4.1",
+      "retrieved_date": "2026-10-13",
+      "model_version": "v1.0 / arXiv v1, not Turbo",
+      "dataset": "MS COCO 2017",
+      "dataset_version": "2017",
+      "train_split": "train2017",
+      "evaluation_split": "val2017",
+      "num_classes": 80,
+      "evaluation_protocol": "COCO bounding-box AP averaged across 80 classes; IoU 0.50:0.05:0.95",
+      "map50_95_pct": 40.6,
+      "map50_pct": 56.7,
+      "parameters_m": 2.6,
+      "flops_g": 6.5,
+      "flops_input_resolution": [
+        640,
+        640
+      ],
+      "published_latency_ms": 1.64,
+      "published_fps": null,
+      "fps_derived_from_latency": 609.7560975609756,
+      "latency_protocol": {
+        "device": "NVIDIA Tesla T4",
+        "input_size": [
+          640,
+          640
+        ],
+        "batch": null,
+        "precision": "FP16",
+        "backend": "TensorRT",
+        "pipeline": null,
+        "warmup": null,
+        "repetitions": null,
+        "statistic": null,
+        "missing_fields": [
+          "batch",
+          "pipeline",
+          "warmup",
+          "repetitions",
+          "statistic"
+        ],
+        "latency_unit": "ms/image",
+        "fps_unit": null,
+        "full_local_pipeline_equivalence_verified": false
+      },
+      "directly_comparable_to_local": false,
+      "comparable": false,
+      "noncomparability_reasons": [
+        "80-class COCO val2017 vs one-class re-split COCO subset + AdvT-shirt local test",
+        "640px/T4 TensorRT, precision FP16 vs 416px/RTX5060 PyTorch FP32 local pipeline",
+        "Published point estimates vs local five-seed aggregates"
+      ],
+      "missing_protocol_fields_policy": "null means not reported in inspected primary evidence; never inferred"
+    },
+    {
+      "model": "YOLOv12-S",
+      "label": "YOLOv12-S",
+      "reference_id": "tian2025yolov12",
+      "title": "YOLOv12: Attention-Centric Real-Time Object Detectors",
+      "authors": [
+        "Yunjie Tian",
+        "Qixiang Ye",
+        "David Doermann"
+      ],
+      "year": 2025,
+      "source_url": "https://arxiv.org/html/2502.12524v1",
+      "doi": "10.48550/arXiv.2502.12524",
+      "arxiv": "2502.12524v1",
+      "source_anchor": "Tables 1 and 6; Sec.4.1",
+      "retrieved_date": "2026-10-13",
+      "model_version": "v1.0 / arXiv v1, not Turbo",
+      "dataset": "MS COCO 2017",
+      "dataset_version": "2017",
+      "train_split": "train2017",
+      "evaluation_split": "val2017",
+      "num_classes": 80,
+      "evaluation_protocol": "COCO bounding-box AP averaged across 80 classes; IoU 0.50:0.05:0.95",
+      "map50_95_pct": 48.0,
+      "map50_pct": 65.0,
+      "parameters_m": 9.3,
+      "flops_g": 21.4,
+      "flops_input_resolution": [
+        640,
+        640
+      ],
+      "published_latency_ms": 2.61,
+      "published_fps": null,
+      "fps_derived_from_latency": 383.1417624521073,
+      "latency_protocol": {
+        "device": "NVIDIA Tesla T4",
+        "input_size": [
+          640,
+          640
+        ],
+        "batch": null,
+        "precision": "FP16",
+        "backend": "TensorRT",
+        "pipeline": null,
+        "warmup": null,
+        "repetitions": null,
+        "statistic": null,
+        "missing_fields": [
+          "batch",
+          "pipeline",
+          "warmup",
+          "repetitions",
+          "statistic"
+        ],
+        "latency_unit": "ms/image",
+        "fps_unit": null,
+        "full_local_pipeline_equivalence_verified": false
+      },
+      "directly_comparable_to_local": false,
+      "comparable": false,
+      "noncomparability_reasons": [
+        "80-class COCO val2017 vs one-class re-split COCO subset + AdvT-shirt local test",
+        "640px/T4 TensorRT, precision FP16 vs 416px/RTX5060 PyTorch FP32 local pipeline",
+        "Published point estimates vs local five-seed aggregates"
+      ],
+      "missing_protocol_fields_policy": "null means not reported in inspected primary evidence; never inferred"
+    },
+    {
+      "model": "YOLOv13-N",
+      "label": "YOLOv13-N",
+      "reference_id": "lei2025yolov13",
+      "title": "YOLOv13: Real-Time Object Detection with Hypergraph-Enhanced Adaptive Visual Perception",
+      "authors": [
+        "Mengqi Lei",
+        "Siqi Li",
+        "Yihong Wu",
+        "Han Hu",
+        "You Zhou",
+        "Xinhu Zheng",
+        "Guiguang Ding",
+        "Shaoyi Du",
+        "Zongze Wu",
+        "Yue Gao"
+      ],
+      "year": 2025,
+      "source_url": "https://arxiv.org/html/2506.17733v1",
+      "doi": "10.48550/arXiv.2506.17733",
+      "arxiv": "2506.17733v1",
+      "source_anchor": "Table I; Sec.IV-A",
+      "retrieved_date": "2026-10-13",
+      "model_version": "arXiv v1 official N",
+      "dataset": "MS COCO 2017",
+      "dataset_version": "2017",
+      "train_split": "train2017",
+      "evaluation_split": "val2017",
+      "num_classes": 80,
+      "evaluation_protocol": "COCO bounding-box AP averaged across 80 classes; IoU 0.50:0.05:0.95",
+      "map50_95_pct": 41.6,
+      "map50_pct": 57.8,
+      "parameters_m": 2.5,
+      "flops_g": 6.4,
+      "flops_input_resolution": [
+        640,
+        640
+      ],
+      "published_latency_ms": 1.97,
+      "published_fps": null,
+      "fps_derived_from_latency": 507.61421319796955,
+      "latency_protocol": {
+        "device": "NVIDIA Tesla T4",
+        "input_size": [
+          640,
+          640
+        ],
+        "batch": null,
+        "precision": "FP16",
+        "backend": "TensorRT",
+        "pipeline": null,
+        "warmup": null,
+        "repetitions": null,
+        "statistic": null,
+        "missing_fields": [
+          "batch",
+          "pipeline",
+          "warmup",
+          "repetitions",
+          "statistic"
+        ],
+        "latency_unit": "ms/image",
+        "fps_unit": null,
+        "full_local_pipeline_equivalence_verified": false
+      },
+      "directly_comparable_to_local": false,
+      "comparable": false,
+      "noncomparability_reasons": [
+        "80-class COCO val2017 vs one-class re-split COCO subset + AdvT-shirt local test",
+        "640px/T4 TensorRT, precision FP16 vs 416px/RTX5060 PyTorch FP32 local pipeline",
+        "Published point estimates vs local five-seed aggregates"
+      ],
+      "missing_protocol_fields_policy": "null means not reported in inspected primary evidence; never inferred"
+    },
+    {
+      "model": "YOLOv13-S",
+      "label": "YOLOv13-S",
+      "reference_id": "lei2025yolov13",
+      "title": "YOLOv13: Real-Time Object Detection with Hypergraph-Enhanced Adaptive Visual Perception",
+      "authors": [
+        "Mengqi Lei",
+        "Siqi Li",
+        "Yihong Wu",
+        "Han Hu",
+        "You Zhou",
+        "Xinhu Zheng",
+        "Guiguang Ding",
+        "Shaoyi Du",
+        "Zongze Wu",
+        "Yue Gao"
+      ],
+      "year": 2025,
+      "source_url": "https://arxiv.org/html/2506.17733v1",
+      "doi": "10.48550/arXiv.2506.17733",
+      "arxiv": "2506.17733v1",
+      "source_anchor": "Table I; Sec.IV-A",
+      "retrieved_date": "2026-10-13",
+      "model_version": "arXiv v1 official S",
+      "dataset": "MS COCO 2017",
+      "dataset_version": "2017",
+      "train_split": "train2017",
+      "evaluation_split": "val2017",
+      "num_classes": 80,
+      "evaluation_protocol": "COCO bounding-box AP averaged across 80 classes; IoU 0.50:0.05:0.95",
+      "map50_95_pct": 48.0,
+      "map50_pct": 65.2,
+      "parameters_m": 9.0,
+      "flops_g": 20.8,
+      "flops_input_resolution": [
+        640,
+        640
+      ],
+      "published_latency_ms": 2.98,
+      "published_fps": null,
+      "fps_derived_from_latency": 335.5704697986577,
+      "latency_protocol": {
+        "device": "NVIDIA Tesla T4",
+        "input_size": [
+          640,
+          640
+        ],
+        "batch": null,
+        "precision": "FP16",
+        "backend": "TensorRT",
+        "pipeline": null,
+        "warmup": null,
+        "repetitions": null,
+        "statistic": null,
+        "missing_fields": [
+          "batch",
+          "pipeline",
+          "warmup",
+          "repetitions",
+          "statistic"
+        ],
+        "latency_unit": "ms/image",
+        "fps_unit": null,
+        "full_local_pipeline_equivalence_verified": false
+      },
+      "directly_comparable_to_local": false,
+      "comparable": false,
+      "noncomparability_reasons": [
+        "80-class COCO val2017 vs one-class re-split COCO subset + AdvT-shirt local test",
+        "640px/T4 TensorRT, precision FP16 vs 416px/RTX5060 PyTorch FP32 local pipeline",
+        "Published point estimates vs local five-seed aggregates"
+      ],
+      "missing_protocol_fields_policy": "null means not reported in inspected primary evidence; never inferred"
+    },
+    {
+      "model": "YOLOv10-N",
+      "label": "YOLOv10-N",
+      "reference_id": "wang2024yolov10",
+      "title": "YOLOv10: Real-Time End-to-End Object Detection",
+      "authors": [
+        "Ao Wang",
+        "Hui Chen",
+        "Lihao Liu",
+        "Kai Chen",
+        "Zijia Lin",
+        "Jungong Han",
+        "Guiguang Ding"
+      ],
+      "year": 2024,
+      "source_url": "https://arxiv.org/html/2405.14458v1",
+      "doi": "10.48550/arXiv.2405.14458",
+      "arxiv": "2405.14458v1",
+      "source_anchor": "Tables 1 and 15; Sec.4.1",
+      "retrieved_date": "2026-10-13",
+      "model_version": "NMS-free one-to-one inference",
+      "dataset": "MS COCO 2017",
+      "dataset_version": "2017",
+      "train_split": "train2017",
+      "evaluation_split": "val2017",
+      "num_classes": 80,
+      "evaluation_protocol": "COCO bounding-box AP averaged across 80 classes; IoU 0.50:0.05:0.95",
+      "map50_95_pct": 38.5,
+      "map50_pct": 53.8,
+      "parameters_m": 2.3,
+      "flops_g": 6.7,
+      "flops_input_resolution": [
+        640,
+        640
+      ],
+      "published_latency_ms": 1.84,
+      "published_fps": null,
+      "fps_derived_from_latency": 543.4782608695652,
+      "latency_protocol": {
+        "device": "NVIDIA Tesla T4",
+        "input_size": [
+          640,
+          640
+        ],
+        "batch": null,
+        "precision": "FP16",
+        "backend": "TensorRT",
+        "pipeline": "Main end-to-end latency column; distinct from forward-only Latency-f",
+        "warmup": null,
+        "repetitions": null,
+        "statistic": null,
+        "missing_fields": [
+          "batch",
+          "warmup",
+          "repetitions",
+          "statistic"
+        ],
+        "latency_unit": "ms/image",
+        "fps_unit": null,
+        "full_local_pipeline_equivalence_verified": false
+      },
+      "directly_comparable_to_local": false,
+      "comparable": false,
+      "noncomparability_reasons": [
+        "80-class COCO val2017 vs one-class re-split COCO subset + AdvT-shirt local test",
+        "640px/T4 TensorRT, precision FP16 vs 416px/RTX5060 PyTorch FP32 local pipeline",
+        "Published point estimates vs local five-seed aggregates"
+      ],
+      "missing_protocol_fields_policy": "null means not reported in inspected primary evidence; never inferred"
+    },
+    {
+      "model": "YOLOv10-S",
+      "label": "YOLOv10-S",
+      "reference_id": "wang2024yolov10",
+      "title": "YOLOv10: Real-Time End-to-End Object Detection",
+      "authors": [
+        "Ao Wang",
+        "Hui Chen",
+        "Lihao Liu",
+        "Kai Chen",
+        "Zijia Lin",
+        "Jungong Han",
+        "Guiguang Ding"
+      ],
+      "year": 2024,
+      "source_url": "https://arxiv.org/html/2405.14458v1",
+      "doi": "10.48550/arXiv.2405.14458",
+      "arxiv": "2405.14458v1",
+      "source_anchor": "Tables 1 and 15; Sec.4.1",
+      "retrieved_date": "2026-10-13",
+      "model_version": "NMS-free one-to-one inference",
+      "dataset": "MS COCO 2017",
+      "dataset_version": "2017",
+      "train_split": "train2017",
+      "evaluation_split": "val2017",
+      "num_classes": 80,
+      "evaluation_protocol": "COCO bounding-box AP averaged across 80 classes; IoU 0.50:0.05:0.95",
+      "map50_95_pct": 46.3,
+      "map50_pct": 63.0,
+      "parameters_m": 7.2,
+      "flops_g": 21.6,
+      "flops_input_resolution": [
+        640,
+        640
+      ],
+      "published_latency_ms": 2.49,
+      "published_fps": null,
+      "fps_derived_from_latency": 401.60642570281124,
+      "latency_protocol": {
+        "device": "NVIDIA Tesla T4",
+        "input_size": [
+          640,
+          640
+        ],
+        "batch": null,
+        "precision": "FP16",
+        "backend": "TensorRT",
+        "pipeline": "Main end-to-end latency column; distinct from forward-only Latency-f",
+        "warmup": null,
+        "repetitions": null,
+        "statistic": null,
+        "missing_fields": [
+          "batch",
+          "warmup",
+          "repetitions",
+          "statistic"
+        ],
+        "latency_unit": "ms/image",
+        "fps_unit": null,
+        "full_local_pipeline_equivalence_verified": false
+      },
+      "directly_comparable_to_local": false,
+      "comparable": false,
+      "noncomparability_reasons": [
+        "80-class COCO val2017 vs one-class re-split COCO subset + AdvT-shirt local test",
+        "640px/T4 TensorRT, precision FP16 vs 416px/RTX5060 PyTorch FP32 local pipeline",
+        "Published point estimates vs local five-seed aggregates"
+      ],
+      "missing_protocol_fields_policy": "null means not reported in inspected primary evidence; never inferred"
+    },
+    {
+      "model": "RT-DETR-R18",
+      "label": "RT-DETR-R18",
+      "reference_id": "zhao2024rtdetr",
+      "title": "DETRs Beat YOLOs on Real-time Object Detection",
+      "authors": [
+        "Yian Zhao",
+        "Wenyu Lv",
+        "Shangliang Xu",
+        "Jinman Wei",
+        "Guanzhong Wang",
+        "Qingqing Dang",
+        "Yi Liu",
+        "Jie Chen"
+      ],
+      "year": 2024,
+      "source_url": "https://github.com/lyuwenyu/RT-DETR",
+      "doi": "10.48550/arXiv.2304.08069",
+      "arxiv": "2304.08069",
+      "source_anchor": "Model table COCO-only ResNet18 row; RT-DETRv2 v1 Table2 confirms batch1",
+      "retrieved_date": "2026-10-13",
+      "model_version": "COCO-only, not Objects365-pretrained row",
+      "dataset": "MS COCO 2017",
+      "dataset_version": "2017",
+      "train_split": "train2017",
+      "evaluation_split": "val2017",
+      "num_classes": 80,
+      "evaluation_protocol": "COCO bounding-box AP averaged across 80 classes; IoU 0.50:0.05:0.95",
+      "map50_95_pct": 46.5,
+      "map50_pct": 63.8,
+      "parameters_m": 20,
+      "flops_g": 60,
+      "flops_input_resolution": [
+        640,
+        640
+      ],
+      "published_latency_ms": null,
+      "published_fps": 217,
+      "fps_derived_from_latency": null,
+      "latency_protocol": {
+        "device": "NVIDIA Tesla T4",
+        "input_size": [
+          640,
+          640
+        ],
+        "batch": 1,
+        "precision": "FP16",
+        "backend": "TensorRT",
+        "pipeline": "NMS-free; full preprocessing/I-O inclusion not established",
+        "warmup": null,
+        "repetitions": null,
+        "statistic": null,
+        "missing_fields": [
+          "warmup",
+          "repetitions",
+          "statistic"
+        ],
+        "latency_unit": null,
+        "fps_unit": "frames/second",
+        "full_local_pipeline_equivalence_verified": false
+      },
+      "directly_comparable_to_local": false,
+      "comparable": false,
+      "noncomparability_reasons": [
+        "80-class COCO val2017 vs one-class re-split COCO subset + AdvT-shirt local test",
+        "640px/T4 TensorRT, precision FP16 vs 416px/RTX5060 PyTorch FP32 local pipeline",
+        "Published point estimates vs local five-seed aggregates"
+      ],
+      "missing_protocol_fields_policy": "null means not reported in inspected primary evidence; never inferred"
+    },
+    {
+      "model": "RT-DETR-R50",
+      "label": "RT-DETR-R50",
+      "reference_id": "zhao2024rtdetr",
+      "title": "DETRs Beat YOLOs on Real-time Object Detection",
+      "authors": [
+        "Yian Zhao",
+        "Wenyu Lv",
+        "Shangliang Xu",
+        "Jinman Wei",
+        "Guanzhong Wang",
+        "Qingqing Dang",
+        "Yi Liu",
+        "Jie Chen"
+      ],
+      "year": 2024,
+      "source_url": "https://github.com/lyuwenyu/RT-DETR",
+      "doi": "10.48550/arXiv.2304.08069",
+      "arxiv": "2304.08069",
+      "source_anchor": "Model table COCO-only ResNet50 row; RT-DETRv2 v1 Table2 confirms batch1",
+      "retrieved_date": "2026-10-13",
+      "model_version": "COCO-only, not Objects365-pretrained row",
+      "dataset": "MS COCO 2017",
+      "dataset_version": "2017",
+      "train_split": "train2017",
+      "evaluation_split": "val2017",
+      "num_classes": 80,
+      "evaluation_protocol": "COCO bounding-box AP averaged across 80 classes; IoU 0.50:0.05:0.95",
+      "map50_95_pct": 53.1,
+      "map50_pct": 71.3,
+      "parameters_m": 42,
+      "flops_g": 136,
+      "flops_input_resolution": [
+        640,
+        640
+      ],
+      "published_latency_ms": null,
+      "published_fps": 108,
+      "fps_derived_from_latency": null,
+      "latency_protocol": {
+        "device": "NVIDIA Tesla T4",
+        "input_size": [
+          640,
+          640
+        ],
+        "batch": 1,
+        "precision": "FP16",
+        "backend": "TensorRT",
+        "pipeline": "NMS-free; full preprocessing/I-O inclusion not established",
+        "warmup": null,
+        "repetitions": null,
+        "statistic": null,
+        "missing_fields": [
+          "warmup",
+          "repetitions",
+          "statistic"
+        ],
+        "latency_unit": null,
+        "fps_unit": "frames/second",
+        "full_local_pipeline_equivalence_verified": false
+      },
+      "directly_comparable_to_local": false,
+      "comparable": false,
+      "noncomparability_reasons": [
+        "80-class COCO val2017 vs one-class re-split COCO subset + AdvT-shirt local test",
+        "640px/T4 TensorRT, precision FP16 vs 416px/RTX5060 PyTorch FP32 local pipeline",
+        "Published point estimates vs local five-seed aggregates"
+      ],
+      "missing_protocol_fields_policy": "null means not reported in inspected primary evidence; never inferred"
+    },
+    {
+      "model": "RT-DETRv2-S",
+      "label": "RT-DETRv2-S",
+      "reference_id": "lv2024rtdetrv2",
+      "title": "RT-DETRv2: Improved Baseline with Bag-of-Freebies for Real-Time Detection Transformer",
+      "authors": [
+        "Wenyu Lv",
+        "Yian Zhao",
+        "Qinyao Chang",
+        "Kui Huang",
+        "Guanzhong Wang",
+        "Yi Liu"
+      ],
+      "year": 2024,
+      "source_url": "https://arxiv.org/html/2407.17140v1",
+      "doi": "10.48550/arXiv.2407.17140",
+      "arxiv": "2407.17140v1",
+      "source_anchor": "Table2; Sec.3.2",
+      "retrieved_date": "2026-10-13",
+      "model_version": "v1, grid_sample; not later repo 48.1 AP update",
+      "dataset": "MS COCO 2017",
+      "dataset_version": "2017",
+      "train_split": "train2017",
+      "evaluation_split": "val2017",
+      "num_classes": 80,
+      "evaluation_protocol": "COCO bounding-box AP averaged across 80 classes; IoU 0.50:0.05:0.95",
+      "map50_95_pct": 47.9,
+      "map50_pct": 64.9,
+      "parameters_m": 20,
+      "flops_g": null,
+      "flops_input_resolution": [
+        640,
+        640
+      ],
+      "published_latency_ms": null,
+      "published_fps": 217,
+      "fps_derived_from_latency": null,
+      "latency_protocol": {
+        "device": "NVIDIA Tesla T4",
+        "input_size": [
+          640,
+          640
+        ],
+        "batch": 1,
+        "precision": "FP16",
+        "backend": "TensorRT",
+        "pipeline": "NMS-free; full preprocessing/I-O inclusion not established",
+        "warmup": null,
+        "repetitions": null,
+        "statistic": null,
+        "missing_fields": [
+          "warmup",
+          "repetitions",
+          "statistic"
+        ],
+        "latency_unit": null,
+        "fps_unit": "frames/second",
+        "full_local_pipeline_equivalence_verified": false
+      },
+      "directly_comparable_to_local": false,
+      "comparable": false,
+      "noncomparability_reasons": [
+        "80-class COCO val2017 vs one-class re-split COCO subset + AdvT-shirt local test",
+        "640px/T4 TensorRT, precision FP16 vs 416px/RTX5060 PyTorch FP32 local pipeline",
+        "Published point estimates vs local five-seed aggregates"
+      ],
+      "missing_protocol_fields_policy": "null means not reported in inspected primary evidence; never inferred"
+    }
+  ],
+  "references": [
+    {
+      "id": "lei2025yolov13",
+      "title": "YOLOv13: Real-Time Object Detection with Hypergraph-Enhanced Adaptive Visual Perception",
+      "authors": [
+        "Mengqi Lei",
+        "Siqi Li",
+        "Yihong Wu",
+        "Han Hu",
+        "You Zhou",
+        "Xinhu Zheng",
+        "Guiguang Ding",
+        "Shaoyi Du",
+        "Zongze Wu",
+        "Yue Gao"
+      ],
+      "year": 2025,
+      "arxiv": "2506.17733v1",
+      "doi": "10.48550/arXiv.2506.17733",
+      "url": "https://arxiv.org/html/2506.17733v1",
+      "publication_type": "arXiv preprint",
+      "anchors": [
+        "Sec. III-B; Eqs. (3)-(5)",
+        "Sec. III-C; Eq. (13)",
+        "Sec. III-D; Fig. 4",
+        "Sec. IV-A; Table I",
+        "Table V"
+      ],
+      "verification": "Full text and official iMoonLab/yolov13 repository agree on own N/S benchmark rows."
+    },
+    {
+      "id": "tian2025yolov12",
+      "title": "YOLOv12: Attention-Centric Real-Time Object Detectors",
+      "authors": [
+        "Yunjie Tian",
+        "Qixiang Ye",
+        "David Doermann"
+      ],
+      "year": 2025,
+      "arxiv": "2502.12524v1",
+      "doi": "10.48550/arXiv.2502.12524",
+      "url": "https://arxiv.org/html/2502.12524v1",
+      "publication_type": "arXiv v1; subsequent NeurIPS 2025 conference version differs",
+      "anchors": [
+        "Sec. 4.1",
+        "Table 1",
+        "Table 6",
+        "Table 7"
+      ],
+      "verification": "Pin v1 metrics; do not mix with current Turbo or conference tables."
+    },
+    {
+      "id": "jocher2024yolo11",
+      "title": "Ultralytics YOLO11",
+      "authors": [
+        "Glenn Jocher",
+        "Jing Qiu"
+      ],
+      "year": 2024,
+      "arxiv": null,
+      "doi": null,
+      "url": "https://docs.ultralytics.com/models/yolo11/",
+      "publication_type": "official software documentation; no formal official research paper",
+      "anchors": [
+        "Performance Metrics: Detection (COCO)",
+        "Citations and Acknowledgments"
+      ],
+      "verification": "Official page explicitly states no formal research paper for YOLO11; citation is software, not a peer-reviewed architecture article."
+    },
+    {
+      "id": "wang2024yolov10",
+      "title": "YOLOv10: Real-Time End-to-End Object Detection",
+      "authors": [
+        "Ao Wang",
+        "Hui Chen",
+        "Lihao Liu",
+        "Kai Chen",
+        "Zijia Lin",
+        "Jungong Han",
+        "Guiguang Ding"
+      ],
+      "year": 2024,
+      "arxiv": "2405.14458v1",
+      "doi": "10.48550/arXiv.2405.14458",
+      "url": "https://arxiv.org/html/2405.14458v1",
+      "publication_type": "NeurIPS 2024; metrics pinned to arXiv v1 and official repository",
+      "anchors": [
+        "Sec. 4.1",
+        "Table 1",
+        "Appendix A.4 Table 15"
+      ],
+      "verification": "Main latency column is end-to-end; separate Latency-f column is forward-only. Use main column."
+    },
+    {
+      "id": "zhao2024rtdetr",
+      "title": "DETRs Beat YOLOs on Real-time Object Detection",
+      "authors": [
+        "Yian Zhao",
+        "Wenyu Lv",
+        "Shangliang Xu",
+        "Jinman Wei",
+        "Guanzhong Wang",
+        "Qingqing Dang",
+        "Yi Liu",
+        "Jie Chen"
+      ],
+      "year": 2024,
+      "preprint_year": 2023,
+      "arxiv": "2304.08069",
+      "doi": "10.48550/arXiv.2304.08069",
+      "url": "https://arxiv.org/abs/2304.08069",
+      "publication_type": "CVPR 2024; official repository metrics",
+      "anchors": [
+        "Official repository model table: COCO rows only",
+        "arXiv abstract"
+      ],
+      "verification": "Do not substitute COCO+Objects365 rows for COCO-only variants."
+    },
+    {
+      "id": "lv2024rtdetrv2",
+      "title": "RT-DETRv2: Improved Baseline with Bag-of-Freebies for Real-Time Detection Transformer",
+      "authors": [
+        "Wenyu Lv",
+        "Yian Zhao",
+        "Qinyao Chang",
+        "Kui Huang",
+        "Guanzhong Wang",
+        "Yi Liu"
+      ],
+      "year": 2024,
+      "arxiv": "2407.17140v1",
+      "doi": "10.48550/arXiv.2407.17140",
+      "url": "https://arxiv.org/html/2407.17140v1",
+      "publication_type": "arXiv technical report",
+      "anchors": [
+        "Sec. 3.2",
+        "Table 2: FPS-bs=1"
+      ],
+      "verification": "v1 S has 47.9 AP; current official repository improved S has 48.1, stored separately in version notes."
+    },
+    {
+      "id": "wang2025badpatch",
+      "title": "BadPatch: Diffusion-Based Generation of Physical Adversarial Patches",
+      "authors": [
+        "Zhixiang Wang",
+        "Xingjun Ma",
+        "Yu-Gang Jiang"
+      ],
+      "year": 2025,
+      "preprint_year": 2024,
+      "arxiv": "2412.01440v5",
+      "doi": "10.48550/arXiv.2412.01440",
+      "url": "https://arxiv.org/html/2412.01440v5",
+      "publication_type": "arXiv v5; ICCV 2025 Findings workshop listing",
+      "anchors": [
+        "Sec. 4.1",
+        "Sec. 4.5; Fig. 8"
+      ],
+      "verification": "Latest arXiv title/three authors supersede old DiffPatch/seven-author citation in dataset README. CVF workshop listing was found, but direct full-text opening failed; use verified arXiv full text."
+    },
+    {
+      "id": "xu2020adversarialtshirt",
+      "title": "Adversarial T-shirt! Evading Person Detectors in A Physical World",
+      "authors": [
+        "Kaidi Xu",
+        "Gaoyuan Zhang",
+        "Sijia Liu",
+        "Quanfu Fan",
+        "Mengshu Sun",
+        "Hongge Chen",
+        "Pin-Yu Chen",
+        "Yanzhi Wang",
+        "Xue Lin"
+      ],
+      "year": 2020,
+      "preprint_year": 2019,
+      "arxiv": "1910.11099",
+      "doi": "10.48550/arXiv.1910.11099",
+      "url": "https://arxiv.org/abs/1910.11099",
+      "publication_type": "ECCV 2020",
+      "anchors": [
+        "Abstract",
+        "Official ECCV paper: https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123500647.pdf"
+      ],
+      "verification": "Physical/digital attack success is a distinct endpoint from detector COCO AP."
+    }
+  ],
+  "version_notes": [
+    {
+      "model": "YOLOv12",
+      "source_url": "https://github.com/sunsmarterjie/yolov12",
+      "anchor": "Main Results",
+      "retrieved_date": "2026-10-13",
+      "note": "Current Turbo N: AP40.4, params2.5M, FLOPs6.0G, latency1.60ms. Original v1 N40.6/2.6M/6.5G/1.64ms. Do not silently substitute updated release for locally used weights."
+    },
+    {
+      "model": "YOLO11/YOLOv12",
+      "source_url": "https://arxiv.org/html/2506.17733v1",
+      "anchor": "Sec.IV-A; Table I",
+      "retrieved_date": "2026-10-13",
+      "note": "Authors reran official YOLO11 and YOLOv12 v1 on same training hardware; N AP38.6/40.1, S45.8/47.1. Hence reported YOLO13 gains refer to these reruns, not official docs or original paper figures."
+    },
+    {
+      "model": "RT-DETRv2-S",
+      "source_url": "https://github.com/lyuwenyu/RT-DETR",
+      "anchor": "News 2024.08.22; model table",
+      "retrieved_date": "2026-10-13",
+      "note": "Current repo S AP48.1/AP50 65.1 vs arXivv1 47.9/64.9."
+    }
+  ],
+  "local_protocol": {
+    "dataset": "COCO 2017 deterministic 10,000-image subset + available AdvT-shirt mirror 1,123",
+    "total_images": 11123,
+    "num_classes": 1,
+    "class_names": [
+      "person"
+    ],
+    "split_ratio": "70/15/15",
+    "split_seed": 2026,
+    "split_counts": {
+      "train": {
+        "images": 7786,
+        "person_instances": 25791,
+        "coco": 7000,
+        "advtshirt": 786
+      },
+      "val": {
+        "images": 1669,
+        "person_instances": 5543,
+        "coco": 1500,
+        "advtshirt": 169
+      },
+      "test": {
+        "images": 1668,
+        "person_instances": 5455,
+        "coco": 1500,
+        "advtshirt": 168
+      }
+    },
+    "test_coco_train2017_images": 1429,
+    "latency_protocol": {
+      "device": "RTX 5060",
+      "input_size": 416,
+      "batch": 1,
+      "precision": "FP32",
+      "backend": "PyTorch with SDPA fallback",
+      "pipeline": "preprocess + inference + postprocess; excludes image decode/I-O",
+      "warmup": 32,
+      "repetitions": 500,
+      "statistic": "median per seed then five-seed mean/SD/95% Student-t CI"
+    },
+    "caveats": [
+      "No exclusion of pretrained exposure to 1,429 local-test COCOtrain2017 images",
+      "Image-level splits do not establish subject/sequence disjointness",
+      "Pooled AP is not adversarial robustness or attack success rate",
+      "A training-only optimized configuration is a project contribution; HyperACE, FullPAD and DS-C3k2 remain original authors' architecture"
+    ]
+  },
+  "published_architecture_ablations": {
+    "source_url": "https://arxiv.org/html/2506.17733v1",
+    "retrieved_date": "2026-10-13",
+    "dataset": "COCO2017 val2017",
+    "num_classes": 80,
+    "input_size": 640,
+    "ownership": "Original authors' published ablations; not local experiments",
+    "fullpad_hyperace": {
+      "anchor": "Sec.IV-C1; Table III",
+      "model": "YOLOv13-S",
+      "no_tunnel_ap95": 47.1,
+      "no_tunnel_ap50": 64.1,
+      "full_tunnels_ap95": 48.0,
+      "full_tunnels_ap50": 65.2,
+      "delta_ap95_pp": 0.9,
+      "note": "No tunnels equals removing effective HyperACE according to authors; not independent isolated HyperACE/FullPAD factorial ablation"
+    },
+    "ds_blocks": {
+      "anchor": "Table V",
+      "rows": [
+        {
+          "model": "YOLOv13-N",
+          "ds": true,
+          "ap95": 41.6,
+          "params_m": 2.5,
+          "flops_g": 6.4
+        },
+        {
+          "model": "YOLOv13-N",
+          "ds": false,
+          "ap95": 41.6,
+          "params_m": 3.1,
+          "flops_g": 7.9
+        },
+        {
+          "model": "YOLOv13-S",
+          "ds": true,
+          "ap95": 48.0,
+          "params_m": 9.0,
+          "flops_g": 20.8
+        },
+        {
+          "model": "YOLOv13-S",
+          "ds": false,
+          "ap95": 48.0,
+          "params_m": 11.7,
+          "flops_g": 27.1
+        }
+      ],
+      "note": "Parameter/FLOPs benefit at equal rounded AP in this published ablation; does not guarantee faster local PyTorch latency"
+    }
+  }
+}

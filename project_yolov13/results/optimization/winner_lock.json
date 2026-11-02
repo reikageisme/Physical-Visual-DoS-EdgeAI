@@ -1,0 +1,213 @@
+{
+  "locked_at_utc": "2026-10-17T06:15:11+00:00",
+  "winner_configuration": "transfer_tiny_lr",
+  "criterion": "Stage1 choose CSVnative FP16batch16 maximum mAP95 epoch1..6 per trajectory; stage2 rank ONLYnative-selected checkpoints by FP32batch8 fullval mAP95, seed42; original_sgd excluded from trainedoptimizedpool",
+  "screening": [
+    {
+      "configuration": "original_sgd",
+      "validation": {
+        "precision": 0.79572,
+        "recall": 0.59381,
+        "map50": 0.6993,
+        "map50_95": 0.47034
+      },
+      "validation_fp32": {
+        "precision": 0.7912276896806058,
+        "recall": 0.59624751939383,
+        "map50": 0.6987380221813069,
+        "map50_95": 0.470728218139642,
+        "validator_speed_ms_batch8": {
+          "preprocess": 0.08298880758222668,
+          "inference": 2.475407824964849,
+          "loss": 0.0005371203459687687,
+          "postprocess": 0.6811808796968911
+        },
+        "validator_latency_ms_per_frame_batch8": 3.239577512243967,
+        "parameters_m": 9.553338,
+        "flops_g": 9.147934848,
+        "evaluation_protocol": {
+          "imgsz": 416,
+          "batch": 8,
+          "half": false,
+          "workers": 0,
+          "split": "val",
+          "data_yaml": "dataset/data.yaml"
+        }
+      },
+      "selected_epoch": 1,
+      "checkpoint": "runs/optimization/screening-yolov13s-original_sgd-seed42-6epochs/weights/epoch0.pt"
+    },
+    {
+      "configuration": "adamw_transfer_restored",
+      "validation": {
+        "precision": 0.81021,
+        "recall": 0.61772,
+        "map50": 0.72406,
+        "map50_95": 0.49974
+      },
+      "validation_fp32": {
+        "precision": 0.8103624998423119,
+        "recall": 0.6173552228035359,
+        "map50": 0.7247119708454208,
+        "map50_95": 0.5000042320613483,
+        "validator_speed_ms_batch8": {
+          "preprocess": 0.08590225690563973,
+          "inference": 2.829897539425639,
+          "loss": 0.0007938238730182042,
+          "postprocess": 0.7832234601477366
+        },
+        "validator_latency_ms_per_frame_batch8": 3.6990232564790153,
+        "parameters_m": 9.024954,
+        "flops_g": 8.873814143999999,
+        "evaluation_protocol": {
+          "imgsz": 416,
+          "batch": 8,
+          "half": false,
+          "workers": 0,
+          "split": "val",
+          "data_yaml": "dataset/data.yaml"
+        }
+      },
+      "selected_epoch": 6,
+      "checkpoint": "runs/optimization/screening-yolov13s-adamw_transfer_restored-seed42-6epochs/weights/epoch5.pt"
+    },
+    {
+      "configuration": "transfer_tiny_lr",
+      "validation": {
+        "precision": 0.84793,
+        "recall": 0.68804,
+        "map50": 0.79436,
+        "map50_95": 0.57669
+      },
+      "validation_fp32": {
+        "precision": 0.8476222536259007,
+        "recall": 0.6894339549204254,
+        "map50": 0.7946050018397791,
+        "map50_95": 0.5770003918851788,
+        "validator_speed_ms_batch8": {
+          "preprocess": 0.0796529473909866,
+          "inference": 2.4514646855852003,
+          "loss": 0.0004848368229303194,
+          "postprocess": 0.6124339037987199
+        },
+        "validator_latency_ms_per_frame_batch8": 3.1435515367749067,
+        "parameters_m": 9.024954,
+        "flops_g": 8.873814143999999,
+        "evaluation_protocol": {
+          "imgsz": 416,
+          "batch": 8,
+          "half": false,
+          "workers": 0,
+          "split": "val",
+          "data_yaml": "dataset/data.yaml"
+        }
+      },
+      "selected_epoch": 6,
+      "checkpoint": "runs/optimization/screening-yolov13s-transfer_tiny_lr-seed42-6epochs-recovery20261017/weights/epoch5.pt"
+    },
+    {
+      "configuration": "low_sgd_cosine",
+      "validation": {
+        "precision": 0.83609,
+        "recall": 0.67635,
+        "map50": 0.77842,
+        "map50_95": 0.55561
+      },
+      "validation_fp32": {
+        "precision": 0.8378959067282787,
+        "recall": 0.6765289554392928,
+        "map50": 0.7793838268858502,
+        "map50_95": 0.5557833943314746,
+        "validator_speed_ms_batch8": {
+          "preprocess": 0.08141087371478758,
+          "inference": 2.4463483285875363,
+          "loss": 0.00042155376089197776,
+          "postprocess": 0.7005894948366232
+        },
+        "validator_latency_ms_per_frame_batch8": 3.228348697138947,
+        "parameters_m": 9.553338,
+        "flops_g": 9.147934848,
+        "evaluation_protocol": {
+          "imgsz": 416,
+          "batch": 8,
+          "half": false,
+          "workers": 0,
+          "split": "val",
+          "data_yaml": "dataset/data.yaml"
+        }
+      },
+      "selected_epoch": 6,
+      "checkpoint": "runs/optimization/screening-yolov13s-low_sgd_cosine-seed42-6epochs/weights/epoch5.pt"
+    },
+    {
+      "configuration": "adamw_cosine",
+      "validation": {
+        "precision": 0.79816,
+        "recall": 0.61708,
+        "map50": 0.71902,
+        "map50_95": 0.49534
+      },
+      "validation_fp32": {
+        "precision": 0.7957383156473407,
+        "recall": 0.6198809309038427,
+        "map50": 0.7196610057021543,
+        "map50_95": 0.4955243267145894,
+        "validator_speed_ms_batch8": {
+          "preprocess": 0.08285467034689033,
+          "inference": 2.4210706737100045,
+          "loss": 0.0005131213517871855,
+          "postprocess": 0.6696129359479004
+        },
+        "validator_latency_ms_per_frame_batch8": 3.173538280004795,
+        "parameters_m": 9.553338,
+        "flops_g": 9.147934848,
+        "evaluation_protocol": {
+          "imgsz": 416,
+          "batch": 8,
+          "half": false,
+          "workers": 0,
+          "split": "val",
+          "data_yaml": "dataset/data.yaml"
+        }
+      },
+      "selected_epoch": 6,
+      "checkpoint": "runs/optimization/screening-yolov13s-adamw_cosine-seed42-6epochs/weights/epoch5.pt"
+    },
+    {
+      "configuration": "adamw_domain_loss_aug",
+      "validation": {
+        "precision": 0.80891,
+        "recall": 0.61501,
+        "map50": 0.72126,
+        "map50_95": 0.47754
+      },
+      "validation_fp32": {
+        "precision": 0.8090311603911873,
+        "recall": 0.6137470683745264,
+        "map50": 0.7210251836669466,
+        "map50_95": 0.47762604460283953,
+        "validator_speed_ms_batch8": {
+          "preprocess": 0.09520343851371751,
+          "inference": 3.856371947574787,
+          "loss": 0.001188807318923429,
+          "postprocess": 1.1140737367861995
+        },
+        "validator_latency_ms_per_frame_batch8": 5.065649122874704,
+        "parameters_m": 9.553338,
+        "flops_g": 9.147934848,
+        "evaluation_protocol": {
+          "imgsz": 416,
+          "batch": 8,
+          "half": false,
+          "workers": 0,
+          "split": "val",
+          "data_yaml": "dataset/data.yaml"
+        }
+      },
+      "selected_epoch": 6,
+      "checkpoint": "runs/optimization/screening-yolov13s-adamw_domain_loss_aug-seed42-6epochs/weights/epoch5.pt"
+    }
+  ],
+  "test_metrics_seen_before_lock": false,
+  "test_access_statement_scope": "New optimization-candidate test metrics only; prior fullscale study already examined this test split."
+}

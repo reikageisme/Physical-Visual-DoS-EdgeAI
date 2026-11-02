@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-17T07:18:03+00:00",
+  "verification_source_sha256": "e4c6690a8e93f7043c09ef6cccf21753b4167de22100b7eb80054f503a9ec62a",
+  "measurement": {
+    "protocol_id": "actual-batch1-txt-loader-v2",
+    "benchmark_source_sha256": "7654d473dc076ba3b438d479d5a8265949a900b34ab9944eeff576b57b334b51",
+    "checkpoint_sha256": "cf0fe62e2ef520a63c1e3d380f5771b7ac701b97d07f11a28c314e68618ba072",
+    "latency_median_ms_per_frame": 1012.3026371002197,
+    "fps_from_median_latency": 0.9878468783451348,
+    "stage_median_ms_per_frame": {
+      "preprocess": 66.4055347442627,
+      "inference": 67.66271591186523,
+      "postprocess": 878.2343864440918
+    },
+    "latency_p95_ms_per_frame": 1012.3026371002197,
+    "warmup_frames": 0,
+    "measured_frames": 1,
+    "imgsz": 416,
+    "batch": 1,
+    "actual_batch_size": 1,
+    "actual_prediction_batches": 1,
+    "network_forward_batch_size_counts": {
+      "1": 2
+    },
+    "network_forward_count_includes_backend_warmup": true,
+    "loader": {
+      "class_name": "LoadImagesAndVideos",
+      "actual_batch_size": 1,
+      "source_type": "project-local text file",
+      "sample_order": "probe sample",
+      "source_file": "results/optimization/latency_sources/sample-0-1.txt",
+      "source_file_sha256": "65533c8d34d0d6c612d33e80ab70e043a025d13f585f1157e239fc909cf8ba35"
+    },
+    "per_frame_total_ms": [
+      1012.3026371002197
+    ],
+    "unique_measured_total_times": 1,
+    "timing_precision": "fp32",
+    "timing_scope": "Ultralytics preprocessing + inference + postprocessing; excludes decode/I/O",
+    "sample_seed": 2026,
+    "measured_at_utc": "2026-10-17T07:18:03+00:00"
+  },
+  "interpretation": "One prediction image, one actual prediction batch; forward pre-hook verifies every network input batch size1. Network-forward count additionally includes AutoBackend warmup."
+}

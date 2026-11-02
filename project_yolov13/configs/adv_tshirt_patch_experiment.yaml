@@ -1,0 +1,39 @@
+# Supplementary physical adversarial-patch benchmark. All model families use
+# the same derived, fixed split and optimization/augmentation settings.
+data_yaml: dataset/adv_tshirt_patch_detection.yaml
+run_prefix: advpatch-
+scale: n
+pretrained: true
+epochs: 50
+imgsz: 416
+batch: 4
+workers: 0
+device: auto
+seed: 42
+patience: 10
+optimizer: SGD
+lr0: 0.01
+lrf: 0.01
+momentum: 0.937
+weight_decay: 0.0005
+warmup_epochs: 2.0
+close_mosaic: 5
+save_period: -1
+amp: true
+# Identical augmentations are used for every family and scale.
+augment:
+  hsv_h: 0.015
+  hsv_s: 0.7
+  hsv_v: 0.4
+  degrees: 0.0
+  translate: 0.1
+  scale: 0.5
+  shear: 0.0
+  perspective: 0.0
+  fliplr: 0.5
+  flipud: 0.0
+  mosaic: 1.0
+  mixup: 0.0
+  copy_paste: 0.0
+  auto_augment: null
+  erasing: 0.0

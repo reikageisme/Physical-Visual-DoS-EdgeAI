@@ -1,0 +1,88 @@
+{
+  "status": "complete",
+  "started_at_utc": "2026-10-17T09:24:30+00:00",
+  "phase": "complete",
+  "jobs": [
+    {
+      "stage": "screening",
+      "configuration": "original_sgd",
+      "seed": 42,
+      "status": "complete"
+    },
+    {
+      "stage": "screening",
+      "configuration": "adamw_transfer_restored",
+      "seed": 42,
+      "status": "complete"
+    },
+    {
+      "stage": "screening",
+      "configuration": "transfer_tiny_lr",
+      "seed": 42,
+      "status": "complete"
+    },
+    {
+      "stage": "screening",
+      "configuration": "low_sgd_cosine",
+      "seed": 42,
+      "status": "complete"
+    },
+    {
+      "stage": "screening",
+      "configuration": "adamw_cosine",
+      "seed": 42,
+      "status": "complete"
+    },
+    {
+      "stage": "screening",
+      "configuration": "adamw_domain_loss_aug",
+      "seed": 42,
+      "status": "complete"
+    },
+    {
+      "stage": "confirmation",
+      "configuration": "original_sgd",
+      "seed": 100,
+      "status": "complete",
+      "training_origin": "historical_deterministic_prefix"
+    },
+    {
+      "stage": "confirmation",
+      "configuration": "transfer_tiny_lr",
+      "seed": 100,
+      "status": "complete",
+      "training_origin": "fresh"
+    },
+    {
+      "stage": "confirmation",
+      "configuration": "original_sgd",
+      "seed": 2026,
+      "status": "complete",
+      "training_origin": "historical_deterministic_prefix"
+    },
+    {
+      "stage": "confirmation",
+      "configuration": "transfer_tiny_lr",
+      "seed": 2026,
+      "status": "complete",
+      "training_origin": "fresh"
+    },
+    {
+      "stage": "confirmation",
+      "configuration": "original_sgd",
+      "seed": 777,
+      "status": "complete",
+      "training_origin": "historical_deterministic_prefix"
+    },
+    {
+      "stage": "confirmation",
+      "configuration": "transfer_tiny_lr",
+      "seed": 777,
+      "status": "complete",
+      "training_origin": "fresh"
+    }
+  ],
+  "current_configuration": "transfer_tiny_lr",
+  "current_seed": 777,
+  "finished_at_utc": "2026-10-17T09:32:24+00:00"
+}

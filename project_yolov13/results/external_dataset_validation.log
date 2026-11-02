@@ -1,0 +1,1 @@
+(WindowsPath('E:/HUTECH/NCKH-new/Physical-Visual-DoS-EdgeAI-main/project_yolov13/data/adv_tshirt_person_eval.yaml'), {'path': 'E:/HUTECH/NCKH-new/Physical-Visual-DoS-EdgeAI-main/project_yolov13/data/external/adv_tshirt_person_eval', 'train': 'images/test', 'val': 'images/test', 'test': 'images/test', 'names': {0: 'person'}})

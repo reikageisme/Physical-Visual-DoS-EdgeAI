@@ -1,0 +1,126 @@
+{
+  "status": "complete",
+  "device": "CPU",
+  "initial_checkpoint": "runs/optimization/screening-yolov13s-adamw_transfer_restored-seed42-6epochs/weights/initial-restored-person.pt",
+  "initial_checkpoint_sha256": "36427163a677e9f55368ac36bd534aa59589c1d7f9075c01ea9d1da51a8cb320",
+  "trained_checkpoint": "runs\\optimization\\screening-yolov13s-adamw_transfer_restored-seed42-6epochs\\weights\\epoch0.pt",
+  "trained_checkpoint_sha256": "f3c7c5dd304f02ce2ea781c74ba716fb37eece935cddcbfd76f70ecf9e96d7ae",
+  "groups": {
+    "bn_running_buffers": {
+      "tensor_count": 278,
+      "numel": 54336,
+      "pooled_initial_l2": 15.390968665680342,
+      "pooled_delta_l2": 5.101428487883601,
+      "pooled_relative_l2": 0.33145597257039816,
+      "median_per_tensor_relative_l2": 0.2465578471439822
+    },
+    "other_float_tensors": {
+      "tensor_count": 481,
+      "numel": 9024954,
+      "pooled_initial_l2": 210.34537414774746,
+      "pooled_delta_l2": 4.951833380646193,
+      "pooled_relative_l2": 0.02354144178691567,
+      "median_per_tensor_relative_l2": 0.020359608113197227
+    }
+  },
+  "largest_bn_relative_drift": [
+    {
+      "key": "model.30.m.0.cv2.bn.running_var",
+      "group": "bn_running_buffers",
+      "initial_l2": 0.002384958090260625,
+      "delta_l2": 0.023711297661066055,
+      "relative_l2": 9.942018586362211,
+      "numel": 256
+    },
+    {
+      "key": "model.30.m.0.cv3.bn.running_var",
+      "group": "bn_running_buffers",
+      "initial_l2": 0.03487483039498329,
+      "delta_l2": 0.19051648676395416,
+      "relative_l2": 5.462864897297386,
+      "numel": 256
+    },
+    {
+      "key": "model.8.m.1.1.mlp.1.bn.running_var",
+      "group": "bn_running_buffers",
+      "initial_l2": 0.09063714742660522,
+      "delta_l2": 0.42656219005584717,
+      "relative_l2": 4.706262301571905,
+      "numel": 256
+    },
+    {
+      "key": "model.30.m.0.cv2.bn.running_mean",
+      "group": "bn_running_buffers",
+      "initial_l2": 0.02215409278869629,
+      "delta_l2": 0.08925621956586838,
+      "relative_l2": 4.0288817247984845,
+      "numel": 256
+    },
+    {
+      "key": "model.8.m.0.1.mlp.1.bn.running_var",
+      "group": "bn_running_buffers",
+      "initial_l2": 0.2015666365623474,
+      "delta_l2": 0.654318630695343,
+      "relative_l2": 3.246165346877498,
+      "numel": 256
+    },
+    {
+      "key": "model.8.m.0.0.mlp.1.bn.running_var",
+      "group": "bn_running_buffers",
+      "initial_l2": 0.17507295310497284,
+      "delta_l2": 0.47423601150512695,
+      "relative_l2": 2.7087908388726243,
+      "numel": 256
+    },
+    {
+      "key": "model.32.cv2.2.0.bn.running_var",
+      "group": "bn_running_buffers",
+      "initial_l2": 0.4690797030925751,
+      "delta_l2": 1.0984760522842407,
+      "relative_l2": 2.341768456495018,
+      "numel": 64
+    },
+    {
+      "key": "model.30.cv2.bn.running_var",
+      "group": "bn_running_buffers",
+      "initial_l2": 0.08711154013872147,
+      "delta_l2": 0.1890384554862976,
+      "relative_l2": 2.1700736226826183,
+      "numel": 512
+    },
+    {
+      "key": "model.8.m.1.0.mlp.1.bn.running_var",
+      "group": "bn_running_buffers",
+      "initial_l2": 0.08381015807390213,
+      "delta_l2": 0.15068675577640533,
+      "relative_l2": 1.7979533655518554,
+      "numel": 256
+    },
+    {
+      "key": "model.30.m.0.cv3.bn.running_mean",
+      "group": "bn_running_buffers",
+      "initial_l2": 0.3163352310657501,
+      "delta_l2": 0.4990580379962921,
+      "relative_l2": 1.577623953914141,
+      "numel": 256
+    },
+    {
+      "key": "model.30.cv2.bn.running_mean",
+      "group": "bn_running_buffers",
+      "initial_l2": 0.2601415514945984,
+      "delta_l2": 0.405116468667984,
+      "relative_l2": 1.55729242921962,
+      "numel": 512
+    },
+    {
+      "key": "model.8.m.1.1.attn.proj.bn.running_mean",
+      "group": "bn_running_buffers",
+      "initial_l2": 0.2717258036136627,
+      "delta_l2": 0.3606652021408081,
+      "relative_l2": 1.3273130388956311,
+      "numel": 256
+    }
+  ],
+  "interpretation": "Tensor drift is descriptive; does not demonstrate BN-buffer causality without matched protocol evaluation.",
+  "audited_at_utc": "2026-10-13T12:45:32+00:00"
+}

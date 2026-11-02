@@ -1,0 +1,1132 @@
+{
+  "protocol": "PyTorch FP32, Ultralytics predict, batch 1, synthetic all-zero RGB input; 5 warmups and 30 timed iterations; GPU synchronized around each timed call. Inference-only diagnostic, not a dataset benchmark.",
+  "python": "3.14.7",
+  "torch": "2.11.0+cu128",
+  "cuda_runtime": "12.8",
+  "cpu_threads": 8,
+  "device": "NVIDIA GeForce RTX 5060",
+  "results": [
+    {
+      "model": "YOLOv13n",
+      "scale": "n",
+      "device": "CPU",
+      "runtime": "PyTorch FP32 / Ultralytics predict",
+      "imgsz": 640,
+      "batch": 1,
+      "params_m": 2.4942,
+      "flops_g": 6.5464,
+      "warmup_iterations": 5,
+      "timed_iterations": 30,
+      "synthetic_input": "zero-valued 640x640 RGB image; inference-only diagnostic",
+      "latency_median_ms": 71.342,
+      "latency_mean_ms": 70.202,
+      "latency_p90_ms": 75.606,
+      "fps_from_median": 14.02,
+      "measured_at_utc": "2026-10-04T05:45:43+00:00"
+    },
+    {
+      "model": "YOLOv13n",
+      "scale": "n",
+      "device": "GPU (NVIDIA GeForce RTX 5060)",
+      "runtime": "PyTorch FP32 / Ultralytics predict",
+      "imgsz": 640,
+      "batch": 1,
+      "params_m": 2.4942,
+      "flops_g": 6.5464,
+      "warmup_iterations": 5,
+      "timed_iterations": 30,
+      "synthetic_input": "zero-valued 640x640 RGB image; inference-only diagnostic",
+      "latency_median_ms": 14.367,
+      "latency_mean_ms": 15.048,
+      "latency_p90_ms": 17.991,
+      "fps_from_median": 69.6,
+      "measured_at_utc": "2026-10-04T05:45:43+00:00"
+    },
+    {
+      "model": "YOLOv13s",
+      "scale": "s",
+      "device": "CPU",
+      "runtime": "PyTorch FP32 / Ultralytics predict",
+      "imgsz": 640,
+      "batch": 1,
+      "params_m": 9.0555,
+      "flops_g": 21.173,
+      "warmup_iterations": 5,
+      "timed_iterations": 30,
+      "synthetic_input": "zero-valued 640x640 RGB image; inference-only diagnostic",
+      "latency_median_ms": 129.064,
+      "latency_mean_ms": 129.231,
+      "latency_p90_ms": 146.083,
+      "fps_from_median": 7.75,
+      "measured_at_utc": "2026-10-04T05:45:43+00:00"
+    },
+    {
+      "model": "YOLOv13s",
+      "scale": "s",
+      "device": "GPU (NVIDIA GeForce RTX 5060)",
+      "runtime": "PyTorch FP32 / Ultralytics predict",
+      "imgsz": 640,
+      "batch": 1,
+      "params_m": 9.0555,
+      "flops_g": 21.173,
+      "warmup_iterations": 5,
+      "timed_iterations": 30,
+      "synthetic_input": "zero-valued 640x640 RGB image; inference-only diagnostic",
+      "latency_median_ms": 13.263,
+      "latency_mean_ms": 13.689,
+      "latency_p90_ms": 14.873,
+      "fps_from_median": 75.4,
+      "measured_at_utc": "2026-10-04T05:45:43+00:00"
+    },
+    {
+      "model": "YOLOv13l",
+      "scale": "l",
+      "device": "CPU",
+      "runtime": "PyTorch FP32 / Ultralytics predict",
+      "imgsz": 640,
+      "batch": 1,
+      "params_m": 27.6278,
+      "flops_g": 89.3604,
+      "warmup_iterations": 5,
+      "timed_iterations": 30,
+      "synthetic_input": "zero-valued 640x640 RGB image; inference-only diagnostic",
+      "latency_median_ms": 433.127,
+      "latency_mean_ms": 435.498,
+      "latency_p90_ms": 490.562,
+      "fps_from_median": 2.31,
+      "measured_at_utc": "2026-10-04T05:45:43+00:00"
+    },
+    {
+      "model": "YOLOv13l",
+      "scale": "l",
+      "device": "GPU (NVIDIA GeForce RTX 5060)",
+      "runtime": "PyTorch FP32 / Ultralytics predict",
+      "imgsz": 640,
+      "batch": 1,
+      "params_m": 27.6278,
+      "flops_g": 89.3604,
+      "warmup_iterations": 5,
+      "timed_iterations": 30,
+      "synthetic_input": "zero-valued 640x640 RGB image; inference-only diagnostic",
+      "latency_median_ms": 25.352,
+      "latency_mean_ms": 25.906,
+      "latency_p90_ms": 28.508,
+      "fps_from_median": 39.44,
+      "measured_at_utc": "2026-10-04T05:45:43+00:00"
+    },
+    {
+      "model": "YOLOv13x",
+      "scale": "x",
+      "device": "CPU",
+      "runtime": "PyTorch FP32 / Ultralytics predict",
+      "imgsz": 640,
+      "batch": 1,
+      "params_m": 64.0575,
+      "flops_g": 200.6534,
+      "warmup_iterations": 5,
+      "timed_iterations": 30,
+      "synthetic_input": "zero-valued 640x640 RGB image; inference-only diagnostic",
+      "latency_median_ms": 834.074,
+      "latency_mean_ms": 822.896,
+      "latency_p90_ms": 911.777,
+      "fps_from_median": 1.2,
+      "measured_at_utc": "2026-10-04T05:45:43+00:00"
+    },
+    {
+      "model": "YOLOv13x",
+      "scale": "x",
+      "device": "GPU (NVIDIA GeForce RTX 5060)",
+      "runtime": "PyTorch FP32 / Ultralytics predict",
+      "imgsz": 640,
+      "batch": 1,
+      "params_m": 64.0575,
+      "flops_g": 200.6534,
+      "warmup_iterations": 5,
+      "timed_iterations": 30,
+      "synthetic_input": "zero-valued 640x640 RGB image; inference-only diagnostic",
+      "latency_median_ms": 40.621,
+      "latency_mean_ms": 41.145,
+      "latency_p90_ms": 43.898,
+      "fps_from_median": 24.62,
+      "measured_at_utc": "2026-10-04T05:45:43+00:00"
+    }
+  ],
+  "latency_samples": {
+    "YOLOv13n:CPU": [
+      {
+        "iteration": 1,
+        "latency_ms": 73.38
+      },
+      {
+        "iteration": 2,
+        "latency_ms": 76.676
+      },
+      {
+        "iteration": 3,
+        "latency_ms": 75.488
+      },
+      {
+        "iteration": 4,
+        "latency_ms": 71.924
+      },
+      {
+        "iteration": 5,
+        "latency_ms": 62.36
+      },
+      {
+        "iteration": 6,
+        "latency_ms": 70.691
+      },
+      {
+        "iteration": 7,
+        "latency_ms": 74.257
+      },
+      {
+        "iteration": 8,
+        "latency_ms": 64.755
+      },
+      {
+        "iteration": 9,
+        "latency_ms": 60.968
+      },
+      {
+        "iteration": 10,
+        "latency_ms": 71.471
+      },
+      {
+        "iteration": 11,
+        "latency_ms": 75.181
+      },
+      {
+        "iteration": 12,
+        "latency_ms": 76.885
+      },
+      {
+        "iteration": 13,
+        "latency_ms": 73.54
+      },
+      {
+        "iteration": 14,
+        "latency_ms": 65.815
+      },
+      {
+        "iteration": 15,
+        "latency_ms": 63.418
+      },
+      {
+        "iteration": 16,
+        "latency_ms": 79.15
+      },
+      {
+        "iteration": 17,
+        "latency_ms": 69.891
+      },
+      {
+        "iteration": 18,
+        "latency_ms": 72.089
+      },
+      {
+        "iteration": 19,
+        "latency_ms": 61.931
+      },
+      {
+        "iteration": 20,
+        "latency_ms": 67.441
+      },
+      {
+        "iteration": 21,
+        "latency_ms": 62.552
+      },
+      {
+        "iteration": 22,
+        "latency_ms": 71.212
+      },
+      {
+        "iteration": 23,
+        "latency_ms": 72.394
+      },
+      {
+        "iteration": 24,
+        "latency_ms": 74.973
+      },
+      {
+        "iteration": 25,
+        "latency_ms": 75.48
+      },
+      {
+        "iteration": 26,
+        "latency_ms": 68.147
+      },
+      {
+        "iteration": 27,
+        "latency_ms": 65.902
+      },
+      {
+        "iteration": 28,
+        "latency_ms": 68.892
+      },
+      {
+        "iteration": 29,
+        "latency_ms": 71.708
+      },
+      {
+        "iteration": 30,
+        "latency_ms": 67.492
+      }
+    ],
+    "YOLOv13n:GPU (NVIDIA GeForce RTX 5060)": [
+      {
+        "iteration": 1,
+        "latency_ms": 15.043
+      },
+      {
+        "iteration": 2,
+        "latency_ms": 14.41
+      },
+      {
+        "iteration": 3,
+        "latency_ms": 17.686
+      },
+      {
+        "iteration": 4,
+        "latency_ms": 14.534
+      },
+      {
+        "iteration": 5,
+        "latency_ms": 14.453
+      },
+      {
+        "iteration": 6,
+        "latency_ms": 13.788
+      },
+      {
+        "iteration": 7,
+        "latency_ms": 15.259
+      },
+      {
+        "iteration": 8,
+        "latency_ms": 20.332
+      },
+      {
+        "iteration": 9,
+        "latency_ms": 13.848
+      },
+      {
+        "iteration": 10,
+        "latency_ms": 14.119
+      },
+      {
+        "iteration": 11,
+        "latency_ms": 16.431
+      },
+      {
+        "iteration": 12,
+        "latency_ms": 14.209
+      },
+      {
+        "iteration": 13,
+        "latency_ms": 13.667
+      },
+      {
+        "iteration": 14,
+        "latency_ms": 13.46
+      },
+      {
+        "iteration": 15,
+        "latency_ms": 18.509
+      },
+      {
+        "iteration": 16,
+        "latency_ms": 13.919
+      },
+      {
+        "iteration": 17,
+        "latency_ms": 13.737
+      },
+      {
+        "iteration": 18,
+        "latency_ms": 13.987
+      },
+      {
+        "iteration": 19,
+        "latency_ms": 14.486
+      },
+      {
+        "iteration": 20,
+        "latency_ms": 13.809
+      },
+      {
+        "iteration": 21,
+        "latency_ms": 15.345
+      },
+      {
+        "iteration": 22,
+        "latency_ms": 17.934
+      },
+      {
+        "iteration": 23,
+        "latency_ms": 14.469
+      },
+      {
+        "iteration": 24,
+        "latency_ms": 14.325
+      },
+      {
+        "iteration": 25,
+        "latency_ms": 21.717
+      },
+      {
+        "iteration": 26,
+        "latency_ms": 13.561
+      },
+      {
+        "iteration": 27,
+        "latency_ms": 13.126
+      },
+      {
+        "iteration": 28,
+        "latency_ms": 13.254
+      },
+      {
+        "iteration": 29,
+        "latency_ms": 13.271
+      },
+      {
+        "iteration": 30,
+        "latency_ms": 14.758
+      }
+    ],
+    "YOLOv13s:CPU": [
+      {
+        "iteration": 1,
+        "latency_ms": 133.525
+      },
+      {
+        "iteration": 2,
+        "latency_ms": 139.98
+      },
+      {
+        "iteration": 3,
+        "latency_ms": 127.877
+      },
+      {
+        "iteration": 4,
+        "latency_ms": 125.565
+      },
+      {
+        "iteration": 5,
+        "latency_ms": 125.873
+      },
+      {
+        "iteration": 6,
+        "latency_ms": 122.508
+      },
+      {
+        "iteration": 7,
+        "latency_ms": 121.808
+      },
+      {
+        "iteration": 8,
+        "latency_ms": 128.462
+      },
+      {
+        "iteration": 9,
+        "latency_ms": 120.346
+      },
+      {
+        "iteration": 10,
+        "latency_ms": 102.354
+      },
+      {
+        "iteration": 11,
+        "latency_ms": 111.882
+      },
+      {
+        "iteration": 12,
+        "latency_ms": 113.779
+      },
+      {
+        "iteration": 13,
+        "latency_ms": 134.88
+      },
+      {
+        "iteration": 14,
+        "latency_ms": 139.411
+      },
+      {
+        "iteration": 15,
+        "latency_ms": 136.754
+      },
+      {
+        "iteration": 16,
+        "latency_ms": 136.254
+      },
+      {
+        "iteration": 17,
+        "latency_ms": 135.794
+      },
+      {
+        "iteration": 18,
+        "latency_ms": 145.89
+      },
+      {
+        "iteration": 19,
+        "latency_ms": 132.161
+      },
+      {
+        "iteration": 20,
+        "latency_ms": 124.929
+      },
+      {
+        "iteration": 21,
+        "latency_ms": 118.639
+      },
+      {
+        "iteration": 22,
+        "latency_ms": 129.667
+      },
+      {
+        "iteration": 23,
+        "latency_ms": 104.591
+      },
+      {
+        "iteration": 24,
+        "latency_ms": 134.753
+      },
+      {
+        "iteration": 25,
+        "latency_ms": 141.242
+      },
+      {
+        "iteration": 26,
+        "latency_ms": 152.288
+      },
+      {
+        "iteration": 27,
+        "latency_ms": 148.241
+      },
+      {
+        "iteration": 28,
+        "latency_ms": 147.821
+      },
+      {
+        "iteration": 29,
+        "latency_ms": 123.572
+      },
+      {
+        "iteration": 30,
+        "latency_ms": 116.093
+      }
+    ],
+    "YOLOv13s:GPU (NVIDIA GeForce RTX 5060)": [
+      {
+        "iteration": 1,
+        "latency_ms": 12.923
+      },
+      {
+        "iteration": 2,
+        "latency_ms": 12.921
+      },
+      {
+        "iteration": 3,
+        "latency_ms": 13.804
+      },
+      {
+        "iteration": 4,
+        "latency_ms": 13.273
+      },
+      {
+        "iteration": 5,
+        "latency_ms": 13.24
+      },
+      {
+        "iteration": 6,
+        "latency_ms": 13.077
+      },
+      {
+        "iteration": 7,
+        "latency_ms": 14.04
+      },
+      {
+        "iteration": 8,
+        "latency_ms": 15.608
+      },
+      {
+        "iteration": 9,
+        "latency_ms": 14.404
+      },
+      {
+        "iteration": 10,
+        "latency_ms": 12.854
+      },
+      {
+        "iteration": 11,
+        "latency_ms": 11.96
+      },
+      {
+        "iteration": 12,
+        "latency_ms": 14.41
+      },
+      {
+        "iteration": 13,
+        "latency_ms": 13.748
+      },
+      {
+        "iteration": 14,
+        "latency_ms": 14.84
+      },
+      {
+        "iteration": 15,
+        "latency_ms": 13.086
+      },
+      {
+        "iteration": 16,
+        "latency_ms": 12.987
+      },
+      {
+        "iteration": 17,
+        "latency_ms": 13.574
+      },
+      {
+        "iteration": 18,
+        "latency_ms": 14.278
+      },
+      {
+        "iteration": 19,
+        "latency_ms": 14.037
+      },
+      {
+        "iteration": 20,
+        "latency_ms": 18.03
+      },
+      {
+        "iteration": 21,
+        "latency_ms": 15.165
+      },
+      {
+        "iteration": 22,
+        "latency_ms": 13.253
+      },
+      {
+        "iteration": 23,
+        "latency_ms": 13.005
+      },
+      {
+        "iteration": 24,
+        "latency_ms": 14.437
+      },
+      {
+        "iteration": 25,
+        "latency_ms": 12.844
+      },
+      {
+        "iteration": 26,
+        "latency_ms": 13.539
+      },
+      {
+        "iteration": 27,
+        "latency_ms": 12.927
+      },
+      {
+        "iteration": 28,
+        "latency_ms": 12.597
+      },
+      {
+        "iteration": 29,
+        "latency_ms": 13.183
+      },
+      {
+        "iteration": 30,
+        "latency_ms": 12.62
+      }
+    ],
+    "YOLOv13l:CPU": [
+      {
+        "iteration": 1,
+        "latency_ms": 490.271
+      },
+      {
+        "iteration": 2,
+        "latency_ms": 496.113
+      },
+      {
+        "iteration": 3,
+        "latency_ms": 505.489
+      },
+      {
+        "iteration": 4,
+        "latency_ms": 479.651
+      },
+      {
+        "iteration": 5,
+        "latency_ms": 478.573
+      },
+      {
+        "iteration": 6,
+        "latency_ms": 493.183
+      },
+      {
+        "iteration": 7,
+        "latency_ms": 476.833
+      },
+      {
+        "iteration": 8,
+        "latency_ms": 466.869
+      },
+      {
+        "iteration": 9,
+        "latency_ms": 464.895
+      },
+      {
+        "iteration": 10,
+        "latency_ms": 450.306
+      },
+      {
+        "iteration": 11,
+        "latency_ms": 428.833
+      },
+      {
+        "iteration": 12,
+        "latency_ms": 449.075
+      },
+      {
+        "iteration": 13,
+        "latency_ms": 423.859
+      },
+      {
+        "iteration": 14,
+        "latency_ms": 407.509
+      },
+      {
+        "iteration": 15,
+        "latency_ms": 434.083
+      },
+      {
+        "iteration": 16,
+        "latency_ms": 414.746
+      },
+      {
+        "iteration": 17,
+        "latency_ms": 385.62
+      },
+      {
+        "iteration": 18,
+        "latency_ms": 396.962
+      },
+      {
+        "iteration": 19,
+        "latency_ms": 421.012
+      },
+      {
+        "iteration": 20,
+        "latency_ms": 396.263
+      },
+      {
+        "iteration": 21,
+        "latency_ms": 378.486
+      },
+      {
+        "iteration": 22,
+        "latency_ms": 393.819
+      },
+      {
+        "iteration": 23,
+        "latency_ms": 416.668
+      },
+      {
+        "iteration": 24,
+        "latency_ms": 434.47
+      },
+      {
+        "iteration": 25,
+        "latency_ms": 432.198
+      },
+      {
+        "iteration": 26,
+        "latency_ms": 441.443
+      },
+      {
+        "iteration": 27,
+        "latency_ms": 389.291
+      },
+      {
+        "iteration": 28,
+        "latency_ms": 434.055
+      },
+      {
+        "iteration": 29,
+        "latency_ms": 410.639
+      },
+      {
+        "iteration": 30,
+        "latency_ms": 373.739
+      }
+    ],
+    "YOLOv13l:GPU (NVIDIA GeForce RTX 5060)": [
+      {
+        "iteration": 1,
+        "latency_ms": 25.259
+      },
+      {
+        "iteration": 2,
+        "latency_ms": 29.062
+      },
+      {
+        "iteration": 3,
+        "latency_ms": 28.059
+      },
+      {
+        "iteration": 4,
+        "latency_ms": 25.367
+      },
+      {
+        "iteration": 5,
+        "latency_ms": 25.359
+      },
+      {
+        "iteration": 6,
+        "latency_ms": 25.262
+      },
+      {
+        "iteration": 7,
+        "latency_ms": 25.345
+      },
+      {
+        "iteration": 8,
+        "latency_ms": 24.73
+      },
+      {
+        "iteration": 9,
+        "latency_ms": 25.261
+      },
+      {
+        "iteration": 10,
+        "latency_ms": 25.368
+      },
+      {
+        "iteration": 11,
+        "latency_ms": 28.539
+      },
+      {
+        "iteration": 12,
+        "latency_ms": 24.889
+      },
+      {
+        "iteration": 13,
+        "latency_ms": 24.672
+      },
+      {
+        "iteration": 14,
+        "latency_ms": 25.248
+      },
+      {
+        "iteration": 15,
+        "latency_ms": 25.38
+      },
+      {
+        "iteration": 16,
+        "latency_ms": 24.947
+      },
+      {
+        "iteration": 17,
+        "latency_ms": 25.399
+      },
+      {
+        "iteration": 18,
+        "latency_ms": 25.241
+      },
+      {
+        "iteration": 19,
+        "latency_ms": 25.154
+      },
+      {
+        "iteration": 20,
+        "latency_ms": 25.225
+      },
+      {
+        "iteration": 21,
+        "latency_ms": 24.645
+      },
+      {
+        "iteration": 22,
+        "latency_ms": 25.512
+      },
+      {
+        "iteration": 23,
+        "latency_ms": 27.647
+      },
+      {
+        "iteration": 24,
+        "latency_ms": 27.247
+      },
+      {
+        "iteration": 25,
+        "latency_ms": 28.758
+      },
+      {
+        "iteration": 26,
+        "latency_ms": 28.505
+      },
+      {
+        "iteration": 27,
+        "latency_ms": 25.402
+      },
+      {
+        "iteration": 28,
+        "latency_ms": 25.313
+      },
+      {
+        "iteration": 29,
+        "latency_ms": 25.728
+      },
+      {
+        "iteration": 30,
+        "latency_ms": 24.645
+      }
+    ],
+    "YOLOv13x:CPU": [
+      {
+        "iteration": 1,
+        "latency_ms": 847.186
+      },
+      {
+        "iteration": 2,
+        "latency_ms": 796.613
+      },
+      {
+        "iteration": 3,
+        "latency_ms": 690.13
+      },
+      {
+        "iteration": 4,
+        "latency_ms": 699.047
+      },
+      {
+        "iteration": 5,
+        "latency_ms": 730.431
+      },
+      {
+        "iteration": 6,
+        "latency_ms": 779.02
+      },
+      {
+        "iteration": 7,
+        "latency_ms": 748.015
+      },
+      {
+        "iteration": 8,
+        "latency_ms": 719.698
+      },
+      {
+        "iteration": 9,
+        "latency_ms": 761.579
+      },
+      {
+        "iteration": 10,
+        "latency_ms": 688.373
+      },
+      {
+        "iteration": 11,
+        "latency_ms": 710.854
+      },
+      {
+        "iteration": 12,
+        "latency_ms": 734.832
+      },
+      {
+        "iteration": 13,
+        "latency_ms": 771.405
+      },
+      {
+        "iteration": 14,
+        "latency_ms": 881.205
+      },
+      {
+        "iteration": 15,
+        "latency_ms": 876.711
+      },
+      {
+        "iteration": 16,
+        "latency_ms": 837.091
+      },
+      {
+        "iteration": 17,
+        "latency_ms": 949.839
+      },
+      {
+        "iteration": 18,
+        "latency_ms": 878.359
+      },
+      {
+        "iteration": 19,
+        "latency_ms": 908.107
+      },
+      {
+        "iteration": 20,
+        "latency_ms": 867.917
+      },
+      {
+        "iteration": 21,
+        "latency_ms": 810.342
+      },
+      {
+        "iteration": 22,
+        "latency_ms": 891.611
+      },
+      {
+        "iteration": 23,
+        "latency_ms": 819.961
+      },
+      {
+        "iteration": 24,
+        "latency_ms": 831.058
+      },
+      {
+        "iteration": 25,
+        "latency_ms": 944.81
+      },
+      {
+        "iteration": 26,
+        "latency_ms": 969.709
+      },
+      {
+        "iteration": 27,
+        "latency_ms": 884.852
+      },
+      {
+        "iteration": 28,
+        "latency_ms": 879.753
+      },
+      {
+        "iteration": 29,
+        "latency_ms": 891.329
+      },
+      {
+        "iteration": 30,
+        "latency_ms": 887.054
+      }
+    ],
+    "YOLOv13x:GPU (NVIDIA GeForce RTX 5060)": [
+      {
+        "iteration": 1,
+        "latency_ms": 41.084
+      },
+      {
+        "iteration": 2,
+        "latency_ms": 41.809
+      },
+      {
+        "iteration": 3,
+        "latency_ms": 40.416
+      },
+      {
+        "iteration": 4,
+        "latency_ms": 40.331
+      },
+      {
+        "iteration": 5,
+        "latency_ms": 40.052
+      },
+      {
+        "iteration": 6,
+        "latency_ms": 41.39
+      },
+      {
+        "iteration": 7,
+        "latency_ms": 40.647
+      },
+      {
+        "iteration": 8,
+        "latency_ms": 41.158
+      },
+      {
+        "iteration": 9,
+        "latency_ms": 41.164
+      },
+      {
+        "iteration": 10,
+        "latency_ms": 40.952
+      },
+      {
+        "iteration": 11,
+        "latency_ms": 40.721
+      },
+      {
+        "iteration": 12,
+        "latency_ms": 40.262
+      },
+      {
+        "iteration": 13,
+        "latency_ms": 40.358
+      },
+      {
+        "iteration": 14,
+        "latency_ms": 40.596
+      },
+      {
+        "iteration": 15,
+        "latency_ms": 40.232
+      },
+      {
+        "iteration": 16,
+        "latency_ms": 40.396
+      },
+      {
+        "iteration": 17,
+        "latency_ms": 40.531
+      },
+      {
+        "iteration": 18,
+        "latency_ms": 41.556
+      },
+      {
+        "iteration": 19,
+        "latency_ms": 44.782
+      },
+      {
+        "iteration": 20,
+        "latency_ms": 44.327
+      },
+      {
+        "iteration": 21,
+        "latency_ms": 43.856
+      },
+      {
+        "iteration": 22,
+        "latency_ms": 44.279
+      },
+      {
+        "iteration": 23,
+        "latency_ms": 41.241
+      },
+      {
+        "iteration": 24,
+        "latency_ms": 40.243
+      },
+      {
+        "iteration": 25,
+        "latency_ms": 40.704
+      },
+      {
+        "iteration": 26,
+        "latency_ms": 40.448
+      },
+      {
+        "iteration": 27,
+        "latency_ms": 40.205
+      },
+      {
+        "iteration": 28,
+        "latency_ms": 40.329
+      },
+      {
+        "iteration": 29,
+        "latency_ms": 40.109
+      },
+      {
+        "iteration": 30,
+        "latency_ms": 40.177
+      }
+    ]
+  }
+}

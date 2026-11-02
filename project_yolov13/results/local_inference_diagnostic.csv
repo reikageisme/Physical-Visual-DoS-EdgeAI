@@ -1,0 +1,9 @@
+﻿model,scale,device,runtime,imgsz,batch,params_m,flops_g,warmup_iterations,timed_iterations,synthetic_input,latency_median_ms,latency_mean_ms,latency_p90_ms,fps_from_median,measured_at_utc
+YOLOv13n,n,CPU,PyTorch FP32 / Ultralytics predict,640,1,2.4942,6.5464,5,30,zero-valued 640x640 RGB image; inference-only diagnostic,71.342,70.202,75.606,14.02,2026-10-04T05:45:43+00:00
+YOLOv13n,n,GPU (NVIDIA GeForce RTX 5060),PyTorch FP32 / Ultralytics predict,640,1,2.4942,6.5464,5,30,zero-valued 640x640 RGB image; inference-only diagnostic,14.367,15.048,17.991,69.6,2026-10-04T05:45:43+00:00
+YOLOv13s,s,CPU,PyTorch FP32 / Ultralytics predict,640,1,9.0555,21.173,5,30,zero-valued 640x640 RGB image; inference-only diagnostic,129.064,129.231,146.083,7.75,2026-10-04T05:45:43+00:00
+YOLOv13s,s,GPU (NVIDIA GeForce RTX 5060),PyTorch FP32 / Ultralytics predict,640,1,9.0555,21.173,5,30,zero-valued 640x640 RGB image; inference-only diagnostic,13.263,13.689,14.873,75.4,2026-10-04T05:45:43+00:00
+YOLOv13l,l,CPU,PyTorch FP32 / Ultralytics predict,640,1,27.6278,89.3604,5,30,zero-valued 640x640 RGB image; inference-only diagnostic,433.127,435.498,490.562,2.31,2026-10-04T05:45:43+00:00
+YOLOv13l,l,GPU (NVIDIA GeForce RTX 5060),PyTorch FP32 / Ultralytics predict,640,1,27.6278,89.3604,5,30,zero-valued 640x640 RGB image; inference-only diagnostic,25.352,25.906,28.508,39.44,2026-10-04T05:45:43+00:00
+YOLOv13x,x,CPU,PyTorch FP32 / Ultralytics predict,640,1,64.0575,200.6534,5,30,zero-valued 640x640 RGB image; inference-only diagnostic,834.074,822.896,911.777,1.2,2026-10-04T05:45:43+00:00
+YOLOv13x,x,GPU (NVIDIA GeForce RTX 5060),PyTorch FP32 / Ultralytics predict,640,1,64.0575,200.6534,5,30,zero-valued 640x640 RGB image; inference-only diagnostic,40.621,41.145,43.898,24.62,2026-10-04T05:45:43+00:00

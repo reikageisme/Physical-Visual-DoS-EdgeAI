@@ -1,0 +1,1082 @@
+{
+  "status": "complete",
+  "audited_at_utc": "2026-10-13T12:13:16+00:00",
+  "device": "CPU only",
+  "model_key": "yolov13n",
+  "checkpoint_yaml_hyperedges": [
+    8
+  ],
+  "actual_pretrained_hyperedges": 4,
+  "native_rebuilt_hyperedges": 4,
+  "restored_hyperedges": 4,
+  "native_incompatible_state_tensors": [
+    {
+      "key": "model.32.cv3.0.0.1.conv.weight",
+      "pretrained_shape": [
+        80,
+        64,
+        1,
+        1
+      ],
+      "one_class_shape": [
+        64,
+        64,
+        1,
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.0.1.bn.weight",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.0.1.bn.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.0.1.bn.running_mean",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.0.1.bn.running_var",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.1.0.conv.weight",
+      "pretrained_shape": [
+        80,
+        1,
+        3,
+        3
+      ],
+      "one_class_shape": [
+        64,
+        1,
+        3,
+        3
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.1.0.bn.weight",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.1.0.bn.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.1.0.bn.running_mean",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.1.0.bn.running_var",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.1.1.conv.weight",
+      "pretrained_shape": [
+        80,
+        80,
+        1,
+        1
+      ],
+      "one_class_shape": [
+        64,
+        64,
+        1,
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.1.1.bn.weight",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.1.1.bn.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.1.1.bn.running_mean",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.1.1.bn.running_var",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.2.weight",
+      "pretrained_shape": [
+        80,
+        80,
+        1,
+        1
+      ],
+      "one_class_shape": [
+        1,
+        64,
+        1,
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.2.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.0.1.conv.weight",
+      "pretrained_shape": [
+        80,
+        128,
+        1,
+        1
+      ],
+      "one_class_shape": [
+        64,
+        128,
+        1,
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.0.1.bn.weight",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.0.1.bn.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.0.1.bn.running_mean",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.0.1.bn.running_var",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.1.0.conv.weight",
+      "pretrained_shape": [
+        80,
+        1,
+        3,
+        3
+      ],
+      "one_class_shape": [
+        64,
+        1,
+        3,
+        3
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.1.0.bn.weight",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.1.0.bn.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.1.0.bn.running_mean",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.1.0.bn.running_var",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.1.1.conv.weight",
+      "pretrained_shape": [
+        80,
+        80,
+        1,
+        1
+      ],
+      "one_class_shape": [
+        64,
+        64,
+        1,
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.1.1.bn.weight",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.1.1.bn.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.1.1.bn.running_mean",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.1.1.bn.running_var",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.2.weight",
+      "pretrained_shape": [
+        80,
+        80,
+        1,
+        1
+      ],
+      "one_class_shape": [
+        1,
+        64,
+        1,
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.2.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.0.1.conv.weight",
+      "pretrained_shape": [
+        80,
+        256,
+        1,
+        1
+      ],
+      "one_class_shape": [
+        64,
+        256,
+        1,
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.0.1.bn.weight",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.0.1.bn.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.0.1.bn.running_mean",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.0.1.bn.running_var",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.1.0.conv.weight",
+      "pretrained_shape": [
+        80,
+        1,
+        3,
+        3
+      ],
+      "one_class_shape": [
+        64,
+        1,
+        3,
+        3
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.1.0.bn.weight",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.1.0.bn.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.1.0.bn.running_mean",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.1.0.bn.running_var",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.1.1.conv.weight",
+      "pretrained_shape": [
+        80,
+        80,
+        1,
+        1
+      ],
+      "one_class_shape": [
+        64,
+        64,
+        1,
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.1.1.bn.weight",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.1.1.bn.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.1.1.bn.running_mean",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.1.1.bn.running_var",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.2.weight",
+      "pretrained_shape": [
+        80,
+        80,
+        1,
+        1
+      ],
+      "one_class_shape": [
+        1,
+        64,
+        1,
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.2.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        1
+      ]
+    }
+  ],
+  "restored_incompatible_state_tensors": [
+    {
+      "key": "model.32.cv3.0.0.1.conv.weight",
+      "pretrained_shape": [
+        80,
+        64,
+        1,
+        1
+      ],
+      "one_class_shape": [
+        64,
+        64,
+        1,
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.0.1.bn.weight",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.0.1.bn.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.0.1.bn.running_mean",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.0.1.bn.running_var",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.1.0.conv.weight",
+      "pretrained_shape": [
+        80,
+        1,
+        3,
+        3
+      ],
+      "one_class_shape": [
+        64,
+        1,
+        3,
+        3
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.1.0.bn.weight",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.1.0.bn.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.1.0.bn.running_mean",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.1.0.bn.running_var",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.1.1.conv.weight",
+      "pretrained_shape": [
+        80,
+        80,
+        1,
+        1
+      ],
+      "one_class_shape": [
+        64,
+        64,
+        1,
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.1.1.bn.weight",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.1.1.bn.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.1.1.bn.running_mean",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.1.1.bn.running_var",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.2.weight",
+      "pretrained_shape": [
+        80,
+        80,
+        1,
+        1
+      ],
+      "one_class_shape": [
+        1,
+        64,
+        1,
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.0.2.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.0.1.conv.weight",
+      "pretrained_shape": [
+        80,
+        128,
+        1,
+        1
+      ],
+      "one_class_shape": [
+        64,
+        128,
+        1,
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.0.1.bn.weight",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.0.1.bn.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.0.1.bn.running_mean",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.0.1.bn.running_var",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.1.0.conv.weight",
+      "pretrained_shape": [
+        80,
+        1,
+        3,
+        3
+      ],
+      "one_class_shape": [
+        64,
+        1,
+        3,
+        3
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.1.0.bn.weight",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.1.0.bn.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.1.0.bn.running_mean",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.1.0.bn.running_var",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.1.1.conv.weight",
+      "pretrained_shape": [
+        80,
+        80,
+        1,
+        1
+      ],
+      "one_class_shape": [
+        64,
+        64,
+        1,
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.1.1.bn.weight",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.1.1.bn.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.1.1.bn.running_mean",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.1.1.bn.running_var",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.2.weight",
+      "pretrained_shape": [
+        80,
+        80,
+        1,
+        1
+      ],
+      "one_class_shape": [
+        1,
+        64,
+        1,
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.1.2.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.0.1.conv.weight",
+      "pretrained_shape": [
+        80,
+        256,
+        1,
+        1
+      ],
+      "one_class_shape": [
+        64,
+        256,
+        1,
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.0.1.bn.weight",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.0.1.bn.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.0.1.bn.running_mean",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.0.1.bn.running_var",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.1.0.conv.weight",
+      "pretrained_shape": [
+        80,
+        1,
+        3,
+        3
+      ],
+      "one_class_shape": [
+        64,
+        1,
+        3,
+        3
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.1.0.bn.weight",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.1.0.bn.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.1.0.bn.running_mean",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.1.0.bn.running_var",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.1.1.conv.weight",
+      "pretrained_shape": [
+        80,
+        80,
+        1,
+        1
+      ],
+      "one_class_shape": [
+        64,
+        64,
+        1,
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.1.1.bn.weight",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.1.1.bn.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.1.1.bn.running_mean",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.1.1.bn.running_var",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        64
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.2.weight",
+      "pretrained_shape": [
+        80,
+        80,
+        1,
+        1
+      ],
+      "one_class_shape": [
+        1,
+        64,
+        1,
+        1
+      ]
+    },
+    {
+      "key": "model.32.cv3.2.2.bias",
+      "pretrained_shape": [
+        80
+      ],
+      "one_class_shape": [
+        1
+      ]
+    }
+  ],
+  "person_row_transplant_after_restoring_hyperedges_feasible": false,
+  "native_oneclass_parameters_m": 2.460106,
+  "restored_oneclass_parameters_m": 2.460106,
+  "scope": "CPU tensor-shape audit only; no nano tuning or performance claim"
+}

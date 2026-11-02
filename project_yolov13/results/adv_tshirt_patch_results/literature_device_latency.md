@@ -1,0 +1,18 @@
+# Published YOLOv13 device latency
+
+Paper Table VII reports GPU latency with TensorRT FP16 and CPU latency with ONNX; the CPU used an Intel Xeon Platinum 8352V. FPS is derived as 1000/latency. These are literature values, not measurements on this project hardware.
+
+| Model | Device | Runtime | Latency (ms/image) | Derived FPS | Dataset |
+|---|---|---|---|---|---|
+| YOLOv13-N | Tesla T4 GPU | TensorRT FP16 | 1.97 | 507.6 | MS COCO |
+| YOLOv13-S | Tesla T4 GPU | TensorRT FP16 | 2.98 | 335.6 | MS COCO |
+| YOLOv13-L | Tesla T4 GPU | TensorRT FP16 | 8.63 | 115.9 | MS COCO |
+| YOLOv13-X | Tesla T4 GPU | TensorRT FP16 | 14.67 | 68.2 | MS COCO |
+| YOLOv13-N | RTX 4090 GPU | TensorRT FP16 | 1.25 | 800.0 | MS COCO |
+| YOLOv13-S | RTX 4090 GPU | TensorRT FP16 | 1.27 | 787.4 | MS COCO |
+| YOLOv13-L | RTX 4090 GPU | TensorRT FP16 | 2.36 | 423.7 | MS COCO |
+| YOLOv13-X | RTX 4090 GPU | TensorRT FP16 | 3.10 | 322.6 | MS COCO |
+| YOLOv13-N | Intel Xeon Platinum 8352V CPU | ONNX | 39.97 | 25.0 | MS COCO |
+| YOLOv13-S | Intel Xeon Platinum 8352V CPU | ONNX | 61.12 | 16.4 | MS COCO |
+| YOLOv13-L | Intel Xeon Platinum 8352V CPU | ONNX | 185.36 | 5.4 | MS COCO |
+| YOLOv13-X | Intel Xeon Platinum 8352V CPU | ONNX | 330.12 | 3.0 | MS COCO |

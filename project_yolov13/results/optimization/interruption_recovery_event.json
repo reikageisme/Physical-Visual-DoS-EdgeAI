@@ -1,0 +1,20 @@
+{
+  "status": "frozen_before_replacement_training",
+  "frozen_at_utc": "2026-10-17T04:29:19+00:00",
+  "configuration": "transfer_tiny_lr",
+  "seed": 42,
+  "replacement_run_tag": "recovery20261017",
+  "archived_record": "results/optimization/interrupted_records/transfer_tiny_lr-seed42-attempt1.json",
+  "archived_record_sha256": "b0a971dafd2dff968486b947acf943d7f70e34a26b6a7937e9312ca466a34b8d",
+  "partial_run_directory": "runs/optimization/screening-yolov13s-transfer_tiny_lr-seed42-6epochs",
+  "partial_csv_sha256": "65044db2514efbfaea70840a16b35639563f4196e3ffa00238bfce5afc323143",
+  "last_checkpoint_sha256": "d0e5f33b6d8a1c4282bece5637a48c3aae36ca00238e96968ec464648a0f01c4",
+  "completed_epochs": 2,
+  "partial_epoch": 3,
+  "known_completed_training_seconds": 450.532,
+  "method": "Preserve all original files; fresh rerun same frozen six-epoch recipe from original pretrained weights, identical seed, no tuning based on partial metrics. Native checkpoints do not guarantee exact augmentation/RNG continuation.",
+  "candidate_count_change": 0,
+  "extra_training_attempts": 1,
+  "partial_metrics_used_for_selection": false,
+  "test_seen": false
+}

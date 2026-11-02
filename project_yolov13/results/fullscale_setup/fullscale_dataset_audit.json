@@ -1,0 +1,53 @@
+{
+  "audit_time_utc": "2026-10-11T01:53:52+00:00",
+  "dataset_yaml": "dataset\\fullscale_person\\data.yaml",
+  "dataset_root": "dataset\\fullscale_person",
+  "nc": 1,
+  "names": {
+    "0": "person"
+  },
+  "names_valid": true,
+  "splits": {
+    "train": {
+      "image_dir": "dataset\\fullscale_person\\images\\train",
+      "label_dir": "dataset\\fullscale_person\\labels\\train",
+      "images": 7786,
+      "label_files": 7786,
+      "missing_label_stems": [],
+      "orphan_label_stems": [],
+      "invalid_label_rows": 0,
+      "invalid_examples": [],
+      "instances_by_class": {
+        "0": 25791
+      }
+    },
+    "val": {
+      "image_dir": "dataset\\fullscale_person\\images\\val",
+      "label_dir": "dataset\\fullscale_person\\labels\\val",
+      "images": 1669,
+      "label_files": 1669,
+      "missing_label_stems": [],
+      "orphan_label_stems": [],
+      "invalid_label_rows": 0,
+      "invalid_examples": [],
+      "instances_by_class": {
+        "0": 5543
+      }
+    },
+    "test": {
+      "image_dir": "dataset\\fullscale_person\\images\\test",
+      "label_dir": "dataset\\fullscale_person\\labels\\test",
+      "images": 1668,
+      "label_files": 1668,
+      "missing_label_stems": [],
+      "orphan_label_stems": [],
+      "invalid_label_rows": 0,
+      "invalid_examples": [],
+      "instances_by_class": {
+        "0": 5455
+      }
+    }
+  },
+  "status": "ready",
+  "failures": []
+}

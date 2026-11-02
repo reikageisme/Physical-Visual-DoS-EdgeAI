@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "model_key": "yolov13s",
+  "weights": "weights/yolov13s.pt",
+  "weights_sha256": "cf0fe62e2ef520a63c1e3d380f5771b7ac701b97d07f11a28c314e68618ba072",
+  "dataset_manifest_sha256": "b4ac66028571475623f22b872f3648eaed5f3a6b9a324ca76217807a32ed5c8c",
+  "validation": {
+    "precision": 0.8414558257478416,
+    "recall": 0.6759909100607684,
+    "map50": 0.784067267309724,
+    "map50_95": 0.5720643876390386,
+    "validator_speed_ms_batch8": {
+      "preprocess": 0.08014464106939738,
+      "inference": 2.371308330721024,
+      "loss": 0.0004959792130860545,
+      "postprocess": 0.8728101340648726
+    },
+    "validator_latency_ms_per_frame_batch8": 3.324263105855294
+  },
+  "mapping": "Custom PersonOnlyValidator filters COCO person class0 during NMS; retains original80classhead, single_cls=False; no test access",
+  "measured_at_utc": "2026-10-13T12:03:43+00:00",
+  "wall_seconds": 15.321455099998275
+}

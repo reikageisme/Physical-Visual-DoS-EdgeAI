@@ -1,0 +1,108 @@
+data_yaml: dataset/data.yaml
+imgsz: 640
+batch: 1
+workers: 0
+conf: 0.001
+iou: 0.7
+plots: true
+models:
+- name: YOLOv8n
+  family: YOLOv8
+  scale: n
+  checkpoint: runs/train/yolov8n/weights/best.pt
+  source: same-config locally fine-tuned baseline
+- name: YOLOv10n
+  family: YOLOv10
+  scale: n
+  checkpoint: runs/train/yolov10n/weights/best.pt
+  source: same-config locally fine-tuned baseline
+- name: YOLO11n
+  family: YOLO11
+  scale: n
+  checkpoint: runs/train/yolo11n/weights/best.pt
+  source: same-config locally fine-tuned baseline
+- name: YOLOv12n
+  family: YOLOv12
+  scale: n
+  checkpoint: runs/train/yolo12n/weights/best.pt
+  source: same-config locally fine-tuned baseline
+- name: YOLOv13n
+  family: YOLOv13
+  scale: n
+  checkpoint: runs/train/yolov13n/weights/best.pt
+  source: same-config locally fine-tuned YOLOv13
+- name: YOLOv8s
+  family: YOLOv8
+  scale: s
+  checkpoint: runs/train/yolov8s/weights/best.pt
+  source: same-config locally fine-tuned baseline
+- name: YOLOv10s
+  family: YOLOv10
+  scale: s
+  checkpoint: runs/train/yolov10s/weights/best.pt
+  source: same-config locally fine-tuned baseline
+- name: YOLO11s
+  family: YOLO11
+  scale: s
+  checkpoint: runs/train/yolo11s/weights/best.pt
+  source: same-config locally fine-tuned baseline
+- name: YOLOv12s
+  family: YOLOv12
+  scale: s
+  checkpoint: runs/train/yolo12s/weights/best.pt
+  source: same-config locally fine-tuned baseline
+- name: YOLOv13s
+  family: YOLOv13
+  scale: s
+  checkpoint: runs/train/yolov13s/weights/best.pt
+  source: same-config locally fine-tuned YOLOv13
+- name: YOLOv8l
+  family: YOLOv8
+  scale: l
+  checkpoint: runs/train/yolov8l/weights/best.pt
+  source: same-config locally fine-tuned baseline
+- name: YOLOv10l
+  family: YOLOv10
+  scale: l
+  checkpoint: runs/train/yolov10l/weights/best.pt
+  source: same-config locally fine-tuned baseline
+- name: YOLO11l
+  family: YOLO11
+  scale: l
+  checkpoint: runs/train/yolo11l/weights/best.pt
+  source: same-config locally fine-tuned baseline
+- name: YOLOv12l
+  family: YOLOv12
+  scale: l
+  checkpoint: runs/train/yolo12l/weights/best.pt
+  source: same-config locally fine-tuned baseline
+- name: YOLOv13l
+  family: YOLOv13
+  scale: l
+  checkpoint: runs/train/yolov13l/weights/best.pt
+  source: same-config locally fine-tuned YOLOv13
+- name: YOLOv8x
+  family: YOLOv8
+  scale: x
+  checkpoint: runs/train/yolov8x/weights/best.pt
+  source: same-config locally fine-tuned baseline
+- name: YOLOv10x
+  family: YOLOv10
+  scale: x
+  checkpoint: runs/train/yolov10x/weights/best.pt
+  source: same-config locally fine-tuned baseline
+- name: YOLO11x
+  family: YOLO11
+  scale: x
+  checkpoint: runs/train/yolo11x/weights/best.pt
+  source: same-config locally fine-tuned baseline
+- name: YOLOv12x
+  family: YOLOv12
+  scale: x
+  checkpoint: runs/train/yolo12x/weights/best.pt
+  source: same-config locally fine-tuned baseline
+- name: YOLOv13x
+  family: YOLOv13
+  scale: x
+  checkpoint: runs/train/yolov13x/weights/best.pt
+  source: same-config locally fine-tuned YOLOv13

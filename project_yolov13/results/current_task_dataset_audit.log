@@ -1,0 +1,56 @@
+{
+  "preflight_status": "not_ready",
+  "splits": {
+    "train": {
+      "image_dir": "data\\images\\train",
+      "label_dir": "data\\labels\\train",
+      "images": 0,
+      "label_files": 0,
+      "missing_label_stems": [],
+      "orphan_label_stems": [],
+      "invalid_bbox_rows": 0,
+      "invalid_bbox_examples": [],
+      "instances_by_class_id": {}
+    },
+    "val": {
+      "image_dir": "data\\images\\val",
+      "label_dir": "data\\labels\\val",
+      "images": 0,
+      "label_files": 0,
+      "missing_label_stems": [],
+      "orphan_label_stems": [],
+      "invalid_bbox_rows": 0,
+      "invalid_bbox_examples": [],
+      "instances_by_class_id": {}
+    },
+    "test": {
+      "image_dir": "data\\images\\test",
+      "label_dir": "data\\labels\\test",
+      "images": 0,
+      "label_files": 0,
+      "missing_label_stems": [],
+      "orphan_label_stems": [],
+      "invalid_bbox_rows": 0,
+      "invalid_bbox_examples": [],
+      "instances_by_class_id": {}
+    }
+  },
+  "classes": {
+    "nc": 1,
+    "names": {
+      "0": "object"
+    },
+    "names_nc_consistent": true,
+    "placeholder_names": [
+      "object"
+    ]
+  },
+  "candidate": {
+    "directory": "dataset/",
+    "raster_images": 13,
+    "annotation_txt_files": 0,
+    "other_files": 1,
+    "eligible_as_task_split": false,
+    "reason": "No train/val/test assignment or YOLO label files are present in this folder."
+  }
+}

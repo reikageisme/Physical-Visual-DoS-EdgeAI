@@ -1,0 +1,184 @@
+{
+  "study_id": "yolov13s-bounded-optimization-20261013",
+  "frozen_at_utc": "2026-10-13T12:04:03+00:00",
+  "model_key": "yolov13s",
+  "candidate_configurations": {
+    "original_sgd": {
+      "epochs": 300,
+      "lr0": 0.01,
+      "lrf": 0.01,
+      "cos_lr": false,
+      "warmup_epochs": 3.0
+    },
+    "adamw_transfer_restored": {
+      "epochs": 6,
+      "optimizer": "AdamW",
+      "lr0": 0.0003,
+      "lrf": 0.1,
+      "cos_lr": true,
+      "warmup_epochs": 1.0,
+      "warmup_bias_lr": 0.0003,
+      "close_mosaic": 2
+    },
+    "transfer_tiny_lr": {
+      "epochs": 6,
+      "optimizer": "AdamW",
+      "lr0": 1e-05,
+      "lrf": 0.1,
+      "cos_lr": true,
+      "warmup_epochs": 1.0,
+      "warmup_bias_lr": 1e-05,
+      "close_mosaic": 2,
+      "mosaic": 0.25,
+      "hsv_s": 0.4,
+      "hsv_v": 0.2,
+      "translate": 0.05,
+      "scale": 0.2,
+      "freeze": 9
+    },
+    "low_sgd_cosine": {
+      "epochs": 6,
+      "lr0": 0.001,
+      "lrf": 0.1,
+      "cos_lr": true,
+      "warmup_epochs": 1.0,
+      "warmup_bias_lr": 0.001,
+      "close_mosaic": 2
+    },
+    "adamw_cosine": {
+      "epochs": 6,
+      "optimizer": "AdamW",
+      "lr0": 0.0003,
+      "lrf": 0.1,
+      "cos_lr": true,
+      "warmup_epochs": 1.0,
+      "warmup_bias_lr": 0.0003,
+      "close_mosaic": 2
+    },
+    "adamw_domain_loss_aug": {
+      "epochs": 6,
+      "optimizer": "AdamW",
+      "lr0": 0.0003,
+      "lrf": 0.1,
+      "cos_lr": true,
+      "warmup_epochs": 1.0,
+      "warmup_bias_lr": 0.0003,
+      "close_mosaic": 2,
+      "box": 9.0,
+      "cls": 0.7,
+      "dfl": 1.8,
+      "mosaic": 0.5,
+      "mixup": 0.05,
+      "hsv_s": 0.5,
+      "hsv_v": 0.3,
+      "scale": 0.3,
+      "degrees": 5.0,
+      "translate": 0.1
+    }
+  },
+  "screening_seed": 42,
+  "confirmation_seeds": [
+    100,
+    2026,
+    777
+  ],
+  "epochs_per_run": 6,
+  "maximum_training_runs": 9,
+  "selection_criterion": "Stage1 choose CSVnative FP16batch16 maximum mAP95 epoch1..6 per trajectory; stage2 rank ONLYnative-selected checkpoints by FP32batch8 fullval mAP95, seed42; original_sgd excluded from trainedoptimizedpool",
+  "ties": "configuration order as frozen in candidate_configurations",
+  "test_access": "Only after winner configuration is locked, on independent confirmation seeds, no test-driven retuning",
+  "dataset_manifest_sha256": "b4ac66028571475623f22b872f3648eaed5f3a6b9a324ca76217807a32ed5c8c",
+  "pretrained_weights_sha256": "cf0fe62e2ef520a63c1e3d380f5771b7ac701b97d07f11a28c314e68618ba072",
+  "untuned_control": "original SGD0.01 linear scheduler horizon300, stopped after6epochs; optimized scheduler horizon6 is an intervention",
+  "compute_match": "same six full epochs,7786primaryimage draws per epoch,416px,batch8; report actual times because budgets are not exactly equal wall time",
+  "sampling_note": "Bundled advanced candidate uses replacement WeightedRandomSampler25%expectedAdv; secondarymosaic indices remainuniform; not component-isolating ablation",
+  "planned_analysis": "paired seedwise test mAP95 delta, sample SD and Studentt95%CI; exploratory, n3 per group",
+  "amendment": {
+    "frozen_at_utc": "2026-10-13T12:11:22+00:00",
+    "reason": "CPU shapeaudit found checkpoint YAML16 hyperedges vs actualpretrained8; native shape-match loading reinitializes6 HyperACE tensors and6 classifier tensors",
+    "candidate_added": "adamw_transfer_restored",
+    "initialization": "restore actual8hyperedges andcopy COCO person classifier row into nc1 head",
+    "scope": "bundled architecture-restoration+initialization+AdamWcosine intervention; same6epochs; no component causal attribution",
+    "test_metrics_seen": false,
+    "candidate_training_or_validation_seen": false,
+    "diagnostic_addendum_at_utc": "2026-10-13T12:18:43+00:00",
+    "zero_finetuning_nc1_diagnostic": "Save restored8edge + personrow classifier nc1 checkpoint and measure validation before training on screening42; exclude epoch0 from candidate selection",
+    "pretrained_test_diagnostic": "Afterwinnerlock andconfirmation training, measure original80classhead with PersonOnlyValidator ontest andbatch1 FP32timing; n1diagnostic, not seedgroup"
+  },
+  "worker_policy": "Alltraining andaccuracyvalidation workers0 frozen; CPUthroughputprobe0vs2 isdiagnostic only, no configurationchange",
+  "confirmation_control_mode": "historical_deterministic_prefix",
+  "total_six_epoch_comparison_records": 12,
+  "reused_control_prefixes": 3,
+  "historical_control_amendment": {
+    "frozen_at_utc": "2026-10-13T12:31:27+00:00",
+    "control_seeds": [
+      100,
+      2026,
+      777
+    ],
+    "fresh_optimized_confirmation_seeds": [
+      100,
+      2026,
+      777
+    ],
+    "audit": "results/optimization/historical_control_reuse_audit.json",
+    "audit_sha256": "95c293bb81a8311de28456b9cde9c5f38a6fb5758d3ee08c7e3d680522295d33",
+    "basis": "seed42 first6CSV allnon-timefields and allsavedEMA tensors EXACT; functionalargs exact ignoringrunname/project; sourcePythonfiles+initialweights+datasetmanifest SHA match",
+    "selection": "Onlyfirst6historicalepochs; maximumvalidationmAP95 checkpoint amongepochs1..6, no120minselection",
+    "new_evaluation": "Allreusedcontrol testandFP32latency freshlyreevaluated afterwinnerlock innewsameGPU session",
+    "time_interpretation": "Historical prefix trainingtimes/dates; zero incrementalnewtraining; not exactmatchedwalltime or all6freshconfirmationruns"
+  },
+  "selection_protocol_amendment": {
+    "frozen_at_utc": "2026-10-13T12:43:23+00:00",
+    "stage1": "Eachtrajectory selects checkpoint withmaximum nativevalidationmAP95 among6epochs (trainingvalidator FP16/AMP batch16)",
+    "stage2": "Reevaluate ONLYthisbestnativecheckpoint on SAMEfullvalidation, FP32batch8,416px,workers0; rank candidateconfigurations bythisdeployment-protocolmAP95. Maymissdifferentcheckpoint withFP32maximum; not exhaustiveepochFP32search.",
+    "new_trained_candidate_fp32_validation_seen": false,
+    "zero_control": "Compare matchedFP32batch8 native80personfiltered and restorednc1 zero-finetuning diagnostics separately n1",
+    "test_access": "No candidate test metrics beforewinnerlock or validation-baseddeploymentdecision"
+  },
+  "adaptive_sixth_candidate_policy": {
+    "frozen_at_utc": "2026-10-13T12:43:23+00:00",
+    "maximum_candidate_configurations_including_untuned": 6,
+    "activation": "Aftercurrentrestored6epochs complete, ifFP32bestnativecheckpoint valmAP95 is morethan0.005 BELOWzero-restorednc1FP32val, runONEextra transfer-restored tinyLR candidate; never changebasedontest.",
+    "fixed_extra_recipe": {
+      "epochs": 6,
+      "optimizer": "AdamW",
+      "lr0": 1e-05,
+      "lrf": 0.1,
+      "cos_lr": true,
+      "warmup_epochs": 1.0,
+      "warmup_bias_lr": 1e-05,
+      "close_mosaic": 2,
+      "mosaic": 0.25,
+      "hsv_s": 0.4,
+      "hsv_v": 0.2,
+      "translate": 0.05,
+      "scale": 0.2,
+      "freeze": 9
+    },
+    "bn_policy": "Evaluate bestnative restoredcheckpoint FP32unchanged vs SAMEweights withinitialBNrunningmean/var/counterbuffers restored. Ifmatchedvalgain>=0.005, extra candidate freezesBNrunningstatistics on_train_batch_start; otherwiseextra doesnotfreezeBN. BNaffineparameters unfrozen outsidefrozenbackbone.",
+    "reporting": "Adaptive validation-informed amendment; bundled interventions, notnewarchitecture or isolatedcomponentcausality; discloseallfailedcandidates"
+  },
+  "deployment_choice_policy": {
+    "frozen_at_utc": "2026-10-13T12:51:55+00:00",
+    "criterion": "Highest seed42 full-validation FP32batch8 mAP95 between trained winner's native-selected checkpoint and restorednc1 zero-finetuning checkpoint",
+    "tie_rule": "Prefer zero-finetuning on exact equality to avoid extra training cost",
+    "test_access": false,
+    "confirmation": "Still3 fresh independent-seed trainedwinner confirmations; zero deterministic checkpoint n1, no seed SD/CI",
+    "evaluation": "After validation decision lock, chosen zero checkpoint test and sameFP32batch1 timing if zero wins; original80head person diagnostic also retained"
+  },
+  "adaptive_sixth_candidate_decision": {
+    "decided_at_utc": "2026-10-13T12:55:52+00:00",
+    "diagnostic": "results/optimization/bn_controlled_diagnostic.json",
+    "diagnostic_sha256": "1a06848e296b2dbba24b6296f36600c9fd0119fd7fd965c9ec7b006b8f2e4af7",
+    "zero_fp32_map95": 0.5720682859890442,
+    "trained_fp32_map95": 0.5000042320613483,
+    "activation_gap": 0.07206405392769599,
+    "activated": true,
+    "bn_buffer_reset_fp32_gain": -0.4995557259663893,
+    "freeze_bn_for_extra_candidate": false,
+    "test_seen": false,
+    "candidate_added": "transfer_tiny_lr",
+    "bundled_intervention": "faithful8edge personrow transfer + AdamW1e-5 + frozen9layerbackbone + mildaugmentation + conditionallyfrozen BNstatistics; not isolated causal ablation"
+  }
+}

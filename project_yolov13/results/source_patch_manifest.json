@@ -1,0 +1,7 @@
+{
+  "upstream_revision": "73289949533efac82bb5f72ec19b746618656bd2",
+  "local_ablation_support": {
+    "yolov13_src\\ultralytics\\nn\\modules\\block.py": "880e7ea75080b5c4e91749c4ac30bb7e12ba5d4f3878682c29a8aa7ff455da1c",
+    "yolov13_src\\ultralytics\\nn\\modules\\conv.py": "caa070d137bbf47864209fbed3ddcb7b14d90e8a8f0db67c29aa0fcd59660712"
+  }
+}

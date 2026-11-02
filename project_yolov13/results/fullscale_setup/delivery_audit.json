@@ -1,0 +1,27 @@
+{
+  "checked_at_utc": "2026-10-12T19:09:54.618573+00:00",
+  "status": "passed",
+  "complete_training_records": 20,
+  "verified_model_source_hashes": 324,
+  "verified_pretrained_weights": 4,
+  "verified_epoch_history_hashes": 20,
+  "word_pages": 12,
+  "word_normal_font": "Times New Roman 12pt",
+  "word_line_spacing": 1.15,
+  "word_author": "Mai Quốc Bảo",
+  "visual_review": "All 12 final rendered pages inspected in prior review",
+  "deliverables": {
+    "results/BaoCao_TrienKhaiRong_YOLOv13.md": {
+      "bytes": 33011,
+      "sha256": "d3be9b1b3d600f0ba7b70eb37b59952b3c04982c7ee5cc4fe9239752f50feecc"
+    },
+    "results/BaoCao_TrienKhaiRong_YOLOv13.docx": {
+      "bytes": 218870,
+      "sha256": "d4a431b7093634eb8ea104d3948dfc50adfea6878e697a607b8ddbd0dcb69df5"
+    },
+    "results/fullscale_mAP_growth.png": {
+      "bytes": 177025,
+      "sha256": "f99f1900fee2b92f2307388c0e79277f312c8c4e675c4ce8ebb9c9e0353d5fba"
+    }
+  }
+}

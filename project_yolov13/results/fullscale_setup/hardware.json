@@ -1,0 +1,9 @@
+{
+  "cpu_name": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "logical_cpu_count": 20,
+  "ram_gib": 31.79,
+  "available_ram_gib_at_capture": 14.51,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "capture_scope": "inside project_yolov13/.venv"
+}

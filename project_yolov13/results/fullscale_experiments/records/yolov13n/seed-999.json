@@ -1,0 +1,329 @@
+{
+  "study_id": "fullscale-20261011",
+  "model_key": "yolov13n",
+  "model_name": "YOLOv13n",
+  "seed": 999,
+  "status": "complete",
+  "started_at_utc": "2026-10-12T06:34:59.359456+00:00",
+  "run_name": "fullscale-yolov13n-seed999-120m",
+  "dataset_yaml": "dataset/data.yaml",
+  "model_source": "yolov13_src",
+  "weights": "weights/yolov13n.pt",
+  "milestones_minutes": [
+    5,
+    10,
+    20,
+    30,
+    60,
+    120
+  ],
+  "requested_training_cap_minutes": 120,
+  "training_config": {
+    "epochs": 300,
+    "patience": 301,
+    "batch": 8,
+    "imgsz": 416,
+    "optimizer": "SGD",
+    "lr0": 0.01,
+    "lrf": 0.01,
+    "momentum": 0.937,
+    "weight_decay": 0.0005,
+    "warmup_epochs": 3.0,
+    "amp": true,
+    "deterministic": true,
+    "workers": 0,
+    "mosaic": 1.0,
+    "hsv_h": 0.015,
+    "hsv_s": 0.7,
+    "hsv_v": 0.4,
+    "translate": 0.1,
+    "scale": 0.5,
+    "fliplr": 0.5,
+    "mixup": 0.0,
+    "seed": 999
+  },
+  "finished_at_utc": "2026-10-12T08:37:50.705971+00:00",
+  "actual_training_seconds": 7324.71,
+  "epochs_completed": 35,
+  "stop_reason": "time cap after epoch",
+  "hardware_software": {
+    "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+    "torch": "2.11.0+cu128",
+    "ultralytics": "8.3.63",
+    "ultralytics_module": "yolov13_src/ultralytics/__init__.py",
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "gpu_memory_gib": 7.96
+  },
+  "results_csv": "runs/train/fullscale-yolov13n-seed999-120m/results.csv",
+  "log": "results/fullscale_experiments/logs/yolov13n-seed999.log",
+  "milestones": [
+    {
+      "budget_minutes": 5,
+      "status": "complete",
+      "selected_epoch": 1,
+      "selected_elapsed_seconds": 260.603,
+      "validation": {
+        "precision": 0.73028,
+        "recall": 0.53097,
+        "map50": 0.60465,
+        "map50_95": 0.39137
+      },
+      "endpoint_epoch": 1,
+      "endpoint_elapsed_seconds": 260.603,
+      "endpoint_loss": {
+        "train_box": 1.18399,
+        "train_cls": 1.56691,
+        "train_dfl": 1.20415,
+        "val_box": 1.18579,
+        "val_cls": 1.17841,
+        "val_dfl": 1.15978
+      },
+      "test": {
+        "precision": 0.7775743290539061,
+        "recall": 0.5344761254798037,
+        "map50": 0.6246491442227349,
+        "map50_95": 0.40812104299942026,
+        "validator_speed_ms_batch8": {
+          "preprocess": 0.11029417852131869,
+          "inference": 3.2532938378606198,
+          "loss": 0.0008960707868031746,
+          "postprocess": 1.1175373475328623
+        },
+        "validator_latency_ms_per_frame_batch8": 4.481125363914801
+      },
+      "parameters_m": 2.460106,
+      "flops_g": 2.6924701440000005,
+      "checkpoint": "runs/train/fullscale-yolov13n-seed999-120m/weights/epoch0.pt",
+      "endpoint_validation": {
+        "precision": 0.73028,
+        "recall": 0.53097,
+        "map50": 0.60465,
+        "map50_95": 0.39137
+      }
+    },
+    {
+      "budget_minutes": 10,
+      "status": "complete",
+      "selected_epoch": 1,
+      "selected_elapsed_seconds": 260.603,
+      "validation": {
+        "precision": 0.73028,
+        "recall": 0.53097,
+        "map50": 0.60465,
+        "map50_95": 0.39137
+      },
+      "endpoint_epoch": 2,
+      "endpoint_elapsed_seconds": 473.622,
+      "endpoint_loss": {
+        "train_box": 1.30806,
+        "train_cls": 1.32388,
+        "train_dfl": 1.29227,
+        "val_box": 1.39017,
+        "val_cls": 1.33173,
+        "val_dfl": 1.30301
+      },
+      "test": {
+        "precision": 0.7775743290539061,
+        "recall": 0.5344761254798037,
+        "map50": 0.6246491442227349,
+        "map50_95": 0.40812104299942026,
+        "validator_speed_ms_batch8": {
+          "preprocess": 0.11029417852131869,
+          "inference": 3.2532938378606198,
+          "loss": 0.0008960707868031746,
+          "postprocess": 1.1175373475328623
+        },
+        "validator_latency_ms_per_frame_batch8": 4.481125363914801
+      },
+      "parameters_m": 2.460106,
+      "flops_g": 2.6924701440000005,
+      "checkpoint": "runs/train/fullscale-yolov13n-seed999-120m/weights/epoch0.pt",
+      "endpoint_validation": {
+        "precision": 0.68486,
+        "recall": 0.45878,
+        "map50": 0.52915,
+        "map50_95": 0.31504
+      }
+    },
+    {
+      "budget_minutes": 20,
+      "status": "complete",
+      "selected_epoch": 1,
+      "selected_elapsed_seconds": 260.603,
+      "validation": {
+        "precision": 0.73028,
+        "recall": 0.53097,
+        "map50": 0.60465,
+        "map50_95": 0.39137
+      },
+      "endpoint_epoch": 5,
+      "endpoint_elapsed_seconds": 1097.65,
+      "endpoint_loss": {
+        "train_box": 1.54674,
+        "train_cls": 1.55747,
+        "train_dfl": 1.47607,
+        "val_box": 1.57924,
+        "val_cls": 1.56995,
+        "val_dfl": 1.44186
+      },
+      "test": {
+        "precision": 0.7775743290539061,
+        "recall": 0.5344761254798037,
+        "map50": 0.6246491442227349,
+        "map50_95": 0.40812104299942026,
+        "validator_speed_ms_batch8": {
+          "preprocess": 0.11029417852131869,
+          "inference": 3.2532938378606198,
+          "loss": 0.0008960707868031746,
+          "postprocess": 1.1175373475328623
+        },
+        "validator_latency_ms_per_frame_batch8": 4.481125363914801
+      },
+      "parameters_m": 2.460106,
+      "flops_g": 2.6924701440000005,
+      "checkpoint": "runs/train/fullscale-yolov13n-seed999-120m/weights/epoch0.pt",
+      "endpoint_validation": {
+        "precision": 0.60603,
+        "recall": 0.36713,
+        "map50": 0.42248,
+        "map50_95": 0.24029
+      }
+    },
+    {
+      "budget_minutes": 30,
+      "status": "complete",
+      "selected_epoch": 1,
+      "selected_elapsed_seconds": 260.603,
+      "validation": {
+        "precision": 0.73028,
+        "recall": 0.53097,
+        "map50": 0.60465,
+        "map50_95": 0.39137
+      },
+      "endpoint_epoch": 8,
+      "endpoint_elapsed_seconds": 1719.44,
+      "endpoint_loss": {
+        "train_box": 1.45998,
+        "train_cls": 1.40875,
+        "train_dfl": 1.43599,
+        "val_box": 1.46926,
+        "val_cls": 1.3418,
+        "val_dfl": 1.38476
+      },
+      "test": {
+        "precision": 0.7775743290539061,
+        "recall": 0.5344761254798037,
+        "map50": 0.6246491442227349,
+        "map50_95": 0.40812104299942026,
+        "validator_speed_ms_batch8": {
+          "preprocess": 0.11029417852131869,
+          "inference": 3.2532938378606198,
+          "loss": 0.0008960707868031746,
+          "postprocess": 1.1175373475328623
+        },
+        "validator_latency_ms_per_frame_batch8": 4.481125363914801
+      },
+      "parameters_m": 2.460106,
+      "flops_g": 2.6924701440000005,
+      "checkpoint": "runs/train/fullscale-yolov13n-seed999-120m/weights/epoch0.pt",
+      "endpoint_validation": {
+        "precision": 0.68367,
+        "recall": 0.41945,
+        "map50": 0.50156,
+        "map50_95": 0.29563
+      }
+    },
+    {
+      "budget_minutes": 60,
+      "status": "complete",
+      "selected_epoch": 1,
+      "selected_elapsed_seconds": 260.603,
+      "validation": {
+        "precision": 0.73028,
+        "recall": 0.53097,
+        "map50": 0.60465,
+        "map50_95": 0.39137
+      },
+      "endpoint_epoch": 17,
+      "endpoint_elapsed_seconds": 3588.45,
+      "endpoint_loss": {
+        "train_box": 1.36335,
+        "train_cls": 1.24588,
+        "train_dfl": 1.3745,
+        "val_box": 1.33977,
+        "val_cls": 1.14526,
+        "val_dfl": 1.3078
+      },
+      "test": {
+        "precision": 0.7775743290539061,
+        "recall": 0.5344761254798037,
+        "map50": 0.6246491442227349,
+        "map50_95": 0.40812104299942026,
+        "validator_speed_ms_batch8": {
+          "preprocess": 0.11029417852131869,
+          "inference": 3.2532938378606198,
+          "loss": 0.0008960707868031746,
+          "postprocess": 1.1175373475328623
+        },
+        "validator_latency_ms_per_frame_batch8": 4.481125363914801
+      },
+      "parameters_m": 2.460106,
+      "flops_g": 2.6924701440000005,
+      "checkpoint": "runs/train/fullscale-yolov13n-seed999-120m/weights/epoch0.pt",
+      "endpoint_validation": {
+        "precision": 0.70633,
+        "recall": 0.47686,
+        "map50": 0.56093,
+        "map50_95": 0.34374
+      }
+    },
+    {
+      "budget_minutes": 120,
+      "status": "complete",
+      "selected_epoch": 1,
+      "selected_elapsed_seconds": 260.603,
+      "validation": {
+        "precision": 0.73028,
+        "recall": 0.53097,
+        "map50": 0.60465,
+        "map50_95": 0.39137
+      },
+      "endpoint_epoch": 34,
+      "endpoint_elapsed_seconds": 7116.94,
+      "endpoint_loss": {
+        "train_box": 1.26968,
+        "train_cls": 1.11409,
+        "train_dfl": 1.30964,
+        "val_box": 1.24239,
+        "val_cls": 1.01655,
+        "val_dfl": 1.2434
+      },
+      "test": {
+        "precision": 0.7775743290539061,
+        "recall": 0.5344761254798037,
+        "map50": 0.6246491442227349,
+        "map50_95": 0.40812104299942026,
+        "validator_speed_ms_batch8": {
+          "preprocess": 0.11029417852131869,
+          "inference": 3.2532938378606198,
+          "loss": 0.0008960707868031746,
+          "postprocess": 1.1175373475328623
+        },
+        "validator_latency_ms_per_frame_batch8": 4.481125363914801
+      },
+      "parameters_m": 2.460106,
+      "flops_g": 2.6924701440000005,
+      "checkpoint": "runs/train/fullscale-yolov13n-seed999-120m/weights/epoch0.pt",
+      "endpoint_validation": {
+        "precision": 0.74382,
+        "recall": 0.51957,
+        "map50": 0.6106,
+        "map50_95": 0.38832
+      }
+    }
+  ],
+  "epoch_history_csv": "results/fullscale_experiments/epoch_history/yolov13n/seed-999.csv",
+  "epoch_history_sha256": "efbbe80da78c9a5679ab09f81a41a33ceccc46665cea460a41f7ed9d581445f7",
+  "process_wall_seconds_before_snapshot_test": 7352.934633800061,
+  "wall_timer_scope_correction": "The original field name included test, but its timer was sampled before snapshot test evaluation."
+}

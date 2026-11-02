@@ -1,0 +1,68 @@
+[
+  {
+    "study_id": "20261010",
+    "model_key": "yolo11n",
+    "model_name": "YOLO11n",
+    "budget_hours": 1,
+    "status": "complete",
+    "run_name": "timebudget-20261010-yolo11n-1h",
+    "checkpoint": "runs\\train\\timebudget-20261010-yolo11n-1h\\weights\\best.pt",
+    "log": "results\\time_budget\\logs\\timebudget-20261010-yolo11n-1h.log",
+    "data_yaml": "dataset\\adv_tshirt_patch_detection.yaml",
+    "started_at_utc": "2026-10-10T10:49:29.986359+00:00",
+    "actual_train_seconds": 2110.48,
+    "epochs_completed": 71,
+    "stop_reason": "training ended before wall-clock cap; inspect log",
+    "wall_seconds_including_load_and_train": 2173.523,
+    "final_epoch": 71,
+    "final_train_loss": {
+      "box": 0.76315,
+      "cls": 0.39207,
+      "dfl": 0.96744,
+      "total": 2.1226599999999998
+    },
+    "final_val_loss": {
+      "box": 0.72337,
+      "cls": 0.32919,
+      "dfl": 0.90685,
+      "total": 1.95941
+    },
+    "best_epoch": 61,
+    "best_epoch_map50": 0.99464,
+    "best_epoch_map50_95": 0.83531,
+    "history_csv": "runs\\train\\timebudget-20261010-yolo11n-1h\\results.csv",
+    "parameters_m": 2.590035,
+    "flops_g": 2.720180736,
+    "evaluations": {
+      "val": {
+        "precision": 0.9802359413518502,
+        "recall": 0.990909090909091,
+        "map50": 0.9946354835315163,
+        "map50_95": 0.8347044432344353,
+        "speed_ms": {
+          "preprocess": 0.1667251248331465,
+          "inference": 5.141249775181155,
+          "loss": 0.0022275913396530606,
+          "postprocess": 1.3006551731267624
+        },
+        "latency_ms": 5.141249775181155,
+        "fps_from_total_validator_ms": 151.26630321703502
+      },
+      "test": {
+        "precision": 0.969248110093362,
+        "recall": 0.9954954954954955,
+        "map50": 0.99259074186982,
+        "map50_95": 0.8293783988017116,
+        "speed_ms": {
+          "preprocess": 0.5329247762465618,
+          "inference": 4.256124327168662,
+          "loss": 0.002392650355954142,
+          "postprocess": 1.3877767077564487
+        },
+        "latency_ms": 4.256124327168662,
+        "fps_from_total_validator_ms": 161.8327635163072
+      }
+    },
+    "finished_at_utc": "2026-10-10T11:25:54.951523+00:00"
+  }
+]

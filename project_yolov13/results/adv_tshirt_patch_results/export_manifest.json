@@ -1,0 +1,13 @@
+{
+  "local_result_rows": 60,
+  "literature_rows": 20,
+  "published_ablation_rows": 13,
+  "published_device_latency_rows": 12,
+  "ablation_rows": 4,
+  "plots": [
+    "results\\adv_tshirt_patch_results\\tradeoff_map_latency_local.png",
+    "results\\adv_tshirt_patch_results\\tradeoff_map_flops_local.png"
+  ],
+  "local_table_status": "measured",
+  "source": "Official iMoonLab YOLOv13 repository table for MS COCO literature context."
+}

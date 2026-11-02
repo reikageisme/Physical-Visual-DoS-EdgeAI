@@ -1,0 +1,47 @@
+{
+  "audit_time_utc": "2026-10-04T09:02:28+00:00",
+  "source_name": "AdvT-shirt-1K",
+  "source_repo": "https://huggingface.co/datasets/xingjunm/AdvT-shirt",
+  "license_claim": "Apache-2.0 as shown on the Hugging Face dataset page",
+  "source_subdirectory": "AdvT-shirt/*/images and labels",
+  "evaluation_scope": "full external corpus; zero-shot COCO-pretrained person detection; no training or tuning on this corpus",
+  "image_count": 1123,
+  "published_source_image_count": 1131,
+  "mirror_image_count_difference_vs_source_claim": 8,
+  "label_file_count": 1123,
+  "person_box_count": 4403,
+  "missing_label_images": 0,
+  "invalid_label_rows": 0,
+  "group_counts": {
+    "10_plus_persons": 52,
+    "1_person": 226,
+    "2_persons": 201,
+    "3_5_persons": 433,
+    "6_9_persons": 211
+  },
+  "source_image_dimensions": {
+    "unique_sizes": 973,
+    "min_width": 856,
+    "max_width": 2056,
+    "min_height": 1044,
+    "max_height": 1598,
+    "most_common": {
+      "1408x1556": 4,
+      "1176x1560": 4,
+      "1408x1552": 4,
+      "1410x1558": 4,
+      "1174x1554": 4,
+      "1168x1558": 4,
+      "1170x1556": 4,
+      "1406x1556": 4,
+      "1404x1558": 3,
+      "1164x1524": 3
+    }
+  },
+  "local_images": "dataset/external/adv_tshirt_person_eval/images/test",
+  "local_labels": "dataset/external/adv_tshirt_person_eval/labels/test",
+  "dataset_yaml": "dataset/adv_tshirt_person_eval.yaml",
+  "test_is_full_corpus": true,
+  "training_or_validation_split_provided_by_source": false,
+  "notes": "Only source person-box labels are used. The separate adversarial-patch labels are not mixed into the pretrained COCO person benchmark."
+}

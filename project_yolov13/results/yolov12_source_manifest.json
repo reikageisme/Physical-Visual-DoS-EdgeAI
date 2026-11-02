@@ -1,0 +1,22 @@
+{
+  "retrieved_at_utc": "2026-10-04T09:19:37+00:00",
+  "source_repository": "https://github.com/sunsmarterjie/yolov12",
+  "source_revision": "2abab7153a065fb2925e8088e9ca2b19016ab7d6",
+  "source_license": "AGPL-3.0",
+  "weight_release": "v1.0 (official YOLOv12 repository)",
+  "weights": {
+    "n": {
+      "path": "weights/yolov12n.pt",
+      "sha256": "419ff3dca37d69bacc93a50fa0c186a1c6f9fe62fae0f108b0872829689e9ca6"
+    },
+    "s": {
+      "path": "weights/yolov12s.pt",
+      "sha256": "e915c2c4286e3f6f8610ef106fa3f94a7b8c19b30eccede5887e22c33ef75f58"
+    },
+    "l": {
+      "path": "weights/yolov12l.pt",
+      "sha256": "0babd8dc8f775bb64bb052debdff3d8b9e9b57efa9d7bfa11c84bb82c3fec336"
+    }
+  },
+  "implementation_path": "yolov12_src/"
+}

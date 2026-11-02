@@ -1,0 +1,4 @@
+﻿model_name,family,scale,precision,recall,map50,map50_95,params_m,flops_g,gpu_forward_median_ms,gpu_fps,cpu_forward_median_ms,cpu_fps,imgsz,batch,device,dataset,dataset_scope,checkpoint,checkpoint_sha256,status,measured_at_utc
+YOLOv12-N,YOLOv12,n,,,,,,,,,,,,,,AdvT-shirt-1K,,,,failed,2026-10-04T09:16:14+00:00
+YOLOv12-S,YOLOv12,s,,,,,,,,,,,,,,AdvT-shirt-1K,,,,failed,2026-10-04T09:16:17+00:00
+YOLOv12-L,YOLOv12,l,,,,,,,,,,,,,,AdvT-shirt-1K,,,,failed,2026-10-04T09:16:24+00:00

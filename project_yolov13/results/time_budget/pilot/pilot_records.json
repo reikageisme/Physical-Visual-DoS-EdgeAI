@@ -1,0 +1,68 @@
+[
+  {
+    "pilot_id": "20261010",
+    "model_key": "yolo11n",
+    "model_name": "YOLO11n",
+    "budget_minutes": 10,
+    "status": "complete",
+    "run_name": "milestone-pilot-20261010-yolo11n-10m",
+    "started_at_utc": "2026-10-10T11:34:35.591325+00:00",
+    "checkpoint": "runs\\train\\milestone-pilot-20261010-yolo11n-10m\\weights\\best.pt",
+    "log": "results\\time_budget\\pilot\\logs\\milestone-pilot-20261010-yolo11n-10m.log",
+    "history_csv": "runs\\train\\milestone-pilot-20261010-yolo11n-10m\\results.csv",
+    "epochs_completed": 17,
+    "actual_train_seconds": 600.946,
+    "wall_seconds_including_load_and_train": 612.37,
+    "best_epoch": 14,
+    "best_epoch_elapsed_seconds": 495.95,
+    "best_epoch_map50": 0.99385,
+    "best_epoch_map50_95": 0.80876,
+    "final_train_loss": {
+      "box": 0.73784,
+      "cls": 0.40603,
+      "dfl": 0.93774,
+      "total": 2.08161
+    },
+    "final_val_loss": {
+      "box": 0.73095,
+      "cls": 0.35743,
+      "dfl": 0.91475,
+      "total": 2.00313
+    },
+    "stop_reason": "10-minute cap or epoch limit",
+    "finished_at_utc": "2026-10-10T11:44:47.969607+00:00"
+  },
+  {
+    "pilot_id": "20261010",
+    "model_key": "yolov13n",
+    "model_name": "YOLOv13n",
+    "budget_minutes": 10,
+    "status": "complete",
+    "run_name": "milestone-pilot-20261010-yolov13n-10m",
+    "started_at_utc": "2026-10-10T11:44:47.971116+00:00",
+    "checkpoint": "runs\\train\\milestone-pilot-20261010-yolov13n-10m\\weights\\best.pt",
+    "log": "results\\time_budget\\pilot\\logs\\milestone-pilot-20261010-yolov13n-10m.log",
+    "history_csv": "runs\\train\\milestone-pilot-20261010-yolov13n-10m\\results.csv",
+    "epochs_completed": 13,
+    "actual_train_seconds": 607.56,
+    "wall_seconds_including_load_and_train": 621.203,
+    "best_epoch": 13,
+    "best_epoch_elapsed_seconds": 607.56,
+    "best_epoch_map50": 0.9929,
+    "best_epoch_map50_95": 0.80858,
+    "final_train_loss": {
+      "box": 0.72655,
+      "cls": 0.43395,
+      "dfl": 0.97015,
+      "total": 2.13065
+    },
+    "final_val_loss": {
+      "box": 0.72703,
+      "cls": 0.39966,
+      "dfl": 0.94108,
+      "total": 2.06777
+    },
+    "stop_reason": "10-minute cap or epoch limit",
+    "finished_at_utc": "2026-10-10T11:55:09.183534+00:00"
+  }
+]

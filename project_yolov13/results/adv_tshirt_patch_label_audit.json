@@ -1,0 +1,106 @@
+{
+  "audit_time_utc": "2026-10-04T10:14:15+00:00",
+  "source_name": "AdvT-shirt-1K",
+  "source_url": "https://huggingface.co/datasets/xingjunm/Adv-T-shirt",
+  "source_repository": "https://github.com/Wwangb/AdvT-shirt-1K",
+  "license_as_listed_by_source": "Apache-2.0",
+  "source_tree": "dataset\\external\\adv_tshirt_1k\\AdvT-shirt",
+  "groups": [
+    {
+      "group": "10_plus_persons",
+      "images": 52,
+      "person_label_files": 52,
+      "patch_label_files": 52,
+      "person_boxes": 589,
+      "patch_boxes": 67,
+      "invalid_person_rows": 0,
+      "invalid_patch_rows": 0,
+      "person_boxes_touching_or_past_edge": 22,
+      "patch_boxes_touching_or_past_edge": 0
+    },
+    {
+      "group": "1_person",
+      "images": 226,
+      "person_label_files": 226,
+      "patch_label_files": 226,
+      "person_boxes": 226,
+      "patch_boxes": 233,
+      "invalid_person_rows": 0,
+      "invalid_patch_rows": 0,
+      "person_boxes_touching_or_past_edge": 15,
+      "patch_boxes_touching_or_past_edge": 0
+    },
+    {
+      "group": "2_persons",
+      "images": 201,
+      "person_label_files": 201,
+      "patch_label_files": 201,
+      "person_boxes": 402,
+      "patch_boxes": 295,
+      "invalid_person_rows": 0,
+      "invalid_patch_rows": 0,
+      "person_boxes_touching_or_past_edge": 29,
+      "patch_boxes_touching_or_past_edge": 1
+    },
+    {
+      "group": "3_5_persons",
+      "images": 433,
+      "person_label_files": 433,
+      "patch_label_files": 433,
+      "person_boxes": 1661,
+      "patch_boxes": 656,
+      "invalid_person_rows": 0,
+      "invalid_patch_rows": 0,
+      "person_boxes_touching_or_past_edge": 95,
+      "patch_boxes_touching_or_past_edge": 1
+    },
+    {
+      "group": "6_9_persons",
+      "images": 211,
+      "person_label_files": 211,
+      "patch_label_files": 211,
+      "person_boxes": 1525,
+      "patch_boxes": 297,
+      "invalid_person_rows": 0,
+      "invalid_patch_rows": 0,
+      "person_boxes_touching_or_past_edge": 62,
+      "patch_boxes_touching_or_past_edge": 0
+    }
+  ],
+  "totals": {
+    "images": 1123,
+    "person_boxes": 4403,
+    "patch_boxes": 1548,
+    "unique_image_sizes": 973,
+    "most_common_sizes": {
+      "1408x1556": 4,
+      "1176x1560": 4,
+      "1408x1552": 4,
+      "1410x1558": 4,
+      "1174x1554": 4,
+      "1168x1558": 4,
+      "1170x1556": 4,
+      "1406x1556": 4,
+      "1404x1558": 3,
+      "1164x1524": 3
+    }
+  },
+  "label_integrity": {
+    "missing_person_label_images": [],
+    "missing_patch_label_images": [],
+    "orphan_person_label_files": [],
+    "orphan_patch_label_files": [],
+    "invalid_person_files": [],
+    "invalid_patch_files": [],
+    "invalid_images": [],
+    "edge_overflows_in_normalized_boxes": {
+      "person": 223,
+      "patch": 2
+    },
+    "maximum_edge_overflow_in_normalized_units": {
+      "person": 5.00000000069889e-07,
+      "patch": 5.00000000069889e-07
+    }
+  },
+  "partition_note": "The source does not publish train/validation/test partitions for this mirror; any derived split must be deterministic, documented, and treated as a supplementary benchmark."
+}

@@ -1,0 +1,329 @@
+{
+  "study_id": "fullscale-20261011",
+  "model_key": "yolo11n",
+  "model_name": "YOLO11n",
+  "seed": 2026,
+  "status": "complete",
+  "started_at_utc": "2026-10-11T06:00:15.015599+00:00",
+  "run_name": "fullscale-yolo11n-seed2026-120m",
+  "dataset_yaml": "dataset/data.yaml",
+  "model_source": "yolov13_src",
+  "weights": "weights/yolo11n.pt",
+  "milestones_minutes": [
+    5,
+    10,
+    20,
+    30,
+    60,
+    120
+  ],
+  "requested_training_cap_minutes": 120,
+  "training_config": {
+    "epochs": 300,
+    "patience": 301,
+    "batch": 8,
+    "imgsz": 416,
+    "optimizer": "SGD",
+    "lr0": 0.01,
+    "lrf": 0.01,
+    "momentum": 0.937,
+    "weight_decay": 0.0005,
+    "warmup_epochs": 3.0,
+    "amp": true,
+    "deterministic": true,
+    "workers": 0,
+    "mosaic": 1.0,
+    "hsv_h": 0.015,
+    "hsv_s": 0.7,
+    "hsv_v": 0.4,
+    "translate": 0.1,
+    "scale": 0.5,
+    "fliplr": 0.5,
+    "mixup": 0.0,
+    "seed": 2026
+  },
+  "finished_at_utc": "2026-10-11T08:03:09.055292+00:00",
+  "actual_training_seconds": 7281.97,
+  "epochs_completed": 47,
+  "stop_reason": "time cap after epoch",
+  "hardware_software": {
+    "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+    "torch": "2.11.0+cu128",
+    "ultralytics": "8.3.63",
+    "ultralytics_module": "yolov13_src/ultralytics/__init__.py",
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "gpu_memory_gib": 7.96
+  },
+  "results_csv": "runs/train/fullscale-yolo11n-seed2026-120m/results.csv",
+  "log": "results/fullscale_experiments/logs/yolo11n-seed2026.log",
+  "milestones": [
+    {
+      "budget_minutes": 5,
+      "status": "complete",
+      "selected_epoch": 1,
+      "selected_elapsed_seconds": 170.669,
+      "validation": {
+        "precision": 0.71507,
+        "recall": 0.5046,
+        "map50": 0.58562,
+        "map50_95": 0.36699
+      },
+      "endpoint_epoch": 1,
+      "endpoint_elapsed_seconds": 170.669,
+      "endpoint_loss": {
+        "train_box": 1.27907,
+        "train_cls": 1.6875,
+        "train_dfl": 1.20001,
+        "val_box": 1.26288,
+        "val_cls": 1.3087,
+        "val_dfl": 1.11452
+      },
+      "test": {
+        "precision": 0.7299754525671568,
+        "recall": 0.5228230980751604,
+        "map50": 0.6050686858453143,
+        "map50_95": 0.37841505702201406,
+        "validator_speed_ms_batch8": {
+          "preprocess": 0.12025901739545863,
+          "inference": 1.5858853463646319,
+          "loss": 0.0007792914228187763,
+          "postprocess": 1.0682901890157794
+        },
+        "validator_latency_ms_per_frame_batch8": 2.77443455277587
+      },
+      "parameters_m": 2.590035,
+      "flops_g": 2.720180736,
+      "checkpoint": "runs/train/fullscale-yolo11n-seed2026-120m/weights/epoch0.pt",
+      "endpoint_validation": {
+        "precision": 0.71507,
+        "recall": 0.5046,
+        "map50": 0.58562,
+        "map50_95": 0.36699
+      }
+    },
+    {
+      "budget_minutes": 10,
+      "status": "complete",
+      "selected_epoch": 1,
+      "selected_elapsed_seconds": 170.669,
+      "validation": {
+        "precision": 0.71507,
+        "recall": 0.5046,
+        "map50": 0.58562,
+        "map50_95": 0.36699
+      },
+      "endpoint_epoch": 3,
+      "endpoint_elapsed_seconds": 494.923,
+      "endpoint_loss": {
+        "train_box": 1.54235,
+        "train_cls": 1.57113,
+        "train_dfl": 1.35014,
+        "val_box": 1.6166,
+        "val_cls": 1.58987,
+        "val_dfl": 1.37857
+      },
+      "test": {
+        "precision": 0.7299754525671568,
+        "recall": 0.5228230980751604,
+        "map50": 0.6050686858453143,
+        "map50_95": 0.37841505702201406,
+        "validator_speed_ms_batch8": {
+          "preprocess": 0.12025901739545863,
+          "inference": 1.5858853463646319,
+          "loss": 0.0007792914228187763,
+          "postprocess": 1.0682901890157794
+        },
+        "validator_latency_ms_per_frame_batch8": 2.77443455277587
+      },
+      "parameters_m": 2.590035,
+      "flops_g": 2.720180736,
+      "checkpoint": "runs/train/fullscale-yolo11n-seed2026-120m/weights/epoch0.pt",
+      "endpoint_validation": {
+        "precision": 0.60161,
+        "recall": 0.3812,
+        "map50": 0.43108,
+        "map50_95": 0.23834
+      }
+    },
+    {
+      "budget_minutes": 20,
+      "status": "complete",
+      "selected_epoch": 1,
+      "selected_elapsed_seconds": 170.669,
+      "validation": {
+        "precision": 0.71507,
+        "recall": 0.5046,
+        "map50": 0.58562,
+        "map50_95": 0.36699
+      },
+      "endpoint_epoch": 7,
+      "endpoint_elapsed_seconds": 1148.04,
+      "endpoint_loss": {
+        "train_box": 1.54064,
+        "train_cls": 1.48503,
+        "train_dfl": 1.36507,
+        "val_box": 1.53199,
+        "val_cls": 1.40043,
+        "val_dfl": 1.32695
+      },
+      "test": {
+        "precision": 0.7299754525671568,
+        "recall": 0.5228230980751604,
+        "map50": 0.6050686858453143,
+        "map50_95": 0.37841505702201406,
+        "validator_speed_ms_batch8": {
+          "preprocess": 0.12025901739545863,
+          "inference": 1.5858853463646319,
+          "loss": 0.0007792914228187763,
+          "postprocess": 1.0682901890157794
+        },
+        "validator_latency_ms_per_frame_batch8": 2.77443455277587
+      },
+      "parameters_m": 2.590035,
+      "flops_g": 2.720180736,
+      "checkpoint": "runs/train/fullscale-yolo11n-seed2026-120m/weights/epoch0.pt",
+      "endpoint_validation": {
+        "precision": 0.64921,
+        "recall": 0.40646,
+        "map50": 0.47901,
+        "map50_95": 0.27706
+      }
+    },
+    {
+      "budget_minutes": 30,
+      "status": "complete",
+      "selected_epoch": 1,
+      "selected_elapsed_seconds": 170.669,
+      "validation": {
+        "precision": 0.71507,
+        "recall": 0.5046,
+        "map50": 0.58562,
+        "map50_95": 0.36699
+      },
+      "endpoint_epoch": 11,
+      "endpoint_elapsed_seconds": 1745.62,
+      "endpoint_loss": {
+        "train_box": 1.45632,
+        "train_cls": 1.35852,
+        "train_dfl": 1.32141,
+        "val_box": 1.43377,
+        "val_cls": 1.26162,
+        "val_dfl": 1.25133
+      },
+      "test": {
+        "precision": 0.7299754525671568,
+        "recall": 0.5228230980751604,
+        "map50": 0.6050686858453143,
+        "map50_95": 0.37841505702201406,
+        "validator_speed_ms_batch8": {
+          "preprocess": 0.12025901739545863,
+          "inference": 1.5858853463646319,
+          "loss": 0.0007792914228187763,
+          "postprocess": 1.0682901890157794
+        },
+        "validator_latency_ms_per_frame_batch8": 2.77443455277587
+      },
+      "parameters_m": 2.590035,
+      "flops_g": 2.720180736,
+      "checkpoint": "runs/train/fullscale-yolo11n-seed2026-120m/weights/epoch0.pt",
+      "endpoint_validation": {
+        "precision": 0.6896,
+        "recall": 0.46051,
+        "map50": 0.5388,
+        "map50_95": 0.31967
+      }
+    },
+    {
+      "budget_minutes": 60,
+      "status": "complete",
+      "selected_epoch": 23,
+      "selected_elapsed_seconds": 3535.73,
+      "validation": {
+        "precision": 0.72018,
+        "recall": 0.50424,
+        "map50": 0.5866,
+        "map50_95": 0.3676
+      },
+      "endpoint_epoch": 23,
+      "endpoint_elapsed_seconds": 3535.73,
+      "endpoint_loss": {
+        "train_box": 1.35555,
+        "train_cls": 1.20891,
+        "train_dfl": 1.25414,
+        "val_box": 1.32153,
+        "val_cls": 1.0872,
+        "val_dfl": 1.17604
+      },
+      "test": {
+        "precision": 0.7375014247064103,
+        "recall": 0.5284312931329189,
+        "map50": 0.6127322796034553,
+        "map50_95": 0.38523683452106494,
+        "validator_speed_ms_batch8": {
+          "preprocess": 0.10907592819177275,
+          "inference": 1.0137800975955076,
+          "loss": 0.000593759458985546,
+          "postprocess": 0.7978156030321008
+        },
+        "validator_latency_ms_per_frame_batch8": 1.920671628819381
+      },
+      "parameters_m": 2.590035,
+      "flops_g": 2.720180736,
+      "checkpoint": "runs/train/fullscale-yolo11n-seed2026-120m/weights/epoch22.pt",
+      "endpoint_validation": {
+        "precision": 0.72018,
+        "recall": 0.50424,
+        "map50": 0.5866,
+        "map50_95": 0.3676
+      }
+    },
+    {
+      "budget_minutes": 120,
+      "status": "complete",
+      "selected_epoch": 46,
+      "selected_elapsed_seconds": 7140.13,
+      "validation": {
+        "precision": 0.74016,
+        "recall": 0.54068,
+        "map50": 0.63356,
+        "map50_95": 0.41054
+      },
+      "endpoint_epoch": 46,
+      "endpoint_elapsed_seconds": 7140.13,
+      "endpoint_loss": {
+        "train_box": 1.26644,
+        "train_cls": 1.08999,
+        "train_dfl": 1.20114,
+        "val_box": 1.21175,
+        "val_cls": 0.96489,
+        "val_dfl": 1.10976
+      },
+      "test": {
+        "precision": 0.7725384623117773,
+        "recall": 0.5566150080311465,
+        "map50": 0.6488872375428798,
+        "map50_95": 0.4235634977885437,
+        "validator_speed_ms_batch8": {
+          "preprocess": 0.10990753448266778,
+          "inference": 1.114524382767346,
+          "loss": 0.0006141994211027663,
+          "postprocess": 0.8449345755634262
+        },
+        "validator_latency_ms_per_frame_batch8": 2.06936649281344
+      },
+      "parameters_m": 2.590035,
+      "flops_g": 2.720180736,
+      "checkpoint": "runs/train/fullscale-yolo11n-seed2026-120m/weights/epoch45.pt",
+      "endpoint_validation": {
+        "precision": 0.74016,
+        "recall": 0.54068,
+        "map50": 0.63356,
+        "map50_95": 0.41054
+      }
+    }
+  ],
+  "epoch_history_csv": "results/fullscale_experiments/epoch_history/yolo11n/seed-2026.csv",
+  "epoch_history_sha256": "ab586261ab81315fa743e54750cfa520b1a3a43ab07a386d6c4410df9735faac",
+  "process_wall_seconds_before_snapshot_test": 7325.244160100003,
+  "wall_timer_scope_correction": "The original field name included test, but its timer was sampled before snapshot test evaluation."
+}

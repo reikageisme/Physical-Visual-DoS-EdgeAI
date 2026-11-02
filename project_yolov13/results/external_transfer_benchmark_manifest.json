@@ -1,0 +1,15 @@
+{
+  "measured_at_utc": "2026-10-04T09:20:10+00:00",
+  "dataset_manifest": "results/external_transfer_dataset_manifest.json",
+  "data_yaml": "dataset/adv_tshirt_person_eval.yaml",
+  "model_count": 15,
+  "successful_models": 15,
+  "failed_models": [],
+  "evaluation": "Ultralytics validation on full corpus, test split path; class 0 only (person), 640x640, batch=1, GPU, FP32.",
+  "latency": "Five warmups and 30 model-forward calls on a zero tensor, batch=1, 640x640, FP32; CUDA synchronization; median reported; preprocessing/postprocessing excluded.",
+  "output_csv": "results/benchmark_adv_tshirt_transfer.csv",
+  "yolov12_implementation": "Official YOLOv12-v1.0 source commit b1035f8 with PyTorch SDPA fallback for unavailable optional FlashAttention; official matching v1.0 weights.",
+  "yolov12_source_manifest": "results/yolov12_v1_source_manifest.json",
+  "initial_loader_failures_preserved_as": null,
+  "merged_at_utc": "2026-10-04T09:38:13+00:00"
+}

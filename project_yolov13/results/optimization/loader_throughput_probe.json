@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "measured_at_utc": "2026-10-13T12:12:45+00:00",
+  "scope": "CPU-only native416px batch8 trainingaugmentation loader; same sorted primaryimages, no modelforward/backward; measured while existing GPU training active; diagnostic, not isolated GPU benchmark",
+  "records": [
+    {
+      "workers": 0,
+      "batches": 128,
+      "images": 1024,
+      "wall_seconds_including_worker_start": 13.455626499999198,
+      "steady_batches_per_second_excluding_first16": 9.727299416551167,
+      "gpu_used": false
+    },
+    {
+      "workers": 2,
+      "batches": 128,
+      "images": 1024,
+      "wall_seconds_including_worker_start": 12.757908999999927,
+      "steady_batches_per_second_excluding_first16": 18.503485965902666,
+      "gpu_used": false
+    }
+  ]
+}

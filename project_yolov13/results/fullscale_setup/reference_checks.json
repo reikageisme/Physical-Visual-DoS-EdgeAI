@@ -1,0 +1,60 @@
+{
+  "checked_at_utc": "2026-10-12T13:51:03.933923+00:00",
+  "method": "Primary-source pages inspected using the web tool; facts below are paraphrased, not quoted.",
+  "references": [
+    {
+      "url": "https://github.com/Wwangb/AdvT-shirt-1K",
+      "verified_facts": [
+        "Official repository reports 1131 images.",
+        "Repository links its download to the xingjunm/AdvT-shirt dataset."
+      ]
+    },
+    {
+      "url": "https://huggingface.co/datasets/xingjunm/AdvT-shirt",
+      "verified_facts": [
+        "Dataset page declares apache-2.0 in license metadata."
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2506.17733",
+      "verified_facts": [
+        "Title: YOLOv13: Real-Time Object Detection with Hypergraph-Enhanced Adaptive Visual Perception.",
+        "First author: Mengqi Lei; 2025; current listed revision v2 dated 2025-09-05."
+      ]
+    },
+    {
+      "url": "https://github.com/iMoonLab/yolov13",
+      "verified_facts": [
+        "Official implementation and released weights for the YOLOv13 paper.",
+        "Published benchmark uses a different setup from this local one-class fine-tuning study."
+      ]
+    },
+    {
+      "url": "https://github.com/sunsmarterjie/yolov12",
+      "verified_facts": [
+        "Official repository for YOLOv12 Attention-Centric Real-Time Object Detectors."
+      ]
+    },
+    {
+      "url": "https://docs.ultralytics.com/models/yolo11/",
+      "verified_facts": [
+        "Official YOLO11 documentation is accessible."
+      ]
+    },
+    {
+      "url": "https://cocodataset.org/dataset/detection-2017.htm",
+      "verified_facts": [
+        "Official 2017 detection dataset source is accessible."
+      ]
+    }
+  ],
+  "local_runtime_evidence": {
+    "flash_attn_package_in_dependency_snapshot": false,
+    "observed_attention_fallback": "torch.nn.functional.scaled_dot_product_attention",
+    "observed_in_logs": [
+      "results/fullscale_experiments/logs/yolov12n-seed42.log",
+      "results/fullscale_experiments/logs/yolov13n-seed42.log",
+      "results/fullscale_experiments/logs/yolov13s-seed42.log"
+    ]
+  }
+}

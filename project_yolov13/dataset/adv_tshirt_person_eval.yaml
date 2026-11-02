@@ -1,0 +1,6 @@
+path: ./dataset/external/adv_tshirt_person_eval
+train: images/test
+val: images/test
+test: images/test
+names:
+  0: person

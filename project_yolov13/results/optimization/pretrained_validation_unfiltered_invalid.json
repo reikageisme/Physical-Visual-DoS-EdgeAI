@@ -1,0 +1,24 @@
+{
+  "status": "invalid_excluded",
+  "model_key": "yolov13s",
+  "weights": "weights/yolov13s.pt",
+  "weights_sha256": "cf0fe62e2ef520a63c1e3d380f5771b7ac701b97d07f11a28c314e68618ba072",
+  "dataset_manifest_sha256": "b4ac66028571475623f22b872f3648eaed5f3a6b9a324ca76217807a32ed5c8c",
+  "validation": {
+    "precision": 0.4187543979918856,
+    "recall": 0.604907090023453,
+    "map50": 0.38549286907022207,
+    "map50_95": 0.28543236574902003,
+    "validator_speed_ms_batch8": {
+      "preprocess": 0.12439678642405515,
+      "inference": 3.2154550946637355,
+      "loss": 0.0005845469297085643,
+      "postprocess": 1.4009971401518586
+    },
+    "validator_latency_ms_per_frame_batch8": 4.740849021239649
+  },
+  "mapping": "COCO person predictions filtered classes=[0], mapped single_cls=True; original 80-class head; no test access",
+  "measured_at_utc": "2026-10-13T12:02:59+00:00",
+  "wall_seconds": 116.65310640000098,
+  "exclusion_reason": "Native validator ignores args.classes in NMS; single_cls=True maps all80COCO predictions into person. Values are invalid person-only control and must not be reported. Corrected custom PersonOnlyValidator rerun in pretrained_validation.json"
+}

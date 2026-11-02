@@ -1,0 +1,36 @@
+{
+  "verified_at_utc": "2026-10-04T05:34:07+00:00",
+  "source_revision": "73289949533efac82bb5f72ec19b746618656bd2",
+  "torch": "2.11.0+cu128",
+  "cuda_available": true,
+  "models": [
+    {
+      "scale": "n",
+      "checkpoint": "weights\\yolov13n.pt",
+      "bytes": 10570688,
+      "sha256": "6653035017b0f111f80ec11ed914874ea85699b104aeac1e46e517d16889d6b7",
+      "parameters": 2494151
+    },
+    {
+      "scale": "s",
+      "checkpoint": "weights\\yolov13s.pt",
+      "bytes": 36922944,
+      "sha256": "cf0fe62e2ef520a63c1e3d380f5771b7ac701b97d07f11a28c314e68618ba072",
+      "parameters": 9055527
+    },
+    {
+      "scale": "l",
+      "checkpoint": "weights\\yolov13l.pt",
+      "bytes": 111819790,
+      "sha256": "f95ad5bbf3aa80a3df2a28ff4c623582ded6e02bb43d7cea9063c2b248e316cb",
+      "parameters": 27627783
+    },
+    {
+      "scale": "x",
+      "checkpoint": "weights\\yolov13x.pt",
+      "bytes": 257795022,
+      "sha256": "df5f9af2e1ba506c4b164cd2278ae6e9eff23295265df3a137e1ce8cc4c1700d",
+      "parameters": 64057511
+    }
+  ]
+}

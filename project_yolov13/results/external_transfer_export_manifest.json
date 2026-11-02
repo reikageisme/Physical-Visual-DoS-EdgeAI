@@ -1,0 +1,80 @@
+{
+  "created_at_utc": "2026-10-04T09:38:19+00:00",
+  "source_csv": "results/benchmark_adv_tshirt_transfer.csv",
+  "successful_rows": 15,
+  "comparison_markdown": "results/external_transfer_comparison.md",
+  "comparison_latex": "results/external_transfer_comparison.tex",
+  "tradeoff_plots": [
+    "results/external_transfer_tradeoff_latency.png",
+    "results/external_transfer_tradeoff_flops.png"
+  ],
+  "yolov13_deltas_by_scale": {
+    "n": {
+      "YOLOv8": {
+        "map50_95_delta_points": 1.6347835546906997,
+        "gpu_latency_delta_ms": 28.00919999845064,
+        "flops_delta_g": -2.308646399999999
+      },
+      "YOLOv10": {
+        "map50_95_delta_points": 1.0985010929879357,
+        "gpu_latency_delta_ms": 23.094500000297558,
+        "flops_delta_g": -2.19168
+      },
+      "YOLO11": {
+        "map50_95_delta_points": 1.1682642005904853,
+        "gpu_latency_delta_ms": 16.01444999960222,
+        "flops_delta_g": -0.0655872000000004
+      },
+      "YOLOv12": {
+        "map50_95_delta_points": -0.5936106728615109,
+        "gpu_latency_delta_ms": 5.398600000262377,
+        "flops_delta_g": -0.10711039999999983
+      }
+    },
+    "s": {
+      "YOLOv8": {
+        "map50_95_delta_points": 1.1851188574680704,
+        "gpu_latency_delta_ms": 2.1312499993655365,
+        "flops_delta_g": -7.6389376000000055
+      },
+      "YOLOv10": {
+        "map50_95_delta_points": 0.4616432911710211,
+        "gpu_latency_delta_ms": -8.533050000551157,
+        "flops_delta_g": -3.9321599999999997
+      },
+      "YOLO11": {
+        "map50_95_delta_points": 0.19139619893108195,
+        "gpu_latency_delta_ms": -2.7593500017246697,
+        "flops_delta_g": -0.5407744000000037
+      },
+      "YOLOv12": {
+        "map50_95_delta_points": -0.7823026218449547,
+        "gpu_latency_delta_ms": -12.309750000895292,
+        "flops_delta_g": -0.5189631999999982
+      }
+    },
+    "l": {
+      "YOLOv8": {
+        "map50_95_delta_points": -1.1197081871033965,
+        "gpu_latency_delta_ms": 48.5820000003514,
+        "flops_delta_g": -76.37422079999997
+      },
+      "YOLOv10": {
+        "map50_95_delta_points": -1.0203660298165107,
+        "gpu_latency_delta_ms": 39.04120000061084,
+        "flops_delta_g": -38.50639360000001
+      },
+      "YOLO11": {
+        "map50_95_delta_points": -0.26793467554754313,
+        "gpu_latency_delta_ms": 30.944100000851904,
+        "flops_delta_g": 1.754521600000004
+      },
+      "YOLOv12": {
+        "map50_95_delta_points": -0.4036378387009876,
+        "gpu_latency_delta_ms": 16.315400000166846,
+        "flops_delta_g": -0.3972863999999987
+      }
+    }
+  },
+  "scope": "External zero-shot transfer benchmark only; not fine-tuned project-dataset performance."
+}

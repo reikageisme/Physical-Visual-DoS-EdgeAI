@@ -1,0 +1,42 @@
+{
+  "status": "frozen_before_corrected_full_measurements",
+  "frozen_at_utc": "2026-10-17T09:24:29+00:00",
+  "protocol_id": "actual-batch1-txt-loader-v2",
+  "reason": "List-of-paths dispatches through autocast_list to LoadPilAndNumpy(bs=len(images)); batch1 argument is ignored by that loader. Text-list source dispatches to LoadImagesAndVideos(batch1).",
+  "evidence_source_anchors": {
+    "yolov13_src/ultralytics/data/build.py": "check_source list/tuple->from_img=True; load_inference_source from_img->LoadPilAndNumpy",
+    "yolov13_src/ultralytics/data/loaders.py": "LoadPilAndNumpy.__init__:self.bs=len(self.im0); LoadImagesAndVideos.__init__:self.bs=batch"
+  },
+  "invalid_requested_batch": 1,
+  "invalid_actual_batch": 532,
+  "historical_latency_valid": false,
+  "historical_fps_valid": false,
+  "historical_accuracy_affected": false,
+  "historical_latency_source": "results/fullscale_experiments/latency_records.json",
+  "historical_latency_source_sha256": "5e6641e7be25ad84e28fc0512c14d9194185eb81392b2f91f3f9652e20b91b7c",
+  "invalid_native_diagnostic_archive": "results/optimization/invalid_latency_protocol/pretrained_locked_test_diagnostic-original-list-loader.json",
+  "invalid_native_diagnostic_archive_sha256": "35c307cdc7e7b5f518ae281dc49e127c106c64a4f0a8562c87a8b800438015a8",
+  "native_test_accuracy_preserved": true,
+  "native_test_accuracy_sha256": "83801731954875414ced894ca838d4c577e04b8d72ef720c71bab593511194c5",
+  "oom_evidence": {
+    "source_log": "results/optimization/recovery20261017_orchestrator.log",
+    "source_log_sha256": "f55eb015b64fecac61225744dfb66c051fa91afab5a5ba2973bf9026fb2cf934",
+    "exception_excerpt": [
+      "torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.74 GiB. GPU 0 has a total capacity of 7.96 GiB of which 0 bytes is free. Of the allocated memory 8.86 GiB is allocated by PyTorch, and 3.54 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)"
+    ],
+    "interrupted_record": "original_sgd-seed100",
+    "test_status": "Fulltest had computed but not persisted before timing OOM; not a completed record evaluation. Identical locked fulltest will be reevaluated."
+  },
+  "method_verification": "results/optimization/latency_batch1_verification.json",
+  "method_verification_sha256": "c078cdc45fe592e85c3bca1a8fecfd414ac0445b92f72a1595c25bb2c4080f99",
+  "probe_performance_excluded": true,
+  "correction": "Source is project-local txt list. on_predict_start verifies LoadImagesAndVideos.bs1 and restores frozen sample order. on_predict_batch_start verifies one source image. Network forward prehook asserts tensor batch dimension1 for every call.",
+  "corrected_accuracy_protocol_unchanged": true,
+  "selection_or_checkpoints_changed": false,
+  "corrected_warmup_frames": 32,
+  "corrected_measured_frames": 500,
+  "imgsz": 416,
+  "precision": "fp32",
+  "actual_performance_measurements_to_repeat": 7,
+  "legacy_timing_excluded_from_comparisons": true
+}

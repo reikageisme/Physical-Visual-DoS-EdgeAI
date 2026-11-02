@@ -1,0 +1,35 @@
+# Shared training settings. Preserve these for all model comparisons.
+data_yaml: dataset/data.yaml
+scale: n
+pretrained: true
+epochs: 600
+imgsz: 640
+batch: 1
+workers: 0
+device: auto
+seed: 42
+patience: 50
+optimizer: SGD
+lr0: 0.01
+lrf: 0.01
+momentum: 0.937
+weight_decay: 0.0005
+warmup_epochs: 3.0
+close_mosaic: 10
+# Keep augmentation identical across models for a fair benchmark.
+augment:
+  hsv_h: 0.015
+  hsv_s: 0.7
+  hsv_v: 0.4
+  degrees: 0.0
+  translate: 0.1
+  scale: 0.5
+  shear: 0.0
+  perspective: 0.0
+  fliplr: 0.5
+  flipud: 0.0
+  mosaic: 1.0
+  mixup: 0.0
+  copy_paste: 0.1
+  auto_augment: null
+  erasing: 0.0
