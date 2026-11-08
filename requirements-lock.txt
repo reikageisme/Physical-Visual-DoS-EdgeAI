@@ -1,0 +1,23 @@
+# GĐ1 environment lock — Physical-Visual-DoS-EdgeAI
+# Phiên bản đúng của môi trường đã đo lượt extended_q1_20261002
+# (nguồn: outputs/extended_q1_20261002/manifest.json + soi phiên bản 2026-10-18)
+# Python: 3.14.6 (interpreter: C:\Program Files\Python314\python.exe)
+#
+# LƯU Ý CÀI ĐẶT:
+#   torch phiên bản +cpu chỉ tồn tại trên CPU index của PyTorch:
+#   pip install -r requirements-lock.txt --extra-index-url https://download.pytorch.org/whl/cpu
+#
+torch==2.13.0+cpu
+ultralytics==8.4.90
+opencv-python==5.0.0.93
+numpy==2.5.0
+scipy==1.18.0
+pandas==3.0.3
+matplotlib==3.11.0
+psutil==7.2.2
+kornia==0.8.3
+Pillow==12.3.0
+pycocotools==2.0.11
+# torchvision: cài tự động theo CPU-index (pairing torch 2.13.0).
+# Báo trước: máy đo có metadata torchvision==0.1.6 (không dùng đường mã này);
+# verify_env.py sẽ ghi nhận phiên bản torchvision lớp môi trường mới và cảnh báo nếu khác mẹ.

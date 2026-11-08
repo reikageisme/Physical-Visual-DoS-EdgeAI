@@ -1,0 +1,54 @@
+{
+  "sources": {
+    "sponge-sim/studies/laptop_seg/lock_reference_trace.json": {
+      "sha256": "bc2773454401385a16e6aed2ea5d68c46d81bed3f0537bf9f386e6e8deff4786"
+    },
+    "sponge-sim/results/laptop_reference_trace_20261107/run_01/campaign.json": {
+      "sha256": "34d239c527ec3451a02715e3c1c8764499223c4d414c841922aefe59a0dd1329"
+    },
+    "sponge-sim/results/laptop_reference_trace_20261107/run_01/campaign_done.json": {
+      "sha256": "9e3d913caee88105c732129b5f3bc78fdcb7677c988c1fcd3a64f5f47e799b26"
+    },
+    "sponge-sim/results/laptop_reference_trace_20261107/run_01_affinity.jsonl": {
+      "sha256": "43ad67798b4c05fc33067252bd8ba3be67946dbecf46788eb01bde2f2f1f027b"
+    },
+    "sponge-sim/studies/laptop_seg/analyze_reference_trace.py": {
+      "sha256": "85f69c2e623a9ddc6bc9ec1cd5509f2a25ef8ae9af879a1e627802c376be66a2"
+    },
+    "sponge-sim/results/laptop_reference_trace_20261107/registration_check.json": {
+      "sha256": "3a1084f96f2260b054570b3203349b4888f5fc76e43dae451f26def5f24397f7"
+    },
+    "sponge-sim/results/laptop_reference_trace_20261107/run_01/continuous/manifest.json": {
+      "sha256": "c504ec216fa418e1f59ce7a54d4c6cdd44cbb79de49394be7cbe55abc1a20e81"
+    },
+    "sponge-sim/results/laptop_reference_trace_20261107/run_01/continuous/raw.jsonl": {
+      "sha256": "c897e4903944c07c64ded321bbce6faacbbd2173b37c27bee58faa8b770399b6"
+    },
+    "sponge-sim/results/laptop_reference_trace_20261107/run_01/pause2/manifest.json": {
+      "sha256": "3856e1a19bc9e8e8ad287911f3b71077f468db541e50c653e1514109d5ea7af1"
+    },
+    "sponge-sim/results/laptop_reference_trace_20261107/run_01/pause2/raw.jsonl": {
+      "sha256": "368862d88ee3873d4b0376553476d22f74cb9a5a1e4dee9fa0cdda9f4067e02e"
+    },
+    "sponge-sim/results/laptop_reference_trace_20261107/run_01/analysis.json": {
+      "sha256": "1b61502b1541aec49e52bc5fca61f58cb70b609d80af55299ee771ad222da405"
+    },
+    "sponge-sim/results/laptop_reference_trace_20261107/run_01/reference_trace.png": {
+      "sha256": "d80d43a87c9e070b443ea0b65a5a519175e4daf12fdbaad0338593a9cc5e1f4f"
+    },
+    "sponge-sim/results/laptop_reference_trace_20261107/run_01/reference_trace.pdf": {
+      "sha256": "ca891b145d830c91d92c59f830541ac2be4d490c0adef0c46548d3635001960b"
+    },
+    "sponge-sim/studies/laptop_seg/analyze_stage_drift.py": {
+      "sha256": "14ec4c48b73d05ebe2c1c16ab77130db8787fad684a3d804de957a2d98902ebc"
+    },
+    "paper_en/segmentation_extension/make_reference_trace.py": {
+      "sha256": "b6099d0ed1fe66c21e67e5e0da1c4127e623e2b2313e9e14576d524a3adf5355"
+    }
+  },
+  "selectors": [
+    "conditions.*.blocks",
+    "conditions.*.diagnostic_flags"
+  ],
+  "interpretation": "Descriptive traces only, one process per cadence, fixed order, no attack qualification."
+}

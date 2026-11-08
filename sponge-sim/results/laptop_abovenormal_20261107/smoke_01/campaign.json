@@ -1,0 +1,7 @@
+{
+  "tag": "prereg-laptop-abovenormal-20261107",
+  "commit": "9ce44dde611975172e437f0bafd59110f63f2cb4",
+  "lock_sha256": "80d67445c3b212ac5e6452a9b9c9d38e91e3947d9407b3156980f4123998e5ad",
+  "user_idle": "User authorized continued fixed experiment sequence; AC and idle declaration continues",
+  "smoke": true
+}

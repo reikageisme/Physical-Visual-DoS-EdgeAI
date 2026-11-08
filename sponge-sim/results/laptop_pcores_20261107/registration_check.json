@@ -1,0 +1,21 @@
+{
+  "status": "SOURCE_INPUT_TOPOLOGY_LOCKS_VERIFIED_BEFORE_NEW_P2_LOAD",
+  "tag": "prereg-laptop-pcores-20261107",
+  "commit": "6c261995d580a8bf06d02423ff4c086c4579069f",
+  "smoke_lock_sha256": "ce19ed53b62c6c6138896c576befa4af2144a91333fc3fc3548ce1d20c793f22",
+  "full_lock_sha256": "acccb6615bcbb91f56c27820aee260806ad22c84d031e6bce75f2a4f4c8b1243",
+  "source_files": 28,
+  "input_files": 21,
+  "cpu_set": [
+    0,
+    2
+  ],
+  "own_app_excluded": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "tests": "44 passed in 5.04s",
+  "line_ending_exception": "hw.py working CRLF/tag LF only; exact working SHA bound in both locks"
+}

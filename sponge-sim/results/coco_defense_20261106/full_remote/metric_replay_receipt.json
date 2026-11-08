@@ -1,0 +1,218 @@
+[
+  {
+    "model": "yolov8n-seg.pt",
+    "variant": "baseline",
+    "max_abs_error": 0.0,
+    "shapes": {
+      "tp": [
+        910322,
+        10
+      ],
+      "conf": [
+        910322
+      ],
+      "pred_cls": [
+        910322
+      ],
+      "target_cls": [
+        36335
+      ],
+      "target_img": [
+        14631
+      ],
+      "tp_m": [
+        910322,
+        10
+      ]
+    }
+  },
+  {
+    "model": "yolov8n-seg.pt",
+    "variant": "maxdet50",
+    "max_abs_error": 0.0,
+    "shapes": {
+      "tp": [
+        232763,
+        10
+      ],
+      "conf": [
+        232763
+      ],
+      "pred_cls": [
+        232763
+      ],
+      "target_cls": [
+        36335
+      ],
+      "target_img": [
+        14631
+      ],
+      "tp_m": [
+        232763,
+        10
+      ]
+    }
+  },
+  {
+    "model": "yolov8n-seg.pt",
+    "variant": "prenms300",
+    "max_abs_error": 0.0,
+    "shapes": {
+      "tp": [
+        348002,
+        10
+      ],
+      "conf": [
+        348002
+      ],
+      "pred_cls": [
+        348002
+      ],
+      "target_cls": [
+        36335
+      ],
+      "target_img": [
+        14631
+      ],
+      "tp_m": [
+        348002,
+        10
+      ]
+    }
+  },
+  {
+    "model": "yolov8n-seg.pt",
+    "variant": "prenms1000",
+    "max_abs_error": 0.0,
+    "shapes": {
+      "tp": [
+        876811,
+        10
+      ],
+      "conf": [
+        876811
+      ],
+      "pred_cls": [
+        876811
+      ],
+      "target_cls": [
+        36335
+      ],
+      "target_img": [
+        14631
+      ],
+      "tp_m": [
+        876811,
+        10
+      ]
+    }
+  },
+  {
+    "model": "yolo11n-seg.pt",
+    "variant": "baseline",
+    "max_abs_error": 0.0,
+    "shapes": {
+      "tp": [
+        821526,
+        10
+      ],
+      "conf": [
+        821526
+      ],
+      "pred_cls": [
+        821526
+      ],
+      "target_cls": [
+        36335
+      ],
+      "target_img": [
+        14631
+      ],
+      "tp_m": [
+        821526,
+        10
+      ]
+    }
+  },
+  {
+    "model": "yolo11n-seg.pt",
+    "variant": "maxdet50",
+    "max_abs_error": 0.0,
+    "shapes": {
+      "tp": [
+        223775,
+        10
+      ],
+      "conf": [
+        223775
+      ],
+      "pred_cls": [
+        223775
+      ],
+      "target_cls": [
+        36335
+      ],
+      "target_img": [
+        14631
+      ],
+      "tp_m": [
+        223775,
+        10
+      ]
+    }
+  },
+  {
+    "model": "yolo11n-seg.pt",
+    "variant": "prenms300",
+    "max_abs_error": 0.0,
+    "shapes": {
+      "tp": [
+        329193,
+        10
+      ],
+      "conf": [
+        329193
+      ],
+      "pred_cls": [
+        329193
+      ],
+      "target_cls": [
+        36335
+      ],
+      "target_img": [
+        14631
+      ],
+      "tp_m": [
+        329193,
+        10
+      ]
+    }
+  },
+  {
+    "model": "yolo11n-seg.pt",
+    "variant": "prenms1000",
+    "max_abs_error": 0.0,
+    "shapes": {
+      "tp": [
+        794944,
+        10
+      ],
+      "conf": [
+        794944
+      ],
+      "pred_cls": [
+        794944
+      ],
+      "target_cls": [
+        36335
+      ],
+      "target_img": [
+        14631
+      ],
+      "tp_m": [
+        794944,
+        10
+      ]
+    }
+  }
+]

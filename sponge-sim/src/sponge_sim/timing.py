@@ -14,9 +14,11 @@ import torch
 DRIFT_FLAG = 0.03  # >3% so với tham chiếu đầu phiên -> gắn cờ
 
 
-def timed(fn, setup=None, repeats: int = 1, warmup: int = 0) -> list[dict]:
+def timed(fn, setup=None, repeats: int = 1, warmup: int = 0, sync=None) -> list[dict]:
     """Mỗi lần lặp: args = setup() (NGOÀI vùng đo), rồi đo fn(*args). Trả về list dict.
-    gc tắt trong suốt vòng đo, bật lại sau."""
+    gc tắt trong suốt vòng đo, bật lại sau.
+    sync: hàm gọi NGAY TRƯỚC t0 và NGAY TRƯỚC t1 để chặn đồng hồ cho tới khi công việc xong
+    (vd torch.cuda.synchronize cho đo GPU, vì kernel CUDA bất đồng bộ). Mặc định None = không đổi hành vi CPU."""
     setup = setup or (lambda: ())
     for _ in range(warmup):
         fn(*setup())
@@ -26,8 +28,12 @@ def timed(fn, setup=None, repeats: int = 1, warmup: int = 0) -> list[dict]:
     try:
         for r in range(repeats):
             args = setup()
+            if sync is not None:
+                sync()
             t0 = time.perf_counter_ns()
             result = fn(*args)
+            if sync is not None:
+                sync()
             t1 = time.perf_counter_ns()
             out.append(dict(rep=r, ns=t1 - t0, t_start_ns=t0, wall_utc=time.time(), result=result))
     finally:

@@ -1,0 +1,49 @@
+{
+  "config": {
+    "profile": "one",
+    "affinity": [
+      2
+    ],
+    "threads": 1,
+    "blocks": 20,
+    "repeats": 31,
+    "warmup": 200,
+    "per_reference_warmup": 5,
+    "order_seed": 20261106,
+    "canvas": 640,
+    "drift_limit": 0.03,
+    "max_flags": 2,
+    "max_mde_frac": 0.01
+  },
+  "provenance": {
+    "tag": "prereg-stability-calibration-20261106",
+    "protocol_sha256": "6aeff8d29f5425f9dc0fef85d3b913c5a411e00e1f00766cea07f4aa578a8490",
+    "script_sha256": "3a6051652dda196da95bbe64e5b018f25740de3a6f37562d3299e19cee740085",
+    "commit": "f89a81f672836fc2ebb235434f3fffe5b71789a7"
+  },
+  "config_sha256": "ef6b13ffd223959927b0876ec4940ebc894201d7b4d8e28d0dbf819400451c75",
+  "image_sha256": "3b0bb6bebad60a3329f1e3484434872e86998aeb7750d779b308e4a064868c2c",
+  "weights_sha256": "a7cd8f929e1903d78a12a48efecab430209f18dc46cb96c3599a5980c63c423c",
+  "torch": "2.11.0+cu128",
+  "torchvision": "0.26.0+cu128",
+  "original_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ]
+}

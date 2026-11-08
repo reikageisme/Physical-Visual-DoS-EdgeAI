@@ -1,0 +1,545 @@
+{
+  "smoke": true,
+  "complete": true,
+  "feasibility_pass": true,
+  "quality_pass": false,
+  "flags": 0,
+  "n_references": 4,
+  "pin_checks": [
+    true,
+    true
+  ],
+  "aa": {
+    "clean": {
+      "n_images": 2,
+      "geometric_ratio": 1.0147907415127053,
+      "mde_fraction": 0.026606217947040333
+    },
+    "attacked": {
+      "n_images": 2,
+      "geometric_ratio": 1.00293701885585,
+      "mde_fraction": 0.04872543130988262
+    }
+  },
+  "contrasts": {
+    "total": {
+      "n_images": 2,
+      "geometric_ratio": 3.630861820149674,
+      "ci95": [
+        3.263832721918536,
+        4.039164589682562
+      ],
+      "image_ids": [
+        "000000000009_inputs",
+        "000000000025_inputs"
+      ],
+      "clean_medians_ms": [
+        255.6366,
+        240.43275
+      ],
+      "attacked_medians_ms": [
+        834.3551,
+        971.14745
+      ],
+      "mean_paired_delta_ms": 654.7166,
+      "delta_ci95": [
+        578.7185,
+        730.7147
+      ]
+    }
+  },
+  "counts": [
+    {
+      "wall_utc": 1794031580.1086223,
+      "kind": "counts",
+      "image": "000000000009_inputs",
+      "arm": "clean",
+      "n_tau": 37,
+      "k": 6,
+      "prediction_sha256": "1d11f13cb974343d132435d55b6dc2a04ffeeeee7f31280af10167b01730c3b9",
+      "proto_shape": [
+        32,
+        160,
+        160
+      ]
+    },
+    {
+      "wall_utc": 1794031580.352338,
+      "kind": "counts",
+      "image": "000000000009_inputs",
+      "arm": "attacked",
+      "n_tau": 2018,
+      "k": 202,
+      "prediction_sha256": "e232363009f2952f88ab61e4c7adee9546418c45b8f643da4333e521d0cd6203",
+      "proto_shape": [
+        32,
+        160,
+        160
+      ]
+    },
+    {
+      "wall_utc": 1794031697.35383,
+      "kind": "counts",
+      "image": "000000000025_inputs",
+      "arm": "clean",
+      "n_tau": 18,
+      "k": 2,
+      "prediction_sha256": "b138f5fd2f3cb292cb40035bd9b4a8af10c60cc496c372922f2714c4a02efd8c",
+      "proto_shape": [
+        32,
+        160,
+        160
+      ]
+    },
+    {
+      "wall_utc": 1794031697.6132507,
+      "kind": "counts",
+      "image": "000000000025_inputs",
+      "arm": "attacked",
+      "n_tau": 2406,
+      "k": 250,
+      "prediction_sha256": "4b3764c70d3391bbedbab79dda20ac332a8e2fb25ed5e1d6509f4c3a181d52bf",
+      "proto_shape": [
+        32,
+        160,
+        160
+      ]
+    }
+  ],
+  "references": [
+    {
+      "wall_utc": 1794031575.607104,
+      "kind": "reference",
+      "block": "start",
+      "samples_ns": [
+        231839900,
+        1550725100,
+        227427500,
+        223992700,
+        222230800,
+        236661200,
+        224050400,
+        221454600,
+        232367900,
+        249304800,
+        220843000,
+        220245600,
+        222767600,
+        220401500,
+        227754700
+      ],
+      "cpu_samples_ns": [
+        234375000,
+        234375000,
+        234375000,
+        218750000,
+        234375000,
+        234375000,
+        218750000,
+        218750000,
+        234375000,
+        218750000,
+        218750000,
+        234375000,
+        187500000,
+        218750000,
+        234375000
+      ],
+      "ratio": 1.0,
+      "flagged": false
+    },
+    {
+      "wall_utc": 1794031579.8747034,
+      "kind": "reference",
+      "block": 0,
+      "samples_ns": [
+        234814300,
+        232990900,
+        234514300,
+        243613800,
+        227480800,
+        225237000,
+        229135600,
+        227845800,
+        225820300,
+        223535700,
+        226099900,
+        228358400,
+        247288600,
+        223346900,
+        225755200
+      ],
+      "cpu_samples_ns": [
+        234375000,
+        234375000,
+        234375000,
+        250000000,
+        218750000,
+        218750000,
+        218750000,
+        234375000,
+        234375000,
+        218750000,
+        218750000,
+        218750000,
+        218750000,
+        218750000,
+        218750000
+      ],
+      "ratio": 1.0169399385138345,
+      "flagged": false
+    },
+    {
+      "wall_utc": 1794031697.1196096,
+      "kind": "reference",
+      "block": 1,
+      "samples_ns": [
+        224943100,
+        220422800,
+        224614100,
+        238549100,
+        221920700,
+        220987800,
+        225369900,
+        237315200,
+        224589000,
+        227946000,
+        233401300,
+        237161700,
+        238814900,
+        230548200,
+        228430700
+      ],
+      "cpu_samples_ns": [
+        203125000,
+        203125000,
+        234375000,
+        234375000,
+        218750000,
+        234375000,
+        187500000,
+        187500000,
+        234375000,
+        218750000,
+        218750000,
+        250000000,
+        234375000,
+        218750000,
+        218750000
+      ],
+      "ratio": 1.0173871593177248,
+      "flagged": false
+    },
+    {
+      "wall_utc": 1794031829.4621046,
+      "kind": "reference",
+      "block": "end",
+      "samples_ns": [
+        218154800,
+        217361500,
+        214036800,
+        210232300,
+        212251400,
+        219789800,
+        210343500,
+        211249500,
+        402982800,
+        217718300,
+        218144600,
+        227865400,
+        221663500,
+        213140400,
+        214051100
+      ],
+      "cpu_samples_ns": [
+        218750000,
+        218750000,
+        218750000,
+        203125000,
+        218750000,
+        187500000,
+        218750000,
+        203125000,
+        234375000,
+        218750000,
+        187500000,
+        234375000,
+        218750000,
+        218750000,
+        203125000
+      ],
+      "ratio": 0.9701455565354938,
+      "flagged": false
+    }
+  ],
+  "raw_sha256": "7806e4eda0b5170bf6e6f48001745fe84d8b2e929059136577e162ceae5dbc47",
+  "scope": "Frozen whole-image PGD20; tensor-to-native-mask CPU latency; no DoS/deadline/camera claim.",
+  "cpu_diagnostics": {
+    "clean": {
+      "stages": {
+        "total": {
+          "n_trials": 192,
+          "wall_median_ms": 248.55605,
+          "wall_max_ms": 2009.1948,
+          "median_cpu_over_wall": 0.983267978811521,
+          "n_highwall": 2,
+          "highwall_fraction": 0.010416666666666666,
+          "highwall_low_cpu_count": 2,
+          "highwall_low_cpu_share": 1.0,
+          "highwall_trials": [
+            {
+              "image": "000000000009_inputs",
+              "rep": 8,
+              "label": "aa_B",
+              "wall_ns": 1490995300,
+              "process_cpu_ns": 234375000,
+              "cpu_over_wall": 0.15719365446691885
+            },
+            {
+              "image": "000000000025_inputs",
+              "rep": 23,
+              "label": "aa_A",
+              "wall_ns": 2009194800,
+              "process_cpu_ns": 265625000,
+              "cpu_over_wall": 0.13220470210255372
+            }
+          ]
+        }
+      },
+      "references": [
+        {
+          "raw_line": 3,
+          "block": "start",
+          "wall_ratio": 1.0,
+          "median_cpu_over_wall": 0.9905226790072585
+        },
+        {
+          "raw_line": 4,
+          "block": 0,
+          "wall_ratio": 1.0169399385138345,
+          "median_cpu_over_wall": 0.9785908917457032
+        },
+        {
+          "raw_line": 104,
+          "block": 1,
+          "wall_ratio": 1.0173871593177248,
+          "median_cpu_over_wall": 0.9596571117720863
+        },
+        {
+          "raw_line": 204,
+          "block": "end",
+          "wall_ratio": 0.9701455565354938,
+          "median_cpu_over_wall": 1.0027283378591716
+        }
+      ],
+      "interpretation": "Descriptive process CPU-time / wall-time; no CPU clock or scheduler trace; no clipping."
+    },
+    "attacked": {
+      "stages": {
+        "total": {
+          "n_trials": 192,
+          "wall_median_ms": 923.6642,
+          "wall_max_ms": 2822.7373,
+          "median_cpu_over_wall": 0.9730193157062321,
+          "n_highwall": 2,
+          "highwall_fraction": 0.010416666666666666,
+          "highwall_low_cpu_count": 2,
+          "highwall_low_cpu_share": 1.0,
+          "highwall_trials": [
+            {
+              "image": "000000000009_inputs",
+              "rep": 36,
+              "label": "aa_A",
+              "wall_ns": 2065545000,
+              "process_cpu_ns": 843750000,
+              "cpu_over_wall": 0.40848783250909565
+            },
+            {
+              "image": "000000000025_inputs",
+              "rep": 10,
+              "label": "aa_A",
+              "wall_ns": 2822737300,
+              "process_cpu_ns": 921875000,
+              "cpu_over_wall": 0.3265890169800782
+            }
+          ]
+        }
+      },
+      "references": [
+        {
+          "raw_line": 3,
+          "block": "start",
+          "wall_ratio": 1.0,
+          "median_cpu_over_wall": 0.9905226790072585
+        },
+        {
+          "raw_line": 4,
+          "block": 0,
+          "wall_ratio": 1.0169399385138345,
+          "median_cpu_over_wall": 0.9785908917457032
+        },
+        {
+          "raw_line": 104,
+          "block": 1,
+          "wall_ratio": 1.0173871593177248,
+          "median_cpu_over_wall": 0.9596571117720863
+        },
+        {
+          "raw_line": 204,
+          "block": "end",
+          "wall_ratio": 0.9701455565354938,
+          "median_cpu_over_wall": 1.0027283378591716
+        }
+      ],
+      "interpretation": "Descriptive process CPU-time / wall-time; no CPU clock or scheduler trace; no clipping."
+    }
+  },
+  "pdh_diagnostics": {
+    "clean": {
+      "stages": {
+        "total": {
+          "n": 192,
+          "counters": {
+            "Processor Frequency": {
+              "valid": 192,
+              "minimum": 1300.0,
+              "median": 1300.0,
+              "maximum": 1300.0,
+              "status_counts": {
+                "0/0": 192
+              }
+            },
+            "% Processor Performance": {
+              "valid": 192,
+              "minimum": 243.3093068441536,
+              "median": 246.89492226003614,
+              "maximum": 247.81162629416153,
+              "status_counts": {
+                "0/0": 192
+              }
+            },
+            "% Performance Limit": {
+              "valid": 192,
+              "minimum": 100.0,
+              "median": 100.0,
+              "maximum": 100.0,
+              "status_counts": {
+                "0/0": 192
+              }
+            },
+            "Performance Limit Flags": {
+              "valid": 192,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.0,
+              "status_counts": {
+                "0/0": 192
+              }
+            },
+            "% Processor Time": {
+              "valid": 192,
+              "minimum": 99.79854798155489,
+              "median": 100.0,
+              "maximum": 100.0,
+              "status_counts": {
+                "0/0": 192
+              }
+            }
+          },
+          "wall_vs_reported_performance": {
+            "n": 192,
+            "spearman": -0.1681140303285137
+          },
+          "cpu_vs_reported_performance": {
+            "n": 192,
+            "spearman": -0.16143267461549787
+          },
+          "wall_vs_cpu": {
+            "n": 192,
+            "spearman": 0.756785777216112
+          }
+        }
+      },
+      "pdh_read_duration_ms": {
+        "valid": 192,
+        "minimum": 0.0769,
+        "median": 0.09140000000000001,
+        "maximum": 0.1876
+      },
+      "limits": "PDH intervals include metadata/warmup; two images; correlated repeats; no exact clock or causal inference."
+    },
+    "attacked": {
+      "stages": {
+        "total": {
+          "n": 192,
+          "counters": {
+            "Processor Frequency": {
+              "valid": 192,
+              "minimum": 1300.0,
+              "median": 1300.0,
+              "maximum": 1300.0,
+              "status_counts": {
+                "0/0": 192
+              }
+            },
+            "% Processor Performance": {
+              "valid": 192,
+              "minimum": 243.99980917516345,
+              "median": 245.4654155583051,
+              "maximum": 247.03607163201164,
+              "status_counts": {
+                "0/0": 192
+              }
+            },
+            "% Performance Limit": {
+              "valid": 192,
+              "minimum": 100.0,
+              "median": 100.0,
+              "maximum": 100.0,
+              "status_counts": {
+                "0/0": 192
+              }
+            },
+            "Performance Limit Flags": {
+              "valid": 192,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.0,
+              "status_counts": {
+                "0/0": 192
+              }
+            },
+            "% Processor Time": {
+              "valid": 192,
+              "minimum": 99.75703913790053,
+              "median": 100.0,
+              "maximum": 100.0,
+              "status_counts": {
+                "0/0": 192
+              }
+            }
+          },
+          "wall_vs_reported_performance": {
+            "n": 192,
+            "spearman": -0.13866715948240785
+          },
+          "cpu_vs_reported_performance": {
+            "n": 192,
+            "spearman": -0.19040661522243077
+          },
+          "wall_vs_cpu": {
+            "n": 192,
+            "spearman": 0.86699360759359
+          }
+        }
+      },
+      "pdh_read_duration_ms": {
+        "valid": 192,
+        "minimum": 0.0783,
+        "median": 0.09209999999999999,
+        "maximum": 2.0939
+      },
+      "limits": "PDH intervals include metadata/warmup; two images; correlated repeats; no exact clock or causal inference."
+    }
+  }
+}

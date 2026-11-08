@@ -1,0 +1,20 @@
+{
+  "status": "REGISTRATION_AND_INPUTS_VERIFIED_BEFORE_MODEL_TIMING",
+  "tag": "prereg-forward-reference-20261107",
+  "commit": "e9dda8a90752c7ff0dd311f4f0db19c519a96b30",
+  "lock_sha256": "bc2773454401385a16e6aed2ea5d68c46d81bed3f0537bf9f386e6e8deff4786",
+  "source_count": 8,
+  "input_count": 2,
+  "tag_line_ending_exceptions": [
+    {
+      "path": "sponge-sim/src/sponge_sim/hw.py",
+      "working_sha256": "9b0eda7758b4c45f2cd9a64eaf44206aab2b5478afdc5458ed49e69791cb879d",
+      "tag_sha256": "a6fd2c15cd16d518dd3034d94fb98c463dd77d425cd249f6ac7d92722bb62323",
+      "reason": "known legacy CRLF/LF only"
+    }
+  ],
+  "condition_order": [
+    "continuous",
+    "pause2"
+  ]
+}

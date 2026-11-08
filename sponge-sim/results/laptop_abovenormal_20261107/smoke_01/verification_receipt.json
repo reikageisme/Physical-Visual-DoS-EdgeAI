@@ -1,0 +1,20 @@
+{
+  "tag": "prereg-laptop-abovenormal-20261107",
+  "commit": "9ce44dde611975172e437f0bafd59110f63f2cb4",
+  "tagged_primary_source_bytes_match": true,
+  "lock_sha256": "80d67445c3b212ac5e6452a9b9c9d38e91e3947d9407b3156980f4123998e5ad",
+  "raw_sha256": "71eb6ec58886b404f9be4cc2179b4715297d15dbc64e1204b75c26de06b25721",
+  "complete": true,
+  "feasibility_pass": false,
+  "flags": 3,
+  "priority_start": 32768,
+  "priority_end": 32768,
+  "full_cancelled_by_registered_gate": true,
+  "artifacts_sha256": {
+    "manifest.json": "281f64ff527883f113dc5110ca36033e1f97fbd2f8cf02aa74f650c9c486de90",
+    "raw.jsonl": "71eb6ec58886b404f9be4cc2179b4715297d15dbc64e1204b75c26de06b25721",
+    "smoke_summary.json": "5f022628c21787199ae96ad412bbde3075ed8514aeef7c6b0dd5b809e0a04a39",
+    "cpu_summary.json": "80635f4ccae08d53679d551b4fc25cae4682ceaa0e2e932cdf59ef4b26a47cc0",
+    "pdh_summary.json": "cd9ef86d2c9de0275bd274b2b6d62eecd896760ecc175ec803b72c0a472c33ac"
+  }
+}

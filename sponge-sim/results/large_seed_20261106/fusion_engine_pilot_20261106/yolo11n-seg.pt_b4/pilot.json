@@ -1,0 +1,45 @@
+{
+  "model": "yolo11n-seg.pt",
+  "mode": "many",
+  "provenance": {
+    "commit": "98652b88e2f317acfa7baab1b07b0dd0fa6db41d",
+    "tag": "qa-fusion-large-seed-20261106",
+    "pilot_sha256": "76f13e2f28377e20c31264038357710e9acf48de51d4d405761bdf75fe01d640",
+    "engine_sha256": "20f1675a2ed71cbbab316f60bd1c123a1e68691f639bb55ecbc912f0ed390e13"
+  },
+  "batch": 4,
+  "results": [
+    {
+      "engine": "eager",
+      "seconds": 1.7659999999996217,
+      "seconds_per_image": 0.4414999999999054,
+      "batch": 4,
+      "cosine_one_step": 0.9999996423721313,
+      "finite": true,
+      "max_delta": 0.0627451241016388,
+      "peak_reserved_bytes": 1369440256,
+      "peak_allocated_bytes": 1147577856,
+      "eligible": false
+    },
+    {
+      "engine": "graph",
+      "seconds": 1.4840000000003783,
+      "seconds_per_image": 0.3710000000000946,
+      "batch": 4,
+      "cosine_one_step": 0.9999992251396179,
+      "finite": true,
+      "max_delta": 0.0627451241016388,
+      "peak_reserved_bytes": 2420113408,
+      "peak_allocated_bytes": 1272494592,
+      "eligible": false
+    }
+  ],
+  "fused": true,
+  "fusion_qa": {
+    "cosine": 0.9674324989318848,
+    "max_score_error": 0.010035067796707153,
+    "eligible": false
+  },
+  "weights_sha256": "55ed65c56c91713d23e8402371c6c49a6fd84f257f7dce452e8d70e41dcbe152",
+  "torch": "2.11.0+cu128"
+}

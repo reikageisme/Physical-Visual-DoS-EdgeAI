@@ -1,0 +1,14 @@
+{
+  "archive_sha256": "c8e4e9613b98d652178e2db4c7e7f0de6af4e7c3708db83c2cd68f3c455203ad",
+  "zip_crc_pass": true,
+  "n_files": 421,
+  "npz_hashes_checked": 375,
+  "per_model_coverage": {
+    "yolov8n-seg.pt": 500,
+    "yolo11n-seg.pt": 500
+  },
+  "native_coverage": 500,
+  "max_delta": 0.0627451241016388,
+  "source_count_replay_mismatches": 0,
+  "note": "Original count records retained regardless of numerical replay mismatches."
+}

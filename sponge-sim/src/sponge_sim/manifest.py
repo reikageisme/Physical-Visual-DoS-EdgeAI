@@ -14,7 +14,7 @@ import psutil
 from . import backends, hw
 from .cohorts import REPO
 
-SIM = REPO / 'sponge-sim'
+SIM = Path(__file__).resolve().parents[2]
 WEIGHTS = REPO / 'yolov8n.pt'
 
 
@@ -34,6 +34,13 @@ def config_hash(config: dict) -> str:
     return hashlib.sha256(json.dumps(config, sort_keys=True, default=str).encode()).hexdigest()
 
 
+def _profiles_or_none(cores):
+    try:
+        return hw.profiles(cores)
+    except Exception as e:
+        return f'khong_co_profile: {e}'
+
+
 def build(config: dict, extra_files: list[Path] = ()) -> dict:
     code = sorted((SIM / 'src').rglob('*.py')) + sorted((SIM / 'studies').rglob('*.py')) + list(extra_files)
     cores = hw.cpu_topology()
@@ -42,11 +49,11 @@ def build(config: dict, extra_files: list[Path] = ()) -> dict:
         git=dict(head=_git('rev-parse', 'HEAD'), branch=_git('branch', '--show-current'),
                  tags_at_head=_git('tag', '--points-at', 'HEAD').split(),
                  sponge_sim_dirty=bool(_git('status', '--porcelain', '--', 'sponge-sim/src', 'sponge-sim/studies'))),
-        code_sha256={str(Path(p).relative_to(REPO)).replace('\\', '/'): sha256(p) for p in code},
+        code_sha256={str(Path(p).relative_to(SIM.parent)).replace('\\', '/'): sha256(p) for p in code},
         weights=dict(path='yolov8n.pt', sha256=sha256(WEIGHTS)),
         config=config, config_sha256=config_hash(config),
         python=sys.version, platform=platform.platform(), backends=backends.metadata(),
-        cpu_topology=cores, cpu_profiles=hw.profiles(cores), power=hw.power_snapshot(),
+        cpu_topology=cores, cpu_profiles=_profiles_or_none(cores), power=hw.power_snapshot(),
         affinity_now=sorted(psutil.Process().cpu_affinity()),
     )
 

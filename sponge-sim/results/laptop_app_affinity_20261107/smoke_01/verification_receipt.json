@@ -1,0 +1,20 @@
+{
+  "tag": "prereg-laptop-app-affinity-20261107",
+  "commit": "5e8df4f5fed8130a6ce40b5d2a40b1552199ee78",
+  "lock_sha256": "318c1ffb9631d4709b358951d3e62ff516cc4eda59c9be70a88315f1e19ac641",
+  "raw_sha256": "9e29ca88bc68d86a8f200c752e89ba80bd3756eea24084db0d99ae3305ca329e",
+  "tagged_primary_source_bytes_match": true,
+  "app_journal_sha256": "94e52e0f3757ad6d946533745e36ea58b14c394f7c4541afa976326825d29330",
+  "applied": 48,
+  "restored": 48,
+  "restoration_errors": 0,
+  "quality_pass": null,
+  "feasibility_pass": true,
+  "artifacts_sha256": {
+    "manifest.json": "a40266e0b9fc469184b3d06b260c1bb8e256af251bdc96f2dddb9d8533ea6d2a",
+    "raw.jsonl": "9e29ca88bc68d86a8f200c752e89ba80bd3756eea24084db0d99ae3305ca329e",
+    "smoke_summary.json": "202723945ec3e6eb5ce3d739d2d64df989f51d3bc24d985a40082cb68644c0c6",
+    "cpu_summary.json": "7bf74a3fde2e904b420a4a0e03640a07e9670eb7272afddc47928725fd686b41",
+    "pdh_summary.json": "1d5e9b5b450aef125459ce8d84eb88425496aeb0fe9615a4a0c315c33bf1ae1d"
+  }
+}

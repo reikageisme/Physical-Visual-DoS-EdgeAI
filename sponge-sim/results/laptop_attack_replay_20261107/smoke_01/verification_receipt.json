@@ -1,0 +1,16 @@
+{
+  "tag": "prereg-laptop-attack-replay-20261107",
+  "commit": "2dab448d60a4298bb2ed25d80015a2135cd7da60",
+  "tagged_primary_source_bytes_match": true,
+  "lock_sha256": "ddc1f06dde7a828c5f22d9ce1add7482f488fd3b444dabf535b772bb4b64ccd1",
+  "raw_sha256": "10c034e2d89f97fdd725edb785c0429c62c7345ec54b36121ef7663e1798fffc",
+  "rows": 302,
+  "timings": 288,
+  "complete": true,
+  "quality_pass": false,
+  "feasibility_pass": true,
+  "app_applied": 48,
+  "app_restored": 48,
+  "app_journal_sha256": "6dc42ffd72ad0b9e540bbf3ea98fa3252d99291bf80304780b5079a2561ef3c9",
+  "elapsed_raw_s": 169.41275691986084
+}

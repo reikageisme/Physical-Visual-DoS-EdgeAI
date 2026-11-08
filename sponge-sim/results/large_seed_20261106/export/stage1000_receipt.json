@@ -1,0 +1,15 @@
+{
+  "stage": 1000,
+  "n_images": 1000,
+  "cases": 20000,
+  "batches": 5000,
+  "count_checks": 160000,
+  "native_count_checks": 40000,
+  "audit_cases": 800,
+  "expected_audit_cases": 800,
+  "files": 15729,
+  "cohort_sha256": "a06a2a3fb16dcd6d982233e2373a95c5e8f6cd48c963f33cdc54f509bcb68026",
+  "raw_sha256": "74c7a4fcf79f01b488ac4899a26118cecef0fb879d06ea6ca8e93ab4df647d54",
+  "archive_sha256": "cb7d6af4e9f82133326f552766d50a12ce1252719371bf7311beb758504eb133",
+  "archive_bytes": 4390139046
+}

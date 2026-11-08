@@ -1,0 +1,54 @@
+{
+  "config": {
+    "blocks": 12,
+    "samples": 15,
+    "warmup": 3,
+    "pin_seconds": 3,
+    "settle_s": 60,
+    "worker_timeout_s": 600,
+    "seed": 20261107,
+    "pauses_s": {
+      "continuous": 0,
+      "pause2": 2
+    }
+  },
+  "condition_order": [
+    "continuous",
+    "pause2"
+  ],
+  "versions": {
+    "torch": "2.13.0+cpu",
+    "torchvision": "0.28.0+cpu",
+    "ultralytics": "8.4.90"
+  },
+  "power_mode": {
+    "PowerGetUserConfiguredACPowerMode": "ded574b5-45a0-4f42-8737-46345c09c238",
+    "PowerGetEffectiveOverlayScheme": "961cc777-2547-4f9d-8174-7d86181b8a7a"
+  },
+  "weights_path": "sponge-sim/results/laptop_seg_20261107/yolov8n-seg.pt",
+  "input_path": "sponge-sim/results/laptop_seg_20261107/000000000009_inputs.pt",
+  "files": [
+    {
+      "member": "yolov8n-seg.pt",
+      "path": "sponge-sim/results/laptop_seg_20261107/yolov8n-seg.pt",
+      "sha256": "a7cd8f929e1903d78a12a48efecab430209f18dc46cb96c3599a5980c63c423c",
+      "bytes": 7071756
+    },
+    {
+      "member": "m3_native_full_20261106/000000000009_inputs.pt",
+      "path": "sponge-sim/results/laptop_seg_20261107/000000000009_inputs.pt",
+      "sha256": "0002529c6ee33e19c9a93fce355b8d5f09ac637bfcdae864dbef298272f64eb9",
+      "bytes": 9832389
+    }
+  ],
+  "source_sha256": {
+    "sponge-sim/studies/laptop_seg/reference_trace.py": "97c93c8ce3c3d72fc17a2254aebba4c1e11aab1bbcc8e83027b47584bdb47712",
+    "sponge-sim/studies/laptop_seg/run.py": "258e63c9f4ce376458d1a817811c277420865ea4d1b6bdd04e0409dea1797da4",
+    "sponge-sim/studies/laptop_seg/separate_app.py": "8be8a140ff69ac3b57ad9ce106e18fe7e497d62abebd698df1128cd43328bc8c",
+    "sponge-sim/studies/laptop_seg/windows_qos.py": "c893f3cfa5feec7764e1d59a0e21ed0c5e6142755239edf9e068201df21f2d8c",
+    "sponge-sim/studies/laptop_seg/output_lifetime.py": "661537e75392a8951429bf18f141f9832f36b22cba676fe67949d47be1393293",
+    "sponge-sim/studies/laptop_seg/pdh_cpu.py": "65d91739eaba6c72ccfb47aad7d4e25f5bc29235dfb150f9dd7ac0b635f7c587",
+    "sponge-sim/src/sponge_sim/hw.py": "9b0eda7758b4c45f2cd9a64eaf44206aab2b5478afdc5458ed49e69791cb879d",
+    "sponge-sim/prereg/PREREG_FORWARD_REFERENCE_TRACE_20261107.md": "0537db13cf046eb4f901921321c372fd9b8961e353a564d67ce9d4423881e6bb"
+  }
+}

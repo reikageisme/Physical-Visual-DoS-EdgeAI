@@ -1,0 +1,17 @@
+{
+  "status": "POSTHOC_SOURCE_AND_RAW_BINDINGS_VERIFIED_NO_NEW_MEASUREMENT",
+  "files": {
+    "sponge-sim/studies/laptop_seg/analyze_stage_drift.py": "14ec4c48b73d05ebe2c1c16ab77130db8787fad684a3d804de957a2d98902ebc",
+    "sponge-sim/tests/test_laptop_stage_drift.py": "e45ff4d257c18b4d31d59ae3db4048b703e5771f0ed5beaaab348ea675bf356c",
+    "sponge-sim/results/laptop_components_20261107/offline_drift_01/nms_smoke.json": "5847ae10c9a2eec1286a76aa023da306dc31b211e6d5282a5fe89fa113a39218",
+    "sponge-sim/results/laptop_components_20261107/offline_drift_01/nms_full.json": "86dac3b4009a58d639853118f79328aae21e5a9b980cd1af85403502bb965336",
+    "sponge-sim/results/laptop_components_20261107/offline_drift_01/mask_smoke.json": "3c465057ff539b9cfb7df8fb9acb4e79a1bfdca63c4ddbd6a339dd9c047363d0"
+  },
+  "tests": {
+    "command": "python -m pytest sponge-sim/tests/test_laptop_stage_drift.py sponge-sim/tests/test_laptop_stages.py sponge-sim/tests/test_laptop_seg.py -q -p no:cacheprovider",
+    "observed_exit_code": 0,
+    "observed_stdout": "36 passed in 3.00s"
+  },
+  "python": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+  "quality_decisions_changed": false
+}

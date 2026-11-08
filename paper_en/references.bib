@@ -1,0 +1,218 @@
+% references.bib for the English measurement-study manuscript (paper_en/main.tex).
+% Provenance: entries marked [prior] were carried over from the previous manuscript's bibliography (arXiv IDs checked there).
+% Entries marked [from memory] are well-known works whose metadata were entered WITHOUT network access in this session;
+% every [from memory] entry must be checked against its DOI/proceedings page before submission (see paper_en/TODO.md).
+
+% ---------------------------------------------------------------- latency / sponge attacks
+% [verified 02/11/2026 by web search]
+@inproceedings{shumailov2021sponge,
+  author    = {Ilia Shumailov and Yiren Zhao and Daniel Bates and Nicolas Papernot and Robert Mullins and Ross Anderson},
+  title     = {Sponge Examples: Energy-Latency Attacks on Neural Networks},
+  booktitle = {Proc. IEEE European Symposium on Security and Privacy (EuroS\&P)},
+  year      = {2021},
+  doi       = {10.1109/EuroSP51992.2021.00024},
+  note      = {arXiv:2006.03463}
+}
+
+% [prior]
+@inproceedings{nicgslowdown2022,
+  author    = {Simin Chen and Zihe Song and Mirazul Haque and Cong Liu and Wei Yang},
+  title     = {{NICGSlowDown}: Evaluating the Efficiency Robustness of Neural Image Caption Generation Models},
+  booktitle = {Proc. IEEE/CVF Conf. Computer Vision and Pattern Recognition (CVPR)},
+  year      = {2022},
+  note      = {arXiv:2203.15859}
+}
+
+% [prior]
+@inproceedings{phantom2023,
+  author    = {Avishag Shapira and Alon Zolfi and Luca Demetrio and Battista Biggio and Asaf Shabtai},
+  title     = {Phantom Sponges: Exploiting Non-Maximum Suppression to Attack Deep Object Detectors},
+  booktitle = {Proc. IEEE/CVF Winter Conf. Applications of Computer Vision (WACV)},
+  year      = {2023},
+  note      = {arXiv:2205.13618}
+}
+
+% [verified 02/11/2026 by web search] (CVF open-access page exists; arXiv v4 Apr 2024)
+@inproceedings{overload2024,
+  author    = {Erh-Chung Chen and Pin-Yu Chen and I-Hsin Chung and Che-Rung Lee},
+  title     = {Overload: Latency Attacks on Object Detection for Edge Devices},
+  booktitle = {Proc. IEEE/CVF Conf. Computer Vision and Pattern Recognition (CVPR)},
+  year      = {2024},
+  note      = {arXiv:2304.05370}
+}
+
+% [verified 02/11/2026 by web search]
+@inproceedings{slowtrack2024,
+  author    = {Chen Ma and Ningfei Wang and Qi Alfred Chen and Chao Shen},
+  title     = {{SlowTrack}: Increasing the Latency of Camera-Based Perception in Autonomous Driving Using Adversarial Examples},
+  booktitle = {Proc. AAAI Conf. Artificial Intelligence},
+  year      = {2024},
+  volume    = {38},
+  number    = {5},
+  pages     = {4062--4070},
+  doi       = {10.1609/aaai.v38i5.28200},
+  note      = {arXiv:2312.09520}
+}
+
+% [prior]
+@inproceedings{underload2025,
+  author    = {Tianyi Wang and Zichen Wang and Cong Wang and Yuanchao Shu and Ruilong Deng and Peng Cheng and Jiming Chen},
+  title     = {Can't Slow Me Down: Learning Robust and Hardware-Adaptive Object Detectors against Latency Attacks for Edge Devices},
+  booktitle = {Proc. IEEE/CVF Conf. Computer Vision and Pattern Recognition (CVPR)},
+  pages     = {19230--19240},
+  year      = {2025}
+}
+
+% [verified 02/11/2026 by web search] (authors and title confirmed on the NeurIPS 2025 poster page)
+@inproceedings{evade2025,
+  author    = {Jean-Philippe Monteuuis and Cong Chen and Jonathan Petit},
+  title     = {Latency {NMS} Attacks: Is It Real Life or Is It Just Fantasy?},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2025}
+}
+
+% [prior]
+@inproceedings{bitflip2025,
+  author    = {Manojna Sistla and Yu Wen and Aamir Bader Shah and Chenpei Huang and Lening Wang and Xuqing Wu and Jiefu Chen and Miao Pan and Xin Fu},
+  title     = {Bit-Flip Induced Latency Attacks in Object Detection},
+  booktitle = {Proc. IEEE/CVF Winter Conf. Applications of Computer Vision (WACV)},
+  pages     = {6709--6718},
+  year      = {2025}
+}
+
+% ---------------------------------------------------------------- patches, EOT, query-based attacks
+% [verified 02/11/2026 by web search]
+@misc{brown2017patch,
+  author       = {Tom B. Brown and Dandelion Man{\'e} and Aurko Roy and Mart{\'\i}n Abadi and Justin Gilmer},
+  title        = {Adversarial Patch},
+  howpublished = {arXiv preprint arXiv:1712.09665},
+  year         = {2017}
+}
+
+% [verified 02/11/2026 by web search]
+@inproceedings{athalye2018eot,
+  author    = {Anish Athalye and Logan Engstrom and Andrew Ilyas and Kevin Kwok},
+  title     = {Synthesizing Robust Adversarial Examples},
+  booktitle = {Proc. International Conference on Machine Learning (ICML)},
+  series    = {PMLR},
+  volume    = {80},
+  pages     = {284--293},
+  year      = {2018},
+  note      = {arXiv:1707.07397}
+}
+
+% [verified 02/11/2026 by web search]
+@inproceedings{ilyas2018blackbox,
+  author    = {Andrew Ilyas and Logan Engstrom and Anish Athalye and Jessy Lin},
+  title     = {Black-box Adversarial Attacks with Limited Queries and Information},
+  booktitle = {Proc. International Conference on Machine Learning (ICML)},
+  series    = {PMLR},
+  volume    = {80},
+  pages     = {2137--2146},
+  year      = {2018},
+  note      = {arXiv:1804.08598}
+}
+
+% [verified 02/11/2026 by web search]
+@inproceedings{thys2019fooling,
+  author    = {Simen Thys and Wiebe Van Ranst and Toon Goedem{\'e}},
+  title     = {Fooling Automated Surveillance Cameras: Adversarial Patches to Attack Person Detection},
+  booktitle = {Proc. IEEE/CVF Conf. Computer Vision and Pattern Recognition Workshops (CVPRW)},
+  pages     = {49--55},
+  doi       = {10.1109/CVPRW.2019.00012},
+  year      = {2019}
+}
+
+% ---------------------------------------------------------------- detectors, NMS, data, software
+% [verified 02/11/2026 by web search]
+@inproceedings{neubeck2006nms,
+  author    = {Alexander Neubeck and Luc {Van Gool}},
+  title     = {Efficient Non-Maximum Suppression},
+  booktitle = {Proc. International Conference on Pattern Recognition (ICPR)},
+  volume    = {3},
+  pages     = {850--855},
+  doi       = {10.1109/ICPR.2006.479},
+  year      = {2006}
+}
+
+% [verified 02/11/2026 by web search]
+@inproceedings{redmon2016yolo,
+  author    = {Joseph Redmon and Santosh Divvala and Ross Girshick and Ali Farhadi},
+  title     = {You Only Look Once: Unified, Real-Time Object Detection},
+  booktitle = {Proc. IEEE Conf. Computer Vision and Pattern Recognition (CVPR)},
+  pages     = {779--788},
+  doi       = {10.1109/CVPR.2016.91},
+  year      = {2016}
+}
+
+% [verified 02/11/2026 by web search]
+@inproceedings{carion2020detr,
+  author    = {Nicolas Carion and Francisco Massa and Gabriel Synnaeve and Nicolas Usunier and Alexander Kirillov and Sergey Zagoruyko},
+  title     = {End-to-End Object Detection with Transformers},
+  booktitle = {Proc. European Conference on Computer Vision (ECCV)},
+  doi       = {10.1007/978-3-030-58452-8_13},
+  year      = {2020}
+}
+
+% [verified 02/11/2026 by web search]
+@inproceedings{lin2014coco,
+  author    = {Tsung-Yi Lin and Michael Maire and Serge Belongie and James Hays and Pietro Perona and Deva Ramanan and Piotr Doll{\'a}r and C. Lawrence Zitnick},
+  title     = {Microsoft {COCO}: Common Objects in Context},
+  booktitle = {Proc. European Conference on Computer Vision (ECCV)},
+  pages     = {740--755},
+  doi       = {10.1007/978-3-319-10602-1_48},
+  year      = {2014}
+}
+
+% [software citation; version/URL as released]
+@misc{jocher2023ultralytics,
+  author       = {Glenn Jocher and Ayush Chaurasia and Jing Qiu},
+  title        = {Ultralytics {YOLOv8}},
+  howpublished = {Software, \url{https://github.com/ultralytics/ultralytics}},
+  year         = {2023}
+}
+
+% [verified 02/11/2026 by web search]
+@inproceedings{paszke2019pytorch,
+  author    = {Adam Paszke and Sam Gross and Francisco Massa and Adam Lerer and others},
+  title     = {{PyTorch}: An Imperative Style, High-Performance Deep Learning Library},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  volume    = {32},
+  pages     = {8024--8035},
+  year      = {2019}
+}
+
+% ---------------------------------------------------------------- statistics
+% [not re-verified online; details are standard]
+@article{efron1979bootstrap,
+  author  = {Bradley Efron},
+  title   = {Bootstrap Methods: Another Look at the Jackknife},
+  journal = {The Annals of Statistics},
+  volume  = {7},
+  number  = {1},
+  pages   = {1--26},
+  year    = {1979}
+}
+
+% [verified 02/11/2026 by web search]
+@article{cameron2008cluster,
+  author  = {A. Colin Cameron and Jonah B. Gelbach and Douglas L. Miller},
+  title   = {Bootstrap-Based Improvements for Inference with Clustered Errors},
+  journal = {The Review of Economics and Statistics},
+  volume  = {90},
+  number  = {3},
+  pages   = {414--427},
+  doi     = {10.1162/rest.90.3.414},
+  year    = {2008}
+}
+
+% [verified 02/11/2026 by web search]
+@article{holm1979,
+  author  = {Sture Holm},
+  title   = {A Simple Sequentially Rejective Multiple Test Procedure},
+  journal = {Scandinavian Journal of Statistics},
+  volume  = {6},
+  number  = {2},
+  pages   = {65--70},
+  year    = {1979}
+}

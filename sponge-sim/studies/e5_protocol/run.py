@@ -42,7 +42,7 @@ def worker(profile: str, run_dir: Path, cfg: dict):
     readback = hw.pin(cpus)                      # ghim TRƯỚC khi torch tạo thread pool
     import torch
     torch.set_num_interop_threads(cfg['interop_threads'])
-    verify = hw.verify_pin(cpus)                 # dùng 2×|cpus| thread để thử vượt tập được phép
+    verify = hw.verify_pin(cpus, min_effective=0.5 if profile == 'P1_cpu2' else None)  # cận dưới thêm sau E5
     torch.set_num_threads(len(cpus))
     from ultralytics import YOLO
     from sponge_sim import provenance as pv, timing
@@ -59,8 +59,16 @@ def worker(profile: str, run_dir: Path, cfg: dict):
     tp, tv = BACKENDS['torch_pure'], BACKENDS['tv_nms']
     rng = random.Random(cfg['label_order_seed'] + cpus[0])
 
+    canvas = cfg.get('canvas', 320)
+    if canvas == 320:
+        load = pv.load_image
+    else:
+        from sponge_sim import attacks_provenance as ap_
+        def load(p):
+            return ap_.load_image_canvas(p, canvas)
+
     def total(p):
-        im = pv.load_image(p)
+        im = load(p)
         r = model(im)
         r = r[0] if isinstance(r, (tuple, list)) else r
         act, _ = pv.tau_filter(pv.decode(r[0]), cfg['tau'], cfg['cap'])
@@ -73,7 +81,7 @@ def worker(profile: str, run_dir: Path, cfg: dict):
             out[name] = r['ns']
             return r['result']
         with torch.no_grad():
-            image = t('pre', pv.load_image, path)
+            image = t('pre', load, path)
             raw = t('forward', model, image)
             raw = raw[0] if isinstance(raw, (tuple, list)) else raw
             decoded = t('decode', pv.decode, raw[0])
@@ -110,9 +118,14 @@ def main():
     ap.add_argument('--run-dir', required=True)
     ap.add_argument('--smoke', action='store_true')
     ap.add_argument('--worker')
+    ap.add_argument('--canvas', type=int, default=320, help='E6-A1: A/A ở canvas khác (vd. 640)')
+    ap.add_argument('--profiles', help='ghi đè danh sách profile, vd. P1_cpu2 (thêm sau E5, DEVIATIONS 2026-10-21)')
     a = ap.parse_args()
     run_dir = Path(a.run_dir)
     cfg = {**CONFIG, **(SMOKE if a.smoke else {}), 'smoke': a.smoke}
+    cfg['canvas'] = a.canvas
+    if a.profiles:
+        cfg['profiles'] = a.profiles.split(',')
     if a.worker:
         worker(a.worker, run_dir, cfg)
         return
@@ -124,6 +137,10 @@ def main():
     for prof in order:
         t0 = time.time()
         cmd = [sys.executable, '-X', 'utf8', __file__, '--run-dir', str(run_dir), '--worker', prof]
+        if a.profiles:
+            cmd += ['--profiles', a.profiles]
+        if a.canvas != 320:
+            cmd += ['--canvas', str(a.canvas)]
         if a.smoke:
             cmd.append('--smoke')
         subprocess.run(cmd, check=True)

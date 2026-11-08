@@ -1,0 +1,2465 @@
+{
+  "status": "COMPLETE_DESCRIPTIVE_DIAGNOSTIC_NO_ATTACK_QUALIFICATION",
+  "tag": "prereg-forward-reference-20261107",
+  "prereg_commit": "e9dda8a90752c7ff0dd311f4f0db19c519a96b30",
+  "conditions": {
+    "continuous": {
+      "blocks": [
+        {
+          "block": 0,
+          "raw_timing_lines": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "raw_reference_line": 18,
+          "wall_median_ms": 214.0099,
+          "wall_ms": {
+            "n": 15,
+            "minimum": 204.8063,
+            "median": 214.0099,
+            "maximum": 236.7929
+          },
+          "initial_ratio": 1.0,
+          "diagnostic_flag_3pct": false,
+          "process_cpu_median_ms": 203.125,
+          "paired_cpu_over_wall": {
+            "n": 15,
+            "minimum": 0.9370141941793255,
+            "median": 0.989788967490157,
+            "maximum": 1.0455106608631066
+          },
+          "pdh_counters": {
+            "Processor Frequency": {
+              "values": {
+                "n": 15,
+                "minimum": 1300.0,
+                "median": 1300.0,
+                "maximum": 1300.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Performance": {
+              "values": {
+                "n": 15,
+                "minimum": 246.36341532601207,
+                "median": 247.37166243673659,
+                "maximum": 247.66133893434943
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Performance Limit": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "Performance Limit Flags": {
+              "values": {
+                "n": 15,
+                "minimum": 0.0,
+                "median": 0.0,
+                "maximum": 0.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Time": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            }
+          }
+        },
+        {
+          "block": 1,
+          "raw_timing_lines": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34
+          ],
+          "raw_reference_line": 35,
+          "wall_median_ms": 210.3256,
+          "wall_ms": {
+            "n": 15,
+            "minimum": 206.4319,
+            "median": 210.3256,
+            "maximum": 230.5006
+          },
+          "initial_ratio": 0.9827844412805202,
+          "diagnostic_flag_3pct": false,
+          "process_cpu_median_ms": 203.125,
+          "paired_cpu_over_wall": {
+            "n": 15,
+            "minimum": 0.8812341486312834,
+            "median": 0.9731802308227798,
+            "maximum": 1.0426835313677338
+          },
+          "pdh_counters": {
+            "Processor Frequency": {
+              "values": {
+                "n": 15,
+                "minimum": 1300.0,
+                "median": 1300.0,
+                "maximum": 1300.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Performance": {
+              "values": {
+                "n": 15,
+                "minimum": 245.71784874322702,
+                "median": 247.34061862192064,
+                "maximum": 247.6142382199154
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Performance Limit": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "Performance Limit Flags": {
+              "values": {
+                "n": 15,
+                "minimum": 0.0,
+                "median": 0.0,
+                "maximum": 0.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Time": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            }
+          }
+        },
+        {
+          "block": 2,
+          "raw_timing_lines": [
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51
+          ],
+          "raw_reference_line": 52,
+          "wall_median_ms": 208.8959,
+          "wall_ms": {
+            "n": 15,
+            "minimum": 202.8476,
+            "median": 208.8959,
+            "maximum": 218.3235
+          },
+          "initial_ratio": 0.9761039092116767,
+          "diagnostic_flag_3pct": false,
+          "process_cpu_median_ms": 203.125,
+          "paired_cpu_over_wall": {
+            "n": 15,
+            "minimum": 0.8146900646443235,
+            "median": 0.9906903154504282,
+            "maximum": 1.0427710108228905
+          },
+          "pdh_counters": {
+            "Processor Frequency": {
+              "values": {
+                "n": 15,
+                "minimum": 1300.0,
+                "median": 1300.0,
+                "maximum": 1300.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Performance": {
+              "values": {
+                "n": 15,
+                "minimum": 246.48043998226112,
+                "median": 247.3401073796594,
+                "maximum": 247.62984102662324
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Performance Limit": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "Performance Limit Flags": {
+              "values": {
+                "n": 15,
+                "minimum": 0.0,
+                "median": 0.0,
+                "maximum": 0.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Time": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            }
+          }
+        },
+        {
+          "block": 3,
+          "raw_timing_lines": [
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68
+          ],
+          "raw_reference_line": 69,
+          "wall_median_ms": 206.1286,
+          "wall_ms": {
+            "n": 15,
+            "minimum": 201.4768,
+            "median": 206.1286,
+            "maximum": 218.6355
+          },
+          "initial_ratio": 0.9631731989968688,
+          "diagnostic_flag_3pct": true,
+          "process_cpu_median_ms": 203.125,
+          "paired_cpu_over_wall": {
+            "n": 15,
+            "minimum": 0.8825576945616089,
+            "median": 0.9854285140441452,
+            "maximum": 1.0611462805306944
+          },
+          "pdh_counters": {
+            "Processor Frequency": {
+              "values": {
+                "n": 15,
+                "minimum": 1300.0,
+                "median": 1300.0,
+                "maximum": 1300.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Performance": {
+              "values": {
+                "n": 15,
+                "minimum": 246.9701790573159,
+                "median": 247.52197512190895,
+                "maximum": 247.67190821218563
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Performance Limit": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "Performance Limit Flags": {
+              "values": {
+                "n": 15,
+                "minimum": 0.0,
+                "median": 0.0,
+                "maximum": 0.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Time": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            }
+          }
+        },
+        {
+          "block": 4,
+          "raw_timing_lines": [
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85
+          ],
+          "raw_reference_line": 86,
+          "wall_median_ms": 209.8886,
+          "wall_ms": {
+            "n": 15,
+            "minimum": 202.027,
+            "median": 209.8886,
+            "maximum": 230.2413
+          },
+          "initial_ratio": 0.980742479670333,
+          "diagnostic_flag_3pct": false,
+          "process_cpu_median_ms": 203.125,
+          "paired_cpu_over_wall": {
+            "n": 15,
+            "minimum": 0.9177104909726654,
+            "median": 0.9832742245056659,
+            "maximum": 1.0485310499402756
+          },
+          "pdh_counters": {
+            "Processor Frequency": {
+              "values": {
+                "n": 15,
+                "minimum": 1300.0,
+                "median": 1300.0,
+                "maximum": 1300.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Performance": {
+              "values": {
+                "n": 15,
+                "minimum": 246.6554564649664,
+                "median": 247.41290607769082,
+                "maximum": 247.60300099360367
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Performance Limit": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "Performance Limit Flags": {
+              "values": {
+                "n": 15,
+                "minimum": 0.0,
+                "median": 0.0,
+                "maximum": 0.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Time": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            }
+          }
+        },
+        {
+          "block": 5,
+          "raw_timing_lines": [
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102
+          ],
+          "raw_reference_line": 103,
+          "wall_median_ms": 209.9805,
+          "wall_ms": {
+            "n": 15,
+            "minimum": 200.6905,
+            "median": 209.9805,
+            "maximum": 1625.0475
+          },
+          "initial_ratio": 0.9811718990570062,
+          "diagnostic_flag_3pct": false,
+          "process_cpu_median_ms": 203.125,
+          "paired_cpu_over_wall": {
+            "n": 15,
+            "minimum": 0.13461144981915912,
+            "median": 0.9700315758709153,
+            "maximum": 1.0573997681696325
+          },
+          "pdh_counters": {
+            "Processor Frequency": {
+              "values": {
+                "n": 15,
+                "minimum": 1300.0,
+                "median": 1300.0,
+                "maximum": 1300.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Performance": {
+              "values": {
+                "n": 15,
+                "minimum": 246.87182906040607,
+                "median": 247.39880403392854,
+                "maximum": 247.8912880553769
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Performance Limit": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "Performance Limit Flags": {
+              "values": {
+                "n": 15,
+                "minimum": 0.0,
+                "median": 0.0,
+                "maximum": 0.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Time": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            }
+          }
+        },
+        {
+          "block": 6,
+          "raw_timing_lines": [
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119
+          ],
+          "raw_reference_line": 120,
+          "wall_median_ms": 205.653,
+          "wall_ms": {
+            "n": 15,
+            "minimum": 202.333,
+            "median": 205.653,
+            "maximum": 212.5382
+          },
+          "initial_ratio": 0.9609508718989168,
+          "diagnostic_flag_3pct": true,
+          "process_cpu_median_ms": 203.125,
+          "paired_cpu_over_wall": {
+            "n": 15,
+            "minimum": 0.9735851082339059,
+            "median": 0.9934205603454389,
+            "maximum": 1.0467018007577402
+          },
+          "pdh_counters": {
+            "Processor Frequency": {
+              "values": {
+                "n": 15,
+                "minimum": 1300.0,
+                "median": 1300.0,
+                "maximum": 1300.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Performance": {
+              "values": {
+                "n": 15,
+                "minimum": 246.8481203688333,
+                "median": 247.51698547908063,
+                "maximum": 247.78567238884762
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Performance Limit": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "Performance Limit Flags": {
+              "values": {
+                "n": 15,
+                "minimum": 0.0,
+                "median": 0.0,
+                "maximum": 0.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Time": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            }
+          }
+        },
+        {
+          "block": 7,
+          "raw_timing_lines": [
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135,
+            136
+          ],
+          "raw_reference_line": 137,
+          "wall_median_ms": 205.6604,
+          "wall_ms": {
+            "n": 15,
+            "minimum": 203.0683,
+            "median": 205.6604,
+            "maximum": 214.9079
+          },
+          "initial_ratio": 0.9609854497385402,
+          "diagnostic_flag_3pct": true,
+          "process_cpu_median_ms": 203.125,
+          "paired_cpu_over_wall": {
+            "n": 15,
+            "minimum": 0.8327010861086807,
+            "median": 0.9886915588982726,
+            "maximum": 1.025639342540566
+          },
+          "pdh_counters": {
+            "Processor Frequency": {
+              "values": {
+                "n": 15,
+                "minimum": 1300.0,
+                "median": 1300.0,
+                "maximum": 1300.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Performance": {
+              "values": {
+                "n": 15,
+                "minimum": 247.2003179173415,
+                "median": 247.54064445828143,
+                "maximum": 247.75545242540926
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Performance Limit": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "Performance Limit Flags": {
+              "values": {
+                "n": 15,
+                "minimum": 0.0,
+                "median": 0.0,
+                "maximum": 0.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Time": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            }
+          }
+        },
+        {
+          "block": 8,
+          "raw_timing_lines": [
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152,
+            153
+          ],
+          "raw_reference_line": 154,
+          "wall_median_ms": 207.2154,
+          "wall_ms": {
+            "n": 15,
+            "minimum": 200.78,
+            "median": 207.2154,
+            "maximum": 222.7665
+          },
+          "initial_ratio": 0.9682514687404649,
+          "diagnostic_flag_3pct": true,
+          "process_cpu_median_ms": 203.125,
+          "paired_cpu_over_wall": {
+            "n": 15,
+            "minimum": 0.8698278297586889,
+            "median": 0.9885645288690043,
+            "maximum": 1.045512659664719
+          },
+          "pdh_counters": {
+            "Processor Frequency": {
+              "values": {
+                "n": 15,
+                "minimum": 1300.0,
+                "median": 1300.0,
+                "maximum": 1300.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Performance": {
+              "values": {
+                "n": 15,
+                "minimum": 246.87499461585952,
+                "median": 247.59124428749482,
+                "maximum": 247.7020346073398
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Performance Limit": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "Performance Limit Flags": {
+              "values": {
+                "n": 15,
+                "minimum": 0.0,
+                "median": 0.0,
+                "maximum": 0.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Time": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            }
+          }
+        },
+        {
+          "block": 9,
+          "raw_timing_lines": [
+            156,
+            157,
+            158,
+            159,
+            160,
+            161,
+            162,
+            163,
+            164,
+            165,
+            166,
+            167,
+            168,
+            169,
+            170
+          ],
+          "raw_reference_line": 171,
+          "wall_median_ms": 207.7561,
+          "wall_ms": {
+            "n": 15,
+            "minimum": 202.2311,
+            "median": 207.7561,
+            "maximum": 213.8836
+          },
+          "initial_ratio": 0.9707779873734813,
+          "diagnostic_flag_3pct": false,
+          "process_cpu_median_ms": 203.125,
+          "paired_cpu_over_wall": {
+            "n": 15,
+            "minimum": 0.901115653267998,
+            "median": 0.9777089577634543,
+            "maximum": 1.0517423584607204
+          },
+          "pdh_counters": {
+            "Processor Frequency": {
+              "values": {
+                "n": 15,
+                "minimum": 1300.0,
+                "median": 1300.0,
+                "maximum": 1300.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Performance": {
+              "values": {
+                "n": 15,
+                "minimum": 246.77825048344897,
+                "median": 247.3938134423404,
+                "maximum": 247.67211980850536
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Performance Limit": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "Performance Limit Flags": {
+              "values": {
+                "n": 15,
+                "minimum": 0.0,
+                "median": 0.0,
+                "maximum": 0.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Time": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            }
+          }
+        },
+        {
+          "block": 10,
+          "raw_timing_lines": [
+            173,
+            174,
+            175,
+            176,
+            177,
+            178,
+            179,
+            180,
+            181,
+            182,
+            183,
+            184,
+            185,
+            186,
+            187
+          ],
+          "raw_reference_line": 188,
+          "wall_median_ms": 208.2417,
+          "wall_ms": {
+            "n": 15,
+            "minimum": 198.7602,
+            "median": 208.2417,
+            "maximum": 213.9563
+          },
+          "initial_ratio": 0.9730470412817351,
+          "diagnostic_flag_3pct": false,
+          "process_cpu_median_ms": 203.125,
+          "paired_cpu_over_wall": {
+            "n": 15,
+            "minimum": 0.8937836986247172,
+            "median": 0.9813887623316783,
+            "maximum": 1.0691572450493743
+          },
+          "pdh_counters": {
+            "Processor Frequency": {
+              "values": {
+                "n": 15,
+                "minimum": 1300.0,
+                "median": 1300.0,
+                "maximum": 1300.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Performance": {
+              "values": {
+                "n": 15,
+                "minimum": 246.82722818657942,
+                "median": 247.29972938979304,
+                "maximum": 247.4905184640437
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Performance Limit": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "Performance Limit Flags": {
+              "values": {
+                "n": 15,
+                "minimum": 0.0,
+                "median": 0.0,
+                "maximum": 0.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Time": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            }
+          }
+        },
+        {
+          "block": 11,
+          "raw_timing_lines": [
+            190,
+            191,
+            192,
+            193,
+            194,
+            195,
+            196,
+            197,
+            198,
+            199,
+            200,
+            201,
+            202,
+            203,
+            204
+          ],
+          "raw_reference_line": 205,
+          "wall_median_ms": 212.2552,
+          "wall_ms": {
+            "n": 15,
+            "minimum": 203.8914,
+            "median": 212.2552,
+            "maximum": 225.7255
+          },
+          "initial_ratio": 0.991800846596349,
+          "diagnostic_flag_3pct": false,
+          "process_cpu_median_ms": 218.75,
+          "paired_cpu_over_wall": {
+            "n": 15,
+            "minimum": 0.8937027558933143,
+            "median": 0.9932544965482419,
+            "maximum": 1.0383186658131225
+          },
+          "pdh_counters": {
+            "Processor Frequency": {
+              "values": {
+                "n": 15,
+                "minimum": 1300.0,
+                "median": 1300.0,
+                "maximum": 1300.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Performance": {
+              "values": {
+                "n": 15,
+                "minimum": 246.33471858732852,
+                "median": 247.13619275075152,
+                "maximum": 247.62695101099624
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Performance Limit": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "Performance Limit Flags": {
+              "values": {
+                "n": 15,
+                "minimum": 0.0,
+                "median": 0.0,
+                "maximum": 0.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Time": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            }
+          }
+        }
+      ],
+      "timing_count": 180,
+      "diagnostic_flags": 4,
+      "flagged_faster": 4,
+      "flagged_slower": 0,
+      "raw_wall_ms": {
+        "n": 180,
+        "minimum": 198.7602,
+        "median": 208.8769,
+        "maximum": 1625.0475
+      }
+    },
+    "pause2": {
+      "blocks": [
+        {
+          "block": 0,
+          "raw_timing_lines": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "raw_reference_line": 18,
+          "wall_median_ms": 213.1007,
+          "wall_ms": {
+            "n": 15,
+            "minimum": 209.3985,
+            "median": 213.1007,
+            "maximum": 232.8955
+          },
+          "initial_ratio": 1.0,
+          "diagnostic_flag_3pct": false,
+          "process_cpu_median_ms": 218.75,
+          "paired_cpu_over_wall": {
+            "n": 15,
+            "minimum": 0.9516788434706749,
+            "median": 1.0105233009349939,
+            "maximum": 1.0446366848323878
+          },
+          "pdh_counters": {
+            "Processor Frequency": {
+              "values": {
+                "n": 15,
+                "minimum": 1300.0,
+                "median": 1300.0,
+                "maximum": 1300.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Performance": {
+              "values": {
+                "n": 15,
+                "minimum": 246.39343395500865,
+                "median": 247.43237102277476,
+                "maximum": 247.64121984510845
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Performance Limit": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "Performance Limit Flags": {
+              "values": {
+                "n": 15,
+                "minimum": 0.0,
+                "median": 0.0,
+                "maximum": 0.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Time": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            }
+          }
+        },
+        {
+          "block": 1,
+          "raw_timing_lines": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34
+          ],
+          "raw_reference_line": 35,
+          "wall_median_ms": 210.3786,
+          "wall_ms": {
+            "n": 15,
+            "minimum": 205.3066,
+            "median": 210.3786,
+            "maximum": 222.5579
+          },
+          "initial_ratio": 0.9872262268495599,
+          "diagnostic_flag_3pct": false,
+          "process_cpu_median_ms": 203.125,
+          "paired_cpu_over_wall": {
+            "n": 15,
+            "minimum": 0.8852778993559426,
+            "median": 0.9750872118002234,
+            "maximum": 1.040963272912256
+          },
+          "pdh_counters": {
+            "Processor Frequency": {
+              "values": {
+                "n": 15,
+                "minimum": 1300.0,
+                "median": 1300.0,
+                "maximum": 1300.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Performance": {
+              "values": {
+                "n": 15,
+                "minimum": 246.57488865795725,
+                "median": 247.33600143093503,
+                "maximum": 247.55832686554794
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Performance Limit": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "Performance Limit Flags": {
+              "values": {
+                "n": 15,
+                "minimum": 0.0,
+                "median": 0.0,
+                "maximum": 0.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Time": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            }
+          }
+        },
+        {
+          "block": 2,
+          "raw_timing_lines": [
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51
+          ],
+          "raw_reference_line": 52,
+          "wall_median_ms": 208.3475,
+          "wall_ms": {
+            "n": 15,
+            "minimum": 205.4457,
+            "median": 208.3475,
+            "maximum": 226.342
+          },
+          "initial_ratio": 0.9776950521514007,
+          "diagnostic_flag_3pct": false,
+          "process_cpu_median_ms": 203.125,
+          "paired_cpu_over_wall": {
+            "n": 15,
+            "minimum": 0.9422959966859015,
+            "median": 0.9799834904442866,
+            "maximum": 1.0639482767928927
+          },
+          "pdh_counters": {
+            "Processor Frequency": {
+              "values": {
+                "n": 15,
+                "minimum": 1300.0,
+                "median": 1300.0,
+                "maximum": 1300.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Performance": {
+              "values": {
+                "n": 15,
+                "minimum": 246.4206677079836,
+                "median": 247.48889834771504,
+                "maximum": 247.66932222179747
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Performance Limit": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "Performance Limit Flags": {
+              "values": {
+                "n": 15,
+                "minimum": 0.0,
+                "median": 0.0,
+                "maximum": 0.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Time": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            }
+          }
+        },
+        {
+          "block": 3,
+          "raw_timing_lines": [
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68
+          ],
+          "raw_reference_line": 69,
+          "wall_median_ms": 210.2185,
+          "wall_ms": {
+            "n": 15,
+            "minimum": 203.5213,
+            "median": 210.2185,
+            "maximum": 223.5893
+          },
+          "initial_ratio": 0.9864749388434669,
+          "diagnostic_flag_3pct": false,
+          "process_cpu_median_ms": 203.125,
+          "paired_cpu_over_wall": {
+            "n": 15,
+            "minimum": 0.9064443114455636,
+            "median": 0.9783562988032075,
+            "maximum": 1.0405839638281122
+          },
+          "pdh_counters": {
+            "Processor Frequency": {
+              "values": {
+                "n": 15,
+                "minimum": 1300.0,
+                "median": 1300.0,
+                "maximum": 1300.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Performance": {
+              "values": {
+                "n": 15,
+                "minimum": 246.73997525549063,
+                "median": 247.47948492481035,
+                "maximum": 247.69079481411043
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Performance Limit": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "Performance Limit Flags": {
+              "values": {
+                "n": 15,
+                "minimum": 0.0,
+                "median": 0.0,
+                "maximum": 0.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Time": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            }
+          }
+        },
+        {
+          "block": 4,
+          "raw_timing_lines": [
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85
+          ],
+          "raw_reference_line": 86,
+          "wall_median_ms": 214.2155,
+          "wall_ms": {
+            "n": 15,
+            "minimum": 204.3804,
+            "median": 214.2155,
+            "maximum": 1738.9597
+          },
+          "initial_ratio": 1.0052313296014512,
+          "diagnostic_flag_3pct": false,
+          "process_cpu_median_ms": 203.125,
+          "paired_cpu_over_wall": {
+            "n": 15,
+            "minimum": 0.11680834236699103,
+            "median": 0.9812541212673094,
+            "maximum": 1.0537542312748476
+          },
+          "pdh_counters": {
+            "Processor Frequency": {
+              "values": {
+                "n": 15,
+                "minimum": 1300.0,
+                "median": 1300.0,
+                "maximum": 1300.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Performance": {
+              "values": {
+                "n": 15,
+                "minimum": 245.64550710156306,
+                "median": 247.39085446753998,
+                "maximum": 247.91683625778342
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Performance Limit": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "Performance Limit Flags": {
+              "values": {
+                "n": 15,
+                "minimum": 0.0,
+                "median": 0.0,
+                "maximum": 0.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Time": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            }
+          }
+        },
+        {
+          "block": 5,
+          "raw_timing_lines": [
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102
+          ],
+          "raw_reference_line": 103,
+          "wall_median_ms": 208.5924,
+          "wall_ms": {
+            "n": 15,
+            "minimum": 204.0734,
+            "median": 208.5924,
+            "maximum": 217.7227
+          },
+          "initial_ratio": 0.9788442740920138,
+          "diagnostic_flag_3pct": false,
+          "process_cpu_median_ms": 203.125,
+          "paired_cpu_over_wall": {
+            "n": 15,
+            "minimum": 0.861187189025306,
+            "median": 0.9853204832181428,
+            "maximum": 1.058933843622459
+          },
+          "pdh_counters": {
+            "Processor Frequency": {
+              "values": {
+                "n": 15,
+                "minimum": 1300.0,
+                "median": 1300.0,
+                "maximum": 1300.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Performance": {
+              "values": {
+                "n": 15,
+                "minimum": 246.8967895467466,
+                "median": 247.3834010339734,
+                "maximum": 247.60705875109667
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Performance Limit": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "Performance Limit Flags": {
+              "values": {
+                "n": 15,
+                "minimum": 0.0,
+                "median": 0.0,
+                "maximum": 0.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Time": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            }
+          }
+        },
+        {
+          "block": 6,
+          "raw_timing_lines": [
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119
+          ],
+          "raw_reference_line": 120,
+          "wall_median_ms": 206.469,
+          "wall_ms": {
+            "n": 15,
+            "minimum": 201.9865,
+            "median": 206.469,
+            "maximum": 213.2442
+          },
+          "initial_ratio": 0.9688799708306918,
+          "diagnostic_flag_3pct": true,
+          "process_cpu_median_ms": 203.125,
+          "paired_cpu_over_wall": {
+            "n": 15,
+            "minimum": 0.9245653310190436,
+            "median": 0.9877372271292332,
+            "maximum": 1.0473382526711315
+          },
+          "pdh_counters": {
+            "Processor Frequency": {
+              "values": {
+                "n": 15,
+                "minimum": 1300.0,
+                "median": 1300.0,
+                "maximum": 1300.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Performance": {
+              "values": {
+                "n": 15,
+                "minimum": 246.7488095505913,
+                "median": 247.60710102603346,
+                "maximum": 247.7107944085619
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Performance Limit": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "Performance Limit Flags": {
+              "values": {
+                "n": 15,
+                "minimum": 0.0,
+                "median": 0.0,
+                "maximum": 0.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Time": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            }
+          }
+        },
+        {
+          "block": 7,
+          "raw_timing_lines": [
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135,
+            136
+          ],
+          "raw_reference_line": 137,
+          "wall_median_ms": 209.0997,
+          "wall_ms": {
+            "n": 15,
+            "minimum": 204.1062,
+            "median": 209.0997,
+            "maximum": 227.4561
+          },
+          "initial_ratio": 0.9812248387734062,
+          "diagnostic_flag_3pct": false,
+          "process_cpu_median_ms": 203.125,
+          "paired_cpu_over_wall": {
+            "n": 15,
+            "minimum": 0.8842479365190153,
+            "median": 0.9876916000141984,
+            "maximum": 1.0461516683189884
+          },
+          "pdh_counters": {
+            "Processor Frequency": {
+              "values": {
+                "n": 15,
+                "minimum": 1300.0,
+                "median": 1300.0,
+                "maximum": 1300.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Performance": {
+              "values": {
+                "n": 15,
+                "minimum": 246.88562509667167,
+                "median": 247.4345090679752,
+                "maximum": 247.69986088118944
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Performance Limit": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "Performance Limit Flags": {
+              "values": {
+                "n": 15,
+                "minimum": 0.0,
+                "median": 0.0,
+                "maximum": 0.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Time": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            }
+          }
+        },
+        {
+          "block": 8,
+          "raw_timing_lines": [
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152,
+            153
+          ],
+          "raw_reference_line": 154,
+          "wall_median_ms": 206.9332,
+          "wall_ms": {
+            "n": 15,
+            "minimum": 203.0756,
+            "median": 206.9332,
+            "maximum": 212.9784
+          },
+          "initial_ratio": 0.9710582837128174,
+          "diagnostic_flag_3pct": false,
+          "process_cpu_median_ms": 203.125,
+          "paired_cpu_over_wall": {
+            "n": 15,
+            "minimum": 0.9060895013463282,
+            "median": 0.9780709864059569,
+            "maximum": 1.0648862579775193
+          },
+          "pdh_counters": {
+            "Processor Frequency": {
+              "values": {
+                "n": 15,
+                "minimum": 1300.0,
+                "median": 1300.0,
+                "maximum": 1300.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Performance": {
+              "values": {
+                "n": 15,
+                "minimum": 247.11932204413964,
+                "median": 247.57447486419906,
+                "maximum": 247.70318815585856
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Performance Limit": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "Performance Limit Flags": {
+              "values": {
+                "n": 15,
+                "minimum": 0.0,
+                "median": 0.0,
+                "maximum": 0.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Time": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            }
+          }
+        },
+        {
+          "block": 9,
+          "raw_timing_lines": [
+            156,
+            157,
+            158,
+            159,
+            160,
+            161,
+            162,
+            163,
+            164,
+            165,
+            166,
+            167,
+            168,
+            169,
+            170
+          ],
+          "raw_reference_line": 171,
+          "wall_median_ms": 209.708,
+          "wall_ms": {
+            "n": 15,
+            "minimum": 203.9849,
+            "median": 209.708,
+            "maximum": 835.435
+          },
+          "initial_ratio": 0.984079357787187,
+          "diagnostic_flag_3pct": false,
+          "process_cpu_median_ms": 203.125,
+          "paired_cpu_over_wall": {
+            "n": 15,
+            "minimum": 0.24313680896778325,
+            "median": 0.9728935686765869,
+            "maximum": 1.0416661706351569
+          },
+          "pdh_counters": {
+            "Processor Frequency": {
+              "values": {
+                "n": 15,
+                "minimum": 1300.0,
+                "median": 1300.0,
+                "maximum": 1300.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Performance": {
+              "values": {
+                "n": 15,
+                "minimum": 245.89052544812068,
+                "median": 247.39037157180772,
+                "maximum": 247.86299395887602
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Performance Limit": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "Performance Limit Flags": {
+              "values": {
+                "n": 15,
+                "minimum": 0.0,
+                "median": 0.0,
+                "maximum": 0.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Time": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            }
+          }
+        },
+        {
+          "block": 10,
+          "raw_timing_lines": [
+            173,
+            174,
+            175,
+            176,
+            177,
+            178,
+            179,
+            180,
+            181,
+            182,
+            183,
+            184,
+            185,
+            186,
+            187
+          ],
+          "raw_reference_line": 188,
+          "wall_median_ms": 208.0582,
+          "wall_ms": {
+            "n": 15,
+            "minimum": 202.4541,
+            "median": 208.0582,
+            "maximum": 219.709
+          },
+          "initial_ratio": 0.9763374780092229,
+          "diagnostic_flag_3pct": false,
+          "process_cpu_median_ms": 203.125,
+          "paired_cpu_over_wall": {
+            "n": 15,
+            "minimum": 0.8489578625476095,
+            "median": 0.9820364087127962,
+            "maximum": 1.054006574110033
+          },
+          "pdh_counters": {
+            "Processor Frequency": {
+              "values": {
+                "n": 15,
+                "minimum": 1300.0,
+                "median": 1300.0,
+                "maximum": 1300.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Performance": {
+              "values": {
+                "n": 15,
+                "minimum": 246.53324570898408,
+                "median": 247.4091732092364,
+                "maximum": 247.72528453470207
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Performance Limit": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "Performance Limit Flags": {
+              "values": {
+                "n": 15,
+                "minimum": 0.0,
+                "median": 0.0,
+                "maximum": 0.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Time": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            }
+          }
+        },
+        {
+          "block": 11,
+          "raw_timing_lines": [
+            190,
+            191,
+            192,
+            193,
+            194,
+            195,
+            196,
+            197,
+            198,
+            199,
+            200,
+            201,
+            202,
+            203,
+            204
+          ],
+          "raw_reference_line": 205,
+          "wall_median_ms": 204.4556,
+          "wall_ms": {
+            "n": 15,
+            "minimum": 202.4921,
+            "median": 204.4556,
+            "maximum": 226.6592
+          },
+          "initial_ratio": 0.9594318554561294,
+          "diagnostic_flag_3pct": true,
+          "process_cpu_median_ms": 203.125,
+          "paired_cpu_over_wall": {
+            "n": 15,
+            "minimum": 0.9248489906568056,
+            "median": 0.9793616852012121,
+            "maximum": 1.070478860061131
+          },
+          "pdh_counters": {
+            "Processor Frequency": {
+              "values": {
+                "n": 15,
+                "minimum": 1300.0,
+                "median": 1300.0,
+                "maximum": 1300.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Performance": {
+              "values": {
+                "n": 15,
+                "minimum": 246.19588378065646,
+                "median": 247.60298316742652,
+                "maximum": 247.73966570460928
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Performance Limit": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "Performance Limit Flags": {
+              "values": {
+                "n": 15,
+                "minimum": 0.0,
+                "median": 0.0,
+                "maximum": 0.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            },
+            "% Processor Time": {
+              "values": {
+                "n": 15,
+                "minimum": 100.0,
+                "median": 100.0,
+                "maximum": 100.0
+              },
+              "statuses": {
+                "0/0": 15
+              },
+              "invalid": 0
+            }
+          }
+        }
+      ],
+      "timing_count": 180,
+      "diagnostic_flags": 2,
+      "flagged_faster": 2,
+      "flagged_slower": 0,
+      "raw_wall_ms": {
+        "n": 180,
+        "minimum": 201.9865,
+        "median": 209.51825,
+        "maximum": 1738.9597
+      }
+    }
+  },
+  "restoration": {
+    "root": 1,
+    "intent": 45,
+    "applied": 45,
+    "ready": 1,
+    "restored": 45
+  },
+  "tag_line_ending_differences": [
+    {
+      "path": "sponge-sim/src/sponge_sim/hw.py",
+      "working_sha256": "9b0eda7758b4c45f2cd9a64eaf44206aab2b5478afdc5458ed49e69791cb879d",
+      "tag_sha256": "a6fd2c15cd16d518dd3034d94fb98c463dd77d425cd249f6ac7d92722bb62323",
+      "reason": "known CRLF/LF only"
+    }
+  ],
+  "sources": {
+    "sponge-sim/studies/laptop_seg/lock_reference_trace.json": {
+      "sha256": "bc2773454401385a16e6aed2ea5d68c46d81bed3f0537bf9f386e6e8deff4786"
+    },
+    "sponge-sim/results/laptop_reference_trace_20261107/run_01/campaign.json": {
+      "sha256": "34d239c527ec3451a02715e3c1c8764499223c4d414c841922aefe59a0dd1329"
+    },
+    "sponge-sim/results/laptop_reference_trace_20261107/run_01/campaign_done.json": {
+      "sha256": "9e3d913caee88105c732129b5f3bc78fdcb7677c988c1fcd3a64f5f47e799b26"
+    },
+    "sponge-sim/results/laptop_reference_trace_20261107/run_01_affinity.jsonl": {
+      "sha256": "43ad67798b4c05fc33067252bd8ba3be67946dbecf46788eb01bde2f2f1f027b"
+    },
+    "D:/Sponge-patch-study/sponge-sim/studies/laptop_seg/analyze_reference_trace.py": {
+      "sha256": "85f69c2e623a9ddc6bc9ec1cd5509f2a25ef8ae9af879a1e627802c376be66a2"
+    },
+    "D:/Sponge-patch-study/sponge-sim/results/laptop_reference_trace_20261107/registration_check.json": {
+      "sha256": "3a1084f96f2260b054570b3203349b4888f5fc76e43dae451f26def5f24397f7"
+    },
+    "sponge-sim/results/laptop_reference_trace_20261107/run_01/continuous/manifest.json": {
+      "sha256": "c504ec216fa418e1f59ce7a54d4c6cdd44cbb79de49394be7cbe55abc1a20e81"
+    },
+    "sponge-sim/results/laptop_reference_trace_20261107/run_01/continuous/raw.jsonl": {
+      "sha256": "c897e4903944c07c64ded321bbce6faacbbd2173b37c27bee58faa8b770399b6"
+    },
+    "sponge-sim/results/laptop_reference_trace_20261107/run_01/pause2/manifest.json": {
+      "sha256": "3856e1a19bc9e8e8ad287911f3b71077f468db541e50c653e1514109d5ea7af1"
+    },
+    "sponge-sim/results/laptop_reference_trace_20261107/run_01/pause2/raw.jsonl": {
+      "sha256": "368862d88ee3873d4b0376553476d22f74cb9a5a1e4dee9fa0cdda9f4067e02e"
+    }
+  },
+  "analysis_code_written_after_trace": true,
+  "limits": [
+    "One process per cadence; fixed order confounded with session/time. No cadence treatment-effect inference.",
+    "No CI, p-value, A/A MDE, attack gate, baseline substitution or historical FAIL promotion.",
+    "PDH is an interval counter, CPU time is quantized, and no temperature/scheduler trace exists.",
+    "No NMS/MASK in workload; pin-load and runtime initialization differ from historical component context."
+  ]
+}

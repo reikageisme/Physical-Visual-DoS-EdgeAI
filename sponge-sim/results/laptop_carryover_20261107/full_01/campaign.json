@@ -1,0 +1,7 @@
+{
+  "tag": "prereg-laptop-carryover-20261107",
+  "commit": "a57662d32d8a37f448776622bfa1941862c62634",
+  "lock_sha256": "e0481a56789d1b6d628e416a9fb02b0118e2faa1cfd7d83f40f32bdd4bd9c0a0",
+  "user_idle": "User standing authorization covers corrected carryover full after smoke pass; AC and idle declaration continues",
+  "smoke": false
+}

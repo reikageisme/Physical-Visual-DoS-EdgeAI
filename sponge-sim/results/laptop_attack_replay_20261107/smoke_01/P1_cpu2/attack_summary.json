@@ -1,0 +1,838 @@
+{
+  "smoke": true,
+  "complete": true,
+  "feasibility_pass": true,
+  "quality_pass": false,
+  "flags": 0,
+  "n_references": 4,
+  "pin_checks": [
+    true,
+    true
+  ],
+  "aa": {
+    "clean": {
+      "n_images": 2,
+      "geometric_ratio": 1.020322246509336,
+      "mde_fraction": 0.39195668183845456
+    },
+    "attacked": {
+      "n_images": 2,
+      "geometric_ratio": 1.0095748062136005,
+      "mde_fraction": 0.1078705957895747
+    }
+  },
+  "contrasts": {
+    "forward": {
+      "n_images": 2,
+      "geometric_ratio": 0.9919081403566601,
+      "ci95": [
+        0.9815089711254852,
+        1.0024174896512679
+      ],
+      "image_ids": [
+        "000000000009_inputs",
+        "000000000025_inputs"
+      ],
+      "clean_medians_ms": [
+        217.1188,
+        216.89855
+      ],
+      "attacked_medians_ms": [
+        213.10405,
+        217.4229
+      ],
+      "mean_paired_delta_ms": -1.7452,
+      "delta_ci95": [
+        -4.01475,
+        0.52435
+      ]
+    },
+    "nms_tv": {
+      "n_images": 2,
+      "geometric_ratio": 3.981936875467729,
+      "ci95": [
+        3.5526069893477854,
+        4.463150955833883
+      ],
+      "image_ids": [
+        "000000000009_inputs",
+        "000000000025_inputs"
+      ],
+      "clean_medians_ms": [
+        0.80265,
+        0.7585
+      ],
+      "attacked_medians_ms": [
+        2.8515,
+        3.3853
+      ],
+      "mean_paired_delta_ms": 2.3378249999999996,
+      "delta_ci95": [
+        2.04885,
+        2.6268
+      ]
+    },
+    "mask_native": {
+      "n_images": 2,
+      "geometric_ratio": 62.49208422293375,
+      "ci95": [
+        32.09354617618804,
+        121.68367338053069
+      ],
+      "image_ids": [
+        "000000000009_inputs",
+        "000000000025_inputs"
+      ],
+      "clean_medians_ms": [
+        17.8003,
+        5.74185
+      ],
+      "attacked_medians_ms": [
+        571.27475,
+        698.6894
+      ],
+      "mean_paired_delta_ms": 623.211,
+      "delta_ci95": [
+        553.47445,
+        692.94755
+      ]
+    },
+    "total": {
+      "n_images": 2,
+      "geometric_ratio": 3.7165392470927374,
+      "ci95": [
+        3.329380624735566,
+        4.14871879548999
+      ],
+      "image_ids": [
+        "000000000009_inputs",
+        "000000000025_inputs"
+      ],
+      "clean_medians_ms": [
+        239.07235,
+        225.28995
+      ],
+      "attacked_medians_ms": [
+        795.96285,
+        934.66465
+      ],
+      "mean_paired_delta_ms": 633.1325999999999,
+      "delta_ci95": [
+        556.8905,
+        709.3747
+      ]
+    }
+  },
+  "counts": [
+    {
+      "wall_utc": 1794019180.063036,
+      "kind": "counts",
+      "image": "000000000009_inputs",
+      "arm": "clean",
+      "n_tau": 37,
+      "k": 6,
+      "prediction_sha256": "1d11f13cb974343d132435d55b6dc2a04ffeeeee7f31280af10167b01730c3b9",
+      "proto_shape": [
+        32,
+        160,
+        160
+      ]
+    },
+    {
+      "wall_utc": 1794019180.294578,
+      "kind": "counts",
+      "image": "000000000009_inputs",
+      "arm": "attacked",
+      "n_tau": 2018,
+      "k": 202,
+      "prediction_sha256": "e232363009f2952f88ab61e4c7adee9546418c45b8f643da4333e521d0cd6203",
+      "proto_shape": [
+        32,
+        160,
+        160
+      ]
+    },
+    {
+      "wall_utc": 1794019245.0891588,
+      "kind": "counts",
+      "image": "000000000025_inputs",
+      "arm": "clean",
+      "n_tau": 18,
+      "k": 2,
+      "prediction_sha256": "b138f5fd2f3cb292cb40035bd9b4a8af10c60cc496c372922f2714c4a02efd8c",
+      "proto_shape": [
+        32,
+        160,
+        160
+      ]
+    },
+    {
+      "wall_utc": 1794019245.3120582,
+      "kind": "counts",
+      "image": "000000000025_inputs",
+      "arm": "attacked",
+      "n_tau": 2406,
+      "k": 250,
+      "prediction_sha256": "4b3764c70d3391bbedbab79dda20ac332a8e2fb25ed5e1d6509f4c3a181d52bf",
+      "proto_shape": [
+        32,
+        160,
+        160
+      ]
+    }
+  ],
+  "references": [
+    {
+      "wall_utc": 1794019175.9150448,
+      "kind": "reference",
+      "block": "start",
+      "samples_ns": [
+        213399800,
+        211482200,
+        209898800,
+        211162600,
+        207682900,
+        212182800,
+        206186400,
+        208170400,
+        208221600,
+        214486100,
+        211885400,
+        218468500,
+        213803500,
+        211737800,
+        207012100
+      ],
+      "cpu_samples_ns": [
+        218750000,
+        203125000,
+        218750000,
+        203125000,
+        218750000,
+        203125000,
+        218750000,
+        203125000,
+        203125000,
+        218750000,
+        218750000,
+        203125000,
+        203125000,
+        203125000,
+        203125000
+      ],
+      "ratio": 1.0,
+      "flagged": false
+    },
+    {
+      "wall_utc": 1794019179.8382294,
+      "kind": "reference",
+      "block": 0,
+      "samples_ns": [
+        209778400,
+        210884100,
+        208696500,
+        216482000,
+        206900400,
+        217068800,
+        208266700,
+        211474600,
+        206819600,
+        209728400,
+        209035300,
+        211747100,
+        211600200,
+        213990500,
+        208442300
+      ],
+      "cpu_samples_ns": [
+        218750000,
+        203125000,
+        218750000,
+        218750000,
+        203125000,
+        218750000,
+        203125000,
+        218750000,
+        203125000,
+        218750000,
+        187500000,
+        218750000,
+        203125000,
+        218750000,
+        203125000
+      ],
+      "ratio": 0.9919435299992151,
+      "flagged": false
+    },
+    {
+      "wall_utc": 1794019244.8712287,
+      "kind": "reference",
+      "block": 1,
+      "samples_ns": [
+        205782600,
+        211747200,
+        204611200,
+        224598100,
+        211634800,
+        208774200,
+        213442700,
+        205831500,
+        211050600,
+        207015400,
+        208587900,
+        204326100,
+        203186500,
+        205814100,
+        211703400
+      ],
+      "cpu_samples_ns": [
+        203125000,
+        187500000,
+        218750000,
+        218750000,
+        218750000,
+        203125000,
+        218750000,
+        203125000,
+        203125000,
+        203125000,
+        218750000,
+        203125000,
+        203125000,
+        203125000,
+        218750000
+      ],
+      "ratio": 0.9863142146242095,
+      "flagged": false
+    },
+    {
+      "wall_utc": 1794019315.8768718,
+      "kind": "reference",
+      "block": "end",
+      "samples_ns": [
+        211045200,
+        219544400,
+        207191200,
+        216443300,
+        205944500,
+        214089700,
+        207734200,
+        219139400,
+        213291200,
+        225469900,
+        208202900,
+        215580700,
+        212932100,
+        222121600,
+        210135000
+      ],
+      "cpu_samples_ns": [
+        218750000,
+        218750000,
+        203125000,
+        218750000,
+        187500000,
+        218750000,
+        203125000,
+        218750000,
+        218750000,
+        234375000,
+        203125000,
+        218750000,
+        203125000,
+        234375000,
+        203125000
+      ],
+      "ratio": 1.0085539113930155,
+      "flagged": false
+    }
+  ],
+  "raw_sha256": "10c034e2d89f97fdd725edb785c0429c62c7345ec54b36121ef7663e1798fffc",
+  "scope": "Frozen whole-image PGD20; tensor-to-native-mask CPU latency; no DoS/deadline/camera claim.",
+  "cpu_diagnostics": {
+    "clean": {
+      "stages": {
+        "aa_A": {
+          "n_trials": 24,
+          "wall_median_ms": 235.40255,
+          "wall_max_ms": 864.3359,
+          "median_cpu_over_wall": 0.9901864219638107,
+          "n_highwall": 1,
+          "highwall_fraction": 0.041666666666666664,
+          "highwall_low_cpu_count": 1,
+          "highwall_low_cpu_share": 1.0,
+          "highwall_trials": [
+            {
+              "image": "000000000025_inputs",
+              "rep": 11,
+              "label": "clean",
+              "wall_ns": 864335900,
+              "process_cpu_ns": 265625000,
+              "cpu_over_wall": 0.30731686604710046
+            }
+          ]
+        },
+        "aa_B": {
+          "n_trials": 24,
+          "wall_median_ms": 230.3298,
+          "wall_max_ms": 251.9089,
+          "median_cpu_over_wall": 0.9972557377752657,
+          "n_highwall": 0,
+          "highwall_fraction": 0.0,
+          "highwall_low_cpu_count": 0,
+          "highwall_low_cpu_share": null,
+          "highwall_trials": []
+        },
+        "forward": {
+          "n_trials": 24,
+          "wall_median_ms": 217.1188,
+          "wall_max_ms": 1007.1604,
+          "median_cpu_over_wall": 0.9915452690177105,
+          "n_highwall": 1,
+          "highwall_fraction": 0.041666666666666664,
+          "highwall_low_cpu_count": 1,
+          "highwall_low_cpu_share": 1.0,
+          "highwall_trials": [
+            {
+              "image": "000000000009_inputs",
+              "rep": 5,
+              "label": "clean",
+              "wall_ns": 1007160400,
+              "process_cpu_ns": 203125000,
+              "cpu_over_wall": 0.20168088419679725
+            }
+          ]
+        },
+        "mask_native": {
+          "n_trials": 24,
+          "wall_median_ms": 12.35455,
+          "wall_max_ms": 19.983,
+          "median_cpu_over_wall": 0.8688786564568021,
+          "n_highwall": 0,
+          "highwall_fraction": 0.0,
+          "highwall_low_cpu_count": 0,
+          "highwall_low_cpu_share": null,
+          "highwall_trials": []
+        },
+        "nms_tv": {
+          "n_trials": 24,
+          "wall_median_ms": 0.77405,
+          "wall_max_ms": 1.0729,
+          "median_cpu_over_wall": 0.0,
+          "n_highwall": 0,
+          "highwall_fraction": 0.0,
+          "highwall_low_cpu_count": 0,
+          "highwall_low_cpu_share": null,
+          "highwall_trials": []
+        },
+        "total": {
+          "n_trials": 24,
+          "wall_median_ms": 233.05265,
+          "wall_max_ms": 253.4036,
+          "median_cpu_over_wall": 0.9939308573978921,
+          "n_highwall": 0,
+          "highwall_fraction": 0.0,
+          "highwall_low_cpu_count": 0,
+          "highwall_low_cpu_share": null,
+          "highwall_trials": []
+        }
+      },
+      "references": [
+        {
+          "raw_line": 3,
+          "block": "start",
+          "wall_ratio": 1.0,
+          "median_cpu_over_wall": 0.9757631248246629
+        },
+        {
+          "raw_line": 4,
+          "block": 0,
+          "wall_ratio": 0.9919435299992151,
+          "median_cpu_over_wall": 1.0077450098770528
+        },
+        {
+          "raw_line": 80,
+          "block": 1,
+          "wall_ratio": 0.9863142146242095,
+          "median_cpu_over_wall": 0.9870853998345827
+        },
+        {
+          "raw_line": 156,
+          "block": "end",
+          "wall_ratio": 1.0085539113930155,
+          "median_cpu_over_wall": 0.9982230488903411
+        }
+      ],
+      "interpretation": "Descriptive process CPU-time / wall-time; no CPU clock or scheduler trace; no clipping."
+    },
+    "attacked": {
+      "stages": {
+        "aa_A": {
+          "n_trials": 24,
+          "wall_median_ms": 867.54085,
+          "wall_max_ms": 951.2586,
+          "median_cpu_over_wall": 0.9949346529514177,
+          "n_highwall": 0,
+          "highwall_fraction": 0.0,
+          "highwall_low_cpu_count": 0,
+          "highwall_low_cpu_share": null,
+          "highwall_trials": []
+        },
+        "aa_B": {
+          "n_trials": 24,
+          "wall_median_ms": 889.46495,
+          "wall_max_ms": 954.4006,
+          "median_cpu_over_wall": 0.9944794836009017,
+          "n_highwall": 0,
+          "highwall_fraction": 0.0,
+          "highwall_low_cpu_count": 0,
+          "highwall_low_cpu_share": null,
+          "highwall_trials": []
+        },
+        "forward": {
+          "n_trials": 24,
+          "wall_median_ms": 214.6868,
+          "wall_max_ms": 234.6574,
+          "median_cpu_over_wall": 0.9995810010773396,
+          "n_highwall": 0,
+          "highwall_fraction": 0.0,
+          "highwall_low_cpu_count": 0,
+          "highwall_low_cpu_share": null,
+          "highwall_trials": []
+        },
+        "mask_native": {
+          "n_trials": 24,
+          "wall_median_ms": 653.72425,
+          "wall_max_ms": 711.9667,
+          "median_cpu_over_wall": 0.9904220783570696,
+          "n_highwall": 0,
+          "highwall_fraction": 0.0,
+          "highwall_low_cpu_count": 0,
+          "highwall_low_cpu_share": null,
+          "highwall_trials": []
+        },
+        "nms_tv": {
+          "n_trials": 24,
+          "wall_median_ms": 3.06705,
+          "wall_max_ms": 3.8963,
+          "median_cpu_over_wall": 0.0,
+          "n_highwall": 0,
+          "highwall_fraction": 0.0,
+          "highwall_low_cpu_count": 0,
+          "highwall_low_cpu_share": null,
+          "highwall_trials": []
+        },
+        "total": {
+          "n_trials": 24,
+          "wall_median_ms": 877.7002,
+          "wall_max_ms": 957.2746,
+          "median_cpu_over_wall": 0.9936582777733649,
+          "n_highwall": 0,
+          "highwall_fraction": 0.0,
+          "highwall_low_cpu_count": 0,
+          "highwall_low_cpu_share": null,
+          "highwall_trials": []
+        }
+      },
+      "references": [
+        {
+          "raw_line": 3,
+          "block": "start",
+          "wall_ratio": 1.0,
+          "median_cpu_over_wall": 0.9757631248246629
+        },
+        {
+          "raw_line": 4,
+          "block": 0,
+          "wall_ratio": 0.9919435299992151,
+          "median_cpu_over_wall": 1.0077450098770528
+        },
+        {
+          "raw_line": 80,
+          "block": 1,
+          "wall_ratio": 0.9863142146242095,
+          "median_cpu_over_wall": 0.9870853998345827
+        },
+        {
+          "raw_line": 156,
+          "block": "end",
+          "wall_ratio": 1.0085539113930155,
+          "median_cpu_over_wall": 0.9982230488903411
+        }
+      ],
+      "interpretation": "Descriptive process CPU-time / wall-time; no CPU clock or scheduler trace; no clipping."
+    }
+  },
+  "pdh_diagnostics": {
+    "clean": {
+      "stages": {
+        "forward": {
+          "n": 24,
+          "counters": {
+            "Processor Frequency": {
+              "valid": 24,
+              "minimum": 1300.0,
+              "median": 1300.0,
+              "maximum": 1300.0,
+              "status_counts": {
+                "0/0": 24
+              }
+            },
+            "% Processor Performance": {
+              "valid": 24,
+              "minimum": 246.73179352658724,
+              "median": 247.40243200490812,
+              "maximum": 247.9032817502668,
+              "status_counts": {
+                "0/0": 24
+              }
+            },
+            "% Performance Limit": {
+              "valid": 24,
+              "minimum": 100.0,
+              "median": 100.0,
+              "maximum": 100.0,
+              "status_counts": {
+                "0/0": 24
+              }
+            },
+            "Performance Limit Flags": {
+              "valid": 24,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.0,
+              "status_counts": {
+                "0/0": 24
+              }
+            },
+            "% Processor Time": {
+              "valid": 24,
+              "minimum": 100.0,
+              "median": 100.0,
+              "maximum": 100.0,
+              "status_counts": {
+                "0/0": 24
+              }
+            }
+          },
+          "wall_vs_reported_performance": {
+            "n": 24,
+            "spearman": -0.10173913043478258
+          },
+          "cpu_vs_reported_performance": {
+            "n": 24,
+            "spearman": -0.19112378940766825
+          },
+          "wall_vs_cpu": {
+            "n": 24,
+            "spearman": 0.37251205066856524
+          }
+        },
+        "total": {
+          "n": 24,
+          "counters": {
+            "Processor Frequency": {
+              "valid": 24,
+              "minimum": 1300.0,
+              "median": 1300.0,
+              "maximum": 1300.0,
+              "status_counts": {
+                "0/0": 24
+              }
+            },
+            "% Processor Performance": {
+              "valid": 24,
+              "minimum": 247.0121896757054,
+              "median": 247.42616751944644,
+              "maximum": 247.61504062200257,
+              "status_counts": {
+                "0/0": 24
+              }
+            },
+            "% Performance Limit": {
+              "valid": 24,
+              "minimum": 100.0,
+              "median": 100.0,
+              "maximum": 100.0,
+              "status_counts": {
+                "0/0": 24
+              }
+            },
+            "Performance Limit Flags": {
+              "valid": 24,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.0,
+              "status_counts": {
+                "0/0": 24
+              }
+            },
+            "% Processor Time": {
+              "valid": 24,
+              "minimum": 100.0,
+              "median": 100.0,
+              "maximum": 100.0,
+              "status_counts": {
+                "0/0": 24
+              }
+            }
+          },
+          "wall_vs_reported_performance": {
+            "n": 24,
+            "spearman": -0.2504347826086956
+          },
+          "cpu_vs_reported_performance": {
+            "n": 24,
+            "spearman": -0.11355489016153054
+          },
+          "wall_vs_cpu": {
+            "n": 24,
+            "spearman": 0.8096131080972722
+          }
+        }
+      },
+      "pdh_read_duration_ms": {
+        "valid": 144,
+        "minimum": 0.0559,
+        "median": 0.0839,
+        "maximum": 0.1555
+      },
+      "limits": "PDH intervals include metadata/warmup; two images; correlated repeats; no exact clock or causal inference."
+    },
+    "attacked": {
+      "stages": {
+        "forward": {
+          "n": 24,
+          "counters": {
+            "Processor Frequency": {
+              "valid": 24,
+              "minimum": 1300.0,
+              "median": 1300.0,
+              "maximum": 1300.0,
+              "status_counts": {
+                "0/0": 24
+              }
+            },
+            "% Processor Performance": {
+              "valid": 24,
+              "minimum": 246.37208616747438,
+              "median": 247.44690269154256,
+              "maximum": 247.62228401013522,
+              "status_counts": {
+                "0/0": 24
+              }
+            },
+            "% Performance Limit": {
+              "valid": 24,
+              "minimum": 100.0,
+              "median": 100.0,
+              "maximum": 100.0,
+              "status_counts": {
+                "0/0": 24
+              }
+            },
+            "Performance Limit Flags": {
+              "valid": 24,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.0,
+              "status_counts": {
+                "0/0": 24
+              }
+            },
+            "% Processor Time": {
+              "valid": 24,
+              "minimum": 100.0,
+              "median": 100.0,
+              "maximum": 100.0,
+              "status_counts": {
+                "0/0": 24
+              }
+            }
+          },
+          "wall_vs_reported_performance": {
+            "n": 24,
+            "spearman": -0.3930434782608695
+          },
+          "cpu_vs_reported_performance": {
+            "n": 24,
+            "spearman": -0.3034368736556009
+          },
+          "wall_vs_cpu": {
+            "n": 24,
+            "spearman": 0.6592255027325199
+          }
+        },
+        "total": {
+          "n": 24,
+          "counters": {
+            "Processor Frequency": {
+              "valid": 24,
+              "minimum": 1300.0,
+              "median": 1300.0,
+              "maximum": 1300.0,
+              "status_counts": {
+                "0/0": 24
+              }
+            },
+            "% Processor Performance": {
+              "valid": 24,
+              "minimum": 245.5954521052357,
+              "median": 246.05094437425188,
+              "maximum": 246.25707203975503,
+              "status_counts": {
+                "0/0": 24
+              }
+            },
+            "% Performance Limit": {
+              "valid": 24,
+              "minimum": 100.0,
+              "median": 100.0,
+              "maximum": 100.0,
+              "status_counts": {
+                "0/0": 24
+              }
+            },
+            "Performance Limit Flags": {
+              "valid": 24,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.0,
+              "status_counts": {
+                "0/0": 24
+              }
+            },
+            "% Processor Time": {
+              "valid": 24,
+              "minimum": 100.0,
+              "median": 100.0,
+              "maximum": 100.0,
+              "status_counts": {
+                "0/0": 24
+              }
+            }
+          },
+          "wall_vs_reported_performance": {
+            "n": 24,
+            "spearman": -0.44695652173913036
+          },
+          "cpu_vs_reported_performance": {
+            "n": 24,
+            "spearman": -0.30986676882304703
+          },
+          "wall_vs_cpu": {
+            "n": 24,
+            "spearman": 0.9287224969257329
+          }
+        }
+      },
+      "pdh_read_duration_ms": {
+        "valid": 144,
+        "minimum": 0.0595,
+        "median": 0.0856,
+        "maximum": 2.0566
+      },
+      "limits": "PDH intervals include metadata/warmup; two images; correlated repeats; no exact clock or causal inference."
+    }
+  }
+}

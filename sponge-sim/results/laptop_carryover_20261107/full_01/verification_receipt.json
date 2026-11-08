@@ -1,0 +1,286 @@
+{
+  "status": "OFFLINE_VERIFIED_NO_NEW_INFERENCE",
+  "tag": "prereg-laptop-carryover-20261107",
+  "commit": "a57662d32d8a37f448776622bfa1941862c62634",
+  "lock_sha256": "e0481a56789d1b6d628e416a9fb02b0118e2faa1cfd7d83f40f32bdd4bd9c0a0",
+  "raw_sha256": "f344e61f6f1200a1b47558d48ae51b93d7373774c9594c54070d6d3bcf567148",
+  "manifest_sha256": "191646f8e35bf627411d0f948918f03d189425db0d0b681cefc8f1c9e53d6021",
+  "summary_sha256": "8a5f58c628a7e8293b8f45589bca3eb82838353b3a6938d79e034edd550b9787",
+  "audit_source_sha256": "cc3fab0c01224858cab61a060f44615c9cefccb877611dbabf5e15fe87414eac",
+  "quality_pass": true,
+  "restored_events": {
+    "root": 1,
+    "intent": 48,
+    "applied": 48,
+    "ready": 1,
+    "restored": 45,
+    "exited": 3
+  },
+  "duration_raw_s": 2624.8918087482452,
+  "references": [
+    {
+      "line": 3,
+      "block": "start",
+      "ratio": 1.0,
+      "flagged": false
+    },
+    {
+      "line": 4,
+      "block": 0,
+      "ratio": 0.9892551921250811,
+      "flagged": false
+    },
+    {
+      "line": 200,
+      "block": 1,
+      "ratio": 0.9898855805120201,
+      "flagged": false
+    },
+    {
+      "line": 396,
+      "block": 2,
+      "ratio": 1.012124046896007,
+      "flagged": false
+    },
+    {
+      "line": 592,
+      "block": 3,
+      "ratio": 1.029269576826528,
+      "flagged": false
+    },
+    {
+      "line": 788,
+      "block": 4,
+      "ratio": 1.008419751229281,
+      "flagged": false
+    },
+    {
+      "line": 984,
+      "block": 5,
+      "ratio": 1.0206227729567612,
+      "flagged": false
+    },
+    {
+      "line": 1180,
+      "block": 6,
+      "ratio": 0.9980467831858824,
+      "flagged": false
+    },
+    {
+      "line": 1376,
+      "block": 7,
+      "ratio": 1.1284229478296024,
+      "flagged": true
+    },
+    {
+      "line": 1572,
+      "block": 8,
+      "ratio": 1.0236999708545265,
+      "flagged": false
+    },
+    {
+      "line": 1768,
+      "block": 9,
+      "ratio": 0.9863721406880213,
+      "flagged": false
+    },
+    {
+      "line": 1964,
+      "block": 10,
+      "ratio": 0.9912455459135225,
+      "flagged": false
+    },
+    {
+      "line": 2160,
+      "block": 11,
+      "ratio": 1.0047135752094243,
+      "flagged": false
+    },
+    {
+      "line": 2356,
+      "block": 12,
+      "ratio": 1.0006905596871092,
+      "flagged": false
+    },
+    {
+      "line": 2552,
+      "block": 13,
+      "ratio": 1.003052753307071,
+      "flagged": false
+    },
+    {
+      "line": 2748,
+      "block": 14,
+      "ratio": 1.0023071932909,
+      "flagged": false
+    },
+    {
+      "line": 2944,
+      "block": 15,
+      "ratio": 0.9942574015400092,
+      "flagged": false
+    },
+    {
+      "line": 3140,
+      "block": 16,
+      "ratio": 0.9894559198217425,
+      "flagged": false
+    },
+    {
+      "line": 3336,
+      "block": 17,
+      "ratio": 0.9938456042044695,
+      "flagged": false
+    },
+    {
+      "line": 3532,
+      "block": 18,
+      "ratio": 0.9976608407058846,
+      "flagged": false
+    },
+    {
+      "line": 3728,
+      "block": 19,
+      "ratio": 0.9945709504244897,
+      "flagged": false
+    },
+    {
+      "line": 3924,
+      "block": "end",
+      "ratio": 0.9903768227673158,
+      "flagged": false
+    }
+  ],
+  "schedule": [
+    {
+      "image": "000000000009_inputs",
+      "exact_order": true,
+      "equal_contexts": true,
+      "equal_positions": true
+    },
+    {
+      "image": "000000000025_inputs",
+      "exact_order": true,
+      "equal_contexts": true,
+      "equal_positions": true
+    },
+    {
+      "image": "000000000030_inputs",
+      "exact_order": true,
+      "equal_contexts": true,
+      "equal_positions": true
+    },
+    {
+      "image": "000000000034_inputs",
+      "exact_order": true,
+      "equal_contexts": true,
+      "equal_positions": true
+    },
+    {
+      "image": "000000000036_inputs",
+      "exact_order": true,
+      "equal_contexts": true,
+      "equal_positions": true
+    },
+    {
+      "image": "000000000042_inputs",
+      "exact_order": true,
+      "equal_contexts": true,
+      "equal_positions": true
+    },
+    {
+      "image": "000000000049_inputs",
+      "exact_order": true,
+      "equal_contexts": true,
+      "equal_positions": true
+    },
+    {
+      "image": "000000000061_inputs",
+      "exact_order": true,
+      "equal_contexts": true,
+      "equal_positions": true
+    },
+    {
+      "image": "000000000064_inputs",
+      "exact_order": true,
+      "equal_contexts": true,
+      "equal_positions": true
+    },
+    {
+      "image": "000000000071_inputs",
+      "exact_order": true,
+      "equal_contexts": true,
+      "equal_positions": true
+    },
+    {
+      "image": "000000000072_inputs",
+      "exact_order": true,
+      "equal_contexts": true,
+      "equal_positions": true
+    },
+    {
+      "image": "000000000073_inputs",
+      "exact_order": true,
+      "equal_contexts": true,
+      "equal_positions": true
+    },
+    {
+      "image": "000000000074_inputs",
+      "exact_order": true,
+      "equal_contexts": true,
+      "equal_positions": true
+    },
+    {
+      "image": "000000000077_inputs",
+      "exact_order": true,
+      "equal_contexts": true,
+      "equal_positions": true
+    },
+    {
+      "image": "000000000078_inputs",
+      "exact_order": true,
+      "equal_contexts": true,
+      "equal_positions": true
+    },
+    {
+      "image": "000000000081_inputs",
+      "exact_order": true,
+      "equal_contexts": true,
+      "equal_positions": true
+    },
+    {
+      "image": "000000000086_inputs",
+      "exact_order": true,
+      "equal_contexts": true,
+      "equal_positions": true
+    },
+    {
+      "image": "000000000089_inputs",
+      "exact_order": true,
+      "equal_contexts": true,
+      "equal_positions": true
+    },
+    {
+      "image": "000000000092_inputs",
+      "exact_order": true,
+      "equal_contexts": true,
+      "equal_positions": true
+    },
+    {
+      "image": "000000000094_inputs",
+      "exact_order": true,
+      "equal_contexts": true,
+      "equal_positions": true
+    }
+  ],
+  "predictions_match_previous": true,
+  "tag_line_ending_differences": [
+    {
+      "path": "sponge-sim/src/sponge_sim/hw.py",
+      "working_sha256": "9b0eda7758b4c45f2cd9a64eaf44206aab2b5478afdc5458ed49e69791cb879d",
+      "tag_sha256": "a6fd2c15cd16d518dd3034d94fb98c463dd77d425cd249f6ac7d92722bb62323",
+      "difference": "CRLF/LF only; exact working SHA bound before measurement"
+    }
+  ],
+  "total_trials": 3840
+}

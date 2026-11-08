@@ -1,0 +1,10 @@
+{
+  "tag": "prereg-forward-reference-20261107",
+  "commit": "e9dda8a90752c7ff0dd311f4f0db19c519a96b30",
+  "lock_sha256": "bc2773454401385a16e6aed2ea5d68c46d81bed3f0537bf9f386e6e8deff4786",
+  "order": [
+    "continuous",
+    "pause2"
+  ],
+  "user_idle": "Standing continuous CPU experimental authorization; AC and local idle declaration continues; fixed diagnostic only"
+}

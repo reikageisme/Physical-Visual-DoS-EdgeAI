@@ -46,3 +46,24 @@ outputs/*
 logs/*
 !logs/.gitkeep
 !logs/README.md
+# Local environments and generated inspection/build state (keep files on disk)
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.codex_docx_review/
+/docs/REVIEW/06_latex_build/
+.DS_Store
+Thumbs.db
+
+# The portable manuscript figures are intentional source assets.
+!/paper/figures/*.png
+/paper/*.aux
+/paper/*.log
+/paper/*.out
+/paper/*.toc
+/paper/*.fls
+/paper/*.fdb_latexmk
+/paper/*.synctex.gz
+/paper/*.abs
+/paper/*.spl

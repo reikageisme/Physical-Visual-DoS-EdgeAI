@@ -1,0 +1,14 @@
+{
+  "status": "SAVED_REFERENCE_TRACE_SOURCE_COVERAGE_AND_EXPORT_CHECKS_PASS",
+  "timed_samples": 360,
+  "scientific_attack_qualification": false,
+  "analysis_sha256": "1b61502b1541aec49e52bc5fca61f58cb70b609d80af55299ee771ad222da405",
+  "helper_sha256": "14ec4c48b73d05ebe2c1c16ab77130db8787fad684a3d804de957a2d98902ebc",
+  "tests_before_measurement": {
+    "command": "python -m pytest sponge-sim/tests/test_laptop_reference_trace.py sponge-sim/tests/test_laptop_stage_drift.py sponge-sim/tests/test_laptop_stages.py sponge-sim/tests/test_laptop_seg.py -q -p no:cacheprovider",
+    "exit_code": 0,
+    "stdout": "38 passed in 3.28s"
+  },
+  "figure_png_visually_inspected": true,
+  "full_paper_pdf_built": false
+}

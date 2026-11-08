@@ -1,0 +1,63 @@
+{
+  "config": {
+    "experiment": "M4",
+    "smoke": true,
+    "n_images": 2,
+    "repeats": 3,
+    "warmup": 2,
+    "seed": 20261106,
+    "conf": 0.25,
+    "iou": 0.45,
+    "max_det": 300,
+    "nc": 80,
+    "canvas": 640,
+    "steps": 100,
+    "eps": 0.06274509803921569,
+    "alpha": 0.00784313725490196,
+    "mask_proto_upsample": false,
+    "nms_cap": 30000,
+    "device": "cuda"
+  },
+  "provenance": {
+    "tag": "prereg-m4-nms-dispatch-20261106",
+    "commit": "e16f9ed6338536ae412107f730985c7302a054c4",
+    "script_sha256": "140ad262f2814daf11f7d497dc6bbad0afbbc2def7ec70c684ce9d1823118a8e",
+    "protocol_sha256": "a2e2671d744192b93796861b2252b718a4036002dc081259a091fa7d29636eaf",
+    "historical_source_sha256": "ce435b06acacb86ddf03df90b08e9efdc9488652fdeae3b8030e55a2beac533a"
+  },
+  "script_sha256": "140ad262f2814daf11f7d497dc6bbad0afbbc2def7ec70c684ce9d1823118a8e",
+  "historical_source_sha256": "ce435b06acacb86ddf03df90b08e9efdc9488652fdeae3b8030e55a2beac533a",
+  "weights_sha256": "a7cd8f929e1903d78a12a48efecab430209f18dc46cb96c3599a5980c63c423c",
+  "images": {
+    "000000000009.jpg": "3b0bb6bebad60a3329f1e3484434872e86998aeb7750d779b308e4a064868c2c",
+    "000000000025.jpg": "9f016b98f31e4fe826910e56ee39fa0c2889f48d38cc5f4f6b6421c8c5fc7214"
+  },
+  "torch": "2.11.0+cu128",
+  "torchvision": "0.26.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5060 Ti",
+  "affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "threads": 1,
+  "dispatch_before_torchvision_import": false,
+  "ultralytics_nms_sha256": "386cd0e3e38fddef5d434fbcfd58264bedfa37295534e9a2b7174a3436d4db62",
+  "config_sha256": "9fb54fdea29ec5a1354e66c13cbf3981f795a001ea5568fe8108389316078871"
+}

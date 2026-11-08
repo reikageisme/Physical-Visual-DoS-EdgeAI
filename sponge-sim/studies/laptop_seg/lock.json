@@ -1,0 +1,67 @@
+{
+  "config": {
+    "n_images": 2,
+    "repeats": 8,
+    "global_warmup": 20,
+    "reference_warmup": 3,
+    "reference_samples": 15,
+    "warmup_per_image": 2,
+    "pin_seconds": 3,
+    "settle_s": 60,
+    "between_profiles_s": 60,
+    "worker_timeout_s": 600
+  },
+  "profiles": {
+    "P1_cpu2": [
+      2
+    ],
+    "P2": [
+      0,
+      2
+    ]
+  },
+  "files": [
+    {
+      "member": "yolov8n-seg.pt",
+      "path": "sponge-sim/results/laptop_seg_20261107/yolov8n-seg.pt",
+      "sha256": "a7cd8f929e1903d78a12a48efecab430209f18dc46cb96c3599a5980c63c423c",
+      "bytes": 7071756
+    },
+    {
+      "member": "m3_native_full_20261106/000000000009_inputs.pt",
+      "path": "sponge-sim/results/laptop_seg_20261107/000000000009_inputs.pt",
+      "sha256": "0002529c6ee33e19c9a93fce355b8d5f09ac637bfcdae864dbef298272f64eb9",
+      "bytes": 9832389
+    },
+    {
+      "member": "m3_native_full_20261106/000000000025_inputs.pt",
+      "path": "sponge-sim/results/laptop_seg_20261107/000000000025_inputs.pt",
+      "sha256": "b8808fba4b3d871a4bfa1b296c63a95e6f7a87482ee2ad8109dc2898302663b0",
+      "bytes": 9832389
+    }
+  ],
+  "input_paths": [
+    "sponge-sim/results/laptop_seg_20261107/000000000009_inputs.pt",
+    "sponge-sim/results/laptop_seg_20261107/000000000025_inputs.pt"
+  ],
+  "weights_path": "sponge-sim/results/laptop_seg_20261107/yolov8n-seg.pt",
+  "source_sha256": {
+    "sponge-sim/studies/laptop_seg/run.py": "c8c45d4f7ae6a3874d9b08c3339eac9a9f756f6bb74e947bf4e182508c3d7565",
+    "sponge-sim/studies/laptop_seg/analyze.py": "c6bf447f57adaab6b730dda38a479fc7660f897cfb0e8f94692f1674c41a48b0",
+    "sponge-sim/src/sponge_sim/hw.py": "9b0eda7758b4c45f2cd9a64eaf44206aab2b5478afdc5458ed49e69791cb879d",
+    "sponge-sim/prereg/PREREG_LAPTOP_SEG_SMOKE_20261107.md": "fd1d609c3e1df202e79405043bd511daea3a54397f444da86867ffd82b194115",
+    "sponge-sim/studies/stability_pipeline/run.py": "4d115cc363c93b949f946e9a345e4788abfe3fb22873f543d362e3fbb7b6b3ca",
+    "sponge-sim/studies/m2_confirm/run.py": "f4eee9a69cc9b06980ce824c8cf785d7a38f9eef933bb51e5670d3f7d4673821"
+  },
+  "versions": {
+    "torch": "2.13.0+cpu",
+    "torchvision": "0.28.0+cpu",
+    "ultralytics": "8.4.90"
+  },
+  "nms_source_sha256": "3220699ae742312e3fc3816ea917ff17ffd17a96b57593c4c2caff3ff72cf4f7",
+  "ops_source_sha256": "828de5d265ab91a792acae836f9380d07abda2a15a501170fc9f49d7a448688d",
+  "power_mode": {
+    "PowerGetUserConfiguredACPowerMode": "ded574b5-45a0-4f42-8737-46345c09c238",
+    "PowerGetEffectiveOverlayScheme": "961cc777-2547-4f9d-8174-7d86181b8a7a"
+  }
+}

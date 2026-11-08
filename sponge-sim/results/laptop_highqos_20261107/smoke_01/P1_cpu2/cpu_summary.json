@@ -1,0 +1,79 @@
+{
+  "stages": {
+    "forward": {
+      "n_trials": 32,
+      "wall_median_ms": 217.6102,
+      "wall_max_ms": 360.5422,
+      "median_cpu_over_wall": 0.9826791280321263,
+      "n_highwall": 1,
+      "highwall_fraction": 0.03125,
+      "highwall_low_cpu_count": 0,
+      "highwall_low_cpu_share": 0.0,
+      "highwall_trials": [
+        {
+          "image": "000000000025_inputs",
+          "rep": 4,
+          "label": "B",
+          "wall_ns": 360542200,
+          "process_cpu_ns": 296875000,
+          "cpu_over_wall": 0.8234126268714176
+        }
+      ]
+    },
+    "total": {
+      "n_trials": 32,
+      "wall_median_ms": 234.64825,
+      "wall_max_ms": 400.8109,
+      "median_cpu_over_wall": 0.9570132474989783,
+      "n_highwall": 2,
+      "highwall_fraction": 0.0625,
+      "highwall_low_cpu_count": 0,
+      "highwall_low_cpu_share": 0.0,
+      "highwall_trials": [
+        {
+          "image": "000000000025_inputs",
+          "rep": 5,
+          "label": "A",
+          "wall_ns": 398856400,
+          "process_cpu_ns": 359375000,
+          "cpu_over_wall": 0.9010134975896087
+        },
+        {
+          "image": "000000000025_inputs",
+          "rep": 5,
+          "label": "B",
+          "wall_ns": 400810900,
+          "process_cpu_ns": 343750000,
+          "cpu_over_wall": 0.8576363566958882
+        }
+      ]
+    }
+  },
+  "references": [
+    {
+      "raw_line": 2,
+      "block": "start",
+      "wall_ratio": 1.0,
+      "median_cpu_over_wall": 0.9844504089013218
+    },
+    {
+      "raw_line": 3,
+      "block": 0,
+      "wall_ratio": 0.9647024983190585,
+      "median_cpu_over_wall": 0.9671638067186519
+    },
+    {
+      "raw_line": 37,
+      "block": 1,
+      "wall_ratio": 0.95390953858271,
+      "median_cpu_over_wall": 0.9771849856278639
+    },
+    {
+      "raw_line": 71,
+      "block": "end",
+      "wall_ratio": 1.0089300864471205,
+      "median_cpu_over_wall": 0.9867756277471833
+    }
+  ],
+  "interpretation": "Descriptive process CPU-time / wall-time; no CPU clock or scheduler trace; no clipping."
+}

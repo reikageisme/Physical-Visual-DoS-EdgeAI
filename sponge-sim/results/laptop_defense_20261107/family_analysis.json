@@ -1,0 +1,34 @@
+{
+  "status": "OFFLINE_REGISTERED_FAMILY_ANALYSIS",
+  "family": [
+    "pre300",
+    "out50"
+  ],
+  "analysis_unit": "20 fixed images; repeats not independent",
+  "pointwise_ci_not_simultaneous": true,
+  "pre300": {
+    "eligible": true,
+    "raw_p": 1.9073486328125e-06,
+    "holm_p": 3.814697265625e-06,
+    "ratio": 0.5267729129217924,
+    "ci95": [
+      0.5070065901746184,
+      0.5489211762237983
+    ],
+    "reduction_percent": 47.32270870782076,
+    "reduction_ci95_percent": [
+      45.107882377620165,
+      49.29934098253816
+    ],
+    "raw_sha256": "afbc88b2723f0396d6f9e12552ce5580617edf82dcde4d5c759d5f635a62487a"
+  },
+  "out50": {
+    "eligible": false,
+    "full_status": "CANCELLED_AFTER_SMOKE_REFERENCE_GATE_FAIL",
+    "smoke_flags": 1,
+    "smoke_raw_sha256": "8a31e711b340c40cb0dbe4583b063430c16ad0a5d133c8c75be50ea247e75731",
+    "testing_p": 1,
+    "holm_p": 1.0,
+    "testing_p_reason": "Placeholder preserves registered family size; not evidence of no effect"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "prereg_tag": "prereg-laptop-seg-smoke-20261107",
+  "prereg_commit": "9cafdd8548dcd794da8c060619cf187daf45158f",
+  "lock_sha256": "2442fb61aeac253b945ea69a1f6a0e5eb93a886c7560fbb992d33dd1441cdbf2",
+  "tagged_source_byte_check": true,
+  "raw_hash_check": true,
+  "counts": {
+    "P1_cpu2": {
+      "rows": 73,
+      "timings": 64,
+      "reference_samples": 60
+    },
+    "P2": {
+      "rows": 73,
+      "timings": 64,
+      "reference_samples": 60
+    }
+  },
+  "artifacts": [
+    {
+      "path": "sponge-sim/results/laptop_seg_20261107/smoke_01/P1_cpu2/manifest.json",
+      "sha256": "8560fac71e02418084188e5bc7909e493a5b020024348ac65c7ff28178d1a99a",
+      "bytes": 4360
+    },
+    {
+      "path": "sponge-sim/results/laptop_seg_20261107/smoke_01/P1_cpu2/raw.jsonl",
+      "sha256": "243e2ff30ceaa2a25658cc15d0ef29b039ebe36c6dee08e64152f60522d44040",
+      "bytes": 15775
+    },
+    {
+      "path": "sponge-sim/results/laptop_seg_20261107/smoke_01/P1_cpu2/smoke_summary.json",
+      "sha256": "5f0e2dad67e9cc954cf12c7bdc6dc8ec1f89cb002915bef638dfc9f42e812321",
+      "bytes": 3009
+    },
+    {
+      "path": "sponge-sim/results/laptop_seg_20261107/smoke_01/P2/manifest.json",
+      "sha256": "379ffa1c35df2432f879390cee5d59c4507760d45dd11a6cf6f0c2c77be1d98d",
+      "bytes": 4363
+    },
+    {
+      "path": "sponge-sim/results/laptop_seg_20261107/smoke_01/P2/raw.jsonl",
+      "sha256": "80d31108d631445123b1d575bf5775e191988b59b5f9319a5cd85b35451fd409",
+      "bytes": 15774
+    },
+    {
+      "path": "sponge-sim/results/laptop_seg_20261107/smoke_01/P2/smoke_summary.json",
+      "sha256": "40d0d28f8139cc1e72b6dc08e43257335fe439ca8ac2b7c3f6bab7194b9426b5",
+      "bytes": 3009
+    }
+  ],
+  "post_smoke_generic_analysis_agrees": true,
+  "unit_tests_after_extension": "9 passed in 2.41s; synthetic only"
+}

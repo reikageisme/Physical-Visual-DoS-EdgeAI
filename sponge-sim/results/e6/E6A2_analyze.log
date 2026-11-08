@@ -1,0 +1,2 @@
+{"pin": {"effective_cores": 0.9363882730195167, "passed": true}, "drift": {"points": 6, "flagged": 4, "max_abs": 0.048247132976460105}, "mde_aa_pct": {"forward": 0.6914654831922551, "total": 0.5523331275826271, "nms_torch_pure": 0.6429954138395422, "nms_tv_nms": 1.0853667503295528}}
+{'torch_pure': (1.492, 0.719), 'tv_nms': (0.435, 0.467), 'tv_batched': (0.197, 0.214), 'ultra_native': (0.15, 0.167)}

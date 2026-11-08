@@ -1,0 +1,6 @@
+{
+  "status": "FAILED_BEFORE_JOURNAL_OR_WORKER_CREATION",
+  "error": "FileNotFoundError: parent result directory absent when exclusive-opening smoke_01_affinity.jsonl",
+  "exit_code": 1,
+  "recovery": "Create result parent only; unchanged prereg/source/config; no measurement or affinity mutation occurred"
+}

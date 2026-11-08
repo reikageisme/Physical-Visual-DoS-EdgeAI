@@ -1,0 +1,13 @@
+{
+  "status": "CLOSED_AFTER_FAILED_SMOKE_FULL_CANCELLED_NO_RETRY",
+  "tag": "prereg-laptop-pcores-20261107",
+  "commit": "6c261995d580a8bf06d02423ff4c086c4579069f",
+  "raw_sha256": "6f7eabd0ca0b1f30aaac027f623d34c1c32ff2fd659a94214cf7f47256b4a1b0",
+  "complete": true,
+  "feasibility_pass": false,
+  "quality_pass": false,
+  "reference_flags": 2,
+  "references": 4,
+  "full_status": "CANCELLED_NOT_STARTED",
+  "note": "Pin gate passed; timing reference gate failed. No qualified multi-core attack estimate."
+}

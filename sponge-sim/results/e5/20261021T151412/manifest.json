@@ -1,0 +1,223 @@
+{
+ "created_utc": "2026-10-21T08:14:20Z",
+ "git": {
+  "head": "822594b3f11e93e70b345abda005a68dcb679439",
+  "branch": "harness/step1",
+  "tags_at_head": [],
+  "sponge_sim_dirty": false
+ },
+ "code_sha256": {
+  "sponge-sim/src/sponge_sim/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "sponge-sim/src/sponge_sim/backends.py": "fd4f6086dcebdee82ff2b1157b2bfc61817e61ea3c0ce56635151018b281e793",
+  "sponge-sim/src/sponge_sim/cohorts.py": "aad6860b5d5762de84cb02370e662d6e9855ed3b70c8e72750a0f0ab00a1f3d3",
+  "sponge-sim/src/sponge_sim/hw.py": "08209c20873f5b40c5bc08ac25959e1022cdaca7efaefde0e8d62c1dcbfcca68",
+  "sponge-sim/src/sponge_sim/inject.py": "3ff7bdf7a377ded44f7264156f9158760256f9a7674d15bdef2087d1571eacfa",
+  "sponge-sim/src/sponge_sim/manifest.py": "2797c7d9471374a87bed2a748f8b04f3cb8b55ba13fe6f35b145547958661775",
+  "sponge-sim/src/sponge_sim/provenance.py": "ba13561421faef44ccf659c43637cb3478ad555a4c84063c73207fd92cdebc6a",
+  "sponge-sim/src/sponge_sim/stats.py": "65df04a44d2b99dd9fa79e8fa6835929d47a8d572711fe23a8aaa9e2fb2f1581",
+  "sponge-sim/src/sponge_sim/timing.py": "bda82660c0070001336c98625b2a9467093609e351902b17691357a7dc696d6a",
+  "sponge-sim/studies/e2_proxy/e2a_historical.py": "37e5cb96f142416915441fdbcfec1830e312441ed65a9efb8e9064e9695c41b2",
+  "sponge-sim/studies/e2_proxy/e2a_posthoc_aa.py": "2c07f21764c49af3528bef230cf23ad327d055c61d0c782b4da5ffe1a8640d9a",
+  "sponge-sim/studies/e5_protocol/analyze.py": "d2e232b08e7665bb57571c2251514350e9610787116a165f56663ec73b2c6671",
+  "sponge-sim/studies/e5_protocol/run.py": "0c880dcab68b59f2d5d6c9068624e200dcc52f0d3c253702b75280a9852acb9d"
+ },
+ "weights": {
+  "path": "yolov8n.pt",
+  "sha256": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36"
+ },
+ "config": {
+  "experiment": "E5",
+  "profiles": [
+   "P1",
+   "E1",
+   "E4"
+  ],
+  "profile_order_seed": 5021,
+  "image_seed": 20261021,
+  "n_images": 100,
+  "repeats": 10,
+  "warmup_per_image": 1,
+  "block_size": 10,
+  "labels": [
+   "A",
+   "B"
+  ],
+  "label_order_seed": 5022,
+  "tau": 0.01,
+  "cap": null,
+  "iou": 0.45,
+  "interop_threads": 1,
+  "intra_op_threads": "= |allowed_cpus|",
+  "stages": [
+   "pre",
+   "forward",
+   "decode",
+   "tau",
+   "nms_torch_pure",
+   "nms_tv_nms",
+   "total"
+  ],
+  "total_definition": "load_image -> forward -> decode -> tau -> torch_pure NMS, đo trực tiếp một lần gọi",
+  "reference": "matmul 256x256 x20, trung vị 15 lần, đầu mỗi khối + cuối phiên; |Δ|>3% so với khối đầu -> cờ",
+  "smoke": false
+ },
+ "config_sha256": "6e538d249b6e8f2562964d230fc9d08c4b082fac899701473d6dadd6d169d5d4",
+ "python": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+ "platform": "Windows-11-10.0.26300-SP0",
+ "backends": {
+  "torch": "2.13.0+cpu",
+  "torchvision": "0.28.0+cpu",
+  "ultralytics": "8.4.90",
+  "ultra_impl": "torchvision.ops.nms",
+  "ultra_defaults": {
+   "max_det": 300,
+   "max_nms": 30000,
+   "max_time_img": 0.05,
+   "time_limit_s": "2.0 + 0.05*batch"
+  },
+  "class_aware": {
+   "torch_pure": false,
+   "tv_nms": false,
+   "tv_batched": true,
+   "ultra_native": true,
+   "ultra_agnostic": false
+  },
+  "max_out": 300
+ },
+ "cpu_topology": [
+  {
+   "core_index": 0,
+   "logical_cpus": [
+    0,
+    1
+   ],
+   "efficiency_class": 1,
+   "smt": true,
+   "kind": "P"
+  },
+  {
+   "core_index": 1,
+   "logical_cpus": [
+    2,
+    3
+   ],
+   "efficiency_class": 1,
+   "smt": true,
+   "kind": "P"
+  },
+  {
+   "core_index": 2,
+   "logical_cpus": [
+    4
+   ],
+   "efficiency_class": 0,
+   "smt": false,
+   "kind": "E"
+  },
+  {
+   "core_index": 3,
+   "logical_cpus": [
+    5
+   ],
+   "efficiency_class": 0,
+   "smt": false,
+   "kind": "E"
+  },
+  {
+   "core_index": 4,
+   "logical_cpus": [
+    6
+   ],
+   "efficiency_class": 0,
+   "smt": false,
+   "kind": "E"
+  },
+  {
+   "core_index": 5,
+   "logical_cpus": [
+    7
+   ],
+   "efficiency_class": 0,
+   "smt": false,
+   "kind": "E"
+  },
+  {
+   "core_index": 6,
+   "logical_cpus": [
+    8
+   ],
+   "efficiency_class": 0,
+   "smt": false,
+   "kind": "E"
+  },
+  {
+   "core_index": 7,
+   "logical_cpus": [
+    9
+   ],
+   "efficiency_class": 0,
+   "smt": false,
+   "kind": "E"
+  },
+  {
+   "core_index": 8,
+   "logical_cpus": [
+    10
+   ],
+   "efficiency_class": 0,
+   "smt": false,
+   "kind": "E"
+  },
+  {
+   "core_index": 9,
+   "logical_cpus": [
+    11
+   ],
+   "efficiency_class": 0,
+   "smt": false,
+   "kind": "E"
+  }
+ ],
+ "cpu_profiles": {
+  "P1": [
+   0
+  ],
+  "E1": [
+   4
+  ],
+  "E4": [
+   4,
+   5,
+   6,
+   7
+  ]
+ },
+ "power": {
+  "platform": "Windows-11-10.0.26300-SP0",
+  "processor": "Intel64 Family 6 Model 186 Stepping 3, GenuineIntel",
+  "logical": 12,
+  "physical": 10,
+  "battery_percent": 100,
+  "power_plugged": true,
+  "cpu_freq_mhz": {
+   "current": 1300.0,
+   "min": 0.0,
+   "max": 1300.0
+  },
+  "power_plan": "CHƯA ĐỌC: người dùng tự chạy `powercfg /getactivescheme` và ghi vào PROGRESS"
+ },
+ "affinity_now": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11
+ ]
+}

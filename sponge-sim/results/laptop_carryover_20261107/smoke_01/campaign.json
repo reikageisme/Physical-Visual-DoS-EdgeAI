@@ -1,0 +1,7 @@
+{
+  "tag": "prereg-laptop-carryover-20261107",
+  "commit": "a57662d32d8a37f448776622bfa1941862c62634",
+  "lock_sha256": "35a5a8bdaadd791c2f311d6386db301c999c6c4c18043bf6dc09fdca1b697d92",
+  "user_idle": "User authorized continued corrected-harness fixed sequence; AC and idle declaration continues",
+  "smoke": true
+}

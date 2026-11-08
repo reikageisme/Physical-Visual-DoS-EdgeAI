@@ -1,9 +1,0 @@
-# One-class person detection: COCO 2017 subset + full available AdvT-shirt-1K.
-# Run training commands from project_yolov13/.
-path: ./dataset/fullscale_person
-train: images/train
-val: images/val
-test: images/test
-nc: 1
-names:
-  0: person

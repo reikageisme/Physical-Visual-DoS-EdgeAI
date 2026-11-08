@@ -1,0 +1,424 @@
+{
+ "created_utc": "2026-11-03T04:35:17Z",
+ "git": {
+  "head": "ff4f59b22ccdcb41db92e109075de7086acaba04",
+  "branch": "harness/step1",
+  "tags_at_head": [
+   "prereg-e11-20261103"
+  ],
+  "sponge_sim_dirty": false
+ },
+ "code_sha256": {
+  "sponge-sim/src/sponge_sim/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "sponge-sim/src/sponge_sim/attacks_provenance.py": "3c4f4e88ed9b13a5b44b07682195cfbb59b40116c20ab5093899ffbc64db32e0",
+  "sponge-sim/src/sponge_sim/backends.py": "0b76a2542b9b3b4fa021ba8818da34b36cdd3b7cc38ffd719bddb07532b9f330",
+  "sponge-sim/src/sponge_sim/cohorts.py": "7c5e4b9519dd088fc4b898dad93680d4ed9085712ce25150f5ae154ba3a54de4",
+  "sponge-sim/src/sponge_sim/hw.py": "9b0eda7758b4c45f2cd9a64eaf44206aab2b5478afdc5458ed49e69791cb879d",
+  "sponge-sim/src/sponge_sim/hw_linux.py": "1c07bb8f12a88e5847f6604f0e8d802a4f5e70903a0412983e4a7d544391d512",
+  "sponge-sim/src/sponge_sim/inject.py": "3ff7bdf7a377ded44f7264156f9158760256f9a7674d15bdef2087d1571eacfa",
+  "sponge-sim/src/sponge_sim/manifest.py": "488280fbe686d3a1b9a02b52cb0e3be92cc90897c4e8ad87297d6644560a8160",
+  "sponge-sim/src/sponge_sim/provenance.py": "ba13561421faef44ccf659c43637cb3478ad555a4c84063c73207fd92cdebc6a",
+  "sponge-sim/src/sponge_sim/stats.py": "65df04a44d2b99dd9fa79e8fa6835929d47a8d572711fe23a8aaa9e2fb2f1581",
+  "sponge-sim/src/sponge_sim/timing.py": "bda82660c0070001336c98625b2a9467093609e351902b17691357a7dc696d6a",
+  "sponge-sim/src/sponge_sim/yolov5_ref.py": "03b02066faab160ba030ab90fd9b945093950fd0262d0c374b761388fcd3e816",
+  "sponge-sim/studies/amdahl/analyze.py": "2b9295fce24e8ce32d391cff2827e5796f40b872ed01bc6254ecbc447c92cfaa",
+  "sponge-sim/studies/amdahl/threshold_check.py": "124f09a980cf2917782005d3f9fa6a121a429a2c8562d53812032ab5fdf5265e",
+  "sponge-sim/studies/diag_insert/run.py": "a7787c4ed7861dbb53e9e273f3d0dfa8f8c1f61ae9eaca858ada3f98f814fa7f",
+  "sponge-sim/studies/e10_reference/analyze.py": "65e8dfbfccf2ff545e4b6b14a4cff6b3aa101f4a787ca78b64a988ab8a9579c3",
+  "sponge-sim/studies/e10_reference/run.py": "7d5265c806e53b28642c9f3912196ca10a40db4f70149d84e93140ccabb74bd4",
+  "sponge-sim/studies/e10_reference/stage_medians.py": "535acfe963ca2a6f325b206587b2cba0af5de0d82b1fefde7f8c52f71286eaf0",
+  "sponge-sim/studies/e11_patch_remeasure/analyze.py": "c5dcca7a467e890b1d33a5605cf25c400f2f1bac008e7a5aea1ec07a30b5cc7e",
+  "sponge-sim/studies/e11_patch_remeasure/run.py": "58c8207e0c8d74e81cca1ef7d769d6f8d26da9d3040ae1cc5c900ec35e5110ba",
+  "sponge-sim/studies/e1_dose/analyze.py": "d1cc6b44eaa4bd621618ee42bf9b5f8ea2a2c1f2d0353742275585f369374956",
+  "sponge-sim/studies/e1_dose/run.py": "a76aabc445839f0e45dcb6fb6a3ade2c76625fa1bd270ff448a57baa258b10e4",
+  "sponge-sim/studies/e2_proxy/e2a_historical.py": "37e5cb96f142416915441fdbcfec1830e312441ed65a9efb8e9064e9695c41b2",
+  "sponge-sim/studies/e2_proxy/e2a_posthoc_aa.py": "2c07f21764c49af3528bef230cf23ad327d055c61d0c782b4da5ffe1a8640d9a",
+  "sponge-sim/studies/e2_proxy/e2b_analyze.py": "184825f739d6b92013a5c44921cb550ae8f296c2fc9c3e1c74bdafdb906f0384",
+  "sponge-sim/studies/e2_proxy/e2b_run.py": "528af48c6da5192ce0d6252fe4a0cf0ca7a41ccef53298176fdb8166a3772cb7",
+  "sponge-sim/studies/e5_phone/analyze.py": "b4b0e960814d087c6acc454533c6459b76924d620719dedaee89b95b2935e6d4",
+  "sponge-sim/studies/e5_phone/pin_verify.py": "f20b336ace7bcf5d4e602581286bc50d82cafac3e26961f4c31e778ae7f24804",
+  "sponge-sim/studies/e5_phone/run.py": "b5f2d14ad29a9f2e8308ce83ef0e3ac2d552b04ac0a8acadba9c4817c138d4c4",
+  "sponge-sim/studies/e5_protocol/analyze.py": "d2e232b08e7665bb57571c2251514350e9610787116a165f56663ec73b2c6671",
+  "sponge-sim/studies/e5_protocol/run.py": "9efdecff329af6fa94b40c5f924eed292769e5416278e35b12a6d1ed305ce6f2",
+  "sponge-sim/studies/e6_remeasure/analyze.py": "aa111ceaaeb650c1f41bf4de9676ed57994f3a4f45d370724243ec5f790afa42",
+  "sponge-sim/studies/e6_remeasure/run.py": "742644aec722ab253cc8fe058f1a78f6d0d7ca3619e62c9180d74a63e501ec86",
+  "sponge-sim/studies/e7_sggar/make_bundle.py": "5f1220db3712df4bb26c7333d8d813cd93e553aa4c976e2869fd243d10e58e77",
+  "sponge-sim/studies/e7_sggar/run.py": "bb8d0484a258f06c34b1fb68904140cb79c677cb90a78b917b99bb776bd42336",
+  "sponge-sim/studies/e9_pipeline/analyze.py": "2af0dd86a9c20361933dbfbf9206226a75bf4ebf401b5b0a6d21ca31cb053eb7",
+  "sponge-sim/studies/e9_pipeline/run.py": "8dc07b9fc2fb73a4db67660aa4bfa903c31d08e2e91743cae718eddc57f68e46",
+  "sponge-sim/studies/figures/make_figs.py": "ada962a84fe288d1e6577430b220d56150e5f09fe93a23850e0a03a8ab7af6ec",
+  "sponge-sim/studies/figures/make_figs_v3.py": "c03a27fcd0b91bde08a7c631f8bc6e81b6518a2f03a67d5fbc097b36498ef2ea",
+  "sponge-sim/studies/linux_profile/topology_fedora.py": "b6147aae205f72ab6e5b7fa9bed8ea4d8722da90e71adb2508918515d736498d",
+  "sponge-sim/studies/r1_twolevel/run.py": "efefdfdb959c6b025990332e8a8763eb3becb0eb422a9d2e15f75fe5908875ff",
+  "sponge-sim/studies/r2_slices/run.py": "8c5aa26dd828932e14ac496482bc95ad52d35562641de3e310c53457442dccf5",
+  "sponge-sim/studies/r3_reference/run.py": "b684e5dc781aeb0194a0d5f85ebb1c0307b09085ab45dc0cdfaa95beb133b786"
+ },
+ "weights": {
+  "path": "yolov8n.pt",
+  "sha256": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36"
+ },
+ "config": {
+  "experiment": "E11",
+  "tau_list": [
+   0.01,
+   0.25
+  ],
+  "iou": 0.45,
+  "backends": [
+   "torch_pure",
+   "tv_nms",
+   "tv_batched",
+   "ultra_native"
+  ],
+  "micro_repeats": 10,
+  "micro_warmup": 2,
+  "pipeline_backends": [
+   "torch_pure",
+   "tv_nms"
+  ],
+  "pipeline_repeats": 5,
+  "pipeline_warmup": 1,
+  "seeds": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "n_images": 100,
+  "order_seed": 4401,
+  "latin_seed": 4402,
+  "images_per_block": 10,
+  "min_effective": 0.5,
+  "insertion": "outside_timed_region",
+  "smoke": false,
+  "profile": "P1_cpu2",
+  "arms": [
+   "clean_a",
+   "clean_b",
+   "clean640_a",
+   "clean640_b",
+   "C1",
+   "C2",
+   "C3",
+   "C4",
+   "B1",
+   "B2",
+   "B3",
+   "B4"
+  ],
+  "patch_sha": {
+   "C1|0": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\C1_320_s64_t01\\seed0\\patch_q62500.npy",
+    "sha256": "097c47d58e66de547c12dcdc18afe7597f2178595a6c9d1c0dbe53f1e3a9db7b"
+   },
+   "C1|1": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\C1_320_s64_t01\\seed1\\patch_q62500.npy",
+    "sha256": "8505b02763dcd7122db3f24d9f1c422933b98410bc5faa092340e99017cebdce"
+   },
+   "C1|2": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\C1_320_s64_t01\\seed2\\patch_q62500.npy",
+    "sha256": "705a23e424b11433c573cbe928b27a9512c8135d8a3c82c6d4013c8675029c66"
+   },
+   "C1|3": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\C1_320_s64_t01\\seed3\\patch_q62500.npy",
+    "sha256": "56cf3754a90b61c8311d9ce8031880476e1b0398235f782b0654c47f79995a4f"
+   },
+   "C1|4": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\C1_320_s64_t01\\seed4\\patch_q62500.npy",
+    "sha256": "c48cd0e436552f5916839673145ad9fdf51b87ddb9170fb740ab97c6110bf1c6"
+   },
+   "C2|0": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\C2_640_s128_t01\\seed0\\patch_q62500_c640.npy",
+    "sha256": "1923efdedf9b143011cc247ba8146d9d15dfcc6726d82bf43d9882f244effc71"
+   },
+   "C2|1": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\C2_640_s128_t01\\seed1\\patch_q62500_c640.npy",
+    "sha256": "86860ba8f5774f112c4b0feb985e501d019d2ac266ae512a8d67ac81efb711c3"
+   },
+   "C2|2": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\C2_640_s128_t01\\seed2\\patch_q62500_c640.npy",
+    "sha256": "f51e0f254ff6b1dac5674f762782fea03e03224b53ecb9d0673bae7b2982af9a"
+   },
+   "C2|3": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\C2_640_s128_t01\\seed3\\patch_q62500_c640.npy",
+    "sha256": "4039a39ac7bc295edf0e30fe7a45ee0be6371e580cedc2c52ba7c8063a3fcd89"
+   },
+   "C2|4": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\C2_640_s128_t01\\seed4\\patch_q62500_c640.npy",
+    "sha256": "883bb3b3d100382bc6e44e54e19c8ef2f313136728ca67bd43cfe886ebed2ba2"
+   },
+   "C3|0": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\C3_320_s64_t25\\seed0\\patch_q62500.npy",
+    "sha256": "cbdc9868452c084a300cdd05ff04027f84b817a959809f81dd4fc481ff086323"
+   },
+   "C3|1": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\C3_320_s64_t25\\seed1\\patch_q62500.npy",
+    "sha256": "4416be8baceed976d4dafdb30cd4287887137f74263bb6cd21d5c8001d773fff"
+   },
+   "C3|2": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\C3_320_s64_t25\\seed2\\patch_q62500.npy",
+    "sha256": "7424def9cabbb708ae7422f0b600eb7bf6202b2c09975a0539f9d5e28a0d9761"
+   },
+   "C3|3": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\C3_320_s64_t25\\seed3\\patch_q62500.npy",
+    "sha256": "52b7bc6f2fdf865699408f8aa8e0b282928fba9eb8c34696f9d7610c9f04f88a"
+   },
+   "C3|4": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\C3_320_s64_t25\\seed4\\patch_q62500.npy",
+    "sha256": "afbd9f45f49dfa15754cd1439757d5a90b5617a4b4911ecdd77f94db0498a50a"
+   },
+   "C4|0": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\C4_640_s64_t01\\seed0\\patch_q62500_c640.npy",
+    "sha256": "88f5e0696e9ef30829a051b5e8831491addceb79e88bf0736ca956c9eee2a3c1"
+   },
+   "C4|1": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\C4_640_s64_t01\\seed1\\patch_q62500_c640.npy",
+    "sha256": "8e93118f22731ca8293f11c128207889ff0d51cc1301779ad15519e152cdde8e"
+   },
+   "C4|2": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\C4_640_s64_t01\\seed2\\patch_q62500_c640.npy",
+    "sha256": "d097d38f43650483554da4433033cadbf5ab32c5032356e93cd2772de6d5db4f"
+   },
+   "C4|3": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\C4_640_s64_t01\\seed3\\patch_q62500_c640.npy",
+    "sha256": "721573c88ad065d9ce91ec0f08bcc9906801c7c30ff159f1142456ef5336c8c0"
+   },
+   "C4|4": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\C4_640_s64_t01\\seed4\\patch_q62500_c640.npy",
+    "sha256": "3d96e8e00db177dc86ba1c606a9782f98ce2fda93d2010fb0d9d56cb20abbb28"
+   },
+   "B1|0": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\B1_ga_center\\seed0\\patch_q62500.npy",
+    "sha256": "276453521c196af55690386d8bb7b47bfeb1ef27a55d8bdbc6cb7475af9eb0fd"
+   },
+   "B1|1": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\B1_ga_center\\seed1\\patch_q62500.npy",
+    "sha256": "d157a9eadf3fcc344702dd34c891488bbc73da2409932656c4e5a1ca05e3b609"
+   },
+   "B1|2": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\B1_ga_center\\seed2\\patch_q62500.npy",
+    "sha256": "623a913a7e04801ce22d995a8399af53533fbade8ee18298c28ff8e9368fdfdd"
+   },
+   "B1|3": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\B1_ga_center\\seed3\\patch_q62500.npy",
+    "sha256": "39894d091b877efeed24508c42b0e5f73386395f50ab5b9c5c2affb2f01b739e"
+   },
+   "B1|4": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\B1_ga_center\\seed4\\patch_q62500.npy",
+    "sha256": "24fd52d8e4f01b01dfc100bed08155d49c78ae3567689ea4f74aa56e9e3fa2c1"
+   },
+   "B2|0": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\B2_ga_random_location\\seed0\\patch_q62500.npy",
+    "sha256": "8898c46eeb57a359400d3b1458a281a81c8b295e2fd674657532c8c5f28e6713"
+   },
+   "B2|1": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\B2_ga_random_location\\seed1\\patch_q62500.npy",
+    "sha256": "b1bc012a0d28d85dcf728405e9cbf7d1fce0577c1248017a5bab0b24c3814daa"
+   },
+   "B2|2": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\B2_ga_random_location\\seed2\\patch_q62500.npy",
+    "sha256": "53813ae28473885c65a6d224e43484a640427057d1fb0e6ba8ea3da6d45fe6e1"
+   },
+   "B2|3": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\B2_ga_random_location\\seed3\\patch_q62500.npy",
+    "sha256": "d50721ed1855921c3c9e0f585a92374a903f6045ffea7f78507fddade673350d"
+   },
+   "B2|4": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\B2_ga_random_location\\seed4\\patch_q62500.npy",
+    "sha256": "c48cd0e436552f5916839673145ad9fdf51b87ddb9170fb740ab97c6110bf1c6"
+   },
+   "B3|0": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\B3_random_search\\seed0\\patch_q62500.npy",
+    "sha256": "c84f4323f0dce1c16cd1b40f121953bc044d5baaa7385ad02e1d64af08e35b50"
+   },
+   "B3|1": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\B3_random_search\\seed1\\patch_q62500.npy",
+    "sha256": "8f57eb56de0864c7c3636762949f5492d55c335ecc93571be5eb523a41770f7e"
+   },
+   "B3|2": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\B3_random_search\\seed2\\patch_q62500.npy",
+    "sha256": "85a96003bad26d2213d6b02b23e4d9eb07ace0793a61f70cb2a15e6d2eef735d"
+   },
+   "B3|3": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\B3_random_search\\seed3\\patch_q62500.npy",
+    "sha256": "e750e25c90c644301b0afbe3d58939bd24a2d35cc7a5c40634e0b53f2e86393f"
+   },
+   "B3|4": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\B3_random_search\\seed4\\patch_q62500.npy",
+    "sha256": "bb437b25914d28810580cc3ddfc6b88acf81b9726ebfabe63d82b2c33e10c87f"
+   },
+   "B4|0": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\B4_gradient_tanh\\seed0\\patch_q62500.npy",
+    "sha256": "38e394d01c5afae62126e1291740c1dfadcf15c705798fae74ce31de79a5d612"
+   },
+   "B4|1": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\B4_gradient_tanh\\seed1\\patch_q62500.npy",
+    "sha256": "b0a852981d11ae1a50689c39b2aa569dab1253386624b3c4f1a44b6bc4f624d5"
+   },
+   "B4|2": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\B4_gradient_tanh\\seed2\\patch_q62500.npy",
+    "sha256": "c0e9628053fbb1d953e508c4b35a640132131ed382cd0eca81246d46893302e8"
+   },
+   "B4|3": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\B4_gradient_tanh\\seed3\\patch_q62500.npy",
+    "sha256": "7a32ff273db140df1d09d4218fe468078784f7a5501f8de651496533a5d0936c"
+   },
+   "B4|4": {
+    "path": "results\\e7_gpu\\final\\runs\\e7\\B4_gradient_tanh\\seed4\\patch_q62500.npy",
+    "sha256": "f94d909b501c2c2cc305675e0394dc5764fef888c1fc049bb01e4271f8d53c42"
+   }
+  }
+ },
+ "config_sha256": "ea28760b6d7386dc32475a27bdd1ae6f164967107ca900390af86044fff7c34e",
+ "python": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+ "platform": "Windows-11-10.0.26300-SP0",
+ "backends": {
+  "torch": "2.13.0+cpu",
+  "torchvision": "0.28.0+cpu",
+  "ultralytics": "8.4.90",
+  "ultra_impl": "torchvision.ops.nms",
+  "ultra_defaults": {
+   "max_det": 300,
+   "max_nms": 30000,
+   "max_time_img": 0.05,
+   "time_limit_s": "2.0 + 0.05*batch"
+  },
+  "class_aware": {
+   "torch_pure": false,
+   "tv_nms": false,
+   "tv_batched": true,
+   "ultra_native": true,
+   "ultra_agnostic": false
+  },
+  "max_out": 300
+ },
+ "cpu_topology": [
+  {
+   "core_index": 0,
+   "logical_cpus": [
+    0,
+    1
+   ],
+   "efficiency_class": 1,
+   "smt": true,
+   "kind": "P"
+  },
+  {
+   "core_index": 1,
+   "logical_cpus": [
+    2,
+    3
+   ],
+   "efficiency_class": 1,
+   "smt": true,
+   "kind": "P"
+  },
+  {
+   "core_index": 2,
+   "logical_cpus": [
+    4
+   ],
+   "efficiency_class": 0,
+   "smt": false,
+   "kind": "E"
+  },
+  {
+   "core_index": 3,
+   "logical_cpus": [
+    5
+   ],
+   "efficiency_class": 0,
+   "smt": false,
+   "kind": "E"
+  },
+  {
+   "core_index": 4,
+   "logical_cpus": [
+    6
+   ],
+   "efficiency_class": 0,
+   "smt": false,
+   "kind": "E"
+  },
+  {
+   "core_index": 5,
+   "logical_cpus": [
+    7
+   ],
+   "efficiency_class": 0,
+   "smt": false,
+   "kind": "E"
+  },
+  {
+   "core_index": 6,
+   "logical_cpus": [
+    8
+   ],
+   "efficiency_class": 0,
+   "smt": false,
+   "kind": "E"
+  },
+  {
+   "core_index": 7,
+   "logical_cpus": [
+    9
+   ],
+   "efficiency_class": 0,
+   "smt": false,
+   "kind": "E"
+  },
+  {
+   "core_index": 8,
+   "logical_cpus": [
+    10
+   ],
+   "efficiency_class": 0,
+   "smt": false,
+   "kind": "E"
+  },
+  {
+   "core_index": 9,
+   "logical_cpus": [
+    11
+   ],
+   "efficiency_class": 0,
+   "smt": false,
+   "kind": "E"
+  }
+ ],
+ "cpu_profiles": {
+  "P1": [
+   0
+  ],
+  "P1_cpu2": [
+   2
+  ],
+  "E1": [
+   4
+  ],
+  "E4": [
+   4,
+   5,
+   6,
+   7
+  ]
+ },
+ "power": {
+  "platform": "Windows-11-10.0.26300-SP0",
+  "processor": "Intel64 Family 6 Model 186 Stepping 3, GenuineIntel",
+  "logical": 12,
+  "physical": 10,
+  "battery_percent": 100,
+  "power_plugged": true,
+  "cpu_freq_mhz": {
+   "current": 1300.0,
+   "min": 0.0,
+   "max": 1300.0
+  },
+  "power_plan": "CHƯA ĐỌC: người dùng tự chạy `powercfg /getactivescheme` và ghi vào PROGRESS"
+ },
+ "affinity_now": [
+  2
+ ]
+}

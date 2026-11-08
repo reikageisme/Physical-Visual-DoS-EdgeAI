@@ -1,0 +1,15 @@
+{
+  "before": {
+    "version": 1,
+    "control_mask": 0,
+    "state_mask": 0,
+    "priority_class": 32
+  },
+  "after": {
+    "version": 1,
+    "control_mask": 1,
+    "state_mask": 0,
+    "priority_class": 32
+  },
+  "scope": "API_QA_CURRENT_PROBE_ONLY_NO_INFERENCE_OR_TIMING"
+}

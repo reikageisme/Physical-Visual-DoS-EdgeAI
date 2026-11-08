@@ -1,0 +1,14 @@
+{
+  "sponge-sim/results/confirmation_20261106/m2_cpu4_full_20261106/summary_verified.json": "865ada324fb5a672217d3b768ccfefb8cb9ebdcca6457e4e2933355fb9795d7f",
+  "sponge-sim/results/confirmation_20261106/m2_gpu_full_20261106/summary_verified.json": "cecf48b30aedd2694e57682cca22805125d6e28d86d321cc98810b4eb4b3760f",
+  "sponge-sim/results/confirmation_20261106/m3_native_full_20261106/summary.json": "82e4ca25d1c4c3232bef971f1ab955e3ba2340f2d94609ec5ce25058e9e676fe",
+  "sponge-sim/results/validation_500_20261106/full/summary.json": "3c6dea8e02f5fc282c0bc8e47482c31d4055e85d440173061b81542ca7bb7dd0",
+  "sponge-sim/results/coco_defense_20261106/full_remote/results.jsonl": "99e128bbc0aa86f088debd73bd3c7d1736567f9bd57c3bef5c483e12f1e4dfc0",
+  "_provenance/codex_gpu_20261106/cap_full_20261106/raw.jsonl": "9169397cae97f3c2126c35f3da4fb3cc5c02723a9a9ef0b16c856a11b642d303",
+  "paper_en/segmentation_extension/nested1500.tex": "696cd0a0108e4e04ddb9f7a176d673d4d8c97c76205ec9e2892a13ff5f71e77e",
+  "paper_en/segmentation_extension/laptop_cpu.tex": "807a5d42c70d7ece4ffeea60188e3bf41ab25edc4af97b98c8d4622eefbca792",
+  "paper_en/segmentation_extension/laptop_defense.tex": "8b77cf22fc520f575af81908556e6daf79a9a97aa116c2828fbbcde77fd44ce8",
+  "paper_en/segmentation_extension/laptop_components.tex": "f28340c1efc4c9cb429bcf85d7595ec1be7d6ac09878e237dab834e35ae1014f",
+  "paper_en/segmentation_extension/laptop_reference_trace.tex": "49dae6753bd214c0e6eefa32e780fa47735f1d5735ee1c3c870d2b08f93dcb0f",
+  "paper_en/segmentation_extension/laptop_pcores.tex": "9b6a7a5e4734113d4d7ba64e8357c44afde76bbccbeabf37dfea217d760eb99b"
+}

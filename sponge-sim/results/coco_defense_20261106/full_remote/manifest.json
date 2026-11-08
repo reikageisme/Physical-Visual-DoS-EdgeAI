@@ -1,0 +1,55 @@
+{
+  "provenance": {
+    "m2_tag": "prereg-m2-m3-confirmation-20261106",
+    "coco_protocol_sha256": "b77505195e0402e9488824e607c43417e5cc24d05eb60c12dd8fedfe925eaa40",
+    "m2_sha256": "f4eee9a69cc9b06980ce824c8cf785d7a38f9eef933bb51e5670d3f7d4673821",
+    "coco_sha256": "d1b616b91cd606383d2327af2cad10727f02be27d9d127660b9b584043b2c22c",
+    "commit": "a2147139ecdb91924c5325eecbc4548c3d82e31e",
+    "coco_tag": "prereg-coco-defense-20261106",
+    "m3_sha256": "8e9e9e88f3c8a7730c468ae478e76ec7c68012ab852129ae9000f46c5580186b",
+    "m2_protocol_sha256": "81841db7de8ca593bbfbb35dab955784dff6a9b97c0d5cb4c9f959951384065b",
+    "m3_amendment_tag": "prereg-m3-native-amendment-a-20261106",
+    "coco_amendment_tag": "prereg-coco-defense-amendment-c-20261106"
+  },
+  "smoke": false,
+  "dataset_manifest_sha256": "1792fc52257966ee0466e741656f2c37241cfc7b3e6546406ecca53ca1ede799",
+  "config": {
+    "models": [
+      "yolov8n-seg.pt",
+      "yolo11n-seg.pt"
+    ],
+    "variants": [
+      [
+        "baseline",
+        300,
+        30000
+      ],
+      [
+        "maxdet50",
+        50,
+        30000
+      ],
+      [
+        "prenms300",
+        300,
+        300
+      ],
+      [
+        "prenms1000",
+        300,
+        1000
+      ]
+    ],
+    "imgsz": 640,
+    "batch": 8,
+    "conf": 0.001,
+    "iou": 0.7,
+    "workers": 0
+  },
+  "weights": {
+    "yolov8n-seg.pt": "a7cd8f929e1903d78a12a48efecab430209f18dc46cb96c3599a5980c63c423c",
+    "yolo11n-seg.pt": "55ed65c56c91713d23e8402371c6c49a6fd84f257f7dce452e8d70e41dcbe152"
+  },
+  "torch": "2.11.0+cu128",
+  "torchvision": "0.26.0+cu128"
+}

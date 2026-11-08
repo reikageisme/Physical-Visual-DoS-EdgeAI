@@ -1,0 +1,247 @@
+{
+ "experiment": "M1",
+ "run_dir": "results\\m1\\M1_P1cpu2_20261104",
+ "bootstrap_seed": 20261104,
+ "n_boot": 20000,
+ "baseline_k": 10,
+ "mde_total": {
+  "yolov8n-seg.pt|retinaTrue": {
+   "n_images": 50,
+   "mde_frac": 0.015488922078374061,
+   "mde_pct": 1.548892207837406
+  },
+  "yolov8n-seg.pt|retinaFalse": {
+   "n_images": 50,
+   "mde_frac": 0.018296254793213514,
+   "mde_pct": 1.8296254793213513
+  }
+ },
+ "pin": {
+  "pin": {
+   "effective_cores": 0.9831683574755583,
+   "passed": true
+  },
+  "pin_end": {
+   "effective_cores": 0.8274627815357181,
+   "passed": true
+  }
+ },
+ "drift": {
+  "points": 26,
+  "flagged": 15,
+  "max_abs": 0.42528269768572935
+ },
+ "total_ratio": {
+  "yolov8n-seg.pt|retinaFalse|K50": {
+   "ratio": 1.0011950605231061,
+   "ci95": [
+    0.9893244658181592,
+    1.0118894779719183
+   ],
+   "n_images": 50,
+   "detected_vs_mde": false
+  },
+  "yolov8n-seg.pt|retinaFalse|K100": {
+   "ratio": 1.020196366849714,
+   "ci95": [
+    1.0090293727482105,
+    1.0312380278301256
+   ],
+   "n_images": 50,
+   "detected_vs_mde": false
+  },
+  "yolov8n-seg.pt|retinaFalse|K300": {
+   "ratio": 1.1519169204502815,
+   "ci95": [
+    1.1243862837964982,
+    1.1907149518297448
+   ],
+   "n_images": 50,
+   "detected_vs_mde": true
+  },
+  "yolov8n-seg.pt|retinaTrue|K50": {
+   "ratio": 1.4438558094245673,
+   "ci95": [
+    1.3718334419589946,
+    1.489182603221404
+   ],
+   "n_images": 50,
+   "detected_vs_mde": true
+  },
+  "yolov8n-seg.pt|retinaTrue|K100": {
+   "ratio": 1.9725788612813129,
+   "ci95": [
+    1.8735102772938683,
+    2.0333743202029906
+   ],
+   "n_images": 50,
+   "detected_vs_mde": true
+  },
+  "yolov8n-seg.pt|retinaTrue|K300": {
+   "ratio": 4.165524763657891,
+   "ci95": [
+    4.048140994040598,
+    4.24960752092171
+   ],
+   "n_images": 50,
+   "detected_vs_mde": true
+  }
+ },
+ "k_star": {
+  "yolov8n-seg.pt|retinaFalse": 300,
+  "yolov8n-seg.pt|retinaTrue": 50
+ },
+ "budget": {
+  "yolov8n-seg.pt|retinaFalse|K50": {
+   "r_pred": 1.0089075336195494,
+   "r_meas": 1.0011950605231061,
+   "log_err": 0.007673748559440682,
+   "pass_vs_mde": true
+  },
+  "yolov8n-seg.pt|retinaFalse|K100": {
+   "r_pred": 1.0247674138057894,
+   "r_meas": 1.020196366849714,
+   "log_err": 0.004470548194854141,
+   "pass_vs_mde": true
+  },
+  "yolov8n-seg.pt|retinaFalse|K300": {
+   "r_pred": 1.1230805329162723,
+   "r_meas": 1.1519169204502815,
+   "log_err": 0.02535205652030468,
+   "pass_vs_mde": false
+  },
+  "yolov8n-seg.pt|retinaTrue|K50": {
+   "r_pred": 1.4761543990335837,
+   "r_meas": 1.4438558094245673,
+   "log_err": 0.02212314658307174,
+   "pass_vs_mde": false
+  },
+  "yolov8n-seg.pt|retinaTrue|K100": {
+   "r_pred": 2.0166380623126097,
+   "r_meas": 1.9725788612813129,
+   "log_err": 0.022090045987375583,
+   "pass_vs_mde": false
+  },
+  "yolov8n-seg.pt|retinaTrue|K300": {
+   "r_pred": 4.228032899116078,
+   "r_meas": 4.165524763657891,
+   "log_err": 0.014894587867973806,
+   "pass_vs_mde": true
+  }
+ },
+ "stage_share": {
+  "yolov8n-seg.pt|retinaFalse|K0": {
+   "forward_ns": 0.9882493131640794,
+   "nms_ns": 0.004348500513707187,
+   "mask_ns": 6.879717230641222e-05
+  },
+  "yolov8n-seg.pt|retinaFalse|K10": {
+   "forward_ns": 0.9833974866830822,
+   "nms_ns": 0.004331099730153813,
+   "mask_ns": 0.004447670886899027
+  },
+  "yolov8n-seg.pt|retinaFalse|K50": {
+   "forward_ns": 0.9816613595441163,
+   "nms_ns": 0.004239702501360238,
+   "mask_ns": 0.013214381841739613
+  },
+  "yolov8n-seg.pt|retinaFalse|K100": {
+   "forward_ns": 0.9576507256462066,
+   "nms_ns": 0.00411807366294132,
+   "mask_ns": 0.028506661189036917
+  },
+  "yolov8n-seg.pt|retinaFalse|K300": {
+   "forward_ns": 0.8814208906580615,
+   "nms_ns": 0.0037724517041933556,
+   "mask_ns": 0.11141725487582362
+  },
+  "yolov8n-seg.pt|retinaTrue|K0": {
+   "forward_ns": 0.9882524885893146,
+   "nms_ns": 0.004275782903717614,
+   "mask_ns": 6.003912730419117e-05
+  },
+  "yolov8n-seg.pt|retinaTrue|K10": {
+   "forward_ns": 0.8828406114820723,
+   "nms_ns": 0.003760413723262831,
+   "mask_ns": 0.11275324335446579
+  },
+  "yolov8n-seg.pt|retinaTrue|K50": {
+   "forward_ns": 0.5984299194830504,
+   "nms_ns": 0.0025559003025796196,
+   "mask_ns": 0.3972971690855941
+  },
+  "yolov8n-seg.pt|retinaTrue|K100": {
+   "forward_ns": 0.43774764442266806,
+   "nms_ns": 0.001878774561925616,
+   "mask_ns": 0.5597280533454113
+  },
+  "yolov8n-seg.pt|retinaTrue|K300": {
+   "forward_ns": 0.2133135671224936,
+   "nms_ns": 0.0009475818167600153,
+   "mask_ns": 0.7894541627417627
+  }
+ },
+ "stage_ms": {
+  "yolov8n-seg.pt|retinaFalse|K0": {
+   "total_ns": 231.11415,
+   "forward_ns": 228.3984,
+   "nms_ns": 1.005,
+   "mask_ns": 0.0159
+  },
+  "yolov8n-seg.pt|retinaFalse|K10": {
+   "total_ns": 233.7628,
+   "forward_ns": 229.88175,
+   "nms_ns": 1.0124499999999999,
+   "mask_ns": 1.0396999999999998
+  },
+  "yolov8n-seg.pt|retinaFalse|K50": {
+   "total_ns": 233.50695000000002,
+   "forward_ns": 229.22475,
+   "nms_ns": 0.99,
+   "mask_ns": 3.08565
+  },
+  "yolov8n-seg.pt|retinaFalse|K100": {
+   "total_ns": 238.546,
+   "forward_ns": 228.44375,
+   "nms_ns": 0.9823500000000001,
+   "mask_ns": 6.80015
+  },
+  "yolov8n-seg.pt|retinaFalse|K300": {
+   "total_ns": 267.0677,
+   "forward_ns": 235.39905,
+   "nms_ns": 1.0074999999999998,
+   "mask_ns": 29.75595
+  },
+  "yolov8n-seg.pt|retinaTrue|K0": {
+   "total_ns": 230.6829,
+   "forward_ns": 227.97295,
+   "nms_ns": 0.9863500000000001,
+   "mask_ns": 0.01385
+  },
+  "yolov8n-seg.pt|retinaTrue|K10": {
+   "total_ns": 263.6545,
+   "forward_ns": 232.7649,
+   "nms_ns": 0.9914499999999999,
+   "mask_ns": 29.727899999999998
+  },
+  "yolov8n-seg.pt|retinaTrue|K50": {
+   "total_ns": 389.98,
+   "forward_ns": 233.3757,
+   "nms_ns": 0.99675,
+   "mask_ns": 154.93795
+  },
+  "yolov8n-seg.pt|retinaTrue|K100": {
+   "total_ns": 534.52395,
+   "forward_ns": 233.9866,
+   "nms_ns": 1.0042499999999999,
+   "mask_ns": 299.18805
+  },
+  "yolov8n-seg.pt|retinaTrue|K300": {
+   "total_ns": 1115.1016,
+   "forward_ns": 237.8663,
+   "nms_ns": 1.0566499999999999,
+   "mask_ns": 880.3216
+  }
+ },
+ "verdict": "K* trong tầm max_det cho: {'yolov8n-seg.pt|retinaFalse': 300, 'yolov8n-seg.pt|retinaTrue': 50} (bề mặt tấn công đạt được; chờ M3 chứng minh tấn công đẩy K tới đó)"
+}

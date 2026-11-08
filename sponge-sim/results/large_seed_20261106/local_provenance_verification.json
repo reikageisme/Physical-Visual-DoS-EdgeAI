@@ -1,0 +1,47 @@
+{
+  "tag": "prereg-nested1500-resume-amendment-a-20261106",
+  "commit": "e3222a26699bcb4b59d09240e769433e6af4aece",
+  "locked_git_blobs": [
+    {
+      "path": "sponge-sim/studies/large_seed/run.py",
+      "git_sha256": "a2d567bc7b08967f2256f17a6673319d59419a3c09ffb04ba35d79e5600c914f",
+      "runtime_sha256": "a2d567bc7b08967f2256f17a6673319d59419a3c09ffb04ba35d79e5600c914f",
+      "byte_exact": true,
+      "lf_normalized_equal": true
+    },
+    {
+      "path": "sponge-sim/studies/large_seed/engine.py",
+      "git_sha256": "20f1675a2ed71cbbab316f60bd1c123a1e68691f639bb55ecbc912f0ed390e13",
+      "runtime_sha256": "20f1675a2ed71cbbab316f60bd1c123a1e68691f639bb55ecbc912f0ed390e13",
+      "byte_exact": true,
+      "lf_normalized_equal": true
+    },
+    {
+      "path": "sponge-sim/studies/large_seed/cohort1500.json",
+      "git_sha256": "ae5092b684499ed5e82daba684825046ce3542bc32a30fdc5851840ba79e1087",
+      "runtime_sha256": "a06a2a3fb16dcd6d982233e2373a95c5e8f6cd48c963f33cdc54f509bcb68026",
+      "byte_exact": false,
+      "lf_normalized_equal": true
+    },
+    {
+      "path": "sponge-sim/studies/large_seed/execution_lock.json",
+      "git_sha256": "33a978f7ef0ea5ddc4f8ecc7397bdca6c53939b70caef7ad538d556042dd0d38",
+      "runtime_sha256": "1e3d9f4fd0d863c560cf669ce6f159a4a933b3a08e86e00b561a0a94df0bb3af",
+      "byte_exact": false,
+      "lf_normalized_equal": true
+    },
+    {
+      "path": "sponge-sim/prereg/PREREG_NESTED1500_SEEDS_20261106.md",
+      "git_sha256": "124d1b3eddffae0efd3690dcf1aeb3ff70e2f05fcf4943ad8295d5c619967a4d",
+      "runtime_sha256": "124d1b3eddffae0efd3690dcf1aeb3ff70e2f05fcf4943ad8295d5c619967a4d",
+      "byte_exact": true,
+      "lf_normalized_equal": true
+    }
+  ],
+  "task_manifests_verified": 8,
+  "weights_verified": 3,
+  "images_verified_remote": 1500,
+  "audit_raw_sha_pass": true,
+  "root_done": true,
+  "note": "Runtime cohort/lock use CRLF while Git normalizes to LF; JSON values match exactly and runtime byte hashes are preserved in ZIP. Runner/engine/protocol match Git bytes exactly."
+}

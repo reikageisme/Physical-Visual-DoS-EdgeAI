@@ -1,0 +1,11 @@
+{
+  "audit_cases": 1280,
+  "count_comparisons": 12800,
+  "count_mismatches": 0,
+  "max_native_score_error": 0.0,
+  "raw_sha256": "d5319c63ae168bd448afcae5510ddd782cb30b7026e27f66da00923488d54820",
+  "script_sha256": "001a9b2d5bb8314944d4ebd5150bdc693db4aae297729402bfd0c2dcc54293a6",
+  "torch": "2.11.0+cu128",
+  "torchvision": "0.26.0+cu128",
+  "note": "Only locked64 exact-input audit subset replayed; remaining cases have saved-output verification only."
+}

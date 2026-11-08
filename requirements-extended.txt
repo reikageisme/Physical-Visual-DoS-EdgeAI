@@ -1,0 +1,3 @@
+# Phụ lục cho phép đánh giá COCO đầy đủ (experiments/extended_evaluation.py)
+# GĐ0 0.2 — 2026-10-18: gói yêu cầu mở rộng; phiên bản đúng nằm trong requirements-lock.txt
+-r requirements-lock.txt

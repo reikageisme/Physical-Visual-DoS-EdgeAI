@@ -1,0 +1,9 @@
+{
+  "cohort_sha256": "a06a2a3fb16dcd6d982233e2373a95c5e8f6cd48c963f33cdc54f509bcb68026",
+  "lock_sha256": "1e3d9f4fd0d863c560cf669ce6f159a4a933b3a08e86e00b561a0a94df0bb3af",
+  "engine_sha256": "20f1675a2ed71cbbab316f60bd1c123a1e68691f639bb55ecbc912f0ed390e13",
+  "protocol_sha256": "124d1b3eddffae0efd3690dcf1aeb3ff70e2f05fcf4943ad8295d5c619967a4d",
+  "runner_sha256": "a2d567bc7b08967f2256f17a6673319d59419a3c09ffb04ba35d79e5600c914f",
+  "commit": "e3222a26699bcb4b59d09240e769433e6af4aece",
+  "tag": "prereg-nested1500-resume-amendment-a-20261106"
+}

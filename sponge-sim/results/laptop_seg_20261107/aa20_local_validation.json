@@ -1,0 +1,14 @@
+{
+  "command": "python -m pytest sponge-sim/tests/test_laptop_seg.py -q -p no:cacheprovider",
+  "observed_stdout": "9 passed in 2.41s",
+  "exit_code": 0,
+  "synthetic_only": true,
+  "aa20_benchmark_run": false,
+  "code_and_21_package_file_hashes_verified": true,
+  "sha256": {
+    "sponge-sim/studies/laptop_seg/run.py": "3d6b98388cf9de179058bf4cbd83d038d498b41eb49f9508693428b0d347f502",
+    "sponge-sim/studies/laptop_seg/analyze.py": "0c8da6b31bd31103ce5f41e620df9ac8f3c9ffcc8e56215b02e1b9e43dffb706",
+    "sponge-sim/studies/laptop_seg/lock_aa20.json": "b2905275ec94a3d8964a7b4b308267adb6d46fab3e595cfcd76981e427f2895a",
+    "sponge-sim/tests/test_laptop_seg.py": "e25c6887b816c5e8852cfa4135661edd023b195d57de2822934f018b3fc08297"
+  }
+}

@@ -1,0 +1,170 @@
+{
+ "experiment": "M0",
+ "run_dir": "results\\m0\\M0_P1cpu2_20261104",
+ "bootstrap_seed": 20261104,
+ "n_boot": 20000,
+ "baseline_k": 10,
+ "practical_threshold": 0.05,
+ "mde_total": {
+  "yolov8n-seg.pt|retinaFalse": {
+   "n_images": 20,
+   "mde_frac": 0.013439108504070192,
+   "mde_pct": 1.3439108504070192
+  },
+  "yolov8n-seg.pt|retinaTrue": {
+   "n_images": 20,
+   "mde_frac": 0.014170302596326194,
+   "mde_pct": 1.4170302596326194
+  }
+ },
+ "pin": {
+  "pin": {
+   "effective_cores": 0.8904564365974738,
+   "passed": true
+  },
+  "pin_end": {
+   "effective_cores": 0.9291496152871352,
+   "passed": true
+  }
+ },
+ "drift": {
+  "points": 11,
+  "flagged": 2,
+  "max_abs": 0.03428514376996816
+ },
+ "frac_mask": {
+  "yolov8n-seg.pt|retinaFalse|K10": {
+   "median": 0.0034063303562736355,
+   "ci95": [
+    0.003330353663541756,
+    0.0037902185012345675
+   ],
+   "n_images": 20
+  },
+  "yolov8n-seg.pt|retinaFalse|K50": {
+   "median": 0.013264304723495934,
+   "ci95": [
+    0.01267946112632201,
+    0.013748632041895996
+   ],
+   "n_images": 20
+  },
+  "yolov8n-seg.pt|retinaFalse|K100": {
+   "median": 0.02718543110429277,
+   "ci95": [
+    0.02602206045899943,
+    0.028269236901294563
+   ],
+   "n_images": 20
+  },
+  "yolov8n-seg.pt|retinaFalse|K300": {
+   "median": 0.07971819512628135,
+   "ci95": [
+    0.07885529924337159,
+    0.08666614088809053
+   ],
+   "n_images": 20
+  },
+  "yolov8n-seg.pt|retinaTrue|K10": {
+   "median": 0.11245786527780059,
+   "ci95": [
+    0.11044984686626605,
+    0.11462904531258006
+   ],
+   "n_images": 20
+  },
+  "yolov8n-seg.pt|retinaTrue|K50": {
+   "median": 0.4030364338740602,
+   "ci95": [
+    0.3988018506751928,
+    0.4062917182674424
+   ],
+   "n_images": 20
+  },
+  "yolov8n-seg.pt|retinaTrue|K100": {
+   "median": 0.5649656710112405,
+   "ci95": [
+    0.5569873408105969,
+    0.5672038990959924
+   ],
+   "n_images": 20
+  },
+  "yolov8n-seg.pt|retinaTrue|K300": {
+   "median": 0.7767427057308075,
+   "ci95": [
+    0.7733604095064156,
+    0.7838717836533168
+   ],
+   "n_images": 20
+  }
+ },
+ "mask_ms": {
+  "yolov8n-seg.pt|retinaFalse|K0": 0.0068,
+  "yolov8n-seg.pt|retinaFalse|K10": 0.76965,
+  "yolov8n-seg.pt|retinaFalse|K50": 3.0744,
+  "yolov8n-seg.pt|retinaFalse|K100": 6.39195,
+  "yolov8n-seg.pt|retinaFalse|K300": 20.232950000000002,
+  "yolov8n-seg.pt|retinaTrue|K0": 0.0063,
+  "yolov8n-seg.pt|retinaTrue|K10": 29.055549999999997,
+  "yolov8n-seg.pt|retinaTrue|K50": 154.6611,
+  "yolov8n-seg.pt|retinaTrue|K100": 294.96164999999996,
+  "yolov8n-seg.pt|retinaTrue|K300": 869.41095
+ },
+ "forward_ms": {
+  "yolov8n-seg.pt|retinaFalse|K0": 227.63139999999999,
+  "yolov8n-seg.pt|retinaFalse|K10": 225.4167,
+  "yolov8n-seg.pt|retinaFalse|K50": 224.30055,
+  "yolov8n-seg.pt|retinaFalse|K100": 228.19385,
+  "yolov8n-seg.pt|retinaFalse|K300": 234.3111,
+  "yolov8n-seg.pt|retinaTrue|K0": 227.37865,
+  "yolov8n-seg.pt|retinaTrue|K10": 229.12214999999998,
+  "yolov8n-seg.pt|retinaTrue|K50": 232.27775000000003,
+  "yolov8n-seg.pt|retinaTrue|K100": 231.04795000000001,
+  "yolov8n-seg.pt|retinaTrue|K300": 233.60595
+ },
+ "total_ms": {
+  "yolov8n-seg.pt|retinaFalse|K0": 229.13445000000002,
+  "yolov8n-seg.pt|retinaFalse|K10": 226.0375,
+  "yolov8n-seg.pt|retinaFalse|K50": 230.7613,
+  "yolov8n-seg.pt|retinaFalse|K100": 233.21359999999999,
+  "yolov8n-seg.pt|retinaFalse|K300": 257.44050000000004,
+  "yolov8n-seg.pt|retinaTrue|K0": 227.3578,
+  "yolov8n-seg.pt|retinaTrue|K10": 256.23315,
+  "yolov8n-seg.pt|retinaTrue|K50": 382.85429999999997,
+  "yolov8n-seg.pt|retinaTrue|K100": 521.7578000000001,
+  "yolov8n-seg.pt|retinaTrue|K300": 1117.90645
+ },
+ "rel_gain": {
+  "yolov8n-seg.pt|retinaFalse": {
+   "median": 0.08615160373374056,
+   "ci95": [
+    0.08496997088658015,
+    0.09656419578058736
+   ],
+   "n_images": 20
+  },
+  "yolov8n-seg.pt|retinaTrue": {
+   "median": 3.2952138088033,
+   "ci95": [
+    3.2525242955851636,
+    3.306801364268165
+   ],
+   "n_images": 20
+  }
+ },
+ "go_no_go": {
+  "yolov8n-seg.pt|retinaFalse": {
+   "rel_gain": 0.08615160373374056,
+   "mde_frac": 0.013439108504070192,
+   "threshold": 0.05,
+   "verdict": "GO"
+  },
+  "yolov8n-seg.pt|retinaTrue": {
+   "rel_gain": 3.2952138088033,
+   "mde_frac": 0.014170302596326194,
+   "threshold": 0.05,
+   "verdict": "GO"
+  }
+ },
+ "verdict_overall": "GO (ít nhất một model: dựng mask đủ lớn ở K=300 với retina_masks)"
+}

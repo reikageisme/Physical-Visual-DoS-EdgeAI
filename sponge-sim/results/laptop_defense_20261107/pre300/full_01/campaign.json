@@ -1,0 +1,7 @@
+{
+  "tag": "prereg-laptop-defense-20261107",
+  "commit": "e0aa31370a054327454918238b1085c6a2805328",
+  "lock_sha256": "1f4a9bfd17089b5e7e4afbcdff944c1769e99beb78d0f936ecb7e3a753534463",
+  "user_idle": "User standing authorization covers pre300 full20 after smoke PASS; AC and idle declaration continues",
+  "smoke": false
+}

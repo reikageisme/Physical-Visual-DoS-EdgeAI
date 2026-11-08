@@ -1,0 +1,7 @@
+{
+  "tag": "prereg-laptop-attack-replay-20261107",
+  "commit": "2dab448d60a4298bb2ed25d80015a2135cd7da60",
+  "lock_sha256": "b2241ba337af9c81bb92d35af6c1d2d907aecedc8758a2dae044f0c9721a19ed",
+  "user_idle": "User standing authorization covers one full frozen replay after smoke pass; AC and idle declaration continues",
+  "smoke": false
+}

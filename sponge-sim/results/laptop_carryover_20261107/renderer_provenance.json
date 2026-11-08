@@ -1,0 +1,9 @@
+{
+  "scope": "SOURCE_PROVENANCE_NO_INFERENCE_TIMING",
+  "version": "8.4.90",
+  "ops_sha256": "828de5d265ab91a792acae836f9380d07abda2a15a501170fc9f49d7a448688d",
+  "wheel_record_sha256_base64": "go3l0mWrkaeSrK6Db5OA0Hq9oqFaUBFw_J9J16RIaI0",
+  "wheel_record_matches": true,
+  "official_source_url": "https://raw.githubusercontent.com/ultralytics/ultralytics/v8.4.90/ultralytics/utils/ops.py",
+  "native_implementation": "32M-pixel float chunks, uint8 output; unchanged"
+}

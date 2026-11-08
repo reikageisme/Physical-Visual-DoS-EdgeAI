@@ -1,0 +1,7 @@
+{
+  "tag": "prereg-laptop-total-confirmation-20261107",
+  "commit": "6748a891fb91384164e5c3c9bf8bec6d7ef13732",
+  "lock_sha256": "e349317550b1739f52b693109e404a3e86600e8be9eb3db5f4798b9f74595aaa",
+  "user_idle": "User standing authorization covers one fixed total-only full after smoke pass; AC and idle declaration continues",
+  "smoke": false
+}

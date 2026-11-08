@@ -1,0 +1,33 @@
+{
+  "selected": {
+    "yolo11n-seg.pt": {
+      "model": "yolo11n-seg.pt",
+      "engine": "graph",
+      "batch": 4,
+      "fused": false,
+      "seconds_per_image": 0.4022500000000946,
+      "pilot_file": "sponge-sim\\results\\large_seed_20261106\\large_engine_pilot_20261106\\yolo11n-seg.pt_b4\\pilot.json",
+      "pilot_sha256": "a9d6a35e67b07c64f224114578c76f30ffa5f76ace124f9a375974e289203b08"
+    },
+    "yolo26n-seg.pt": {
+      "model": "yolo26n-seg.pt",
+      "engine": "graph",
+      "batch": 4,
+      "fused": false,
+      "seconds_per_image": 0.4492499999996653,
+      "pilot_file": "sponge-sim\\results\\large_seed_20261106\\large_engine_pilot_20261106\\yolo26n-seg.pt_b4\\pilot.json",
+      "pilot_sha256": "950407fe4bbe9e7316cd493df02ee313ca2540722c5aad9e45692df2ae99fcda"
+    },
+    "yolov8n-seg.pt": {
+      "model": "yolov8n-seg.pt",
+      "engine": "graph",
+      "batch": 4,
+      "fused": false,
+      "seconds_per_image": 0.3790000000008149,
+      "pilot_file": "sponge-sim\\results\\large_seed_20261106\\large_engine_pilot_20261106\\yolov8n-seg.pt_b4\\pilot.json",
+      "pilot_sha256": "6c93a2d4a9de93fe5189978a72ce6d81f28052907e3699a4590d5a96266c2237"
+    }
+  },
+  "selection_rule": "eligible correctness+memory, then processing seconds/image, then smaller batch",
+  "note": "No attack K/effect selection; all fused candidates failed predeclared score/gradient agreement gate."
+}

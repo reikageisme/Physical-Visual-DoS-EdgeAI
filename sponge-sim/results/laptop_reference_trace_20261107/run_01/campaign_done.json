@@ -1,0 +1,10 @@
+[
+  {
+    "condition": "continuous",
+    "returncode": 0
+  },
+  {
+    "condition": "pause2",
+    "returncode": 0
+  }
+]

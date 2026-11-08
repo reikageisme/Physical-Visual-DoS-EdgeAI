@@ -1,0 +1,25 @@
+{
+  "tag": "prereg-laptop-highqos-20261107",
+  "commit": "1a2c156a2fef7401d8846576d00695ee4419cf07",
+  "lock_sha256": "6dd48268404c007fb6c4b1ce89e22a6d0f122baed96f7f43cac0f86e38c1fba5",
+  "raw_sha256": "4a77d5e942c6afe35a705c07141c00d32954e8d0502db3e431b58f1f877303d8",
+  "tagged_primary_source_bytes_match": true,
+  "rows": 73,
+  "timings": 64,
+  "complete": true,
+  "feasibility_pass": false,
+  "flags": 2,
+  "qos_start": {
+    "version": 1,
+    "control_mask": 1,
+    "state_mask": 0,
+    "priority_class": 32
+  },
+  "qos_end": {
+    "version": 1,
+    "control_mask": 1,
+    "state_mask": 0,
+    "priority_class": 32
+  },
+  "full_cancelled_by_registered_gate": true
+}

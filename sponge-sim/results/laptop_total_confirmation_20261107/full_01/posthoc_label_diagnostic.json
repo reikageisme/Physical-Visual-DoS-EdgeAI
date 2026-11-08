@@ -1,0 +1,193 @@
+{
+  "status": "POSTHOC_CONDITIONAL_LABEL_DIAGNOSTIC_NOT_RANDOMIZATION_TEST",
+  "seed": 20261109,
+  "draws": 2000,
+  "raw_sha256": "1e19b1e2f9862ae783c9c68dc7ae7d2643349c219b556625d3ec97fc88440b75",
+  "arms": {
+    "clean": {
+      "observed_mde_fraction": 0.019257989129574025,
+      "registered_mde_fraction": 0.019257989129574025,
+      "counterfactual_mde_q05_q50_q95": [
+        0.006822490903121733,
+        0.009339198518425755,
+        0.011833536658879148
+      ],
+      "fraction_counterfactual_below_observed": 1.0,
+      "per_image_call_position_ratio": [
+        {
+          "image": "000000000009_inputs",
+          "first_over_second": 1.0811015501030825
+        },
+        {
+          "image": "000000000025_inputs",
+          "first_over_second": 1.057996715329338
+        },
+        {
+          "image": "000000000030_inputs",
+          "first_over_second": 1.0799630674234655
+        },
+        {
+          "image": "000000000034_inputs",
+          "first_over_second": 1.0503909684850796
+        },
+        {
+          "image": "000000000036_inputs",
+          "first_over_second": 1.0577597881290084
+        },
+        {
+          "image": "000000000042_inputs",
+          "first_over_second": 1.0578914247796671
+        },
+        {
+          "image": "000000000049_inputs",
+          "first_over_second": 1.0739316396026246
+        },
+        {
+          "image": "000000000061_inputs",
+          "first_over_second": 1.0472198633235041
+        },
+        {
+          "image": "000000000064_inputs",
+          "first_over_second": 1.075776764444376
+        },
+        {
+          "image": "000000000071_inputs",
+          "first_over_second": 1.0427187884291458
+        },
+        {
+          "image": "000000000072_inputs",
+          "first_over_second": 1.0697904427029468
+        },
+        {
+          "image": "000000000073_inputs",
+          "first_over_second": 1.0784013471299954
+        },
+        {
+          "image": "000000000074_inputs",
+          "first_over_second": 1.1101657225885695
+        },
+        {
+          "image": "000000000077_inputs",
+          "first_over_second": 1.0703979601641234
+        },
+        {
+          "image": "000000000078_inputs",
+          "first_over_second": 1.0786835602178537
+        },
+        {
+          "image": "000000000081_inputs",
+          "first_over_second": 1.0674285543548014
+        },
+        {
+          "image": "000000000086_inputs",
+          "first_over_second": 1.0596908736058699
+        },
+        {
+          "image": "000000000089_inputs",
+          "first_over_second": 1.0310102284400426
+        },
+        {
+          "image": "000000000092_inputs",
+          "first_over_second": 1.0487554660358325
+        },
+        {
+          "image": "000000000094_inputs",
+          "first_over_second": 1.050158875340509
+        }
+      ]
+    },
+    "attacked": {
+      "observed_mde_fraction": 0.0043500535157722795,
+      "registered_mde_fraction": 0.00435005351577228,
+      "counterfactual_mde_q05_q50_q95": [
+        0.0018901699984452723,
+        0.002565843027803938,
+        0.0032830230330691797
+      ],
+      "fraction_counterfactual_below_observed": 1.0,
+      "per_image_call_position_ratio": [
+        {
+          "image": "000000000009_inputs",
+          "first_over_second": 1.0030189518956523
+        },
+        {
+          "image": "000000000025_inputs",
+          "first_over_second": 0.988347159869889
+        },
+        {
+          "image": "000000000030_inputs",
+          "first_over_second": 0.987425473232197
+        },
+        {
+          "image": "000000000034_inputs",
+          "first_over_second": 0.9935445399379389
+        },
+        {
+          "image": "000000000036_inputs",
+          "first_over_second": 0.9917583297452964
+        },
+        {
+          "image": "000000000042_inputs",
+          "first_over_second": 0.9859108738716118
+        },
+        {
+          "image": "000000000049_inputs",
+          "first_over_second": 1.0003297728842755
+        },
+        {
+          "image": "000000000061_inputs",
+          "first_over_second": 0.9936692618513594
+        },
+        {
+          "image": "000000000064_inputs",
+          "first_over_second": 0.9847905866756914
+        },
+        {
+          "image": "000000000071_inputs",
+          "first_over_second": 0.9994498580936396
+        },
+        {
+          "image": "000000000072_inputs",
+          "first_over_second": 0.9820417804175631
+        },
+        {
+          "image": "000000000073_inputs",
+          "first_over_second": 0.9908911626014986
+        },
+        {
+          "image": "000000000074_inputs",
+          "first_over_second": 0.998758594746575
+        },
+        {
+          "image": "000000000077_inputs",
+          "first_over_second": 1.0041134209752844
+        },
+        {
+          "image": "000000000078_inputs",
+          "first_over_second": 0.9919983484395313
+        },
+        {
+          "image": "000000000081_inputs",
+          "first_over_second": 0.9888371487978563
+        },
+        {
+          "image": "000000000086_inputs",
+          "first_over_second": 0.9844533535660555
+        },
+        {
+          "image": "000000000089_inputs",
+          "first_over_second": 0.9890658156708243
+        },
+        {
+          "image": "000000000092_inputs",
+          "first_over_second": 0.989350802382047
+        },
+        {
+          "image": "000000000094_inputs",
+          "first_over_second": 1.0148755134865097
+        }
+      ]
+    }
+  },
+  "limits": "Reassigned labels are hypothetical, not new data; no gate/P-value/population/causal claim; old FAIL unchanged."
+}

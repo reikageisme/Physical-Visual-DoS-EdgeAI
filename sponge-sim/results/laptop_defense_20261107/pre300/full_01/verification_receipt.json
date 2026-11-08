@@ -1,0 +1,35 @@
+{
+  "status": "OFFLINE_VERIFIED_NO_NEW_INFERENCE",
+  "tag": "prereg-laptop-defense-20261107",
+  "commit": "e0aa31370a054327454918238b1085c6a2805328",
+  "raw_sha256": "afbc88b2723f0396d6f9e12552ce5580617edf82dcde4d5c759d5f635a62487a",
+  "lock_sha256": "1f4a9bfd17089b5e7e4afbcdff944c1769e99beb78d0f936ecb7e3a753534463",
+  "summary_sha256": "78baf261f9f0c773ab75122b8b47ccf4f57a0d0516cca58f5f9475bfbdade2e7",
+  "audit_source_sha256": "7f88cf297f9445aeb3a31b422f46e6392d982879bac53e4e25a7ae0c3b1ff6bc",
+  "tag_line_ending_differences": [
+    {
+      "path": "sponge-sim/src/sponge_sim/hw.py",
+      "tag_sha256": "a6fd2c15cd16d518dd3034d94fb98c463dd77d425cd249f6ac7d92722bb62323",
+      "working_sha256": "9b0eda7758b4c45f2cd9a64eaf44206aab2b5478afdc5458ed49e69791cb879d"
+    }
+  ],
+  "quality_pass": true,
+  "feasibility_pass": true,
+  "n_trials": 3840,
+  "restored_events": {
+    "root": 1,
+    "intent": 45,
+    "applied": 45,
+    "ready": 1,
+    "restored": 45
+  },
+  "duration_raw_s": 3249.841196537018,
+  "checks": [
+    "source/tag/input hashes",
+    "same attacked prediction as accepted prior session",
+    "exact carryover schedule",
+    "observed kernel and retained output bounds",
+    "saved summary recomputed",
+    "power/QoS/affinity/restore"
+  ]
+}

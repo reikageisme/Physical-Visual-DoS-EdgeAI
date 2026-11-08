@@ -1,0 +1,202 @@
+{
+ "experiment": "E5",
+ "run_dir": "results\\e5\\AA640_P1cpu2_20261102b",
+ "manifest_config_sha256": "d88dabc8e61e3fd5c70fc9736039c6991a274ce4211f6250b96b4741b54084dc",
+ "git_head": "2d9a234c7e63004c43b2fbfd96fbe78e14ac5046",
+ "tags_at_head": [],
+ "bootstrap_seed": 20261021,
+ "n_boot": 20000,
+ "unit": "image",
+ "profiles": {
+  "P1_cpu2": {
+   "pin": {
+    "allowed": [
+     2
+    ],
+    "readback": [
+     2
+    ],
+    "passed": true,
+    "effective_cores": 0.9525538011093493,
+    "torch_threads": 1
+   },
+   "n_images": 100,
+   "n_measure_rows": 2000,
+   "drift": {
+    "reference_points": 11,
+    "flagged": [
+     2,
+     3,
+     7
+    ],
+    "max_abs_rel_change": 0.03810918300718247
+   },
+   "stages": {
+    "pre": {
+     "aa_mean_log_ratio": 0.007564325305378805,
+     "aa_ci95_log": [
+      -0.002099896774861739,
+      0.017050730645787198
+     ],
+     "aa_ratio": 1.0075930070878756,
+     "aa_ci95_ratio": [
+      0.9979023064659083,
+      1.0171969240731857
+     ],
+     "aa_ci_contains_1": true,
+     "sd_log": 0.04892128958019232,
+     "mde_ratio_pct": 1.3938447366503848,
+     "median_within_image_cv": 0.09576339130380164,
+     "median_of_image_medians_ms": 9.655075
+    },
+    "forward": {
+     "aa_mean_log_ratio": 0.0015599899829815925,
+     "aa_ci95_log": [
+      -0.003208299173707036,
+      0.007244320086450272
+     ],
+     "aa_ratio": 1.0015612074003257,
+     "aa_ci95_ratio": [
+      0.9967968419185633,
+      1.0072706236519937
+     ],
+     "aa_ci_contains_1": true,
+     "sd_log": 0.026631000413782465,
+     "mde_ratio_pct": 0.7563659966632219,
+     "median_within_image_cv": 0.03785146341359298,
+     "median_of_image_medians_ms": 166.292075
+    },
+    "decode": {
+     "aa_mean_log_ratio": 0.0006654815264920447,
+     "aa_ci95_log": [
+      -0.0074207858069505715,
+      0.0087330452907045
+     ],
+     "aa_ratio": 1.0006657030084511,
+     "aa_ci95_ratio": [
+      0.9926066802421635,
+      1.0087712895793632
+     ],
+     "aa_ci_contains_1": true,
+     "sd_log": 0.04113485029913305,
+     "mde_ratio_pct": 1.1707037186051705,
+     "median_within_image_cv": 0.15171033794457534,
+     "median_of_image_medians_ms": 1.0910250000000001
+    },
+    "tau": {
+     "aa_mean_log_ratio": -0.003912128657372154,
+     "aa_ci95_log": [
+      -0.01448229470753883,
+      0.006490268514668564
+     ],
+     "aa_ratio": 0.9960955137486703,
+     "aa_ci95_ratio": [
+      0.9856220693048914,
+      1.0065113759469575
+     ],
+     "aa_ci_contains_1": true,
+     "sd_log": 0.05368331071653449,
+     "mde_ratio_pct": 1.5305555189086828,
+     "median_within_image_cv": 0.15201052893759093,
+     "median_of_image_medians_ms": 0.104675
+    },
+    "nms_torch_pure": {
+     "aa_mean_log_ratio": 0.0001407679044034357,
+     "aa_ci95_log": [
+      -0.006824172974653558,
+      0.00662521808617668
+     ],
+     "aa_ratio": 1.0001407778126699,
+     "aa_ci95_ratio": [
+      0.9931990588177783,
+      1.0066472133912558
+     ],
+     "aa_ci_contains_1": true,
+     "sd_log": 0.034416276433623015,
+     "mde_ratio_pct": 0.9785599194954697,
+     "median_within_image_cv": 0.13340685256525373,
+     "median_of_image_medians_ms": 1.3662
+    },
+    "nms_tv_nms": {
+     "aa_mean_log_ratio": 0.005249898923903771,
+     "aa_ci95_log": [
+      -0.004073699052157196,
+      0.014817286540714241
+     ],
+     "aa_ratio": 1.0052637037907386,
+     "aa_ci95_ratio": [
+      0.9959345872041031,
+      1.014927606739458
+     ],
+     "aa_ci_contains_1": true,
+     "sd_log": 0.0480382727549609,
+     "mde_ratio_pct": 1.368514831862222,
+     "median_within_image_cv": 0.13190699026897368,
+     "median_of_image_medians_ms": 0.121025
+    },
+    "total": {
+     "aa_mean_log_ratio": 0.0023453750292506117,
+     "aa_ci95_log": [
+      -0.002443311609452313,
+      0.0070545280511265145
+     ],
+     "aa_ratio": 1.0023481275727595,
+     "aa_ci95_ratio": [
+      0.9975596708468403,
+      1.0070794698505174
+     ],
+     "aa_ci_contains_1": true,
+     "sd_log": 0.02413970392291406,
+     "mde_ratio_pct": 0.6853670195893447,
+     "median_within_image_cv": 0.04288443152664878,
+     "median_of_image_medians_ms": 179.85432500000002
+    }
+   },
+   "nms_torch_pure_share_of_total": {
+    "median": 0.007689713794305007,
+    "max": 0.11266998581701729,
+    "note": "mô tả; tỷ số theo lần đo rồi trung vị theo ảnh"
+   },
+   "sensitivity_excluding_flagged_blocks": {
+    "forward": {
+     "n_images": 70,
+     "aa_mean_log_ratio": 0.00036737850755020886,
+     "aa_ci95_log": [
+      -0.006153521461802391,
+      0.008119682664297847
+     ]
+    },
+    "total": {
+     "n_images": 70,
+     "aa_mean_log_ratio": 0.001108141792378852,
+     "aa_ci95_log": [
+      -0.0048790564685123935,
+      0.006894356585845547
+     ]
+    }
+   }
+  }
+ },
+ "primary": {
+  "P1_cpu2": {
+   "forward": {
+    "ci_contains_1": true,
+    "ratio": 1.0015612074003257,
+    "ci95": [
+     0.9967968419185633,
+     1.0072706236519937
+    ],
+    "mde_pct": 0.7563659966632219
+   },
+   "total": {
+    "ci_contains_1": true,
+    "ratio": 1.0023481275727595,
+    "ci95": [
+     0.9975596708468403,
+     1.0070794698505174
+    ],
+    "mde_pct": 0.6853670195893447
+   }
+  }
+ }
+}

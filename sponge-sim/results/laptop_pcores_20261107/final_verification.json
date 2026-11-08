@@ -1,0 +1,12 @@
+{
+  "status": "PCORES_FINITE_CAMPAIGN_CLOSED_AND_EXPORT_VERIFIED",
+  "smoke_raw_sha256": "6f7eabd0ca0b1f30aaac027f623d34c1c32ff2fd659a94214cf7f47256b4a1b0",
+  "full_started": false,
+  "repeat_performed": false,
+  "tests_before_measurement": "44 passed in 5.04s",
+  "tests_after_documentation": "44 passed in 4.96s",
+  "original_main_and_bibliography_unchanged": true,
+  "png_visually_checked": true,
+  "full_paper_pdf_built": false,
+  "source_lock_still_matches": true
+}

@@ -1,0 +1,7 @@
+{
+  "tag": "prereg-laptop-aa20-20261107",
+  "commit": "66f675dc272312c926393569d18089ecbef59721",
+  "lock_sha256": "b2905275ec94a3d8964a7b4b308267adb6d46fab3e595cfcd76981e427f2895a",
+  "user_idle": "User approved fixed AA20 campaign; AC and idle declaration continues 2026-11-07",
+  "smoke": false
+}

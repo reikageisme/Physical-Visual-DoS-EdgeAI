@@ -1,0 +1,234 @@
+{
+  "config": {
+    "device": "cpu",
+    "threads": 1,
+    "smoke": true,
+    "n_images": 2,
+    "repeats": 2,
+    "K": [
+      0,
+      10,
+      50,
+      100,
+      300
+    ],
+    "retinas": [
+      false,
+      true
+    ],
+    "baseline_k": 10,
+    "coeff_seed": 6100,
+    "box_seed": 6101,
+    "canvas": 640,
+    "nc": 80,
+    "conf": 0.25,
+    "iou": 0.45,
+    "max_det": 300,
+    "order_seed": 20261106,
+    "warmup": 2,
+    "steady_forward_warmup": 50,
+    "mask_proto_upsample": false
+  },
+  "provenance": {
+    "m2_tag": "prereg-m2-m3-confirmation-20261106",
+    "coco_protocol_sha256": "7ebfc1a2093f7b1a0dcea180e2945c6e41e1958212bf555407fe7f5a8dbfe07b",
+    "m2_sha256": "f4eee9a69cc9b06980ce824c8cf785d7a38f9eef933bb51e5670d3f7d4673821",
+    "coco_sha256": "37e330d6fddd8afd119115557228a07a5a7efea28b4cc90ee2281f4fd9072ebb",
+    "commit": "0f8128998444cf0a2e45d23ed5c641100deec4bc",
+    "coco_tag": "prereg-coco-defense-20261106",
+    "m3_sha256": "8e9e9e88f3c8a7730c468ae478e76ec7c68012ab852129ae9000f46c5580186b",
+    "m2_protocol_sha256": "81841db7de8ca593bbfbb35dab955784dff6a9b97c0d5cb4c9f959951384065b",
+    "m3_amendment_tag": "prereg-m3-native-amendment-a-20261106"
+  },
+  "weights_sha256": "a7cd8f929e1903d78a12a48efecab430209f18dc46cb96c3599a5980c63c423c",
+  "fixture_sha256": "8df49c6805a8f0d3933d9946d0122221a1c219577ac257f3a4ebafa8f3e9dbee",
+  "historical_sha256": "ce435b06acacb86ddf03df90b08e9efdc9488652fdeae3b8030e55a2beac533a",
+  "topology": [
+    {
+      "core_index": 0,
+      "logical_cpus": [
+        0
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 1,
+      "logical_cpus": [
+        1
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 2,
+      "logical_cpus": [
+        2
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 3,
+      "logical_cpus": [
+        3
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 4,
+      "logical_cpus": [
+        4
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 5,
+      "logical_cpus": [
+        5
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 6,
+      "logical_cpus": [
+        6
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 7,
+      "logical_cpus": [
+        7
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 8,
+      "logical_cpus": [
+        8
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 9,
+      "logical_cpus": [
+        9
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 10,
+      "logical_cpus": [
+        10
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 11,
+      "logical_cpus": [
+        11
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 12,
+      "logical_cpus": [
+        12
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 13,
+      "logical_cpus": [
+        13
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 14,
+      "logical_cpus": [
+        14
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 15,
+      "logical_cpus": [
+        15
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 16,
+      "logical_cpus": [
+        16
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 17,
+      "logical_cpus": [
+        17
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    }
+  ],
+  "power": {
+    "platform": "Windows-10-10.0.19045-SP0",
+    "processor": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+    "logical": 18,
+    "physical": 18,
+    "battery_percent": null,
+    "power_plugged": null,
+    "cpu_freq_mhz": {
+      "current": 3609.0,
+      "min": 0.0,
+      "max": 3609.0
+    },
+    "power_plan": "CH\u01afA \u0110\u1eccC: ng\u01b0\u1eddi d\u00f9ng t\u1ef1 ch\u1ea1y `powercfg /getactivescheme` v\u00e0 ghi v\u00e0o PROGRESS"
+  },
+  "images": {
+    "000000000009.jpg": "3b0bb6bebad60a3329f1e3484434872e86998aeb7750d779b308e4a064868c2c",
+    "000000000025.jpg": "9f016b98f31e4fe826910e56ee39fa0c2889f48d38cc5f4f6b6421c8c5fc7214"
+  },
+  "affinity": [
+    2
+  ],
+  "torch": "2.11.0+cu128",
+  "torchvision": "0.26.0+cu128",
+  "cuda": "12.8"
+}

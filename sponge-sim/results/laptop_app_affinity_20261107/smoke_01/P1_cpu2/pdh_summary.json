@@ -1,0 +1,135 @@
+{
+  "stages": {
+    "forward": {
+      "n": 64,
+      "counters": {
+        "Processor Frequency": {
+          "valid": 64,
+          "minimum": 1300.0,
+          "median": 1300.0,
+          "maximum": 1300.0,
+          "status_counts": {
+            "0/0": 64
+          }
+        },
+        "% Processor Performance": {
+          "valid": 64,
+          "minimum": 246.12343377088305,
+          "median": 247.43588467210537,
+          "maximum": 247.69495605097012,
+          "status_counts": {
+            "0/0": 64
+          }
+        },
+        "% Performance Limit": {
+          "valid": 64,
+          "minimum": 100.0,
+          "median": 100.0,
+          "maximum": 100.0,
+          "status_counts": {
+            "0/0": 64
+          }
+        },
+        "Performance Limit Flags": {
+          "valid": 64,
+          "minimum": 0.0,
+          "median": 0.0,
+          "maximum": 0.0,
+          "status_counts": {
+            "0/0": 64
+          }
+        },
+        "% Processor Time": {
+          "valid": 64,
+          "minimum": 99.65664318578517,
+          "median": 100.0,
+          "maximum": 100.0,
+          "status_counts": {
+            "0/0": 64
+          }
+        }
+      },
+      "wall_vs_reported_performance": {
+        "n": 64,
+        "spearman": -0.5483516483516482
+      },
+      "cpu_vs_reported_performance": {
+        "n": 64,
+        "spearman": -0.20126622112847944
+      },
+      "wall_vs_cpu": {
+        "n": 64,
+        "spearman": 0.3676400757398371
+      }
+    },
+    "total": {
+      "n": 64,
+      "counters": {
+        "Processor Frequency": {
+          "valid": 64,
+          "minimum": 1300.0,
+          "median": 1300.0,
+          "maximum": 1300.0,
+          "status_counts": {
+            "0/0": 64
+          }
+        },
+        "% Processor Performance": {
+          "valid": 64,
+          "minimum": 246.66404840455692,
+          "median": 247.37319338535798,
+          "maximum": 247.92722038489975,
+          "status_counts": {
+            "0/0": 64
+          }
+        },
+        "% Performance Limit": {
+          "valid": 64,
+          "minimum": 100.0,
+          "median": 100.0,
+          "maximum": 100.0,
+          "status_counts": {
+            "0/0": 64
+          }
+        },
+        "Performance Limit Flags": {
+          "valid": 64,
+          "minimum": 0.0,
+          "median": 0.0,
+          "maximum": 0.0,
+          "status_counts": {
+            "0/0": 64
+          }
+        },
+        "% Processor Time": {
+          "valid": 64,
+          "minimum": 100.0,
+          "median": 100.0,
+          "maximum": 100.0,
+          "status_counts": {
+            "0/0": 64
+          }
+        }
+      },
+      "wall_vs_reported_performance": {
+        "n": 64,
+        "spearman": -0.18365384615384614
+      },
+      "cpu_vs_reported_performance": {
+        "n": 64,
+        "spearman": -0.03778262891454979
+      },
+      "wall_vs_cpu": {
+        "n": 64,
+        "spearman": 0.5108092428841101
+      }
+    }
+  },
+  "pdh_read_duration_ms": {
+    "valid": 128,
+    "minimum": 0.0752,
+    "median": 0.0836,
+    "maximum": 0.1102
+  },
+  "limits": "PDH intervals include metadata/warmup; two images; correlated repeats; no exact clock or causal inference."
+}

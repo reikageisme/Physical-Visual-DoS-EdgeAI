@@ -1,0 +1,495 @@
+{
+  "smoke": true,
+  "complete": true,
+  "feasibility_pass": true,
+  "quality_pass": false,
+  "flags": 0,
+  "n_references": 4,
+  "pin_checks": [
+    true,
+    true
+  ],
+  "aa": {
+    "clean": {
+      "n_images": 2,
+      "geometric_ratio": 1.0060314817642257,
+      "mde_fraction": 0.046658337624483036
+    },
+    "attacked": {
+      "n_images": 2,
+      "geometric_ratio": 1.0007703766823333,
+      "mde_fraction": 0.009695341063148897
+    }
+  },
+  "contrasts": {
+    "nms_kernel": {
+      "n_images": 2,
+      "geometric_ratio": 49.33630050494825,
+      "ci95": [
+        42.29527121814356,
+        57.54947249210227
+      ],
+      "image_ids": [
+        "000000000009_inputs",
+        "000000000025_inputs"
+      ],
+      "clean_medians_ms": [
+        0.02673125,
+        0.0262140625
+      ],
+      "attacked_medians_ms": [
+        1.13060546875,
+        1.50860546875
+      ],
+      "mean_paired_delta_ms": 1.2931328125000001,
+      "delta_ci95": [
+        1.10387421875,
+        1.48239140625
+      ]
+    }
+  },
+  "counts": [
+    {
+      "wall_utc": 1794044706.484174,
+      "kind": "counts",
+      "image": "000000000009_inputs",
+      "arm": "clean",
+      "n_tau": 37,
+      "k": 6,
+      "kernel_n": 37,
+      "kernel_kept": 6,
+      "prediction_sha256": "1d11f13cb974343d132435d55b6dc2a04ffeeeee7f31280af10167b01730c3b9",
+      "proto_shape": [
+        32,
+        160,
+        160
+      ],
+      "kernel_boxes_sha256": "6100c027f654c1b13d99a777f119f966944d0477fd8bc9ea4cb568606548d227",
+      "kernel_scores_sha256": "e23373e71a7a1bff5c92cbff361e9f63211aa7e29f2c3bf3805b0ea0bed76347",
+      "kernel_indices_sha256": "3e56810ce9327d2057818c9e211296921fd13485b37df27f88a8b129ea9c5eef",
+      "kernel_iou": 0.45,
+      "endpoint": "nms_kernel"
+    },
+    {
+      "wall_utc": 1794044706.7131264,
+      "kind": "counts",
+      "image": "000000000009_inputs",
+      "arm": "attacked",
+      "n_tau": 2018,
+      "k": 202,
+      "kernel_n": 2018,
+      "kernel_kept": 202,
+      "prediction_sha256": "e232363009f2952f88ab61e4c7adee9546418c45b8f643da4333e521d0cd6203",
+      "proto_shape": [
+        32,
+        160,
+        160
+      ],
+      "kernel_boxes_sha256": "c82e1bcb24a5437a2ac0287abf2cb96abb2d974e650e02f3da55549690002b7a",
+      "kernel_scores_sha256": "903c60e0805e59c4e3b5db3b63a8b589a9f3ce032e4215ae3f465fb4fbd47d3e",
+      "kernel_indices_sha256": "1246365e9f858099a86b7ca3710f097a7e23049f95eec068237896d234daa15f",
+      "kernel_iou": 0.45,
+      "endpoint": "nms_kernel"
+    },
+    {
+      "wall_utc": 1794044719.9144883,
+      "kind": "counts",
+      "image": "000000000025_inputs",
+      "arm": "clean",
+      "n_tau": 18,
+      "k": 2,
+      "kernel_n": 18,
+      "kernel_kept": 2,
+      "prediction_sha256": "b138f5fd2f3cb292cb40035bd9b4a8af10c60cc496c372922f2714c4a02efd8c",
+      "proto_shape": [
+        32,
+        160,
+        160
+      ],
+      "kernel_boxes_sha256": "0715ed407d77ab8b820b829eda504e3dd820b8009ebe8cdd467222061637e9f6",
+      "kernel_scores_sha256": "34217939c95c97016eec9bc22fc9d60665c18e38f53e2dee5d94feaecbf2d9d2",
+      "kernel_indices_sha256": "b71ba5fb265ccd916eb5e253e08264f75f65053c56cc970a1507a1e71c00b15e",
+      "kernel_iou": 0.45,
+      "endpoint": "nms_kernel"
+    },
+    {
+      "wall_utc": 1794044720.1423516,
+      "kind": "counts",
+      "image": "000000000025_inputs",
+      "arm": "attacked",
+      "n_tau": 2406,
+      "k": 250,
+      "kernel_n": 2406,
+      "kernel_kept": 250,
+      "prediction_sha256": "4b3764c70d3391bbedbab79dda20ac332a8e2fb25ed5e1d6509f4c3a181d52bf",
+      "proto_shape": [
+        32,
+        160,
+        160
+      ],
+      "kernel_boxes_sha256": "f5b4d5c6f135fafc9ffc1d917abf9efc9e7e0eaf0345366fbd4cb9d81898e8c0",
+      "kernel_scores_sha256": "886fca0d8c38d7d3ec800659d968939c6e67601958463e6b9adab9af038b2cce",
+      "kernel_indices_sha256": "9c4ae34e4a90570d85cce8724d58115edb9998e73123bde86dc2ca5712c90278",
+      "kernel_iou": 0.45,
+      "endpoint": "nms_kernel"
+    }
+  ],
+  "references": [
+    {
+      "wall_utc": 1794044702.1775386,
+      "kind": "reference",
+      "block": "start",
+      "samples_ns": [
+        221040700,
+        223897400,
+        221401000,
+        218763800,
+        217787700,
+        228868600,
+        224421400,
+        222452100,
+        217490700,
+        221534900,
+        230907900,
+        232029600,
+        221629500,
+        221066700,
+        217753900
+      ],
+      "cpu_samples_ns": [
+        218750000,
+        218750000,
+        218750000,
+        218750000,
+        218750000,
+        234375000,
+        218750000,
+        203125000,
+        218750000,
+        218750000,
+        218750000,
+        218750000,
+        234375000,
+        203125000,
+        218750000
+      ],
+      "ratio": 1.0,
+      "flagged": false
+    },
+    {
+      "wall_utc": 1794044706.256477,
+      "kind": "reference",
+      "block": 0,
+      "samples_ns": [
+        213314000,
+        218934500,
+        220066100,
+        221585500,
+        224708100,
+        220435200,
+        213627300,
+        219335200,
+        231146500,
+        218511400,
+        219325800,
+        221483600,
+        219328700,
+        222732600,
+        215592800
+      ],
+      "cpu_samples_ns": [
+        218750000,
+        218750000,
+        218750000,
+        203125000,
+        218750000,
+        234375000,
+        203125000,
+        218750000,
+        234375000,
+        218750000,
+        218750000,
+        203125000,
+        218750000,
+        218750000,
+        203125000
+      ],
+      "ratio": 0.990070638982842,
+      "flagged": false
+    },
+    {
+      "wall_utc": 1794044719.695132,
+      "kind": "reference",
+      "block": 1,
+      "samples_ns": [
+        215272900,
+        218995500,
+        213649900,
+        224663100,
+        220261700,
+        214556400,
+        211245900,
+        212524900,
+        215046900,
+        217903300,
+        212560200,
+        225048100,
+        218108200,
+        218356100,
+        216364600
+      ],
+      "cpu_samples_ns": [
+        218750000,
+        203125000,
+        203125000,
+        203125000,
+        218750000,
+        218750000,
+        203125000,
+        218750000,
+        218750000,
+        203125000,
+        203125000,
+        218750000,
+        218750000,
+        203125000,
+        203125000
+      ],
+      "ratio": 0.9766614650784142,
+      "flagged": false
+    },
+    {
+      "wall_utc": 1794044734.4383936,
+      "kind": "reference",
+      "block": "end",
+      "samples_ns": [
+        216273000,
+        218283800,
+        212283900,
+        216469500,
+        216518200,
+        216728200,
+        213244300,
+        218664800,
+        221790300,
+        213686700,
+        223970900,
+        252240900,
+        270296000,
+        316731900,
+        403079000
+      ],
+      "cpu_samples_ns": [
+        218750000,
+        218750000,
+        203125000,
+        218750000,
+        203125000,
+        218750000,
+        187500000,
+        203125000,
+        234375000,
+        187500000,
+        218750000,
+        218750000,
+        250000000,
+        296875000,
+        343750000
+      ],
+      "ratio": 0.9853246599068589,
+      "flagged": false
+    }
+  ],
+  "raw_sha256": "10c89e8aadbbb94f0b6bfb2a7a85150d91a0913f19bebc02fe2f51c603627c90",
+  "scope": "Prepared CPU stage control; per-call estimate from fixed call count; no pipeline/service/additive claim.",
+  "endpoint": {
+    "name": "nms_kernel",
+    "calls_per_trial": 64,
+    "primary_units": "ms per call",
+    "raw_ns_units": "whole block",
+    "cpu_pdh_diagnostics_units": "raw whole blocks"
+  },
+  "stage_input_checks": [
+    {
+      "wall_utc": 1794044715.6447902,
+      "kind": "stage_input_check",
+      "image": "000000000009_inputs",
+      "arm": "clean",
+      "endpoint": "nms_kernel",
+      "before_sha256": [
+        "6100c027f654c1b13d99a777f119f966944d0477fd8bc9ea4cb568606548d227",
+        "e23373e71a7a1bff5c92cbff361e9f63211aa7e29f2c3bf3805b0ea0bed76347"
+      ],
+      "after_sha256": [
+        "6100c027f654c1b13d99a777f119f966944d0477fd8bc9ea4cb568606548d227",
+        "e23373e71a7a1bff5c92cbff361e9f63211aa7e29f2c3bf3805b0ea0bed76347"
+      ],
+      "unchanged": true
+    },
+    {
+      "wall_utc": 1794044715.6448333,
+      "kind": "stage_input_check",
+      "image": "000000000009_inputs",
+      "arm": "attacked",
+      "endpoint": "nms_kernel",
+      "before_sha256": [
+        "c82e1bcb24a5437a2ac0287abf2cb96abb2d974e650e02f3da55549690002b7a",
+        "903c60e0805e59c4e3b5db3b63a8b589a9f3ce032e4215ae3f465fb4fbd47d3e"
+      ],
+      "after_sha256": [
+        "c82e1bcb24a5437a2ac0287abf2cb96abb2d974e650e02f3da55549690002b7a",
+        "903c60e0805e59c4e3b5db3b63a8b589a9f3ce032e4215ae3f465fb4fbd47d3e"
+      ],
+      "unchanged": true
+    },
+    {
+      "wall_utc": 1794044730.1349413,
+      "kind": "stage_input_check",
+      "image": "000000000025_inputs",
+      "arm": "clean",
+      "endpoint": "nms_kernel",
+      "before_sha256": [
+        "0715ed407d77ab8b820b829eda504e3dd820b8009ebe8cdd467222061637e9f6",
+        "34217939c95c97016eec9bc22fc9d60665c18e38f53e2dee5d94feaecbf2d9d2"
+      ],
+      "after_sha256": [
+        "0715ed407d77ab8b820b829eda504e3dd820b8009ebe8cdd467222061637e9f6",
+        "34217939c95c97016eec9bc22fc9d60665c18e38f53e2dee5d94feaecbf2d9d2"
+      ],
+      "unchanged": true
+    },
+    {
+      "wall_utc": 1794044730.1349864,
+      "kind": "stage_input_check",
+      "image": "000000000025_inputs",
+      "arm": "attacked",
+      "endpoint": "nms_kernel",
+      "before_sha256": [
+        "f5b4d5c6f135fafc9ffc1d917abf9efc9e7e0eaf0345366fbd4cb9d81898e8c0",
+        "886fca0d8c38d7d3ec800659d968939c6e67601958463e6b9adab9af038b2cce"
+      ],
+      "after_sha256": [
+        "f5b4d5c6f135fafc9ffc1d917abf9efc9e7e0eaf0345366fbd4cb9d81898e8c0",
+        "886fca0d8c38d7d3ec800659d968939c6e67601958463e6b9adab9af038b2cce"
+      ],
+      "unchanged": true
+    }
+  ],
+  "cpu_diagnostics": {
+    "clean": {
+      "stages": {
+        "nms_kernel": {
+          "n_trials": 192,
+          "wall_median_ms": 1.6995,
+          "wall_max_ms": 2.2806,
+          "median_cpu_over_wall": 0.0,
+          "n_highwall": 0,
+          "highwall_fraction": 0.0,
+          "highwall_low_cpu_count": 0,
+          "highwall_low_cpu_share": null,
+          "highwall_trials": []
+        }
+      },
+      "references": [
+        {
+          "raw_line": 3,
+          "block": "start",
+          "wall_ratio": 1.0,
+          "median_cpu_over_wall": 0.9880262510106097
+        },
+        {
+          "raw_line": 4,
+          "block": 0,
+          "wall_ratio": 0.990070638982842,
+          "median_cpu_over_wall": 0.9973319376005311
+        },
+        {
+          "raw_line": 106,
+          "block": 1,
+          "wall_ratio": 0.9766614650784142,
+          "median_cpu_over_wall": 0.9615571237122236
+        },
+        {
+          "raw_line": 208,
+          "block": "end",
+          "wall_ratio": 0.9853246599068589,
+          "median_cpu_over_wall": 0.9381428443428774
+        }
+      ],
+      "interpretation": "Descriptive process CPU-time / wall-time; no CPU clock or scheduler trace; no clipping."
+    },
+    "attacked": {
+      "stages": {
+        "nms_kernel": {
+          "n_trials": 192,
+          "wall_median_ms": 95.31675,
+          "wall_max_ms": 1497.2858,
+          "median_cpu_over_wall": 0.9744506918648239,
+          "n_highwall": 1,
+          "highwall_fraction": 0.005208333333333333,
+          "highwall_low_cpu_count": 1,
+          "highwall_low_cpu_share": 1.0,
+          "highwall_trials": [
+            {
+              "image": "000000000009_inputs",
+              "rep": 17,
+              "label": "aa_A",
+              "wall_ns": 1497285800,
+              "process_cpu_ns": 78125000,
+              "cpu_over_wall": 0.052177747227683584
+            }
+          ]
+        }
+      },
+      "references": [
+        {
+          "raw_line": 3,
+          "block": "start",
+          "wall_ratio": 1.0,
+          "median_cpu_over_wall": 0.9880262510106097
+        },
+        {
+          "raw_line": 4,
+          "block": 0,
+          "wall_ratio": 0.990070638982842,
+          "median_cpu_over_wall": 0.9973319376005311
+        },
+        {
+          "raw_line": 106,
+          "block": 1,
+          "wall_ratio": 0.9766614650784142,
+          "median_cpu_over_wall": 0.9615571237122236
+        },
+        {
+          "raw_line": 208,
+          "block": "end",
+          "wall_ratio": 0.9853246599068589,
+          "median_cpu_over_wall": 0.9381428443428774
+        }
+      ],
+      "interpretation": "Descriptive process CPU-time / wall-time; no CPU clock or scheduler trace; no clipping."
+    }
+  },
+  "pdh_diagnostics": {
+    "clean": {
+      "stages": {},
+      "pdh_read_duration_ms": {
+        "valid": 192,
+        "minimum": 0.0237,
+        "median": 0.030350000000000002,
+        "maximum": 0.0815
+      },
+      "limits": "PDH intervals include metadata/warmup; two images; correlated repeats; no exact clock or causal inference."
+    },
+    "attacked": {
+      "stages": {},
+      "pdh_read_duration_ms": {
+        "valid": 192,
+        "minimum": 0.0596,
+        "median": 0.07615,
+        "maximum": 0.1074
+      },
+      "limits": "PDH intervals include metadata/warmup; two images; correlated repeats; no exact clock or causal inference."
+    }
+  }
+}

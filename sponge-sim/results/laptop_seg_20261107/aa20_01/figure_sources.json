@@ -1,0 +1,16 @@
+{
+  "status": "POSTHOC_DIAGNOSTIC_FIGURE",
+  "source_raw": "P1_cpu2/raw.jsonl",
+  "source_raw_sha256": "8a9db651f211057d2cd0ee36759064199684aa8ca118f8b9cbc1e705ec057632",
+  "selectors": [
+    "kind=reference; median(samples_ns)/first-reference median",
+    "kind=timing; stage; image; label; median(ns)"
+  ],
+  "script": "sponge-sim/studies/laptop_seg/audit_aa20.py",
+  "script_sha256": "de38cfb634d29d737b6d704d2f05df274eb88586ea9150e1d7935cc915ea557b",
+  "figures": {
+    "aa20_diagnostic.png": "d548df6fa46f99dc5a180311145435e0cee7f55f730b4f21d8df7187fef4e5a0",
+    "aa20_diagnostic.pdf": "f7e97e845250d04f8a78e028baa7e4db0deacc358db01f6296add94df1ebe6c1"
+  },
+  "visual_inspection": "PNG inspected; labels and gates visible"
+}

@@ -6,11 +6,12 @@ Bộ lọc mặc định: threshold == .01 và pre_nms_cap is None (không lấy
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 
 import numpy as np
 
-REPO = Path(__file__).resolve().parents[3]
+REPO = Path(os.environ.get('SPONGE_REPO_ROOT') or Path(__file__).resolve().parents[3])  # điện thoại: đặt SPONGE_REPO_ROOT
 COHORTS = {'OLD128': REPO / 'outputs/extended_q1_20261002', 'X1-500': REPO / 'outputs/x1_500img_20261018'}
 
 

@@ -1,0 +1,9 @@
+﻿2026-11-06T14:19:17.4381637+07:00
+{
+    "Name":  "12th Gen Intel(R) Core(TM) i7-12700K",
+    "NumberOfCores":  18,
+    "NumberOfLogicalProcessors":  18
+}
+name, driver_version
+NVIDIA GeForce RTX 5060 Ti, 617.42
+Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)

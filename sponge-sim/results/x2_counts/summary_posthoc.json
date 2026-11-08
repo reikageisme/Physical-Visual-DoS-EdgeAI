@@ -1,0 +1,67 @@
+{
+ "analysis": "X2 YOLO pre-NMS candidate counts (post hoc, read-only)",
+ "source": "outputs/x2_architecture_20261020",
+ "manifest": "aebe1f5f5ed2932b92c738449e7a12d5141b6c0c9a5b8e5ee4b3e009d9a3b71c",
+ "detectors": {
+  "yolov8n": {
+   "images": 100,
+   "weights_sha256": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36",
+   "clean_median": 95.5,
+   "patched_median": 104.0,
+   "ratio_mean": 1.0343322401671917,
+   "ratio_ci95": [
+    0.9901884754107918,
+    1.0798914120744152
+   ],
+   "pooled_mean_ratio_reported": 1.034332240167192
+  },
+  "yolov8s": {
+   "images": 100,
+   "weights_sha256": "1f47a78bf100391c2a140b7ac73a1caae18c32779be7d310658112f7ac9aa78a",
+   "clean_median": 93.0,
+   "patched_median": 98.5,
+   "ratio_mean": 1.0261953681683476,
+   "ratio_ci95": [
+    0.9791124390792034,
+    1.0782855009702625
+   ],
+   "pooled_mean_ratio_reported": 1.0261953681683476
+  },
+  "yolo11n": {
+   "images": 100,
+   "weights_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+   "clean_median": 93.5,
+   "patched_median": 96.0,
+   "ratio_mean": 1.0259116222646463,
+   "ratio_ci95": [
+    0.9896603013245664,
+    1.0657602280709393
+   ],
+   "pooled_mean_ratio_reported": 1.0259116222646463
+  },
+  "yolo11s": {
+   "images": 64,
+   "weights_sha256": null,
+   "clean_median": 83.5,
+   "patched_median": 85.0,
+   "ratio_mean": 1.0214588472530493,
+   "ratio_ci95": [
+    0.9624245334903523,
+    1.0830529736077112
+   ],
+   "pooled_mean_ratio_reported": 1.0214588472530495
+  },
+  "yolov12n": {
+   "images": 64,
+   "weights_sha256": null,
+   "clean_median": 79.5,
+   "patched_median": 89.0,
+   "ratio_mean": 1.0360324400256158,
+   "ratio_ci95": [
+    0.9753333705992827,
+    1.099386744681726
+   ],
+   "pooled_mean_ratio_reported": 1.036032440025616
+  }
+ }
+}

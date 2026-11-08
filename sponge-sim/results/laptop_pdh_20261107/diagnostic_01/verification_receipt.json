@@ -1,0 +1,18 @@
+{
+  "tag": "prereg-laptop-pdh-20261107",
+  "commit": "192484fb32f96dbd2171cbeffacfb61eaacd4780",
+  "raw_sha256": "fcb58279ec5ba5699930b540b48c577e3702c842bacd481c5906323424102137",
+  "lock_sha256": "8b7324a550be77bc57cc0d931776e695b793fb9669820d9eed94401529c099f9",
+  "tagged_primary_source_bytes_match": true,
+  "rows": 138,
+  "timing_rows": 128,
+  "complete": true,
+  "not_a_qualification_campaign": true,
+  "artifacts_sha256": {
+    "manifest.json": "d6d22de20ad69af42dcd3a1827d300bceb22e16df8344bbb07ca97cbc51c56ff",
+    "raw.jsonl": "fcb58279ec5ba5699930b540b48c577e3702c842bacd481c5906323424102137",
+    "smoke_summary.json": "422c7c7e89e2dc8bb5e605712cb4092d4a361d2d1db9178b975f5a43e3f84bf9",
+    "cpu_summary.json": "ea025d49c051ce47e70e8d1ffe50686b3970171966125176a16be47cf18a35b4",
+    "pdh_summary.json": "baf9ec9f8c6f0f01076c1670812a648fad054df9a13d3b93234bdc9bb2b7156e"
+  }
+}

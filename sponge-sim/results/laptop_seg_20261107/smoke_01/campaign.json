@@ -1,0 +1,7 @@
+{
+  "tag": "prereg-laptop-seg-smoke-20261107",
+  "commit": "9cafdd8548dcd794da8c060619cf187daf45158f",
+  "lock_sha256": "2442fb61aeac253b945ea69a1f6a0e5eb93a886c7560fbb992d33dd1441cdbf2",
+  "user_idle": "User authorized experiment; laptop AC and idle confirmed 2026-11-07",
+  "smoke": true
+}

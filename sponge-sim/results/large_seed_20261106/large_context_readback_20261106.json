@@ -1,0 +1,41 @@
+{
+  "utc": "2026-11-06T15:25:10.137528+00:00",
+  "root_done": true,
+  "images_verified": 1500,
+  "manifests": {
+    "stage1000/v8/manifest.json": "5e895fb5360319fd7ff74829e322234e869fde9c3daa936fdba7910c19a99981",
+    "stage1000/v11/manifest.json": "2d23dbd16674f8ff69255709519b0310902d613f40579b5a3c9ab98ca6cb9fce",
+    "stage1000/y26_many/manifest.json": "2cc5817dab861c78cc839eb65d92c37e686a4b13a1dfd01e0c20f7d37b81c5d4",
+    "stage1000/y26_native/manifest.json": "4858eb0230391b43aa26d34d9dc98962329bbd8d05f1d569022c95e2e7a98292",
+    "stage1500/v8/manifest.json": "e4a28eb5332486b09d869a3ba099ae08943c96993ae7041ab8ac95ffb72d1b7b",
+    "stage1500/v11/manifest.json": "546f938f577aad2cd1e9b5336800d61ffd0fbcc3a9013d3f753e0fcf275c45e3",
+    "stage1500/y26_many/manifest.json": "28b2da6539d1922932854734bfc75c1066b9afb44c139a2d3b732ad0d4adb4d0",
+    "stage1500/y26_native/manifest.json": "02b87c957d8365ddfac561a0ed5e6e8084df24df9c3a06543eb0eb9d468cc087"
+  },
+  "weights": {
+    "yolo26n-seg.pt": "361fbfabab285c3237700b6bb91d7ecfa602cd945fffda8dbe1242829b71e73f",
+    "yolov8n-seg.pt": "a7cd8f929e1903d78a12a48efecab430209f18dc46cb96c3599a5980c63c423c",
+    "yolo11n-seg.pt": "55ed65c56c91713d23e8402371c6c49a6fd84f257f7dce452e8d70e41dcbe152"
+  },
+  "provenance": {
+    "cohort_sha256": "a06a2a3fb16dcd6d982233e2373a95c5e8f6cd48c963f33cdc54f509bcb68026",
+    "lock_sha256": "1e3d9f4fd0d863c560cf669ce6f159a4a933b3a08e86e00b561a0a94df0bb3af",
+    "engine_sha256": "20f1675a2ed71cbbab316f60bd1c123a1e68691f639bb55ecbc912f0ed390e13",
+    "protocol_sha256": "124d1b3eddffae0efd3690dcf1aeb3ff70e2f05fcf4943ad8295d5c619967a4d",
+    "runner_sha256": "a2d567bc7b08967f2256f17a6673319d59419a3c09ffb04ba35d79e5600c914f",
+    "commit": "e3222a26699bcb4b59d09240e769433e6af4aece",
+    "tag": "prereg-nested1500-resume-amendment-a-20261106"
+  },
+  "source_hashes": {
+    "large_run.py": "a2d567bc7b08967f2256f17a6673319d59419a3c09ffb04ba35d79e5600c914f",
+    "engine.py": "20f1675a2ed71cbbab316f60bd1c123a1e68691f639bb55ecbc912f0ed390e13",
+    "large_cohort1500.json": "a06a2a3fb16dcd6d982233e2373a95c5e8f6cd48c963f33cdc54f509bcb68026",
+    "large_execution_lock.json": "1e3d9f4fd0d863c560cf669ce6f159a4a933b3a08e86e00b561a0a94df0bb3af"
+  },
+  "replay_script_sha256": "001a9b2d5bb8314944d4ebd5150bdc693db4aae297729402bfd0c2dcc54293a6",
+  "installed_head_source_sha256": "667a5dc59e89d7a6f042fb94f50cf36456eae4b8e044a867dac9bfb41a5f62ad",
+  "torch": "2.11.0+cu128",
+  "torchvision": "0.26.0+cu128",
+  "ultralytics": "8.4.203",
+  "note": "Post-run readback, not a new attack or timing experiment. Does not replace saved-input forward replay."
+}

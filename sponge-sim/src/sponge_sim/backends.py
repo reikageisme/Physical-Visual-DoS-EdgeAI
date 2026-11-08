@@ -73,7 +73,12 @@ class Ultra(Backend):
         cls_scores = torch.zeros(nc, n)
         if n:
             cls_scores[classes.long(), torch.arange(n)] = scores
-        return (torch.cat([xywh.T, cls_scores], 0)[None].contiguous(), nc)
+        head = torch.cat([xywh.T, cls_scores], 0)[None].contiguous()
+        if n == 6:
+            # ultralytics coi tensor có shape[-1] == 6 là đầu ra end-to-end [N, 6] và trả về không kèm chỉ số.
+            # Thêm 1 cột điểm 0: bị loại bởi ngưỡng conf > 0.0 nên không đổi kết quả; sai lệch với E6 (khai trong DEVIATIONS).
+            head = torch.cat([head, torch.zeros(1, head.shape[1], 1)], 2).contiguous()
+        return (head, nc)
 
     def run(self, p, iou):
         from ultralytics.utils.nms import non_max_suppression

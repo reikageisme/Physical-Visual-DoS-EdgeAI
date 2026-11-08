@@ -1,0 +1,544 @@
+{
+ "torch": "2.11.0+cu128",
+ "device": "NVIDIA GeForce RTX 5060 Ti",
+ "models": {
+  "yolov8n-seg.pt": {
+   "m1_gpu": {
+    "stages_ms": {
+     "rFalse|K0": {
+      "total_med": 5.48305,
+      "mask_med": 0.0067
+     },
+     "rFalse|K10": {
+      "total_med": 5.795,
+      "mask_med": 0.24105
+     },
+     "rFalse|K50": {
+      "total_med": 5.7901,
+      "mask_med": 0.2703
+     },
+     "rFalse|K100": {
+      "total_med": 5.823,
+      "mask_med": 0.32765
+     },
+     "rFalse|K300": {
+      "total_med": 6.0912500000000005,
+      "mask_med": 0.57785
+     },
+     "rTrue|K0": {
+      "total_med": 5.428850000000001,
+      "mask_med": 0.0068
+     },
+     "rTrue|K10": {
+      "total_med": 5.8439499999999995,
+      "mask_med": 0.36995
+     },
+     "rTrue|K50": {
+      "total_med": 6.57175,
+      "mask_med": 1.1675
+     },
+     "rTrue|K100": {
+      "total_med": 7.70555,
+      "mask_med": 2.307
+     },
+     "rTrue|K300": {
+      "total_med": 11.9146,
+      "mask_med": 6.48415
+     }
+    },
+    "total_ratio": {
+     "rFalse|K50": {
+      "ratio": 1.0067401787917238,
+      "ci95": [
+       1.0017949876126513,
+       1.0527991717811072
+      ],
+      "detected": false
+     },
+     "rFalse|K100": {
+      "ratio": 1.00553592872962,
+      "ci95": [
+       0.9973439072984477,
+       1.0162416701022605
+      ],
+      "detected": false
+     },
+     "rFalse|K300": {
+      "ratio": 1.0494168463469866,
+      "ci95": [
+       1.0406276014649432,
+       1.0639079077242608
+      ],
+      "detected": true
+     },
+     "rTrue|K50": {
+      "ratio": 1.1248016050029863,
+      "ci95": [
+       1.1169900727149882,
+       1.1284506306683397
+      ],
+      "detected": true
+     },
+     "rTrue|K100": {
+      "ratio": 1.3173615584419849,
+      "ci95": [
+       1.3115417118334565,
+       1.3214475082710349
+      ],
+      "detected": true
+     },
+     "rTrue|K300": {
+      "ratio": 2.039184520008604,
+      "ci95": [
+       2.0326400460362155,
+       2.043542474128051
+      ],
+      "detected": true
+     }
+    },
+    "frac_mask": {
+     "rFalse|K50": 0.046683131552132086,
+     "rFalse|K100": 0.05626824660827751,
+     "rFalse|K300": 0.09486558588138723,
+     "rTrue|K50": 0.17765435386312625,
+     "rTrue|K100": 0.2993945922095113,
+     "rTrue|K300": 0.5442188575361321
+    },
+    "mde_total_pct": {
+     "rFalse": 0.9109792977175427,
+     "rTrue": 0.2806360104951602
+    },
+    "k_star": {
+     "rFalse": 300,
+     "rTrue": 50
+    }
+   },
+   "m3": [
+    {
+     "name": "000000000009.jpg",
+     "k_clean": 6,
+     "k_best": 217
+    },
+    {
+     "name": "000000000025.jpg",
+     "k_clean": 2,
+     "k_best": 221
+    },
+    {
+     "name": "000000000030.jpg",
+     "k_clean": 1,
+     "k_best": 267
+    },
+    {
+     "name": "000000000034.jpg",
+     "k_clean": 1,
+     "k_best": 148
+    },
+    {
+     "name": "000000000036.jpg",
+     "k_clean": 2,
+     "k_best": 273
+    },
+    {
+     "name": "000000000042.jpg",
+     "k_clean": 4,
+     "k_best": 297
+    },
+    {
+     "name": "000000000049.jpg",
+     "k_clean": 7,
+     "k_best": 241
+    },
+    {
+     "name": "000000000061.jpg",
+     "k_clean": 3,
+     "k_best": 234
+    },
+    {
+     "name": "000000000064.jpg",
+     "k_clean": 3,
+     "k_best": 300
+    },
+    {
+     "name": "000000000071.jpg",
+     "k_clean": 4,
+     "k_best": 241
+    },
+    {
+     "name": "000000000072.jpg",
+     "k_clean": 2,
+     "k_best": 233
+    },
+    {
+     "name": "000000000073.jpg",
+     "k_clean": 2,
+     "k_best": 199
+    },
+    {
+     "name": "000000000074.jpg",
+     "k_clean": 6,
+     "k_best": 272
+    },
+    {
+     "name": "000000000077.jpg",
+     "k_clean": 5,
+     "k_best": 269
+    },
+    {
+     "name": "000000000078.jpg",
+     "k_clean": 3,
+     "k_best": 251
+    },
+    {
+     "name": "000000000081.jpg",
+     "k_clean": 1,
+     "k_best": 300
+    },
+    {
+     "name": "000000000086.jpg",
+     "k_clean": 2,
+     "k_best": 283
+    },
+    {
+     "name": "000000000089.jpg",
+     "k_clean": 9,
+     "k_best": 300
+    },
+    {
+     "name": "000000000092.jpg",
+     "k_clean": 2,
+     "k_best": 298
+    },
+    {
+     "name": "000000000094.jpg",
+     "k_clean": 2,
+     "k_best": 300
+    },
+    {
+     "name": "000000000109.jpg",
+     "k_clean": 4,
+     "k_best": 263
+    },
+    {
+     "name": "000000000110.jpg",
+     "k_clean": 17,
+     "k_best": 300
+    },
+    {
+     "name": "000000000113.jpg",
+     "k_clean": 7,
+     "k_best": 282
+    },
+    {
+     "name": "000000000127.jpg",
+     "k_clean": 5,
+     "k_best": 300
+    },
+    {
+     "name": "000000000133.jpg",
+     "k_clean": 2,
+     "k_best": 300
+    },
+    {
+     "name": "000000000136.jpg",
+     "k_clean": 4,
+     "k_best": 300
+    },
+    {
+     "name": "000000000138.jpg",
+     "k_clean": 10,
+     "k_best": 300
+    },
+    {
+     "name": "000000000142.jpg",
+     "k_clean": 3,
+     "k_best": 300
+    },
+    {
+     "name": "000000000143.jpg",
+     "k_clean": 5,
+     "k_best": 255
+    },
+    {
+     "name": "000000000144.jpg",
+     "k_clean": 3,
+     "k_best": 214
+    }
+   ],
+   "m3_k_best_median": 272.5,
+   "m3_k_clean_median": 3.0,
+   "m3_frac_reach_kstar": 1.0,
+   "m3_frac_reach_100": 1.0,
+   "m3_frac_reach_300": 0.3333333333333333
+  },
+  "yolo11n-seg.pt": {
+   "m1_gpu": {
+    "stages_ms": {
+     "rFalse|K0": {
+      "total_med": 6.78675,
+      "mask_med": 0.0068
+     },
+     "rFalse|K10": {
+      "total_med": 7.0881,
+      "mask_med": 0.2708
+     },
+     "rFalse|K50": {
+      "total_med": 7.13765,
+      "mask_med": 0.2784
+     },
+     "rFalse|K100": {
+      "total_med": 7.7029499999999995,
+      "mask_med": 0.34065
+     },
+     "rFalse|K300": {
+      "total_med": 7.9829,
+      "mask_med": 0.58535
+     },
+     "rTrue|K0": {
+      "total_med": 7.44145,
+      "mask_med": 0.00645
+     },
+     "rTrue|K10": {
+      "total_med": 7.835850000000001,
+      "mask_med": 0.38954999999999995
+     },
+     "rTrue|K50": {
+      "total_med": 8.486450000000001,
+      "mask_med": 1.1916
+     },
+     "rTrue|K100": {
+      "total_med": 9.708300000000001,
+      "mask_med": 2.35075
+     },
+     "rTrue|K300": {
+      "total_med": 13.937349999999999,
+      "mask_med": 6.518
+     }
+    },
+    "total_ratio": {
+     "rFalse|K50": {
+      "ratio": 1.0038578233252804,
+      "ci95": [
+       0.9889954050560235,
+       1.0382574277779533
+      ],
+      "detected": false
+     },
+     "rFalse|K100": {
+      "ratio": 1.0720301652516253,
+      "ci95": [
+       0.9975668344564266,
+       1.1016484973445113
+      ],
+      "detected": false
+     },
+     "rFalse|K300": {
+      "ratio": 1.1231910352687746,
+      "ci95": [
+       1.1054130333452992,
+       1.136710166982167
+      ],
+      "detected": true
+     },
+     "rTrue|K50": {
+      "ratio": 1.0837879074051509,
+      "ci95": [
+       1.0779353733181594,
+       1.0864513577066288
+      ],
+      "detected": true
+     },
+     "rTrue|K100": {
+      "ratio": 1.240616542859428,
+      "ci95": [
+       1.2325459055966408,
+       1.2434412847692269
+      ],
+      "detected": true
+     },
+     "rTrue|K300": {
+      "ratio": 1.7726259903760413,
+      "ci95": [
+       1.764646086273304,
+       1.7870382370903972
+      ],
+      "detected": true
+     }
+    },
+    "frac_mask": {
+     "rFalse|K50": 0.03900443423255553,
+     "rFalse|K100": 0.044223317040873955,
+     "rFalse|K300": 0.07332548322038357,
+     "rTrue|K50": 0.1404120686506136,
+     "rTrue|K100": 0.24213817043148644,
+     "rTrue|K300": 0.4676642259827012
+    },
+    "mde_total_pct": {
+     "rFalse": 0.6139992795117318,
+     "rTrue": 0.2798492687133182
+    },
+    "k_star": {
+     "rFalse": 300,
+     "rTrue": 50
+    }
+   },
+   "m3": [
+    {
+     "name": "000000000009.jpg",
+     "k_clean": 3,
+     "k_best": 237
+    },
+    {
+     "name": "000000000025.jpg",
+     "k_clean": 2,
+     "k_best": 296
+    },
+    {
+     "name": "000000000030.jpg",
+     "k_clean": 3,
+     "k_best": 300
+    },
+    {
+     "name": "000000000034.jpg",
+     "k_clean": 1,
+     "k_best": 219
+    },
+    {
+     "name": "000000000036.jpg",
+     "k_clean": 2,
+     "k_best": 300
+    },
+    {
+     "name": "000000000042.jpg",
+     "k_clean": 1,
+     "k_best": 300
+    },
+    {
+     "name": "000000000049.jpg",
+     "k_clean": 8,
+     "k_best": 239
+    },
+    {
+     "name": "000000000061.jpg",
+     "k_clean": 4,
+     "k_best": 296
+    },
+    {
+     "name": "000000000064.jpg",
+     "k_clean": 2,
+     "k_best": 300
+    },
+    {
+     "name": "000000000071.jpg",
+     "k_clean": 3,
+     "k_best": 300
+    },
+    {
+     "name": "000000000072.jpg",
+     "k_clean": 2,
+     "k_best": 278
+    },
+    {
+     "name": "000000000073.jpg",
+     "k_clean": 2,
+     "k_best": 272
+    },
+    {
+     "name": "000000000074.jpg",
+     "k_clean": 6,
+     "k_best": 300
+    },
+    {
+     "name": "000000000077.jpg",
+     "k_clean": 6,
+     "k_best": 300
+    },
+    {
+     "name": "000000000078.jpg",
+     "k_clean": 2,
+     "k_best": 300
+    },
+    {
+     "name": "000000000081.jpg",
+     "k_clean": 1,
+     "k_best": 300
+    },
+    {
+     "name": "000000000086.jpg",
+     "k_clean": 3,
+     "k_best": 285
+    },
+    {
+     "name": "000000000089.jpg",
+     "k_clean": 8,
+     "k_best": 300
+    },
+    {
+     "name": "000000000092.jpg",
+     "k_clean": 2,
+     "k_best": 300
+    },
+    {
+     "name": "000000000094.jpg",
+     "k_clean": 3,
+     "k_best": 270
+    },
+    {
+     "name": "000000000109.jpg",
+     "k_clean": 4,
+     "k_best": 300
+    },
+    {
+     "name": "000000000110.jpg",
+     "k_clean": 17,
+     "k_best": 300
+    },
+    {
+     "name": "000000000113.jpg",
+     "k_clean": 8,
+     "k_best": 300
+    },
+    {
+     "name": "000000000127.jpg",
+     "k_clean": 5,
+     "k_best": 300
+    },
+    {
+     "name": "000000000133.jpg",
+     "k_clean": 0,
+     "k_best": 300
+    },
+    {
+     "name": "000000000136.jpg",
+     "k_clean": 4,
+     "k_best": 300
+    },
+    {
+     "name": "000000000138.jpg",
+     "k_clean": 8,
+     "k_best": 300
+    },
+    {
+     "name": "000000000142.jpg",
+     "k_clean": 7,
+     "k_best": 300
+    },
+    {
+     "name": "000000000143.jpg",
+     "k_clean": 6,
+     "k_best": 300
+    },
+    {
+     "name": "000000000144.jpg",
+     "k_clean": 2,
+     "k_best": 300
+    }
+   ],
+   "m3_k_best_median": 300.0,
+   "m3_k_clean_median": 3.0,
+   "m3_frac_reach_kstar": 1.0,
+   "m3_frac_reach_100": 1.0,
+   "m3_frac_reach_300": 0.7
+  }
+ }
+}

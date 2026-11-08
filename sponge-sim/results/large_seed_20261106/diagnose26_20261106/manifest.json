@@ -1,0 +1,23 @@
+{
+  "images": [
+    "000000000009.jpg",
+    "000000000025.jpg",
+    "000000000030.jpg",
+    "000000000034.jpg"
+  ],
+  "budget": {
+    "steps": 100,
+    "eps": 0.06274509803921569,
+    "alpha": 0.00784313725490196
+  },
+  "weights": {
+    "yolov8n-seg.pt": "a7cd8f929e1903d78a12a48efecab430209f18dc46cb96c3599a5980c63c423c",
+    "yolo26n-seg.pt": "361fbfabab285c3237700b6bb91d7ecfa602cd945fffda8dbe1242829b71e73f"
+  },
+  "engine_sha256": "20f1675a2ed71cbbab316f60bd1c123a1e68691f639bb55ecbc912f0ed390e13",
+  "provenance": {
+    "tag": "prereg-diag26-20261106",
+    "commit": "cbaeebeac9ecc646429f988fb5934d0c40b99928",
+    "script_sha256": "f2aec0b0898523a72c78f0fc419a2e635cf4c15a58d8db94eb9707ba88256135"
+  }
+}

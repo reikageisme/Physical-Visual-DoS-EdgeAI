@@ -1,0 +1,12 @@
+{
+  "scope": "OPEN_ADD_CLOSE_ONLY_NO_INFERENCE_TIMING",
+  "cpu": 2,
+  "counters": [
+    "Processor Frequency",
+    "% Processor Performance",
+    "% Performance Limit",
+    "Performance Limit Flags",
+    "% Processor Time"
+  ],
+  "all_open_add_pass": true
+}

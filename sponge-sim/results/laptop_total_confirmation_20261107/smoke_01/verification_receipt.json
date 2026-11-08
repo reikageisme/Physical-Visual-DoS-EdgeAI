@@ -1,0 +1,20 @@
+{
+  "tag": "prereg-laptop-total-confirmation-20261107",
+  "commit": "6748a891fb91384164e5c3c9bf8bec6d7ef13732",
+  "tagged_primary_source_bytes_match": true,
+  "lock_sha256": "32b135b3f9e37159b27e2d194139632041cb68d11d0805a30e6bb2350b5e7a70",
+  "raw_sha256": "1f90d5d125076e6fea8873d16a5cd55a4dea7f3daf4de43066fd2c203ddf926c",
+  "complete": true,
+  "quality_pass": false,
+  "flags": 0,
+  "aa_mde": {
+    "clean": 0.4122358801622351,
+    "attacked": 0.04656019969245516
+  },
+  "timings": 384,
+  "rows": 398,
+  "app_applied": 48,
+  "app_restored": 48,
+  "journal_sha256": "7a2967b199df8299ac986232525538666d6b53ba3868b95d054c501659b42861",
+  "elapsed_raw_s": 266.79840660095215
+}

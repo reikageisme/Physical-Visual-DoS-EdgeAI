@@ -1,0 +1,37 @@
+{
+  "sponge-sim/results/laptop_defense_20261107/family_analysis.json": {
+    "sha256": "32dfd609366996d2d2d0d0afed3c04a8a30d6f6c2c41d088faa40e1cc9b05f26"
+  },
+  "sponge-sim/results/laptop_defense_20261107/pre300/full_01/P1_cpu2/defense_summary.json": {
+    "sha256": "78baf261f9f0c773ab75122b8b47ccf4f57a0d0516cca58f5f9475bfbdade2e7"
+  },
+  "sponge-sim/results/laptop_defense_20261107/out50/smoke_01/P1_cpu2/defense_summary.json": {
+    "sha256": "c0ba7cbbe0d477e3af4e1703b425d06e46733d74a2d90d2fb1220e235c1131f5"
+  },
+  "sponge-sim/results/laptop_defense_20261107/pre300/full_01/P1_cpu2/raw.jsonl": {
+    "sha256": "afbc88b2723f0396d6f9e12552ce5580617edf82dcde4d5c759d5f635a62487a"
+  },
+  "sponge-sim/results/laptop_defense_20261107/out50/smoke_01/P1_cpu2/raw.jsonl": {
+    "sha256": "8a31e711b340c40cb0dbe4583b063430c16ad0a5d133c8c75be50ea247e75731"
+  },
+  "selectors": {
+    "pre300": [
+      "quality_pass",
+      "aa",
+      "contrasts.total",
+      "counts",
+      "cpu_diagnostics"
+    ],
+    "family": [
+      "pre300.raw_p",
+      "pre300.holm_p",
+      "pre300.reduction_percent",
+      "out50.full_status"
+    ],
+    "out50": [
+      "feasibility_pass",
+      "flags",
+      "references"
+    ]
+  }
+}

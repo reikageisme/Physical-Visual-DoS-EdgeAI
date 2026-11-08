@@ -1,0 +1,30 @@
+{
+  "clean.pt": {
+    "bytes": 35435535,
+    "sha256": "0bd25821d2abb28d482dbf6ef74eeae3a6be8065c1afe475ef44943d313e3d09"
+  },
+  "head_source_20261106.txt": {
+    "bytes": 91114,
+    "sha256": "695acf49e63c1b454c3ed5a93604527eb253daa3edb9e78e103ad00296e579f4"
+  },
+  "manifest.json": {
+    "bytes": 732,
+    "sha256": "464a1d79eb3f8fd88d75d1ace2d95cbd3d995f3ec2e164e1c6e1df078a18205c"
+  },
+  "raw.jsonl": {
+    "bytes": 4753,
+    "sha256": "6154356baaffc276d518d02ff48d92bc6d42d8faa6a69f0783883bc37b7c48c3"
+  },
+  "self26_many.pt": {
+    "bytes": 35435781,
+    "sha256": "299d9824457837819f6aa03a3791c627c501d1a71e1f15d2039e54005504e199"
+  },
+  "self26_native.pt": {
+    "bytes": 35435799,
+    "sha256": "06e23667cfc68c3cb83e8e993229785002ce8863c649e5bfb756f973b530fa2f"
+  },
+  "transfer_from_v8.pt": {
+    "bytes": 35435826,
+    "sha256": "e60c2409dd54471c43f9a971113441bb1d47fbe1d1e5f2273d4d20c3c0abdb6f"
+  }
+}

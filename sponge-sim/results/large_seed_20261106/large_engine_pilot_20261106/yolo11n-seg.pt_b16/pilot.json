@@ -1,0 +1,39 @@
+{
+  "model": "yolo11n-seg.pt",
+  "mode": "many",
+  "provenance": {
+    "pilot_sha256": "64c5e7d2d2196329f40431db32d8c9938d2b61085e2e20abc6bbd3c093b39dfb",
+    "engine_sha256": "20f1675a2ed71cbbab316f60bd1c123a1e68691f639bb55ecbc912f0ed390e13",
+    "tag": "qa-large-seed-engine-20261106",
+    "commit": "63d8504ae4f5a3ead4b95897edd9c55c233845dd"
+  },
+  "batch": 16,
+  "results": [
+    {
+      "engine": "eager",
+      "seconds": 8.296999999998661,
+      "seconds_per_image": 0.5185624999999163,
+      "batch": 16,
+      "cosine_one_step": 0.9999995231628418,
+      "finite": true,
+      "max_delta": 0.0627451241016388,
+      "peak_reserved_bytes": 5398069248,
+      "peak_allocated_bytes": 5254255616,
+      "eligible": true
+    },
+    {
+      "engine": "graph",
+      "seconds": 8.03099999999904,
+      "seconds_per_image": 0.50193749999994,
+      "batch": 16,
+      "cosine_one_step": 0.9999993443489075,
+      "finite": true,
+      "max_delta": 0.0627451241016388,
+      "peak_reserved_bytes": 10668212224,
+      "peak_allocated_bytes": 5562865152,
+      "eligible": true
+    }
+  ],
+  "weights_sha256": "55ed65c56c91713d23e8402371c6c49a6fd84f257f7dce452e8d70e41dcbe152",
+  "torch": "2.11.0+cu128"
+}

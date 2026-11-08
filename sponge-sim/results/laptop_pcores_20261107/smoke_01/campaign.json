@@ -1,0 +1,7 @@
+{
+  "tag": "prereg-laptop-pcores-20261107",
+  "commit": "6c261995d580a8bf06d02423ff4c086c4579069f",
+  "lock_sha256": "ce19ed53b62c6c6138896c576befa4af2144a91333fc3fc3548ce1d20c793f22",
+  "user_idle": "Standing continuous CPU experimental authorization; AC and local idle declaration continues; fixed two-P-core smoke and conditional full",
+  "smoke": true
+}

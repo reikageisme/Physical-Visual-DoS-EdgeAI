@@ -1,0 +1,10 @@
+{
+  "artifact_hashes_checked": 375,
+  "native_counts_verified": 1000,
+  "images_budget_verified": 1000,
+  "max_saved_delta": 0.0627451241016388,
+  "source_count_replays": 8000,
+  "mismatch_count": 0,
+  "mismatches": [],
+  "note": "Float32 delta reconstruction and fresh GPU kernels can differ from original inputs/inference by rounding. Any mismatch retained; no raw record changed."
+}

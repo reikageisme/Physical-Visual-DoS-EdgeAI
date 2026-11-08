@@ -1,0 +1,9 @@
+{
+  "archive_sha256": "128ac014a6f7e41fa27c9acc3a6569cf01d3f908c268047ad5eef30e081b4fd6",
+  "zip_crc_pass": true,
+  "n_files": 183,
+  "replay_input_hashes_pass": true,
+  "weights_hashes_pass": true,
+  "extracted_non_tensor_dir": "D:\\Sponge-patch-study\\_provenance\\codex_gpu_20261106",
+  "note": "Tensor inputs, native YOLO26 outputs and pretrained weights retained inside verified local ZIP."
+}

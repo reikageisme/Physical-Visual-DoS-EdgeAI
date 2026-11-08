@@ -1,0 +1,7 @@
+{
+  "tag": "prereg-laptop-app-affinity-20261107",
+  "commit": "5e8df4f5fed8130a6ce40b5d2a40b1552199ee78",
+  "lock_sha256": "0699e4d2fbe306cb0be3df0b7e3e4bfdf23c94ec6d442ab9edd48464570784f9",
+  "user_idle": "User standing authorization covers fixed full after smoke pass; AC and idle declaration continues",
+  "smoke": false
+}

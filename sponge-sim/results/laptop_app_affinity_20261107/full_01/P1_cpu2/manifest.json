@@ -1,0 +1,308 @@
+{
+  "experiment": "LAPTOP-APP-AFFINITY-FULL",
+  "smoke": false,
+  "profile": "P1_cpu2",
+  "cpu_set": [
+    2
+  ],
+  "config": {
+    "n_images": 20,
+    "repeats": 16,
+    "global_warmup": 20,
+    "reference_warmup": 3,
+    "reference_samples": 15,
+    "warmup_per_image": 2,
+    "pin_seconds": 3,
+    "settle_s": 60,
+    "between_profiles_s": 60,
+    "worker_timeout_s": 1800,
+    "smoke": false,
+    "experiment": "LAPTOP-APP-AFFINITY-FULL",
+    "max_reference_flags": 2,
+    "max_mde_fraction": 0.01,
+    "qos": "high",
+    "capture_process_cpu": true,
+    "capture_pdh": true,
+    "priority": "above_normal"
+  },
+  "lock_sha256": "0699e4d2fbe306cb0be3df0b7e3e4bfdf23c94ec6d442ab9edd48464570784f9",
+  "priority_before": 32,
+  "priority_start": 32768,
+  "tag": "prereg-laptop-app-affinity-20261107",
+  "prereg_commit": "5e8df4f5fed8130a6ce40b5d2a40b1552199ee78",
+  "hardware": [
+    {
+      "core_index": 0,
+      "logical_cpus": [
+        0,
+        1
+      ],
+      "efficiency_class": 1,
+      "smt": true,
+      "kind": "P"
+    },
+    {
+      "core_index": 1,
+      "logical_cpus": [
+        2,
+        3
+      ],
+      "efficiency_class": 1,
+      "smt": true,
+      "kind": "P"
+    },
+    {
+      "core_index": 2,
+      "logical_cpus": [
+        4
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 3,
+      "logical_cpus": [
+        5
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 4,
+      "logical_cpus": [
+        6
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 5,
+      "logical_cpus": [
+        7
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 6,
+      "logical_cpus": [
+        8
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 7,
+      "logical_cpus": [
+        9
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 8,
+      "logical_cpus": [
+        10
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 9,
+      "logical_cpus": [
+        11
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    }
+  ],
+  "power_start": {
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 186 Stepping 3, GenuineIntel",
+    "logical": 12,
+    "physical": 10,
+    "battery_percent": 100,
+    "power_plugged": true,
+    "cpu_freq_mhz": {
+      "current": 1300.0,
+      "min": 0.0,
+      "max": 1300.0
+    },
+    "power_plan": "CH\u01afA \u0110\u1eccC: ng\u01b0\u1eddi d\u00f9ng t\u1ef1 ch\u1ea1y `powercfg /getactivescheme` v\u00e0 ghi v\u00e0o PROGRESS"
+  },
+  "versions": {
+    "torch": "2.13.0+cpu",
+    "torchvision": "0.28.0+cpu",
+    "ultralytics": "8.4.90"
+  },
+  "power_mode_start": {
+    "PowerGetUserConfiguredACPowerMode": "ded574b5-45a0-4f42-8737-46345c09c238",
+    "PowerGetEffectiveOverlayScheme": "961cc777-2547-4f9d-8174-7d86181b8a7a"
+  },
+  "torch_threads": 1,
+  "interop_threads": 1,
+  "parallel_info": "ATen/Parallel:\n\tat::get_num_threads() : 1\n\tat::get_num_interop_threads() : 1\nOpenMP 2019\n\tomp_get_max_threads() : 1\nIntel(R) oneAPI Math Kernel Library Version 2026.1-Product Build 20260612 for Intel(R) 64 architecture applications\n\tmkl_get_max_threads() : 1\nIntel(R) MKL-DNN v3.12.0 (Git Hash 80afa71049cd69a3df32adcccb623b12cd7baa22)\nstd::thread::hardware_concurrency() : 12\nEnvironment variables:\n\tOMP_NUM_THREADS : 1\n\tMKL_NUM_THREADS : 1\nATen parallel backend: OpenMP\n",
+  "qos_change": {
+    "before": {
+      "version": 1,
+      "control_mask": 0,
+      "state_mask": 0,
+      "priority_class": 32768
+    },
+    "after": {
+      "version": 1,
+      "control_mask": 1,
+      "state_mask": 0,
+      "priority_class": 32768
+    }
+  },
+  "qos_start": {
+    "version": 1,
+    "control_mask": 1,
+    "state_mask": 0,
+    "priority_class": 32768
+  },
+  "process_cpu_clock": {
+    "implementation": "GetProcessTimes()",
+    "monotonic": true,
+    "adjustable": false,
+    "resolution": 1e-07
+  },
+  "inputs": [
+    {
+      "member": "m3_native_full_20261106/000000000009_inputs.pt",
+      "path": "sponge-sim/results/laptop_seg_20261107/000000000009_inputs.pt",
+      "sha256": "0002529c6ee33e19c9a93fce355b8d5f09ac637bfcdae864dbef298272f64eb9",
+      "bytes": 9832389
+    },
+    {
+      "member": "m3_native_full_20261106/000000000025_inputs.pt",
+      "path": "sponge-sim/results/laptop_seg_20261107/000000000025_inputs.pt",
+      "sha256": "b8808fba4b3d871a4bfa1b296c63a95e6f7a87482ee2ad8109dc2898302663b0",
+      "bytes": 9832389
+    },
+    {
+      "member": "m3_native_full_20261106/000000000030_inputs.pt",
+      "path": "sponge-sim/results/laptop_seg_20261107/000000000030_inputs.pt",
+      "sha256": "998ed80df31a5d269abd8d2a2cb82fe9e6e95ed2d0275c45265d79b4b2faf0ff",
+      "bytes": 9832389
+    },
+    {
+      "member": "m3_native_full_20261106/000000000034_inputs.pt",
+      "path": "sponge-sim/results/laptop_seg_20261107/000000000034_inputs.pt",
+      "sha256": "b3af06da408a1ed32a2a5cb3abe4e14bc0b7b205b29e1269e1303356ce9e8582",
+      "bytes": 9832389
+    },
+    {
+      "member": "m3_native_full_20261106/000000000036_inputs.pt",
+      "path": "sponge-sim/results/laptop_seg_20261107/000000000036_inputs.pt",
+      "sha256": "54e8dc5af0e7573e70a91145a09d60d799aa6c67f5c33885ee06d9a360062802",
+      "bytes": 9832389
+    },
+    {
+      "member": "m3_native_full_20261106/000000000042_inputs.pt",
+      "path": "sponge-sim/results/laptop_seg_20261107/000000000042_inputs.pt",
+      "sha256": "148e2ab47cb35e30964d21001ceac27578e59233cde4307df10c0ee71527cefb",
+      "bytes": 9832389
+    },
+    {
+      "member": "m3_native_full_20261106/000000000049_inputs.pt",
+      "path": "sponge-sim/results/laptop_seg_20261107/000000000049_inputs.pt",
+      "sha256": "5e159ebf9b4ab5e8d40a3fce5c2e27a79633a0fb98582ea185c01964e0dccccc",
+      "bytes": 9832389
+    },
+    {
+      "member": "m3_native_full_20261106/000000000061_inputs.pt",
+      "path": "sponge-sim/results/laptop_seg_20261107/000000000061_inputs.pt",
+      "sha256": "609a3be054009761d2ef4b60d5b8253ce78013512ac3505d17f6f51c0ff1572c",
+      "bytes": 9832389
+    },
+    {
+      "member": "m3_native_full_20261106/000000000064_inputs.pt",
+      "path": "sponge-sim/results/laptop_seg_20261107/000000000064_inputs.pt",
+      "sha256": "4224d849f300bbb165da233de65c051f6a8f3095f49dbb600abf62fc5758d07e",
+      "bytes": 9832389
+    },
+    {
+      "member": "m3_native_full_20261106/000000000071_inputs.pt",
+      "path": "sponge-sim/results/laptop_seg_20261107/000000000071_inputs.pt",
+      "sha256": "cf44e973d48ba661534a362d31565805fae81b05e14a381b511e524d2b082a2c",
+      "bytes": 9832389
+    },
+    {
+      "member": "m3_native_full_20261106/000000000072_inputs.pt",
+      "path": "sponge-sim/results/laptop_seg_20261107/000000000072_inputs.pt",
+      "sha256": "cc0e4b5e36b4628230e4cf13a1fda42f38e9aabf55c429f1318156eb95b6fb5e",
+      "bytes": 9832389
+    },
+    {
+      "member": "m3_native_full_20261106/000000000073_inputs.pt",
+      "path": "sponge-sim/results/laptop_seg_20261107/000000000073_inputs.pt",
+      "sha256": "f0a618c3332af1d9344d88a4baa5927367dc244719c2c1e397c2c48f630925af",
+      "bytes": 9832389
+    },
+    {
+      "member": "m3_native_full_20261106/000000000074_inputs.pt",
+      "path": "sponge-sim/results/laptop_seg_20261107/000000000074_inputs.pt",
+      "sha256": "f93827b9d2e65ad480d4fe21e34598c92052747f2a56ee486778d9dca56c2ec4",
+      "bytes": 9832389
+    },
+    {
+      "member": "m3_native_full_20261106/000000000077_inputs.pt",
+      "path": "sponge-sim/results/laptop_seg_20261107/000000000077_inputs.pt",
+      "sha256": "f6079c18804f10fd900429ac07a1ab2014ceee5a44d54c0ac6aab15a10dab342",
+      "bytes": 9832389
+    },
+    {
+      "member": "m3_native_full_20261106/000000000078_inputs.pt",
+      "path": "sponge-sim/results/laptop_seg_20261107/000000000078_inputs.pt",
+      "sha256": "60e770c5dfea80c74b682e50304a13923f2b1ab7546b8b396ce60b6aa0ed330d",
+      "bytes": 9832389
+    },
+    {
+      "member": "m3_native_full_20261106/000000000081_inputs.pt",
+      "path": "sponge-sim/results/laptop_seg_20261107/000000000081_inputs.pt",
+      "sha256": "4dbda8d1e9505d722fe8795c5f49eca71f616ce9cef6f0da1d173cf159d4e188",
+      "bytes": 9832389
+    },
+    {
+      "member": "m3_native_full_20261106/000000000086_inputs.pt",
+      "path": "sponge-sim/results/laptop_seg_20261107/000000000086_inputs.pt",
+      "sha256": "ab1e19109de5db60d2438a291655dd493ab1f8cff465b1c6447b7ad51bff4a6a",
+      "bytes": 9832389
+    },
+    {
+      "member": "m3_native_full_20261106/000000000089_inputs.pt",
+      "path": "sponge-sim/results/laptop_seg_20261107/000000000089_inputs.pt",
+      "sha256": "0f81fc08b2e5f04c89e3c863cb4d0c794aa2d9032d2864f560f3c87992ab2457",
+      "bytes": 9832389
+    },
+    {
+      "member": "m3_native_full_20261106/000000000092_inputs.pt",
+      "path": "sponge-sim/results/laptop_seg_20261107/000000000092_inputs.pt",
+      "sha256": "0886feaee5e3b74cfab5a932f379823d1c2c0684c342ae106dc61829c50e67ed",
+      "bytes": 9832389
+    },
+    {
+      "member": "m3_native_full_20261106/000000000094_inputs.pt",
+      "path": "sponge-sim/results/laptop_seg_20261107/000000000094_inputs.pt",
+      "sha256": "fc19fb7bafd9b2719f2ce1be45a2807644784aadfa27519132c7cea70e2ec264",
+      "bytes": 9832389
+    }
+  ],
+  "thermal_telemetry": "unavailable; no inference about actual CPU temperature",
+  "backend": "torchvision.ops.nms inside locked Ultralytics wrapper",
+  "omp": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  }
+}

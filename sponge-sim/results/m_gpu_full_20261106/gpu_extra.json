@@ -1,0 +1,55 @@
+{
+ "attack_to_latency": [
+  {
+   "name": "bus.jpg",
+   "retinaFalse": {
+    "clean_ms": 9.197,
+    "clean_K": 6,
+    "attacked_ms": 144.42,
+    "attacked_K": 300,
+    "ratio": 15.703
+   },
+   "retinaTrue": {
+    "clean_ms": 9.185,
+    "clean_K": 6,
+    "attacked_ms": 152.724,
+    "attacked_K": 300,
+    "ratio": 16.628
+   }
+  },
+  {
+   "name": "zidane.jpg",
+   "retinaFalse": {
+    "clean_ms": 7.773,
+    "clean_K": 3,
+    "attacked_ms": 151.155,
+    "attacked_K": 300,
+    "ratio": 19.445
+   },
+   "retinaTrue": {
+    "clean_ms": 7.889,
+    "clean_K": 3,
+    "attacked_ms": 156.47,
+    "attacked_K": 300,
+    "ratio": 19.834
+   }
+  }
+ ],
+ "nms_free": {
+  "status": "ok",
+  "model": "yolo26n-seg.pt",
+  "pred_width": 116,
+  "m3": [
+   {
+    "name": "bus.jpg",
+    "k_clean": 5,
+    "k_best": 244
+   },
+   {
+    "name": "zidane.jpg",
+    "k_clean": 3,
+    "k_best": 300
+   }
+  ]
+ }
+}

@@ -1,0 +1,7 @@
+{
+  "tag": "prereg-laptop-pdh-20261107",
+  "commit": "192484fb32f96dbd2171cbeffacfb61eaacd4780",
+  "lock_sha256": "8b7324a550be77bc57cc0d931776e695b793fb9669820d9eed94401529c099f9",
+  "user_idle": "User authorized continued fixed diagnostics; AC and idle declaration continues",
+  "smoke": true
+}

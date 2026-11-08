@@ -1,0 +1,7 @@
+{
+  "tag": "prereg-laptop-highqos-20261107",
+  "commit": "1a2c156a2fef7401d8846576d00695ee4419cf07",
+  "lock_sha256": "6dd48268404c007fb6c4b1ce89e22a6d0f122baed96f7f43cac0f86e38c1fba5",
+  "user_idle": "User authorized continued fixed experiments; AC and idle declaration continues",
+  "smoke": true
+}

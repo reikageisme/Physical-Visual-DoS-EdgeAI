@@ -1,0 +1,7 @@
+{
+  "archive": "codex_val500_evidence_20261106.zip",
+  "sha256": "c8e4e9613b98d652178e2db4c7e7f0de6af4e7c3708db83c2cd68f3c455203ad",
+  "bytes": 1339270886,
+  "n_files": 421,
+  "note": "Includes all deltas/native outputs; required pretrained weights retained in prior verified codex_evidence_20261106.zip."
+}

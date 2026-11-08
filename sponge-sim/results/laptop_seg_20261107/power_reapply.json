@@ -1,0 +1,12 @@
+{
+  "ACLineStatus": 1,
+  "BatteryFlag": 1,
+  "BatteryLifePercent": 100,
+  "SystemStatusFlag": 0,
+  "BatteryLifeTime": 4294967295,
+  "BatteryFullLifeTime": 4294967295,
+  "reapply_best_performance_return": 0,
+  "effective_return": 0,
+  "effective_after": "961cc777-2547-4f9d-8174-7d86181b8a7a",
+  "powercfg": "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)"
+}

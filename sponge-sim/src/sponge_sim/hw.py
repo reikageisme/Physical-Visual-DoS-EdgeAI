@@ -58,6 +58,10 @@ def profiles(cores: list[dict]) -> dict[str, list[int]]:
     out = {}
     if p:
         out['P1'] = p[:1]
+    pcores = [c for c in cores if c['kind'] == 'P']
+    if len(pcores) >= 2:
+        # P-core thứ hai, logical đầu: tránh CPU 0 (ngắt/tác vụ hệ thống). Thêm sau E5 (DEVIATIONS 2026-10-21).
+        out['P1_cpu2'] = pcores[1]['logical_cpus'][:1]
     if e:
         out['E1'] = e[:1]
     if len(e) >= 4:
@@ -72,7 +76,8 @@ def pin(cpus: list[int]) -> list[int]:
     return sorted(proc.cpu_affinity())
 
 
-def verify_pin(cpus: list[int], seconds: float = 2.0, threads: int | None = None) -> dict:
+def verify_pin(cpus: list[int], seconds: float = 2.0, threads: int | None = None,
+               min_effective: float | None = None) -> dict:
     """Xác minh ghim bằng tải thật (torch matmul, nhả GIL) với `threads` intra-op threads.
 
     Hai tiêu chí (cả hai phải đạt):
@@ -97,9 +102,12 @@ def verify_pin(cpus: list[int], seconds: float = 2.0, threads: int | None = None
     torch.set_num_threads(old)
     eff = cpu / wall
     inside = sum(per[i] for i in cpus) / len(cpus)
+    upper_ok = eff <= len(cpus) + 0.15 and inside >= 70.0
+    lower_ok = None if min_effective is None else eff >= min_effective  # thêm sau E5 (DEVIATIONS 2026-10-21)
     return dict(allowed=sorted(cpus), threads=n, wall_s=wall, cpu_s=cpu,
-                effective_cores=eff, mean_percent_allowed=inside, percpu=per,
-                passed=eff <= len(cpus) + 0.15 and inside >= 70.0)
+                effective_cores=eff, mean_percent_allowed=inside, percpu=per, upper_ok=upper_ok,
+                min_effective=min_effective, lower_ok=lower_ok,
+                passed=upper_ok and (lower_ok is not False))
 
 
 def power_snapshot() -> dict:
@@ -125,6 +133,10 @@ CHECKLIST = """Checklist điện/nền (BẠN tự đặt; harness không đổi
   [ ] Không dùng máy khi đang đo; tắt sleep/màn hình tắt trong thời gian đo.
   [ ] Để máy nghỉ ~5 phút trước khi đo (nhiệt độ ổn định).
 """
+
+
+if sys.platform != 'win32':   # điện thoại (Android/proot): dùng bản Linux, cùng tên hàm (xem hw_linux.py)
+    from .hw_linux import CHECKLIST, cpu_topology, pin, power_snapshot, profiles, verify_pin  # noqa: F401,F811
 
 
 if __name__ == '__main__':

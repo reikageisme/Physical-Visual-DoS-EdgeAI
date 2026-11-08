@@ -1,0 +1,26 @@
+{
+ "overload|tv_nms": {
+  "median_abs_log_err_struct": 0.026356981785190088,
+  "nms_share_patched": 0.016072167439525435
+ },
+ "overload|tv_batched": {
+  "median_abs_log_err_struct": 0.025267569143102818,
+  "nms_share_patched": 0.013835253302768373
+ },
+ "overload|ultra_native": {
+  "median_abs_log_err_struct": 0.023423392136260907,
+  "nms_share_patched": 0.02232946051838863
+ },
+ "phantom_sponges|tv_nms": {
+  "median_abs_log_err_struct": 0.025978657754756322,
+  "nms_share_patched": 0.0177062089743805
+ },
+ "phantom_sponges|tv_batched": {
+  "median_abs_log_err_struct": 0.024024801057770315,
+  "nms_share_patched": 0.019221535791876927
+ },
+ "phantom_sponges|ultra_native": {
+  "median_abs_log_err_struct": 0.02306451934006714,
+  "nms_share_patched": 0.02344901213138196
+ }
+}

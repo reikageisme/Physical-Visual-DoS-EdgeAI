@@ -1,0 +1,10 @@
+{
+  "stage": 1000,
+  "archive_sha256": "cb7d6af4e9f82133326f552766d50a12ce1252719371bf7311beb758504eb133",
+  "zip_crc_pass": true,
+  "cases": 20000,
+  "audit_cases": 800,
+  "saved_count_checks": 160000,
+  "native_count_checks": 40000,
+  "note": "Verifies downloaded saved artifacts; forward replay is separately reported on locked64 audit subset."
+}

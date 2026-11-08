@@ -1,0 +1,167 @@
+{
+  "status": "POSTHOC_SCHEDULE_AUDIT_NO_NEW_TIMING",
+  "rows": [
+    {
+      "image": "000000000009_inputs",
+      "clean_calls_after_attacked": {
+        "aa_A": 12,
+        "aa_B": 24
+      },
+      "aa_ratio": 0.9812687895118403
+    },
+    {
+      "image": "000000000025_inputs",
+      "clean_calls_after_attacked": {
+        "aa_A": 24,
+        "aa_B": 12
+      },
+      "aa_ratio": 1.0406176555575404
+    },
+    {
+      "image": "000000000030_inputs",
+      "clean_calls_after_attacked": {
+        "aa_A": 12,
+        "aa_B": 24
+      },
+      "aa_ratio": 0.9827134159509716
+    },
+    {
+      "image": "000000000034_inputs",
+      "clean_calls_after_attacked": {
+        "aa_A": 24,
+        "aa_B": 12
+      },
+      "aa_ratio": 1.0221154847096066
+    },
+    {
+      "image": "000000000036_inputs",
+      "clean_calls_after_attacked": {
+        "aa_A": 12,
+        "aa_B": 24
+      },
+      "aa_ratio": 0.9555746455134683
+    },
+    {
+      "image": "000000000042_inputs",
+      "clean_calls_after_attacked": {
+        "aa_A": 24,
+        "aa_B": 12
+      },
+      "aa_ratio": 1.0206043207224873
+    },
+    {
+      "image": "000000000049_inputs",
+      "clean_calls_after_attacked": {
+        "aa_A": 12,
+        "aa_B": 24
+      },
+      "aa_ratio": 0.9691605532630292
+    },
+    {
+      "image": "000000000061_inputs",
+      "clean_calls_after_attacked": {
+        "aa_A": 24,
+        "aa_B": 12
+      },
+      "aa_ratio": 1.0213470720485445
+    },
+    {
+      "image": "000000000064_inputs",
+      "clean_calls_after_attacked": {
+        "aa_A": 12,
+        "aa_B": 24
+      },
+      "aa_ratio": 0.9665512211975595
+    },
+    {
+      "image": "000000000071_inputs",
+      "clean_calls_after_attacked": {
+        "aa_A": 24,
+        "aa_B": 12
+      },
+      "aa_ratio": 0.9871675255802633
+    },
+    {
+      "image": "000000000072_inputs",
+      "clean_calls_after_attacked": {
+        "aa_A": 12,
+        "aa_B": 24
+      },
+      "aa_ratio": 0.9866429058791878
+    },
+    {
+      "image": "000000000073_inputs",
+      "clean_calls_after_attacked": {
+        "aa_A": 24,
+        "aa_B": 12
+      },
+      "aa_ratio": 1.019631837154296
+    },
+    {
+      "image": "000000000074_inputs",
+      "clean_calls_after_attacked": {
+        "aa_A": 12,
+        "aa_B": 24
+      },
+      "aa_ratio": 0.9453632445895354
+    },
+    {
+      "image": "000000000077_inputs",
+      "clean_calls_after_attacked": {
+        "aa_A": 24,
+        "aa_B": 12
+      },
+      "aa_ratio": 1.009809483392143
+    },
+    {
+      "image": "000000000078_inputs",
+      "clean_calls_after_attacked": {
+        "aa_A": 12,
+        "aa_B": 24
+      },
+      "aa_ratio": 0.9530565708345375
+    },
+    {
+      "image": "000000000081_inputs",
+      "clean_calls_after_attacked": {
+        "aa_A": 24,
+        "aa_B": 12
+      },
+      "aa_ratio": 1.0411289543977087
+    },
+    {
+      "image": "000000000086_inputs",
+      "clean_calls_after_attacked": {
+        "aa_A": 12,
+        "aa_B": 24
+      },
+      "aa_ratio": 0.9812446835894018
+    },
+    {
+      "image": "000000000089_inputs",
+      "clean_calls_after_attacked": {
+        "aa_A": 24,
+        "aa_B": 12
+      },
+      "aa_ratio": 0.9966233914802997
+    },
+    {
+      "image": "000000000092_inputs",
+      "clean_calls_after_attacked": {
+        "aa_A": 12,
+        "aa_B": 24
+      },
+      "aa_ratio": 0.9827298161892797
+    },
+    {
+      "image": "000000000094_inputs",
+      "clean_calls_after_attacked": {
+        "aa_A": 24,
+        "aa_B": 12
+      },
+      "aa_ratio": 1.01701316477372
+    }
+  ],
+  "correlation_imbalance_vs_logAA": 0.8428798953351507,
+  "limits": "Association only; previous measured arm inferred from order; first call unobserved warmup excluded."
+}

@@ -1,0 +1,298 @@
+{
+ "analysis": "R2",
+ "label": "thăm dò, dữ liệu lịch sử OLD128, không ghim core",
+ "backend_cells": {
+  "custom|0.01|100": {
+   "backend": "custom",
+   "tau": 0.01,
+   "cap": 100,
+   "n_images": 16,
+   "n_seeds": 10,
+   "N_range": [
+    10,
+    100
+   ],
+   "median_nms_ms": 1.1314,
+   "rho_N_t": 0.7598128048115004,
+   "rho_N_t_ci95_cluster_image": [
+    0.5592203411999755,
+    0.8420636091323899
+   ],
+   "within_rho_dN_dt": 0.18135667973822794,
+   "within_rho_ci95_cluster_image": [
+    -0.019223443648953276,
+    0.35830772352617024
+   ],
+   "mean_dN": -1.00625,
+   "frac_dN_positive": 0.1125,
+   "nms_ratio_sg_over_clean": {
+    "mean": 1.2371342437959831,
+    "ci95_two_level": [
+     0.9708047191066316,
+     1.62532004559512
+    ]
+   }
+  },
+  "custom|0.01|None": {
+   "backend": "custom",
+   "tau": 0.01,
+   "cap": null,
+   "n_images": 16,
+   "n_seeds": 10,
+   "N_range": [
+    10,
+    270
+   ],
+   "median_nms_ms": 1.641,
+   "rho_N_t": 0.8650748361043126,
+   "rho_N_t_ci95_cluster_image": [
+    0.6916183048511636,
+    0.9234079766571959
+   ],
+   "within_rho_dN_dt": 0.38058151072597474,
+   "within_rho_ci95_cluster_image": [
+    0.10161708492159269,
+    0.6201172869250381
+   ],
+   "mean_dN": -2.3125,
+   "frac_dN_positive": 0.575,
+   "nms_ratio_sg_over_clean": {
+    "mean": 1.2473252708091476,
+    "ci95_two_level": [
+     0.9395048136560658,
+     1.627356451060885
+    ]
+   }
+  },
+  "custom|0.25|None": {
+   "backend": "custom",
+   "tau": 0.25,
+   "cap": null,
+   "n_images": 16,
+   "n_seeds": 10,
+   "N_range": [
+    0,
+    69
+   ],
+   "median_nms_ms": 0.3167,
+   "rho_N_t": 0.7449292553664453,
+   "rho_N_t_ci95_cluster_image": [
+    0.5961460533054384,
+    0.8265406628460928
+   ],
+   "within_rho_dN_dt": 0.43891521854212623,
+   "within_rho_ci95_cluster_image": [
+    0.15690859111759986,
+    0.6514922960713262
+   ],
+   "mean_dN": -2.35625,
+   "frac_dN_positive": 0.225,
+   "nms_ratio_sg_over_clean": {
+    "mean": 1.492753481948985,
+    "ci95_two_level": [
+     1.0483513883256783,
+     1.9810836827534104
+    ]
+   }
+  },
+  "torchvision|0.01|100": {
+   "backend": "torchvision",
+   "tau": 0.01,
+   "cap": 100,
+   "n_images": 16,
+   "n_seeds": 10,
+   "N_range": [
+    10,
+    100
+   ],
+   "median_nms_ms": 0.0516,
+   "rho_N_t": 0.4267632244840632,
+   "rho_N_t_ci95_cluster_image": [
+    0.22000596143005718,
+    0.5734827616600522
+   ],
+   "within_rho_dN_dt": 0.05013967858885907,
+   "within_rho_ci95_cluster_image": [
+    -0.16381432794194417,
+    0.24510474241905736
+   ],
+   "mean_dN": -1.00625,
+   "frac_dN_positive": 0.1125,
+   "nms_ratio_sg_over_clean": {
+    "mean": 1.2885240908415985,
+    "ci95_two_level": [
+     1.0127310104448008,
+     1.6352144237371224
+    ]
+   }
+  },
+  "torchvision|0.01|None": {
+   "backend": "torchvision",
+   "tau": 0.01,
+   "cap": null,
+   "n_images": 16,
+   "n_seeds": 10,
+   "N_range": [
+    10,
+    270
+   ],
+   "median_nms_ms": 0.0579,
+   "rho_N_t": 0.6030183045872923,
+   "rho_N_t_ci95_cluster_image": [
+    0.4626414775438033,
+    0.6922789176055962
+   ],
+   "within_rho_dN_dt": 0.19084765191435543,
+   "within_rho_ci95_cluster_image": [
+    -0.0007232434951347667,
+    0.3776700854094185
+   ],
+   "mean_dN": -2.3125,
+   "frac_dN_positive": 0.575,
+   "nms_ratio_sg_over_clean": {
+    "mean": 1.449575739549994,
+    "ci95_two_level": [
+     1.0839773028691868,
+     1.8872119134528071
+    ]
+   }
+  },
+  "torchvision|0.25|None": {
+   "backend": "torchvision",
+   "tau": 0.25,
+   "cap": null,
+   "n_images": 16,
+   "n_seeds": 10,
+   "N_range": [
+    0,
+    69
+   ],
+   "median_nms_ms": 0.0477,
+   "rho_N_t": 0.3612333478831237,
+   "rho_N_t_ci95_cluster_image": [
+    0.18981645993786392,
+    0.48735636157670886
+   ],
+   "within_rho_dN_dt": 0.18744689960647135,
+   "within_rho_ci95_cluster_image": [
+    0.013229452843026087,
+    0.3366684047159219
+   ],
+   "mean_dN": -2.35625,
+   "frac_dN_positive": 0.225,
+   "nms_ratio_sg_over_clean": {
+    "mean": 1.2798758995990756,
+    "ci95_two_level": [
+     1.0300166949375862,
+     1.5858437154747747
+    ]
+   }
+  },
+  "custom_over_torchvision|0.01|None": {
+   "median_ratio": 28.3419689119171
+  },
+  "custom_over_torchvision|0.01|100": {
+   "median_ratio": 21.926356589147286
+  },
+  "custom_over_torchvision|0.25|None": {
+   "median_ratio": 6.639412997903563
+  }
+ },
+ "timing": {
+  "threads1": {
+   "n_records": 2400,
+   "postprocess_share_of_total": {
+    "median": 0.03390988121535983,
+    "p95": 0.12846211171611632,
+    "max": 0.3141837883406412
+   },
+   "rho_N_nms": 0.8762871354301297,
+   "rho_N_nms_ci95_cluster_image": [
+    0.7069397998147485,
+    0.9286399318388371
+   ],
+   "rho_N_total": 0.3273434587704135,
+   "rho_N_total_ci95_cluster_image": [
+    0.16653735852377158,
+    0.4579068528332768
+   ],
+   "total_ratio_sg_over_clean": {
+    "mean": 1.0554978408165363,
+    "ci95_two_level": [
+     0.9799046230089584,
+     1.1599348207563187
+    ]
+   },
+   "late_over_300ms": 0
+  },
+  "threads2": {
+   "n_records": 2400,
+   "postprocess_share_of_total": {
+    "median": 0.03935218411526935,
+    "p95": 0.16811556199329644,
+    "max": 0.3753157868720835
+   },
+   "rho_N_nms": 0.773501603606397,
+   "rho_N_nms_ci95_cluster_image": [
+    0.5730446662363925,
+    0.8560265325006727
+   ],
+   "rho_N_total": 0.28778560536572656,
+   "rho_N_total_ci95_cluster_image": [
+    0.14533852129005398,
+    0.39685290074502444
+   ],
+   "total_ratio_sg_over_clean": {
+    "mean": 1.0537253471418027,
+    "ci95_two_level": [
+     0.99657631052107,
+     1.1215611647033605
+    ]
+   },
+   "late_over_300ms": 0
+  },
+  "threads4": {
+   "n_records": 2400,
+   "postprocess_share_of_total": {
+    "median": 0.06277115374709388,
+    "p95": 0.2311211270061846,
+    "max": 0.48469298107997866
+   },
+   "rho_N_nms": 0.8145890926151764,
+   "rho_N_nms_ci95_cluster_image": [
+    0.6122543879281416,
+    0.8850133860044231
+   ],
+   "rho_N_total": 0.4393554977870425,
+   "rho_N_total_ci95_cluster_image": [
+    0.2976119735990184,
+    0.5240371153015273
+   ],
+   "total_ratio_sg_over_clean": {
+    "mean": 1.0192880963339355,
+    "ci95_two_level": [
+     0.9728537447617006,
+     1.08862941719335
+    ]
+   },
+   "late_over_300ms": 0
+  }
+ },
+ "condition_map_coverage": {
+  "present": [
+   "backend {custom (agnostic), torchvision nms (agnostic)}",
+   "tau {0.01, 0.25}",
+   "cap {None, 100}",
+   "intra-op threads {1,2,4} (KHÔNG ghim core)",
+   "period {100, 300} ms (stream_qos)"
+  ],
+  "missing": [
+   "class-aware backend (batched_nms, Ultralytics native)",
+   "ghim core thật (E5 mới có)",
+   "N vượt ~270 (cần tiêm tổng hợp: E1)",
+   "hình học hộp có kiểm soát (E1)",
+   "chu kỳ quanh knee 120-250 ms",
+   "thiết bị ARM/edge"
+  ]
+ }
+}

@@ -1,0 +1,1519 @@
+{
+  "profiles": {
+    "w5": {
+      "complete": true,
+      "flags": 4,
+      "mde_frac": 0.001898774487473551,
+      "eligible": false,
+      "reference_ratios": [
+        1.0,
+        1.0011720967712396,
+        1.003809314506529,
+        1.0024723916268337,
+        0.9997985458674432,
+        1.0251451385455013,
+        1.0059520539164515,
+        0.9954764390234969,
+        0.9931322454810175,
+        0.9945424244089153,
+        1.0045601890006044,
+        1.001245352819442,
+        1.0085343296155889,
+        1.0018130871930113,
+        1.0033331501932128,
+        1.0914601761807958,
+        1.0853799241799902,
+        1.0825046242880427,
+        0.9663937878871124,
+        1.0027654158196435,
+        1.0000366280241013,
+        1.0100543926157903
+      ],
+      "median_wall_ms": 5.47555,
+      "median_device_ms": 5.275599956512451,
+      "raw_sha256": "62b9f98918380381f2c8af441a97f8b135eb9a79c47336daff5cf5453e96cfcf",
+      "telemetry": [
+        {
+          "block": "start",
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          }
+        },
+        {
+          "block": 0,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          }
+        },
+        {
+          "block": 1,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          }
+        },
+        {
+          "block": 2,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 51
+          }
+        },
+        {
+          "block": 3,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          }
+        },
+        {
+          "block": 4,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 53
+          }
+        },
+        {
+          "block": 5,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          }
+        },
+        {
+          "block": 6,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 50
+          }
+        },
+        {
+          "block": 7,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          }
+        },
+        {
+          "block": 8,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          },
+          "after_reference": {
+            "sm_mhz": 2767,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 50
+          }
+        },
+        {
+          "block": 9,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          }
+        },
+        {
+          "block": 10,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          }
+        },
+        {
+          "block": 11,
+          "after_load": {
+            "sm_mhz": 2767,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          }
+        },
+        {
+          "block": 12,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          }
+        },
+        {
+          "block": 13,
+          "after_load": {
+            "sm_mhz": 2767,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          },
+          "after_warmup": {
+            "sm_mhz": 2767,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          },
+          "after_reference": {
+            "sm_mhz": 2767,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 53
+          }
+        },
+        {
+          "block": 14,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          }
+        },
+        {
+          "block": 15,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          },
+          "after_reference": {
+            "sm_mhz": 2767,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 53
+          }
+        },
+        {
+          "block": 16,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          }
+        },
+        {
+          "block": 17,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 50
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 50
+          },
+          "after_reference": {
+            "sm_mhz": 2767,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 54
+          }
+        },
+        {
+          "block": 18,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 50
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 50
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 50
+          }
+        },
+        {
+          "block": 19,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 50
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 50
+          },
+          "after_reference": {
+            "sm_mhz": 2767,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 51
+          }
+        },
+        {
+          "block": "end",
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 50
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 50
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 50
+          }
+        }
+      ]
+    },
+    "w50": {
+      "complete": true,
+      "flags": 6,
+      "mde_frac": 0.0025161191057798547,
+      "eligible": false,
+      "reference_ratios": [
+        1.0,
+        0.9918354729606866,
+        1.07117140051642,
+        1.0633159981088847,
+        0.9963814234280103,
+        0.989635232934502,
+        0.9964905262392261,
+        0.9933265447139688,
+        1.0977743026511984,
+        0.9749427210241117,
+        0.9938538749681783,
+        1.0235480234207368,
+        0.9957631741644543,
+        0.9929083172709751,
+        0.9984180092373713,
+        1.0953922246063208,
+        0.9910353856784376,
+        0.9918718405644252,
+        0.9918536567625559,
+        1.0004000436411244,
+        1.072098774411754,
+        1.072226061024839
+      ],
+      "median_wall_ms": 5.47785,
+      "median_device_ms": 5.275952100753784,
+      "raw_sha256": "0d5f33417fddfe203a24f3a41ec54736a4c6e33cddd9fa40e343fc34b9fe1be7",
+      "telemetry": [
+        {
+          "block": "start",
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 45
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 45
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 45
+          }
+        },
+        {
+          "block": 0,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 45
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 45
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 45
+          }
+        },
+        {
+          "block": 1,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 45
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 45
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 45
+          }
+        },
+        {
+          "block": 2,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 45
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 45
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 45
+          }
+        },
+        {
+          "block": 3,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 45
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 45
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 45
+          }
+        },
+        {
+          "block": 4,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 45
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 45
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 46
+          }
+        },
+        {
+          "block": 5,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 45
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 45
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 46
+          }
+        },
+        {
+          "block": 6,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 45
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 45
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 46
+          }
+        },
+        {
+          "block": 7,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 46
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 46
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 45
+          }
+        },
+        {
+          "block": 8,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 46
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 46
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 46
+          }
+        },
+        {
+          "block": 9,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 46
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          }
+        },
+        {
+          "block": 10,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 46
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          }
+        },
+        {
+          "block": 11,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 46
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 49
+          }
+        },
+        {
+          "block": 12,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 46
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 50
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 50
+          }
+        },
+        {
+          "block": 13,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 47
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          }
+        },
+        {
+          "block": 14,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 47
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          }
+        },
+        {
+          "block": 15,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 47
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          }
+        },
+        {
+          "block": 16,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 47
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 47
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 47
+          }
+        },
+        {
+          "block": 17,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 47
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          }
+        },
+        {
+          "block": 18,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 47
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          }
+        },
+        {
+          "block": 19,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 47
+          },
+          "after_warmup": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          }
+        },
+        {
+          "block": "end",
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 47
+          },
+          "after_warmup": {
+            "sm_mhz": 2767,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          },
+          "after_reference": {
+            "sm_mhz": 2767,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 48
+          }
+        }
+      ]
+    },
+    "w200": {
+      "complete": true,
+      "flags": 9,
+      "mde_frac": 0.0029053444931216852,
+      "eligible": false,
+      "reference_ratios": [
+        1.0,
+        0.9922317061475017,
+        0.9881269780377865,
+        0.9793804545890477,
+        0.9963556152296922,
+        1.0826124484511366,
+        0.9957226431380071,
+        1.001131677376043,
+        1.0008439627889134,
+        1.0009206866788145,
+        1.0721012755346697,
+        1.0738467440299224,
+        1.0779322911671623,
+        1.0748633355711135,
+        1.0667689651865349,
+        1.0772609571305265,
+        1.088942169367987,
+        1.0870432530929317,
+        0.9837345353409418,
+        0.9837345353409418,
+        0.9934401074134459,
+        1.0027812410089192
+      ],
+      "median_wall_ms": 5.30095,
+      "median_device_ms": 5.104367971420288,
+      "raw_sha256": "d3c1bfc69868373d113fe3387165ce9143737559609b7cd103fb30fcf0af1867",
+      "telemetry": [
+        {
+          "block": "start",
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 51
+          },
+          "after_warmup": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 51
+          },
+          "after_reference": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 51
+          }
+        },
+        {
+          "block": 0,
+          "after_load": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 51
+          },
+          "after_warmup": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 51
+          },
+          "after_reference": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 51
+          }
+        },
+        {
+          "block": 1,
+          "after_load": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 51
+          },
+          "after_warmup": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 51
+          },
+          "after_reference": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 51
+          }
+        },
+        {
+          "block": 2,
+          "after_load": {
+            "sm_mhz": 2775,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 51
+          },
+          "after_warmup": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 51
+          },
+          "after_reference": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 51
+          }
+        },
+        {
+          "block": 3,
+          "after_load": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 51
+          },
+          "after_warmup": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 51
+          },
+          "after_reference": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 51
+          }
+        },
+        {
+          "block": 4,
+          "after_load": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 51
+          },
+          "after_warmup": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          },
+          "after_reference": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          }
+        },
+        {
+          "block": 5,
+          "after_load": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 51
+          },
+          "after_warmup": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          },
+          "after_reference": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          }
+        },
+        {
+          "block": 6,
+          "after_load": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          },
+          "after_warmup": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          },
+          "after_reference": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          }
+        },
+        {
+          "block": 7,
+          "after_load": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          },
+          "after_warmup": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          },
+          "after_reference": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          }
+        },
+        {
+          "block": 8,
+          "after_load": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          },
+          "after_warmup": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 53
+          },
+          "after_reference": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 53
+          }
+        },
+        {
+          "block": 9,
+          "after_load": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 53
+          },
+          "after_warmup": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          },
+          "after_reference": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          }
+        },
+        {
+          "block": 10,
+          "after_load": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          },
+          "after_warmup": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          },
+          "after_reference": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          }
+        },
+        {
+          "block": 11,
+          "after_load": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          },
+          "after_warmup": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          },
+          "after_reference": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          }
+        },
+        {
+          "block": 12,
+          "after_load": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          },
+          "after_warmup": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          },
+          "after_reference": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          }
+        },
+        {
+          "block": 13,
+          "after_load": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          },
+          "after_warmup": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          },
+          "after_reference": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          }
+        },
+        {
+          "block": 14,
+          "after_load": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          },
+          "after_warmup": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 51
+          },
+          "after_reference": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 51
+          }
+        },
+        {
+          "block": 15,
+          "after_load": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          },
+          "after_warmup": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          },
+          "after_reference": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          }
+        },
+        {
+          "block": 16,
+          "after_load": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 51
+          },
+          "after_warmup": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          },
+          "after_reference": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          }
+        },
+        {
+          "block": 17,
+          "after_load": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 51
+          },
+          "after_warmup": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          },
+          "after_reference": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          }
+        },
+        {
+          "block": 18,
+          "after_load": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          },
+          "after_warmup": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          },
+          "after_reference": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          }
+        },
+        {
+          "block": 19,
+          "after_load": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          },
+          "after_warmup": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          },
+          "after_reference": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          }
+        },
+        {
+          "block": "end",
+          "after_load": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          },
+          "after_warmup": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          },
+          "after_reference": {
+            "sm_mhz": 2760,
+            "memory_mhz": 13801,
+            "pstate": 1,
+            "temperature_c": 52
+          }
+        }
+      ]
+    }
+  },
+  "selected": null,
+  "affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "forward_warmup": null,
+  "condition_cycles": 10,
+  "note": "Controls-only selection. One bounded diagnostic campaign after M6 failure; not an effect-size selection."
+}

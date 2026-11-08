@@ -1,0 +1,255 @@
+{
+  "status": "POSTHOC_OFFLINE_VERIFIED_NO_NEW_TIMINGS",
+  "prereg_tag": "prereg-laptop-aa20-20261107",
+  "prereg_commit": "66f675dc272312c926393569d18089ecbef59721",
+  "lock_sha256": "b2905275ec94a3d8964a7b4b308267adb6d46fab3e595cfcd76981e427f2895a",
+  "raw_sha256": "8a9db651f211057d2cd0ee36759064199684aa8ca118f8b9cbc1e705ec057632",
+  "primary_tagged_source_bytes_match": true,
+  "all_runtime_source_and_input_hashes_match": true,
+  "raw_rows": 685,
+  "timing_rows": 640,
+  "reference_samples": 330,
+  "references": [
+    {
+      "raw_line": 2,
+      "block": "start",
+      "median_ns": 212064100,
+      "ratio": 1.0,
+      "flagged": false,
+      "elapsed_s": 8.801654577255249
+    },
+    {
+      "raw_line": 3,
+      "block": 0,
+      "median_ns": 213836500,
+      "ratio": 1.008357850291492,
+      "flagged": false,
+      "elapsed_s": 13.085361003875732
+    },
+    {
+      "raw_line": 37,
+      "block": 1,
+      "median_ns": 217071600,
+      "ratio": 1.0236131433844766,
+      "flagged": false,
+      "elapsed_s": 28.44162893295288
+    },
+    {
+      "raw_line": 71,
+      "block": 2,
+      "median_ns": 207676800,
+      "ratio": 0.9793114440397974,
+      "flagged": false,
+      "elapsed_s": 41.45256567001343
+    },
+    {
+      "raw_line": 105,
+      "block": 3,
+      "median_ns": 212887000,
+      "ratio": 1.0038804304924784,
+      "flagged": false,
+      "elapsed_s": 54.40740966796875
+    },
+    {
+      "raw_line": 139,
+      "block": 4,
+      "median_ns": 209982000,
+      "ratio": 0.9901817422185084,
+      "flagged": false,
+      "elapsed_s": 69.11363196372986
+    },
+    {
+      "raw_line": 173,
+      "block": 5,
+      "median_ns": 215793800,
+      "ratio": 1.0175876067660674,
+      "flagged": false,
+      "elapsed_s": 82.35070276260376
+    },
+    {
+      "raw_line": 207,
+      "block": 6,
+      "median_ns": 221984100,
+      "ratio": 1.0467783090112848,
+      "flagged": true,
+      "elapsed_s": 97.24330854415894
+    },
+    {
+      "raw_line": 241,
+      "block": 7,
+      "median_ns": 219136700,
+      "ratio": 1.0333512367251223,
+      "flagged": true,
+      "elapsed_s": 110.93109893798828
+    },
+    {
+      "raw_line": 275,
+      "block": 8,
+      "median_ns": 214471100,
+      "ratio": 1.011350341712718,
+      "flagged": false,
+      "elapsed_s": 125.39828181266785
+    },
+    {
+      "raw_line": 309,
+      "block": 9,
+      "median_ns": 217866400,
+      "ratio": 1.027361066771792,
+      "flagged": false,
+      "elapsed_s": 137.71714091300964
+    },
+    {
+      "raw_line": 343,
+      "block": 10,
+      "median_ns": 215020800,
+      "ratio": 1.0139424824852485,
+      "flagged": false,
+      "elapsed_s": 150.09520936012268
+    },
+    {
+      "raw_line": 377,
+      "block": 11,
+      "median_ns": 216686100,
+      "ratio": 1.021795296799411,
+      "flagged": false,
+      "elapsed_s": 164.47475409507751
+    },
+    {
+      "raw_line": 411,
+      "block": 12,
+      "median_ns": 214871800,
+      "ratio": 1.0132398647390106,
+      "flagged": false,
+      "elapsed_s": 176.90440559387207
+    },
+    {
+      "raw_line": 445,
+      "block": 13,
+      "median_ns": 215393600,
+      "ratio": 1.0157004415174469,
+      "flagged": false,
+      "elapsed_s": 191.1489200592041
+    },
+    {
+      "raw_line": 479,
+      "block": 14,
+      "median_ns": 217139800,
+      "ratio": 1.0239347442589293,
+      "flagged": false,
+      "elapsed_s": 203.70925641059875
+    },
+    {
+      "raw_line": 513,
+      "block": 15,
+      "median_ns": 216145500,
+      "ratio": 1.01924606758051,
+      "flagged": false,
+      "elapsed_s": 218.09971618652344
+    },
+    {
+      "raw_line": 547,
+      "block": 16,
+      "median_ns": 210182200,
+      "ratio": 0.9911257963983532,
+      "flagged": false,
+      "elapsed_s": 230.54181504249573
+    },
+    {
+      "raw_line": 581,
+      "block": 17,
+      "median_ns": 224076100,
+      "ratio": 1.0566432507906807,
+      "flagged": true,
+      "elapsed_s": 242.97643995285034
+    },
+    {
+      "raw_line": 615,
+      "block": 18,
+      "median_ns": 214654500,
+      "ratio": 1.0122151745627854,
+      "flagged": false,
+      "elapsed_s": 257.24512815475464
+    },
+    {
+      "raw_line": 649,
+      "block": 19,
+      "median_ns": 213483600,
+      "ratio": 1.006693730810637,
+      "flagged": false,
+      "elapsed_s": 269.49594807624817
+    },
+    {
+      "raw_line": 683,
+      "block": "end",
+      "median_ns": 210352500,
+      "ratio": 0.9919288554734158,
+      "flagged": false,
+      "elapsed_s": 283.147833108902
+    }
+  ],
+  "stages": {
+    "forward": {
+      "aa_mde_fraction": 0.02359770770833071,
+      "aa_ratio": 0.9868864908477505,
+      "per_image_aa_ratio": [
+        1.1019984401775371,
+        0.9843212121353222,
+        0.9894605746752232,
+        0.9373028732795355,
+        1.0067535038383466,
+        0.9430151316361061,
+        0.9937578870126015,
+        0.9910420250077092,
+        0.9876554269831465,
+        0.9749890340797762,
+        0.9482423596859714,
+        0.938917230999393,
+        0.9926630149472301,
+        1.0094209376368763,
+        0.9728938577655015,
+        0.9972059860275723,
+        1.0150394625415031,
+        1.0029770195758476,
+        0.9881914745125765,
+        0.9737377277302548
+      ],
+      "all_trial_median_ms": 215.003,
+      "max_trial_ms": 1750.3583
+    },
+    "total": {
+      "aa_mde_fraction": 0.030891612384640124,
+      "aa_ratio": 0.9844682569139671,
+      "per_image_aa_ratio": [
+        1.0031044170649126,
+        0.9053878957945956,
+        0.9280452582495978,
+        1.013449849657428,
+        0.9198862476785495,
+        1.1016954824675722,
+        0.9941909199321188,
+        0.902164056091498,
+        0.9850290055999199,
+        0.9885364526326197,
+        0.9907867677672499,
+        1.0012157746877772,
+        1.0227566678129936,
+        1.0107969448842944,
+        0.987505221446952,
+        0.9898080944932209,
+        0.9741974852346214,
+        1.015343678788493,
+        0.9843535341014293,
+        0.9909316160502474
+      ],
+      "all_trial_median_ms": 230.1485,
+      "max_trial_ms": 1683.989
+    }
+  },
+  "quality_pass": false,
+  "source_script_sha256": "de38cfb634d29d737b6d704d2f05df274eb88586ea9150e1d7935cc915ea557b",
+  "artifact_hashes": {
+    "raw.jsonl": "8a9db651f211057d2cd0ee36759064199684aa8ca118f8b9cbc1e705ec057632",
+    "manifest.json": "b1a0b704a5fd9a13ee0da50e0fd5953b4e9154c4bb2c21db637930f78954ecfb",
+    "controls_summary.json": "44822a35d7a7d2aa4ddc6bd981ebef7d1cb87de703368b63919e3054e16a7a60"
+  }
+}

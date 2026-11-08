@@ -1,0 +1,188 @@
+{
+ "m1_gpu": {
+  "device": "NVIDIA GeForce RTX 5060 Ti",
+  "stages_ms": {
+   "retinaFalse|K0": {
+    "total": 5.55215,
+    "forward": 5.28305,
+    "mask": 0.0071
+   },
+   "retinaFalse|K10": {
+    "total": 5.94285,
+    "forward": 5.32225,
+    "mask": 0.2562
+   },
+   "retinaFalse|K50": {
+    "total": 5.9883,
+    "forward": 5.4441,
+    "mask": 0.28505
+   },
+   "retinaFalse|K100": {
+    "total": 6.018,
+    "forward": 5.4466,
+    "mask": 0.347
+   },
+   "retinaFalse|K300": {
+    "total": 6.3024,
+    "forward": 5.52,
+    "mask": 0.6178
+   },
+   "retinaTrue|K0": {
+    "total": 5.65635,
+    "forward": 6.0118,
+    "mask": 0.0072
+   },
+   "retinaTrue|K10": {
+    "total": 6.09065,
+    "forward": 5.6406,
+    "mask": 0.3891
+   },
+   "retinaTrue|K50": {
+    "total": 6.85355,
+    "forward": 5.4532,
+    "mask": 1.1838
+   },
+   "retinaTrue|K100": {
+    "total": 7.90805,
+    "forward": 5.45265,
+    "mask": 2.3151
+   },
+   "retinaTrue|K300": {
+    "total": 12.1731,
+    "forward": 5.45095,
+    "mask": 6.54975
+   }
+  },
+  "frac_mask": {
+   "retinaFalse|K10": 0.04311062873873646,
+   "retinaFalse|K50": 0.04760115558672746,
+   "retinaFalse|K100": 0.05766035227650382,
+   "retinaFalse|K300": 0.09802614876872304,
+   "retinaTrue|K10": 0.06388480704029947,
+   "retinaTrue|K50": 0.17272800227619262,
+   "retinaTrue|K100": 0.292752322000999,
+   "retinaTrue|K300": 0.5380511126993125
+  },
+  "total_ratio": {
+   "retinaFalse|K10": 1.0,
+   "retinaFalse|K50": 1.0076478457305837,
+   "retinaFalse|K100": 1.0126454478911633,
+   "retinaFalse|K300": 1.060501274640955,
+   "retinaTrue|K10": 1.0,
+   "retinaTrue|K50": 1.1252575669263543,
+   "retinaTrue|K100": 1.298391797263018,
+   "retinaTrue|K300": 1.9986536740741956
+  }
+ },
+ "m3": {
+  "steps": 100,
+  "eps": 0.06274509803921569,
+  "images": [
+   {
+    "name": "bus.jpg",
+    "k_clean": 6,
+    "k_best": 248,
+    "traj": [
+     [
+      0,
+      10
+     ],
+     [
+      10,
+      57
+     ],
+     [
+      20,
+      110
+     ],
+     [
+      30,
+      131
+     ],
+     [
+      40,
+      156
+     ],
+     [
+      50,
+      172
+     ],
+     [
+      60,
+      202
+     ],
+     [
+      70,
+      210
+     ],
+     [
+      80,
+      219
+     ],
+     [
+      90,
+      224
+     ],
+     [
+      99,
+      248
+     ]
+    ]
+   },
+   {
+    "name": "zidane.jpg",
+    "k_clean": 3,
+    "k_best": 300,
+    "traj": [
+     [
+      0,
+      4
+     ],
+     [
+      10,
+      68
+     ],
+     [
+      20,
+      109
+     ],
+     [
+      30,
+      167
+     ],
+     [
+      40,
+      192
+     ],
+     [
+      50,
+      213
+     ],
+     [
+      60,
+      247
+     ],
+     [
+      70,
+      265
+     ],
+     [
+      80,
+      294
+     ],
+     [
+      90,
+      300
+     ],
+     [
+      99,
+      300
+     ]
+    ]
+   }
+  ],
+  "k_best_median": 274.0,
+  "frac_reach_50": 1.0
+ },
+ "torch": "2.11.0+cu128"
+}

@@ -1,0 +1,34 @@
+{
+ "bus.jpg": {
+  "clean": {
+   "N_tau": 51,
+   "ultra_nms_ms": 0.644,
+   "ultra_capped_maxnms300_ms": 0.648,
+   "torchvision_nms_ms": 0.292,
+   "n_cand_tv": 51
+  },
+  "attacked": {
+   "N_tau": 2603,
+   "ultra_nms_ms": 0.823,
+   "ultra_capped_maxnms300_ms": 0.741,
+   "torchvision_nms_ms": 0.453,
+   "n_cand_tv": 2603
+  }
+ },
+ "zidane.jpg": {
+  "clean": {
+   "N_tau": 21,
+   "ultra_nms_ms": 0.649,
+   "ultra_capped_maxnms300_ms": 0.633,
+   "torchvision_nms_ms": 0.296,
+   "n_cand_tv": 21
+  },
+  "attacked": {
+   "N_tau": 3116,
+   "ultra_nms_ms": 0.862,
+   "ultra_capped_maxnms300_ms": 0.744,
+   "torchvision_nms_ms": 0.485,
+   "n_cand_tv": 3116
+  }
+ }
+}

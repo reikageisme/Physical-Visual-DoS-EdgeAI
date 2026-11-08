@@ -1,0 +1,7 @@
+{
+  "tag": "prereg-laptop-total-confirmation-20261107",
+  "commit": "6748a891fb91384164e5c3c9bf8bec6d7ef13732",
+  "lock_sha256": "32b135b3f9e37159b27e2d194139632041cb68d11d0805a30e6bb2350b5e7a70",
+  "user_idle": "User authorized one fixed precision confirmation sequence; AC and idle declaration continues",
+  "smoke": true
+}

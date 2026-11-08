@@ -1,0 +1,110 @@
+{
+  "topology": [
+    {
+      "core_index": 0,
+      "logical_cpus": [
+        0,
+        1
+      ],
+      "efficiency_class": 1,
+      "smt": true,
+      "kind": "P"
+    },
+    {
+      "core_index": 1,
+      "logical_cpus": [
+        2,
+        3
+      ],
+      "efficiency_class": 1,
+      "smt": true,
+      "kind": "P"
+    },
+    {
+      "core_index": 2,
+      "logical_cpus": [
+        4
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 3,
+      "logical_cpus": [
+        5
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 4,
+      "logical_cpus": [
+        6
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 5,
+      "logical_cpus": [
+        7
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 6,
+      "logical_cpus": [
+        8
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 7,
+      "logical_cpus": [
+        9
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 8,
+      "logical_cpus": [
+        10
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    },
+    {
+      "core_index": 9,
+      "logical_cpus": [
+        11
+      ],
+      "efficiency_class": 0,
+      "smt": false,
+      "kind": "E"
+    }
+  ],
+  "power": {
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 186 Stepping 3, GenuineIntel",
+    "logical": 12,
+    "physical": 10,
+    "battery_percent": 100,
+    "power_plugged": true,
+    "cpu_freq_mhz": {
+      "current": 1300.0,
+      "min": 0.0,
+      "max": 1300.0
+    },
+    "power_plan": "CH\u01afA \u0110\u1eccC: ng\u01b0\u1eddi d\u00f9ng t\u1ef1 ch\u1ea1y `powercfg /getactivescheme` v\u00e0 ghi v\u00e0o PROGRESS"
+  }
+}

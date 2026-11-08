@@ -1,0 +1,2985 @@
+{
+  "endpoint": "nms_kernel",
+  "calls_per_block": 64,
+  "arms": {
+    "attacked": {
+      "raw_timing_lines": [
+        9,
+        10,
+        13,
+        14,
+        15,
+        16,
+        19,
+        20,
+        25,
+        26,
+        29,
+        30,
+        31,
+        32,
+        35,
+        36,
+        41,
+        42,
+        45,
+        46,
+        47,
+        48,
+        51,
+        52,
+        57,
+        58,
+        61,
+        62,
+        63,
+        64,
+        67,
+        68,
+        73,
+        74,
+        77,
+        78,
+        79,
+        80,
+        83,
+        84,
+        89,
+        90,
+        93,
+        94,
+        95,
+        96,
+        99,
+        100,
+        105,
+        106,
+        109,
+        110,
+        111,
+        112,
+        115,
+        116,
+        121,
+        122,
+        125,
+        126,
+        127,
+        128,
+        131,
+        132,
+        137,
+        138,
+        141,
+        142,
+        143,
+        144,
+        147,
+        148,
+        153,
+        154,
+        157,
+        158,
+        159,
+        160,
+        163,
+        164,
+        169,
+        170,
+        173,
+        174,
+        175,
+        176,
+        179,
+        180,
+        185,
+        186,
+        189,
+        190,
+        191,
+        192,
+        195,
+        196,
+        205,
+        206,
+        209,
+        210,
+        215,
+        216,
+        219,
+        220,
+        221,
+        222,
+        225,
+        226,
+        231,
+        232,
+        235,
+        236,
+        237,
+        238,
+        241,
+        242,
+        247,
+        248,
+        251,
+        252,
+        253,
+        254,
+        257,
+        258,
+        263,
+        264,
+        267,
+        268,
+        269,
+        270,
+        273,
+        274,
+        279,
+        280,
+        283,
+        284,
+        285,
+        286,
+        289,
+        290,
+        295,
+        296,
+        299,
+        300,
+        301,
+        302,
+        305,
+        306,
+        311,
+        312,
+        315,
+        316,
+        317,
+        318,
+        321,
+        322,
+        327,
+        328,
+        331,
+        332,
+        333,
+        334,
+        337,
+        338,
+        343,
+        344,
+        347,
+        348,
+        349,
+        350,
+        353,
+        354,
+        359,
+        360,
+        363,
+        364,
+        365,
+        366,
+        369,
+        370,
+        375,
+        376,
+        379,
+        380,
+        381,
+        382,
+        385,
+        386,
+        391,
+        392,
+        395,
+        396
+      ],
+      "raw_block_wall_ms": {
+        "n": 192,
+        "minimum": 71.553,
+        "median": 95.31675,
+        "maximum": 1497.2858
+      },
+      "pooled_block_average_per_call_ms": {
+        "n": 192,
+        "minimum": 1.118015625,
+        "median": 1.48932421875,
+        "maximum": 23.395090625
+      },
+      "process_cpu_ns_observed_values": [
+        46875000,
+        62500000,
+        78125000,
+        93750000,
+        109375000
+      ],
+      "zero_process_cpu_count": 0,
+      "cpu_over_wall": {
+        "n": 192,
+        "minimum": 0.052177747227683584,
+        "median": 0.9744506918648239,
+        "maximum": 1.1534018279727318
+      },
+      "cpu_over_wall_above_one_count": 71,
+      "pdh_counters": {
+        "% Performance Limit": {
+          "values": {
+            "n": 192,
+            "minimum": 100.0,
+            "median": 100.0,
+            "maximum": 100.0
+          },
+          "missing_or_invalid": 0,
+          "statuses": {
+            "0/0": 192
+          }
+        },
+        "% Processor Performance": {
+          "values": {
+            "n": 192,
+            "minimum": 245.1296125186289,
+            "median": 247.99738352703503,
+            "maximum": 248.03564075886038
+          },
+          "missing_or_invalid": 0,
+          "statuses": {
+            "0/0": 192
+          }
+        },
+        "% Processor Time": {
+          "values": {
+            "n": 192,
+            "minimum": 99.07765530395719,
+            "median": 100.0,
+            "maximum": 100.0
+          },
+          "missing_or_invalid": 0,
+          "statuses": {
+            "0/0": 192
+          }
+        },
+        "Performance Limit Flags": {
+          "values": {
+            "n": 192,
+            "minimum": 0.0,
+            "median": 0.0,
+            "maximum": 0.0
+          },
+          "missing_or_invalid": 0,
+          "statuses": {
+            "0/0": 192
+          }
+        },
+        "Processor Frequency": {
+          "values": {
+            "n": 192,
+            "minimum": 1300.0,
+            "median": 1300.0,
+            "maximum": 1300.0
+          },
+          "missing_or_invalid": 0,
+          "statuses": {
+            "0/0": 192
+          }
+        }
+      },
+      "pdh_read_ms": {
+        "n": 192,
+        "minimum": 0.0596,
+        "median": 0.07615,
+        "maximum": 0.1074
+      },
+      "pdh_read_over_raw_block_wall": {
+        "n": 192,
+        "minimum": 4.788664929567889e-05,
+        "median": 0.0009082586714912652,
+        "maximum": 0.0014799774268863487
+      },
+      "pdh_intervals": [
+        {
+          "raw_line": 9,
+          "interval_ms": 89.3804,
+          "timer_fraction": 0.9991564146054392,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 10,
+          "interval_ms": 73.1656,
+          "timer_fraction": 0.9985443979137737,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 13,
+          "interval_ms": 72.8301,
+          "timer_fraction": 0.9992132373839937,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 14,
+          "interval_ms": 72.3811,
+          "timer_fraction": 0.9982232930972312,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 15,
+          "interval_ms": 72.0051,
+          "timer_fraction": 0.998466775270085,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 16,
+          "interval_ms": 73.6241,
+          "timer_fraction": 0.9984678929861281,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 19,
+          "interval_ms": 71.9666,
+          "timer_fraction": 0.9993858262027107,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 20,
+          "interval_ms": 72.5987,
+          "timer_fraction": 0.9983966655050297,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 25,
+          "interval_ms": 73.5189,
+          "timer_fraction": 0.9993022202454063,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 26,
+          "interval_ms": 71.9713,
+          "timer_fraction": 0.998278480449846,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 29,
+          "interval_ms": 72.2885,
+          "timer_fraction": 0.9993802610373711,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 30,
+          "interval_ms": 71.7838,
+          "timer_fraction": 0.9982558738879803,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 31,
+          "interval_ms": 71.8889,
+          "timer_fraction": 0.9985519322176303,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 32,
+          "interval_ms": 75.2621,
+          "timer_fraction": 0.9987018698654435,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 35,
+          "interval_ms": 75.9396,
+          "timer_fraction": 0.9992968095697107,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 36,
+          "interval_ms": 72.646,
+          "timer_fraction": 0.9982256421551083,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 41,
+          "interval_ms": 72.6504,
+          "timer_fraction": 0.9993792188343079,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 42,
+          "interval_ms": 72.8045,
+          "timer_fraction": 0.9984987191725786,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 45,
+          "interval_ms": 71.6759,
+          "timer_fraction": 0.9993596173888294,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 46,
+          "interval_ms": 72.2951,
+          "timer_fraction": 0.9981243542093448,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 47,
+          "interval_ms": 72.3569,
+          "timer_fraction": 0.9983816332651068,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 48,
+          "interval_ms": 72.1271,
+          "timer_fraction": 0.9982170363150605,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 51,
+          "interval_ms": 72.4933,
+          "timer_fraction": 0.9992633802020324,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 52,
+          "interval_ms": 72.6606,
+          "timer_fraction": 0.9982989405537527,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 57,
+          "interval_ms": 74.2246,
+          "timer_fraction": 0.9994274135529191,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 58,
+          "interval_ms": 73.3885,
+          "timer_fraction": 0.9982190670200372,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 61,
+          "interval_ms": 72.3846,
+          "timer_fraction": 0.9991614238387724,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 62,
+          "interval_ms": 71.9048,
+          "timer_fraction": 0.998467418030507,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 63,
+          "interval_ms": 71.9417,
+          "timer_fraction": 0.9981262605693221,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 64,
+          "interval_ms": 73.5489,
+          "timer_fraction": 0.9982052756737354,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 67,
+          "interval_ms": 72.8153,
+          "timer_fraction": 0.9990043301339142,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 68,
+          "interval_ms": 76.3253,
+          "timer_fraction": 0.9984461246794968,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 73,
+          "interval_ms": 72.317,
+          "timer_fraction": 0.9993210448442275,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 74,
+          "interval_ms": 73.7025,
+          "timer_fraction": 0.9983569078389471,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 77,
+          "interval_ms": 74.6025,
+          "timer_fraction": 0.9993874199926276,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 78,
+          "interval_ms": 1497.3959,
+          "timer_fraction": 0.9999264723510997,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 79,
+          "interval_ms": 72.7576,
+          "timer_fraction": 0.9984757606078265,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 80,
+          "interval_ms": 72.1301,
+          "timer_fraction": 0.9984333863394061,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 83,
+          "interval_ms": 73.356,
+          "timer_fraction": 0.9993156660668521,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 84,
+          "interval_ms": 74.4614,
+          "timer_fraction": 0.9983924556884507,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 89,
+          "interval_ms": 72.1904,
+          "timer_fraction": 0.9991356191404951,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 90,
+          "interval_ms": 72.8992,
+          "timer_fraction": 0.998407389930205,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 93,
+          "interval_ms": 72.5133,
+          "timer_fraction": 0.9993752870163128,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 94,
+          "interval_ms": 72.0683,
+          "timer_fraction": 0.998326587417769,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 95,
+          "interval_ms": 72.1094,
+          "timer_fraction": 0.9985438791613853,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 96,
+          "interval_ms": 72.0884,
+          "timer_fraction": 0.998425544192963,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 99,
+          "interval_ms": 71.8332,
+          "timer_fraction": 0.999132713007356,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 100,
+          "interval_ms": 73.6567,
+          "timer_fraction": 0.9984685710872195,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 105,
+          "interval_ms": 72.4752,
+          "timer_fraction": 0.9993956553414134,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 106,
+          "interval_ms": 86.9136,
+          "timer_fraction": 0.998816065609985,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 109,
+          "interval_ms": 72.5872,
+          "timer_fraction": 0.9993883219079948,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 110,
+          "interval_ms": 71.9726,
+          "timer_fraction": 0.998382717867633,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 111,
+          "interval_ms": 72.5309,
+          "timer_fraction": 0.9981070137003677,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 112,
+          "interval_ms": 80.7651,
+          "timer_fraction": 0.9985835466061455,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 115,
+          "interval_ms": 72.7496,
+          "timer_fraction": 0.9993676941179058,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 116,
+          "interval_ms": 71.8365,
+          "timer_fraction": 0.9985244269974177,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 121,
+          "interval_ms": 72.457,
+          "timer_fraction": 0.999372041348662,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 122,
+          "interval_ms": 71.9662,
+          "timer_fraction": 0.9983478355116707,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 125,
+          "interval_ms": 72.5479,
+          "timer_fraction": 0.9993549089635951,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 126,
+          "interval_ms": 74.0307,
+          "timer_fraction": 0.9985303394402593,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 127,
+          "interval_ms": 72.7393,
+          "timer_fraction": 0.9984080132748047,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 128,
+          "interval_ms": 72.2249,
+          "timer_fraction": 0.9983952902669301,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 131,
+          "interval_ms": 72.7096,
+          "timer_fraction": 0.999228437510315,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 132,
+          "interval_ms": 72.4488,
+          "timer_fraction": 0.9979240511920142,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 137,
+          "interval_ms": 71.7429,
+          "timer_fraction": 0.9994006375543782,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 138,
+          "interval_ms": 72.0211,
+          "timer_fraction": 0.9984962740085892,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 141,
+          "interval_ms": 72.2632,
+          "timer_fraction": 0.9993482159660796,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 142,
+          "interval_ms": 72.3435,
+          "timer_fraction": 0.9985375327430938,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 143,
+          "interval_ms": 73.4378,
+          "timer_fraction": 0.9983754959979738,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 144,
+          "interval_ms": 72.1493,
+          "timer_fraction": 0.9985335963065477,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 147,
+          "interval_ms": 72.0173,
+          "timer_fraction": 0.999157146963299,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 148,
+          "interval_ms": 72.0584,
+          "timer_fraction": 0.998602522398499,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 153,
+          "interval_ms": 72.3583,
+          "timer_fraction": 0.9994154091514035,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 154,
+          "interval_ms": 71.6717,
+          "timer_fraction": 0.9983438372467794,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 157,
+          "interval_ms": 72.1969,
+          "timer_fraction": 0.9993531578225658,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 158,
+          "interval_ms": 71.801,
+          "timer_fraction": 0.9983314995612874,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 159,
+          "interval_ms": 71.9416,
+          "timer_fraction": 0.9982054888965495,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 160,
+          "interval_ms": 71.751,
+          "timer_fraction": 0.9983777229585651,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 163,
+          "interval_ms": 71.7301,
+          "timer_fraction": 0.9993893776810572,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 164,
+          "interval_ms": 72.0144,
+          "timer_fraction": 0.9985377924415118,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 169,
+          "interval_ms": 73.4111,
+          "timer_fraction": 0.9991077643571612,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 170,
+          "interval_ms": 71.9639,
+          "timer_fraction": 0.9984033661321857,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 173,
+          "interval_ms": 77.9903,
+          "timer_fraction": 0.9993383792599849,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 174,
+          "interval_ms": 72.7386,
+          "timer_fraction": 0.9985633487584309,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 175,
+          "interval_ms": 71.9665,
+          "timer_fraction": 0.9983603482175735,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 176,
+          "interval_ms": 72.237,
+          "timer_fraction": 0.9984633913368496,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 179,
+          "interval_ms": 73.518,
+          "timer_fraction": 0.9993457384586087,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 180,
+          "interval_ms": 79.9586,
+          "timer_fraction": 0.9985017246425025,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 185,
+          "interval_ms": 81.324,
+          "timer_fraction": 0.9994749397471842,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 186,
+          "interval_ms": 73.1035,
+          "timer_fraction": 0.998493916159965,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 189,
+          "interval_ms": 71.8569,
+          "timer_fraction": 0.9994155049828201,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 190,
+          "interval_ms": 72.0558,
+          "timer_fraction": 0.9984178927997469,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 191,
+          "interval_ms": 72.5462,
+          "timer_fraction": 0.9983706934339772,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 192,
+          "interval_ms": 73.359,
+          "timer_fraction": 0.9984759879496722,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 195,
+          "interval_ms": 71.6369,
+          "timer_fraction": 0.9993592687567441,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 196,
+          "interval_ms": 72.3722,
+          "timer_fraction": 0.9983792119073346,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 205,
+          "interval_ms": 5083.0758,
+          "timer_fraction": 0.019066998764802997,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 206,
+          "interval_ms": 96.0017,
+          "timer_fraction": 0.9987406473010374,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 209,
+          "interval_ms": 98.4148,
+          "timer_fraction": 0.9994452053959364,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 210,
+          "interval_ms": 96.6685,
+          "timer_fraction": 0.9988889865881854,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 215,
+          "interval_ms": 96.5965,
+          "timer_fraction": 0.9994709953259177,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 216,
+          "interval_ms": 99.1203,
+          "timer_fraction": 0.9985603352693646,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 219,
+          "interval_ms": 95.5151,
+          "timer_fraction": 0.9995435276725879,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 220,
+          "interval_ms": 95.752,
+          "timer_fraction": 0.9989305706408221,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 221,
+          "interval_ms": 95.8712,
+          "timer_fraction": 0.9988599287377231,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 222,
+          "interval_ms": 96.1951,
+          "timer_fraction": 0.9989334176065101,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 225,
+          "interval_ms": 96.8089,
+          "timer_fraction": 0.9994928152266992,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 226,
+          "interval_ms": 96.2418,
+          "timer_fraction": 0.9985900097462849,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 231,
+          "interval_ms": 98.6225,
+          "timer_fraction": 0.9995163375497478,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 232,
+          "interval_ms": 96.4937,
+          "timer_fraction": 0.9989077007099946,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 235,
+          "interval_ms": 97.3924,
+          "timer_fraction": 0.9993849622763172,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 236,
+          "interval_ms": 97.3522,
+          "timer_fraction": 0.9987653078204705,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 237,
+          "interval_ms": 96.5816,
+          "timer_fraction": 0.9988558897346906,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 238,
+          "interval_ms": 97.1823,
+          "timer_fraction": 0.9988578167011894,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 241,
+          "interval_ms": 96.3888,
+          "timer_fraction": 0.9993017860996298,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 242,
+          "interval_ms": 96.5552,
+          "timer_fraction": 0.9987841152004242,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 247,
+          "interval_ms": 97.4857,
+          "timer_fraction": 0.9995394196276992,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 248,
+          "interval_ms": 95.5972,
+          "timer_fraction": 0.9988116806768399,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 251,
+          "interval_ms": 97.2553,
+          "timer_fraction": 0.9995917960255122,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 252,
+          "interval_ms": 97.2669,
+          "timer_fraction": 0.9987570283416044,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 253,
+          "interval_ms": 96.6729,
+          "timer_fraction": 0.998791802045868,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 254,
+          "interval_ms": 96.9936,
+          "timer_fraction": 0.9988617805710892,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 257,
+          "interval_ms": 96.1168,
+          "timer_fraction": 0.9994007291129127,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 258,
+          "interval_ms": 96.4213,
+          "timer_fraction": 0.998857099001984,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 263,
+          "interval_ms": 96.2589,
+          "timer_fraction": 0.9995688710342628,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 264,
+          "interval_ms": 96.8326,
+          "timer_fraction": 0.9988495609949541,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 267,
+          "interval_ms": 96.3935,
+          "timer_fraction": 0.9994532826383522,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 268,
+          "interval_ms": 96.3936,
+          "timer_fraction": 0.9987644407927497,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 269,
+          "interval_ms": 96.8397,
+          "timer_fraction": 0.998801111527607,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 270,
+          "interval_ms": 96.7121,
+          "timer_fraction": 0.9989132693840791,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 273,
+          "interval_ms": 95.579,
+          "timer_fraction": 0.9993115642557465,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 274,
+          "interval_ms": 95.9968,
+          "timer_fraction": 0.9988374612487083,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 279,
+          "interval_ms": 96.3835,
+          "timer_fraction": 0.9993691866346418,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 280,
+          "interval_ms": 95.9926,
+          "timer_fraction": 0.9989426268274846,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 283,
+          "interval_ms": 97.3877,
+          "timer_fraction": 0.999535875680399,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 284,
+          "interval_ms": 96.9792,
+          "timer_fraction": 0.9988791410941728,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 285,
+          "interval_ms": 96.4812,
+          "timer_fraction": 0.9988184226564346,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 286,
+          "interval_ms": 102.0062,
+          "timer_fraction": 0.9989333981659938,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 289,
+          "interval_ms": 97.6393,
+          "timer_fraction": 0.999521708983985,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 290,
+          "interval_ms": 96.5532,
+          "timer_fraction": 0.9988389820327032,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 295,
+          "interval_ms": 97.1958,
+          "timer_fraction": 0.9995154111597415,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 296,
+          "interval_ms": 96.7558,
+          "timer_fraction": 0.9987700995702583,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 299,
+          "interval_ms": 96.7765,
+          "timer_fraction": 0.9987920621225194,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 300,
+          "interval_ms": 96.9216,
+          "timer_fraction": 0.9986452968172214,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 301,
+          "interval_ms": 97.1619,
+          "timer_fraction": 0.9988030287592153,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 302,
+          "interval_ms": 103.1252,
+          "timer_fraction": 0.998930426316749,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 305,
+          "interval_ms": 97.3761,
+          "timer_fraction": 0.9995430090135053,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 306,
+          "interval_ms": 107.3569,
+          "timer_fraction": 0.9990172965128464,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 311,
+          "interval_ms": 96.4217,
+          "timer_fraction": 0.9994378858700894,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 312,
+          "interval_ms": 96.1931,
+          "timer_fraction": 0.9987327573391439,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 315,
+          "interval_ms": 96.0047,
+          "timer_fraction": 0.9990635875118614,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 316,
+          "interval_ms": 96.3963,
+          "timer_fraction": 0.9988816998162793,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 317,
+          "interval_ms": 96.9599,
+          "timer_fraction": 0.9987128699596431,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 318,
+          "interval_ms": 96.6822,
+          "timer_fraction": 0.9988301879766907,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 321,
+          "interval_ms": 96.9375,
+          "timer_fraction": 0.9995244358478401,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 322,
+          "interval_ms": 96.3544,
+          "timer_fraction": 0.9983840903996081,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 327,
+          "interval_ms": 102.6464,
+          "timer_fraction": 0.9994661283785891,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 328,
+          "interval_ms": 96.2149,
+          "timer_fraction": 0.9988546472531801,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 331,
+          "interval_ms": 95.6086,
+          "timer_fraction": 0.999511550216194,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 332,
+          "interval_ms": 98.0725,
+          "timer_fraction": 0.9989895230569221,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 333,
+          "interval_ms": 97.9056,
+          "timer_fraction": 0.9989397950679021,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 334,
+          "interval_ms": 104.0176,
+          "timer_fraction": 0.9989146067588562,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 337,
+          "interval_ms": 96.7612,
+          "timer_fraction": 0.9995318371413335,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 338,
+          "interval_ms": 96.1909,
+          "timer_fraction": 0.9987774311291401,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 343,
+          "interval_ms": 95.8379,
+          "timer_fraction": 0.9995899325840821,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 344,
+          "interval_ms": 96.5767,
+          "timer_fraction": 0.9989790498122217,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 347,
+          "interval_ms": 96.2949,
+          "timer_fraction": 0.9994828386550066,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 348,
+          "interval_ms": 97.1868,
+          "timer_fraction": 0.9988342038219182,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 349,
+          "interval_ms": 95.8825,
+          "timer_fraction": 0.9988235600865643,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 350,
+          "interval_ms": 96.2436,
+          "timer_fraction": 0.9988539497691276,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 353,
+          "interval_ms": 97.2182,
+          "timer_fraction": 0.9995484384611112,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 354,
+          "interval_ms": 96.4459,
+          "timer_fraction": 0.9988439114570967,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 359,
+          "interval_ms": 96.5037,
+          "timer_fraction": 0.9995305879463688,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 360,
+          "interval_ms": 95.7004,
+          "timer_fraction": 0.998807737480721,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 363,
+          "interval_ms": 96.382,
+          "timer_fraction": 0.9994272789525015,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 364,
+          "interval_ms": 96.1908,
+          "timer_fraction": 0.9989260927240443,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 365,
+          "interval_ms": 95.8674,
+          "timer_fraction": 0.9988400645057652,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 366,
+          "interval_ms": 97.5291,
+          "timer_fraction": 0.9987736993369158,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 369,
+          "interval_ms": 95.4224,
+          "timer_fraction": 0.9994686782139204,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 370,
+          "interval_ms": 102.4728,
+          "timer_fraction": 0.9990514556057802,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 375,
+          "interval_ms": 96.9038,
+          "timer_fraction": 0.9994540977753195,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 376,
+          "interval_ms": 95.9079,
+          "timer_fraction": 0.9988092743142118,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 379,
+          "interval_ms": 97.1498,
+          "timer_fraction": 0.9995522378841748,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 380,
+          "interval_ms": 97.0382,
+          "timer_fraction": 0.9987510073352556,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 381,
+          "interval_ms": 95.3746,
+          "timer_fraction": 0.9988172951708316,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 382,
+          "interval_ms": 97.9396,
+          "timer_fraction": 0.9987961968396849,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 385,
+          "interval_ms": 95.7604,
+          "timer_fraction": 0.9994966604149523,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 386,
+          "interval_ms": 97.2802,
+          "timer_fraction": 0.998665709980037,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 391,
+          "interval_ms": 96.3794,
+          "timer_fraction": 0.9995351703787324,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 392,
+          "interval_ms": 101.0535,
+          "timer_fraction": 0.9987966770077237,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 395,
+          "interval_ms": 96.119,
+          "timer_fraction": 0.999539112974542,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 396,
+          "interval_ms": 106.5297,
+          "timer_fraction": 0.9989261210723395,
+          "timer_contained": true
+        }
+      ]
+    },
+    "clean": {
+      "raw_timing_lines": [
+        7,
+        8,
+        11,
+        12,
+        17,
+        18,
+        21,
+        22,
+        23,
+        24,
+        27,
+        28,
+        33,
+        34,
+        37,
+        38,
+        39,
+        40,
+        43,
+        44,
+        49,
+        50,
+        53,
+        54,
+        55,
+        56,
+        59,
+        60,
+        65,
+        66,
+        69,
+        70,
+        71,
+        72,
+        75,
+        76,
+        81,
+        82,
+        85,
+        86,
+        87,
+        88,
+        91,
+        92,
+        97,
+        98,
+        101,
+        102,
+        103,
+        104,
+        107,
+        108,
+        113,
+        114,
+        117,
+        118,
+        119,
+        120,
+        123,
+        124,
+        129,
+        130,
+        133,
+        134,
+        135,
+        136,
+        139,
+        140,
+        145,
+        146,
+        149,
+        150,
+        151,
+        152,
+        155,
+        156,
+        161,
+        162,
+        165,
+        166,
+        167,
+        168,
+        171,
+        172,
+        177,
+        178,
+        181,
+        182,
+        183,
+        184,
+        187,
+        188,
+        193,
+        194,
+        197,
+        198,
+        207,
+        208,
+        211,
+        212,
+        213,
+        214,
+        217,
+        218,
+        223,
+        224,
+        227,
+        228,
+        229,
+        230,
+        233,
+        234,
+        239,
+        240,
+        243,
+        244,
+        245,
+        246,
+        249,
+        250,
+        255,
+        256,
+        259,
+        260,
+        261,
+        262,
+        265,
+        266,
+        271,
+        272,
+        275,
+        276,
+        277,
+        278,
+        281,
+        282,
+        287,
+        288,
+        291,
+        292,
+        293,
+        294,
+        297,
+        298,
+        303,
+        304,
+        307,
+        308,
+        309,
+        310,
+        313,
+        314,
+        319,
+        320,
+        323,
+        324,
+        325,
+        326,
+        329,
+        330,
+        335,
+        336,
+        339,
+        340,
+        341,
+        342,
+        345,
+        346,
+        351,
+        352,
+        355,
+        356,
+        357,
+        358,
+        361,
+        362,
+        367,
+        368,
+        371,
+        372,
+        373,
+        374,
+        377,
+        378,
+        383,
+        384,
+        387,
+        388,
+        389,
+        390,
+        393,
+        394
+      ],
+      "raw_block_wall_ms": {
+        "n": 192,
+        "minimum": 1.6187,
+        "median": 1.6995,
+        "maximum": 2.2806
+      },
+      "pooled_block_average_per_call_ms": {
+        "n": 192,
+        "minimum": 0.0252921875,
+        "median": 0.0265546875,
+        "maximum": 0.035634375
+      },
+      "process_cpu_ns_observed_values": [
+        0,
+        15625000
+      ],
+      "zero_process_cpu_count": 177,
+      "cpu_over_wall": {
+        "n": 192,
+        "minimum": 0.0,
+        "median": 0.0,
+        "maximum": 9.595308278064358
+      },
+      "cpu_over_wall_above_one_count": 15,
+      "pdh_counters": {
+        "% Performance Limit": {
+          "values": {
+            "n": 192,
+            "minimum": 100.0,
+            "median": 100.0,
+            "maximum": 100.0
+          },
+          "missing_or_invalid": 0,
+          "statuses": {
+            "0/0": 192
+          }
+        },
+        "% Processor Performance": {
+          "values": {
+            "n": 192,
+            "minimum": 247.14815114533943,
+            "median": 248.05419994189663,
+            "maximum": 248.62287756925826
+          },
+          "missing_or_invalid": 0,
+          "statuses": {
+            "0/0": 192
+          }
+        },
+        "% Processor Time": {
+          "values": {
+            "n": 192,
+            "minimum": 99.82345844222463,
+            "median": 100.0,
+            "maximum": 100.0
+          },
+          "missing_or_invalid": 0,
+          "statuses": {
+            "0/0": 192
+          }
+        },
+        "Performance Limit Flags": {
+          "values": {
+            "n": 192,
+            "minimum": 0.0,
+            "median": 0.0,
+            "maximum": 0.0
+          },
+          "missing_or_invalid": 0,
+          "statuses": {
+            "0/0": 192
+          }
+        },
+        "Processor Frequency": {
+          "values": {
+            "n": 192,
+            "minimum": 1300.0,
+            "median": 1300.0,
+            "maximum": 1300.0
+          },
+          "missing_or_invalid": 0,
+          "statuses": {
+            "0/0": 192
+          }
+        }
+      },
+      "pdh_read_ms": {
+        "n": 192,
+        "minimum": 0.0237,
+        "median": 0.030350000000000002,
+        "maximum": 0.0815
+      },
+      "pdh_read_over_raw_block_wall": {
+        "n": 192,
+        "minimum": 0.014611590628853267,
+        "median": 0.01756381354598651,
+        "maximum": 0.04722721214579591
+      },
+      "pdh_intervals": [
+        {
+          "raw_line": 7,
+          "interval_ms": 8851.3379,
+          "timer_fraction": 0.0001949648764397527,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 8,
+          "interval_ms": 1.8175,
+          "timer_fraction": 0.9400275103163687,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 11,
+          "interval_ms": 2.2762,
+          "timer_fraction": 0.9421843423249275,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 12,
+          "interval_ms": 1.9755,
+          "timer_fraction": 0.9568716780561883,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 17,
+          "interval_ms": 1.8467,
+          "timer_fraction": 0.9468782151946715,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 18,
+          "interval_ms": 1.727,
+          "timer_fraction": 0.9760856977417487,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 21,
+          "interval_ms": 1.8781,
+          "timer_fraction": 0.9437729620361003,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 22,
+          "interval_ms": 1.7448,
+          "timer_fraction": 0.9706556625401193,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 23,
+          "interval_ms": 1.7087,
+          "timer_fraction": 0.9784631591268216,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 24,
+          "interval_ms": 1.7162,
+          "timer_fraction": 0.9803635939867148,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 27,
+          "interval_ms": 1.8155,
+          "timer_fraction": 0.9389699807215643,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 28,
+          "interval_ms": 1.7299,
+          "timer_fraction": 0.9742181628995896,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 33,
+          "interval_ms": 1.808,
+          "timer_fraction": 0.9429203539823009,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 34,
+          "interval_ms": 1.7285,
+          "timer_fraction": 0.9774370841770321,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 37,
+          "interval_ms": 1.8253,
+          "timer_fraction": 0.9415438558045253,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 38,
+          "interval_ms": 1.7907,
+          "timer_fraction": 0.9748701625062824,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 39,
+          "interval_ms": 1.7715,
+          "timer_fraction": 0.9755009878633926,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 40,
+          "interval_ms": 1.7206,
+          "timer_fraction": 0.9755899104963385,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 43,
+          "interval_ms": 1.8377,
+          "timer_fraction": 0.9422647875061217,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 44,
+          "interval_ms": 1.7433,
+          "timer_fraction": 0.9712040383181323,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 49,
+          "interval_ms": 1.8291,
+          "timer_fraction": 0.9461483789841999,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 50,
+          "interval_ms": 1.7337,
+          "timer_fraction": 0.9724865893753245,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 53,
+          "interval_ms": 1.8262,
+          "timer_fraction": 0.9453510020808236,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 54,
+          "interval_ms": 1.7107,
+          "timer_fraction": 0.9750394575320045,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 55,
+          "interval_ms": 1.7567,
+          "timer_fraction": 0.9775715830819149,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 56,
+          "interval_ms": 1.7278,
+          "timer_fraction": 0.9768491723579118,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 59,
+          "interval_ms": 1.921,
+          "timer_fraction": 0.9341488807912546,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 60,
+          "interval_ms": 1.8397,
+          "timer_fraction": 0.9717888786215144,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 65,
+          "interval_ms": 1.9262,
+          "timer_fraction": 0.943204236320216,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 66,
+          "interval_ms": 1.9275,
+          "timer_fraction": 0.9633203631647211,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 69,
+          "interval_ms": 1.813,
+          "timer_fraction": 0.944677330391616,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 70,
+          "interval_ms": 1.8213,
+          "timer_fraction": 0.976280678636139,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 71,
+          "interval_ms": 1.7346,
+          "timer_fraction": 0.9601060763288366,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 72,
+          "interval_ms": 1.7102,
+          "timer_fraction": 0.9787744123494329,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 75,
+          "interval_ms": 1.827,
+          "timer_fraction": 0.9364532019704433,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 76,
+          "interval_ms": 1.7401,
+          "timer_fraction": 0.9680478133440606,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 81,
+          "interval_ms": 1.9403,
+          "timer_fraction": 0.9338246662887182,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 82,
+          "interval_ms": 1.7933,
+          "timer_fraction": 0.9738470975296939,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 85,
+          "interval_ms": 1.8184,
+          "timer_fraction": 0.9379674439067311,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 86,
+          "interval_ms": 1.7601,
+          "timer_fraction": 0.9686381455599113,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 87,
+          "interval_ms": 1.7436,
+          "timer_fraction": 0.9775751319109888,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 88,
+          "interval_ms": 2.2373,
+          "timer_fraction": 0.9832387252491843,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 91,
+          "interval_ms": 1.861,
+          "timer_fraction": 0.9365932294465341,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 92,
+          "interval_ms": 1.741,
+          "timer_fraction": 0.9761056863871338,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 97,
+          "interval_ms": 1.8891,
+          "timer_fraction": 0.9544227409877719,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 98,
+          "interval_ms": 1.7842,
+          "timer_fraction": 0.9626162986212308,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 101,
+          "interval_ms": 1.9755,
+          "timer_fraction": 0.9356618577575297,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 102,
+          "interval_ms": 1.7139,
+          "timer_fraction": 0.9677927533695081,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 103,
+          "interval_ms": 1.7167,
+          "timer_fraction": 0.978796528222753,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 104,
+          "interval_ms": 1.705,
+          "timer_fraction": 0.9807624633431085,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 107,
+          "interval_ms": 1.8134,
+          "timer_fraction": 0.9382927098268447,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 108,
+          "interval_ms": 1.7601,
+          "timer_fraction": 0.9689790352820863,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 113,
+          "interval_ms": 1.8449,
+          "timer_fraction": 0.9440078053011003,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 114,
+          "interval_ms": 1.7456,
+          "timer_fraction": 0.9721012832263978,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 117,
+          "interval_ms": 1.8185,
+          "timer_fraction": 0.9505636513610118,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 118,
+          "interval_ms": 1.8444,
+          "timer_fraction": 0.9779332032097159,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 119,
+          "interval_ms": 1.7839,
+          "timer_fraction": 0.9713548965749201,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 120,
+          "interval_ms": 1.7279,
+          "timer_fraction": 0.9798599455987036,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 123,
+          "interval_ms": 1.8277,
+          "timer_fraction": 0.9446298626689281,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 124,
+          "interval_ms": 1.7911,
+          "timer_fraction": 0.9776673552565462,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 129,
+          "interval_ms": 1.8283,
+          "timer_fraction": 0.9406552535141935,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 130,
+          "interval_ms": 1.7266,
+          "timer_fraction": 0.9735897138885671,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 133,
+          "interval_ms": 1.8392,
+          "timer_fraction": 0.9240974336668116,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 134,
+          "interval_ms": 1.7497,
+          "timer_fraction": 0.9745099159855976,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 135,
+          "interval_ms": 1.737,
+          "timer_fraction": 0.9645941278065631,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 136,
+          "interval_ms": 1.7176,
+          "timer_fraction": 0.9803213786679087,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 139,
+          "interval_ms": 1.8158,
+          "timer_fraction": 0.9427800418548298,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 140,
+          "interval_ms": 1.7379,
+          "timer_fraction": 0.9696185050923528,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 145,
+          "interval_ms": 1.8868,
+          "timer_fraction": 0.941435234259063,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 146,
+          "interval_ms": 1.8034,
+          "timer_fraction": 0.9422757014528114,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 149,
+          "interval_ms": 1.8289,
+          "timer_fraction": 0.9466345890972716,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 150,
+          "interval_ms": 1.7362,
+          "timer_fraction": 0.9707982951272894,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 151,
+          "interval_ms": 1.7105,
+          "timer_fraction": 0.974744226834259,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 152,
+          "interval_ms": 1.7158,
+          "timer_fraction": 0.9742394218440378,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 155,
+          "interval_ms": 1.8142,
+          "timer_fraction": 0.9429500606327857,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 156,
+          "interval_ms": 1.7989,
+          "timer_fraction": 0.976985935849686,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 161,
+          "interval_ms": 1.849,
+          "timer_fraction": 0.9440778799351001,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 162,
+          "interval_ms": 1.7194,
+          "timer_fraction": 0.9728393625683378,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 165,
+          "interval_ms": 1.821,
+          "timer_fraction": 0.9492037342119715,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 166,
+          "interval_ms": 1.7161,
+          "timer_fraction": 0.9775654099411456,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 167,
+          "interval_ms": 1.7704,
+          "timer_fraction": 0.9796656122910077,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 168,
+          "interval_ms": 1.9307,
+          "timer_fraction": 0.9803698140570778,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 171,
+          "interval_ms": 1.8215,
+          "timer_fraction": 0.937469118858084,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 172,
+          "interval_ms": 1.7605,
+          "timer_fraction": 0.9759727350184607,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 177,
+          "interval_ms": 1.9108,
+          "timer_fraction": 0.9498639313376597,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 178,
+          "interval_ms": 1.8463,
+          "timer_fraction": 0.9722146996696095,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 181,
+          "interval_ms": 1.817,
+          "timer_fraction": 0.9444689047881123,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 182,
+          "interval_ms": 1.7197,
+          "timer_fraction": 0.9745304413560505,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 183,
+          "interval_ms": 1.7042,
+          "timer_fraction": 0.9789930759300551,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 184,
+          "interval_ms": 1.74,
+          "timer_fraction": 0.9809770114942529,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 187,
+          "interval_ms": 1.899,
+          "timer_fraction": 0.931911532385466,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 188,
+          "interval_ms": 1.7351,
+          "timer_fraction": 0.971644285631952,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 193,
+          "interval_ms": 1.8913,
+          "timer_fraction": 0.9461217152223338,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 194,
+          "interval_ms": 1.7474,
+          "timer_fraction": 0.9712716035252374,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 197,
+          "interval_ms": 1.9166,
+          "timer_fraction": 0.943754565376187,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 198,
+          "interval_ms": 1.7555,
+          "timer_fraction": 0.9718029051552264,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 207,
+          "interval_ms": 1.8739,
+          "timer_fraction": 0.9364427130583276,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 208,
+          "interval_ms": 1.7814,
+          "timer_fraction": 0.9746266981026159,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 211,
+          "interval_ms": 1.8577,
+          "timer_fraction": 0.9248533132367982,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 212,
+          "interval_ms": 1.7705,
+          "timer_fraction": 0.9701214346229878,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 213,
+          "interval_ms": 1.7996,
+          "timer_fraction": 0.9779395421204712,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 214,
+          "interval_ms": 1.7646,
+          "timer_fraction": 0.9781253541879179,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 217,
+          "interval_ms": 2.0951,
+          "timer_fraction": 0.9484511479165673,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 218,
+          "interval_ms": 1.793,
+          "timer_fraction": 0.9744004461795873,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 223,
+          "interval_ms": 1.859,
+          "timer_fraction": 0.9458848843464228,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 224,
+          "interval_ms": 1.7129,
+          "timer_fraction": 0.9654387296397922,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 227,
+          "interval_ms": 1.8059,
+          "timer_fraction": 0.9378149399191539,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 228,
+          "interval_ms": 1.7187,
+          "timer_fraction": 0.9766684121719904,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 229,
+          "interval_ms": 1.6749,
+          "timer_fraction": 0.9757000417935399,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 230,
+          "interval_ms": 1.76,
+          "timer_fraction": 0.9804545454545455,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 233,
+          "interval_ms": 1.8209,
+          "timer_fraction": 0.9362952386182657,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 234,
+          "interval_ms": 1.8339,
+          "timer_fraction": 0.9762800588908883,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 239,
+          "interval_ms": 1.8703,
+          "timer_fraction": 0.9498476180291932,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 240,
+          "interval_ms": 1.8848,
+          "timer_fraction": 0.9729414261460102,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 243,
+          "interval_ms": 1.7847,
+          "timer_fraction": 0.9362357819241329,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 244,
+          "interval_ms": 1.67,
+          "timer_fraction": 0.9716766467065868,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 245,
+          "interval_ms": 1.659,
+          "timer_fraction": 0.975708257986739,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 246,
+          "interval_ms": 1.6968,
+          "timer_fraction": 0.9802569542668552,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 249,
+          "interval_ms": 1.8701,
+          "timer_fraction": 0.9326239238543393,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 250,
+          "interval_ms": 1.6649,
+          "timer_fraction": 0.9764550423448856,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 255,
+          "interval_ms": 1.7585,
+          "timer_fraction": 0.93994882001706,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 256,
+          "interval_ms": 1.7625,
+          "timer_fraction": 0.9716312056737588,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 259,
+          "interval_ms": 1.7895,
+          "timer_fraction": 0.9370215143894943,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 260,
+          "interval_ms": 1.7077,
+          "timer_fraction": 0.9737658839374598,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 261,
+          "interval_ms": 1.6958,
+          "timer_fraction": 0.9774147894798915,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 262,
+          "interval_ms": 1.6775,
+          "timer_fraction": 0.9791356184798807,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 265,
+          "interval_ms": 1.7671,
+          "timer_fraction": 0.9356572916077188,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 266,
+          "interval_ms": 1.7413,
+          "timer_fraction": 0.9717452478033654,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 271,
+          "interval_ms": 1.8206,
+          "timer_fraction": 0.9399099198066572,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 272,
+          "interval_ms": 2.0931,
+          "timer_fraction": 0.9116143519182074,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 275,
+          "interval_ms": 1.7899,
+          "timer_fraction": 0.9445779093804123,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 276,
+          "interval_ms": 1.6882,
+          "timer_fraction": 0.9689610235754058,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 277,
+          "interval_ms": 1.6939,
+          "timer_fraction": 0.9775665623708601,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 278,
+          "interval_ms": 1.7217,
+          "timer_fraction": 0.9765929023639426,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 281,
+          "interval_ms": 1.8076,
+          "timer_fraction": 0.9438481965036513,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 282,
+          "interval_ms": 1.6786,
+          "timer_fraction": 0.9700941260574288,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 287,
+          "interval_ms": 1.8069,
+          "timer_fraction": 0.9396203442359843,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 288,
+          "interval_ms": 1.6758,
+          "timer_fraction": 0.9699248120300752,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 291,
+          "interval_ms": 1.7971,
+          "timer_fraction": 0.9382894663624729,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 292,
+          "interval_ms": 1.6966,
+          "timer_fraction": 0.9710008251797713,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 293,
+          "interval_ms": 1.6858,
+          "timer_fraction": 0.9746114604342152,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 294,
+          "interval_ms": 1.7518,
+          "timer_fraction": 0.9799634661491038,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 297,
+          "interval_ms": 1.9307,
+          "timer_fraction": 0.9406432899984462,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 298,
+          "interval_ms": 1.7505,
+          "timer_fraction": 0.96583833190517,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 303,
+          "interval_ms": 1.8583,
+          "timer_fraction": 0.942850992842921,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 304,
+          "interval_ms": 1.72,
+          "timer_fraction": 0.9712790697674418,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 307,
+          "interval_ms": 1.8068,
+          "timer_fraction": 0.9437126411334957,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 308,
+          "interval_ms": 1.7189,
+          "timer_fraction": 0.9693990342661004,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 309,
+          "interval_ms": 1.6783,
+          "timer_fraction": 0.9786093070368825,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 310,
+          "interval_ms": 1.6546,
+          "timer_fraction": 0.9808412909464523,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 313,
+          "interval_ms": 1.925,
+          "timer_fraction": 0.9450909090909091,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 314,
+          "interval_ms": 2.0272,
+          "timer_fraction": 0.9732142857142857,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 319,
+          "interval_ms": 1.7742,
+          "timer_fraction": 0.9372111374140457,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 320,
+          "interval_ms": 1.6803,
+          "timer_fraction": 0.9753020293995119,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 323,
+          "interval_ms": 1.7702,
+          "timer_fraction": 0.9326629759349226,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 324,
+          "interval_ms": 1.6812,
+          "timer_fraction": 0.9759695455626933,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 325,
+          "interval_ms": 1.6887,
+          "timer_fraction": 0.9771421803754368,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 326,
+          "interval_ms": 1.6925,
+          "timer_fraction": 0.9776070901033973,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 329,
+          "interval_ms": 1.7872,
+          "timer_fraction": 0.9409691136974038,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 330,
+          "interval_ms": 1.678,
+          "timer_fraction": 0.9694874851013111,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 335,
+          "interval_ms": 1.846,
+          "timer_fraction": 0.9353196099674973,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 336,
+          "interval_ms": 1.6729,
+          "timer_fraction": 0.9749536732620001,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 339,
+          "interval_ms": 1.8101,
+          "timer_fraction": 0.9480691674493122,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 340,
+          "interval_ms": 1.6754,
+          "timer_fraction": 0.9749313596753014,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 341,
+          "interval_ms": 1.7193,
+          "timer_fraction": 0.979410225091607,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 342,
+          "interval_ms": 1.6884,
+          "timer_fraction": 0.9796256811182185,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 345,
+          "interval_ms": 2.395,
+          "timer_fraction": 0.9522338204592902,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 346,
+          "interval_ms": 1.7494,
+          "timer_fraction": 0.9628444037955871,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 351,
+          "interval_ms": 1.8015,
+          "timer_fraction": 0.944601720788232,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 352,
+          "interval_ms": 1.6739,
+          "timer_fraction": 0.9739530437899516,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 355,
+          "interval_ms": 1.7726,
+          "timer_fraction": 0.9423445785851292,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 356,
+          "interval_ms": 1.6993,
+          "timer_fraction": 0.9742835285117402,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 357,
+          "interval_ms": 1.6841,
+          "timer_fraction": 0.9779110504126833,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 358,
+          "interval_ms": 1.6548,
+          "timer_fraction": 0.9801788735798888,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 361,
+          "interval_ms": 1.8285,
+          "timer_fraction": 0.945638501503965,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 362,
+          "interval_ms": 1.7109,
+          "timer_fraction": 0.9703664737857268,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 367,
+          "interval_ms": 1.8799,
+          "timer_fraction": 0.9386137560508537,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 368,
+          "interval_ms": 1.7586,
+          "timer_fraction": 0.9675878539747527,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 371,
+          "interval_ms": 1.795,
+          "timer_fraction": 0.938050139275766,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 372,
+          "interval_ms": 1.695,
+          "timer_fraction": 0.9723893805309735,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 373,
+          "interval_ms": 1.8269,
+          "timer_fraction": 0.9778312989216706,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 374,
+          "interval_ms": 1.6966,
+          "timer_fraction": 0.9671106919721797,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 377,
+          "interval_ms": 1.74,
+          "timer_fraction": 0.942183908045977,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 378,
+          "interval_ms": 1.6745,
+          "timer_fraction": 0.9743206927441027,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 383,
+          "interval_ms": 1.7788,
+          "timer_fraction": 0.9458623791319991,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 384,
+          "interval_ms": 1.685,
+          "timer_fraction": 0.9748367952522256,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 387,
+          "interval_ms": 1.8502,
+          "timer_fraction": 0.9405469678953626,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 388,
+          "interval_ms": 1.7071,
+          "timer_fraction": 0.9666100404194248,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 389,
+          "interval_ms": 1.6754,
+          "timer_fraction": 0.9733794914647248,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 390,
+          "interval_ms": 1.6847,
+          "timer_fraction": 0.9776221285688846,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 393,
+          "interval_ms": 1.7879,
+          "timer_fraction": 0.9454667486995917,
+          "timer_contained": true
+        },
+        {
+          "raw_line": 394,
+          "interval_ms": 1.7102,
+          "timer_fraction": 0.9735118699567302,
+          "timer_contained": true
+        }
+      ]
+    }
+  },
+  "references": [
+    {
+      "raw_line": 3,
+      "block": "start",
+      "flagged": false,
+      "ratio": 1.0,
+      "wall_median_ms": 221.5349,
+      "cpu_median_ms": 218.75,
+      "paired_cpu_over_wall": {
+        "n": 15,
+        "minimum": 0.9131179251623158,
+        "median": 0.9880262510106097,
+        "maximum": 1.0575081385826346
+      }
+    },
+    {
+      "raw_line": 4,
+      "block": 0,
+      "flagged": false,
+      "ratio": 0.990070638982842,
+      "wall_median_ms": 219.3352,
+      "cpu_median_ms": 218.75,
+      "paired_cpu_over_wall": {
+        "n": 15,
+        "minimum": 0.9166890432812617,
+        "median": 0.9973319376005311,
+        "maximum": 1.0632376317393955
+      }
+    },
+    {
+      "raw_line": 202,
+      "block": 1,
+      "flagged": false,
+      "ratio": 0.9766614650784142,
+      "wall_median_ms": 216.3646,
+      "cpu_median_ms": 203.125,
+      "paired_cpu_over_wall": {
+        "n": 15,
+        "minimum": 0.9041315641064331,
+        "median": 0.9615571237122236,
+        "maximum": 1.0292911560010145
+      }
+    },
+    {
+      "raw_line": 400,
+      "block": "end",
+      "flagged": false,
+      "ratio": 0.9853246599068589,
+      "wall_median_ms": 218.2838,
+      "cpu_median_ms": 218.75,
+      "paired_cpu_over_wall": {
+        "n": 15,
+        "minimum": 0.8528104912436519,
+        "median": 0.9381428443428774,
+        "maximum": 1.0567414354910922
+      }
+    }
+  ],
+  "flagged_faster": 0,
+  "flagged_slower": 0,
+  "limits": [
+    "Post-hoc descriptive analysis; frozen quality decisions are unchanged.",
+    "Pooled block summaries are not the registered image-unit primary estimator.",
+    "Per-call values divide a whole cached block; no individual-call latency distribution is observed.",
+    "Zero or greater-than-one processCPU/wall values are retained; short-block CPU quantization prevents off-CPU attribution.",
+    "PDH intervals include between-timer work and may include references, preparation and warmup. They are not exact timer-local clocks.",
+    "PDH read/wall ratios describe observer cadence, not an empty-loop correction or measured causal overhead.",
+    "No temperature, scheduler trace or uniquely identified cause is available."
+  ],
+  "status": "EXPLORATORY_SAVED_RAW_NO_NEW_MEASUREMENT",
+  "raw_path": "sponge-sim/results/laptop_components_20261107/nms_kernel/smoke_01/P1_cpu2/raw.jsonl",
+  "raw_sha256": "10c89e8aadbbb94f0b6bfb2a7a85150d91a0913f19bebc02fe2f51c603627c90",
+  "frozen_summary_sha256": "b892e6af1f0935093b27f50291ee72ef18b0dbb41873d012a74c533d85d38e99",
+  "analyzer_sha256": "14ec4c48b73d05ebe2c1c16ab77130db8787fad684a3d804de957a2d98902ebc",
+  "frozen_quality_pass": false,
+  "frozen_feasibility_pass": true,
+  "legacy_pdh_stage_keys": {
+    "clean": [],
+    "attacked": []
+  }
+}

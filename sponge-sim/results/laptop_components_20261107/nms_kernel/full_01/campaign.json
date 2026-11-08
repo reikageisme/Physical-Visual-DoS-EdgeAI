@@ -1,0 +1,7 @@
+{
+  "tag": "prereg-laptop-components-20261107",
+  "commit": "0b468db6130714be0521bc3d8bf547b206dbfcef",
+  "lock_sha256": "00f55a750bbeb9a0e1a1f9a990ab5c1b3ff2e1d7dd5d6b294e83f301ead69162",
+  "user_idle": "User continuous experimental authorization covers fixed component smoke and conditional full; AC and local idle declaration continues",
+  "smoke": false
+}

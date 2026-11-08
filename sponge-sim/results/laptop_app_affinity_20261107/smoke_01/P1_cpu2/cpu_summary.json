@@ -1,0 +1,70 @@
+{
+  "stages": {
+    "forward": {
+      "n_trials": 64,
+      "wall_median_ms": 213.505,
+      "wall_max_ms": 241.6631,
+      "median_cpu_over_wall": 0.9911686928662482,
+      "n_highwall": 0,
+      "highwall_fraction": 0.0,
+      "highwall_low_cpu_count": 0,
+      "highwall_low_cpu_share": null,
+      "highwall_trials": []
+    },
+    "total": {
+      "n_trials": 64,
+      "wall_median_ms": 226.61515,
+      "wall_max_ms": 1404.3338,
+      "median_cpu_over_wall": 0.9870783827733451,
+      "n_highwall": 2,
+      "highwall_fraction": 0.03125,
+      "highwall_low_cpu_count": 2,
+      "highwall_low_cpu_share": 1.0,
+      "highwall_trials": [
+        {
+          "image": "000000000009_inputs",
+          "rep": 3,
+          "label": "A",
+          "wall_ns": 1404333800,
+          "process_cpu_ns": 218750000,
+          "cpu_over_wall": 0.15576780961905212
+        },
+        {
+          "image": "000000000025_inputs",
+          "rep": 15,
+          "label": "A",
+          "wall_ns": 543579300,
+          "process_cpu_ns": 218750000,
+          "cpu_over_wall": 0.402425184329131
+        }
+      ]
+    }
+  },
+  "references": [
+    {
+      "raw_line": 3,
+      "block": "start",
+      "wall_ratio": 1.0,
+      "median_cpu_over_wall": 0.9830625623261664
+    },
+    {
+      "raw_line": 4,
+      "block": 0,
+      "wall_ratio": 0.9725062572986407,
+      "median_cpu_over_wall": 1.0027615745220313
+    },
+    {
+      "raw_line": 70,
+      "block": 1,
+      "wall_ratio": 0.974348542860762,
+      "median_cpu_over_wall": 0.9654991791177441
+    },
+    {
+      "raw_line": 136,
+      "block": "end",
+      "wall_ratio": 0.989732205185768,
+      "median_cpu_over_wall": 0.9969287757623486
+    }
+  ],
+  "interpretation": "Descriptive process CPU-time / wall-time; no CPU clock or scheduler trace; no clipping."
+}

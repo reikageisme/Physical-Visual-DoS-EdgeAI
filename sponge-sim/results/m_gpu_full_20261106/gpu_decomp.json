@@ -1,0 +1,38 @@
+{
+ "bus.jpg": {
+  "clean": {
+   "N_tau": 51,
+   "K": 6,
+   "forward_ms": 5.326,
+   "nms_ms": 3.213,
+   "mask_proto_ms": 0.247,
+   "mask_full_ms": 0.324
+  },
+  "attacked": {
+   "N_tau": 2938,
+   "K": 288,
+   "forward_ms": 5.816,
+   "nms_ms": 125.857,
+   "mask_proto_ms": 0.666,
+   "mask_full_ms": 6.25
+  }
+ },
+ "zidane.jpg": {
+  "clean": {
+   "N_tau": 21,
+   "K": 3,
+   "forward_ms": 5.146,
+   "nms_ms": 1.884,
+   "mask_proto_ms": 0.237,
+   "mask_full_ms": 0.276
+  },
+  "attacked": {
+   "N_tau": 3010,
+   "K": 300,
+   "forward_ms": 5.697,
+   "nms_ms": 133.008,
+   "mask_proto_ms": 0.711,
+   "mask_full_ms": 6.481
+  }
+ }
+}

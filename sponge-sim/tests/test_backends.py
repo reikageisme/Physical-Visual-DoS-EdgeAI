@@ -52,3 +52,15 @@ def test_injection_counts_and_determinism():
         t2, m2 = inject.make(n, 'mixed', 7)
         assert m1['sha256'] == m2['sha256']
         assert int((t1[:, 4] > .01).sum()) == n
+
+
+@pytest.mark.parametrize('n', [0, 1, 5, 6, 7])
+def test_small_n_including_six_keeps_same_set(n):
+    """N == 6 làm ultralytics nhầm tensor với đầu ra end-to-end; backend phải bù cột đệm và vẫn khớp nhóm."""
+    g = torch.Generator().manual_seed(n)
+    boxes = torch.rand(n, 4, generator=g) * 100
+    boxes[:, 2:] += boxes[:, :2] + 5
+    scores = torch.rand(n, generator=g) * 0.9 + 0.1
+    classes = torch.zeros(n)
+    ref = set(ALL['tv_batched'](boxes, scores, classes, IOU).tolist())
+    assert set(ALL['ultra_native'](boxes, scores, classes, IOU).tolist()) == ref

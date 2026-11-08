@@ -1,0 +1,38 @@
+{
+  "sources": {
+    "sponge-sim/results/laptop_pcores_20261107/registration_check.json": {
+      "sha256": "a59bde546d5e2d2562490739d73ee255b044d99481893066a6e602478099948c"
+    },
+    "sponge-sim/results/laptop_pcores_20261107/smoke_01/P2/raw.jsonl": {
+      "sha256": "6f7eabd0ca0b1f30aaac027f623d34c1c32ff2fd659a94214cf7f47256b4a1b0"
+    },
+    "sponge-sim/results/laptop_pcores_20261107/smoke_01/P2/manifest.json": {
+      "sha256": "070a5bf23510e8d77a3aba5ab3cf5a68990d120a4f454b01918665745b359ad6"
+    },
+    "sponge-sim/results/laptop_pcores_20261107/smoke_01/P2/attack_summary.json": {
+      "sha256": "3b44fb18562b0a3247b63f3d80ae03aa37163601f6879a3e8d3a2979cef8b23c"
+    },
+    "sponge-sim/results/laptop_pcores_20261107/smoke_01/verification_receipt.json": {
+      "sha256": "ed99652284ef618ed6f5df783aaa31c8ee6040ab78facbbab42130cbee19530a"
+    },
+    "sponge-sim/results/laptop_pcores_20261107/protocol_status.json": {
+      "sha256": "d5edc42a8974963af57d4651e741f6712d80ca57f1ef3a6fe50cb04beb175f8a"
+    }
+  },
+  "selectors": {
+    "summary": [
+      "references",
+      "aa",
+      "profile_scope"
+    ],
+    "audit": [
+      "restoration",
+      "counts_vs_historical_p1_descriptive_only"
+    ]
+  },
+  "raw_pin_lines": [
+    1,
+    397
+  ],
+  "primary_attack_contrast_eligible": false
+}

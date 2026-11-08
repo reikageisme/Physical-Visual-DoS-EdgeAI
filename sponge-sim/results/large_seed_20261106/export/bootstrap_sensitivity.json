@@ -1,0 +1,193 @@
+{
+  "status": "exploratory, after primary outcomes were inspected",
+  "repetitions": 20000,
+  "seed": 20261106,
+  "motivation": "Registered26-many median287.8 lies below its hierarchical percentile CI288.4\u2013292.0 at n1500.",
+  "interpretation": "Image-only intervals condition on the five observed starts; they do not replace registered two-level uncertainty.",
+  "cohorts": {
+    "1000": {
+      "y26_many:native26": {
+        "point": 287.6,
+        "registered_hierarchical_ci95": [
+          287.6,
+          291.9
+        ],
+        "hierarchical_bootstrap_median": 289.8,
+        "hierarchical_bootstrap_mean": 289.74813,
+        "hierarchical_median_shift": 2.1999999999999886,
+        "registered_interval_contains_point": true,
+        "conditional_image_only_ci95": [
+          285.6,
+          289.6
+        ]
+      },
+      "y26_native:native26": {
+        "point": 217.8,
+        "registered_hierarchical_ci95": [
+          215.3,
+          221.2
+        ],
+        "hierarchical_bootstrap_median": 218.1,
+        "hierarchical_bootstrap_mean": 218.21281000000002,
+        "hierarchical_median_shift": 0.29999999999998295,
+        "registered_interval_contains_point": true,
+        "conditional_image_only_ci95": [
+          215.7,
+          220.3
+        ]
+      },
+      "v8:baseline": {
+        "point": 289.4,
+        "registered_hierarchical_ci95": [
+          288.6,
+          292.2
+        ],
+        "hierarchical_bootstrap_median": 290.6,
+        "hierarchical_bootstrap_mean": 290.523625,
+        "hierarchical_median_shift": 1.2000000000000455,
+        "registered_interval_contains_point": true,
+        "conditional_image_only_ci95": [
+          287.4,
+          291.0
+        ]
+      },
+      "v11:baseline": {
+        "point": 300.0,
+        "registered_hierarchical_ci95": [
+          300.0,
+          300.0
+        ],
+        "hierarchical_bootstrap_median": 300.0,
+        "hierarchical_bootstrap_mean": 300.0,
+        "hierarchical_median_shift": 0.0,
+        "registered_interval_contains_point": true,
+        "conditional_image_only_ci95": [
+          300.0,
+          300.0
+        ]
+      },
+      "v8:native26": {
+        "point": 3.0,
+        "registered_hierarchical_ci95": [
+          2.8,
+          3.4
+        ],
+        "hierarchical_bootstrap_median": 3.1,
+        "hierarchical_bootstrap_mean": 3.102265,
+        "hierarchical_median_shift": 0.10000000000000009,
+        "registered_interval_contains_point": true,
+        "conditional_image_only_ci95": [
+          2.9,
+          3.4
+        ]
+      },
+      "v11:native26": {
+        "point": 2.8,
+        "registered_hierarchical_ci95": [
+          2.6,
+          3.0
+        ],
+        "hierarchical_bootstrap_median": 2.8,
+        "hierarchical_bootstrap_mean": 2.828555,
+        "hierarchical_median_shift": 0.0,
+        "registered_interval_contains_point": true,
+        "conditional_image_only_ci95": [
+          2.6,
+          3.0
+        ]
+      }
+    },
+    "1500": {
+      "y26_many:native26": {
+        "point": 287.8,
+        "registered_hierarchical_ci95": [
+          288.4,
+          292.0
+        ],
+        "hierarchical_bootstrap_median": 290.2,
+        "hierarchical_bootstrap_mean": 290.177845,
+        "hierarchical_median_shift": 2.3999999999999773,
+        "registered_interval_contains_point": false,
+        "conditional_image_only_ci95": [
+          286.5,
+          289.6
+        ]
+      },
+      "y26_native:native26": {
+        "point": 218.0,
+        "registered_hierarchical_ci95": [
+          216.4,
+          221.2
+        ],
+        "hierarchical_bootstrap_median": 218.7,
+        "hierarchical_bootstrap_mean": 218.72585499999997,
+        "hierarchical_median_shift": 0.6999999999999886,
+        "registered_interval_contains_point": true,
+        "conditional_image_only_ci95": [
+          216.2,
+          220.4
+        ]
+      },
+      "v8:baseline": {
+        "point": 289.4,
+        "registered_hierarchical_ci95": [
+          289.29999999999995,
+          292.2
+        ],
+        "hierarchical_bootstrap_median": 290.8,
+        "hierarchical_bootstrap_mean": 290.77112,
+        "hierarchical_median_shift": 1.400000000000034,
+        "registered_interval_contains_point": true,
+        "conditional_image_only_ci95": [
+          288.0,
+          290.8
+        ]
+      },
+      "v11:baseline": {
+        "point": 300.0,
+        "registered_hierarchical_ci95": [
+          300.0,
+          300.0
+        ],
+        "hierarchical_bootstrap_median": 300.0,
+        "hierarchical_bootstrap_mean": 300.0,
+        "hierarchical_median_shift": 0.0,
+        "registered_interval_contains_point": true,
+        "conditional_image_only_ci95": [
+          300.0,
+          300.0
+        ]
+      },
+      "v8:native26": {
+        "point": 3.2,
+        "registered_hierarchical_ci95": [
+          3.0,
+          3.4
+        ],
+        "hierarchical_bootstrap_median": 3.2,
+        "hierarchical_bootstrap_mean": 3.1637549999999997,
+        "hierarchical_median_shift": 0.0,
+        "registered_interval_contains_point": true,
+        "conditional_image_only_ci95": [
+          3.0,
+          3.4
+        ]
+      },
+      "v11:native26": {
+        "point": 3.0,
+        "registered_hierarchical_ci95": [
+          2.8,
+          3.0
+        ],
+        "hierarchical_bootstrap_median": 3.0,
+        "hierarchical_bootstrap_mean": 2.91202,
+        "hierarchical_median_shift": 0.0,
+        "registered_interval_contains_point": true,
+        "conditional_image_only_ci95": [
+          2.8,
+          3.0
+        ]
+      }
+    }
+  }
+}

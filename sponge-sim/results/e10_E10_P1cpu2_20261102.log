@@ -1,0 +1,6 @@
+D:\Sponge-patch-study\outputs\vendor_underload\robust_pkgs\ultralytics-yolov5-robust-0.0.1\yolov5\utils\general.py:31: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources as pkg
+Fusing layers... 
+YOLOv5s summary: 270 layers, 7235389 parameters, 0 gradients, 16.6 GFLOPs
+[E10] xong sau 2750.2s
+[E10] DONE

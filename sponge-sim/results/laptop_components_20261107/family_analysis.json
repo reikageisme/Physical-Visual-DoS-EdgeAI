@@ -1,0 +1,244 @@
+{
+  "status": "CLOSED_NO_QUALIFIED_COMPONENT_CONTRAST",
+  "tag": "prereg-laptop-components-20261107",
+  "commit": "0b468db6130714be0521bc3d8bf547b206dbfcef",
+  "runs": {
+    "nms_kernel/smoke_01": {
+      "complete": true,
+      "feasibility_pass": true,
+      "quality_pass": false,
+      "flags": 0,
+      "references": 4,
+      "aa": {
+        "clean": {
+          "n_images": 2,
+          "geometric_ratio": 1.0060314817642257,
+          "mde_fraction": 0.046658337624483036
+        },
+        "attacked": {
+          "n_images": 2,
+          "geometric_ratio": 1.0007703766823333,
+          "mde_fraction": 0.009695341063148897
+        }
+      },
+      "flagged_faster": 0,
+      "flagged_slower": 0,
+      "reference_ratio_range": [
+        0.9766614650784142,
+        1.0
+      ],
+      "first_reference_median_ms": 221.5349,
+      "last_reference_median_ms": 218.2838,
+      "n_trials": 384,
+      "raw_sha256": "10c89e8aadbbb94f0b6bfb2a7a85150d91a0913f19bebc02fe2f51c603627c90",
+      "diagnostic_only_contrast": {
+        "nms_kernel": {
+          "n_images": 2,
+          "geometric_ratio": 49.33630050494825,
+          "ci95": [
+            42.29527121814356,
+            57.54947249210227
+          ],
+          "image_ids": [
+            "000000000009_inputs",
+            "000000000025_inputs"
+          ],
+          "clean_medians_ms": [
+            0.02673125,
+            0.0262140625
+          ],
+          "attacked_medians_ms": [
+            1.13060546875,
+            1.50860546875
+          ],
+          "mean_paired_delta_ms": 1.2931328125000001,
+          "delta_ci95": [
+            1.10387421875,
+            1.48239140625
+          ]
+        }
+      }
+    },
+    "nms_kernel/full_01": {
+      "complete": true,
+      "feasibility_pass": false,
+      "quality_pass": false,
+      "flags": 20,
+      "references": 22,
+      "aa": {
+        "clean": {
+          "n_images": 20,
+          "geometric_ratio": 0.9992870461723452,
+          "mde_fraction": 0.003407300540545993
+        },
+        "attacked": {
+          "n_images": 20,
+          "geometric_ratio": 0.9995670721647955,
+          "mde_fraction": 0.0009585090875208305
+        }
+      },
+      "flagged_faster": 19,
+      "flagged_slower": 1,
+      "reference_ratio_range": [
+        0.9321528359784284,
+        1.0583266813033463
+      ],
+      "first_reference_median_ms": 225.8709,
+      "last_reference_median_ms": 210.5462,
+      "n_trials": 3840,
+      "raw_sha256": "9a0e61f462cf7e054993e70783c32f8c6a29401bc97be8489cf4d89a29311ba8",
+      "diagnostic_only_contrast": {
+        "nms_kernel": {
+          "n_images": 20,
+          "geometric_ratio": 71.12901792781503,
+          "ci95": [
+            60.664753067908784,
+            83.31764470693011
+          ],
+          "image_ids": [
+            "000000000009_inputs",
+            "000000000025_inputs",
+            "000000000030_inputs",
+            "000000000034_inputs",
+            "000000000036_inputs",
+            "000000000042_inputs",
+            "000000000049_inputs",
+            "000000000061_inputs",
+            "000000000064_inputs",
+            "000000000071_inputs",
+            "000000000072_inputs",
+            "000000000073_inputs",
+            "000000000074_inputs",
+            "000000000077_inputs",
+            "000000000078_inputs",
+            "000000000081_inputs",
+            "000000000086_inputs",
+            "000000000089_inputs",
+            "000000000092_inputs",
+            "000000000094_inputs"
+          ],
+          "clean_medians_ms": [
+            0.02717421875,
+            0.02671953125,
+            0.02640078125,
+            0.02581328125,
+            0.02628515625,
+            0.02606484375,
+            0.0268078125,
+            0.0259,
+            0.02622578125,
+            0.0265,
+            0.0264453125,
+            0.0264046875,
+            0.02630546875,
+            0.02712578125,
+            0.02630234375,
+            0.02590625,
+            0.0261546875,
+            0.02750234375,
+            0.0263953125,
+            0.0258375
+          ],
+          "attacked_medians_ms": [
+            1.12475390625,
+            1.51003515625,
+            3.1800703125,
+            0.86025859375,
+            1.84617890625,
+            2.64582578125,
+            1.84292109375,
+            1.300853125,
+            2.13457265625,
+            1.58062421875,
+            1.218390625,
+            1.85856015625,
+            2.1839125,
+            2.0161703125,
+            2.323003125,
+            3.32293203125,
+            1.39100703125,
+            3.57393046875,
+            1.822590625,
+            2.33859765625
+          ],
+          "mean_paired_delta_ms": 1.9773458593749997,
+          "delta_ci95": [
+            1.6737512001953123,
+            2.305539526367187
+          ]
+        }
+      }
+    },
+    "mask_native/smoke_01": {
+      "complete": true,
+      "feasibility_pass": false,
+      "quality_pass": false,
+      "flags": 1,
+      "references": 4,
+      "aa": {
+        "clean": {
+          "n_images": 2,
+          "geometric_ratio": 1.0057883293820924,
+          "mde_fraction": 0.0697207927400181
+        },
+        "attacked": {
+          "n_images": 2,
+          "geometric_ratio": 1.0007567519259253,
+          "mde_fraction": 0.009402720387350369
+        }
+      },
+      "flagged_faster": 0,
+      "flagged_slower": 1,
+      "reference_ratio_range": [
+        0.974243085815224,
+        1.0328367896175703
+      ],
+      "first_reference_median_ms": 211.3879,
+      "last_reference_median_ms": 218.3292,
+      "n_trials": 384,
+      "raw_sha256": "9b1e76ffad18100c6b722b03dcb17035029dc1d643a3e771609f18aefe72bc98",
+      "diagnostic_only_contrast": {
+        "mask_native": {
+          "n_images": 2,
+          "geometric_ratio": 65.24280083116369,
+          "ci95": [
+            32.11795587491259,
+            132.53094552071883
+          ],
+          "image_ids": [
+            "000000000009_inputs",
+            "000000000025_inputs"
+          ],
+          "clean_medians_ms": [
+            17.5909,
+            5.2754
+          ],
+          "attacked_medians_ms": [
+            564.98375,
+            699.15375
+          ],
+          "mean_paired_delta_ms": 620.6356,
+          "delta_ci95": [
+            547.39285,
+            693.87835
+          ]
+        }
+      }
+    }
+  },
+  "mask_full_status": "CANCELLED_AFTER_FAILED_SMOKE_NO_RETRY",
+  "comparisons": {
+    "nms_kernel": {
+      "eligible": false,
+      "testing_p_placeholder": 1.0,
+      "holm_placeholder": 1.0
+    },
+    "mask_native": {
+      "eligible": false,
+      "testing_p_placeholder": 1.0,
+      "holm_placeholder": 1.0
+    }
+  },
+  "interpretation": "Both p=1 entries are family-preservation placeholders, not tests or evidence of no effect. No eligible exact sign-flip test performed.",
+  "scope": "One laptop, fixed prepared inputs from the same known PGD pairs. No additive stage, service latency, ARM, physical attack or DoS inference."
+}

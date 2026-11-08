@@ -1,0 +1,9 @@
+{
+  "new_probe_not_exited_workers": true,
+  "api_ok": true,
+  "version": 1,
+  "control_mask": 0,
+  "state_mask": 0,
+  "priority": 32,
+  "source": "https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-setprocessinformation"
+}

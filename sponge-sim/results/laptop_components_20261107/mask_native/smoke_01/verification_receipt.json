@@ -1,0 +1,39 @@
+{
+  "status": "OFFLINE_STAGE_AUDIT_NO_NEW_INFERENCE",
+  "tag": "prereg-laptop-components-20261107",
+  "commit": "0b468db6130714be0521bc3d8bf547b206dbfcef",
+  "lock_sha256": "52cb8937a5ec13bcf70d4ddbbaa9bbd74faaf9f377882e0f65189486f9fee377",
+  "raw_sha256": "9b1e76ffad18100c6b722b03dcb17035029dc1d643a3e771609f18aefe72bc98",
+  "summary_sha256": "1788c198c1d720700802c6ee376d4eedf1ae5d7d5c6d8d1979caf1169b9db164",
+  "auditor_sha256": "97d8e7799d002acd4fc71aade4ee83423735d08a2ca195072e24852c812180ff",
+  "quality_pass": false,
+  "feasibility_pass": false,
+  "endpoint": "mask_native",
+  "calls_per_trial": 1,
+  "n_trials": 384,
+  "actual_timed_operation_calls": 384,
+  "restoration": {
+    "root": 1,
+    "intent": 45,
+    "applied": 45,
+    "ready": 1,
+    "restored": 45
+  },
+  "tag_line_ending_differences": [
+    {
+      "path": "sponge-sim/src/sponge_sim/hw.py",
+      "tag_sha256": "a6fd2c15cd16d518dd3034d94fb98c463dd77d425cd249f6ac7d92722bb62323",
+      "working_sha256": "9b0eda7758b4c45f2cd9a64eaf44206aab2b5478afdc5458ed49e69791cb879d"
+    }
+  ],
+  "duration_raw_s": 170.14988017082214,
+  "checks": [
+    "source/tag/input",
+    "original predictions/counts",
+    "captured fixed-kernel boundary",
+    "immutable prepared features",
+    "exact carryover order",
+    "recomputed estimator/gates",
+    "environment/app restore"
+  ]
+}

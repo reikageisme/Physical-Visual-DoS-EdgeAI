@@ -1,0 +1,7 @@
+{
+  "tag": "prereg-laptop-session-confirm-20261107",
+  "commit": "17f2cd6805cbfd4cc636d58aec086209bf59c4cc",
+  "lock_sha256": "6aa7d7bd1706a2ca861b8ee9fed19c130bad2a65a122e4386599fbee21ef12e6",
+  "user_idle": "User standing authorization covers fixed full20 after repeated-session smoke PASS; AC and idle declaration continues",
+  "smoke": false
+}

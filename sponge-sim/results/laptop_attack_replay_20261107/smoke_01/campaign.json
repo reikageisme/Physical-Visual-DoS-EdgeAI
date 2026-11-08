@@ -1,0 +1,7 @@
+{
+  "tag": "prereg-laptop-attack-replay-20261107",
+  "commit": "2dab448d60a4298bb2ed25d80015a2135cd7da60",
+  "lock_sha256": "ddc1f06dde7a828c5f22d9ce1add7482f488fd3b444dabf535b772bb4b64ccd1",
+  "user_idle": "User authorized continued frozen attack timing with fixed smoke/full gates; AC and idle declaration continues",
+  "smoke": true
+}

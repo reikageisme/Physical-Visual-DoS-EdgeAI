@@ -1,0 +1,63 @@
+{
+ "experiment": "E11",
+ "run_dir": "results\\e11\\E11_P1cpu2_20261103",
+ "exclude_flagged_blocks": true,
+ "bootstrap_seed": 20261021,
+ "n_boot": 20000,
+ "pin": {
+  "effective_cores": 0.9755429600526164,
+  "passed": true
+ },
+ "drift": {
+  "points": 11,
+  "flagged": 11,
+  "flagged_blocks": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "max_abs": 2.1881873482964247
+ },
+ "in_session": {
+  "320": {
+   "torch_pure": {
+    "n_images": 0,
+    "aa_log_ratio_mean": NaN,
+    "mde_total_pct": NaN,
+    "t_total_clean_median_ms": NaN,
+    "threshold_delta_nms_ms": NaN
+   },
+   "tv_nms": {
+    "n_images": 0,
+    "aa_log_ratio_mean": NaN,
+    "mde_total_pct": NaN,
+    "t_total_clean_median_ms": NaN,
+    "threshold_delta_nms_ms": NaN
+   }
+  },
+  "640": {
+   "torch_pure": {
+    "n_images": 0,
+    "aa_log_ratio_mean": NaN,
+    "mde_total_pct": NaN,
+    "t_total_clean_median_ms": NaN,
+    "threshold_delta_nms_ms": NaN
+   },
+   "tv_nms": {
+    "n_images": 0,
+    "aa_log_ratio_mean": NaN,
+    "mde_total_pct": NaN,
+    "t_total_clean_median_ms": NaN,
+    "threshold_delta_nms_ms": NaN
+   }
+  }
+ },
+ "arms": {}
+}

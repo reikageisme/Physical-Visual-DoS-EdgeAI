@@ -1,0 +1,561 @@
+{
+  "smoke": true,
+  "complete": true,
+  "feasibility_pass": true,
+  "quality_pass": false,
+  "flags": 0,
+  "n_references": 4,
+  "pin_checks": [
+    true,
+    true
+  ],
+  "aa": {
+    "clean": {
+      "n_images": 2,
+      "geometric_ratio": 0.9999786327671425,
+      "mde_fraction": 0.01992658790018751
+    },
+    "attacked": {
+      "n_images": 2,
+      "geometric_ratio": 0.9987283720830245,
+      "mde_fraction": 0.028902066951038828
+    }
+  },
+  "contrasts": {
+    "total": {
+      "n_images": 2,
+      "geometric_ratio": 3.7509225725751345,
+      "ci95": [
+        3.361336238125481,
+        4.18566282833394
+      ],
+      "image_ids": [
+        "000000000009_inputs",
+        "000000000025_inputs"
+      ],
+      "clean_medians_ms": [
+        237.1254,
+        221.7369
+      ],
+      "attacked_medians_ms": [
+        797.0582,
+        928.1159
+      ],
+      "mean_paired_delta_ms": 633.1559,
+      "delta_ci95": [
+        559.9328,
+        706.379
+      ]
+    }
+  },
+  "counts": [
+    {
+      "wall_utc": 1794025509.3759308,
+      "kind": "counts",
+      "image": "000000000009_inputs",
+      "arm": "clean",
+      "n_tau": 37,
+      "k": 6,
+      "prediction_sha256": "1d11f13cb974343d132435d55b6dc2a04ffeeeee7f31280af10167b01730c3b9",
+      "proto_shape": [
+        32,
+        160,
+        160
+      ]
+    },
+    {
+      "wall_utc": 1794025509.6021204,
+      "kind": "counts",
+      "image": "000000000009_inputs",
+      "arm": "attacked",
+      "n_tau": 2018,
+      "k": 202,
+      "prediction_sha256": "e232363009f2952f88ab61e4c7adee9546418c45b8f643da4333e521d0cd6203",
+      "proto_shape": [
+        32,
+        160,
+        160
+      ]
+    },
+    {
+      "wall_utc": 1794025620.6199987,
+      "kind": "counts",
+      "image": "000000000025_inputs",
+      "arm": "clean",
+      "n_tau": 18,
+      "k": 2,
+      "prediction_sha256": "b138f5fd2f3cb292cb40035bd9b4a8af10c60cc496c372922f2714c4a02efd8c",
+      "proto_shape": [
+        32,
+        160,
+        160
+      ]
+    },
+    {
+      "wall_utc": 1794025620.8496084,
+      "kind": "counts",
+      "image": "000000000025_inputs",
+      "arm": "attacked",
+      "n_tau": 2406,
+      "k": 250,
+      "prediction_sha256": "4b3764c70d3391bbedbab79dda20ac332a8e2fb25ed5e1d6509f4c3a181d52bf",
+      "proto_shape": [
+        32,
+        160,
+        160
+      ]
+    }
+  ],
+  "references": [
+    {
+      "wall_utc": 1794025505.1576576,
+      "kind": "reference",
+      "block": "start",
+      "samples_ns": [
+        217512500,
+        215455100,
+        207115700,
+        207051900,
+        210171600,
+        214028600,
+        208690700,
+        210495000,
+        208238000,
+        209268800,
+        208970100,
+        209978100,
+        210776200,
+        212631800,
+        205471300
+      ],
+      "cpu_samples_ns": [
+        203125000,
+        187500000,
+        203125000,
+        218750000,
+        203125000,
+        218750000,
+        203125000,
+        218750000,
+        203125000,
+        218750000,
+        203125000,
+        218750000,
+        203125000,
+        218750000,
+        187500000
+      ],
+      "ratio": 1.0,
+      "flagged": false
+    },
+    {
+      "wall_utc": 1794025509.1599913,
+      "kind": "reference",
+      "block": 0,
+      "samples_ns": [
+        212632000,
+        216296900,
+        225325600,
+        213571700,
+        204189700,
+        210606500,
+        216755900,
+        229959700,
+        221939300,
+        215577400,
+        209993700,
+        212480000,
+        211245300,
+        209763100,
+        210511300
+      ],
+      "cpu_samples_ns": [
+        203125000,
+        218750000,
+        218750000,
+        218750000,
+        203125000,
+        203125000,
+        218750000,
+        171875000,
+        187500000,
+        218750000,
+        218750000,
+        203125000,
+        218750000,
+        203125000,
+        218750000
+      ],
+      "ratio": 1.0126389371082032,
+      "flagged": false
+    },
+    {
+      "wall_utc": 1794025620.403622,
+      "kind": "reference",
+      "block": 1,
+      "samples_ns": [
+        208155300,
+        223103000,
+        215506200,
+        208664500,
+        209535100,
+        210928900,
+        211667800,
+        211393300,
+        212707100,
+        205906000,
+        212317900,
+        208366500,
+        212324800,
+        210515700,
+        214261300
+      ],
+      "cpu_samples_ns": [
+        203125000,
+        187500000,
+        218750000,
+        218750000,
+        187500000,
+        218750000,
+        187500000,
+        218750000,
+        203125000,
+        218750000,
+        203125000,
+        218750000,
+        203125000,
+        218750000,
+        218750000
+      ],
+      "ratio": 1.0067397504787403,
+      "flagged": false
+    },
+    {
+      "wall_utc": 1794025747.6183283,
+      "kind": "reference",
+      "block": "end",
+      "samples_ns": [
+        214870100,
+        209076800,
+        211602300,
+        205441700,
+        210292800,
+        207197700,
+        207800500,
+        214658100,
+        213100800,
+        213265600,
+        216617200,
+        221802500,
+        214306500,
+        210510000,
+        210508800
+      ],
+      "cpu_samples_ns": [
+        218750000,
+        187500000,
+        218750000,
+        203125000,
+        218750000,
+        203125000,
+        203125000,
+        203125000,
+        218750000,
+        203125000,
+        218750000,
+        234375000,
+        203125000,
+        218750000,
+        203125000
+      ],
+      "ratio": 1.007735092373919,
+      "flagged": false
+    }
+  ],
+  "raw_sha256": "caf7ba56b076bc507063974b201a85f50e7c454e592d0494c8efa19a2ad8e499",
+  "scope": "Frozen whole-image PGD20; tensor-to-native-mask CPU latency; no DoS/deadline/camera claim.",
+  "cpu_diagnostics": {
+    "clean": {
+      "stages": {
+        "total": {
+          "n_trials": 192,
+          "wall_median_ms": 234.4564,
+          "wall_max_ms": 1715.4948,
+          "median_cpu_over_wall": 0.9889533106619122,
+          "n_highwall": 2,
+          "highwall_fraction": 0.010416666666666666,
+          "highwall_low_cpu_count": 2,
+          "highwall_low_cpu_share": 1.0,
+          "highwall_trials": [
+            {
+              "image": "000000000025_inputs",
+              "rep": 0,
+              "label": "aa_A",
+              "wall_ns": 1673096200,
+              "process_cpu_ns": 250000000,
+              "cpu_over_wall": 0.14942356572204277
+            },
+            {
+              "image": "000000000025_inputs",
+              "rep": 14,
+              "label": "aa_A",
+              "wall_ns": 1715494800,
+              "process_cpu_ns": 218750000,
+              "cpu_over_wall": 0.12751423087962727
+            }
+          ]
+        }
+      },
+      "references": [
+        {
+          "raw_line": 3,
+          "block": "start",
+          "wall_ratio": 1.0,
+          "median_cpu_over_wall": 0.9754463642562837
+        },
+        {
+          "raw_line": 4,
+          "block": 0,
+          "wall_ratio": 1.0126389371082032,
+          "median_cpu_over_wall": 0.9947857311118043
+        },
+        {
+          "raw_line": 104,
+          "block": 1,
+          "wall_ratio": 1.0067397504787403,
+          "median_cpu_over_wall": 1.0150520031442252
+        },
+        {
+          "raw_line": 204,
+          "block": "end",
+          "wall_ratio": 1.007735092373919,
+          "median_cpu_over_wall": 0.9887233215067827
+        }
+      ],
+      "interpretation": "Descriptive process CPU-time / wall-time; no CPU clock or scheduler trace; no clipping."
+    },
+    "attacked": {
+      "stages": {
+        "total": {
+          "n_trials": 192,
+          "wall_median_ms": 911.9808,
+          "wall_max_ms": 2770.4721,
+          "median_cpu_over_wall": 0.9872047187402889,
+          "n_highwall": 4,
+          "highwall_fraction": 0.020833333333333332,
+          "highwall_low_cpu_count": 4,
+          "highwall_low_cpu_share": 1.0,
+          "highwall_trials": [
+            {
+              "image": "000000000009_inputs",
+              "rep": 8,
+              "label": "aa_B",
+              "wall_ns": 1974817900,
+              "process_cpu_ns": 812500000,
+              "cpu_over_wall": 0.4114303399822333
+            },
+            {
+              "image": "000000000009_inputs",
+              "rep": 23,
+              "label": "aa_B",
+              "wall_ns": 1959569800,
+              "process_cpu_ns": 781250000,
+              "cpu_over_wall": 0.3986844459431861
+            },
+            {
+              "image": "000000000025_inputs",
+              "rep": 27,
+              "label": "aa_B",
+              "wall_ns": 2019097800,
+              "process_cpu_ns": 906250000,
+              "cpu_over_wall": 0.4488390805041737
+            },
+            {
+              "image": "000000000025_inputs",
+              "rep": 40,
+              "label": "aa_B",
+              "wall_ns": 2770472100,
+              "process_cpu_ns": 921875000,
+              "cpu_over_wall": 0.3327501475290078
+            }
+          ]
+        }
+      },
+      "references": [
+        {
+          "raw_line": 3,
+          "block": "start",
+          "wall_ratio": 1.0,
+          "median_cpu_over_wall": 0.9754463642562837
+        },
+        {
+          "raw_line": 4,
+          "block": 0,
+          "wall_ratio": 1.0126389371082032,
+          "median_cpu_over_wall": 0.9947857311118043
+        },
+        {
+          "raw_line": 104,
+          "block": 1,
+          "wall_ratio": 1.0067397504787403,
+          "median_cpu_over_wall": 1.0150520031442252
+        },
+        {
+          "raw_line": 204,
+          "block": "end",
+          "wall_ratio": 1.007735092373919,
+          "median_cpu_over_wall": 0.9887233215067827
+        }
+      ],
+      "interpretation": "Descriptive process CPU-time / wall-time; no CPU clock or scheduler trace; no clipping."
+    }
+  },
+  "pdh_diagnostics": {
+    "clean": {
+      "stages": {
+        "total": {
+          "n": 192,
+          "counters": {
+            "Processor Frequency": {
+              "valid": 192,
+              "minimum": 1300.0,
+              "median": 1300.0,
+              "maximum": 1300.0,
+              "status_counts": {
+                "0/0": 192
+              }
+            },
+            "% Processor Performance": {
+              "valid": 192,
+              "minimum": 246.48840334207912,
+              "median": 247.41646860549218,
+              "maximum": 247.92412473500363,
+              "status_counts": {
+                "0/0": 192
+              }
+            },
+            "% Performance Limit": {
+              "valid": 192,
+              "minimum": 100.0,
+              "median": 100.0,
+              "maximum": 100.0,
+              "status_counts": {
+                "0/0": 192
+              }
+            },
+            "Performance Limit Flags": {
+              "valid": 192,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.0,
+              "status_counts": {
+                "0/0": 192
+              }
+            },
+            "% Processor Time": {
+              "valid": 192,
+              "minimum": 99.3431981537752,
+              "median": 100.0,
+              "maximum": 100.0,
+              "status_counts": {
+                "0/0": 192
+              }
+            }
+          },
+          "wall_vs_reported_performance": {
+            "n": 192,
+            "spearman": -0.0881863250413694
+          },
+          "cpu_vs_reported_performance": {
+            "n": 192,
+            "spearman": -0.09867595773932271
+          },
+          "wall_vs_cpu": {
+            "n": 192,
+            "spearman": 0.784247766805566
+          }
+        }
+      },
+      "pdh_read_duration_ms": {
+        "valid": 192,
+        "minimum": 0.073,
+        "median": 0.0857,
+        "maximum": 0.1794
+      },
+      "limits": "PDH intervals include metadata/warmup; two images; correlated repeats; no exact clock or causal inference."
+    },
+    "attacked": {
+      "stages": {
+        "total": {
+          "n": 192,
+          "counters": {
+            "Processor Frequency": {
+              "valid": 192,
+              "minimum": 1300.0,
+              "median": 1300.0,
+              "maximum": 1300.0,
+              "status_counts": {
+                "0/0": 192
+              }
+            },
+            "% Processor Performance": {
+              "valid": 192,
+              "minimum": 245.16563677068368,
+              "median": 246.12630769975766,
+              "maximum": 247.2005419177791,
+              "status_counts": {
+                "0/0": 192
+              }
+            },
+            "% Performance Limit": {
+              "valid": 192,
+              "minimum": 100.0,
+              "median": 100.0,
+              "maximum": 100.0,
+              "status_counts": {
+                "0/0": 192
+              }
+            },
+            "Performance Limit Flags": {
+              "valid": 192,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.0,
+              "status_counts": {
+                "0/0": 192
+              }
+            },
+            "% Processor Time": {
+              "valid": 192,
+              "minimum": 99.8545730746194,
+              "median": 100.0,
+              "maximum": 100.0,
+              "status_counts": {
+                "0/0": 192
+              }
+            }
+          },
+          "wall_vs_reported_performance": {
+            "n": 192,
+            "spearman": -0.2924443208637387
+          },
+          "cpu_vs_reported_performance": {
+            "n": 192,
+            "spearman": -0.3528788370785788
+          },
+          "wall_vs_cpu": {
+            "n": 192,
+            "spearman": 0.8251671001211842
+          }
+        }
+      },
+      "pdh_read_duration_ms": {
+        "valid": 192,
+        "minimum": 0.0703,
+        "median": 0.08635000000000001,
+        "maximum": 0.2005
+      },
+      "limits": "PDH intervals include metadata/warmup; two images; correlated repeats; no exact clock or causal inference."
+    }
+  }
+}
