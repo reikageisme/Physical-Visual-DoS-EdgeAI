@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 360" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="980" height="360" fill="#ffffff"/>
+  <text x="30" y="40" font-size="22" font-weight="700" fill="#0f172a">Pipeline phân đoạn một giai đoạn và bề mặt tấn công</text>
+  <text x="30" y="64" font-size="14" fill="#475569">NMS rẻ; dựng mask từng đối tượng là chi phí tăng theo K (số đối tượng giữ lại)</text>
+
+  <!-- stage boxes -->
+  <g>
+    <rect x="30"  y="110" width="128" height="72" rx="10" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+    <text x="94"  y="142" font-size="14" font-weight="600" fill="#1e293b" text-anchor="middle">Ảnh vào</text>
+    <text x="94"  y="162" font-size="12" fill="#64748b" text-anchor="middle">640×640</text>
+
+    <rect x="188" y="110" width="128" height="72" rx="10" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+    <text x="252" y="142" font-size="14" font-weight="600" fill="#1e293b" text-anchor="middle">Backbone</text>
+    <text x="252" y="162" font-size="12" fill="#64748b" text-anchor="middle">lan truyền thuận</text>
+
+    <rect x="346" y="110" width="128" height="72" rx="10" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+    <text x="410" y="142" font-size="14" font-weight="600" fill="#1e293b" text-anchor="middle">Giải mã</text>
+    <text x="410" y="162" font-size="12" fill="#64748b" text-anchor="middle">~8400 ứng viên</text>
+
+    <rect x="504" y="110" width="128" height="72" rx="10" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+    <text x="568" y="142" font-size="14" font-weight="600" fill="#1e293b" text-anchor="middle">NMS</text>
+    <text x="568" y="162" font-size="12" fill="#16a34a" text-anchor="middle">rẻ (~1 ms)</text>
+
+    <rect x="662" y="110" width="128" height="72" rx="10" fill="#fff7ed" stroke="#ea580c" stroke-width="3"/>
+    <text x="726" y="138" font-size="14" font-weight="700" fill="#9a3412" text-anchor="middle">Dựng mask</text>
+    <text x="726" y="157" font-size="12" fill="#ea580c" text-anchor="middle">1 mask / đối tượng</text>
+    <text x="726" y="173" font-size="12" font-weight="700" fill="#ea580c" text-anchor="middle">chi phí ∝ K</text>
+
+    <rect x="820" y="110" width="128" height="72" rx="10" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+    <text x="884" y="142" font-size="14" font-weight="600" fill="#1e293b" text-anchor="middle">K mask</text>
+    <text x="884" y="162" font-size="12" fill="#64748b" text-anchor="middle">kết quả</text>
+  </g>
+
+  <!-- arrows -->
+  <g stroke="#94a3b8" stroke-width="2" fill="#94a3b8">
+    <line x1="158" y1="146" x2="184" y2="146"/><polygon points="184,141 192,146 184,151"/>
+    <line x1="316" y1="146" x2="342" y2="146"/><polygon points="342,141 350,146 342,151"/>
+    <line x1="474" y1="146" x2="500" y2="146"/><polygon points="500,141 508,146 500,151"/>
+    <line x1="632" y1="146" x2="658" y2="146"/><polygon points="658,141 666,146 658,151"/>
+    <line x1="790" y1="146" x2="816" y2="146"/><polygon points="816,141 824,146 816,151"/>
+  </g>
+
+  <!-- attack -->
+  <rect x="300" y="268" width="320" height="58" rx="10" fill="#fef2f2" stroke="#dc2626" stroke-width="2"/>
+  <text x="460" y="292" font-size="14" font-weight="700" fill="#b91c1c" text-anchor="middle">Tấn công PGD (nhiễu đối kháng)</text>
+  <text x="460" y="312" font-size="12.5" fill="#b91c1c" text-anchor="middle">ứng viên 20→~3000 · K giữ lại 3→300</text>
+  <g stroke="#dc2626" stroke-width="2" fill="#dc2626">
+    <line x1="410" y1="268" x2="410" y2="186"/><polygon points="405,186 410,178 415,186"/>
+    <line x1="520" y1="268" x2="545" y2="186"/><polygon points="541,189 545,180 549,191"/>
+    <path d="M560 268 C 640 240, 700 215, 720 186" fill="none"/><polygon points="715,189 721,179 725,191"/>
+  </g>
+</svg>

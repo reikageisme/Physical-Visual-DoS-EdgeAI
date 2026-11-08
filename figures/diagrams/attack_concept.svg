@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 340" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="980" height="340" fill="#ffffff"/>
+  <text x="30" y="40" font-size="22" font-weight="700" fill="#0f172a">Ý tưởng tấn công: bơm số đối tượng giữ lại K</text>
+  <text x="30" y="64" font-size="14" fill="#475569">Thêm một lớp nhiễu mắt thường khó thấy, ép mô hình giữ lại rất nhiều đối tượng "ma"</text>
+
+  <!-- clean row -->
+  <rect x="40" y="100" width="120" height="120" rx="10" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <text x="100" y="92" font-size="14" font-weight="700" fill="#334155" text-anchor="middle">Ảnh sạch</text>
+  <circle cx="80" cy="150" r="10" fill="#38bdf8"/><circle cx="118" cy="135" r="9" fill="#38bdf8"/><circle cx="100" cy="188" r="11" fill="#38bdf8"/>
+  <text x="100" y="236" font-size="12.5" fill="#64748b" text-anchor="middle">K ≈ 3 đối tượng</text>
+
+  <g stroke="#94a3b8" stroke-width="2" fill="#94a3b8"><line x1="170" y1="160" x2="214" y2="160"/><polygon points="214,154 224,160 214,166"/></g>
+  <rect x="236" y="120" width="150" height="80" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  <text x="311" y="152" font-size="14" font-weight="700" fill="#15803d" text-anchor="middle">Toàn trình</text>
+  <text x="311" y="176" font-size="15" font-weight="700" fill="#15803d" text-anchor="middle">~230 ms</text>
+
+  <!-- attacked row -->
+  <rect x="40" y="100" width="0" height="0"/>
+  <g transform="translate(0,0)"></g>
+
+  <!-- second block lower -->
+  <g transform="translate(520,0)">
+    <rect x="40" y="100" width="120" height="120" rx="10" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+    <text x="100" y="92" font-size="14" font-weight="700" fill="#334155" text-anchor="middle">Ảnh sạch + nhiễu</text>
+    <!-- many dots -->
+    <g fill="#f97316">
+      <circle cx="62" cy="120" r="4"/><circle cx="80" cy="128" r="4"/><circle cx="98" cy="118" r="4"/><circle cx="120" cy="126" r="4"/><circle cx="138" cy="122" r="4"/>
+      <circle cx="70" cy="146" r="4"/><circle cx="92" cy="150" r="4"/><circle cx="112" cy="144" r="4"/><circle cx="132" cy="150" r="4"/><circle cx="150" cy="142" r="4"/>
+      <circle cx="58" cy="170" r="4"/><circle cx="80" cy="174" r="4"/><circle cx="102" cy="168" r="4"/><circle cx="124" cy="176" r="4"/><circle cx="146" cy="170" r="4"/>
+      <circle cx="68" cy="196" r="4"/><circle cx="90" cy="200" r="4"/><circle cx="112" cy="194" r="4"/><circle cx="134" cy="200" r="4"/><circle cx="150" cy="192" r="4"/>
+    </g>
+    <text x="100" y="236" font-size="12.5" fill="#b45309" text-anchor="middle">K = 300 (chạm trần)</text>
+
+    <g stroke="#94a3b8" stroke-width="2" fill="#94a3b8"><line x1="170" y1="160" x2="214" y2="160"/><polygon points="214,154 224,160 214,166"/></g>
+    <rect x="236" y="120" width="160" height="80" rx="10" fill="#fef2f2" stroke="#dc2626" stroke-width="2"/>
+    <text x="316" y="150" font-size="14" font-weight="700" fill="#b91c1c" text-anchor="middle">Toàn trình</text>
+    <text x="316" y="175" font-size="15" font-weight="700" fill="#b91c1c" text-anchor="middle">~1000 ms (×4,2)</text>
+  </g>
+
+  <text x="490" y="300" font-size="13" fill="#475569" text-anchor="middle">Số đo toàn trình trên CPU laptop ghim lõi (2 phiên đạt cổng chất lượng)</text>
+</svg>
